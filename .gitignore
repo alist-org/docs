@@ -1,0 +1,14 @@
+node_modules
+.next
+.DS_Store
+yarn-error.log
+.yalc
+yalc.lock
+
+# Vuepress Cache
+.cache/
+# Vuepress Temp
+.temp/
+# Vuepress Output
+dist/
+
