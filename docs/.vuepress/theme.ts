@@ -37,7 +37,6 @@ export default hopeTheme({
       // footer: "Default footer",
 
       displayFooter: true,
-
     },
 
     /**
@@ -100,9 +99,10 @@ export default hopeTheme({
       //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
       container: true,
-      linkCheck: true,
+      linkCheck: "dev",
       tabs: true,
-      tasklist: true
+      tasklist: true,
+      gfm: true,
     },
   },
 });
