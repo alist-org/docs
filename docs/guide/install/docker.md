@@ -31,9 +31,9 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ```
 
 ### Beta version
-Not recommended, this may can't work properly
+Just for amd64/arm64. Not recommended, this may can't work properly. 
 ```bash
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:v2
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:main
 ```
 
 ### Specify version
