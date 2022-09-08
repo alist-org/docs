@@ -10,7 +10,7 @@ actions:
     link: /guide/
     type: primary
 
-  - text: Github
+  - text: Github 🌱
     link: https://github.com/alist-org/alist
 
 features:
@@ -36,7 +36,7 @@ features:
 
   - title: File preview
     icon: preview
-    details: Support video, audio, office, pdf, code, image preview, etc. Even support ipa install
+    details: Support video, audio, office, pdf, code, image preview, etc. Even ipa install
 
   - title: Package download
     icon: cache

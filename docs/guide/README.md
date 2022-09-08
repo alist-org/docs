@@ -16,7 +16,7 @@ category:
 
 ### What's this
 
-A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and React. English documents are translated using Google.You can click the `Edit this page` button below to help improve the translation
+A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and Solidjs.
 
 ### Support storage
 

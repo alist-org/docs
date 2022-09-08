@@ -36,7 +36,7 @@ features:
 
   - title: 文件预览
     icon: preview
-    details: 支持视频、音频、office、pdf、代码、图片预览等，甚至支持ipa 安装
+    details: 支持视频、音频、office、pdf、代码、图片预览等，甚至是ipa安装
 
   - title: 打包下载
     icon: cache

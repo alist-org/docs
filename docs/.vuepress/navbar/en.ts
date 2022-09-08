@@ -17,4 +17,14 @@ export const en = navbar([
       { text: "QQ Group", link: "https://jq.qq.com/?_wv=1027&k=YJJj2Gwb" },
     ],
   },
+  {
+    text: "Version",
+    icon: "branch",
+    children: [{ text: "V2", link: "https://alist-doc.nn.ci" }],
+  },
+  {
+    text: "Github",
+    icon: "github",
+    link: "https://github.com/alist-org/alist",
+  },
 ]);
