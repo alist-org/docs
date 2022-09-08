@@ -32,10 +32,11 @@ Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find th
 <script setup lang="ts">
 import { ref } from "vue";
 const btnText = ref("Get Token");
-// 0->Initial
-// 1->Wait qr
-// 2->Wait Scan
-// 3->Get Token
+// 0 -> Initial
+// 1 -> Wait qr
+// 2 -> Wait Scan
+// 3 -> Geting Token
+// 4 -> Success
 const state = ref(0);
 const src= ref('')
 const token = ref('')
@@ -45,6 +46,7 @@ const getQr = async ()=>{
   state.value = 1;
   const resp = await fetch("https://api.nn.ci/alist/ali/qr");
   const res = await resp.json();
+  console.log(res)
   btnText.value='Use AliyunDrive APP To Scan Then Click'
   state.value = 2;
   ckData.value = JSON.stringify({
@@ -54,6 +56,8 @@ const getQr = async ()=>{
   src.value = `https://api.nn.ci/qr/?size=400&text=${encodeURIComponent(res.content.data.codeContent)}`
 }
 const getToken = async ()=>{
+  state.value = 3;
+  btnText.value = 'Waiting...';
   const resp = await fetch('https://api.nn.ci/alist/ali/ck',{
     method: 'POST',
     headers:{
@@ -64,11 +68,15 @@ const getToken = async ()=>{
   const res = await resp.json();
   const {content:{data:{qrCodeStatus,loginResult,bizExt}}} = res;
   if(loginResult !== "success"){
+    state.value = 2;
+    btnText.value = 'Use AliyunDrive APP To Scan Then Click'
     alert('Status:' + qrCodeStatus);
     return
   }
   const bizData = JSON.parse(atob(bizExt));
   token.value = bizData.pds_login_result.refreshToken;
+  btnText.value = 'Get Token Success'
+  state.value = 4;
   console.log(res)
 }
 const onClick = async ()=>{
