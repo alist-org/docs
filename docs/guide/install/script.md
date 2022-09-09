@@ -22,7 +22,7 @@ Only for Linux-x86_64/arm64 platform.
 
 ### Install
 ```bash
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s install
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s install
 ```
 :::danger
 If it has already been installed, executing the installation again will delete the previous data. To update, please use the update command.
@@ -30,12 +30,12 @@ If it has already been installed, executing the installation again will delete t
 
 ### update
 ```bash
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s update
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s update
 ```
 
 ### Uninstall
 ```bash
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s uninstall
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s uninstall
 ```
 
 ### Custom path
