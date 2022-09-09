@@ -6,11 +6,11 @@ heroImage: /logo.svg
 heroText: ALIST
 tagline: 🗂️ A file list program that supports multiple storage, powered by Gin and Solidjs.
 actions:
-  - text: How to Use 💡
+  - text: How to Use💡
     link: /guide/
     type: primary
 
-  - text: Github 🌱
+  - text: Github🌱
     link: https://github.com/alist-org/alist
 
 features:

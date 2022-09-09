@@ -6,11 +6,11 @@ heroImage: /logo.svg
 heroText: ALIST
 tagline: 🗂️ 一个支持多种存储的文件列表程序，使用 Gin 和 Solidjs。
 actions:
-  - text: 如何使用 💡
-    link: /guide/
+  - text: 如何使用💡
+    link: /zh/guide/
     type: primary
 
-  - text: Github
+  - text: Github🌱
     link: https://github.com/alist-org/alist
 
 features:
