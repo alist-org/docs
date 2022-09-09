@@ -38,7 +38,7 @@ Any content you want which are automatically placed at the end of the body of th
 
 ### Link expiration
 
-The expiration time of the direct link, in hours. If it <= 0, it will not expire. Default is 0.
+The expiration time of the direct link, in hours. If it equals 0, it will not expire. Default is 0.
 ::: warning
 Only the straight chain of the path with the password added will have an expiration time, otherwise it will not expire.Because the expiration time is added to the sign query parameter, and the path without adding the password will not check the sign.
 :::
