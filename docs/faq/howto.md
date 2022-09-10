@@ -22,9 +22,29 @@ star: true
 
 Add a [meta](../guide/advanced/meta.md) record.
 
+### How to reverse proxy with sub directory?
+
+An example of using nginx to reverse proxy to https://nn.ci/alist:
+- Normal installation
+- Set [Api url](../config/site.md#api-url) to `https://nn.ci/alist`, [Base path](../config/site.md#base-path) to `alist` and click save button
+- Add a reverse proxy record in nginx
+```nginx
+location /alist/ {
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Range $http_range;
+	  proxy_set_header If-Range $http_if_range;
+    proxy_redirect off;
+    proxy_pass http://127.0.0.1:5244/;
+    # the max size of file to upload
+    client_max_body_size 20000m;
+}
+```
+
 ### How to get password if i forget it?
 
-If you are the owner of the site, you can get the password by run `./alist password` in the terminal.
+If you are the owner of the site, you can get the admin's info by run `./alist admin` in the terminal.
 Otherwise you can ask the owner to reset the password.
 
 ### How to modify the listening port​

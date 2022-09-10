@@ -18,11 +18,9 @@ star: true
 
 # Use Docker
 
-See the log output for the initial password:
+See the log output for the admin's info:
 ```bash
-docker logs alist
-# or
-docker exec -it alist ./alist password
+docker exec -it alist ./alist admin
 ```
 
 ### Stable version

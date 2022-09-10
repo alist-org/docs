@@ -28,7 +28,7 @@ The address of your `alist`, such as `https://pan.nn.ci`.This address will be us
 
 ### Base path
 
-Default `/`, if you want reverse proxy with sub directory, such as `https://pan.nn.ci/alist`, you should set this field to `alist`, at the same time you need to set `Api url` to `https://pan.nn.ci/alist`.
+Default `/`, if you want reverse proxy with sub directory(see [reverse proxy with sub directory](../faq/howto.md#how-to-reverse-proxy-with-sub-directory) for details), such as `https://pan.nn.ci/alist`, you should set this field to `alist`, at the same time you need to set `Api url` to `https://pan.nn.ci/alist`.
 
 ### Site title
 

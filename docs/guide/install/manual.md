@@ -29,25 +29,31 @@ Open [AList Release](https://github.com/Xhofe/alist/releases) to download the fi
 # Unzip the downloaded file to get the executable file:
 tar -zxvf alist-xxxx.tar.gz
 # Grant program execution permissions:
-chmod +x alist-xxxx
+chmod +x alist
 # Run the program
-./alist-xxxx server
+./alist server
+# Get admin's info
+./alist admin
 ```
 @tab macos
 ```bash
 # Unzip the downloaded file to get the executable file:
 tar -zxvf alist-xxxx.tar.gz
 # Grant program execution permissions:
-chmod +x alist-xxxx
+chmod +x alist
 # Run the program
-./alist-xxxx server
+./alist server
+# Get admin's info
+./alist admin
 ```
 @tab windows
 ```bash
 # Unzip the downloaded file to get the executable file:
 unzip alist-xxxx.tar.gz
 # Run the program
-./alist-xxxx.exe server
+./alist.exe server
+# Get admin's info
+./alist.exe admin
 ```
 :::
 
