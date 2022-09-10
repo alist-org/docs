@@ -99,7 +99,7 @@ export default hopeTheme({
       //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
       container: true,
-      linkCheck: "dev",
+      linkCheck: true,
       tabs: true,
       tasklist: true,
       gfm: true,
