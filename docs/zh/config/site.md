@@ -28,7 +28,7 @@ star: true
 
 ### 基本路径
 
-默认`/`，如果你想反向代理与子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），比如`https://pan.nn.ci/alist`，需要设置该字段为`alist`，同时需要设置`Api url`为`https://pan.nn.ci/阿里斯特`。
+默认`/`，如果你想反向代理与子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），比如`https://pan.nn.ci/alist`，需要设置该字段为`alist`，同时需要设置`Api url`为`https://pan.nn.ci/alist`。
 
 ### 网站标题
 
