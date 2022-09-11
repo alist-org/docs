@@ -22,13 +22,21 @@ star: true
 
 `alist` 的版本，只读。
 
+### 图标
+
+徽标显示在页面的左上角。 默认为“AList 徽标”。
+
+### 网站图标
+
+favicon 显示在浏览器选项卡中。 默认为“AList 徽标”。
+
 ### 接口地址
 
 你的`alist`的地址，比如`https://pan.nn.ci`。这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能会失效，比如缩略图`LocalStorage`。
 
 ### 基本路径
 
-默认`/`，如果你想反向代理与子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），比如`https://pan.nn.ci/alist`，需要设置该字段为`alist`，同时需要设置`Api url`为`https://pan.nn.ci/阿里斯特`。
+默认`/`，如果你想反向代理与子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），比如`https://pan.nn.ci/alist`，需要设置该字段为`alist`，同时需要设置`Api url`为`https://pan.nn.ci/alist`。
 
 ### 网站标题
 

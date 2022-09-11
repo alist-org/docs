@@ -18,14 +18,6 @@ star: true
 
 # Style settings
 
-### Logo
-
-The logo is displayed in the upper left corner of the page. The default is the `AList logo`.
-
-### Favicon
-
-The favicon is displayed in the browser tab. The default is the `AList logo`.
-
 ### Main color
 
 The main color is used to on the page. The default is `#1890ff`.

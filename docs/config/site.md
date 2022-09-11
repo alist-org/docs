@@ -22,6 +22,14 @@ star: true
 
 The version of the `alist`, readonly.
 
+### Logo
+
+The logo is displayed in the upper left corner of the page. The default is the `AList logo`.
+
+### Favicon
+
+The favicon is displayed in the browser tab. The default is the `AList logo`.
+
 ### Api url
 
 The address of your `alist`, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, some functions may fail, such as thumbnail of `LocalStorage`.
