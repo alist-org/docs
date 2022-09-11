@@ -49,4 +49,4 @@ star: true
 
 ### ocr api
 
-用于识别验证码。你可以自己部署：https://hub.docker.com/r/xhofe/ddddocr_server。默认ocr api部署在[koyeb](https://app.koyeb.com/)上，不建议在生产环境中使用。
+用于识别验证码。你可以自己部署：https://hub.docker.com/r/xhofe/ddddocr_server 默认ocr api部署在[koyeb](https://app.koyeb.com/)上，不建议在生产环境中使用。
