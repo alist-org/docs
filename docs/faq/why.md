@@ -18,6 +18,18 @@ sticky: true
 star: true
 ---
 
+### Why I got the error `failed get storage: can't find storage with rawPath: /` when I open web pages after install/upgrade?
+
+Because you haven't added storage.
+
+### why i lost all my storage in v2
+
+New versions (V3 and later) are not compatible with V2, so you need to re-add your storage.
+
+### Why I see `failed get aria2 version` error in log?
+
+Because you haven't installed aria2 or the settings of aria2 are wrong. Don't worry, it won't affect the use of Alist, you can ignore it.
+
 ### Why can't I preview the video or audio file?
 
 - Requires a browser-supported encoding
