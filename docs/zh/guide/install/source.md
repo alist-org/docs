@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-# Run from source
+# 从源码运行
 
 :::danger
 
@@ -26,7 +26,7 @@ star: true
 
 :::
 
-###环境准备
+### 环境准备
 
 首先，你需要有一个`git`，`nodejs`，`pnpm`，`golang>=1.18`，`gcc`的环境
 

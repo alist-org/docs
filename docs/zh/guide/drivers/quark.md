@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# Quark
+# 夸克网盘
 
 :::tip
 由于Quark网盘的限制，下载必须携带cookies，所以只能使用本程序中的代理功能进行传输。 （可以用其他机器转）

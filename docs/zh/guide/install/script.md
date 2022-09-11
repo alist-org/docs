@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: One-click Script
+# title: One-click Script
 # This is the icon of the page
 icon: script
 # This control sidebar order
@@ -17,6 +17,8 @@ sticky: true
 # this page will appear in starred articles
 star: true
 ---
+
+# 一键脚本
 
 仅适用于 Linux-x86_64/arm64 平台。
 
