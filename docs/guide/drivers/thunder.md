@@ -80,9 +80,9 @@ Obtain Thunder request data through network analysis tools
 
 Open Thunder and log in to your account
 
-Included in the request https://xluser-ssl.Thunder.com/v1/shield/captcha/init
+Included in the request https://xluser-ssl.xunlei.com/v1/shield/captcha/init
 CaptchaSign, Timestamp, DeviceID, ClientID, ClientVersion, PackageName
 
 Restarting Thunder will refresh the token
 
-The request https://xluser-ssl.Thunder.com/v1/auth/token contains RefreshToken (please use the returned value), ClientSecret (does not exist on the web side)
+The request https://xluser-ssl.xunlei.com/v1/auth/token contains RefreshToken (please use the returned value), ClientSecret (does not exist on the web side)

@@ -16,22 +16,22 @@ sticky: true
 star: true
 ---
 
-# Aliyundrive
+# 阿里云盘
 
 :::tip
 
-Due to the limitation of the referrer of Aliyundrive, the mobile token must be used. Using the desktop web token will result in failure to download and preview.
-Of course, you can also turn on the proxy so that `refresh token` of desktop web can work if you use it locally or if the bandwidth is large enough.
+由于阿里云盘referer的限制，必须使用移动token。 使用桌面 Web 令牌将导致无法下载和预览。
+当然，如果你在本地使用或者带宽足够大，你也可以开启代理，让桌面web的`refresh token`可以工作。
 
 :::
 
-### Refresh token
+### 刷新令牌
 
-Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (/data/media/0/Android/data/com.alicloud.databox/ files/logs/trace/). Or you can click:
+按照这个[issue](https://github.com/Xhofe/alist/issues/88)在手机上捕获/查找日志(/data/media/0/Android/data/com.alicloud.databox/ 文件/日志/跟踪/）。 或者您可以点击：
 
 <script setup lang="ts">
 import { ref } from "vue";
-const btnText = ref("Get Token");
+const btnText = ref("获取 Token");
 // 0 -> Initial
 // 1 -> Wait qr
 // 2 -> Wait Scan
@@ -42,12 +42,12 @@ const src= ref('')
 const token = ref('')
 const ckData = ref('')
 const getQr = async ()=>{
-  btnText.value = 'Waiting...';
+  btnText.value = '等待...';
   state.value = 1;
   const resp = await fetch("https://api.nn.ci/alist/ali/qr");
   const res = await resp.json();
   console.log(res)
-  btnText.value='Use AliyunDrive APP To Scan Then Click'
+  btnText.value='使用阿里云盘 APP 扫描然后点击'
   state.value = 2;
   ckData.value = JSON.stringify({
     ck: res.content.data.ck,
@@ -57,7 +57,7 @@ const getQr = async ()=>{
 }
 const getToken = async ()=>{
   state.value = 3;
-  btnText.value = 'Waiting...';
+  btnText.value = '等待...';
   const resp = await fetch('https://api.nn.ci/alist/ali/ck',{
     method: 'POST',
     headers:{
@@ -69,13 +69,13 @@ const getToken = async ()=>{
   const {content:{data:{qrCodeStatus,loginResult,bizExt}}} = res;
   if(loginResult !== "success"){
     state.value = 2;
-    btnText.value = 'Use AliyunDrive APP To Scan Then Click'
+    btnText.value = '使用阿里云盘 APP 扫描然后点击'
     alert('Status:' + qrCodeStatus);
     return
   }
   const bizData = JSON.parse(atob(bizExt));
   token.value = bizData.pds_login_result.refreshToken;
-  btnText.value = 'Get Token Success'
+  btnText.value = '获取Token成功'
   state.value = 4;
   console.log(res)
 }
@@ -109,6 +109,6 @@ const onClick = async ()=>{
 
 ### Root folder file_id
 
-Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940, which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`:
+打开阿里云驱动官网，点击进入要设置的文件夹时点击url后面的字符串，如https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940，即`5fe01e1830601baf774e4827a9fb8fb2b5bf7940`：
 
 ![file_id](/img/drivers/aliyundrive.png)

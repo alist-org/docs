@@ -43,8 +43,8 @@ The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We s
 - All: All files will be displayed at once.
 - Pagination: Show a `Paginator` at the bottom of the page.
 - Load more: Show a `Load more` button at the bottom of the page.
-- Auto load moew: Automatically load more files when scrolling to the bottom of the page.
+- Auto load more: Automatically load more files when scrolling to the bottom of the page.
 
 ### Default page size
 
-The default page size of the `alist` while `Pagination type` doesn't set to `All`, such as `20`.
+The default page size of the `alist` if `Pagination type` doesn't set to `All`, such as `20`.

@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Configuration file
+title: 配置文件
 # This is the icon of the page
 icon: json
 # This control sidebar order
@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-### Initial config
+### 初始配置
 
 ```json
 {
@@ -55,33 +55,33 @@ star: true
 }
 ```
 
-## Field Description
+## 字段说明
 
 ### force
 
-The program will preferentially read the configuration from the environment variable, set `force` to `true` to force the program to read the configuration file.
+程序会优先从环境变量中读取配置，设置`force`为`true`强制程序读取配置文件。
 
 ### address
 
-The address to listen on, default `0.0.0.0`
+要监听的地址，默认为 0.0.0.0
 
 ### port
 
-The port to listen on, default `5244`
+要监听的端口，默认为 5244
 
 ### jwt_secret
 
-The secret used to sign the JWT token, random generated first time start.
+用于签署 JWT 令牌的密钥，第一次启动时随机生成。
 
 ### cdn
 
-The CDN address, if you want to use CDN, you can set this field, the `$version` will be replaced with the real version of `alist-web`
-This is dynamic and changeable. Existing dist resources are hosted on both npm and GitHub, and their locations are:
+CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换为`alist-web`的真实版本
+这是动态的和多变的。 现有的 dist 资源托管在 npm 和 GitHub 上，它们的位置是：
 
 - https://www.npmjs.com/package/alist-web
 - https://github.com/alist-org/web-dist
 
-So you can use any npm or github cdn as the path, for example:
+所以你可以使用任何 npm 或 github cdn 作为路径，例如：
 
 - https://cdn.jsdelivr.net/npm/alist-web@$version/dist/
 - https://unpkg.com/alist-web@$version/dist/
@@ -89,20 +89,20 @@ So you can use any npm or github cdn as the path, for example:
 - https://cdn1.tianli0.top/npm/alist-web@$version/dist/
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
 
-Also you can keep it empty to use local dist.
+您也可以将其保留为空以使用本地 dist。
 
 ### database
 
-The database configuration, the default is `sqlite3`, you can also use `mysql` or `postgres`.
+数据库配置，默认是`sqlite3`，也可以使用`mysql`或者`postgres`。
 
 ### scheme
 
-The scheme configuration, if you want to use https, you can set this field.
+协议配置，如果要使用https，可以设置该字段。
 
 ### temp_dir
 
-The temporary directory, default `data/temp`
+临时目录，默认 `data/temp`
 
 ### log
 
-The log configuration, if you want to setup the log, you can set this field.
+日志配置，如果要设置日志，可以设置该字段。

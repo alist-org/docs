@@ -53,6 +53,7 @@ interface {
 the first key `extensions` is the file extensions that split by `,`(if it's startsWith `/`, it will be considered a regular expression), and the value is also a `key-value` object, the key is the preview name, and the value is the external url.
 
 For the external url, we provide some variables for you to use:
+
 - `$url`: the file url
 - `$name`: the file name
 - `$e_url`: encodeURIComponent($url)
@@ -73,6 +74,7 @@ For example, set `External previews` to
   }
 }
 ```
+
 when we enter a file with the extension `txt`, it will show:
 
 ![Open-with](/img/config/open-with.png)
@@ -80,6 +82,17 @@ when we enter a file with the extension `txt`, it will show:
 ### Iframe previews
 
 Similar to `External previews`, but it will embed an iframe in current page directly.
+:::tip
+If you want to use self-deployed onlyoffice to preview office files, you can add the configuration like this here:
+
+```json
+{
+  "doc,docx,xls,xlsx,ppt,pptx": {
+    "OnlyOffice": "you_only_office_url"
+  }
+}
+```
+:::
 
 ### Audio cover
 

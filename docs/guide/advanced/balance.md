@@ -22,7 +22,7 @@ It is required that the file structures in the two storages are exactly the same
 
 ### how to use​
 
-One storage can be added normally, and the other storage can be added with the name of `the first storage name + .balance + any other content`.
+One storage can be added normally, and the other storage can be added with the mount path of `the first storage mount path + .balance + any other content`.
 E.g:
 
 - Storage 1: test

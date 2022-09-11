@@ -17,7 +17,7 @@ sticky: true
 star: true
 ---
 
-# Contribute new storage
+# Contribute new storage driver
 
 Duplicate `drivers/template` to expand the new storage. Please read [CONTRIBUTING](https://github.com/Xhofe/alist/blob/main/CONTRIBUTING.md) for details.
 

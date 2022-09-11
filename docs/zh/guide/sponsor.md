@@ -18,30 +18,30 @@ sticky: true
 star: true
 ---
 
-# Sponsor🥤
+# 赞助🥤
 
-If you think this project is helpful to you, you may wish to consider buying me a cup of milk tea😄.
+如果你觉得这个项目对你有帮助，不妨考虑给我买杯奶茶😄。
 
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
 - Paypal: https://www.paypal.me/Xhofe
-- Alipay/WechatPay/QQPay:
+- 支付宝/微信支付/QQ支付:
 
 :::tabs
-@tab alipay
+@tab 支付宝
 <img width=300 src="/img/sponsor/alipay.jpg"/>
 
-@tab wechat
+@tab 微信支付
 <img width=300 src="/img/sponsor/wechat.png"/>
 
-@tab qq
+@tab qq支付
 <img width=300 src="/img/sponsor/qq.png"/>
 
 :::
 
-- dun: https://dun.mianbaoduo.com/@Xhofe
-- afdian: https://afdian.net/@Xhofe
+- 顿顿饭: https://dun.mianbaoduo.com/@Xhofe
+- 爱发电: https://afdian.net/@Xhofe
 
-Thanks to the following sponsors:
+感谢以下赞助者：
 
 - **鑫
 - 岛主
@@ -180,5 +180,5 @@ Thanks to the following sponsors:
 - *阳
 - **操
 
-If there is any omission, please contact to add it.
+如有遗漏，请联系补充。
 
