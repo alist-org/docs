@@ -7,11 +7,11 @@ icon: study
 order: 1
 # A page can have multiple categories
 category:
-  - Guide
+  - FAQ
 # A page can have multiple tags
 tag:
-  - Config
-  - Guide
+  - FAQ
+  - Question
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles

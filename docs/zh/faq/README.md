@@ -3,7 +3,7 @@ title: FAQ
 index: false
 icon: question
 category:
-  - Guide
+  - FAQ
 ---
 
 ## Catalog
