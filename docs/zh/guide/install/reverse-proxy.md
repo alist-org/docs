@@ -50,7 +50,7 @@ location / {
 
 ### Apache
 
-在VirtualHost字段下添加配置项ProxyPass，如：
+在VirtualHost字段下添加配置项ProxyPass，例子：
 
 ```xml
 <VirtualHost *:80>
