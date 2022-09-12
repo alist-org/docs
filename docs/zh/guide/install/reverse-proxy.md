@@ -20,7 +20,7 @@ star: true
 
 # 反向代理
 
-程序默认监听 5244 端口。
+程序默认监听 5244 端口。如有修改，请一并修改下列配置中的端口号。
 
 ### nginx
 
@@ -50,7 +50,7 @@ location / {
 
 ### Apache
 
-在VirtualHost字段下添加反生成配置项ProxyPass，如：
+在VirtualHost字段下添加配置项ProxyPass，如：
 
 ```xml
 <VirtualHost *:80>
@@ -65,7 +65,7 @@ location / {
 
 ### Caddy
 
-在Caddyfile文件下添加reverse_proxy配置项reverse_proxy，例如：
+在Caddyfile文件下添加配置项reverse_proxy，例子：
 
 ```xml
 :80 {
