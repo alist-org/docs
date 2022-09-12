@@ -21,12 +21,12 @@ star: true
 # 社区
 
 ### Telegram 群组
-Click the link: https://t.me/alist_chat
+使用此链接: https://t.me/alist_chat
 
 ### Discussions​
-Welcome to visit https://github.com/Xhofe/alist/discussions to discuss.
+欢迎至 https://github.com/Xhofe/alist/discussions 参与项目讨论.
 
 ### QQ 群
-Click the link: https://jq.qq.com/?_wv=1027&k=YJJj2Gwb , or search `938287703`.
+使用此链接: https://jq.qq.com/?_wv=1027&k=YJJj2Gwb , 或者搜索 `938287703`.
 
-欢迎加入社区，在提问之前，请确保您在此处找不到答案。 提问前请阅读“提问的智慧”，也许这样可以更快地解决问题。
+欢迎加入社区，在开始提问之前，请确保您在此处找不到答案。并且Google/百度也不能解决问题时再提问。 提问前请先阅读“提问的智慧”，也许这样可以更快地帮助你解决问题。同时减轻各位的负担

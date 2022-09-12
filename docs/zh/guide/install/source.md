@@ -28,7 +28,7 @@ star: true
 
 ### 环境准备
 
-首先，你需要有一个`git`，`nodejs`，`pnpm`，`golang>=1.18`，`gcc`的环境
+首先，你需要一个有`git`，`nodejs`，`pnpm`，`golang>=1.18`，`gcc`的环境
 
 ### 构建前端
 

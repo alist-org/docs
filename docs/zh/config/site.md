@@ -28,7 +28,7 @@ star: true
 
 ### 基本路径
 
-默认`/`，如果你想反向代理与子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），比如`https://pan.nn.ci/alist`，需要设置该字段为`alist`，同时需要设置`Api url`为`https://pan.nn.ci/alist`。
+默认`/`，如果你想反向代理子目录（详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)），需要设置该字段为`alist`，比如`https://pan.nn.ci/alist`，同时需要设置`Api url`为`https://pan.nn.ci/alist`。
 
 ### 网站标题
 
@@ -47,4 +47,4 @@ star: true
 
 ### 默认每页文件数量
 
-`alist` 的默认每页文件数量，当 `Pagination type` 没有设置为 `All`，例如 `20`。
+`alist` 的默认每页文件数量，当 `Pagination type` 没有被设置为 `All` 时生效，例如 `20`。

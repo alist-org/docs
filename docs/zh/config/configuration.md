@@ -59,7 +59,7 @@ star: true
 
 ### force
 
-程序会优先从环境变量中读取配置，设置`force`为`true`强制程序读取配置文件。
+程序会优先从环境变量中读取配置，设置`force`为`true`会使程序忽略环境变量强制读取配置文件。
 
 ### address
 
@@ -75,8 +75,8 @@ star: true
 
 ### cdn
 
-CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换为`alist-web`的真实版本
-这是动态的和多变的。 现有的 dist 资源托管在 npm 和 GitHub 上，它们的位置是：
+CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换为`alist-web`的实际版本
+这是动态的。 现有的 dist 资源托管在 npm 和 GitHub 上，它们的位置是：
 
 - https://www.npmjs.com/package/alist-web
 - https://github.com/alist-org/web-dist
@@ -89,7 +89,7 @@ CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换�
 - https://cdn1.tianli0.top/npm/alist-web@$version/dist/
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
 
-您也可以将其保留为空以使用本地 dist。
+您也可以将其设置为空以使用本地 dist。
 
 ### database
 
@@ -101,8 +101,8 @@ CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换�
 
 ### temp_dir
 
-临时目录，默认 `data/temp`
+程序临时目录，默认 `data/temp`
 
 ### log
 
-日志配置，如果要设置日志，可以设置该字段。
+日志配置，如果要查看详细日志（或禁用它），可以设置该字段。
