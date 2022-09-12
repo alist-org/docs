@@ -38,7 +38,7 @@ password for login
 
 Need verify: {url} may appear when logging in or uploading, please visit the link in the error to complete the verification and get CaptchaToken (verification code)
 
-![A1](http://pic.rmb.bdstatic.com/bjh/0c2f7ebc7b97ea890cd683c050535cf3.png)
+![A1](https://pic.rmb.bdstatic.com/bjh/0c2f7ebc7b97ea890cd683c050535cf3.png)
 
 Fill in the mount directory ID account password and save it, there will be a big lump in the upper right corner (cannot be copied),
 
@@ -46,7 +46,7 @@ Let's go back to adding an account to copy from Https to the end to a new window
 
 See the image below to add
 
-![A2](http://pic.rmb.bdstatic.com/bjh/93d2383f605e23cd1bbb9f334ebd27ac.png)
+![A2](https://pic.rmb.bdstatic.com/bjh/93d2383f605e23cd1bbb9f334ebd27ac.png)
 
 ## ThunderExpert
 
@@ -116,16 +116,16 @@ You will see the parameters as shown in the figure below, and you can fill in it
 
 See **v1/shield/captcha/init** and grab it, please **immediately don't delay for a second** Right-click Xunlei in the taskbar in the lower right corner to exit, exit completely and then reopen to get * *Figure II**
 
-![B1](http://pic.rmb.bdstatic.com/bjh/0027f92bd0068e676309e722c3e1b1ba.png)
+![B1](https://pic.rmb.bdstatic.com/bjh/0027f92bd0068e676309e722c3e1b1ba.png)
 
 Restarting Thunder will refresh the token
 
 The request to https://xluser-ssl.xunlei.com/v1/auth/token contains RefreshToken (please use the returned value), ClientSecret (does not exist on the web side)
 
-![B2](http://pic.rmb.bdstatic.com/bjh/95d7901ae98156bcf9b9f0d1073bd8d9.png)
+![B2](https://pic.rmb.bdstatic.com/bjh/95d7901ae98156bcf9b9f0d1073bd8d9.png)
 
 Figure 1 contains **7** parameters | Figure 1 contains **2** parameters | a fixed parameter (Down UserAgent), ten parameters and 3 options and a mount path, just write and save, before saving Remember to check~
 
 ### ThunderExpert complete parameter filling demo:
 
-![demo](http://pic.rmb.bdstatic.com/bjh/e9293a70b3f105d5a698c7577bbe5fb2.png)
+![demo](https://pic.rmb.bdstatic.com/bjh/e9293a70b3f105d5a698c7577bbe5fb2.png)

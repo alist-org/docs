@@ -39,7 +39,7 @@ category:
 - [x] [分秒帧](https://www.mediatrack.cn/)
 - [x] [和彩云](https://yun.139.com/) (个人云, 家庭云)
 - [x] [Yandex.Disk](https://disk.yandex.com/)
-- [x] [百度网盘](http://pan.baidu.com/)
+- [x] [百度网盘](https://pan.baidu.com/)
 - [x] [夸克网盘](https://pan.quark.cn)
 - [x] [迅雷网盘](https://pan.xunlei.com)
 

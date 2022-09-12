@@ -38,7 +38,7 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 在登录或上传是可能出现 need verify: {url},请访问错误中的链接完成验证得到 CaptchaToken（验证码）
 
-![A1](http://pic.rmb.bdstatic.com/bjh/0c2f7ebc7b97ea890cd683c050535cf3.png)
+![A1](https://pic.rmb.bdstatic.com/bjh/0c2f7ebc7b97ea890cd683c050535cf3.png)
 
 填写好挂载目录 ID 账号 密码后保存，右上角会出现一大坨(没法复制)，
 
@@ -46,7 +46,7 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 看下图添加
 
-![A2](http://pic.rmb.bdstatic.com/bjh/93d2383f605e23cd1bbb9f334ebd27ac.png)
+![A2](https://pic.rmb.bdstatic.com/bjh/93d2383f605e23cd1bbb9f334ebd27ac.png)
 
 ## ThunderExpert
 
@@ -117,16 +117,16 @@ CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、Us
 
 看到 **v1/shield/captcha/init** 抓取到后 请**立刻马上不要耽误一秒钟** 把迅雷在右下角任务栏的迅雷右键点击退出，彻底退出 然后重新打开 获取到**图二**
 
-![B1](http://pic.rmb.bdstatic.com/bjh/0027f92bd0068e676309e722c3e1b1ba.png)
+![B1](https://pic.rmb.bdstatic.com/bjh/0027f92bd0068e676309e722c3e1b1ba.png)
 
 重启迅雷会刷新 token
 
 请求 https://xluser-ssl.xunlei.com/v1/auth/token 中包含 RefreshToken（请使用返回的值）、ClientSecret（web 端不存在）
 
-![B2](http://pic.rmb.bdstatic.com/bjh/95d7901ae98156bcf9b9f0d1073bd8d9.png)
+![B2](https://pic.rmb.bdstatic.com/bjh/95d7901ae98156bcf9b9f0d1073bd8d9.png)
 
 图一包含 **7 条** 参数 | 图一包含 **2 条** 参数 | 一条固定参数(Down UserAgent) ，十条参数 和 3 个选项 以及一个挂载路径，写好保存即可，保存前记得检查喔~~
 
 ### ThunderExpert 完整的参数填演示图：
 
-![示意图](http://pic.rmb.bdstatic.com/bjh/e9293a70b3f105d5a698c7577bbe5fb2.png)
+![示意图](https://pic.rmb.bdstatic.com/bjh/e9293a70b3f105d5a698c7577bbe5fb2.png)
