@@ -34,7 +34,7 @@ export default hopeTheme({
       // sidebar
       sidebar: sidebar.en,
 
-      // footer: "Default footer",
+      footer: `<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a>`,
 
       displayFooter: true,
     },
@@ -49,7 +49,7 @@ export default hopeTheme({
       // sidebar
       sidebar: sidebar.zh,
 
-      // footer: "默认页脚",
+      footer: `<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a>`,
 
       displayFooter: true,
     },
