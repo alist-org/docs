@@ -28,7 +28,7 @@ star: true
 
 - 正常安装
 - 将 [Api url](../config/site.md#api-url) 设置为 `https://nn.ci/alist`, [Base path](../config/site.md#base-path) 到 `alist` 并点击保存按钮
-- 在 nginx 中添加反向代理记录
+- 在 nginx 中添加反向代理配置
 
 ```nginx
 location /alist/ {
@@ -46,8 +46,8 @@ location /alist/ {
 
 ### 忘记密码怎么办？
 
-如果您是站点的所有者，您可以通过在终端中运行`./alist admin` 来获取管理员信息。
-否则，您可以要求所有者重置密码。
+如果您是站点的所有者，您可以通过在终端中运行`./alist admin` 来获取管理员账号信息。
+否则，您可以要求站点所有者重置密码。
 
 ### 如何修改监听端口 ​
 
@@ -55,8 +55,8 @@ location /alist/ {
 
 ### 如何更新
 
-除了 changelog 中标注的不兼容版本，可以直接替换二进制文件进行更新。
-对于 docker 用户，只需删除旧容器并拉取新图像，然后运行它。
+除了 changelog 中标注的不兼容版本，通常可以直接替换二进制文件进行更新。
+对于 docker 用户，只需删除旧的容器并拉取新的docker image，然后运行它即可。
 
 ### 如何允许访客上传文件
 
@@ -68,4 +68,4 @@ location /alist/ {
 
 ### 添加 189 云存储时：设备 ID 不存在，需要二次设备验证 ​
 
-可能是触发了防控。更改密码后，再次添加。
+可能是触发了风控。更改密码后，再次添加即可。
