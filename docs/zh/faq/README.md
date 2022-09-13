@@ -9,4 +9,4 @@ category:
 ## Catalog
 
 - [How to](howto.md)
-- [Why can't](why.md)
+- [Why](why.md)

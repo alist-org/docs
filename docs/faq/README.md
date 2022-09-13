@@ -8,5 +8,5 @@ category:
 
 ## Catalog
 
-- [How to](howto.md)
-- [Why can't](why.md)
+- [How to ...](howto.md)
+- [Why ...](why.md)

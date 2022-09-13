@@ -30,6 +30,10 @@ New versions (V3 and later) are not compatible with V2, so you need to re-add yo
 
 Because you haven't installed aria2 or the settings of aria2 are wrong. Don't worry, it won't affect the use of Alist, you can ignore it.
 
+### why i got the error `Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path` when I add new storage?
+
+I guess the error message is pretty clear. Because [mount_path](../guide/drivers/common.md#mount-path) is **UNIQUE**.
+
 ### Why can't I preview the video or audio file?
 
 - Requires a browser-supported encoding
