@@ -22,7 +22,7 @@ star: true
 
 Because you haven't added storage.
 
-### why i lost all my storage in v2
+### why i lost all my storage in v3
 
 New versions (V3 and later) are not compatible with V2, so you need to re-add your storage.
 
@@ -32,7 +32,8 @@ Because you haven't installed aria2 or the settings of aria2 are wrong. Don't wo
 
 ### why i got the error `Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path` when I add new storage?
 
-I guess the error message is pretty clear. Because [mount_path](../guide/drivers/common.md#mount-path) is **UNIQUE**.
+I guess the error message is pretty clear. Because [mount_path](../guide/drivers/common.md#mount-path) is **UNIQUE**.  
+If you see this error when adding storage, but you don't see the corresponding duplicate entry on the web page, use `Ctrl` + `F5` to force refresh page.
 
 ### Why can't I preview the video or audio file?
 
