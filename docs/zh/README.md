@@ -24,7 +24,7 @@ features:
 
   - title: 支持WebDav
     icon: waline
-    details: Alist 支持所有存储 WebDav，这是一种用于访问文件的标准。
+    details: Alist 支持所有 WebDav 存储 ，这是一种用于访问文件的标准。
 
   - title: 黑暗模式
     icon: contrast
@@ -36,11 +36,11 @@ features:
 
   - title: 文件预览
     icon: preview
-    details: 支持视频、音频、office、pdf、代码、图片预览等，甚至是ipa安装
+    details: 支持视频、音频、office、pdf、代码、图片预览等，甚至支持ipa安装
 
   - title: 打包下载
     icon: cache
-    details: 使用浏览器的stream api支持包下载，无需使用服务器
+    details: 使用浏览器的stream api支持打包下载，无需使用服务器
 
   - title: 更多新功能
     icon: more

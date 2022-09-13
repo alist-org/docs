@@ -22,7 +22,7 @@ star: true
 
 ### 如何使用​
 
-一个storage可以正常添加，另外一个storage可以以`第一个个storage 挂载路径 + .balance +任何其他内容`为挂载路径添加。
+一个storage可以正常添加，另外一个storage可以以`第一个storage 挂载路径 + .balance +任何其他内容`为挂载路径添加。
 例如：
 
 - 存储1：测试

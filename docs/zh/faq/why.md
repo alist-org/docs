@@ -38,7 +38,7 @@ star: true
 
 特别是对于 Safari：
 
-- 对于跨域媒体，content-type 必须是媒体类型，而不是通用的 application/octet-stream。所以如果直接链接返回的content-type是application/octet-stream，那么Safari就无法播放了。（PS：为什么AliyunDirve可以在Safari中播放？因为官网的视频播放不是使用的下载链接，是经过 AliyunDirve 转码后的）
+- 对于跨域媒体，content-type 必须是媒体类型，而不是通用的 application/octet-stream。所以如果直链返回的content-type是application/octet-stream，那么Safari就无法播放了。（PS：为什么AliyunDrive可以在Safari中播放？因为官网的视频播放不是使用的下载链接，是经过 AliyunDrive 转码后的）
 
 ### 为什么我不能预览office文件？
 
@@ -55,7 +55,7 @@ star: true
 ### 为什么我不能预览 PDF 文件？
 
 - 我们使用 `pdf.js` 作为默认的 PDF 预览器。所以它需要https + cors。
-- https需要自行打开，使用反向代理或在配置文件中提供证书
+- https需要自行打开，可以使用反向代理或在配置文件中提供证书
 - cors由相关云盘提供支持，不能自行修改，除非开启代理功能，使用程序传输
 
 ### 为什么无法打包下载？

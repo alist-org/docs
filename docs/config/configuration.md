@@ -105,4 +105,4 @@ The temporary directory, default `data/temp`
 
 ### log
 
-The log configuration, if you want to setup the log, you can set this field.
+The log configuration, if you want to setup the log level, you can set this field.

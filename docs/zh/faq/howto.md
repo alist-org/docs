@@ -22,7 +22,7 @@ star: true
 
 添加 [meta](../guide/advanced/meta.md) 记录。
 
-### 如何使用子目录进行反向代理？
+### 如何对子目录进行反向代理？
 
 使用 nginx 反向代理到 https://nn.ci/alist 的示例：
 
@@ -62,7 +62,7 @@ location /alist/ {
 
 添加一个 [meta](../guide/advanced/meta.md) 记录，并打开 `write` 字段。
 
-### 如何去掉底部的`powered_by`？​
+### 如何去掉底部的`powered_by Alist`？​
 
 请尊重开发者的劳动，谢谢。如果你真的想删除它，你可以使用自定义 css 来隐藏它。
 

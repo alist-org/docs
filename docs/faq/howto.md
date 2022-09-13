@@ -60,7 +60,7 @@ For docker user, just remove the old container and pull the new image then run i
 
 Add a [meta](../guide/advanced/meta.md) record, and open `write` field.
 
-### How to remove `powered_by` at the bottom?​
+### How to remove `powered_by Alist` at the bottom?​
 
 Please respect the developer's labor, thank you. If you really want to remove it, you can use customize css to hide it.
 
