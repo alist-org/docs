@@ -20,26 +20,26 @@ star: true
 
 # WebDav
 
-### WebDAV config
+### WebDAV 配置
 
 | Name     | Value                       |
 | -------- | --------------------------- |
 | Url      | http[s]\://domain:port/dav/ |
 | Host     | domain                      |
-| Path     | dav                         |
-| Scheme   | http/https                  |
-| Port     | Same as web port            |
-| Username | Same as web username        |
-| Password | Same as web password        |
+| 路径     | dav                         |
+| 协议     | http/https                  |
+| 端口     | 与网页端一致                 |
+| WebDav用户名 | 与网页端设置一致          |
+| WebDav密码 | 与网页端设置一致            |
 
-### WebDav Support
+### WebDav 存储支持
 
-| Storage strategy | list | download | mkdir | rename | move | copy | upload |
+| 存储类型          | 列出文件/文件夹 | 下载文件 | 创建目录 | 重命名 | 移动 | 复制 | 上传文件/文件夹 |
 | ---------------- | :--: | :------: | :---: | :----: | :--: | :--: | :----: |
-| LocalStorage     |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| AliyunDirve      |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 本地存储          |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 阿里云盘          |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
 | Onedrive         |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| 189Cloud         |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 天翼云盘          |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
 | GoogleDrive      |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ❌  |   ✅   |
 | 123pan           |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ❌  |   ✅   |
 | FTP              |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ❌  |   ✅   |
@@ -49,8 +49,8 @@ star: true
 | USS              |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
 | WebDAV           |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
 | Teambition       |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| Mediatrack       |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| 139yun           |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 分秒帧           |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 和彩云           |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
 | YandexDisk       |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| BaiduNetdisk     |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
-| Quark            |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 百度网盘          |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |
+| 夸克网盘          |  ✅  |    ✅    |  ✅   |   ✅   |  ✅  |  ✅  |   ✅   |

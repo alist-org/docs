@@ -32,7 +32,8 @@ star: true
 
 ### 为什么我在添加新存储时收到错误“Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path”？
 
-我想错误信息很清楚了。 因为 [挂载路径](../guide/drivers/common.md#挂载路径) 是**独一无二**的。
+想必错误信息表达的很清楚了。 因为 [挂载路径](../guide/drivers/common.md#挂载路径) 是**独一无二**的。  
+如果你在添加存储时看到了这个错误，但是你并没有在管理页面看到对应的重复条目，请使用`Ctrl` +`F5`强制刷新页面
 
 ### 为什么我不能预览视频或音频文件？
 
@@ -66,7 +67,7 @@ star: true
 
 与 pdf 预览相同，需要 https+cors 支持，并且：
 
-- AList 使用浏览器的 stream API 来支持打包下载，所以需要浏览器支持。通常，它被新的浏览器支持，例如 Chrome、Firefox、Edge 等。
+- AList 使用浏览器的 stream API 来支持打包下载，所以需要浏览器支持。通常这个API会被新的浏览器支持，例如 Chrome、Firefox、Edge 等。
 
 ### 为什么我上传文件时显示`Uploading in backend`？
 
