@@ -44,9 +44,9 @@ The default installation is in `/opt/alist`. To customize the installation path,
 
 ```bash
 # Install
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s install /root
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s install /root
 # update
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s update /root
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s update /root
 # Uninstall
-curl -fsSL "https://alist.nn.ci/install.sh" | bash -s uninstall /root
+curl -fsSL "https://s.nn.ci/alist.sh" | bash -s uninstall /root
 ```
