@@ -23,12 +23,12 @@ star: true
 docker exec -it alist ./alist admin
 ```
 
-### 稳定版
+### 发行版本
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
-### 测试版
+### 开发版本
 
 仅适用于 amd64/arm64。 不推荐，这可能无法正常工作。
 ```bash

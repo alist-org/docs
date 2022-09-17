@@ -23,12 +23,12 @@ See the log output for the admin's info:
 docker exec -it alist ./alist admin
 ```
 
-### Stable version
+### Release version
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
-### Beta version
+### Dev version
 Just for amd64/arm64. Not recommended, this may can't work properly. 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:main
