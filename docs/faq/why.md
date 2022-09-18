@@ -81,3 +81,7 @@ Same as pdf preview, requires https+cors support,and:
 ### Why can't I download files after add `AliyunDirve` storage and get `InvalidArgument` error?
 
 - Due to referrer restrictions, mobile tokens must be used if you don't open any proxy.
+
+### Why is the uploaded file not displayed/deleted file still/modified in the root directory does not take effect? ​
+
+There is a half-hour cache by default, which can be modified on the Add Storage page. If you need to refresh immediately, click the refresh button in the lower right corner of the directory that needs to be refreshed.
