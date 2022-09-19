@@ -51,9 +51,10 @@ Otherwise you can ask the owner to reset the password.
 
 Refer to [config](../config/configuration.md#port)
 
-### How to update
+### How to upgrade
 
-Except for the incompatible version marked in the changelog, you can directly replace the binary file to update.
+Except for the incompatible version marked in the changelog, you can directly replace the binary file to upgrade.
+
 For docker user, just remove the old container and pull the new image then run it.
 
 ### How to allow guest to upload files
