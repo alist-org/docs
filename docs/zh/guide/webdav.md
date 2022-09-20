@@ -29,8 +29,8 @@ star: true
 | 路径     | dav                         |
 | 协议     | http/https                  |
 | 端口     | 与网页端一致                 |
-| WebDav用户名 | 与网页端设置一致          |
-| WebDav密码 | 与网页端设置一致            |
+| WebDav用户名 | 与网页端用户名一致          |
+| WebDav密码 | 与网页端密码一致            |
 
 ### WebDav 存储支持
 
