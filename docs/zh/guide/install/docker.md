@@ -18,7 +18,7 @@ star: true
 
 # 使用 Docker
 
-查看管理员信息的日志输出：
+查看管理员信息：
 ```bash
 docker exec -it alist ./alist admin
 ```
