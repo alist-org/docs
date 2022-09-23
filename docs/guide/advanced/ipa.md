@@ -23,3 +23,5 @@ You can directly upload the ipa file.
 But for ios>=16, you need to name the ipa file: `original file name@bundle-identifier.ipa`, that is, you need to add `@bundle-identifier` on the original basis, in which `bundle-identifier` is the `CFBundleIdentifier` of Info.plist in the IPA package. Such as:
 
 - aszs@rn.notes.best.ipa
+
+Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename your ipa files automatically and quickly.

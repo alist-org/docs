@@ -23,3 +23,5 @@ star: true
 但是对于ios>=16 ， 你需要将ipa文件命名为：`原文件名@bundle-identifier.ipa`，即需要在原来的基础上加入`@bundle-identifier`，其中的`bundle-identifier`即IPA包中Info.plist的`CFBundleIdentifier`。比如：
 
 - aszs@rn.notes.best.ipa
+
+推荐你使用[ipa-renamer]（https://github.com/Xhofe/ipa-renamer）自动快速地重命名你的IPA文件。
