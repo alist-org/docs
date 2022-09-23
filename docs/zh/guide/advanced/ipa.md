@@ -24,4 +24,4 @@ star: true
 
 - aszs@rn.notes.best.ipa
 
-推荐你使用[ipa-renamer]（https://github.com/Xhofe/ipa-renamer）自动快速地重命名你的IPA文件。
+推荐你使用[ipa-renamer](https://github.com/Xhofe/ipa-renamer)自动快速地重命名你的IPA文件。
