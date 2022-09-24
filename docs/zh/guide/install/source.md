@@ -26,17 +26,17 @@ star: true
 
 :::
 
-### 环境准备
+## 环境准备
 
 首先，你需要一个有`git`，`nodejs`，`pnpm`，`golang>=1.18`，`gcc`的环境
 
-### 构建前端
+## 构建前端
 
-克隆https://github.com/alist-org/alist-web 这个项目，执行`pnpm && pnpm build`得到dist目录下的目标文件
+克隆 https://github.com/alist-org/alist-web ，执行 `pnpm && pnpm build` 得到 dist 目录下的目标文件
 
-### 构建后端
+## 构建后端
 
-克隆这个项目https://github.com/alist-org/alist ，将上一步的`dist`目录复制到项目下的`public`目录下，然后：
+克隆 https://github.com/alist-org/alist ，将上一步的 `dist` 目录复制到项目下的 `public` 目录下，然后执行：
 
 ```bash
 appName="alist"

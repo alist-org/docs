@@ -18,16 +18,16 @@ star: true
 
 # PikPak
 
-### 用户名
+## 用户名
 
 邮件或者电话？
 
-### 密码
+## 密码
 
 密码
 
-### 根文件夹ID
+## 根文件夹ID
 
-可以通过 https://mumuchenchen.github.io/pikpak 获取，默认 `root`。
+可以通过 https://mumuchenchen.github.io/pikpak 获取，默认为 `root`。
 
 ![image.png](/img/drivers/pikpak.png)

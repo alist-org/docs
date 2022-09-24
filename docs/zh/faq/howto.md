@@ -20,14 +20,14 @@ star: true
 
 ### 如何为文件/文件夹添加密码？
 
-添加 [meta](../guide/advanced/meta.md) 记录。
+添加[元信息](../guide/advanced/meta.md)
 
 ### 如何对子目录进行反向代理？
 
 使用 nginx 反向代理到 https://nn.ci/alist 的示例：
 
 - 正常安装
-- 将 [Api url](../config/site.md#api-url) 设置为 `https://nn.ci/alist`, [Base path](../config/site.md#base-path) 到 `alist` 并点击保存按钮
+- 将 [API url](../config/site.md#api-url) 设置为 `https://nn.ci/alist`, [Base path](../config/site.md#base-path) 到 `alist` 并点击保存按钮
 - 在 nginx 中添加反向代理配置
 
 ```nginx
@@ -46,7 +46,8 @@ location /alist/ {
 
 ### 忘记密码怎么办？
 
-如果您是站点的所有者，您可以通过在终端中运行`./alist admin` 来获取管理员账号信息。
+如果您是站点的所有者，您可以通过在终端中运行 `./alist admin` 来获取管理员账号信息。
+
 否则，您可以要求站点所有者重置密码。
 
 ### 如何修改监听端口 ​
@@ -56,15 +57,16 @@ location /alist/ {
 ### 如何更新
 
 除了 changelog 中标注的不兼容版本，通常可以直接替换二进制文件进行更新。
+
 对于 docker 用户，只需删除旧的容器并拉取新的docker image，然后运行它即可。
 
 ### 如何允许访客上传文件
 
-添加一个 [meta](../guide/advanced/meta.md) 记录，并打开 `write` 字段。
+添加[元信息](../guide/advanced/meta.md)，并启用"写入"
 
-### 如何去掉底部的`powered_by Alist`？​
+### 如何去掉底部的"由 AList 驱动"？​
 
-请尊重开发者的劳动，谢谢。如果你真的想删除它，你可以使用自定义 css 来隐藏它。
+请尊重开发者的劳动，谢谢。如果你真的想删除它，你可以使用自定义 CSS 来隐藏它。
 
 ### 添加 189 云存储时：设备 ID 不存在，需要二次设备验证 ​
 

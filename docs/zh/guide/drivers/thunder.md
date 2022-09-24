@@ -57,15 +57,15 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 ### 登录类型
 
-选择 User 时只需要填用户名和密码
+选择 User 时填用户名和密码
 
-**荐**: 选择 RefreshToken 时只需填写 RefreshToken
+选择 RefreshToken 时只需填写 `RefreshToken`
 
 ### 签名类型
 
-选择 Algorithms 时只需填写 Algorithms(比较难获取,需要逆向)
+选择 Algorithms 时需填写 `Algorithms`(比较难获取,需要逆向)
 
-**荐**: 选择 CaptchaSign 时只需填写 CaptchaSign 和 Timestamp
+选择 CaptchaSign 时只需填写 `CaptchaSign` 和 `Timestamp`
 
 ```
 //签名算法
@@ -82,9 +82,9 @@ CaptchaSign = "1." + str
 
 ### DeviceID
 
-通过 md5 计算的值，用于判断登录的设备
+通过 MD5 计算的值，用于判断登录的设备
 
-### ClientID、ClientSecret、ClientVersion、PackageName
+### ClientID, ClientSecret, ClientVersion, PackageName
 
 与签名有关，根据实际情况填写
 
@@ -96,26 +96,26 @@ API 请求使用的 UserAgent，设置错误可能无法访问或限速
 
 下载时用到的 User Agent，如果设置错误会无法下载(开启代理会使用) 固定参数：
 
-**Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36**
+`Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36`
 
 ## 关键数据获取流程
 
-通过网络分析工具(抓包工具)获取迅雷请求数据 --- 以下信息请仔细阅读
+通过网络分析工具(抓包工具)获取迅雷请求数据
 
-打开迅雷并登录账号（下图使用的是 PC 客户端来操作的,Web 端也可以）
+打开迅雷并登录账号（下图使用的是 PC 客户端来操作的，Web 端也可以）
 
 请求 https://xluser-ssl.xunlei.com/v1/shield/captcha/init 中包含
 CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、User-Agent
 
-**注**：获取好两张图信息后再慢慢的从抓到的两条数据内挑选数据填进去
+注：获取好两张图信息后再慢慢的从抓到的两条数据内挑选数据填进去
 
-登录迅雷 打开抓包工具后，这时候可能，不能立马获取到 **v1/shield/captcha/init** 的信息，
+登录迅雷 打开抓包工具后，这时候可能，不能立马获取到 `v1/shield/captcha/init` 的信息，
 
 迅雷 PC 客户端 和抓包工具不要关闭，等待即可，**5 分钟左右** 就会自动刷新
 
 就会看到如下图的参数 照着获取填写即可(看不清的话可以右键复制图片链接到浏览器新开个窗口打开)
 
-看到 **v1/shield/captcha/init** 抓取到后 请**立刻马上不要耽误一秒钟** 把迅雷在右下角任务栏的迅雷右键点击退出，彻底退出 然后重新打开 获取到**图二**
+看到 `v1/shield/captcha/init` 抓取到后 请**立刻马上不要耽误一秒钟** 把迅雷在右下角任务栏的迅雷右键点击退出，彻底退出 然后重新打开 获取到**图二**
 
 ![B1](https://pic.rmb.bdstatic.com/bjh/0027f92bd0068e676309e722c3e1b1ba.png)
 
@@ -127,6 +127,6 @@ CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、Us
 
 图一包含 **7 条** 参数 | 图一包含 **2 条** 参数 | 一条固定参数(Down UserAgent) ，十条参数 和 3 个选项 以及一个挂载路径，写好保存即可，保存前记得检查喔~~
 
-### ThunderExpert 完整的参数填演示图：
+### ThunderExpert 完整的参数填演示图
 
 ![示意图](https://pic.rmb.bdstatic.com/bjh/e9293a70b3f105d5a698c7577bbe5fb2.png)
