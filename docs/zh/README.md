@@ -11,7 +11,7 @@ actions:
     type: primary
 
   - text: Github🌱
-    link: https://github.com/AList-org/AList
+    link: https://github.com/alist-org/alist
 
 features:
   - title: 使用简单
