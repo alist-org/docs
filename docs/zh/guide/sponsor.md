@@ -23,7 +23,7 @@ star: true
 如果你觉得这个项目对你有帮助，不妨考虑给我买杯奶茶😄。
 
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
-- Paypal: https://www.paypal.me/Xhofe
+- PayPal: https://www.paypal.me/Xhofe
 - 支付宝/微信支付/QQ支付:
 
 :::tabs

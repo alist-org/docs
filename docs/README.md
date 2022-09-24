@@ -10,7 +10,7 @@ actions:
     link: /guide/
     type: primary
 
-  - text: Github🌱
+  - text: GitHub🌱
     link: https://github.com/alist-org/alist
 
 features:
@@ -22,9 +22,9 @@ features:
     icon: storage
     details: Alist supports multiple storage providers, including local storage, Aliyundrive, Onedrive, Google Drive, etc., and is easily expand.
 
-  - title: Support WebDav
+  - title: Support WebDAV
     icon: waline
-    details: Alist supports all storage WebDav, which is a standard for accessing files on.
+    details: Alist supports all storage WebDAV, which is a standard for accessing files on.
 
   - title: Dark Mode
     icon: contrast
@@ -47,6 +47,6 @@ features:
     details: Including text editor, readme/html render, file permalink, cloudflare workers proxy, etc.
 
 copyright: false
-footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a> <div>AGPL-3.0 Licensed | Copyright © 2020-present AList</div>
+footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a> <div>AGPL-3.0 Licensed | Copyright © 2022-present AList</div>
 ---
 

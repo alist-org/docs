@@ -22,35 +22,38 @@ star: true
 
 程序默认监听 5244 端口。如有修改，请一并修改下列配置中的端口号。
 
-### nginx
+## nginx
 
 在网站配置文件的 server 字段中添加
 
-```nginx
+```conf
 location / {
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_set_header Host $http_host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header Range $http_range;
-	  proxy_set_header If-Range $http_if_range;
-    proxy_redirect off;
-    proxy_pass http://127.0.0.1:5244;
-    # the max size of file to upload
-    client_max_body_size 20000m;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header Host $http_host;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header Range $http_range;
+	proxy_set_header If-Range $http_if_range;
+  proxy_redirect off;
+  proxy_pass http://127.0.0.1:5244;
+  # the max size of file to upload
+  client_max_body_size 20000m;
 }
 ```
 
 :::warning
-如果使用bt.cn，请务必删除以下默认配置
+如果使用宝塔面板，请务必删除以下默认配置
 
+```conf
 - location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md
 - location ~ .\*\.(gif|jpg|jpeg|png|bmp|swf)$
 - location ~ .\*\.(js|css)?$
-  :::
+```
 
-### Apache
+:::
 
-在VirtualHost字段下添加配置项ProxyPass，例子：
+## Apache
+
+在 VirtualHost 字段下添加配置项 ProxyPass，如：
 
 ```xml
 <VirtualHost *:80>
@@ -63,12 +66,21 @@ location / {
 </VirtualHost>
 ```
 
-### Caddy
+## Caddy
 
-在Caddyfile文件下添加配置项reverse_proxy，例子：
+在 Caddyfile 文件下添加 reverse_proxy，如：
 
-```xml
+```
 :80 {
-     reverse_proxy 127.0.0.1:5244
+  reverse_proxy 127.0.0.1:5244
 }
 ```
+
+如果部署在 443 端口正常使用的服务器上且使用域名进行访问，建议使用这种配置让 Caddy 自动申请证书：
+
+```
+example.com {
+  reverse_proxy 127.0.0.1:5244
+}
+
+将 `example.com` 替换为你自己解析后的域名。

@@ -20,14 +20,14 @@ star: true
 
 :::tip
 
-由于阿里云盘referer的限制，必须使用移动token。 使用桌面 Web 令牌将导致无法下载和预览。
-当然，如果你在本地使用或者带宽足够大，你也可以开启代理，让桌面web的`refresh token`可以工作。
+由于阿里云盘 referer 的限制，必须使用移动端 token。 使用桌面 Web 令牌将导致无法下载和预览。
+当然，如果你在本地使用或者带宽足够大，你也可以开启代理，让桌面 Web 的 `refresh token` 正常工作。
 
 :::
 
-### 刷新令牌
+## 刷新令牌
 
-按照这个[issue](https://github.com/Xhofe/alist/issues/88)在手机上捕获/查找日志(/data/media/0/Android/data/com.alicloud.databox/ 文件/日志/跟踪/）。 或者您可以点击：
+按照这个 [issue](https://github.com/Xhofe/alist/issues/88) 在手机上捕获/查找日志 (/data/media/0/Android/data/com.alicloud.databox/ 文件/日志/跟踪/）。 或者您可以点击：
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -69,13 +69,13 @@ const getToken = async ()=>{
   const {content:{data:{qrCodeStatus,loginResult,bizExt}}} = res;
   if(loginResult !== "success"){
     state.value = 2;
-    btnText.value = '使用阿里云盘 APP 扫描然后点击'
+    btnText.value = '使用阿里云盘 App 扫描然后点击'
     alert('Status:' + qrCodeStatus);
     return
   }
   const bizData = JSON.parse(atob(bizExt));
   token.value = bizData.pds_login_result.refreshToken;
-  btnText.value = '获取Token成功'
+  btnText.value = '获取 Token 成功'
   state.value = 4;
   console.log(res)
 }
@@ -107,8 +107,12 @@ const onClick = async ()=>{
 
 *API is hosted on replit.com*
 
-### Root folder file_id
+## Root folder file_id
 
-打开阿里云驱动官网，点击进入要设置的文件夹时点击url后面的字符串，如https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940，即`5fe01e1830601baf774e4827a9fb8fb2b5bf7940`：
+打开阿里云驱动官网，点击进入要设置的文件夹时点击 URL 后面的字符串
+
+如 https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
+
+这个文件夹的 file_id 即为 `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`：
 
 ![file_id](/img/drivers/aliyundrive.png)

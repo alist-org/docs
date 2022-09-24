@@ -16,12 +16,12 @@ sticky: true
 star: true
 ---
 
-# IPA安装
+# IPA 安装
 
-直接上传ipa文件即可。
+直接上传 ipa 文件即可。
 
-但是对于ios>=16 ， 你需要将ipa文件命名为：`原文件名@bundle-identifier.ipa`，即需要在原来的基础上加入`@bundle-identifier`，其中的`bundle-identifier`即IPA包中Info.plist的`CFBundleIdentifier`。比如：
+但是对于 iOS 16 以上的设备，你需要将 ipa 文件命名为：`原文件名@bundle-identifier.ipa`，即需要在原来的基础上加入`@bundle-identifier`，其中的 `bundle-identifier` 即 IPA 包中 `Info.plist` 的 `CFBundleIdentifier`。如：
 
 - aszs@rn.notes.best.ipa
 
-推荐你使用[ipa-renamer](https://github.com/Xhofe/ipa-renamer)自动快速地重命名你的IPA文件。
+推荐你使用 [ipa-renamer](https://github.com/Xhofe/ipa-renamer) 自动快速地重命名你的 IPA 文件。

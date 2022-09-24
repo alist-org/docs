@@ -19,10 +19,13 @@ star: true
 # 谷歌云盘
 
 支持团队盘（根目录ID填写团队盘的目录ID）
-### 获取client_id、client_secret、refresh_token
+
+## 获取 client_id, client_secret, refresh_token
+
 参考 https://tool.nn.ci/google/request
 
-### 根目录file_id
-与阿里云驱动类似，官网URL的最后一个字符串，如：
+## 根目录file_id
+
+与阿里云驱动类似，官网 URL 的最后一个字符串，如：
 
 ![google](/img/drivers/googledrive.png)

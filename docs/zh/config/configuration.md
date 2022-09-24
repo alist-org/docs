@@ -59,7 +59,7 @@ star: true
 
 ### force
 
-程序会优先从环境变量中读取配置，设置`force`为`true`会使程序忽略环境变量强制读取配置文件。
+程序会优先从环境变量中读取配置，设置 `force` 为 `true` 会使程序忽略环境变量强制读取配置文件。
 
 ### address
 
@@ -75,13 +75,13 @@ star: true
 
 ### cdn
 
-CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换为`alist-web`的实际版本
+CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替换为 `alist-web` 的实际版本
 这是动态的。 现有的 dist 资源托管在 npm 和 GitHub 上，它们的位置是：
 
 - https://www.npmjs.com/package/alist-web
 - https://github.com/alist-org/web-dist
 
-所以你可以使用任何 npm 或 github cdn 作为路径，例如：
+所以你可以使用任何 npm 或 GitHub CDN 作为路径，例如：
 
 - https://cdn.jsdelivr.net/npm/alist-web@$version/dist/
 - https://unpkg.com/alist-web@$version/dist/
@@ -93,11 +93,11 @@ CDN地址，如果要使用CDN，可以设置该字段，`$version`会被替换�
 
 ### database
 
-数据库配置，默认是`sqlite3`，也可以使用`mysql`或者`postgres`。
+数据库配置，默认是 `sqlite3`，也可以使用 `mysql` 或者 `postgres`。
 
 ### scheme
 
-协议配置，如果要使用https，可以设置该字段。
+协议配置，如果要使用 HTTPS，可以设置该字段。
 
 ### temp_dir
 

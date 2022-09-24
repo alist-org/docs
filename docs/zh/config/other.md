@@ -18,10 +18,10 @@ star: true
 
 # 其他设置
 
-### Aria2
+## Aria2
 
-设置 Aria2 uri 和 Aria2 以供离线下载。 Aria2 需要和 alist 安装在同一台服务器上。
+设置 Aria2 URI 以供离线下载。 Aria2 需要和 AList 安装在同一台服务器上。
 
-### Token
+## Token
 
 可用于访问程序所有 API 的令牌。

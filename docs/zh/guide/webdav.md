@@ -10,7 +10,7 @@ category:
   - Guide
 # A page can have multiple tags
 tag:
-  - Webdav
+  - WebDAV
   - Guide
 # this page is sticky in article list
 sticky: true
@@ -18,9 +18,9 @@ sticky: true
 star: true
 ---
 
-# WebDav
+# WebDAV
 
-### WebDAV 配置
+## WebDAV 配置
 
 | Name     | Value                       |
 | -------- | --------------------------- |
@@ -29,10 +29,10 @@ star: true
 | 路径     | dav                         |
 | 协议     | http/https                  |
 | 端口     | 与网页端一致                 |
-| WebDav用户名 | 与网页端用户名一致          |
-| WebDav密码 | 与网页端密码一致            |
+| WebDAV用户名 | 与网页端用户名一致          |
+| WebDAV密码 | 与网页端密码一致            |
 
-### WebDav 存储支持
+## WebDAV 存储支持
 
 | 存储类型          | 列出文件/文件夹 | 下载文件 | 创建目录 | 重命名 | 移动 | 复制 | 上传文件/文件夹 |
 | ---------------- | :--: | :------: | :---: | :----: | :--: | :--: | :----: |

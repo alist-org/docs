@@ -17,13 +17,13 @@ star: true
 ---
 # 手动安装
 
-### 获取Alist
-打开[AList Release](https://github.com/Xhofe/alist/releases)下载待部署系统对应的文件。 最新版的前端已经和后端打包好了，不用再下载前端文件了。
+### 获取 AList
+打开 [AList Release](https://github.com/Xhofe/alist/releases) 下载待部署系统对应的文件。最新版的前端已经和后端打包好了，不用再下载前端文件了。
 
 ### 运行
 
 :::tabs#os
-@tab linux
+@tab Linux
 ```bash
 # 解压下载的文件，得到可执行文件：
 tar -zxvf alist-xxxx.tar.gz
@@ -34,7 +34,7 @@ chmod +x alist
 # 获得管理员信息
 ./alist admin
 ```
-@tab macos
+@tab macOS
 ```bash
 # 解压下载的文件，得到可执行文件：
 tar -zxvf alist-xxxx.tar.gz
@@ -45,7 +45,7 @@ chmod +x alist
 # 获得管理员信息
 ./alist admin
 ```
-@tab windows
+@tab Windows
 ```bash
 # 解压下载的文件，得到可执行文件：
 unzip alist-xxxx.tar.gz
@@ -56,13 +56,15 @@ unzip alist-xxxx.tar.gz
 ```
 :::
 
-*xxxx指的是不同系统/架构对应的名称，一般Linux-x86/64为alist-linux-amd64。 如果你的glibc版本太低，建议下载musl版本*
+xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64。如果你的 glibc 版本太低，建议下载 musl 版本
 
-当你看到`start server@0.0.0.0:5244`的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。 程序默认监听 5244 端口。 现在打开`http://ip:5244`可以看到登录页面，webdav请看[WebDav](../webdav.md)。
+当你看到 `start server@0.0.0.0:5244` 的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开 `http://ip:5244` 可以看到登录页面，WebDAV 请参阅 [WebDav](../webdav.md)。
 
-### Daemon
-`vim /usr/lib/systemd/system/alist.service` 添加如下内容，其中path_alist为alist所在的路径
-```ini
+### 守护进程
+
+使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
+
+```conf
 [Unit]
 Description=alist
 After=network.target
@@ -76,9 +78,12 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
-然后`systemctl daemon-reload`，现在你可以使用这些命令来管理程序：
-- Start: `systemctl start alist`
-- Shut down: `systemctl stop alist`
-- Self-start: `systemctl enable alist`
-- Status: `systemctl status alist`
-- Restart: `systemctl restart alist`
+
+然后，执行 `systemctl daemon-reload` 重载配置，现在你可以使用这些命令来管理程序：
+
+- 启动: `systemctl start alist`
+- 关闭: `systemctl stop alist`
+- 配置开机自启: `systemctl enable alist`
+- 取消开机自启: `systemctl disable alist`
+- 状态: `systemctl status alist`
+- 重启: `systemctl restart alist`
