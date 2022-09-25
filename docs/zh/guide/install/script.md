@@ -25,19 +25,19 @@ star: true
 ## 安装
 
 ```bash
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s install
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
 ```
 
 ## 更新
 
 ```bash
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s update
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
 ```
 
 ## 卸载
 
 ```bash
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s uninstall
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
 ```
 
 ## 自定义路径
@@ -46,9 +46,9 @@ curl -fsSL "https://s.nn.ci/alist.sh" | bash -s uninstall
 
 ```bash
 # Install
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s install /root
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
 # update
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s update /root
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
 # Uninstall
-curl -fsSL "https://s.nn.ci/alist.sh" | bash -s uninstall /root
+curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
 ```
