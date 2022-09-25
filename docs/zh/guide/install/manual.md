@@ -48,11 +48,11 @@ chmod +x alist
 @tab Windows
 ```bash
 # 解压下载的文件，得到可执行文件：
-unzip alist-xxxx.tar.gz
+unzip alist-xxxx.zip
 # 运行程序
-./alist.exe server
+.\alist.exe server
 # 获得管理员信息
-./alist.exe admin
+.\alist.exe admin
 ```
 :::
 

@@ -49,11 +49,11 @@ chmod +x alist
 @tab windows
 ```bash
 # Unzip the downloaded file to get the executable file:
-unzip alist-xxxx.tar.gz
+unzip alist-xxxx.zip
 # Run the program
-./alist.exe server
+.\alist.exe server
 # Get admin's info
-./alist.exe admin
+.\alist.exe admin
 ```
 :::
 
