@@ -22,7 +22,7 @@ star: true
 
 AList 的版本，只读。
 
-## 接口地址
+## Api地址
 
 你的 AList 的地址，比如 `https://pan.nn.ci`。这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能会失效，比如缩略图和 `LocalStorage`。
 
