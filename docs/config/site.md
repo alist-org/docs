@@ -24,7 +24,11 @@ The version of the `alist`, readonly.
 
 ### Api url
 
-The address of your `alist`, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, some functions may fail, such as thumbnail of `LocalStorage`.
+The address of your `alist`, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
+- thumbnail of `LocalStorage`
+- Preview after opening web proxy
+- The download address after opening the web proxy
+- Reverse proxy to sub directory
 
 ### Base path
 
