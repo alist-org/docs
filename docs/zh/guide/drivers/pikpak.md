@@ -28,6 +28,6 @@ star: true
 
 ## 根文件夹ID
 
-可以通过 https://mumuchenchen.github.io/pikpak 获取，默认为 `root`。
+可以通过 https://mypikpak.com/ 获取，默认为 `root`。
 
 ![image.png](/img/drivers/pikpak.png)

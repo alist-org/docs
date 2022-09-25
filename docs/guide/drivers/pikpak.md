@@ -28,6 +28,6 @@ password
 
 ### Root folder id
 
-Can get with https://mumuchenchen.github.io/pikpak, default `root`.
+Can get with https://mypikpak.com/ , default `root`.
 
 ![image.png](/img/drivers/pikpak.png)
