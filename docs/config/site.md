@@ -24,13 +24,18 @@ The version of the `alist`, readonly.
 
 ### Api url
 
+> Deprecated in v3.0.2 and later, moved to [site_url](./configuration.md#siteurl)
+
 The address of your `alist`, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
 - thumbnail of `LocalStorage`
 - Preview after opening web proxy
 - The download address after opening the web proxy
 - Reverse proxy to sub directory
+- ...
 
 ### Base path
+
+> Deprecated in v3.0.2 and later, moved to [site_url](./configuration.md#siteurl)
 
 Default `/`, if you want reverse proxy with sub directory(see [reverse proxy with sub directory](../faq/howto.md#how-to-reverse-proxy-with-sub-directory) for details), such as `https://pan.nn.ci/alist`, you should set this field to `alist`, at the same time you need to set `Api url` to `https://pan.nn.ci/alist`.
 

@@ -25,8 +25,9 @@ star: true
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
-  "jwt_secret": "random generated",
+  "site_url": "",
   "cdn": "",
+  "jwt_secret": "random generated",
   "database": {
     "type": "sqlite3",
     "host": "",
@@ -69,9 +70,14 @@ The address to listen on, default `0.0.0.0`
 
 The port to listen on, default `5244`
 
-### jwt_secret
+### site_url
 
-The secret used to sign the JWT token, random generated first time start.
+The url of your `alist` site, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
+- thumbnail of `LocalStorage`
+- Preview after opening web proxy
+- The download address after opening the web proxy
+- Reverse proxy to sub directory
+- ...
 
 ### cdn
 
@@ -90,6 +96,10 @@ So you can use any npm or github cdn as the path, for example:
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
 
 Also you can keep it empty to use local dist.
+
+### jwt_secret
+
+The secret used to sign the JWT token, random generated first time start.
 
 ### database
 
