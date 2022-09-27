@@ -179,6 +179,19 @@ Thanks to the following sponsors:
 - *烜
 - *阳
 - **操
+- 哆*）
+- *毅
+- *峰
+- *地
+- *浪
+- *扬
+- H*！
+- 元*_
+- *鸟
+- **冉
+- 翼支付用户
+- *涛
+- *晨
 
 If there is any omission, please contact to add it.
 
