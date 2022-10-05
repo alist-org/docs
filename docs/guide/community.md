@@ -26,7 +26,7 @@ Click the link: https://t.me/alist_chat
 ### Discussions​
 Welcome to visit https://github.com/Xhofe/alist/discussions to discuss.
 
-### QQ Group
-Click the link: https://jq.qq.com/?_wv=1027&k=YJJj2Gwb , or search `938287703`.
+### Discord
+Click the link: https://discord.gg/F4ymsH4xv2
 
 Welcome to join the community, before asking questions, please make sure you can't find the answer here. Read "How To Ask Questions The Smart Way" before asking questions, maybe it can be faster of solving the problem.

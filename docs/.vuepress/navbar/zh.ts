@@ -14,7 +14,7 @@ export const zh = navbar([
         link: "https://github.com/alist-org/alist/discussions",
       },
       { text: "Telegram", link: "https://t.me/alist_chat" },
-      { text: "QQ群", link: "https://jq.qq.com/?_wv=1027&k=YJJj2Gwb" },
+      { text: "Discord", link: "https://discord.gg/F4ymsH4xv2" },
     ],
   },
   {
