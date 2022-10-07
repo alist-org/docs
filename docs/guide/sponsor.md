@@ -23,7 +23,7 @@ star: true
 If you think this project is helpful to you, you may wish to consider buying me a cup of milk tea😄.
 
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
-- Paypal: https://www.paypal.me/Xhofe
+- Sponsor-me: https://sp.nn.ci
 - Alipay/WechatPay/QQPay:
 
 :::tabs
@@ -38,10 +38,7 @@ If you think this project is helpful to you, you may wish to consider buying me 
 
 :::
 
-- dun: https://dun.mianbaoduo.com/@Xhofe
-- afdian: https://afdian.net/@Xhofe
-
-Thanks to the following sponsors:
+Thanks to the following sponsors, and friends in [sponsor-me](https://sp.nn.ci/list)
 
 - **鑫
 - 岛主

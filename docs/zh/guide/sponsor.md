@@ -23,7 +23,7 @@ star: true
 如果你觉得这个项目对你有帮助，不妨考虑给我买杯奶茶😄。
 
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
-- PayPal: https://www.paypal.me/Xhofe
+- 赞助我: https://sp.nn.ci
 - 支付宝/微信支付/QQ支付:
 
 :::tabs
@@ -38,10 +38,7 @@ star: true
 
 :::
 
-- 顿顿饭: https://dun.mianbaoduo.com/@Xhofe
-- 爱发电: https://afdian.net/@Xhofe
-
-感谢以下赞助者：
+感谢以下赞助者，以及[sponsor-me](https://sp.nn.ci/list)的朋友们
 
 - **鑫
 - 岛主
