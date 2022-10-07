@@ -20,7 +20,7 @@ star: true
 
 ### Aria2
 
-Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the same server as alist.
+Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the same server(container if use docker) as alist.
 
 ### Token
 

@@ -20,7 +20,7 @@ star: true
 
 ## Aria2
 
-设置 Aria2 URI 以供离线下载。 Aria2 需要和 AList 安装在同一台服务器上。
+设置 Aria2 URI 以供离线下载。 Aria2 需要和 AList 安装在同一台服务器(如果使用docker则是容器)上。
 
 ## Token
 
