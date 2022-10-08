@@ -26,6 +26,7 @@ star: true
   "address": "0.0.0.0",
   "port": 5244,
   "jwt_secret": "random generated",
+  "token_expires_in": 48,
   "site_url": "",
   "cdn": "",
   "database": {
@@ -100,6 +101,10 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 ### jwt_secret
 
 用于签署 JWT 令牌的密钥，第一次启动时随机生成。
+
+### token_expires_in
+
+用户登录过期时间，单位：小时
 
 ### database
 
