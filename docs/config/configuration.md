@@ -28,6 +28,7 @@ star: true
   "site_url": "",
   "cdn": "",
   "jwt_secret": "random generated",
+  "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
     "host": "",
@@ -100,6 +101,10 @@ Also you can keep it empty to use local dist.
 ### jwt_secret
 
 The secret used to sign the JWT token, random generated first time start.
+
+### token_expires_in
+
+User login expiration time, unit: `hours`.
 
 ### database
 
