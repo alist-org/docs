@@ -70,3 +70,6 @@ Please respect the developer's labor, thank you. If you really want to remove it
 
 It may be that the prevention and control has been triggered. After changing the password, add it again.
 
+### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
+
+For network problems such as these, please troubleshoot and solve them yourself.

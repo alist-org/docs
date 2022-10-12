@@ -71,3 +71,7 @@ location /alist/ {
 ### 添加 189 云存储时：设备 ID 不存在，需要二次设备验证 ​
 
 可能是触发了风控。更改密码后，再次添加即可。
+
+### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
+
+诸如此类的网络问题，请自行排查解决。
