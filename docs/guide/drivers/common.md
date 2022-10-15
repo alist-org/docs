@@ -35,7 +35,7 @@ Cache time of directory structure.
 
 ### Web proxy
 
-Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [Api url](../../config/site.md#api-url) so that alist can works fine.
+Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [Site url](../../config/configuration.md#site_url) so that alist can works fine.
 
 ### Webdav policy
 
