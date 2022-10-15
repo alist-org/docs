@@ -32,7 +32,7 @@ star: true
 
 ## 构建前端
 
-克隆 https://github.com/alist-org/alist-web ，执行 `pnpm && pnpm build` 得到 dist 目录下的目标文件
+使用 `git clone --recursive https://github.com/alist-org/alist-web.git` 克隆前端 ，执行 `pnpm install && pnpm build` 得到 dist 目录下的目标文件
 
 ## 构建后端
 
