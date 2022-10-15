@@ -36,7 +36,7 @@ star: true
 
 ## Web 代理
 
-网页预览、下载和直接链接是否通过中转。如果你打开此项，建议你设置[Api 地址](../../config/configuration.md#site_url)，以帮助alist更好的工作。
+网页预览、下载和直接链接是否通过中转。如果你打开此项，建议你设置[site_url](../../config/configuration.md#site_url)，以帮助alist更好的工作。
 
 ## WebDAV 策略
 
