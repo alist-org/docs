@@ -30,7 +30,7 @@ This step is only for users who need to modify the source code by themselves. If
 First, you need to have an environment of `git`, `nodejs`, `pnpm`, `golang>=1.18`, `gcc`
 
 ### Building the front end
-Clone https://github.com/alist-org/alist-web this project, execute `pnpm && pnpm build` to get the target file in the dist directory
+Use `git clone --recursive https://github.com/alist-org/alist-web.git` command to clone this project, execute `pnpm install && pnpm build` to get the target file in the dist directory
 
 ### Build the backend
 Clone https://github.com/alist-org/alist for this project, copy the `dist` directory of the previous step to the `public` directory under the project, and then:
