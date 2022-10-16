@@ -42,6 +42,11 @@ category:
 - [x] [百度网盘](https://pan.baidu.com/)
 - [x] [夸克网盘](https://pan.quark.cn)
 - [x] [迅雷网盘](https://pan.xunlei.com)
+- [x] [蓝奏云](https://www.lanzou.com/)
+- [x] [阿里云盘分享](https://www.aliyundrive.com/)
+- [x] [谷歌相册](https://photos.google.com/)
+- [x] [Mega.nz](https://mega.nz)
+- [x] [一刻相册](https://photo.baidu.com/)
 
 ## Discussion
 
