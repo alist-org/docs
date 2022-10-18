@@ -85,3 +85,7 @@ Same as pdf preview, requires https+cors support,and:
 ### Why is the uploaded file not displayed/deleted file still/modified in the root directory does not take effect? ​
 
 There is a half-hour cache by default, which can be modified on the Add Storage page. If you need to refresh immediately, click the refresh button in the lower right corner of the directory that needs to be refreshed.
+
+### Why is it still incorrect although I input the password that get by `./alist admin` in terminal?
+
+Check whether the directory you run `./alist admin` and start alist is the same. alist reads the configuration in the current directory where you run the program by default, so running in different directorys will result in different data being read.
