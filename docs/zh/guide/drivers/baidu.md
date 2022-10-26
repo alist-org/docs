@@ -20,10 +20,10 @@ star: true
 
 :::tip
 
-由于百度网盘 API 的限制，下载大于 20M 左右的文件需要携带 header："User-Agent"："pan.baidu.com"，所以下载大于 20M 的文件时，需要设置请求头，例如使用 curl：
+由于百度网盘 API 的限制，下载大于 20M 左右的文件需要携带 header："User-Agent":"pan.baidu.com"，所以下载大于 20M 的文件时，需要设置请求头，例如使用 curl：
 
 ```bash
-curl -L -X GET 'YOUR_LINK' -H 'User-Agent：pan.baidu.com'
+curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 ```
 
 或者使用本程序中的代理功能进行传输。
