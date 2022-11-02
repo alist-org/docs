@@ -55,13 +55,21 @@ unzip alist-xxxx.zip
 # Get admin's info
 .\alist.exe admin
 ```
+@tab win(scoop)
+```bash
+# Install
+scoop install alist
+# Run
+alist server
+```
 :::
 
 *The xxxx refers to the names corresponding to different systems/architectures, generally Linux-x86/64 is alist-linux-amd64. If your glibc version is too low, it is recommended to download the musl version*
 
 When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
 
-### Daemon
+### Daemon(Linux)
+
 `vim /usr/lib/systemd/system/alist.service` add the following content, where path_alist is the path where alist is located
 ```ini
 [Unit]
@@ -71,7 +79,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=path_alist
-ExecStart=path_alist/alist-xxxx server
+ExecStart=path_alist/alist server
 Restart=on-failure
  
 [Install]

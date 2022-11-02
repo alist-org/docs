@@ -54,13 +54,20 @@ unzip alist-xxxx.zip
 # 获得管理员信息
 .\alist.exe admin
 ```
+@tab win(scoop)
+```bash
+# 安装
+scoop install alist
+# 运行
+alist server
+```
 :::
 
 xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64。如果你的 glibc 版本太低，建议下载 musl 版本
 
 当你看到 `start server@0.0.0.0:5244` 的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开 `http://ip:5244` 可以看到登录页面，WebDAV 请参阅 [WebDav](../webdav.md)。
 
-### 守护进程
+### 守护进程(Linux)
 
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
 
@@ -72,7 +79,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=path_alist
-ExecStart=path_alist/alist-xxxx server
+ExecStart=path_alist/alist server
 Restart=on-failure
  
 [Install]
