@@ -47,6 +47,8 @@ category:
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [一刻相册](https://photo.baidu.com/)
+- [x] SMB
+- [x] [115](https://115.com/)
 
 ## Discussion
 

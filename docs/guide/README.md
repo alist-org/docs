@@ -49,6 +49,8 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [Baidu photo](https://photo.baidu.com/)
+- [x] SMB
+- [x] [115](https://115.com/)
 
 ### Discussion
 
