@@ -35,7 +35,7 @@ const btnText = ref("获取 Token");
 // 0 -> Initial
 // 1 -> Wait qr
 // 2 -> Wait Scan
-// 3 -> Geting Token
+// 3 -> Getting Token
 // 4 -> Success
 const state = ref(0);
 const src= ref('')
