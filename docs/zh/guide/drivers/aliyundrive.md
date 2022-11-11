@@ -109,7 +109,7 @@ const onClick = async ()=>{
 
 ## Root folder file_id
 
-打开阿里云驱动官网，点击进入要设置的文件夹时点击 URL 后面的字符串
+打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
 如 https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
 
