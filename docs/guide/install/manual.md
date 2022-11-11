@@ -68,6 +68,19 @@ alist server
 
 When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
 
+:::info
+For all platform, you can use follow command to silent start, stop and restart. (v3.4.0 and later)
+
+```bash
+# start server with `--force-bin-dir`
+alist start
+# stop server by pid
+alist stop
+# restart server by pid
+alist restart
+```
+:::
+
 ### Daemon(Linux)
 
 `vim /usr/lib/systemd/system/alist.service` add the following content, where path_alist is the path where alist is located

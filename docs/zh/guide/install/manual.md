@@ -67,6 +67,19 @@ xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist
 
 当你看到 `start server@0.0.0.0:5244` 的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开 `http://ip:5244` 可以看到登录页面，WebDAV 请参阅 [WebDav](../webdav.md)。
 
+:::info
+对于所有平台，您可以使用以下命令来静默启动、停止和重新启动。 （v3.4.0 及更高版本）
+
+```bash
+# 携带`--force-bin-dir`参数启动服务
+alist start
+# 通过pid停止服务
+alist stop
+# 通过pid重启服务
+alist restart
+```
+:::
+
 ### 守护进程(Linux)
 
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
