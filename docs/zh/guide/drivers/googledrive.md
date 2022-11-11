@@ -26,6 +26,6 @@ star: true
 
 ## 根目录file_id
 
-与阿里云驱动类似，官网 URL 的最后一个字符串，如：
+与阿里云盘类似，官网 URL 的最后一个字符串，如：
 
 ![google](/img/drivers/googledrive.png)
