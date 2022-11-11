@@ -18,11 +18,11 @@ star: true
 
 # 又拍云存储
 
-UPYUN Storage Service，refer to as USS
+UPYUN 存储服务，简称 USS
 
 ## Bucket
 
-bucket name
+存储桶名字
 
 ## Endpoint
 
@@ -38,12 +38,12 @@ Operator password
 
 ## Root folder path
 
-Root path, if not filled, it defaults to the root directory.
+根路径，不填则默认为根目录。
 
 ## Custom Host
 
-Custom cdn acceleration domain name
+自定义 CDN 加速域名
 
 ## Sign url expire
 
-The validity period of the signed download address is 4 hours by default. If a custom accelerated domain name is used, this option is invalid.
+签名下载地址的有效期默认为 4 小时。 如果使用自定义加速域名，该选项无效。
