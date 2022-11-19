@@ -68,8 +68,8 @@ Please respect the developer's labor, thank you. If you really want to remove it
 
 ### When adding a 189Cloud storage: the device ID does not exist, and a secondary device verification is required​
 
-It may be that the prevention and control has been triggered. After changing the password, add it again.
+It may be that the risk detection dystem has been triggered. Please changing the password, then, add it again.
 
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
-For network problems such as these, please troubleshoot and solve them yourself.
+For network problems such as these, please troubleshoot and solve them yourself.Don't create any issues for this.
