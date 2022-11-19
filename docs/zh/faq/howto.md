@@ -74,4 +74,4 @@ location /alist/ {
 
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
-诸如此类的网络问题，请自行排查解决。
+诸如此类的网络问题，请自行排查解决。不要为此提出任何的issue
