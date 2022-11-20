@@ -41,3 +41,15 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name
 ## 指定版本
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
+
+## 有关离线下载功能的额外说明
+
+若没有使用```docker pull --platform```参数拉取镜像时，docker可能会在64位操作系统上拉取32位镜像,这将可能导致离线下载功能即使在正常配置情况下也无法使用。
+
+当发生错误时,您会在Alist的日志文件中看到类似错误日志。
+
+```ERRO[2022-11-20 12:05:19] error [unaligned 64-bit atomic operation] while run task  [download http://pic.rmb.bdstatic.com/bjh/34ee946f7a74435a167ca4351d723374.png to [/ftp](/)]```
+
+解决方法,如果是CPU架构是64位，尝试手动拉取64位docker镜像,重新构建容器，再次尝试。
+
+如果是CPU架构是32位，目前尚无可用方案。
