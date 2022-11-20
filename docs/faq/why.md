@@ -43,7 +43,7 @@ If you see this error when adding storage, but you don't see the corresponding d
 
 In particular, for Safari:
 
-- For cross-origin media, content-type must be the media type, not the generic application/octet-stream. So if the content-type returned by the direct link is application/octet-stream, then Safari will not be able to play.(PS: Why Can AliyunDirve play in Safari? Because the official website of the video playback is not the use of download links, but after the transcoding of AliyunDirve)
+- For cross-origin media, content-type must be the media type, not the generic application/octet-stream. So if the content-type returned by the direct link is application/octet-stream, then Safari will not be able to play.(PS: Why Can AliyunDrive play in Safari? Because the official website of the video playback is not the use of download links, but after the transcoding of AliyunDrive)
 
 ### Why can't I preview the office file?
 
@@ -71,11 +71,11 @@ Same as pdf preview, requires https+cors support,and:
 
 ### Why does it shows `Uploading in the backend` when I upload a file?
 
-- All uploads of this program use server transfer
+- All uploads of this program use server transfer, which will consume server traffic to communicate with the corresponding storage API
 
 ### Why do i get `413` http code when i upload a file?
 
-- If you use a reverse proxy, you may need to specify the maximum upload file size and timeout in the configuration
+- If you use a reverse proxy, you may need to specify the maximum upload file size(`client_max_body_size`) and timeout in the web server configuration
 - Otherwise, it may happen that the upload is successful but the front end times out and there is no response
 
 ### Why can't I download files after add `AliyunDirve` storage and get `InvalidArgument` error?
