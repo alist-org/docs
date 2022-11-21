@@ -31,8 +31,8 @@ star: true
 
 - {album_id} : After entering the album you need to mount, the ID after viewing the top link /album is {album_id}
 
-  - https://photo.baidu.com/photo/web/album/ **4021858707431029901** 
-  - bold is {album_id}
+  - https://photo.baidu.com/photo/web/album/4021858707431029901 
+  - **4021858707431029901** is {album_id}
 
 - {tid}: Visit **https://photo.baidu.com/youai/album/v1/list** to get it.
   - After entering the interface, `Ctrl+F` searches for the ID above, and you can see the corresponding {tid} in the following lines
