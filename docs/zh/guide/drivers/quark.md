@@ -25,7 +25,7 @@ star: true
 ## Cookie 和 根文件夹ID
 
 从请求中获取 Cookie 和根文件夹 ID：
-
+方法：按F12打开“调试”，选中“网络”，找到一个以“sort”开头的文件即可找到
 ![quark](/img/drivers/quark.png)
 
 或者根目录id也可以从地址栏获取（根目录为0）：
