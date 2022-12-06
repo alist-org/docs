@@ -1,0 +1,25 @@
+---
+# This is the title of the article
+title: See also
+# This is the icon of the page
+icon: eye
+# This control sidebar order
+order: 1
+# A page can have multiple categories
+category:
+  - FAQ
+# A page can have multiple tags
+tag:
+  - FAQ
+  - Question
+# this page is sticky in article list
+sticky: true
+# this page will appear in starred articles
+star: true
+---
+
+### The following resources may help you
+
+[https://www.bilibili.com/video/BV1VK411f7xQ](https://www.bilibili.com/video/BV1VK411f7xQ)
+
+[https://www.yuque.com/anwenya/alist](https://www.yuque.com/anwenya/alist)
