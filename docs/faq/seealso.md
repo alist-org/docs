@@ -23,3 +23,9 @@ star: true
 [https://www.bilibili.com/video/BV1VK411f7xQ](https://www.bilibili.com/video/BV1VK411f7xQ)
 
 [https://www.yuque.com/anwenya/alist](https://www.yuque.com/anwenya/alist)
+
+[Google](https://www.google.com/search?q=alist)
+
+[Bing](https://www.bing.com/search?q=alist)
+
+[Baidu](https://www.baidu.com/baidu?wd=alist)
