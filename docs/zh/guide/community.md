@@ -26,7 +26,7 @@ star: true
 
 ## Discussions​
 
-欢迎至 https://github.com/Xhofe/alist/discussions 参与项目讨论.
+欢迎至 https://github.com/alist-org/alist/discussions 参与项目讨论.
 
 ## Discord
 
