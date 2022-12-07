@@ -24,7 +24,7 @@ Follow the steps below to enable search:
 
 1. Go to the `indexes` page to select a search index and click `Save`.
 2. After the index is saved, click `Build indexes` to build the index.
-3. Now you can search for files by click the search block on the top right corner of the page or by using the shortcut `Ctrl + F`.
+3. Now you can search for files by click the search block on the top right corner of the page or by using the shortcut `Ctrl + K`.
 
 ### Difference between different search indexes
 
