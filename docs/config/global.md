@@ -50,3 +50,8 @@ What you don't want to show in the error message, One regular expression (in `Go
 ### Ocr api
 
 Used to identify verification codes. You can deploy yourself: https://hub.docker.com/r/xhofe/ddddocr_server. The default ocr api is deployed on the [koyeb](https://app.koyeb.com/)(No availability guarantee), which is not recommended to use in production environment.
+
+
+### Sign all
+
+Add signatures to the direct link of all files (whether with password or not)
