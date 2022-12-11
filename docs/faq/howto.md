@@ -63,7 +63,8 @@ Add a [meta](../guide/advanced/meta.md) record, and open `write` field.
 
 ### How to remove `powered_by Alist` at the bottom?​
 
-Please respect the developer's labor, thank you. If you really want to remove it, you can use customize css to hide it.
+According to our open source license:
+Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. **Copyright and license notices must be preserved.** Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
 
 
 ### When adding a 189Cloud storage: the device ID does not exist, and a secondary device verification is required​
