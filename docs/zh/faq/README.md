@@ -10,3 +10,4 @@ category:
 
 - [How to](howto.md)
 - [Why](why.md)
+- [See also](seealso.md)

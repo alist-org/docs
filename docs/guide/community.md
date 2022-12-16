@@ -24,7 +24,7 @@ star: true
 Click the link: https://t.me/alist_chat
 
 ### Discussions​
-Welcome to visit https://github.com/Xhofe/alist/discussions to discuss.
+Welcome to visit https://github.com/alist-org/alist/discussions to discuss.
 
 ### Discord
 Click the link: https://discord.gg/F4ymsH4xv2

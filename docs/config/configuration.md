@@ -95,6 +95,7 @@ So you can use any npm or github cdn as the path, for example:
 - https://cdn.jsdelivr.net/gh/alist-org/web-dist@$version/dist/
 - https://cdn1.tianli0.top/npm/alist-web@$version/dist/
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
+- https://npm.elemecdn.com/alist-web@$version/dist/
 
 Also you can keep it empty to use local dist.
 
