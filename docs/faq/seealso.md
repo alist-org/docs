@@ -20,6 +20,8 @@ star: true
 
 ### The following resources may help you
 
+> Third party tutorials and information may be outdated and incorrect, and no warranty of availability is made here.
+
 [https://www.bilibili.com/video/BV1VK411f7xQ](https://www.bilibili.com/video/BV1VK411f7xQ)
 
 [https://www.yuque.com/anwenya/alist](https://www.yuque.com/anwenya/alist)
