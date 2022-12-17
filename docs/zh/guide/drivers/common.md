@@ -68,7 +68,9 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 - 在代理程序中验证 sign，sign 的计算方法为：
 
 ```js
-const sign = safeBase64(hmac_sha256(hmac(path, TOKEN)));
+const to_sign = `${path}:${expireTimeStamp}`
+const _sign = safeBase64(hmac_sha256(to_sign, TOKEN));
+const sign = `${_sign}:${expireTimeStamp}`
 ```
 
 `TOKEN`即管理员账户的[token](../../config/other.md#token).

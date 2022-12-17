@@ -68,7 +68,9 @@ You can even develop your own proxy program, the general steps are:
 - Verify sign in the proxy program, the calculation method of sign is:
 
 ```js
-const sign = safeBase64(hmac_sha256(hmac(path, TOKEN)));
+const to_sign = `${path}:${expireTimeStamp}`
+const _sign = safeBase64(hmac_sha256(to_sign, TOKEN));
+const sign = `${_sign}:${expireTimeStamp}`
 ```
 
 The `TOKEN` is the [token](../../config/other.md#token) of admin user.
