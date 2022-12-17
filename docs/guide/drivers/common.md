@@ -68,9 +68,10 @@ You can even develop your own proxy program, the general steps are:
 - Verify sign in the proxy program, the calculation method of sign is:
 
 ```js
-const name = path.split("/").pop();
-const sign = hmac(name, TOKEN);
+const sign = safeBase64(hmac_sha256(hmac(path, TOKEN)));
 ```
+
+The `TOKEN` is the [token](../../config/other.md#token) of admin user.
 
 - After verifying the sign is correct, requesting `HOST/api/fs/link`, you can get the URL of the file and the request header to be carried
 - Use the information to request and return

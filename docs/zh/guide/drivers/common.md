@@ -68,9 +68,10 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 - 在代理程序中验证 sign，sign 的计算方法为：
 
 ```js
-const name = path.split("/").pop();
-const sign = hmac(name, TOKEN);
+const sign = safeBase64(hmac_sha256(hmac(path, TOKEN)));
 ```
+
+`TOKEN`即管理员账户的[token](../../config/other.md#token).
 
 - 验证签名正确后，请求 `HOST/api/fs/link`，可以得到文件的 URL 和要携带的请求头
 - 使用信息请求和返回
