@@ -26,21 +26,74 @@ docker exec -it alist ./alist admin
 
 ## 发行版本
 
+**docker-cli**
+
 ```bash
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
+```
+
+**docker-compose**
+```yaml
+version: '3.3'
+services:
+    alist:
+        restart: always
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        container_name: alist
+        image: 'xhofe/alist:latest'
 ```
 
 ## 开发版本
 
 仅适用于 amd64/arm64。不推荐，这可能无法正常工作。
 
+**docker-cli**
+
 ```bash
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:main
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
+```
+
+**docker-compose**
+```yaml
+version: '3.3'
+services:
+    alist:
+        restart: always
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        container_name: alist
+        image: 'xhofe/alist:main'
 ```
 
 ## 指定版本
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
+
+### 用户/组标识符
+
+当使用卷（`-v` 标志）权限问题时，主机操作系统和容器之间可能会出现权限问题，我们通过允许您指定用户 `PUID` 和组 `PGID` 来避免此问题。
+
+确保主机上的任何卷目录都归您指定的同一用户所有，任何权限问题都会像魔术一样消失。
+
+在这种情况下，`PUID=1000` 和 `PGID=1000`，要找到你的使用 `id user`，如下所示：
+
+```bash
+  $ id username
+    uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
+```
 
 ## 有关离线下载功能的额外说明
 
