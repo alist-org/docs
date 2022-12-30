@@ -42,3 +42,7 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 - official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢
 - crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定
+
+:::tip
+网页预览及Webdav不可用的解决方案：
+Web 代理需设置为开启，WebDAV 策略需设置为本地代理
