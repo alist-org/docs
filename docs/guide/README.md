@@ -14,7 +14,7 @@ New versions (V3 and later) are not compatible with V2, so we recommend that you
 
 [![](https://img.shields.io/github/release/Xhofe/alist?style=flat-square)](https://github.com/Xhofe/alist/releases/latest)
 [![GitHub Discussions](https://img.shields.io/github/discussions/Xhofe/alist?color=%23ED8936&style=flat-square)](https://github.com/Xhofe/alist/discussions)
-[![](https://img.shields.io/github/workflow/status/Xhofe/alist/build?style=flat-square)](https://github.com/Xhofe/alist/actions?query=workflow%3ABuild)
+[![](https://img.shields.io/github/actions/workflow/status/Xhofe/alist/build.yml?style=flat-square)](https://github.com/Xhofe/alist/actions?query=workflow%3ABuild)
 [![](https://img.shields.io/github/downloads/Xhofe/alist/total?style=flat-square&color=%239F7AEA)](https://github.com/Xhofe/alist/releases)
 [![](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](https://pay.xhofe.top)
 
