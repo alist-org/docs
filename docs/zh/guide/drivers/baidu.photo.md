@@ -37,3 +37,6 @@ star: true
 
 - {tid}:访问 **https://photo.baidu.com/youai/album/v1/list.** 获取
   - 进入界面后`Ctrl+F`搜索上面的ID,在下面数几行就可以看到对应的 {tid} 
+
+
+

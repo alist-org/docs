@@ -71,6 +71,32 @@ Permissions of this strongest copyleft license are conditioned on making availab
 
 It may be that the risk detection system has been triggered. Please changing the password, then, add it again.
 
+
+
+### When adding Tianyi cloud disk client storage: prompt need img validate code: verification code
+
+- Click Edit, write the verification code you just saw into the configuration and click Save
+- Click Edit and turn on the Do not use OCR button
+- Or build it yourself [**Ocr interface**](https://alist.nn.ci/zh/config/global.html#ocr-api)
+
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
 For network problems such as these, please troubleshoot and solve them yourself.Don't create any issues for this.
+
+
+
+### How to add epub reading
+
+Background --> Settings --> Preview --> Iframe preview, written behind the PDF
+
+```html
+ /*The comma below is also oh, don’t copy this comment, start copying from the second line*/
+,
+  "epub": {
+    "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
+  }
+```
+
+Version 3.7.x and above already support ".epub" reading,
+But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
+If it is the first installation and startup (version 3.7.x and higher), no need to add it manually

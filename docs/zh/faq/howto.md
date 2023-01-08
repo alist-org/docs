@@ -73,6 +73,32 @@ location /alist/ {
 
 可能是触发了风控。更改密码后，再次添加即可。
 
+### 添加 天翼云盘客户端 存储时：提示 need img validate code: 验证码
+
+- 点击编辑，把刚刚看到的验证码写进配置里面点击保存
+- 点击编辑，把不使用OCR 按钮打开
+- 或者自己进行搭建[**Ocr接口**](https://alist.nn.ci/zh/config/global.html#ocr-api)
+
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
 诸如此类的网络问题，请自行排查解决。不要为此提出任何的issue
+
+
+
+### 怎么添加epub阅读
+
+后台 ——>设置——>预览——>Iframe 预览，写在PDF后面
+
+```html
+/*下面的这个逗号也是哦，这个注释就不要复制了，从第二行开始复制*/
+,
+  "epub": {
+    "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
+  }
+```
+
+3.7.x 版本及更高的版本已经支持  ".epub" 阅读，
+
+但是需要自己手动添加(因为已经创建过数据库了 不好给你覆盖会出错)
+
+如果是第一次安装启动（3.7.x版本及更高的版本）不用手动添加
