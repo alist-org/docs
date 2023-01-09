@@ -23,7 +23,7 @@ star: true
 
 
 
-因无相关设备和服务，无法测试，可以根据**`GitHub Discussions`**讨论中提供的办法自行测试一下
+因无相关设备和服务，无法测试，可以根据 **GitHub Discussions** 讨论中提供的办法自行测试一下
 
 **https://github.com/alist-org/alist/discussions/2215#discussioncomment-4104018**
 
