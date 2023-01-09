@@ -66,7 +66,8 @@ go build -ldflags="$ldflags" .
 
 ::: details 你可能需要的编译教程视频
 
-Windows版本：**https://www.bilibili.com/video/BV1Xr4y1z723**（虽然是V2版的，但是跟V3版本一样的..）
+Windows版本：**https://www.bilibili.com/video/BV1Xr4y1z723**
+（虽然是V2版的，但是跟V3版本一样的..）
 
 Linux版本：**https://www.bilibili.com/video/BV1GW4y1s742**
 
