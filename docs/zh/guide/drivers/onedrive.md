@@ -39,7 +39,7 @@ star: true
 
 ## 获取刷新令牌
 
-将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://tool.nn.ci/onedrive/request，点击"获取刷新令牌"即可
+将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://tool.nn.ci/onedrive/request ，点击"获取刷新令牌"即可
 
 ## 获取 SharePoint site_id
 
