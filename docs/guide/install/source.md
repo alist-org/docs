@@ -53,3 +53,19 @@ ldflags="\
 "
 go build -ldflags="$ldflags" .
 ```
+
+
+
+
+
+
+
+::: details compilation tutorial videos you may need
+
+Windows version: **https://www.bilibili.com/video/BV1Xr4y1z723** (Although it is V2 version, it is the same as V3 version..)
+
+Linux version: **https://www.bilibili.com/video/BV1GW4y1s742**
+
+Fanwai compiled documents: **https://www.yuque.com/anwenya/alist/glqlhu**
+
+:::

@@ -33,6 +33,11 @@ star: true
 
 #### 注意事项：根文件路径默认是 /
 
+- 需要**代理**方式才可以挂载查看（需要像Google那样如果能直连就能挂载，否则不可以）
+
 - 如果你不想写根目录 **/** 要写其他目录
+
 - 挂载其他单个子目录，放一张图参考一下吧
   - <img src="https://pic.rmb.bdstatic.com/bjh/4ec66c96ff25c0e0fa76dd7c6be96a48.png" alt="Demo" style="zoom:50%;" />
+  
+  
