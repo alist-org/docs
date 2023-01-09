@@ -89,3 +89,23 @@ There is a half-hour cache by default, which can be modified on the Add Storage 
 ### Why is it still incorrect although I input the password that get by `./alist admin` in terminal?
 
 Check whether the directory you run `./alist admin` and start alist is the same. alist reads the configuration in the current directory where you run the program by default, so running in different directorys will result in different data being read.
+
+### Why does it prompt System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
+
+Your oil monkey answering plug-in conflicts, just close it [**For details, click to view**](https://github.com/alist-org/alist/discussions/2399)
+
+### What is the difference between the two uploads?
+
+**1️⃣ stream** directly puts the binary content of the file into the body, so that the backend can use very little memory, but the browser may limit the size because the file needs to be read into the memory at one time.
+**2️⃣ form** is to wrap the file into formdata and upload it. The memory used by the backend will be more, but there is no limit on the size.
+
+### RaiDrive mounts Baidu network disk, you can download files, but you cannot upload files. Throwing files to the mount directory prompts "Prompt "You need permission to perform this operation". How to solve this?
+
+Raidrive is because uploading a file will create an empty file in advance, and Baidu Netdisk does not allow the creation of an empty file.
+v2 can succeed because v2 ignores empty file uploads.
+
+### Why is the Terabox mounted successfully but the content is not displayed?
+
+Because **`Terabox`** restricts IP, if you access it from a non-overseas IP, you cannot access it, and naturally the content will not be displayed.
+
+(Overseas machines can be used. If you have to use local machines (or domestic machines) to build, you can find a way to let Alist eat **proxy**)
