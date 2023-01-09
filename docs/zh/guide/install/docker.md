@@ -106,3 +106,20 @@ services:
 解决方法,如果是CPU架构是64位，尝试手动拉取64位docker镜像,重新构建容器，再次尝试。
 
 如果是CPU架构是32位，目前尚无可用方案。
+
+## Docker安装怎么更新?
+::: details 点击查看
+
+1. docker ps -a #查看容器(找Alist容器的ID)
+
+2. docker stop ID #停止Alist运行,不然无法删除(这次Alist容器的ID是d429749a6e69，每一次安装都不一样自己看)
+
+3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
+
+4. [输入安装命令](https://alist.nn.ci/zh/guide/install/docker.html#发行版本)
+
+5. 更新好了 去看看吧..就这么简单
+
+![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
+
+:::

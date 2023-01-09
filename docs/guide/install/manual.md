@@ -25,6 +25,7 @@ Open [AList Release](https://github.com/Xhofe/alist/releases) to download the fi
 
 :::tabs#os
 @tab linux
+
 ```bash
 # Unzip the downloaded file to get the executable file:
 tar -zxvf alist-xxxx.tar.gz
@@ -104,3 +105,9 @@ Then `systemctl daemon-reload`, now you can use these commands to manage the pro
 - Self-start: `systemctl enable alist`
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
+
+
+
+### How to update
+
+Download the new version of Alist and replace the previous one.
