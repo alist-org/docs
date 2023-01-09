@@ -92,7 +92,7 @@ Check whether the directory you run `./alist admin` and start alist is the same.
 
 ### Why does it prompt System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
 
-Your oil monkey answering plug-in conflicts, just close it [**For details, click to view**](https://github.com/alist-org/alist/discussions/2399)
+Your Tampermonkey answering plug-in conflicts, just close it [**For details, click to view**](https://github.com/alist-org/alist/discussions/2399)
 
 ### What is the difference between the two uploads?
 
