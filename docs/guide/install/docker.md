@@ -103,3 +103,23 @@ When an error occurs, you will see a similar error log in Alist's log file.
 Solution, if the CPU architecture is 64-bit, try to manually pull the 64-bit docker image, rebuild the container, and try again.
 
 If the CPU architecture is 32-bit, there is currently no solution available.
+
+
+
+## How to update Docker installation?
+
+::: details Click to view
+
+1. docker ps -a #View the container (find the ID of the Alist container)
+
+2. docker stop ID #Stop Alist running, otherwise it cannot be deleted (this time the ID of the Alist container is d429749a6e69, it is different for each installation)
+
+3. docker rm ID #Delete the Alist container (the data is still there as long as you don't delete it manually)
+
+4. [Input installation command](https://alist.nn.ci/zh/guide/install/docker.html#release version)
+
+5. The update is complete, go and have a look.. It's that simple
+
+![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
+
+:::

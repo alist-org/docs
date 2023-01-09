@@ -107,3 +107,9 @@ WantedBy=multi-user.target
 - 取消开机自启: `systemctl disable alist`
 - 状态: `systemctl status alist`
 - 重启: `systemctl restart alist`
+
+
+
+### 如何更新
+
+下载新版Alist，把之前的替换了即可。
