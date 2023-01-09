@@ -107,6 +107,8 @@ const onClick = async ()=>{
 
 *API is hosted on replit.com*
 
+> 获取Token可以登陆网页版打开F12控制台输入JSON.parse(window.localStorage["token"]).refresh_token;
+
 ## Root folder file_id
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
