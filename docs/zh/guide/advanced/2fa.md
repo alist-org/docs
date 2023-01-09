@@ -23,3 +23,14 @@ star: true
 然后登录 AList 管理并进入“个人资料”页面，点击“启用 2FA”按钮，用你的 2FA 应用扫描二维码，输入你的 2FA 应用生成的代码。
 
 最后，单击“验证”按钮启用 2FA。
+
+
+
+## **如何解除2FA验证：**
+
+ 如何进入Alist所在的文件夹
+   1. **Windows**：进入到Alist所在的文件夹输入：**alist.exe cancel2fa**
+   2. **Linux**	   ：也一样进入Alist所在的文件夹输入，**./alist cancel2fa**
+   3. **docker**	：docker直接输入 **docker exec -it alist ./alist cancel2fa**
+
+ **以上输入删除后发现还有重启即可~**
