@@ -112,7 +112,6 @@ Because **`Terabox`** restricts IP, if you access it from a non-overseas IP, you
 (Overseas machines can be used. If you have to use local machines (or domestic machines) to build, you can find a way to let Alist eat **proxy**)
 
 
-
 ### Open Alist prompt System error: TypeError: n.replaceAll is not a function?
 
 Your browser kernel version is too low, just add the following to the custom head.
@@ -127,3 +126,4 @@ If you think it is too slow, you can change to Ali Cloud
 ```html
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 ```
+

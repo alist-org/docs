@@ -106,7 +106,7 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 
 
-## How to update Docker installation?
+### How to update Docker installation?
 
 ::: details Click to view
 
@@ -116,7 +116,7 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 3. docker rm ID #Delete the Alist container (the data is still there as long as you don't delete it manually)
 
-4. [Enter the installation command and click to view](#Release version)
+4. [Enter the installation command and click to view](#release-version)
 
 5. The update is complete, go and have a look.. It's that simple
 

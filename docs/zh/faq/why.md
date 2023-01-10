@@ -113,6 +113,7 @@ v2可以成功是因为v2会忽略空文件上传。
 
 （可以用海外的机器，如果非得用本机(或者国内的机器)搭建，哪你自己想办法让Alist吃到**proxy**就可以）
 
+
 ### 打开 Alist 提示 System error: TypeError:n.replaceAll is not a function？
 
 你的浏览器内核版本太低，将如下添加到自定义头部即可.
