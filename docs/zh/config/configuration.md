@@ -25,10 +25,10 @@ star: true
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
-  "jwt_secret": "random generated",
-  "token_expires_in": 48,
   "site_url": "",
   "cdn": "",
+  "jwt_secret": "random generated",
+  "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
     "host": "",
@@ -36,7 +36,7 @@ star: true
     "user": "",
     "password": "",
     "name": "",
-    "db_file": "data/data.db",
+    "db_file": "data\\data.db",
     "table_prefix": "x_",
     "ssl_mode": ""
   },
@@ -45,15 +45,17 @@ star: true
     "cert_file": "",
     "key_file": ""
   },
-  "temp_dir": "data/temp",
+  "temp_dir": "data\\temp",
+  "bleve_dir": "data\\bleve",
   "log": {
     "enable": true,
-    "name": "log/log.log",
+    "name": "data\\log\\log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
     "compress": false
-  }
+  },
+  "max_connections": 0
 }
 ```
 
@@ -122,3 +124,10 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 ### log
 
 日志配置，如果要查看详细日志（或禁用它），可以设置该字段。
+
+### max_connections
+
+同时最多的连接数(并发)，默认为0即不限制.
+
+- 对于一般的设备比如n1推荐10或者20
+  - 使用场景（例如打开图片模式会并发不是很好的设备就会崩溃）

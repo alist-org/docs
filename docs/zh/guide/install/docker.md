@@ -116,7 +116,7 @@ services:
 
 3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
 
-4. [输入安装命令](https://alist.nn.ci/zh/guide/install/docker.html#发行版本)
+4. [输入安装命令点击查看](#发行版本)
 
 5. 更新好了 去看看吧..就这么简单
 

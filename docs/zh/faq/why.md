@@ -99,6 +99,7 @@ star: true
 ### 两个上传有什么区别?
 
 **1️⃣ stream**直接把文件二进制内容放进body中，这样后端可以使用很少的内存，但是浏览器可能会限制大小因为要一次性把文件读进内存。
+
 **2️⃣ form**是把文件包裹成formdata上传，后端使用的内存会多一些，但是不限制大小。  
 
 ### RaiDrive挂载百度网盘，可以下载文件，不能上传文件。往挂载目录丢文件提示“提示“你需要权限来执行此操作”。这个怎么解决？
@@ -111,3 +112,19 @@ v2可以成功是因为v2会忽略空文件上传。
 因为 **`Terabox`** 限制IP，如果你是本机非海外IP访问，是无法访问的，自然不会显示内容。
 
 （可以用海外的机器，如果非得用本机(或者国内的机器)搭建，哪你自己想办法让Alist吃到**proxy**就可以）
+
+### 打开 Alist 提示 System error: TypeError:n.replaceAll is not a function？
+
+你的浏览器内核版本太低，将如下添加到自定义头部即可.
+
+```html
+<!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+```
+
+如果嫌太慢可以换阿里云
+
+```html
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>  
+```
+
