@@ -31,7 +31,7 @@ category:
 - [x] [GoogleDrive](https://drive.google.com/)
 - [x] [123云盘](https://www.123pan.com/)
 - [x] FTP / SFTP
-- [x] [PikPak](https://www.mypikpak.com/)
+- [x] [PikPak / 分享](https://www.mypikpak.com/)
 - [x] [S3](https://aws.amazon.com/cn/s3/)
 - [x] [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
@@ -47,6 +47,8 @@ category:
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [一刻相册](https://photo.baidu.com/)
+- [x] [TeraBox -海外百度](https://www.terabox.com/)
+- [x] Alist v2/v3
 - [x] SMB
 - [x] [115](https://115.com/)
 
