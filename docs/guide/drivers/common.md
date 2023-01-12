@@ -47,7 +47,7 @@ Whether the web preview,download and the direct link go through the transfer. If
 
 When the proxy is turned on without filling in this field, the local machine will be used for transfer by default.Two proxy methods are provided:
 
-:::tabs
+::::tabs
 @tab cloudflare workers
 You can use `cloudflare workers` for proxy, just fill in the `cloudflare workers` address here.
 The workers code can be found at https://github.com/alist-org/alist-proxy/blob/main/alist-proxy.js. in:
@@ -66,7 +66,7 @@ You can also use another machine for proxying, download the program at https://g
 
 `./alist-proxy -help` to see how to use it.
 
-:::
+::::
 
 You can even develop your own proxy program, the general steps are:
 

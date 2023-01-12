@@ -84,7 +84,7 @@ But this time, just turn on the **`Automatically build index`** button and enter
 
 ----
 
-Someone will find out that [**Path to update index**](#path-to-update-index) can also be updated? Can be updated but the two do not conflict
+Someone will find out that [**Paths to update**](#paths-to-update) can also be updated? Can be updated but the two do not conflict
 
-- [**Path to update index**](#path-to-update-index): suitable for users who build indexes for all files
-- [**Automatically update index**](#automatically-update-index): Suitable for **not** to build an index for all files, but there are files that need to be built, manually build the index to avoid all being indexed
+- [**Paths to update**](#paths-to-update): suitable for users who build indexes for all files
+- [**Auto update index**](#auto-update-index): Suitable for **not** to build an index for all files, but there are files that need to be built, manually build the index to avoid all being indexed
