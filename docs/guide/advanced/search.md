@@ -47,3 +47,44 @@ The following table could help you understand the difference between the two sea
 - If you choose `database` as the search index and the type of your database is `sqlite3`, we suggest that you don't make any changes in the admin page while building the index, as sqlite3 does not support concurrent writes and can cause `database-lock` issues;
 - If you choose `bleve` as the search index, and if you want to search for new files or if you don't want to search for deleted files, the index needs to be completely rebuilt to take effect because `bleve` does not support incremental updates;
 - But for `database`, it supports incremental updates, so you can search for new files or deleted files just by access the modified folder (and click `refresh` icon if cached) without rebuilding the index, which is much more convenient than `bleve`.
+
+### Ignore paths
+
+Paths to be skipped during index building, one path per line, multiple lines can be filled
+
+- example:
+   - /aaa network disk
+   - /bbb network disk/ccc folder
+
+### Paths to update
+
+After building all the indexes, or a file has a large number of file updates, but it is inconvenient to rebuild, you can use this to update the index
+
+- example:
+
+   - /aaa network disk
+
+   - /bbb network disk/ccc folder
+
+### Auto update index
+
+:warning: **`The default is off, and the index will not be built automatically`**
+
+For example, you have already built the index, but added a **network disk mount** or **folder update** later
+
+But you have already built a lot of indexes. According to the previous words, there are two methods
+
+1. Go in folder by folder before building
+2. Or it is cumbersome to refactor all
+
+But this time, just turn on the **`Automatically build index`** button and enter the **Newly mounted network disk** or **Updated folder**, the indexed files in this directory and The folder automatically builds the index without entering a folder by folder to let him build it automatically
+
+- Advantages: Don't worry, all the indexes in this folder can be automatically built if there is an update into the root directory of the updated folder
+- Cons: always on call ready to build
+
+----
+
+Someone will find out that [**Path to update index**](#path-to-update-index) can also be updated? Can be updated but the two do not conflict
+
+- [**Path to update index**](#path-to-update-index): suitable for users who build indexes for all files
+- [**Automatically update index**](#automatically-update-index): Suitable for **not** to build an index for all files, but there are files that need to be built, manually build the index to avoid all being indexed

@@ -106,3 +106,8 @@ interface {
 ## 视频自动播放
 
 是否自动播放视频文件。
+
+## 代理忽略头部
+
+详情查看： **https://github.com/alist-org/alist/issues/2763**
+

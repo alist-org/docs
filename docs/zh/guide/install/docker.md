@@ -26,13 +26,13 @@ docker exec -it alist ./alist admin
 
 ## 发行版本
 
-**docker-cli**
+##### docker-cli
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
-**docker-compose**
+##### docker-compose
 ```yaml
 version: '3.3'
 services:
@@ -54,13 +54,13 @@ services:
 
 仅适用于 amd64/arm64。不推荐，这可能无法正常工作。
 
-**docker-cli**
+##### docker-cli
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
-**docker-compose**
+##### docker-compose
 ```yaml
 version: '3.3'
 services:
@@ -116,9 +116,13 @@ services:
 
 3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
 
-4. [输入安装命令点击查看](#发行版本)
+4. docker pull xhofe/alist:latest
 
-5. 更新好了 去看看吧..就这么简单
+5. [输入安装命令点击查看](#docker-cli)
+
+6. 更新好了 去看看吧..就这么简单
+   - 图片中丢了一步，是教程中的第四步....记得执行
+
 
 ![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
 

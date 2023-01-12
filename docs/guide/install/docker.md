@@ -25,13 +25,14 @@ docker exec -it alist ./alist admin
 
 ### Release version
 
-**docker-cli**
+#### docker-cli
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
-**docker-compose**
+#### docker-compose
+
 ```yaml
 version: '3.3'
 services:
@@ -52,13 +53,14 @@ services:
 ### Dev version
 Just for amd64/arm64. Not recommended, this may can't work properly. 
 
-**docker-cli**
+##### docker-cli
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
-**docker-compose**
+##### docker-compose
+
 ```yaml
 version: '3.3'
 services:
@@ -111,14 +113,12 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 ::: details Click to view
 
 1. docker ps -a #View the container (find the ID of the Alist container)
-
 2. docker stop ID #Stop Alist running, otherwise it cannot be deleted (this time the ID of the Alist container is d429749a6e69, it is different for each installation)
-
 3. docker rm ID #Delete the Alist container (the data is still there as long as you don't delete it manually)
-
-4. [Enter the installation command and click to view](#release-version)
-
-5. The update is complete, go and have a look.. It's that simple
+4. docker pull xhofe/alist:latest
+5. [Enter the installation command and click to view](#docker-cli)
+6. The update is complete, go and have a look.. It's that simple
+   - There is a missing step in the picture, it is step 4 in the tutorial....remember to execute
 
 ![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
 

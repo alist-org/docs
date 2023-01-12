@@ -53,6 +53,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] Alist v2/v3
 - [x] SMB
 - [x] [115](https://115.com/)
+- [x] [Seafile](https://www.seafile.com/)
 
 ### Discussion
 

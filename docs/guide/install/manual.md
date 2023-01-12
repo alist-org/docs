@@ -103,6 +103,7 @@ Then `systemctl daemon-reload`, now you can use these commands to manage the pro
 - Start: `systemctl start alist`
 - Shut down: `systemctl stop alist`
 - Self-start: `systemctl enable alist`
+- Cancel Self-start: `systemctl disable alist`
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
 
