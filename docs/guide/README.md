@@ -33,7 +33,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Alist](https://github.com/Xhofe/alist)
 - [x] FTP
 - [x] SFTP
-- [x] [PikPak](https://www.mypikpak.com/)
+- [x] [PikPak / share](https://www.mypikpak.com/)
 - [x] [S3](https://aws.amazon.com/cn/s3/)
 - [x] [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
 - [x] WebDAV
@@ -49,8 +49,11 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [Baidu photo](https://photo.baidu.com/)
+- [x] [TeraBox](https://www.terabox.com/)
+- [x] Alist v2/v3
 - [x] SMB
 - [x] [115](https://115.com/)
+- [x] [Seafile](https://www.seafile.com/)
 
 ### Discussion
 

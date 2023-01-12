@@ -55,3 +55,15 @@ Used to identify verification codes. You can deploy yourself: https://hub.docker
 ### Sign all
 
 Add signatures to the direct link of all files (whether with password or not)
+
+### Filename char mapping
+
+Mainly to map some special characters so that Alist can work normally
+
+For example, the `/` symbol is a path symbol in the Alist program. Some people’s files have `/` symbols that cause the file to be disconnected halfway and cannot be viewed. We can use this method to map and convert.
+
+```json
+{"/": "|","xx1":"xx1","xx2":"xx2"}
+```
+
+The default is the first one at the beginning. If you want to add it later, you can add it later. The format is as simple as above.

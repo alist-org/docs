@@ -36,7 +36,7 @@ star: true
     "user": "",
     "password": "",
     "name": "",
-    "db_file": "data/data.db",
+    "db_file": "data\\data.db",
     "table_prefix": "x_",
     "ssl_mode": ""
   },
@@ -45,15 +45,17 @@ star: true
     "cert_file": "",
     "key_file": ""
   },
-  "temp_dir": "data/temp",
+  "temp_dir": "data\\temp",
+  "bleve_dir": "data\\bleve",
   "log": {
     "enable": true,
-    "name": "log/log.log",
+    "name": "data\\log\\log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
     "compress": false
-  }
+  },
+  "max_connections": 0
 }
 ```
 
@@ -122,3 +124,10 @@ The temporary directory, default `data/temp`
 ### log
 
 The log configuration, if you want to setup the log level, you can set this field.
+
+### max_connections
+
+The maximum number of connections (concurrent) at the same time, the default is 0, that is, unlimited.
+
+- 10 or 20 is recommended for general equipment such as n1
+   - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)

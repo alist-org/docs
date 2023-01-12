@@ -97,6 +97,7 @@ Your Tampermonkey answering plug-in conflicts, just close it [**For details, cli
 ### What is the difference between the two uploads?
 
 **1️⃣ stream** directly puts the binary content of the file into the body, so that the backend can use very little memory, but the browser may limit the size because the file needs to be read into the memory at one time.
+
 **2️⃣ form** is to wrap the file into formdata and upload it. The memory used by the backend will be more, but there is no limit on the size.
 
 ### RaiDrive mounts Baidu network disk, you can download files, but you cannot upload files. Throwing files to the mount directory prompts "Prompt "You need permission to perform this operation". How to solve this?
@@ -109,3 +110,20 @@ v2 can succeed because v2 ignores empty file uploads.
 Because **`Terabox`** restricts IP, if you access it from a non-overseas IP, you cannot access it, and naturally the content will not be displayed.
 
 (Overseas machines can be used. If you have to use local machines (or domestic machines) to build, you can find a way to let Alist eat **proxy**)
+
+
+### Open Alist prompt System error: TypeError: n.replaceAll is not a function?
+
+Your browser kernel version is too low, just add the following to the custom head.
+
+```html
+<!--Alist V3 suggested to add, it has been added by default, if you don't suggest adding -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+```
+
+If you think it is too slow, you can change to Ali Cloud
+
+```html
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+```
+

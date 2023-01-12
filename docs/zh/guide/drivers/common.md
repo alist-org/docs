@@ -48,7 +48,7 @@ star: true
 
 开启代理时不填写此字段，默认使用本机进行传输。提供了两种代理方式：
 
-:::tabs
+::::tabs
 @tab cloudflare workers
 可以使用 Cloudflare Workers 做代理，这里填写 Workers 地址即可。
 
@@ -57,10 +57,16 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 - ADDRESS: 你的 AList 地址，必须加上协议头，后面不能跟 `/`。如 `https://pan.nn.ci`；
 - TOKEN: 在 AList 管理页面中进入“其他设置”得到。
 
+:warning: Cloudflare Workers 免费CDN支持兼容国内的只有 **http80端口** 和 **https443端口**
+
+::: right
+来自群友测试
+:::
+
 @tab 通用二进制
 也可以使用另一台机器进行代理，在 https://github.com/alist-org/alist-proxy/releases 下载程序并通过 `./alist-proxy -help` 查看使用方法。
 
-:::
+::::
 
 你甚至可以开发自己的代理程序，一般步骤是：
 

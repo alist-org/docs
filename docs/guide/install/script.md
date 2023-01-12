@@ -50,3 +50,10 @@ curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
 # Uninstall
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
 ```
+
+
+
+- Start: `systemctl start alist`
+- Shut down: `systemctl stop alist`
+- Status: `systemctl status alist`
+- Restart: `systemctl restart alist`

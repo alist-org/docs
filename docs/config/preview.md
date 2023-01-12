@@ -105,3 +105,7 @@ Whether to automatically play audio files.
 ### Video autoplay
 
 Whether to automatically play video files.
+
+### Proxy ignore headers
+
+For details, please check:  **https://github.com/alist-org/alist/issues/2763**
