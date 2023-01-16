@@ -110,7 +110,7 @@ WantedBy=multi-user.target
 
 ### 守护进程(MacOS)
 
-使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
+使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist.plist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
 
 ```conf
 <?xml version="1.0" encoding="UTF-8"?>
