@@ -52,10 +52,6 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 前提是需要有会员哦，有会员改完 `UA` 才会有用（选择官方和302），只能帮你到这里了
 
-If you really don’t know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
-
-The premise is that you need to have a member. It will only be useful if you have a member who has changed `UA` (choose official and 302). It can only help you here
-
 ![修改UA](https://pic.rmb.bdstatic.com/bjh/f413828756fb095e04d5337743ae2fca.png@s_0,w_2000)
 
 :::

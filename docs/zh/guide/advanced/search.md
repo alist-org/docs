@@ -93,7 +93,7 @@ star: true
 ### :warning: 使用注意事项
 
 - Alist **V2** 和 **v3** 类型的挂载默认不能构建
-- 在未来版本（**>3.8.0的版本**）的V3用户可以选择是否允许别人挂载你的网盘然后进行索引 :no_entry:**`谨慎使用`**:no_entry:
+- 在未来版本（**>3.8.0版本**）V3用户可以选择是否允许别人挂载你的网盘然后进行索引 :no_entry:**`谨慎使用`**:no_entry:
   - 详情查看：[https://alist.nn.ci/zh/config/site.html#允许索引](https://alist.nn.ci/zh/config/site.html#允许索引)
   - 别问为什么V2不支持，因为V2版本已不再进行维护，故没有后续了
 

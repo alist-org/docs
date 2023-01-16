@@ -58,8 +58,8 @@ The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We s
 
 The default page size of the `alist` if `Pagination type` doesn't set to `All`, such as `20`.
 
-## allow indexing
+### allow indexing
 
 Whether to allow others to mount your Alist to build the index, check it and enable it.
 
-**The default is off, use with caution. **  (New features in version 3.8.0)
+The default is off, use with caution.  (New features in version 3.8.0)
