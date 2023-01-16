@@ -52,6 +52,7 @@ category:
 - [x] SMB
 - [x] [115](https://115.com/)
 - [x] [Seafile](https://www.seafile.com/)
+- [x] Cloudreve
 
 ## Discussion
 
