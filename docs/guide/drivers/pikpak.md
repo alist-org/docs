@@ -16,7 +16,11 @@ sticky: true
 star: true
 ---
 
-# PikPak
+# PikPak / share
+
+
+
+## PikPak
 
 ### Username
 
@@ -31,3 +35,14 @@ password
 Can get with https://mypikpak.com/ , default `root`.
 
 ![image.png](/img/drivers/pikpak.png)
+
+
+
+## PikPak Share
+
+You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **root folder ID** can be written or not, if not written, the default is the root directory (root directory)
+
+- Root folder ID: If it is a multi-layer directory, which directory do you want to display as the root directory, you can write which root directory.
+- Sharing password: if there is a password to share, write it, if not, don’t write it
+
+![PikShare](https://pic.rmb.bdstatic.com/bjh/5dea38ce42c5e909a59137ea2c74837f.png)
