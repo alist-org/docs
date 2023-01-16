@@ -89,6 +89,7 @@ Someone will find out that [**Paths to update**](#paths-to-update) can also be u
 - [**Paths to update**](#paths-to-update): suitable for users who build indexes for all files
 - [**Auto update index**](#auto-update-index): Suitable for **not** to build an index for all files, but there are files that need to be built, manually build the index to avoid all being indexed
 
+
 ### :warning: Precautions for use
 
 - Alist **V2** and **v3** types of mounts cannot be built by default
@@ -97,3 +98,4 @@ Someone will find out that [**Paths to update**](#paths-to-update) can also be u
    - Don't ask why V2 is not supported, because the V2 version is no longer maintained, so there is no follow-up
 
 - Why not directly open V2 V3 index construction: **https://github.com/alist-org/alist/discussions/2529**
+
