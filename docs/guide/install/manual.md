@@ -36,7 +36,7 @@ chmod +x alist
 # Get admin's info
 ./alist admin
 ```
-@tab macos
+@tab macOS
 ```bash
 # Unzip the downloaded file to get the executable file:
 tar -zxvf alist-xxxx.tar.gz
@@ -47,7 +47,7 @@ chmod +x alist
 # Get admin's info
 ./alist admin
 ```
-@tab windows
+@tab Windows
 ```bash
 # Unzip the downloaded file to get the executable file:
 unzip alist-xxxx.zip
@@ -82,8 +82,10 @@ alist restart
 ```
 :::
 
-### Daemon(Linux)
+### Daemon
 
+:::tabs#os
+@tab linux
 `vim /usr/lib/systemd/system/alist.service` add the following content, where path_alist is the path where alist is located
 ```ini
 [Unit]
@@ -107,6 +109,44 @@ Then `systemctl daemon-reload`, now you can use these commands to manage the pro
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
 
+@tab macOS
+Edit `~/Library/LaunchAgents/ci.nn.alist.plist` in any way and add the following content, modify `path_alist` to be the path where AList is located, and `path/to/working/dir` to be the working path of AList
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+     <dict>
+         <key>Label</key>
+         <string>ci.nn.alist</string>
+         <key>KeepAlive</key>
+         <true/>
+         <key>ProcessType</key>
+         <string>Background</string>
+         <key>RunAtLoad</key>
+         <true/>
+         <key>WorkingDirectory</key>
+         <string>path/to/working/dir</string>
+         <key>ProgramArguments</key>
+         <array>
+             <string>path_alist/alist</string>
+             <string>server</string>
+         </array>
+     </dict>
+</plist>
+```
+
+Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist` to load the configuration, now you can use these commands to manage the program:
+
+- Start: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
+- Close: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
+- Unload configuration: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
+
+@tab Windows
+
+Any way you know and it is no longer provided here.
+
+:::
 
 
 ### How to update
