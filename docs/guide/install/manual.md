@@ -108,10 +108,11 @@ Then `systemctl daemon-reload`, now you can use these commands to manage the pro
 - Cancel Self-start: `systemctl disable alist`
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
-@tab macos
+
+@tab macOS
 Edit `~/Library/LaunchAgents/ci.nn.alist.plist` in any way and add the following content, modify `path_alist` to be the path where AList is located, and `path/to/working/dir` to be the working path of AList
 
-```conf
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -140,8 +141,11 @@ Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist` to load the co
 - Start: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
 - Close: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
 - Unload configuration: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
-@tab windows
+
+@tab Windows
+
 Any way you know and it is no longer provided here.
+
 :::
 
 

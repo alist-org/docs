@@ -86,7 +86,7 @@ alist restart
 @tab Linux
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
 
-```conf
+```ini
 [Unit]
 Description=alist
 After=network.target
@@ -109,10 +109,11 @@ WantedBy=multi-user.target
 - 取消开机自启: `systemctl disable alist`
 - 状态: `systemctl status alist`
 - 重启: `systemctl restart alist`
+
 @tab macOS
 使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist.plist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
 
-```conf
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -142,7 +143,9 @@ WantedBy=multi-user.target
 - 关闭: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
 - 卸载配置: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
 @tab Windows
+
 任何你了解的方式，此处不再提供。
+
 :::
 
 
