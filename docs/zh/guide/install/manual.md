@@ -80,7 +80,7 @@ alist restart
 ```
 :::
 
-### 守护进程(Linux)
+### 守护进程
 
 :::tabs#os
 @tab Linux
