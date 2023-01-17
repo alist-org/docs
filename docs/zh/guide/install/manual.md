@@ -82,6 +82,8 @@ alist restart
 
 ### 守护进程(Linux)
 
+:::tabs#os
+@tab Linux
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
 
 ```conf
@@ -107,9 +109,7 @@ WantedBy=multi-user.target
 - 取消开机自启: `systemctl disable alist`
 - 状态: `systemctl status alist`
 - 重启: `systemctl restart alist`
-
-### 守护进程(MacOS)
-
+@tab macOS
 使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist.plist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
 
 ```conf
@@ -141,6 +141,10 @@ WantedBy=multi-user.target
 - 开启: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
 - 关闭: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
 - 卸载配置: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
+@tab Windows
+任何你了解的方式，此处不再提供。
+:::
+
 
 ### 如何更新
 
