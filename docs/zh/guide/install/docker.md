@@ -50,7 +50,11 @@ services:
         image: 'xhofe/alist:latest'
 ```
 
-## 开发版本
+### 使用 aria2 离线下载
+
+如果你想使用aria2离线下载，我们推荐你使用这个[image](https://hub.docker.com/r/xhofe/alist-aria2)，它预装了aria2。
+
+### 开发版本
 
 仅适用于 amd64/arm64。不推荐，这可能无法正常工作。
 
@@ -78,7 +82,7 @@ services:
         image: 'xhofe/alist:main'
 ```
 
-## 指定版本
+### 指定版本
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
 

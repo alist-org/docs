@@ -50,6 +50,10 @@ services:
         image: 'xhofe/alist:latest'
 ```
 
+### Offline download with aria2
+
+If you want to use aria2 to offline download, we recommend you to use this [image](https://hub.docker.com/r/xhofe/alist-aria2), which carries a pre-installed aria2.
+
 ### Dev version
 Just for amd64/arm64. Not recommended, this may can't work properly. 
 
