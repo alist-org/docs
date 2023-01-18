@@ -20,6 +20,8 @@ star: true
 
 It is required that the file structures in the two storages are exactly the same, and the program will automatically poll all storages for download/request.
 
+Different network disks can be used, but the file directories must be consistent.
+
 ### how to use​
 
 One storage can be added normally, and the other storage can be added with the mount path of `the first storage mount path + .balance + any other content`.

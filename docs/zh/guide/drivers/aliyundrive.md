@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# 阿里云盘
+# 阿里云盘/分享
 
 :::tip
 
@@ -100,7 +100,6 @@ const onClick = async ()=>{
 </div>
 
 <div v-show="token" >
-
 :::info Token: {{ token }}
 :::
 </div>
@@ -116,3 +115,15 @@ const onClick = async ()=>{
 这个文件夹的 file_id 即为 `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`：
 
 ![file_id](/img/drivers/aliyundrive.png)
+
+
+
+## 阿里云盘分享
+
+主要填写 **[刷新令牌](#刷新令牌)，分享ID**
+
+- **根文件夹ID**(默认root根目录)，想写就写不想写就是默认根目录
+
+- 分享密码有就写没有就不写
+
+![AliShare](https://pic.rmb.bdstatic.com/bjh/257057c4d017ed1c9926f4c6837cf7c1.png)

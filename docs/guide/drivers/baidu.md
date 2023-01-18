@@ -35,3 +35,15 @@ The root foler to mount, defaults to `/`, same as local storage.
 ### Download api
 - official: The official interface, very stable, but for larger files, UA needs to be modified and the speed is slow
 - crack: unofficial interface, no need to modify UA and some files may not limit the speed, but **maybe** unstable
+
+
+
+::: details May Be Helpful For You
+
+If you really don’t know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
+
+The premise is that you need to have a member. It will only be useful if you have a member who has changed `UA` (choose official and 302). It can only help you here
+
+![修改UA](https://pic.rmb.bdstatic.com/bjh/f413828756fb095e04d5337743ae2fca.png@s_0,w_2000)
+
+:::
