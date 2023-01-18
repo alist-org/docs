@@ -47,6 +47,10 @@ location /alist/ {
 If you are the owner of the site, you can get the admin's info by run `./alist admin` in the terminal.
 Otherwise you can ask the owner to reset the password.
 
+:::tip
+You need to stop alist server first if the version of your alist is v3.9.0 or later as this pr: https://github.com/alist-org/alist/pull/3074
+:::
+
 ### How to modify the listening port​
 
 Refer to [config](../config/configuration.md#port)
