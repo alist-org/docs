@@ -20,7 +20,7 @@ star: true
 
 ### Why I got the error `failed get storage: can't find storage with rawPath: /` when I open web pages after install/upgrade?
 
-Because you haven't added storage.
+Because you haven't added storage. Click the `Login` button at the bottom to log in and then click `Manage` button to enter the background and add storage on the storage page.
 
 ### why i lost all my storage in v3
 

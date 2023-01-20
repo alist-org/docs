@@ -50,6 +50,10 @@ location /alist/ {
 
 否则，您可以要求站点所有者重置密码。
 
+:::tip
+如果你使用v3.9.0及以上版本，你需要先停止alist服务因为这个pr: https://github.com/alist-org/alist/pull/3074
+:::
+
 ### 如何修改监听端口 ​
 
 参考[config](../config/configuration.md#port)

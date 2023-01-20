@@ -125,7 +125,6 @@ EOF
   # 添加开机启动
   systemctl daemon-reload
   systemctl enable alist >/dev/null 2>&1
-  systemctl restart alist
 }
 
 SUCCESS() {
@@ -139,10 +138,14 @@ SUCCESS() {
 #   cd $INSTALL_PATH
 #   get_password=$(./alist password 2>&1)
 #   echo -e "初始管理密码：${GREEN_COLOR}$(echo $get_password | awk -F'your password: ' '{print $2}')${RES}"
-  echo -e "$查看管理员信息，请执行"
-  echo -e "${GREEN_COLOR}cd $INSTALL_PATH${RES}"
-  echo -e "${GREEN_COLOR}./alist admin${RES}"
+  echo -e "---------管理员信息--------"
+  cd $INSTALL_PATH
+  ./alist admin
+  echo -e "--------------------------"
   
+  echo -e "启动服务中"
+  systemctl restart alist
+
   echo
   echo -e "查看状态：${GREEN_COLOR}systemctl status alist${RES}"
   echo -e "启动服务：${GREEN_COLOR}systemctl start alist${RES}"
@@ -193,6 +196,10 @@ UPDATE() {
       systemctl start alist
       exit 1
     fi
+    echo -e "---------管理员信息--------"
+    cd $INSTALL_PATH
+    ./alist admin
+    echo -e "--------------------------"
     echo -e "\r\n${GREEN_COLOR}启动 Alist 进程${RES}"
     systemctl start alist
     echo -e "\r\n${GREEN_COLOR}Alist 已更新到最新稳定版！${RES}\r\n"

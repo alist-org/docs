@@ -80,11 +80,13 @@ alist restart
 ```
 :::
 
-### 守护进程(Linux)
+### 守护进程
 
+:::tabs#os
+@tab Linux
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
 
-```conf
+```ini
 [Unit]
 Description=alist
 After=network.target
@@ -108,6 +110,43 @@ WantedBy=multi-user.target
 - 状态: `systemctl status alist`
 - 重启: `systemctl restart alist`
 
+@tab macOS
+使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist.plist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>ci.nn.alist</string>
+        <key>KeepAlive</key>
+        <true/>
+        <key>ProcessType</key>
+        <string>Background</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>WorkingDirectory</key>
+        <string>path/to/working/dir</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>path_alist/alist</string>
+            <string>server</string>
+        </array>
+    </dict>
+</plist>
+```
+
+然后，执行 `launchctl load ~/Library/LaunchAgents/ci.nn.alist` 加载配置，现在你可以使用这些命令来管理程序：
+
+- 开启: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
+- 关闭: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
+- 卸载配置: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
+@tab Windows
+
+任何你了解的方式，此处不再提供。
+
+:::
 
 
 ### 如何更新
