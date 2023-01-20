@@ -103,6 +103,7 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       gfm: true,
+      flowchart: true,
     },
   },
 });
