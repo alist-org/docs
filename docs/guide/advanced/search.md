@@ -56,44 +56,53 @@ Paths to be skipped during index building, one path per line, multiple lines can
    - /aaa network disk
    - /bbb network disk/ccc folder
 
-### Paths to update
+- ### Update index
 
-After building all the indexes, or a file has a large number of file updates, but it is inconvenient to rebuild, you can use this to update the index
+  - (formerly: the path to update the index)
 
-- example:
+  After building all the indexes, or a file has a large number of file updates, but it is inconvenient to rebuild, you can use this to update the index
 
-   - /aaa network disk
+  - example:
 
-   - /bbb network disk/ccc folder
+     - /aaa network disk
 
-### Auto update index
+     - /bbb network disk/ccc folder
 
-:warning: **`The default is off, and the index will not be built automatically`**
+  ### Automatically update the index
 
-For example, you have already built the index, but added a **network disk mount** or **folder update** later
+  :warning: **`The default is off, and the index will not be built automatically`**
 
-But you have already built a lot of indexes. According to the previous words, there are two methods
+  For example, you have already built the index, but added a **network disk mount** or **folder update** later
 
-1. Go in folder by folder before building
-2. Or it is cumbersome to refactor all
+  But you have already built a lot of indexes. According to the previous words, there are two methods
 
-But this time, just turn on the **`Automatically build index`** button and enter the **Newly mounted network disk** or **Updated folder**, the indexed files in this directory and The folder automatically builds the index without entering a folder by folder to let him build it automatically
+  1. Go in folder by folder before building
+  2. Or it is cumbersome to refactor all
 
-- Advantages: Don't worry, all the indexes in this folder can be automatically built if there is an update into the root directory of the updated folder
-- Cons: always on call ready to build
+  But this time, just turn on the **`Automatically build index`** button and enter the **Newly mounted network disk** or **Updated folder**, the indexed files in this directory and The folder automatically builds the index without entering a folder by folder to let him build it automatically
 
-----
+  - Advantages: Don't worry, all the indexes in this folder can be automatically built if there is an update into the root directory of the updated folder
+  - Cons: always on call ready to build
 
-Someone will find out that [**Paths to update**](#paths-to-update) can also be updated? Can be updated but the two do not conflict
+  ----
 
-- [**Paths to update**](#paths-to-update): suitable for users who build indexes for all files
-- [**Auto update index**](#auto-update-index): Suitable for **not** to build an index for all files, but there are files that need to be built, manually build the index to avoid all being indexed
+  Someone will find out that [**Path to update index**](#Path to update index) can also be updated? Can be updated but the two do not conflict
 
+  - [**Automatically update index**](#automatically-update-the-index): suitable for users who build indexes for all files
+  - [**Update Index**](#update-index): Suitable for **not** to build indexes for all files, but there are files that need to be built, manually build indexes to avoid all being indexed
+
+### Maximum index depth
+
+default 20.
+
+The one shown outside is built manually, and the update index option selects the depth in the update index button.
+
+Explanation: The directory can enter up to several layers. For example, if you have a folder with a depth of 30 layers, set it to 20, and only build the first 20 layers, and the remaining 10 layers will not be built.
 
 ### :warning: Precautions for use
 
 - Alist **V2** and **v3** types of mounts cannot be built by default
-- In the future version (**>3.8.0 version**), V3 users can choose whether to allow others to mount your network disk and then index it :no_entry:**`Use with caution`**:no_entry:
+- In the future version (**≥3.9.0 version**), V3 users can choose whether to allow others to mount your network disk and then index it :no_entry:**`Use with caution`**:no_entry:
    - View details:  https://alist.nn.ci/config/site.html#allow-indexing
    - Don't ask why V2 is not supported, because the V2 version is no longer maintained, so there is no follow-up
 

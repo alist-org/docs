@@ -47,6 +47,8 @@ The title of the `alist`, such as `Alist`.
 
 The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We suggest you add a title in front of the content, such as `### Hello`, so that the content will not be covered by `Close Button`.
 
+- If you don't want to display it, you can clear the contents of the announcement to not display it.
+
 ### Pagination type
 
 - All: All files will be displayed at once.

@@ -25,3 +25,12 @@ star: true
 ## Token
 
 可用于访问程序所有 API 的令牌。
+
+
+
+### 其他
+
+使用起来时候发现有两个Aria2，但是有什么不同呢? [**点击查看详情说明**](https://alist.nn.ci/zh/faq/why.html#两个Aria2有什么不同)
+
+
+

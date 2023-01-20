@@ -43,6 +43,30 @@ Whether the web preview,download and the direct link go through the transfer. If
 - use proxy URL: redirect to proxy URL
 - native proxy: return data directly through local transit(best compatibility)
 
+### Description of three modes
+```flow
+1=>start: cloud disk
+2=>end: you
+  
+1(right)->2
+```
+
+```flow
+11=>start: cloud disk
+22=>operation: download proxy URL:>#download-proxy-url
+33=>end: you
+ 
+11(right)->22(right)->33
+```
+
+```flow
+11=>start: cloud disk
+22=>operation: server local transfer
+33=>end: you
+ 
+11(right)->22(right)->33
+```
+
 ### Download proxy URL
 
 When the proxy is turned on without filling in this field, the local machine will be used for transfer by default.Two proxy methods are provided:
