@@ -102,6 +102,27 @@ star: true
 
 **2️⃣ form**是把文件包裹成formdata上传，后端使用的内存会多一些，但是不限制大小。  
 
+### 两个Aria2有什么不同?
+
+1️⃣  后台管理 --> 设置 --> 其他：**这里的Aria2是用于离线下载资源到网盘内**
+
+2️⃣  前端界面 --> 本地设置（右下角齿轮） --> **这里的Aria2是用于将网盘内的资源下载到本地，相当于一种下载方式，人人都可以用不用担心有问题**
+
+- 至于第一个离线下载怎么使用：
+  - 例如你想在 **`/天翼云盘/电视剧/测试`** 这个文件夹离线下载点儿资源，哪你就要先在后台填写好 **地址和秘钥信息 ** 再手动进入前端界面的这个文件夹，进去后右下角能看到 **离线下载** 图标（一个磁铁样式），点击后输入你要离线下载的链接即可
+  - `说明`：**离线下载，复制，上传** ，都是一样的方式都是先由资源 **下载到服务器的临时文件夹** 再由 **服务器上传到对应的网盘** 
+    - “复制”对于 **部分不需要** 计算Hash值的上传是可以不临时保存的，直接由服务器中转。
+
+```flow
+1=>start: 准备
+2=>operation: 下载到临时文件夹
+3=>operation: 服务器进行上传
+4=>operation: 上传到网盘
+5=>end: 完毕
+
+1(right)->2(right)->3(right)->4(right)->5
+```
+
 ### RaiDrive挂载百度网盘，可以下载文件，不能上传文件。往挂载目录丢文件提示“提示“你需要权限来执行此操作”。这个怎么解决？
 
 Raidrive 是因为上传文件会预先创建一个空文件 而百度网盘不允许创建空文件。
@@ -112,6 +133,8 @@ v2可以成功是因为v2会忽略空文件上传。
 因为 **`Terabox`** 限制IP，如果你是本机非海外IP访问，是无法访问的，自然不会显示内容。
 
 （可以用海外的机器，如果非得用本机(或者国内的机器)搭建，哪你自己想办法让Alist吃到**proxy**就可以）
+
+可能有用的案例参考：**https://github.com/alist-org/alist/discussions/3026**
 
 
 ### 打开 Alist 提示 System error: TypeError:n.replaceAll is not a function？
@@ -128,4 +151,10 @@ v2可以成功是因为v2会忽略空文件上传。
 ```html
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>  
 ```
+
+### Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+
+![11](https://gchat.qpic.cn/gchatpic_new/0/0-0-D72B5BAD55DAE6A3510ADFD2768BAF0F/0)
+
+连续登录输入6次密码错误就会锁定，重启Alist即可重置。
 

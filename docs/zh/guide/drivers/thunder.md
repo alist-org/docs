@@ -24,7 +24,7 @@ star: true
 ThunderExpert 主要提供更自由的设置,实现更多登录方式
 :::
 
-## Thunder
+## 迅雷
 
 ### 用户名
 
@@ -48,7 +48,7 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 ![A2](https://pic.rmb.bdstatic.com/bjh/93d2383f605e23cd1bbb9f334ebd27ac.png)
 
-## ThunderExpert
+## 迅雷专家版
 
 :::tip
 迅雷如果需要下载必须指定 UserAgent(同下 DownUserAgent)

@@ -100,6 +100,27 @@ Your Tampermonkey answering plug-in conflicts, just close it [**For details, cli
 
 **2️⃣ form** is to wrap the file into formdata and upload it. The memory used by the backend will be more, but there is no limit on the size.
 
+### What is the difference between the two Aria2?
+
+1️⃣ Background management --> Settings --> Others: **Aria2 here is used to download resources offline to the network disk**
+
+2️⃣ Front-end interface --> Local settings (the gear in the lower right corner) --> **Aria2 here is used to download the resources in the network disk to the local, which is equivalent to a download method, everyone can use it without worrying about problems **
+
+- As for how to use the first offline download:
+   - For example, if you want to download some resources offline in the **`/OneDrive/TV/Test`** folder, you must first fill in the **address and secret key information** in the background and then manually enter the front end In this folder of the interface, you can see the **offline download** icon (a magnet style) in the lower right corner after entering it, click and enter the link you want to download offline
+   - `Description`: **Offline download, copy and upload** are all in the same way. They are first downloaded from the resource** to the temporary folder of the server** and then uploaded from the **server to the corresponding network disk**
+     - "Copy" can be directly transferred by the server without temporary storage for uploads that **partially do not require** to calculate the Hash value.
+
+```flow
+1=>start: ready
+2=>operation: Download to a temporary folder
+3=>operation: The server uploads
+4=>operation: Upload to the network disk
+5=>end: end
+
+1(right)->2(right)->3(right)->4(right)->5
+```
+
 ### RaiDrive mounts Baidu network disk, you can download files, but you cannot upload files. Throwing files to the mount directory prompts "Prompt "You need permission to perform this operation". How to solve this?
 
 Raidrive is because uploading a file will create an empty file in advance, and Baidu Netdisk does not allow the creation of an empty file.
@@ -110,6 +131,8 @@ v2 can succeed because v2 ignores empty file uploads.
 Because **`Terabox`** restricts IP, if you access it from a non-overseas IP, you cannot access it, and naturally the content will not be displayed.
 
 (Overseas machines can be used. If you have to use local machines (or domestic machines) to build, you can find a way to let Alist eat **proxy**)
+
+Cases where it might be useful: **https://github.com/alist-org/alist/discussions/3026**
 
 
 ### Open Alist prompt System error: TypeError: n.replaceAll is not a function?
@@ -127,3 +150,8 @@ If you think it is too slow, you can change to Ali Cloud
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 ```
 
+### Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+
+![11](https://gchat.qpic.cn/gchatpic_new/0/0-0-D72B5BAD55DAE6A3510ADFD2768BAF0F/0)
+
+If you enter the wrong password for 6 consecutive logins, it will be locked, and you can reset it by restarting Alist.

@@ -25,3 +25,9 @@ Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the
 ### Token
 
 The token that can be used to access all API.
+
+
+
+### other
+
+When using it, I found that there are two Aria2, but what is the difference? [**Click to view the detailed description**](https://alist.nn.ci/faq/why.html#what-is-the-difference-between-the-two-aria2 )
