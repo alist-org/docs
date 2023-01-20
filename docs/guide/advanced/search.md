@@ -103,7 +103,7 @@ Explanation: The directory can enter up to several layers. For example, if you h
 ### :warning: Precautions for use
 
 - Alist **V2** and **v3** types of mounts cannot be built by default
-- If you are using **MySQL** as the database, it is recommended that you use **database (non-full-text search)**, [**Click to view details to see the second item**](#search-tips)
+- If you are using **MySQL** as the database, it is recommended that you use **database (non-full-text search)**, [**Click to view details to see the second item**](#difference-between-different-search-indexes)
 - In the future version (**≥3.9.0 version**), V3 users can choose whether to allow others to mount your network disk and then index it :no_entry:**`Use with caution`**:no_entry:
    - View details:  https://alist.nn.ci/config/site.html#allow-indexing
    - Don't ask why V2 is not supported, because the V2 version is no longer maintained, so there is no follow-up
