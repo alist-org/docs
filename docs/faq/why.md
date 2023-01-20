@@ -109,6 +109,7 @@ Your Tampermonkey answering plug-in conflicts, just close it [**For details, cli
 - As for how to use the first offline download:
    - For example, if you want to download some resources offline in the **`/OneDrive/TV/Test`** folder, you must first fill in the **address and secret key information** in the background and then manually enter the front end In this folder of the interface, you can see the **offline download** icon (a magnet style) in the lower right corner after entering it, click and enter the link you want to download offline
    - `Description`: **Offline download, copy and upload** are all in the same way. They are first downloaded from the resource** to the temporary folder of the server** and then uploaded from the **server to the corresponding network disk**
+     - "Copy" can be directly transferred by the server without temporary storage for uploads that **partially do not require** to calculate the Hash value.
 
 ```flow
 1=>start: ready
