@@ -29,6 +29,7 @@ Follow the steps below to enable search:
 ### Difference between different search indexes
 
 - `database`: Search by database, which is using the existing data.db. It will create a new table, record the parent directory, name, and size of every object, but the search does not split words which means that match whether the keywords you enter appear in the name of object. In general, if you don't have a specific search requirement, we recommend you choose it.
+- `database` (non-full-text search): The full-text search mode is used above, but full-text search will have some strange problems when using **MySQL database** as an Alist database, which has not been resolved yet, so if your Alist database Change to **MySQL**, and your Alist version **`≥3.9.1`** It is recommended that you use this to build an index, although it is slower than full-text search and the gap is not very big, but it will not search for strange files , it’s more secure. After the future version is repaired, we will inform you to use the new full-text search to build the index. If you are using **sqlite3**, you can use whichever you like.
 - `bleve`: An open source full-text search engine. It will split the words in the name of object and search for the keywords you enter. But its search results may be so strange that you can't get the results you want, and it will take up more resources.
 
 The following table could help you understand the difference between the two search indexes quickly:
@@ -102,6 +103,7 @@ Explanation: The directory can enter up to several layers. For example, if you h
 ### :warning: Precautions for use
 
 - Alist **V2** and **v3** types of mounts cannot be built by default
+- If you are using **MySQL** as the database, it is recommended that you use **database (non-full-text search)**, [**Click to view details to see the second item**](#search-tips)
 - In the future version (**≥3.9.0 version**), V3 users can choose whether to allow others to mount your network disk and then index it :no_entry:**`Use with caution`**:no_entry:
    - View details:  https://alist.nn.ci/config/site.html#allow-indexing
    - Don't ask why V2 is not supported, because the V2 version is no longer maintained, so there is no follow-up
