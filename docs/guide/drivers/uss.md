@@ -22,11 +22,11 @@ UPYUN Storage Service，refer to as USS
 
 ### BucKet
 
-bucket name
+UPYUN Storage Service Name
 
 ### Endpoint
 
-Endpoint address
+Accelerated domain name (default TEST domain or bound domain, not CNAME domain)
 
 ### Operator name
 
@@ -40,11 +40,7 @@ Operator password
 
 Root path, if not filled, it defaults to the root directory.
 
-### Custom Host
-
-Custom cdn acceleration domain name
-
 ### Sign url expire
 
-The validity period of the signed download address is 4 hours by default. If a custom accelerated domain name is used, this option is invalid.
+The validity period of the signed download address is 4 hours by default.
 
