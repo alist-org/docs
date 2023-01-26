@@ -22,24 +22,28 @@ UPYUN 存储服务，简称 USS
 
 ## Bucket
 
-UPYUN 存储服务名称
+存储桶名字
 
 ## Endpoint
 
-加速域名（默认的测试域名或已绑定域名，不是CNAME域名）
+Endpoint address
 
 ## Operator name
 
-操作员名称
+Operator name
 
 ## Operator password
 
-操作员密码
+Operator password
 
 ## Root folder path
 
 根路径，不填则默认为根目录。
 
+## Custom Host
+
+自定义 CDN 加速域名
+
 ## Sign url expire
 
-签名下载地址的有效期默认为 4 小时。
+签名下载地址的有效期默认为 4 小时。 如果使用自定义加速域名，该选项无效。

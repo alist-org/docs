@@ -92,6 +92,15 @@ star: true
 
 检查你运行`./alist admin`和启动alist的目录是否相同。 alist默认会读取你运行程序的当前目录下的配置，所以在不同的目录下运行会导致读取的数据不同。
 
+----
+
+- **这里拿Windows举例**：例如你的Alist文件在 **`D:\Test\Alist\`** 这个文件夹里面，然后你直接在桌面启动了CMD命令运行窗口，然后把D盘里面的Alist拖动到命令运行窗口里面启动，然后它生成的配置文件实际上你现在的目录是在 **`C:\Windows\System32`** 这里（因为CMD默认是在这里），然后你获取密码也是获取了这个文件夹里面的密码，同时呢因为Alist它读取的是和Alist同级目录下的配置文件里面的密码，你去登录密码自然不对。
+  - ![png](https://pic.rmb.bdstatic.com/bjh/e9f64b5c99c4709bd48db0385322263e.png)
+- 解决办法：你要到Alist所在的文件夹里面去在启动或者查看密码，例如上面的是在 **`D:\Test\Alist\`** ，你就要手动去这个文件夹里面然后在输入启动命令或者查看密码的命令即可获取正确的密码
+  - **Windows**：去Alist所在的目录后在顶部地址栏输入 CMD回车这样然后再使用命令获取密码
+    - ![Windows](https://pic.rmb.bdstatic.com/bjh/720eddf065afa916634562bdad8d7786.gif)
+  - **Linux**：使用CD命令 到Alist所在的目录即可获取正确密码
+
 ### 为什么提示 System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
 
 你的油猴答题插件冲突了，关闭了即可[**详情查看点击查看**](https://github.com/alist-org/alist/discussions/2399)
@@ -154,7 +163,23 @@ v2可以成功是因为v2会忽略空文件上传。
 
 ### Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
 
-![11](https://gchat.qpic.cn/gchatpic_new/0/0-0-D72B5BAD55DAE6A3510ADFD2768BAF0F/0)
+![11](https://pic.rmb.bdstatic.com/bjh/d72b5bad55dae6a3510adfd2768baf0f.png)
 
 连续登录输入6次密码错误就会锁定，重启Alist即可重置。
 
+### 添加文件上传时，有一个“添加为任务“的选项，是做什么的?
+
+- 勾选后上传到服务器(搭建Alist的机器)，再由服务器上传时到网盘时后台似乎能看到（好像是这样的）
+- 未勾选不会看到，具体的大家可以看下图应该能看出什么问题.
+
+![Add](https://pic.rmb.bdstatic.com/bjh/5a473909c0d90f3691af8818874a0643.jpeg)
+
+### 使用 **`sqlite3`** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件
+
+[**点击查看详细说明**](https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases)
+
+### 想让游客登录后才能看到内容怎么设置?
+
+1. 将  **`guest`** 用户看到的目录 指向一个空文件夹，然后写一个readme说明，别问怎么弄自行操作
+2. 在元信息直接将根目录加密码
+3. 自行寻找其他办法解决.......

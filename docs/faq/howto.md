@@ -75,19 +75,15 @@ Permissions of this strongest copyleft license are conditioned on making availab
 
 It may be that the risk detection system has been triggered. Please changing the password, then, add it again.
 
-
-
 ### When adding Tianyi cloud disk client storage: prompt need img validate code: verification code
 
 - Click Edit, write the verification code you just saw into the configuration and click Save
 - Click Edit and turn on the Do not use OCR button
-- Or build it yourself [**Ocr interface**](https://alist.nn.ci/zh/config/global.html#ocr-api)
+- Or build it yourself [**Ocr interface**]((../config/global.md#ocr-api))
 
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
 For network problems such as these, please troubleshoot and solve them yourself.Don't create any issues for this.
-
-
 
 ### How to add epub reading
 

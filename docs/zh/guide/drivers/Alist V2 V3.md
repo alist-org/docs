@@ -68,7 +68,7 @@ star: true
 
 （这是让对方给你的，一般没有人会交出自己的token给外人）
 
-- V2获取方式：前往V2文档进行查看 -->https://alist-doc.nn.ci/docs/driver/alist#token
+- V2获取方式：前往V2文档进行查看 --> **https://alist-doc.nn.ci/docs/driver/alist#token**
 - V3获取方式：后台 --> 设置 --> 其他 --> **`令牌`**
 
 

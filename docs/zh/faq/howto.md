@@ -81,13 +81,11 @@ location /alist/ {
 
 - 点击编辑，把刚刚看到的验证码写进配置里面点击保存
 - 点击编辑，把不使用OCR 按钮打开
-- 或者自己进行搭建[**Ocr接口**](https://alist.nn.ci/zh/config/global.html#ocr-api)
+- 或者自己进行搭建[**Ocr接口**](../config/global.md#ocr-api)
 
 ### TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?
 
 诸如此类的网络问题，请自行排查解决。不要为此提出任何的issue
-
-
 
 
 ### 怎么添加epub阅读

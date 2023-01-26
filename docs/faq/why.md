@@ -90,6 +90,15 @@ There is a half-hour cache by default, which can be modified on the Add Storage 
 
 Check whether the directory you run `./alist admin` and start alist is the same. alist reads the configuration in the current directory where you run the program by default, so running in different directorys will result in different data being read.
 
+----
+
+- **Here take Windows as an example**: For example, your Alist file is in the **`D:\Test\Alist\`** folder, and then you directly start the CMD command running window on the desktop, and then put the D drive Drag the Alist inside to the command running window to start, and then the configuration file it generates is actually in **`C:\Windows\System32`** here (because CMD is here by default), and then you Obtaining the password is also obtaining the password in this folder. At the same time, because Alist reads the password in the configuration file in the same directory as Alist, it is naturally wrong for you to log in with the password.
+   - ![png](https://pic.rmb.bdstatic.com/bjh/e9f64b5c99c4709bd48db0385322263e.png)
+- Solution: You need to go to the folder where Alist is located to start or check the password, for example, the above is in **`D:\Test\Alist\`**, you have to manually go to this folder and then enter Enter the startup command or the command to view the password to obtain the correct password
+   - **Windows**: After going to the directory where Alist is located, enter CMD in the top address bar and press Enter, and then use the command to obtain the password
+     - ![Windows](https://pic.rmb.bdstatic.com/bjh/720eddf065afa916634562bdad8d7786.gif)
+   - **Linux**: Use the CD command to go to the directory where Alist is located to get the correct password
+
 ### Why does it prompt System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
 
 Your Tampermonkey answering plug-in conflicts, just close it [**For details, click to view**](https://github.com/alist-org/alist/discussions/2399)
@@ -152,6 +161,23 @@ If you think it is too slow, you can change to Ali Cloud
 
 ### Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
 
-![11](https://gchat.qpic.cn/gchatpic_new/0/0-0-D72B5BAD55DAE6A3510ADFD2768BAF0F/0)
+![11](https://pic.rmb.bdstatic.com/bjh/d72b5bad55dae6a3510adfd2768baf0f.png)
 
 If you enter the wrong password for 6 consecutive logins, it will be locked, and you can reset it by restarting Alist.
+
+### When adding a file to upload, there is an option of "add as task", what does it do?
+
+- After checking, upload to the server (the machine where Alist is built), and then when uploaded by the server to the network disk, it seems to be visible in the background (it seems to be like this)
+- You will not see it if it is not checked. For details, you can see the problem in the picture below.
+
+![Add](https://pic.rmb.bdstatic.com/bjh/5a473909c0d90f3691af8818874a0643.jpeg)
+
+### Use **`sqlite3`** to find that there are more than two files in the data folder, data.db-shm and data.db-wal
+
+[**Click to view detailed instructions**](https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases)
+
+### How do I set it so that visitors can only see the content after logging in?
+
+1. Point the directory seen by **`guest`** users to an empty folder, and then write a readme description, don’t ask how to do it yourself
+2. Directly encrypt the root directory in the meta information
+3. Find other solutions by yourself......
