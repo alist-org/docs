@@ -46,3 +46,9 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 - Sharing password: if there is a password to share, write it, if not, don’t write it
 
 ![PikShare](https://pic.rmb.bdstatic.com/bjh/5dea38ce42c5e909a59137ea2c74837f.png)
+
+## Precautions
+
+**Q**: Prompt when adding storage: **Failed init storage: invalid_account_or_password** What should I do, the password I entered is correct
+
+**A**: If the account password is not filled in incorrectly, it may be that you used Google, FB and other third-party quick registration when you registered. Although it seems that the account is a Google mailbox, you cannot log in with the mailbox, but you must use the first Three-party verification, **Alist** does not support this kind of jumping to third-party verification, **so you need to bind an email address in the account settings and set a login password**, or register a new account

@@ -66,3 +66,13 @@ Add the reverse_proxy configuration item reverse_proxy under the Caddyfile file,
      reverse_proxy 127.0.0.1:5244
 }
 ```
+
+### A simple demonstration of setting up a reverse proxy in Pagoda
+
+First create a new site, **Alist Launcher** does not matter whether it is in the site folder, and then add it as shown in the figure below.
+
+- Also, if you want to use Pagoda to open **SSL(HTTPS)**, you need to add it before the reverse proxy, otherwise you cannot open SSL
+  - If you have already added a reverse proxy, you can stop it first **(the one in the picture that turns on the proxy button can just turn it off)**, enable SSL and then turn on the reverse proxy
+
+
+![BT](https://alist-doc.nn.ci/assets/images/BT-Proxy-5913c3786afba1417362c71f0af73ea9.png)
