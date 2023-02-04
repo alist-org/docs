@@ -21,6 +21,10 @@ star: true
 Username for login
 ### Password
 Password for login
+:::tip
+Password is invalid for guest user.
+:::
+
 ### Base path
 The root path that users see when he/she log in
 ### Permission
