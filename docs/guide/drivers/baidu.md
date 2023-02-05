@@ -44,6 +44,6 @@ If you really don’t know it, you can take a look at an example on the web page
 
 The premise is that you need to have a member. It will only be useful if you have a member who has changed `UA` (choose official and 302). It can only help you here
 
-![修改UA](https://pic.rmb.bdstatic.com/bjh/f413828756fb095e04d5337743ae2fca.png@s_0,w_2000)
+![alist](/img/drivers/baidu/bdUA.png)
 
 :::

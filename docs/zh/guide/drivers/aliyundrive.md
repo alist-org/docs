@@ -126,4 +126,4 @@ const onClick = async ()=>{
 
 - 分享密码有就写没有就不写
 
-![AliShare](https://pic.rmb.bdstatic.com/bjh/257057c4d017ed1c9926f4c6837cf7c1.png)
+![alist](/img/drivers/aliyun/aliyun.png)

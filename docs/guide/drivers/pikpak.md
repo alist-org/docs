@@ -49,7 +49,7 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 - Root folder ID: If it is a multi-layer directory, which directory do you want to display as the root directory, you can write which root directory.
 - Sharing password: if there is a password to share, write it, if not, don’t write it
 
-![PikShare](https://pic.rmb.bdstatic.com/bjh/5dea38ce42c5e909a59137ea2c74837f.png)
+![pik](/img/drivers/pik/pik1.png)
 
 ## Precautions
 

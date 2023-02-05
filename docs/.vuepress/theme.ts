@@ -104,6 +104,7 @@ export default hopeTheme({
       tasklist: true,
       gfm: true,
       flowchart: true,
+	  mark: true,
     },
   },
 });

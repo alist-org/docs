@@ -124,6 +124,6 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 6. The update is complete, go and have a look.. It's that simple
    - There is a missing step in the picture, it is step 4 in the tutorial....remember to execute
 
-![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
+![docker](/img/faq/updocker.png)
 
 :::
