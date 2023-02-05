@@ -33,7 +33,7 @@ There are two **modes (types)** of Lanzuo network disk mount, respectively **coo
 
 Log in to your [**Lanzuo Cloud Disk**](https://pc.woozooo.com/) account, then F12 to open the developer mode, you can find `Cookie`, there is no specific one, such as the left side of the picture Just click one and there will be `Cookie` in the blue part of the right picture.
 
-![lanzou](/img/drivers/lanzou/lanzou.png)
+![lanzou](/img/drivers/lanzou/lanzou1.png)
 
 ## root folder ID
 
