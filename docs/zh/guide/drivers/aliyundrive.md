@@ -117,6 +117,10 @@ const onClick = async ()=>{
 ![file_id](/img/drivers/aliyundrive.png)
 
 
+## 内部上传
+
+如果你部署 Alist 的服务器是阿里云北京地区ECS，打开此开关可以提升文件上传速度。不符合要求的服务器请不要打开此开关，否则会出现无法上传的问题。
+
 
 ## 阿里云盘分享
 
