@@ -113,6 +113,10 @@ Open the official website of Aliyundrive and click the string behind the url whe
 ![file_id](/img/drivers/aliyundrive.png)
 
 
+## Internal upload
+
+If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
+
 
 ## Alibaba cloud disk sharing
 
