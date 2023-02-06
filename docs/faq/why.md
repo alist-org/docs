@@ -172,6 +172,12 @@ If you enter the wrong password for 6 consecutive logins, it will be locked, and
 
 ![faq](/img/faq/add.jpeg)
 
+### I am asked to enter the OTP code when I log in. What is the reason?
+
+Are you logging into someone else's account? If it is your own, please enter the 2FA (two-step verification) verification code
+
+What? Don't know the verification code? [**Click to view this guide**](../guide/advanced/2fa.md)
+
 ### Use **`sqlite3`** to find that there are more than two files in the data folder, data.db-shm and data.db-wal
 
 [**Click to view detailed instructions**](https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases)

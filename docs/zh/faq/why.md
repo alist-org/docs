@@ -174,6 +174,12 @@ v2可以成功是因为v2会忽略空文件上传。
 
 ![faq](/img/faq/add.jpeg)
 
+### 登陆时要求输入OTP代码，请问是什么原因?
+
+你是不是在登录别人的账号？如果是自己的请输入2FA(两步验证)验证码
+
+什么？不知道验证码？[**点击查看这篇说明**](../guide/advanced/2fa.md)
+
 ### 使用 **`sqlite3`** 发现 data 文件夹里面出现 data.db-shm、data.db-wal 两个多的文件
 
 [**点击查看详细说明**](https://stackoverflow.com/questions/7778723/what-are-the-db-shm-and-db-wal-extensions-in-sqlite-databases)
