@@ -178,6 +178,11 @@ If you enter the wrong password for 6 consecutive logins, it will be locked, and
 
 ### How do I set it so that visitors can only see the content after logging in?
 
-1. Point the directory seen by **`guest`** users to an empty folder, and then write a readme description, don’t ask how to do it yourself
-2. Directly encrypt the root directory in the meta information
-3. Find other solutions by yourself......
+There is always one of the following three versions that suits you. Eat it quickly! !
+
+   1. Point the directory seen by **`guest`** users to an empty folder, and then write a readme description, don’t ask how to do it yourself
+
+   2. Directly encrypt the root directory in the meta information
+
+   3. Directly deactivate the **`guest`** user, which will force a jump to the login page (version 3.10.1 and above)
+      - Find a way by yourself Welcome to provide new ways~~

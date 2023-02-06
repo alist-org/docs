@@ -54,7 +54,7 @@ Click **`Google Driver API`** to enter, see the diagram below to enable the API 
 
   **`Google Driver API`** After enabling, we will create an application - look carefully~~~
 
-If it is the first creation, there should be **` ❗If you need to create an OAuth client ID, you must first configure the unified screen `**, let's go to configure it, click on the page **`configure consent screen`* * You can jump to the configuration interface, see the picture below for the configuration tutorial, and come back to see this picture after configuration~
+If it is the first creation, there should be  **`❗If you need to create an OAuth client ID, you must first configure the unified screen`** , let's go to configure it, click on the page **`configure consent screen`** You can jump to the configuration interface, see the picture below for the configuration tutorial, and come back to see this picture after configuration~
 
 ![Google](/img/drivers/google/Google-4-1.png)
 

@@ -46,3 +46,7 @@ star: true
 - 删除：可以删除文件和文件夹
 - WebDAV 读取：可以使用 WebDAV 读取文件和文件夹
 - WebDAV 管理：可以使用 WebDAV 管理文件和文件夹
+
+## Tips
+
+你是否在为游客能看到全部文件而发愁？[**点击查看这里如何设置**](../../faq/why.md#%E6%83%B3%E8%AE%A9%E6%B8%B8%E5%AE%A2%E7%99%BB%E5%BD%95%E5%90%8E%E6%89%8D%E8%83%BD%E7%9C%8B%E5%88%B0%E5%86%85%E5%AE%B9%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE)

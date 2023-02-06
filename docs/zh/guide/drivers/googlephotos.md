@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 7
+order: 6
 # A page can have multiple categories
 category:
   - Guide
@@ -20,7 +20,7 @@ star: true
 
 ### 根目录ID
 
-根目录root，其他目录ID未知(貌似不能挂载单独的相册)
+根目录root，其他目录ID未知( ~~貌似不能挂载单独的相册~~ 还未解决[**参考**](https://github.com/alist-org/alist/discussions/3264#discussioncomment-4874536))
 
 ### 获取 client_id, client_secret
 
@@ -33,7 +33,11 @@ star: true
 
 
 拿到  client_id, client_secret  访问下面的链接获取 Code 代码
+```html
+https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=={client_id}=&response_type=code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fphotoslibrary&access_type=offline&approval_prompt=auto&flowName=GeneralOAuthFlow
+```
 
+ ==**（其中的`{client_id}`更换为自己应用的`client_id`）**== 
 ::: tip 
 
 提示 此应用未经 Google 验证
@@ -48,11 +52,7 @@ star: true
 
 :::
 
-```html
-https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=={client_id}=&response_type=code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fphotoslibrary&access_type=offline&approval_prompt=auto&flowName=GeneralOAuthFlow
-```
 
- ==**（其中的`{client_id}`更换为自己应用的`client_id`）**== 
 
 Code代码拿到后 获取刷新令牌
 

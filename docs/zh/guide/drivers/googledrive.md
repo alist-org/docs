@@ -67,7 +67,7 @@ star: true
 
 ![Google](/img/drivers/google/Google-6.png)
 
-我们创建好 **`OAuth 客户端ID`** 后点击我们刚刚创建的 **`OAuth 客户端ID`**随便写~ 进去后有  `客户端ID`  和  `客户端秘钥 `
+我们创建好 **`OAuth 客户端ID`** 后点击我们刚刚创建的 **`OAuth 客户端ID`** 随便写~ 进去后有  `客户端ID`  和  `客户端秘钥 `
 
 ![Google](/img/drivers/google/Google-7.png)
 
@@ -77,11 +77,11 @@ star: true
 
 ![Google](/img/drivers/google/Google-8.png)
 
-填好`客户端ID`  和  `客户端秘钥 ` 后点击 `2.获取Code然后粘贴`进行如下一系列操作即可
+填好`客户端ID`  和  `客户端秘钥` 后点击 `2.获取Code然后粘贴`进行如下一系列操作即可
 
 ![Google](/img/drivers/google/Google-11-1.png)
 
-上述操作后我们也拿到了 `刷新令牌`我们去 **`Alist后台`**添加账号里面进行添加吧~
+上述操作后我们也拿到了 `刷新令牌`我们去 **`Alist后台`** 添加账号里面进行添加吧~
 
 ![Google](/img/drivers/google/Google-12-1.png)
 

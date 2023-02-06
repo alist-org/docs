@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 7
+order: 6
 # A page can have multiple categories
 category:
   - Guide
@@ -20,7 +20,7 @@ star: true
 
 ### Root folder file_id
 
-The root directory is root, and the other directory IDs are unknown (it seems that a separate photo album cannot be mounted)
+The root directory is root, and other directory IDs are unknown (~~It seems that a separate album cannot be mounted~~ It has not been resolved yet [**Reference**](https://github.com/alist-org/alist/discussions/3264#discussioncomment-4874536))
 
 ### Get client_id, client_secret
 
@@ -33,6 +33,12 @@ How to get your own `client_id (client ID) client_secret (client secret key)` Go
 
 
 Get client_id, client_secret Visit the link below to get the Code code
+
+```html
+https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=={client_id}=&response_type=code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fphotoslibrary&access_type=offline&approval_prompt=auto&flowName=GeneralOAuthFlow
+```
+
+  ==**(where `{client_id}` is replaced with `client_id` of your own application)**== 
 
 ::: tip
 
@@ -48,11 +54,6 @@ Remember to check this option, otherwise an error will be reported, as explained
 
 :::
 
-```html
-https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=={client_id}=&response_type=code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fphotoslibrary&access_type=offline&approval_prompt=auto&flowName=GeneralOAuthFlow
-```
-
-  ==**(where `{client_id}` is replaced with `client_id` of your own application)**== 
 
 After the Code code is obtained, obtain the refresh token
 
