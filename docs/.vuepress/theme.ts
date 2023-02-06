@@ -106,5 +106,17 @@ export default hopeTheme({
       flowchart: true,
 	  mark: true,
     },
+	components: {
+		components: [
+		"AudioPlayer",
+		"Badge",
+		"BiliBili",
+		"CodePen",
+		"PDF",
+		"StackBlitz",
+		"VideoPlayer",
+		"YouTube",
+	  ],
+	},
   },
 });
