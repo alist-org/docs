@@ -104,6 +104,10 @@ export default hopeTheme({
       tasklist: true,
       gfm: true,
       flowchart: true,
+      mark: true,
+    },
+    components: {
+      components: ["ArtPlayer"],
     },
   },
 });

@@ -38,3 +38,7 @@ The root path that users see when he/she log in
 - Delete: Can delete files and folders
 - Webdav read: Can read files and folders with webdav
 - Webdav manage: Can manage files and folders with webdav
+
+## Tips
+
+Are you worried that visitors can see all files? [**Click to see how to set it up here**](../../faq/why.md#how-do-i-set-it-so-that-visitors-can-only-see-the-content-after-logging-in)

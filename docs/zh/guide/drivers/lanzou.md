@@ -33,9 +33,7 @@ star: true
 
 登录自己的 [**蓝奏云盘**](https://pc.woozooo.com/) 账号，然后F12打开开发者模式，就能找到 `Cookie`，没有具体的，例如图片中左侧的随便点一个然后有右图蓝色部分的 `Cookie` 即可.
 
-![Lanzou Cookie](https://pic.rmb.bdstatic.com/bjh/8a00dc89a7a5dde373f89440a24c03c1.png)
-
-
+![lanzou](/img/drivers/lanzou/lanzou1.png)
 
 ## 根文件夹ID
 
@@ -43,9 +41,7 @@ star: true
 
 - **其他文件夹ID**
   - 两种获取方式（看下图即可）
-  - <img src="https://pic.rmb.bdstatic.com/bjh/86cbe731013ac6860c1029544656fa1d.gif" alt="LanZou folder_id" style="zoom:50%;" />
-
-
+  - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
 
 ## 分享链接和分享密码
 
@@ -63,4 +59,4 @@ star: true
 
 ## 挂载填写示例
 
-![Add LanZou](https://pic.rmb.bdstatic.com/bjh/0cbc0b9a0d7022d729f4208f9b0d5b80.png)
+![lanzou](/img/drivers/lanzou/lanzou3.png)

@@ -19,7 +19,7 @@ star: true
 
 
 
-![Add Alist](https://pic.rmb.bdstatic.com/bjh/c0f6600faacb6ec611757425f9bd8b65.png)
+![alist](/img/drivers/alist/alist.png)
 
 
 

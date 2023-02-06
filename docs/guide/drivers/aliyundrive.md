@@ -126,4 +126,4 @@ Mainly fill in **[refresh token](#refresh-token), share ID**
 
 - Write the **Share pwd** if you have it
 
-![AliShare](https://pic.rmb.bdstatic.com/bjh/257057c4d017ed1c9926f4c6837cf7c1.png)
+![alist](/img/drivers/aliyun/aliyun.png)

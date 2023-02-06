@@ -128,6 +128,6 @@ services:
    - 图片中丢了一步，是教程中的第四步....记得执行
 
 
-![Docker update](https://pic.rmb.bdstatic.com/bjh/2f638b30b8978f6d1d122b563787883e.png)
+![docker](/img/faq/updocker.png)
 
 :::

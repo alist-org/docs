@@ -48,7 +48,7 @@ star: true
 - 根文件夹ID：如果是多层目录，你想让哪个目录展示当根目录你就写哪个根目录.
 - 分享密码：分享的有密码就写，没有就不写
 
-![PikShare](https://pic.rmb.bdstatic.com/bjh/5dea38ce42c5e909a59137ea2c74837f.png)
+![pik](/img/drivers/pik/pik1.png)
 
 ## 注意事项
 **Q**：添加存储时提示：**Failed init storage: invalid_account_or_password** 怎么办，我输入的密码的对的

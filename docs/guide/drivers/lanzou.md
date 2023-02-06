@@ -33,9 +33,7 @@ There are two **modes (types)** of Lanzuo network disk mount, respectively **coo
 
 Log in to your [**Lanzuo Cloud Disk**](https://pc.woozooo.com/) account, then F12 to open the developer mode, you can find `Cookie`, there is no specific one, such as the left side of the picture Just click one and there will be `Cookie` in the blue part of the right picture.
 
-![Lanzou Cookie](https://pic.rmb.bdstatic.com/bjh/8a00dc89a7a5dde373f89440a24c03c1.png)
-
-
+![lanzou](/img/drivers/lanzou/lanzou1.png)
 
 ## root folder ID
 
@@ -43,9 +41,7 @@ Lanzuo cloud disk root directory ID, the default is `-1`
 
 - **Additional Folder ID**
    - Two ways to obtain (see the picture below)
-   - <img src="https://pic.rmb.bdstatic.com/bjh/86cbe731013ac6860c1029544656fa1d.gif" alt="LanZou folder_id" style="zoom:50%;" />
-
-
+   - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
 
 ## Share link and share password
 
@@ -63,4 +59,4 @@ If you need **WebDav** service, you need to open it
 
 ## Mount and fill in the example
 
-![Add LanZou](https://pic.rmb.bdstatic.com/bjh/0cbc0b9a0d7022d729f4208f9b0d5b80.png)
+![lanzou](/img/drivers/lanzou/lanzou3.png)
