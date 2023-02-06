@@ -104,19 +104,10 @@ export default hopeTheme({
       tasklist: true,
       gfm: true,
       flowchart: true,
-	  mark: true,
+      mark: true,
     },
-	components: {
-		components: [
-		"AudioPlayer",
-		"Badge",
-		"BiliBili",
-		"CodePen",
-		"PDF",
-		"StackBlitz",
-		"VideoPlayer",
-		"YouTube",
-	  ],
-	},
+    components: {
+      components: ["ArtPlayer"],
+    },
   },
 });
