@@ -43,3 +43,20 @@ UPYUN 存储服务名称
 ## Sign url expire
 
 签名下载地址的有效期默认为 4 小时。
+
+
+
+
+## 详情填写示意图
+
+::: tip
+
+如果你要用官方提供的的测试域名那必须要手动加http  例如： http://xxx.test.upcdn.net
+
+如果想用HTTPS，当然也可以添加自己的域名就可以使用例如：https://you.xxx.com
+
+操作员的权限自己需要哪个开启哪个，读取权限必须得开！
+
+:::
+
+![s3](/img/drivers/s3/up.png)

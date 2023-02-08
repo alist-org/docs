@@ -42,7 +42,7 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 - official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢
 - crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定
-
+  -  ==crack: 非官方接口== 似乎已经和谐了？
 
 
 
