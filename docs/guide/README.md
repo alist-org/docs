@@ -63,7 +63,7 @@ Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) 
 
 ### Demo
 
-- https://pan.nn.ci
+- https://al.nn.ci
 
 ### Special sponsors
 - [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.la/)
