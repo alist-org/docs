@@ -46,6 +46,8 @@ If you really don’t know it, you can take a look at an example on the web page
 
 The premise is that you need to have a member. It will only be useful if you have a member who has changed `UA` (choose official and 302). It can only help you here
 
+If you don’t change the UA, you can enable ==Web Proxy== , the disadvantage is that you need to build an Alist machine to transfer, that is to say, you need a large broadband to help you transfer
+
 ![alist](/img/drivers/baidu/bdUA.png)
 
 :::

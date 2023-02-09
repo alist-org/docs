@@ -50,6 +50,8 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 前提是需要有会员哦，有会员改完 `UA` 才会有用（选择官方和302），只能帮你到这里了
 
+如果不改UA，可以开启 ==Web代理==，缺点是需要你搭建Alist的机器中转，也就是说你需要大宽带帮你中转
+
 ![alist](/img/drivers/baidu/bdUA.png)
 
 :::
