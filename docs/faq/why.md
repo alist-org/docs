@@ -192,3 +192,11 @@ There is always one of the following three versions that suits you. Eat it quick
 
    3. Directly deactivate the **`guest`** user, which will force a jump to the login page (version 3.10.1 and above)
       - Find a way by yourself Welcome to provide new ways~~
+
+### Baidu cloud disk unofficial download error appears "hit black userlist, hit illegal dlna"
+
+It should be repaired harmoniously, but the interface discoverer said to wait for 24 hours to try, if it still doesn't work, it is really repaired harmoniously.
+
+```json
+{"error_code":31329,"error_msg":"hit black userlist , hit illegal dlna","request_id":8942439159334999112}
+```

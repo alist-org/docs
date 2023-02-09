@@ -35,6 +35,8 @@ The root foler to mount, defaults to `/`, same as local storage.
 ### Download api
 - official: The official interface, very stable, but for larger files, UA needs to be modified and the speed is slow
 - crack: unofficial interface, no need to modify UA and some files may not limit the speed, but **maybe** unstable
+  - ==crack: Unofficial Interface== Seems to be Harmonized? [**Click here for details to view FAQs**](../../faq/why.md#baidu-cloud-disk-unofficial-download-error-appears-hit-black-userlist,-hit-illegal-dlna)
+
 
 
 
