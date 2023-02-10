@@ -112,6 +112,10 @@ Open the official website of Aliyundrive and click the string behind the url whe
 
 ![file_id](/img/drivers/aliyundrive.png)
 
+## Second pass
+
+Check the hash when uploading. If there is one in the cloud, directly generate the file without consuming traffic
+
 
 ## Internal upload
 

@@ -42,15 +42,15 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 - official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢
 - crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定
-
-
-
+  -  ==crack: 非官方接口== 似乎已经和谐了？[**详情自行点击查看常见问题说明**](../../faq/why.md#百度云盘非官方下载报错出现-hit-black-userlist-hit-illeage-dlna)
 
 ::: details 可能对你有帮助
 
 实在不会的可以看看一个Web网页端的例子： **https://www.bilibili.com/video/BV1UA4y1X7J8**
 
 前提是需要有会员哦，有会员改完 `UA` 才会有用（选择官方和302），只能帮你到这里了
+
+如果不改UA，可以开启 ==Web代理==，缺点是需要你搭建Alist的机器中转，也就是说你需要大宽带帮你中转
 
 ![alist](/img/drivers/baidu/bdUA.png)
 

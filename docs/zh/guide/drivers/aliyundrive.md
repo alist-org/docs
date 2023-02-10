@@ -116,6 +116,9 @@ const onClick = async ()=>{
 
 ![file_id](/img/drivers/aliyundrive.png)
 
+## 秒传
+
+上传的时候校验hash，如果云端有，直接生成文件，不消耗流量
 
 ## 内部上传
 

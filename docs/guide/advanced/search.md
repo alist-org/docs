@@ -34,13 +34,25 @@ Follow the steps below to enable search:
 
 The following table could help you understand the difference between the two search indexes quickly:
 
-|                         | database    | bleve       |
-| ----------------------- | ----------- | ----------- |
-| Search results          | Exact match | Fuzzy match |
-| Search speed            | Fast        | Fast        |
-| Specify folder search   | Yes         | No          |
-| Disk usage              | Low         | High        |
-| Auto incremental update | Yes         | No          |
+|                         | database(full text search)                      | Database (non-full-text search)                              | bleve       |
+| ----------------------- | ----------------------------------------------- | ------------------------------------------------------------ | ----------- |
+| Search results          | Can't find it in Chinese                        | More accurate than full-text search, you can search Chinese  | Fuzzy match |
+| Search speed            | Fast,see above for advantages and disadvantages | Slower than full-text search, see above for advantages and disadvantages | Fast        |
+| Specify folder search   | Yes                                             | Yes                                                          | No          |
+| Disk usage              | Low                                             | Low                                                          | High        |
+| Auto incremental update | Yes                                             | Yes                                                          | No          |
+
+::: warning
+
+If you are using MySQL as the database, it is recommended to use **`non-full-text search`** (strongly recommended)
+
+**`Non-full-text search`** Although it is not as fast as full-text search, it is not much slower. If you insist on using full-text search, you may have to sacrifice the inability to search Chinese
+
+If you use ==sqlite== as the database, there is no full-text search, you can choose any database~
+
+Full-text search: It will not search in the text of all files, don't get it wrong.
+
+:::
 
 ### Search tips
 

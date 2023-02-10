@@ -54,7 +54,9 @@ star: true
 
 ## 签名所有
 
-向所有文件的直接链接添加签名(无论是否有密码)
+向所有文件的直接链接添加签名(无论是否有密码) 即https://xxxx.com/d/xx? ==**sign=vUQ5KFXnwMseKnIUXGRcfoG3cEHzKFBiPGp1NriMDXA=:0**== 
+
+若需要关闭自行关闭即可，但需要注意安全问题，关闭签名后若站点能被公网访问，可能会被绕过密码访问私人文件。
 
 ## 文件名字符映射
 
