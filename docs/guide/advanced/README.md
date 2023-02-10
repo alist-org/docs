@@ -6,15 +6,15 @@ dir:
   order: 5
 ---
 
-## [user](./user.md)
+ - [user](./user.md)
 
-## [2FA|Two-step verification](./2fa.md)
+ -  [2FA|Two-step verification](./2fa.md)
 
-## [meta](./meta.md)
+ -  [meta](./meta.md)
 
-## [balance](./balance.md)
+ - [balance](./balance.md)
 
-## [IPA installation instructions](./ipa.md)
+ - [IPA installation instructions](./ipa.md)
 
-## [Search Tutorial Usage and Precautions](./search.md)
+ - [Search Tutorial Usage and Precautions](./search.md)
 
