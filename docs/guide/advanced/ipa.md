@@ -34,7 +34,7 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
-  poster="/img/advanced/video.jpg"
+  poster="/img/advanced/video.png"
 />
 
 **If the video fails, you can watch it here: https://b23.tv/oLvHHC8**

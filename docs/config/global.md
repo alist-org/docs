@@ -54,7 +54,9 @@ Used to identify verification codes. You can deploy yourself: https://hub.docker
 
 ### Sign all
 
-Add signatures to the direct link of all files (whether with password or not)
+Add signatures to the direct link of all files (whether with password or not) That is https://xxxx.com/d/xx? ==**sign=vUQ5KFXnwMseKnIUXGRcfoG3cEHzKFBiPGp1NriMDXA=:0**==
+
+If you need to close it, you can close it yourself, but you need to pay attention to security issues. After closing the signature, if the site can be accessed by the public network, the password may be bypassed to access private files.
 
 ### Filename char mapping
 
