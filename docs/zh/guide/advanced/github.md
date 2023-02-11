@@ -30,12 +30,14 @@ star: true
 
 打开 **https://github.com/settings/developers**  点击  **`New OAuth App`**
 
+
+
 ### Register OAuth 填写说明
 
 
 - Application name
   - 随便写想叫什么叫什么
--  ==**Homepage URL**== 
+- ==**Homepage URL**== 
   - 主页网址地址
     - 可以使用http https都可以
 - Application description
