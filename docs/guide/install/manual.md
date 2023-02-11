@@ -21,6 +21,12 @@ star: true
 ### Get Alist
 Open [AList Release](https://github.com/Xhofe/alist/releases) to download the files corresponding to the system to be deployed. The latest version of the front-end has been packaged with the back-end, so there is no need to download the front-end files again.
 
+
+
+*The xxxx refers to the names corresponding to different systems/architectures, generally Linux-x86/64 is alist-linux-amd64. If your glibc version is too low, it is recommended to download the musl version*
+
+When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
+
 ### Running
 
 :::tabs#os
@@ -65,26 +71,9 @@ alist server
 ```
 :::
 
-*The xxxx refers to the names corresponding to different systems/architectures, generally Linux-x86/64 is alist-linux-amd64. If your glibc version is too low, it is recommended to download the musl version*
-
-When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
-
-:::info
-For all platform, you can use follow command to silent start, stop and restart. (v3.4.0 and later)
-
-```bash
-# start server with `--force-bin-dir`
-alist start
-# stop server by pid
-alist stop
-# restart server by pid
-alist restart
-```
-:::
-
 ### Daemon
 
-:::tabs#os
+::::tabs#os
 @tab linux
 `vim /usr/lib/systemd/system/alist.service` add the following content, where path_alist is the path where alist is located
 ```ini
@@ -144,7 +133,55 @@ Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist` to load the co
 
 @tab Windows
 
-Any way you know and it is no longer provided here.
+method 1
+
+Use **`.VBS`** script to start and stop, create two scripts respectively start.vbs and stop.vbs
+
+Just double-click to start it in the folder at the same level as the Alist startup program, don't worry about no response, just go to the browser to access it
+
+::: info Two startup scripts
+
+**start.vbs**
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "alist.exe server",vbhide
+Wscript.quit
+```
+
+**stop.vbs**
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "taskkill /f /im alist.exe",0
+Wscript.quit
+```
+
+1. If the script will not be created, you can download it yourself: [**Script Download**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
+
+2. If the script will not be used, you can watch the video: [**reference video**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
+
+:::
+
+How to realize Windows startup automatically, you can refer to the script mentioned above to use the video (second).
+
+::::
+
+
+
+:::info
+For all platform, you can use follow command to silent start, stop and restart. (v3.4.0 and later)
+
+```bash
+# start server with `--force-bin-dir`
+alist start
+# stop server by pid
+alist stop
+# restart server by pid
+alist restart
+```
 
 :::
 
