@@ -215,3 +215,13 @@ v2可以成功是因为v2会忽略空文件上传。
 	1. 元信息 选择这个文件夹，下面有说明自己写就行
 
 建这个空白文件夹有啥用？可以配合[**想让游客登录后才能看到内容怎么设置的第一条办法使用**](#想让游客登录后才能看到内容怎么设置)使用
+
+### lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)或者 accept: function not implemented
+
+考虑使用 **musl** 版本作为替代，因为在您的平台上的 **glibc** 版本太低
+
+参考说明：[#2295](https://github.com/alist-org/alist/discussions/2295)，[#322](https://github.com/alist-org/alist/issues/322#issuecomment-1010601181)
+
+### 现在文件后面多了个 sign 的参数是干嘛的？
+
+加密了为了账号安全一些，查看详情可以[点击查看](../config/global.md#签名所有)

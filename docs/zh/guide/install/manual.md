@@ -161,7 +161,7 @@ Wscript.quit
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "taskkill /f /im alist.exe",0
-Wscri
+Wscript.quit
 ```
 
 1. 脚本不会创建的可以自行下载：[**脚本下载**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)

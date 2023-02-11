@@ -49,7 +49,11 @@ star: true
 
 
 
+
+
 填写完毕后记得获取一下 **Client secrets**，然后填写到Alist后台。
+
+
 
 
 

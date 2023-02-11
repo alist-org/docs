@@ -47,7 +47,11 @@ Open **https://github.com/settings/developers** Click **`New OAuth App`**
 
 
 
+
+
 Remember to get **Client secrets** after filling it out, and then fill it in the Alist background.
+
+
 
 
 

@@ -215,3 +215,14 @@ How to add **`Readme`** instructions to an empty folder
   2. Meta information Select this folder, there are instructions below to write it yourself
 
 What is the use of creating this blank folder? It can be used in conjunction with [**How to set up visitors to access the content after logging in, use the first method**](#how-do-i-set-it-so-that-visitors-can-only-see-the-content-after-logging-in)
+
+### lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist) or accept: function not implemented
+
+
+Consider using the **musl** version as an alternative due to the version of the **glibc** on your platform is too low
+
+Reference instructions：[#2295](https://github.com/alist-org/alist/discussions/2295)，[#322](https://github.com/alist-org/alist/issues/322#issuecomment-1010601181)
+
+### What is the extra sign parameter after the file now?
+
+Encrypted for account security, you can view the details by [click to view](../config/global.md#Sign all)
