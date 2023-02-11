@@ -28,6 +28,10 @@ UPYUN Storage Service Name
 
 Accelerated domain name (default TEST domain or bound domain, not CNAME domain)
 
+If you use http protocol, please add `http://` protocol header.
+
+The test domain name provided by upyun is not accessible in some network and does not support https, so it is recommended to use your own bound domain name.
+
 ### Operator name
 
 Operator name
