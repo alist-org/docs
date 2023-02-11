@@ -50,6 +50,12 @@ star: true
 填写完毕后记得获取一下 **Client secrets**，然后填写到Alist后台。
 
 
+::: warning
+若想使用GitHub登录，首选需要你搭建Alist的机器能连接访问GitHub才可以调用使用，不然连接不上无法使用
+:::
+
+
+
 
 ### 完整填写参考示意图
 
