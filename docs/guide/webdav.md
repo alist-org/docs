@@ -60,11 +60,11 @@ star: true
 1. **Windows**
    - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，RaiDrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
 2. **Android**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES File Manager，[kodi](https://kodi.tv/download)，[nova nova magic change](https://github.com/nova-video-player/aos-AVP)，cx File Manager，Solid Expore
+   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES File Manager，[kodi](https://kodi.tv/download)，[nova nova magic change](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[rexx](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx File Manager，Solid Expore
 3. **IOS**
    - Nplayer，[kmplayer](https://www.kmplayer.com/home)，infuse，Fileball File Manager
 4. **电视TV**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kodi](https://kodi.tv/download)，[nova nova magic change](https://github.com/nova-video-player/aos-AVP)
+   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kodi](https://kodi.tv/download)，[nova nova magic change](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)
    - If you only look at Ali, you can use Ali's official cooperation
      - Huanshi store-Alibaba cloud disk TV version, online disk player-Alibaba cloud disk TV version
 5. **Mac**
