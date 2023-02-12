@@ -47,13 +47,7 @@ Open **https://github.com/settings/developers** Click **`New OAuth App`**
 
 
 
-
-
 Remember to get **Client secrets** after filling it out, and then fill it in the Alist background.
-
-
-
-
 
 ::: warning
 If you want to use GitHub to log in, you first need the machine you built Alist to be able to connect to GitHub before you can call and use it, otherwise you cannot use it if the link is not connected

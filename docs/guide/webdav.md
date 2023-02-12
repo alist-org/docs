@@ -58,9 +58,9 @@ star: true
 ## Software that can be used to mount WebDav
 
 1. **Windows**
-   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，Raidrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
+   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，RaiDrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
 2. **Android**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，MX Player / Pro，ES File Manager，[kodi](https://kodi.tv/download)，[nova nova magic change](https://github.com/nova-video-player/aos-AVP)
+   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES File Manager，[kodi](https://kodi.tv/download)，[nova nova magic change](https://github.com/nova-video-player/aos-AVP)，cx File Manager，Solid Expore
 3. **IOS**
    - Nplayer，[kmplayer](https://www.kmplayer.com/home)，infuse，Fileball File Manager
 4. **电视TV**

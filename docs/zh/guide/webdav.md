@@ -58,9 +58,9 @@ star: true
 ## 可以用来挂载WebDav的软件
 
 1. **Windows**
-   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，Raidrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
+   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，RaiDrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
 2. **Android**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，MX Player / Pro，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://github.com/nova-video-player/aos-AVP)
+   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://github.com/nova-video-player/aos-AVP)，cx 文件管理器，Solid Expore
 3. **IOS**
    - Nplayer，[kmplayer](https://www.kmplayer.com/home)，infuse，Fileball文件管理器
 4. **电视TV**
