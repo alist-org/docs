@@ -12,7 +12,7 @@ export default hopeTheme({
   },
 
   author: {
-    name: "Noah Hsu",
+    name: "Andy Hsu",
     url: "https://i.nn.ci",
   },
 
