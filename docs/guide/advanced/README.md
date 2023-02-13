@@ -6,15 +6,18 @@ dir:
   order: 5
 ---
 
-## [user](./user.md)
 
-## [2FA|Two-step verification](./2fa.md)
+ - [**user**](user.md)
 
-## [meta](./meta.md)
+ -  [**2FA|Two-step verification**](2fa.md)
 
-## [balance](./balance.md)
+ -  [**meta**](meta.md)
 
-## [IPA installation instructions](./ipa.md)
+ - [**balance**](balance.md)
 
-## [Search Tutorial Usage and Precautions](./search.md)
+ - [**IPA installation instructions**](ipa.md)
+
+ - [**Search how to use tutorials and precautions**](search.md)
+
+ - [**GitHub Login**](github.md)
 

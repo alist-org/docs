@@ -6,14 +6,17 @@ dir:
   order: 5
 ---
 
-## [用户](./user.md)
 
-## [2FA|两步验证|OPT](./2fa.md)
+- [**用户**](user.md)
 
-## [元信息](./meta.md)
+ - [**2FA|两步验证|OPT**](2fa.md)
 
-## [负载均衡](./balance.md)
+ - [**元信息**](meta.md)
 
-## [IPA 安装说明](./ipa.md)
+ - [**负载均衡**](balance.md)
 
-## [搜索教程使用和注意事项](./search.md)
+ - [**IPA 安装说明**](ipa.md)
+
+ - [**搜索使用教程和注意事项**](search.md)
+
+ - [**GitHub登录**](github.md)
