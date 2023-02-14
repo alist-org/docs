@@ -2,7 +2,7 @@
   <NormalPage>
     <template #contentBefore>
       <div class="theme-hope-content ads-container">
-        <div class="wwads-cn wwads-horizontal" data-id="213" style="width:100% !important"></div>
+        <div class="wwads wwads-cn wwads-horizontal" data-id="213" style="width:100% !important"></div>
       </div>
     </template>
   </NormalPage>
@@ -17,7 +17,17 @@ import NormalPage from "vuepress-theme-hope/components/NormalPage";
   padding-bottom: 0 !important;
 }
 
-html[data-theme="dark"] .wwads-cn {
+.wwads-cn,
+.wwads {
+  background-color: #f4f8fa;
+}
+
+.wwads-text {
+  color: #0e1011;
+}
+
+html[data-theme="dark"] .wwads-cn,
+html[data-theme="dark"] .wwads {
   background-color: #272829 !important;
 }
 

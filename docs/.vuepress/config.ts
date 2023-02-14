@@ -14,7 +14,7 @@ export default defineUserConfig({
         type: "text/javascript",
         charset: "UTF-8",
         src: "https://cdn.wwads.cn/js/makemoney.js",
-        async: true,
+        // async: true,
       },
     ],
     [
@@ -42,6 +42,7 @@ export default defineUserConfig({
       },
     ],
   ],
+  
 
   locales: {
     "/": {

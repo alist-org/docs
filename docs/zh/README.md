@@ -47,6 +47,6 @@ features:
     details: 包括文本编辑器、README/HTML 渲染、文件永久链接、Cloudflare Workers 代理等
 
 copyright: false
-footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a> <div>AGPL-3.0 Licensed | Copyright © 2022-present AList</div>
+footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a> <div>AGPL-3.0 Licensed | Copyright © 2022-present AList</div><script src="/adb.js" type="text/javascript"></script>
 ---
 
