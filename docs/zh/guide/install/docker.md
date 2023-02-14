@@ -113,21 +113,25 @@ services:
 
 ## Docker安装怎么更新?
 ::: details 点击查看
+  - docker-cli
 
-1. docker ps -a #查看容器(找Alist容器的ID)
+  1. docker ps -a #查看容器(找Alist容器的ID)
 
-2. docker stop ID #停止Alist运行,不然无法删除(这次Alist容器的ID是d429749a6e69，每一次安装都不一样自己看)
+  2. docker stop ID #停止Alist运行,不然无法删除(这次Alist容器的ID是d429749a6e69，每一次安装都不一样自己看)
 
-3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
+  3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
 
-4. docker pull xhofe/alist:latest
+  4. docker pull xhofe/alist:latest
 
-5. [输入安装命令点击查看](#docker-cli)
+  5. [输入安装命令点击查看](#docker-cli)
 
-6. 更新好了 去看看吧..就这么简单
-   - 图片中丢了一步，是教程中的第四步....记得执行
+  6. 更新好了 去看看吧..就这么简单
+     - 图片中丢了一步，是教程中的第四步....记得执行
 
-
-![docker](/img/faq/updocker.png)
+  ![docker](/img/faq/updocker.png)
+  
+  - docker-compose 
+  1. docker-compose pull
+  2. docker-compose up -d
 
 :::
