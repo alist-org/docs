@@ -112,26 +112,27 @@ services:
 如果是CPU架构是32位，目前尚无可用方案。
 
 ## Docker安装怎么更新?
-::: details 点击查看
-  - docker-cli
+::: details docker-cli
 
-  1. docker ps -a #查看容器(找Alist容器的ID)
 
-  2. docker stop ID #停止Alist运行,不然无法删除(这次Alist容器的ID是d429749a6e69，每一次安装都不一样自己看)
+1. docker ps -a #查看容器(找Alist容器的ID)
 
-  3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
+2. docker stop ID #停止Alist运行,不然无法删除(这次Alist容器的ID是d429749a6e69，每一次安装都不一样自己看)
 
-  4. docker pull xhofe/alist:latest
+3. docker rm ID #删除Alist容器(数据还在只要你不手动删除)
 
-  5. [输入安装命令点击查看](#docker-cli)
+4. docker pull xhofe/alist:latest
 
-  6. 更新好了 去看看吧..就这么简单
-     - 图片中丢了一步，是教程中的第四步....记得执行
+5. [输入安装命令点击查看](#docker-cli)
 
-  ![docker](/img/faq/updocker.png)
-  
-  - docker-compose 
-  1. docker-compose pull
-  2. docker-compose up -d
+6. 更新好了 去看看吧..就这么简单
 
+*图片中丢了一步，是教程中的第四步....记得执行*
+![docker](/img/faq/updocker.png)
+
+:::
+
+:::details docker-compose
+1. docker-compose pull
+2. docker-compose up -d
 :::
