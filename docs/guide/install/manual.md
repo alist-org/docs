@@ -136,11 +136,11 @@ Edit `~/Library/LaunchAgents/ci.nn.alist.plist` in any way and add the following
 </plist>
 ```
 
-Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist` to load the configuration, now you can use these commands to manage the program:
+Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist` to load the configuration, now you can use these commands to manage the program:
 
-- Start: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
-- Close: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
-- Unload configuration: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
+- Start: `launchctl start ~/Library/LaunchAgents/ci.nn.alist.plist`
+- Close: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist.plist`
+- Unload configuration: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist.plist`
 
 @tab Windows
 
