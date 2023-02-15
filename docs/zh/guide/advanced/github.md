@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: people
+icon: github
 # This control sidebar order
 order: 9
 # A page can have multiple categories

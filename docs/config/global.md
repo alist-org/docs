@@ -58,6 +58,10 @@ Add signatures to the direct link of all files (whether with password or not) Th
 
 If you need to close it, you can close it yourself, but you need to pay attention to security issues. After closing the signature, if the site can be accessed by the public network, the password may be bypassed to access private files.
 
+## Forward direct link params
+
+You can check it out yourself：**https://github.com/alist-org/alist/issues/3123**
+
 ### Filename char mapping
 
 Mainly to map some special characters so that Alist can work normally
