@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vuepress/client': 2.0.0-beta.60
   '@vuepress/plugin-docsearch': 2.0.0-beta.60
+  '@vuepress/utils': 2.0.0-beta.60
   vue: ^3.2.27
   vuepress: 2.0.0-beta.60
   vuepress-theme-hope: ^2.0.0-beta.172
@@ -11,6 +12,7 @@ specifiers:
 devDependencies:
   '@vuepress/client': 2.0.0-beta.60
   '@vuepress/plugin-docsearch': 2.0.0-beta.60
+  '@vuepress/utils': 2.0.0-beta.60
   vue: 3.2.47
   vuepress: 2.0.0-beta.60_snvqa5y7zj4eyr5mp3ym37ho7q
   vuepress-theme-hope: 2.0.0-beta.172_clm33ichnaem5ryo4rib4pdzdq

@@ -32,6 +32,9 @@ star: true
 
  ==.ipa安装 需要 https 和 有效的证书== ，不是随便一个包上传上去没签名就能安装的
 
-<ArtPlayer src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" />
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
+  poster="/img/advanced/video.png"
+/>
 
 **视频若失效可以前往观看：https://b23.tv/oLvHHC8**

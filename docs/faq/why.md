@@ -186,9 +186,43 @@ What? Don't know the verification code? [**Click to view this guide**](../guide/
 
 There is always one of the following three versions that suits you. Eat it quickly! !
 
-   1. Point the directory seen by **`guest`** users to an empty folder, and then write a readme description, don’t ask how to do it yourself
+   1. Point the directory seen by **`guest`** users to an empty folder, and then write a readme description, don’t ask how to do it yourself[Click to view](#how-to-create-a-completely-blank-folder)
 
    2. Directly encrypt the root directory in the meta information
 
    3. Directly deactivate the **`guest`** user, which will force a jump to the login page (version 3.10.1 and above)
       - Find a way by yourself Welcome to provide new ways~~
+
+### Baidu cloud disk unofficial download error appears "hit black userlist, hit illegal dlna"
+
+It should be repaired harmoniously, but the interface discoverer said to wait for 24 hours to try, if it still doesn't work, it is really repaired harmoniously.
+
+```json
+{"error_code":31329,"error_msg":"hit black userlist , hit illegal dlna","request_id":8942439159334999112}
+```
+
+### How to create a completely blank folder
+
+two ways
+
+1. Mount a local storage, select the folder is empty
+2. Select virtual storage and directly change =="number of files" "number of folders"== to 0, save and then ignore the pop-up interface
+    - What does **Virtual Storage** do? It is generally used during testing. Don’t use it indiscriminately if you don’t understand the normal production environment....
+
+How to add **`Readme`** instructions to an empty folder
+
+  1. If you choose local storage, you can consider throwing a Readme.md file into it. If there is an update but the refresh is slow, use the second method if it is too slow
+  2. Meta information Select this folder, there are instructions below to write it yourself
+
+What is the use of creating this blank folder? It can be used in conjunction with [**How to set up visitors to access the content after logging in, use the first method**](#how-do-i-set-it-so-that-visitors-can-only-see-the-content-after-logging-in)
+
+### lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist) or accept: function not implemented
+
+
+Consider using the **musl** version as an alternative due to the version of the **glibc** on your platform is too low
+
+Reference instructions：[#2295](https://github.com/alist-org/alist/discussions/2295)，[#322](https://github.com/alist-org/alist/issues/322#issuecomment-1010601181)
+
+### What is the extra sign parameter after the file now?
+
+Encrypted for account security, you can view the details by [click to view](../config/global.md#Sign all)

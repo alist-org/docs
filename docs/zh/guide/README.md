@@ -60,7 +60,7 @@ category:
 
 ## 演示
 
-- https://pan.nn.ci
+- https://al.nn.ci
 
 ## 特别赞助
 
