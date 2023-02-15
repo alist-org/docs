@@ -1,10 +1,22 @@
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/",
   head: [
+    [
+      "script",
+      {
+        type: "text/javascript",
+        charset: "UTF-8",
+        src: "https://cdn.wwads.cn/js/makemoney.js",
+        // async: true,
+      },
+    ],
     [
       "script",
       {},
@@ -30,6 +42,7 @@ export default defineUserConfig({
       },
     ],
   ],
+  
 
   locales: {
     "/": {
@@ -52,4 +65,14 @@ export default defineUserConfig({
       indexName: "alist",
     }),
   ],
+  alias: {
+    "@theme-hope/components/NormalPage": path.resolve(
+      __dirname,
+      "./components/NormalPage.vue"
+    ),
+    "@theme-hope/components/HomePage": path.resolve(
+      __dirname,
+      "./components/HomePage.vue"
+    ),
+  },
 });
