@@ -100,6 +100,7 @@ const onClick = async ()=>{
 </div>
 
 <div v-show="token" >
+
 :::info Token: {{ token }}
 :::
 </div>
