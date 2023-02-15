@@ -114,16 +114,19 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 ### How to update Docker installation?
 
-::: details Click to view
-
+::: details docker-cli
 1. docker ps -a #View the container (find the ID of the Alist container)
 2. docker stop ID #Stop Alist running, otherwise it cannot be deleted (this time the ID of the Alist container is d429749a6e69, it is different for each installation)
 3. docker rm ID #Delete the Alist container (the data is still there as long as you don't delete it manually)
 4. docker pull xhofe/alist:latest
 5. [Enter the installation command and click to view](#docker-cli)
 6. The update is complete, go and have a look.. It's that simple
-   - There is a missing step in the picture, it is step 4 in the tutorial....remember to execute
 
+*There is a missing step in the picture, it is step 4 in the tutorial....remember to execute*
 ![docker](/img/faq/updocker.png)
+:::
 
+:::details docker-compose
+1. docker-compose pull
+2. docker-compose up -d
 :::

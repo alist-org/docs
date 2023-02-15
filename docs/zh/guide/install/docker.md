@@ -112,7 +112,8 @@ services:
 如果是CPU架构是32位，目前尚无可用方案。
 
 ## Docker安装怎么更新?
-::: details 点击查看
+::: details docker-cli
+
 
 1. docker ps -a #查看容器(找Alist容器的ID)
 
@@ -125,9 +126,13 @@ services:
 5. [输入安装命令点击查看](#docker-cli)
 
 6. 更新好了 去看看吧..就这么简单
-   - 图片中丢了一步，是教程中的第四步....记得执行
 
-
+*图片中丢了一步，是教程中的第四步....记得执行*
 ![docker](/img/faq/updocker.png)
 
+:::
+
+:::details docker-compose
+1. docker-compose pull
+2. docker-compose up -d
 :::
