@@ -105,5 +105,9 @@ export default defineUserConfig({
       __dirname,
       "./components/baidu/Callback.vue"
     ),
+    "@Yandex/Callback": path.resolve(
+      __dirname,
+      "./components/yandex/Callback.vue"
+    ),
   },
 });
