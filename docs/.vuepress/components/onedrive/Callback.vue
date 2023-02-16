@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { NAlert, NButton, NInput, NSpace, NSpin } from 'naive-ui';
-import NaiveConfig from '../NaiveConfig.vue';
 import { reactive } from 'vue';
 
 const url = new URL(window.location.href);
@@ -81,32 +80,33 @@ const getSiteId = () => {
 </script>
 
 <template>
-  <NaiveConfig>
-    <NAlert :title="error || 'Error'" type="error" v-if="!code || !client || error">
-      {{ error_description }}
+  <NAlert :title="error || 'Error'" type="error" v-if="!code || !client || error">
+    {{ error_description }}
+  </NAlert>
+  <NSpace v-else vertical size="large">
+    <p><b>client_id: </b>{{ client_id }}</p>
+    <p><b>client_secret: </b>{{ client_secret }}</p>
+    <p><b>zone: </b>{{ zone }}</p>
+    <p><b>redirect_uri: </b>https://alist.nn.ci/tool/onedrive/callback</p>
+    <NAlert :title="data.error1" type="error" v-if="data.error1 || data.errorMessage1">
+      {{ data.errorMessage1 }}
     </NAlert>
-    <NSpace v-else vertical size="large">
-      <p><b>client_id: </b>{{ client_id }}</p>
-      <p><b>client_secret: </b>{{ client_secret }}</p>
-      <p><b>zone: </b>{{ zone }}</p>
-      <p><b>redirect_uri: </b>https://alist.nn.ci/tool/onedrive/callback</p>
-      <NAlert :title="data.error1" type="error" v-if="data.error1 || data.errorMessage1">
-        {{ data.errorMessage1 }}
-      </NAlert>
-      <NSpin v-if="!data.refreshToken" />
-      <p v-else><b>refresh_token: </b>{{ data.refreshToken }}</p>
-      <NSpace vertical size="large" v-if="data.accessToken">
-        <h3>Get sharepoint site ID</h3>
-        <NAlert :title="data.error2" type="error" v-if="data.error2 || data.errorMessage2">
-          {{ data.errorMessage2 }}
-        </NAlert>
-        <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
-        <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
-        <NSpin v-if="data.gettingSiteId" />
-        <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>
-      </NSpace>
+    <NSpin v-if="!data.refreshToken" />
+    <NSpace vertical>
+      <b>refresh_token</b>
+      <NInput type="textarea" readonly :value="data.refreshToken" />
     </NSpace>
-  </NaiveConfig>
+    <NSpace vertical size="large" v-if="data.accessToken">
+      <h3>Get sharepoint site ID</h3>
+      <NAlert :title="data.error2" type="error" v-if="data.error2 || data.errorMessage2">
+        {{ data.errorMessage2 }}
+      </NAlert>
+      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
+      <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
+      <NSpin v-if="data.gettingSiteId" />
+      <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>
+    </NSpace>
+  </NSpace>
 </template>
 
 <style>

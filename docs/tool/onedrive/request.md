@@ -3,9 +3,9 @@ title: "Get Onedrive Refresh Token"
 toc: false
 ---
 
-<ClientOnly>
+<NaiveClient>
 <Onedrive />
-</ClientOnly>
+</NaiveClient>
 
 <script setup lang="ts">
 import Onedrive from "@Onedrive/Request";

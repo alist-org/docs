@@ -3,9 +3,9 @@ title: "Onedrive Refresh Token Callback"
 toc: false
 ---
 
-<ClientOnly>
+<NaiveClient>
 <Callback />
-</ClientOnly>
+</NaiveClient>
 
 <script setup lang="ts">
 import Callback from "@Onedrive/Callback";
