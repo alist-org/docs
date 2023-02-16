@@ -46,10 +46,10 @@ if (code && !error) {
     <NAlert :title="token?.error" type="error" v-if="token?.error || token?.error_description">
       {{ token.error_description }}
     </NAlert>
-    <NSpin v-if="!token?.refresh_token" />
     <NSpace vertical>
-      <b>refresh_token</b>
-      <NInput type="textarea" autosize readonly :value="token?.refresh_token" />
+      <b>refresh_token:</b>
+      <NSpin v-if="!token?.refresh_token" />
+      <NInput v-else type="textarea" autosize readonly :value="token.refresh_token" />
     </NSpace>
   </NSpace>
 </template>

@@ -91,10 +91,10 @@ const getSiteId = () => {
     <NAlert :title="data.error1" type="error" v-if="data.error1 || data.errorMessage1">
       {{ data.errorMessage1 }}
     </NAlert>
-    <NSpin v-if="!data.refreshToken" />
     <NSpace vertical>
-      <b>refresh_token</b>
-      <NInput type="textarea" autosize readonly :value="data.refreshToken" />
+      <b>refresh_token:</b>
+      <NSpin v-if="!data.refreshToken" />
+      <NInput v-else type="textarea" autosize readonly :value="data.refreshToken" />
     </NSpace>
     <NSpace vertical size="large" v-if="data.accessToken">
       <h3>Get sharepoint site ID</h3>
