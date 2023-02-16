@@ -4,6 +4,7 @@ export const en = sidebar({
   "/guide/": "structure",
   "/config/": "structure",
   "/faq/": "structure",
+  "/tool/": false,
   "/": [
     "",
     {
@@ -16,9 +17,7 @@ export const en = sidebar({
       text: "Config",
       icon: "config",
       prefix: "config/",
-      children: [
-        "config",
-      ],
+      children: ["config"],
     },
     {
       text: "FAQ",

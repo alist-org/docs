@@ -66,6 +66,7 @@ export default hopeTheme({
   // },
 
   plugins: {
+    autoCatalog: true,
     // blog: {
     //   autoExcerpt: true,
     // },

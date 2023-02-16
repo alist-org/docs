@@ -5,6 +5,7 @@ export const zh = navbar([
   { text: "使用指南", icon: "creative", link: "/zh/guide/" },
   { text: "配置", icon: "config", link: "/zh/config/" },
   { text: "常见问题", icon: "question", link: "/zh/faq/" },
+  { text: "工具", icon: "tool", link: "/tool/" },
   {
     text: "社区",
     icon: "community",

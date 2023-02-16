@@ -1,4 +1,4 @@
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig, viteBundler } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
@@ -17,6 +17,15 @@ export default defineUserConfig({
         // async: true,
       },
     ],
+    // [
+    //   "script",
+    //   {
+    //     type: "text/javascript",
+    //     charset: "UTF-8",
+    //     src: "/global.js",
+    //     async: true,
+    //   },
+    // ],
     [
       "script",
       {},
@@ -42,7 +51,6 @@ export default defineUserConfig({
       },
     ],
   ],
-  
 
   locales: {
     "/": {
@@ -73,6 +81,18 @@ export default defineUserConfig({
     "@theme-hope/components/HomePage": path.resolve(
       __dirname,
       "./components/HomePage.vue"
+    ),
+    "@Onedrive/Request": path.resolve(
+      __dirname,
+      "./components/onedrive/Request.vue"
+    ),
+    "@Onedrive/Callback": path.resolve(
+      __dirname,
+      "./components/onedrive/Callback.vue"
+    ),
+    "@Onedrive/WebDav": path.resolve(
+      __dirname,
+      "./components/onedrive/WebDav.vue"
     ),
   },
 });

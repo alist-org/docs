@@ -5,6 +5,7 @@ export const en = navbar([
   { text: "Guide", icon: "creative", link: "/guide/" },
   { text: "Config", icon: "config", link: "/config/" },
   { text: "FAQ", icon: "question", link: "/faq/" },
+  { text: "Tool", icon: "tool", link: "/tool/" },
   {
     text: "Community",
     icon: "community",
