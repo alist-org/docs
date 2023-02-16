@@ -94,7 +94,7 @@ const getSiteId = () => {
     <NSpin v-if="!data.refreshToken" />
     <NSpace vertical>
       <b>refresh_token</b>
-      <NInput type="textarea" readonly :value="data.refreshToken" />
+      <NInput type="textarea" autosize readonly :value="data.refreshToken" />
     </NSpace>
     <NSpace vertical size="large" v-if="data.accessToken">
       <h3>Get sharepoint site ID</h3>

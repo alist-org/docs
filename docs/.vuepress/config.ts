@@ -101,5 +101,9 @@ export default defineUserConfig({
       __dirname,
       "./components/onedrive/WebDav.vue"
     ),
+    "@Baidu/Callback": path.resolve(
+      __dirname,
+      "./components/baidu/Callback.vue"
+    ),
   },
 });

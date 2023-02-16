@@ -32,7 +32,7 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 ## 刷新令牌
 
-[点击这里](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://tool.nn.ci/baidu/callback&scope=basic,netdisk&qrcode=1) 来获取刷新令牌。
+[点击这里](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) 来获取刷新令牌。
 
 ## 根文件夹路径
 
