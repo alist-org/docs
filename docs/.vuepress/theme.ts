@@ -66,7 +66,11 @@ export default hopeTheme({
   // },
 
   plugins: {
-    autoCatalog: true,
+    autoCatalog: {
+      frontmatter: () => ({
+        toc: false,
+      }),
+    },
     // blog: {
     //   autoExcerpt: true,
     // },

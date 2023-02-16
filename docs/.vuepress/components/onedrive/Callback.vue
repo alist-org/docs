@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { NAlert, NButton, NCard, NInput, NSpace, NSpin } from 'naive-ui';
+import { NAlert, NButton, NInput, NSpace, NSpin } from 'naive-ui';
+import NaiveConfig from '../NaiveConfig.vue';
 import { reactive } from 'vue';
 
 const url = new URL(window.location.href);
@@ -47,7 +48,7 @@ const [client_id, client_secret, zone] = atob(client as string).split("::");
 
 const getSiteId = () => {
   data.gettingSiteId = true;
-  fetch("/api/onedrive/get_site_id.ts", {
+  fetch("https://api.nn.ci/alist/onedrive/get_site_id", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -75,27 +76,29 @@ const getSiteId = () => {
 </script>
 
 <template>
-  <NAlert :title="error || 'Error'" type="error" v-if="!code || !client || error">
-    {{ error_description }}
-  </NAlert>
-  <NSpace v-else vertical size="large">
-    <p><b>client_id: </b>{{ client_id }}</p>
-    <p><b>client_secret: </b>{{ client_secret }}</p>
-    <p><b>zone: </b>{{ zone }}</p>
-    <p><b>redirect_uri: </b>https://alist.nn.ci/tool/onedrive/callback</p>
-    <NAlert title="Error" type="error" v-if="data.errorMessage">
-      {{ data.errorMessage }}
+  <NaiveConfig>
+    <NAlert :title="error || 'Error'" type="error" v-if="!code || !client || error">
+      {{ error_description }}
     </NAlert>
-    <NSpin v-if="!data.refreshToken" />
-    <p v-else><b>refresh_token: </b>{{ data.refreshToken }}</p>
-    <NSpace vertical size="large" v-if="data.accessToken">
-      <h3>Get sharepoint site ID</h3>
-      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
-      <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
-      <NSpin v-if="data.gettingSiteId" />
-      <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>
+    <NSpace v-else vertical size="large">
+      <p><b>client_id: </b>{{ client_id }}</p>
+      <p><b>client_secret: </b>{{ client_secret }}</p>
+      <p><b>zone: </b>{{ zone }}</p>
+      <p><b>redirect_uri: </b>https://alist.nn.ci/tool/onedrive/callback</p>
+      <NAlert title="Error" type="error" v-if="data.errorMessage">
+        {{ data.errorMessage }}
+      </NAlert>
+      <NSpin v-if="!data.refreshToken" />
+      <p v-else><b>refresh_token: </b>{{ data.refreshToken }}</p>
+      <NSpace vertical size="large" v-if="data.accessToken">
+        <h3>Get sharepoint site ID</h3>
+        <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
+        <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
+        <NSpin v-if="data.gettingSiteId" />
+        <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>
+      </NSpace>
     </NSpace>
-  </NSpace>
+  </NaiveConfig>
 </template>
 
 <style>

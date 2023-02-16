@@ -73,6 +73,13 @@ export default defineUserConfig({
       indexName: "alist",
     }),
   ],
+  bundler:viteBundler({
+    viteOptions: {
+      ssr:{
+        noExternal: ['naive-ui']
+      }
+    }
+  }),
   alias: {
     "@theme-hope/components/NormalPage": path.resolve(
       __dirname,

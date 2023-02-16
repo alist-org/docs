@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { NInput, NSelect, NButton, NSpace } from 'naive-ui'
 import { reactive, watch } from 'vue';
+import NaiveConfig from '../NaiveConfig.vue';
 const zones = {
   global: [
     "https://login.microsoftonline.com", //请求code与请求access_token
@@ -74,23 +75,25 @@ const getToken = () => {
 </script>
 
 <template>
-  <NSpace vertical size="large">
-    <h4>zone</h4>
-    <NSelect v-model:value="data.zone" size="large" :options="Object.keys(zones).map(zone => {
-      return {
-        label: zones[zone][3],
-        value: zone
-      }
-    })" />
-    <h4>client_id</h4>
-    <NInput size="large" v-model:value="data.client_id" />
-    <h4>client_secret</h4>
-    <NInput size="large" v-model:value="data.client_secret" />
-    <NSpace justify="center">
-      <NButton size="large" @click="createClient">Create client</NButton>
-      <NButton size="large" type="primary" @click="getToken">Get Refresh Token</NButton>
+  <NaiveConfig>
+    <NSpace vertical size="large">
+      <h4>zone</h4>
+      <NSelect v-model:value="data.zone" size="large" :options="Object.keys(zones).map(zone => {
+        return {
+          label: zones[zone][3],
+          value: zone
+        }
+      })" />
+      <h4>client_id</h4>
+      <NInput size="large" v-model:value="data.client_id" />
+      <h4>client_secret</h4>
+      <NInput size="large" v-model:value="data.client_secret" />
+      <NSpace justify="center">
+        <NButton size="large" secondary @click="createClient">Create client</NButton>
+        <NButton size="large" type="primary" @click="getToken">Get Refresh Token</NButton>
+      </NSpace>
     </NSpace>
-  </NSpace>
+  </NaiveConfig>
 </template>
 
 <style>
