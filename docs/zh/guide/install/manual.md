@@ -126,14 +126,11 @@ WantedBy=multi-user.target
 </plist>
 ```
 
-然后，执行 `launchctl load ~/Library/LaunchAgents/ci.nn.alist` 加载配置，现在你可以使用这些命令来管理程序：
+然后，执行 `launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist` 加载配置，现在你可以使用这些命令来管理程序：
 
-- 开启: `launchctl start ~/Library/LaunchAgents/ci.nn.alist`
-
-- 关闭: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist`
-
-- 卸载配置: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist`
-
+- 开启: `launchctl start ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 关闭: `launchctl stop ~/Library/LaunchAgents/ci.nn.alist.plist`
+- 卸载配置: `launchctl unload ~/Library/LaunchAgents/ci.nn.alist.plist`
 
 @tab Windows
 
