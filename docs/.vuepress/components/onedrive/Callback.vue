@@ -12,9 +12,12 @@ const error_description = url.searchParams.get("error_description");
 const data = reactive({
   refreshToken: "",
   accessToken: "",
-  errorMessage: "",
+  error1: "",
+  errorMessage1: "",
   siteUrl: "",
   siteId: "",
+  error2: "",
+  errorMessage2: "",
   gettingSiteId: false,
 })
 
@@ -33,7 +36,8 @@ const getToken = () => {
     .then((res) => {
       console.log(res);
       if (res.error) {
-        data.errorMessage = res.error_description;
+        data.error1 = res.error;
+        data.errorMessage1 = res.error_description;
         return;
       }
       data.refreshToken = res.refresh_token;
@@ -65,7 +69,8 @@ const getSiteId = () => {
     })
     .then((res) => {
       if (res.error) {
-        data.errorMessage = res.error.message;
+        data.error2 = res.error;
+        data.errorMessage2 = res.error.message;
         return;
       }
       data.siteId = res.id;
@@ -85,13 +90,16 @@ const getSiteId = () => {
       <p><b>client_secret: </b>{{ client_secret }}</p>
       <p><b>zone: </b>{{ zone }}</p>
       <p><b>redirect_uri: </b>https://alist.nn.ci/tool/onedrive/callback</p>
-      <NAlert title="Error" type="error" v-if="data.errorMessage">
-        {{ data.errorMessage }}
+      <NAlert :title="data.error1" type="error" v-if="data.error1 || data.errorMessage1">
+        {{ data.errorMessage1 }}
       </NAlert>
       <NSpin v-if="!data.refreshToken" />
       <p v-else><b>refresh_token: </b>{{ data.refreshToken }}</p>
       <NSpace vertical size="large" v-if="data.accessToken">
         <h3>Get sharepoint site ID</h3>
+        <NAlert :title="data.error2" type="error" v-if="data.error2 || data.errorMessage2">
+          {{ data.errorMessage2 }}
+        </NAlert>
         <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
         <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
         <NSpin v-if="data.gettingSiteId" />

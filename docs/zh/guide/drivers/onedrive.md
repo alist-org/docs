@@ -22,14 +22,14 @@ star: true
 如果你的账号不支持 API，（比如学校账号没有验证管理员，或者管理员禁用了 API），那么你也可以通过 WebDAV 挂载。 有关详细信息，请参阅 [WevDAV 页面](webdav.md)
 :::
 
-首先打开 https://tool.nn.ci/onedrive/request
+首先打开 https://alist.nn.ci/tool/onedrive/request
 
 ## 创建应用​
 
 > 你也可以选择跳过此步，使用默认提供的client，但是需要组织管理员批准。
 
 - 在打开的页面，选择所在区域，点击创建应用
-- 登陆后选择"注册应用程序"，输入"名称"，选择"任何组织目录中的账户和个人"（注意这里不要看位置选择而是看文字，部分人可能是中间那个选项，不要选成单一租户或者其他选项，否则会导致登陆时出现问题），输入重定向 URL 为 <https://tool.nn.ci/onedrive/callback> ，点击注册即可，然后可以得到 `client_id`
+- 登陆后选择"注册应用程序"，输入"名称"，选择"任何组织目录中的账户和个人"（注意这里不要看位置选择而是看文字，部分人可能是中间那个选项，不要选成单一租户或者其他选项，否则会导致登陆时出现问题），输入重定向 URL 为 <https://alist.nn.ci/tool/onedrive/callback> ，点击注册即可，然后可以得到 `client_id`
   ![client_id](/img/drivers/onedrive-register-app.png)
 - 注册好应用程序之后，选择"证书和密码"，点击"新客户端密码"，输入一串密码，选择时间为最长的那个，点击"添加"
   （注：在添加之后输入的密码之后会消失，请记录下来 `client_secret` 的值）
@@ -39,7 +39,7 @@ star: true
 
 ## 获取刷新令牌
 
-将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://tool.nn.ci/onedrive/request ，点击"获取刷新令牌"即可
+将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://alist.nn.ci/tool/onedrive/request ，点击"获取刷新令牌"即可
 
 ## 获取 SharePoint site_id
 
