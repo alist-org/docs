@@ -1,5 +1,5 @@
 ---
-title: "Baidu Refresh Token Callback"
+title: "Yandex Refresh Token Callback"
 toc: false
 ---
 

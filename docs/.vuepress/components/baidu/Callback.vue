@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { NAlert, NSpace } from 'naive-ui';
+import { NAlert, NSpace, NSpin, NInput } from 'naive-ui';
 import { ref } from 'vue';
 
 const client_id = "iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v";
