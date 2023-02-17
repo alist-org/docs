@@ -31,6 +31,7 @@ const themeOverrides: GlobalThemeOverrides = {
 
 <template>
   <NConfigProvider :theme-overrides="themeOverrides" :theme="theme">
+    <div style="height: 8px;"></div>
     <slot />
   </NConfigProvider>
 </template>

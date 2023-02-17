@@ -22,7 +22,7 @@ star: true
 
 ### 获取 client_id, client_secret, refresh_token
 
-参考 https://tool.nn.ci/google/request
+参考 https://alist.nn.ci/tool/google/request
 
 ### 根目录file_id
 
@@ -30,7 +30,7 @@ star: true
 
 ![google](/img/drivers/googledrive.png)
 
-## 详细文本教程
+## 详细文本教程 (过时的)
 
 ::: tip
 
