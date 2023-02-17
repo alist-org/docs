@@ -33,7 +33,7 @@ star: true
 
 ## 1.Aria2
 
-[**点击查看使用说明**](../../config\other.md)
+[**点击查看使用说明**](../../config/other.md)
 
 ## 2.qBittorrent
 
