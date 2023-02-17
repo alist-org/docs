@@ -52,7 +52,9 @@ star: true
 
 - 若提交离线链接后提示：**Qbittorrent not ready** 将Alist和qBittorrent都重启试试看
 
-预设值配置查看地址：**https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+预设值配置查看地址：
+
+- **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
 
 - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 

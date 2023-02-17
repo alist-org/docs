@@ -51,7 +51,9 @@ We fill in the above parameters into the **`qBittorrent`** client, after configu
 
 - If you are prompted after submitting the offline link: **Qbittorrent not ready**, try restarting both Alist and qBittorrent
 
-Default value configuration view address: **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+Default value configuration view address:
+
+- **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
 
 - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 

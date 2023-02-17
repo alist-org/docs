@@ -49,4 +49,7 @@ star: true
 
 ## Tips
 
-你是否在为游客能看到全部文件而发愁？[**点击查看这里如何设置**](../../faq/why.md#%E6%83%B3%E8%AE%A9%E6%B8%B8%E5%AE%A2%E7%99%BB%E5%BD%95%E5%90%8E%E6%89%8D%E8%83%BD%E7%9C%8B%E5%88%B0%E5%86%85%E5%AE%B9%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE)
+1. 你是否在为游客能看到全部文件而发愁？[**点击查看这里如何设置**](../../faq/why.md#%E6%83%B3%E8%AE%A9%E6%B8%B8%E5%AE%A2%E7%99%BB%E5%BD%95%E5%90%8E%E6%89%8D%E8%83%BD%E7%9C%8B%E5%88%B0%E5%86%85%E5%AE%B9%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE)
+
+2. **`Guest user is disabled, login please`**：为了保护您的Alist安全，游客访问权限关闭了，若需要游客访问自行打开
+   - 后台 --> 用户 --> `guest` --> 停用取消勾选
