@@ -101,7 +101,7 @@ const getSiteId = () => {
       <NAlert :title="data.error2" type="error" v-if="data.error2 || data.errorMessage2">
         {{ data.errorMessage2 }}
       </NAlert>
-      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" />
+      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" v-model:value="data.siteUrl" />
       <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
       <NSpin v-if="data.gettingSiteId" />
       <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>
