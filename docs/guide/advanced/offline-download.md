@@ -32,7 +32,7 @@ Then find the offline download button in the lower right corner, and choose to u
 
 ## 1.Aria2
 
-[**Click to view instructions for use**](../../config\other.md)
+[**Click to view instructions for use**](../../config/other.md)
 
 ## 2.qBittorrent
 
