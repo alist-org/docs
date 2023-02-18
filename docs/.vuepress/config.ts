@@ -109,5 +109,13 @@ export default defineUserConfig({
       __dirname,
       "./components/yandex/Callback.vue"
     ),
+    "@Google/Request": path.resolve(
+      __dirname,
+      "./components/google/Request.vue"
+    ),
+    "@Google/Callback": path.resolve(
+      __dirname,
+      "./components/google/Callback.vue"
+    ),
   },
 });

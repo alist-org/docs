@@ -16,18 +16,18 @@ sticky: true
 star: true
 ---
 
-# Google Cloud Disk
+# Google Drive
 
 Support team disk
 ### Get client_id, client_secret, refresh_token
-Refer to https://tool.nn.ci/google/request
+Refer to https://alist.nn.ci/tool/google/request
 
 ### Root directory file_id
 Similar to Aliyundrive, the last string of the official website URL, such as:
 
 ![google](/img/drivers/googledrive.png)
 
-## Detailed Text Tutorial
+## Detailed Text Tutorial (Deprecated)
 
 ::: tip
 

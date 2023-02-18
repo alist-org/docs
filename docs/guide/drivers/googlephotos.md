@@ -24,21 +24,9 @@ The root directory is root, and other directory IDs are unknown (~~It seems that
 
 ### Get client_id, client_secret
 
-Get the tool https://tool.nn.ci/google/request
-
-
+Get the tool https://alist.nn.ci/tool/google/request
 
 How to get your own `client_id (client ID) client_secret (client secret key)` Go to [**Google Drive**](./googledrive.md) which article
-
-
-
-Get client_id, client_secret Visit the link below to get the Code code
-
-```html
-https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=={client_id}=&response_type=code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fphotoslibrary&access_type=offline&approval_prompt=auto&flowName=GeneralOAuthFlow
-```
-
-  ==**(where `{client_id}` is replaced with `client_id` of your own application)**== 
 
 ::: tip
 
