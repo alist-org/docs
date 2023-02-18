@@ -117,6 +117,16 @@ The database configuration, the default is `sqlite3`, you can also use `mysql` o
 
 The scheme configuration, if you want to use https, you can set this field.
 
+- Fill in the example: Remember to throw the certificate file into the data directory to be recognized~
+
+```json
+  "scheme": {
+    "https": true,
+    "cert_file": "data\\public.crt",
+    "key_file": "data\\key.key"
+  },
+```
+
 ### temp_dir
 
 The temporary directory, default `data/temp`
