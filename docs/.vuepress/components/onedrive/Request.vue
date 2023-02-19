@@ -94,7 +94,7 @@ const getToken = () => {
   </NSpace>
 </template>
 
-<style>
+<style scoped>
 h4 {
   margin: 0;
 }
