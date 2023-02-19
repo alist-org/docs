@@ -42,27 +42,19 @@ Remember to check this option, otherwise an error will be reported, as explained
 
 :::
 
-
-After the Code code is obtained, obtain the refresh token
-
-![Googlephotos](/img/drivers/google/Google-photos.png)
-
-
+It is more convenient now. In fact, when obtaining Google cloud disk authorization, select the album permission at the same time, and the token obtained at that time can also be used to mount the album~ kill two birds with one stone
 
 Remember to open **`Photos Library API`** oh~
 
-https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com?project=instant-shard-350513
-
-
+- https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com?project=instant-shard-350513
 
 ### Two notes:
 
 1. failed get objs: failed to list objs: Request had insufficient authentication scopes.: []
-    - It's because you didn't check `View and organize the content in your Google Photos media libraryView and organize the content in your Google Photos media library when getting the Code code
-      Content, upload content to the media library. For details, upload content to the media library. Learn more`
-
-2. failed get objs: failed to list objs: Photos Library API has not been used in project 357075621397 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview?project=357075621397 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
-    - because **`Photos Library API`** is not enabled
+    - It's because you didn't check the album permission (see the picture mentioned above) `view and organize the content in your Google Photos media library, and upload content to the media library when obtaining authorization. Learn more`
+    
+2. failed get objs: failed to list objs: Photos Library API has not been used in project 357075621397 before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview?project=357075621397> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
+    - because **`Photos Library API`** is not enabled,Google Photos API
 
 ### Finish
 

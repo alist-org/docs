@@ -79,6 +79,8 @@ After getting `Client ID` and `Client Secret`
 
 Let's go back to the beginning **https://alist.nn.ci/tool/google/request** and fill in `Client ID` and `Client Secret`
 
+ ==Remember to check the option behind **Cloud Disk** and **Album** when obtaining authorization==
+
 Then start to log in to the account. If it prompts **not verified by Google**, click on the left to continue. After authorization, you will see our token refreshed.
 
 After the above operations, we also got the `refresh token`, let’s go to **`Alist background`** Add account to add it~

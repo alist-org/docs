@@ -42,26 +42,19 @@ star: true
 
 :::
 
-
-
-Code代码拿到后 获取刷新令牌
-
-![Googlephotos](/img/drivers/google/Google-photos.png)
-
-
+现在更加方便了，其实获取谷歌云盘的时候勾选了相册到时候获取到的token也可以拿来挂载相册~一举两得
 
 记得打开 **`Photos Library API`** 哦~
 
-https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com?project=instant-shard-350513
+- **https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com?project=instant-shard-350513**
 
 ### 两个注意事项：
 
 1. failed get objs: failed to list objs: Request had insufficient authentication scopes.: []
-   - 是因为在获取Code代码的时候没有勾选  `查看和整理您的Google相册媒体库中的内查看和整理您的google相册媒体库中的内
-     容,向媒体库上传内容。了解详情容，向媒体库上传内容.了解详情` 
-
-2. failed get objs: failed to list objs: Photos Library API has not been used in project 357075621397 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview?project=357075621397 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
-   - 是因为没有开启 **`Photos Library API`** 
+   - 是因为在获取授权的时候没有勾选 相册权限（查看上面提到的图片） `查看和整理您的Google相册媒体库中的内容,向媒体库上传内容。了解详情容` 
+   
+2. failed get objs: failed to list objs: Photos Library API has not been used in project 357075621397 before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview?project=357075621397> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
+   - 是因为没有开启 **`Photos Library API`**  谷歌相册API
 
 ### 挂载展示
 
