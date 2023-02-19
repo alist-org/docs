@@ -51,8 +51,33 @@ We fill in the above parameters into the **`qBittorrent`** client, after configu
 
 - If you are prompted after submitting the offline link: **Qbittorrent not ready**, try restarting both Alist and qBittorrent
 
-Default value configuration view address: **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+Default value configuration view address:
+
+- **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
 
 - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 ![Offline download](/img/advanced/offline-download.png)
+
+
+
+### Precautions
+
+1. Appeared in the background qBittorrent task: **`torrent parse timeout`**, parsing timed out
+2. The torrent can be parsed, but **`The system cannot find the path specified.`** appears when uploading.
+
+The above two methods are most likely caused by the qBittorrent software itself, probably because of the green version and the modified version that have undergone some functional castration modifications. It is recommended to go to the official website to download and install it to restore it (the conclusion drawn by myself after stepping on the pit) )
+
+- **qBittorrent** official website: **https://www.qbittorrent.org/**
+- **qBittorrent** GitHub: **https://github.com/c0re100/qBittorrent-Enhanced-Edition**
+
+
+
+::: details qBittorrent Video Tutorials
+
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&raw=true" 
+  poster="/img/advanced/qbittorrent.png"
+/>
+
+:::

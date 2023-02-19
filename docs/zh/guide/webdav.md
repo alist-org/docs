@@ -58,7 +58,7 @@ star: true
 ## 可以用来挂载WebDav的软件
 
 1. **Windows**
-   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，RaiDrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)
+   - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，RaiDrive，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
 2. **Android**
    - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[rexx](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx 文件管理器，Solid Expore
 3. **IOS**
@@ -68,8 +68,8 @@ star: true
    - 若只看阿里可以使用阿里官方合作的
      - 欢视商店-阿里云盘TV版，网盘播放器-阿里云盘TV版
 5. **Mac**
-   - IINA，[Mountain Duck](https://mountainduck.io/)，infuse
+   - IINA，[Mountain Duck](https://mountainduck.io/)，infuse，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
 6. **Linux**
-   - davfs2
+   - davfs2，[rclone](https://rclone.org/)
 
 若有合适的欢迎补充~

@@ -30,18 +30,19 @@ star: true
 
 ![google](/img/drivers/googledrive.png)
 
-## 详细文本教程 (过时的)
+## 详细文本教程
 
-::: tip
+::: warning 注意事项
 
 1. 搭建Alist服务的机器首先要能连接到Google网盘(科学连接到不行,得程序能连接到)，或者直接用国外服务器才可以喔~
 2. 测试版的应用token似乎过阵子（7天左右）就会失效，如果需要长期稳定的token要发布应用才可以似乎？
+3. 一个客户端ID和秘钥只能获取一次token，再次获取只能重新创建 **OAuth 客户端ID**，用新的客户端ID和秘钥
 
 :::
 
 
 
-**先打开 https://tool.nn.ci/google/request   点击 `1. 创建应用或者直接使用默认应用`**
+**先打开 https://alist.nn.ci/tool/google/request   `1. 先点击Use own client然后再创建客户端(Create client)`**
 
 ![Google](/img/drivers/google/Google-0.png)
 
@@ -59,11 +60,17 @@ star: true
 
  **`Google Driver API`** 启用后我们进行一个 应用创建 - 仔细看~~~
 
-如果是第一次创建 那么应该会出现 **` ❗如需创建 OAuth 客户端ID,您必须先配置统一屏幕`**，我们就去配置即可,点击页面的  **`配置同意屏幕`** 即可跳转到配置界面，配置教程看下图，配置好后再回来看这张图~
+
+
+如果是第一次创建 那么应该会出现 **` ❗如需创建 OAuth 客户端ID,您必须先配置统一屏幕`**，我们就去配置即可,点击页面的  **`配置同意屏幕`** 即可跳转到配置界面，
+
+ ==配置教程看下一张图== ，配置好后再回来看这张图~
+
+回调参数URL：**https://alist.nn.ci/tool/google/callback**
 
 ![Google](/img/drivers/google/Google-4-1.png)
 
-**`OAuth`** 配置教程，如已配置好 忽略本图即可(如果看不清楚可以放大)
+**`OAuth 同意屏幕`** 配置教程，如已配置好 忽略本图即可(如果看不清楚可以放大)
 
 ![Google](/img/drivers/google/Google-6.png)
 
@@ -73,17 +80,15 @@ star: true
 
 获取到 `客户端ID`  和  `客户端秘钥 ` 后
 
-我们回到最开始 **https://tool.nn.ci/google/request** 把 `客户端ID`  和  `客户端秘钥 ` 填进去
+我们回到最开始 **https://alist.nn.ci/tool/google/request** 把 `客户端ID`  和  `客户端秘钥 ` 填进去
 
-![Google](/img/drivers/google/Google-8.png)
+ ==获取授权时记得勾选 **云盘** 和 **相册** 后面 选项==
 
-填好`客户端ID`  和  `客户端秘钥` 后点击 `2.获取Code然后粘贴`进行如下一系列操作即可
-
-![Google](/img/drivers/google/Google-11-1.png)
+然后开始登录账号，若提示**未经Google验证**点击左侧继续就行，授权后就会看到我们的token刷新出来了
 
 上述操作后我们也拿到了 `刷新令牌`我们去 **`Alist后台`** 添加账号里面进行添加吧~
 
-![Google](/img/drivers/google/Google-12-1.png)
+![Google](/img/drivers/google/Google-8.png)
 
 后台添加账号保存后我们就挂载成功啦~我们来看下吧
 
@@ -93,10 +98,8 @@ star: true
 
 
 
-::: details 视频教程
+::: details 查看视频教程
 
-视频虽然是V2的 但是获取方式和V3一样：
-
-**https://www.bilibili.com/video/BV1YB4y1h7cn**
+**https://www.bilibili.com/video/BV18v4y1W7vo/**
 
 :::

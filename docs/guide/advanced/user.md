@@ -41,4 +41,7 @@ The root path that users see when he/she log in
 
 ## Tips
 
-Are you worried that visitors can see all files? [**Click to see how to set it up here**](../../faq/why.md#how-do-i-set-it-so-that-visitors-can-only-see-the-content-after-logging-in)
+1. Are you worried that visitors can see all files? [**Click to see how to set it up here**](../../faq/why.md#how-do-i-set-it-so-that-visitors-can-only-see-the-content-after-logging-in)
+
+2. **`Guest user is disabled, login please`**: In order to protect your Alist security, the guest access permission is closed, if you need guest access, open it yourself 
+   - AList Manage --> users --> `guest` -->  **Disable** uncheck
