@@ -62,7 +62,7 @@ if (code && !error) {
   </NSpace>
 </template>
 
-<style>
+<style scoped>
 p {
   margin: 0;
   font-size: large;
