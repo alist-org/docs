@@ -61,11 +61,11 @@ if (code && !error) {
     </NAlert>
     <NSpace vertical>
       <b>refresh_token:</b>
-      <NAlert title="Web client" v-if="token?.access_token" type="warning">
+      <NSpin v-if="!token" />
+      <NInput v-if="token?.refresh_token" type="textarea" autosize readonly :value="token.refresh_token" />
+      <NAlert v-else-if="token?.access_token" title="Web client" type="warning">
         The refresh_token is only returned once if you use a web client.
       </NAlert>
-      <NSpin v-else-if="!token?.refresh_token" />
-      <NInput v-else type="textarea" autosize readonly :value="token.refresh_token" />
     </NSpace>
   </NSpace>
 </template>
