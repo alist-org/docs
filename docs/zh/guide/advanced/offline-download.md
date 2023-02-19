@@ -74,11 +74,11 @@ star: true
 
 
 
-::: details qBittorrent视频教程
+**qBittorrent**视频教程
 
 <ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&raw=true" 
+  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&hd=2&raw=true" 
   poster="/img/advanced/qbittorrent.png"
 />
 
-:::
+**视频若失效可以前往观看：暂无**

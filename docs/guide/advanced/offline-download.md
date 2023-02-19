@@ -73,11 +73,11 @@ The above two methods are most likely caused by the qBittorrent software itself,
 
 
 
-::: details qBittorrent Video Tutorials
+**qBittorrent** Video Tutorials
 
 <ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&raw=true" 
+  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&hd=2&raw=true" 
   poster="/img/advanced/qbittorrent.png"
 />
 
-:::
+**If the video fails, you can watch it here: no yet**
