@@ -26,11 +26,11 @@ But for **ios>=16**, you need to name the ipa file: `original file name@bundle-i
 
 Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename your ipa files automatically and quickly.
 
-
+- If you are a mobile phone user, you can also rename the IPA file, but you must know the format mentioned above, but there is no mobile phone renaming software, please solve it yourself...
 
 ### Tips
 
- ==.ipa installation requires https and a valid certificate== , not just a package can be installed without a signature
+-  ==.ipa installation requires https and a valid certificate== , not just a package can be installed without a signature
 
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
@@ -43,7 +43,9 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 
 
-**Installation demonstration:** on the premise of deploying HTTPS and signing the IPA file, if you cannot install it yourself, please troubleshoot the problem yourself
+**Installation Demo**: Deploy **HTTPS** and **IPA files** are signed prerequisites, if ==IOS16 rename by yourself== If you can’t install it yourself, please check the problem yourself
+
+- **Installation demo environment**: IOS15.4.1 iPhone12PM, personal certificate, HTTPS
 
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 

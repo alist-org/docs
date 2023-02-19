@@ -26,11 +26,14 @@ star: true
 
 推荐你使用 [ipa-renamer](https://github.com/Xhofe/ipa-renamer) 自动快速地重命名你的 IPA 文件。
 
+- 如果你是手机用户也可以给IPA文件改名，但是你要会上述提到的格式才行，但是不提供手机改名软件请你自己解决...
+
 
 
 ### Tips
 
- ==.ipa安装 需要 https 和 有效的证书== ，不是随便一个包上传上去没签名就能安装的
+- ==.ipa安装 需要 https 和 有效的证书== ，不是随便一个包上传上去没签名就能安装的
+- 爱思助手签名的无法使用在线安装，只能使用爱思助手安装（经群友测试）
 
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
@@ -41,7 +44,9 @@ star: true
 
 
 
-**安装演示**：有HTTPS  IPA文件已签名前提，若自己无法安装请自行排查问题所在
+**安装演示**：部署**HTTPS**和**IPA文件**已签名前提，如果是 ==IOS16自行改名== 若自己无法安装请自行排查问题所在
+
+- **安装演示使用环境**： IOS15.4.1 iPhone12PM，个人证书，HTTPS
 
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 
