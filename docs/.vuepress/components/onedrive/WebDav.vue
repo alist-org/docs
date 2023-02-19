@@ -30,7 +30,7 @@ function calWebDavURL() {
     <NInput size="large" type="textarea" placeholder="WebDav URL" v-model:value="data.webdavUrl" readonly />
   </NSpace>
 </template>
-<style>
+<style scoped>
 p {
   margin: 0;
 }

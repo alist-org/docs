@@ -75,7 +75,7 @@ function goGet() {
   </NSpace>
 </template>
 
-<style>
+<style scoped>
 h4 {
   margin: 0;
 }
