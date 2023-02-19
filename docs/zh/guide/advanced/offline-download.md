@@ -33,7 +33,7 @@ star: true
 
 ## 1.Aria2
 
-[**点击查看使用说明**](../../config\other.md)
+[**点击查看使用说明**](../../config/other.md)
 
 ## 2.qBittorrent
 
@@ -59,3 +59,26 @@ star: true
 - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 ![Offline download](/img/advanced/offline-download.png)
+
+
+
+### 注意事项
+
+1. 在后台qBittorrent任务中出现：**`torrent parse timeout`**，解析超时
+2. 可以解析种子下载，但是在上传的时候出现 **`The system cannot find the path specified.`** 找不到路径
+
+以上两种办法大概率是因为 qBittorrent 软件本体导致的，可能是因为绿色版,修改版 进行了一些功能阉割 修改导致的，建议去官网下载安装即可恢复（由本人亲自踩坑后得出的结论）
+
+- **qBittorrent**官网：**https://www.qbittorrent.org/**
+- **qBittorrent**GitHub：**https://github.com/c0re100/qBittorrent-Enhanced-Edition**
+
+
+
+::: details qBittorrent视频教程
+
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&raw=true" 
+  poster="/img/advanced/qbittorrent.png"
+/>
+
+:::

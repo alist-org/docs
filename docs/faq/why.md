@@ -226,3 +226,18 @@ Reference instructions：[#2295](https://github.com/alist-org/alist/discussions/
 ### What is the extra sign parameter after the file now?
 
 Encrypted for account security, you can view the details by [click to view](../config/global.md#Sign all)
+
+### Prompt when adding Aliyun drive (shared) Prompt Post "https://auth.aliyundrive.com/v2/account/token": net/http: TLS handshake timeout
+
+Reason: The VPS is located outside mainland China, and IPv6 is enabled
+Workaround:
+**Method 1**: Add the following three items in the vps hosts and restart the network or restart the vps
+
+- 47.94.245.197 api.aliyundrive.com
+
+- 47.94.245.197 auth.aliyundrive.com
+
+- 121.89.3.30 cn-beijing-data.aliyundrive.net
+
+
+**Method 2**: Turn off and disable IPv6 of vps

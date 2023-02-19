@@ -21,3 +21,6 @@ dir:
 
  - [**GitHub Login**](github.md)
 
+ - [**offline-download**](offline-download.md)
+
+

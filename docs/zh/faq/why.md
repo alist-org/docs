@@ -225,3 +225,17 @@ v2可以成功是因为v2会忽略空文件上传。
 ### 现在文件后面多了个 sign 的参数是干嘛的？
 
 加密了为了账号安全一些，查看详情可以[点击查看](../config/global.md#签名所有)
+
+### 添加阿里云盘(分享)时提示 提示Post "https://auth.aliyundrive.com/v2/account/token": net/http: TLS handshake timeout
+
+原因：VPS在中国大陆境外，且启用了IPv6
+解决方法：
+方法一：在vps的hosts中添加以下三条并重启网络或者重启vps
+
+- 47.94.245.197 api.aliyundrive.com
+
+- 47.94.245.197 auth.aliyundrive.com
+
+- 121.89.3.30 cn-beijing-data.aliyundrive.net
+
+方法二：关闭并且禁用vps的IPv6
