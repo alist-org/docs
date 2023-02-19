@@ -38,3 +38,11 @@ star: true
 />
 
 **视频若失效可以前往观看：https://b23.tv/oLvHHC8**
+
+
+
+**安装演示**：有HTTPS  IPA文件已签名前提，若自己无法安装请自行排查问题所在
+
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 
+/>

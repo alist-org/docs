@@ -38,3 +38,13 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 />
 
 **If the video fails, you can watch it here: https://b23.tv/oLvHHC8**
+
+
+
+
+
+**Installation demonstration:** on the premise of deploying HTTPS and signing the IPA file, if you cannot install it yourself, please troubleshoot the problem yourself
+
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 
+/>
