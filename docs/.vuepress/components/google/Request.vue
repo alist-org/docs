@@ -42,7 +42,7 @@ function goGet() {
   url.searchParams.set("redirect_uri", data.redirect_uri);
   url.searchParams.set(
     "scope",
-    "https://www.googleapis.com/auth/drive"
+    "openid profile https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/photoslibrary"
   );
   url.searchParams.set("access_type", "offline");
   url.searchParams.set("approval_prompt", "auto");
