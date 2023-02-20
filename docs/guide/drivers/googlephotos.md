@@ -44,17 +44,18 @@ Remember to check this option, otherwise an error will be reported, as explained
 
 It is more convenient now. In fact, when obtaining Google cloud disk authorization, select the album permission at the same time, and the token obtained at that time can also be used to mount the album~ kill two birds with one stone
 
-Remember to open **`Photos Library API`** oh~
+Remember to enable **`Photos Library API`**
 
-- https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com?project=instant-shard-350513
+- https://console.cloud.google.com/apis/library/photoslibrary.googleapis.com
 
 ### Two notes:
 
 1. failed get objs: failed to list objs: Request had insufficient authentication scopes.: []
     - It's because you didn't check the album permission (see the picture mentioned above) `view and organize the content in your Google Photos media library, and upload content to the media library when obtaining authorization. Learn more`
+    - You get the `access_token` and the `refresh_token` without declearing the scope of `https://www.googleapis.com/auth/photoslibrary`
     
-2. failed get objs: failed to list objs: Photos Library API has not been used in project 357075621397 before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview?project=357075621397> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
-    - because **`Photos Library API`** is not enabled,Google Photos API
+2. failed get objs: failed to list objs: Photos Library API has not been used in project ... before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
+    - because **`Photos Library API`** is not enabled in your project, Google Photos API
 
 ### Finish
 
