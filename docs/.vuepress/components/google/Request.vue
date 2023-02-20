@@ -45,7 +45,7 @@ function goGet() {
     "openid profile https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/photoslibrary"
   );
   url.searchParams.set("access_type", "offline");
-  url.searchParams.set("approval_prompt", "auto");
+  url.searchParams.set("prompt", "consent");
   url.searchParams.set(
     "state",
     btoa(`${data.client_id}::${data.client_secret}::${data.redirect_uri}`)
