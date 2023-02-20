@@ -117,5 +117,9 @@ export default defineUserConfig({
       __dirname,
       "./components/google/Callback.vue"
     ),
+    "@Google/Album": path.resolve(
+      __dirname,
+      "./components/google/Album.vue"
+    ),
   },
 });
