@@ -11,7 +11,7 @@
 import HopeHomePage from "vuepress-theme-hope/components/HomePage";
 </script>
 
-<style scoped>
+<style>
 .ads-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
