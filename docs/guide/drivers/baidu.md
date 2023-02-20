@@ -39,15 +39,28 @@ The root foler to mount, defaults to `/`, same as local storage.
 
 
 
+::: details If you don't know how to set **`"User-Agent"`** see here
 
-::: details May Be Helpful For You
+ ==The following methods are limited to Baidu super member users== 
 
-If you really don’t know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
+ ==Prompt again The following methods are limited to Baidu super member users== 
 
-The premise is that you need to have a member. It will only be useful if you have a member who has changed `UA` (choose official and 302). It can only help you here
+It will only be useful if a member finishes modifying **`"User-Agent"`** (choose official and 302)
 
-If you don’t change the UA, you can enable ==Web Proxy== , the disadvantage is that you need to build an Alist machine to transfer, that is to say, you need a large broadband to help you transfer
+If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disadvantage is that you need to build an Alist machine for transfer, that is to say, you need a large broadband to help you transfer
+
+#### Method 1 - Using a browser plugin
+
+If you really don’t know how to do it, you can take a look at an example on the Web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
 
 ![alist](/img/drivers/baidu/bdUA.png)
+
+#### Method 2 - Using IDM - Internet Download Manager
+
+![alist](/img/drivers/baidu/idm-ua.png)
+
+#### Method 3 - Using Aria2
+
+![alist](/img/drivers/baidu/aria2-ua.png)
 
 :::

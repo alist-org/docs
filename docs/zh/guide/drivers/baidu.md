@@ -44,15 +44,31 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 - crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定
   -  ==crack: 非官方接口== 似乎已经和谐了？[**详情自行点击查看常见问题说明**](../../faq/why.md#百度云盘非官方下载报错出现-hit-black-userlist-hit-illeage-dlna)
 
-::: details 可能对你有帮助
+
+
+::: details 如果你不会设置 **`"User-Agent"`** 请看这里
+
+ ==以下方法仅限于有百度超级会员用户使用== 
+
+ ==再次提示 以下方法仅限于有百度超级会员用户使用== 
+
+有会员改完 **`"User-Agent"`** 才会有用（选择官方和302）
+
+如果不改**`"User-Agent"`**，可以开启 ==Web代理==，缺点是需要你搭建Alist的机器中转，也就是说你需要大宽带帮你中转
+
+#### 方法1 - 使用浏览器插件
 
 实在不会的可以看看一个Web网页端的例子： **https://www.bilibili.com/video/BV1UA4y1X7J8**
 
-前提是需要有会员哦，有会员改完 `UA` 才会有用（选择官方和302），只能帮你到这里了
-
-如果不改UA，可以开启 ==Web代理==，缺点是需要你搭建Alist的机器中转，也就是说你需要大宽带帮你中转
-
 ![alist](/img/drivers/baidu/bdUA.png)
+
+#### 方法2 - 使用IDM - Internet Download Manager
+
+![alist](/img/drivers/baidu/idm-ua.png)
+
+#### 方法3 - 使用Aria2
+
+![alist](/img/drivers/baidu/aria2-ua.png)
 
 :::
 
