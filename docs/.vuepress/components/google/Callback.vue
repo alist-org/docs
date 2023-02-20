@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { NAlert, NSpace, NSpin, NInput } from 'naive-ui';
+import { NAlert, NSpace, NSpin, NInput, NButton } from 'naive-ui';
 import { ref } from 'vue';
 
 const url = new URL(window.location.href);
@@ -46,6 +46,10 @@ if (code && !error) {
   getToken();
 }
 
+function getAlbumID() {
+  window.open(`/tool/google/album?access_token=${token.value?.access_token}`, "_blank");
+}
+
 </script>
 
 <template>
@@ -66,6 +70,7 @@ if (code && !error) {
       <NAlert v-else-if="token?.access_token" title="Web client" type="warning">
         The refresh_token is only returned once if you use a web client.
       </NAlert>
+      <NButton v-if="token?.access_token" @click="getAlbumID" block type="primary">Get Album ID</NButton>
     </NSpace>
   </NSpace>
 </template>
