@@ -79,8 +79,9 @@ The workers code can be found at https://github.com/alist-org/alist-proxy/blob/m
 - ADDRESS: your Alist address, The protocol header must be added, and cannot be followed by /. Such as `https://pan.nn.ci`;
 - TOKEN: you can get in `Other settings` in your Alist manage page.
 
-
 :warning: Cloudflare Workers free CDN supports domestic only **http80 port** and **https443 port**，From group friend test
+
+- When mounting the configuration in the Alist background, fill in the **download proxy URL** at the end of the link without `/`
 
 @tab Universal Binary
 You can also use another machine for proxying, download the program at https://github.com/alist-org/alist-proxy/releases
