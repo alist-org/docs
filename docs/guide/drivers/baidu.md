@@ -39,7 +39,9 @@ The root foler to mount, defaults to `/`, same as local storage.
 
 
 
-::: details If you don't know how to set **`"User-Agent"`** see here
+### Add "User-Agent" usage example
+
+:::: details If you don't know how to set **`"User-Agent"`** see here
 
  ==The following methods are limited to Baidu super member users== 
 
@@ -49,18 +51,27 @@ It will only be useful if a member finishes modifying **`"User-Agent"`** (choose
 
 If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disadvantage is that you need to build an Alist machine for transfer, that is to say, you need a large broadband to help you transfer
 
-#### Method 1 - Using a browser plugin
 
-If you really don’t know how to do it, you can take a look at an example on the Web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
+
+:::tabs#ua
+
+@tab Web plugin
+
+- The advantage of using a browser plug-in to modify is that it can be played directly online, of course, downloading is also possible.
 
 ![alist](/img/drivers/baidu/bdUA.png)
 
-#### Method 2 - Using IDM - Internet Download Manager
+@tab IDM
 
 ![alist](/img/drivers/baidu/idm-ua.png)
 
-#### Method 3 - Using Aria2
+@tab Aria2
 
 ![alist](/img/drivers/baidu/aria2-ua.png)
 
 :::
+
+
+
+::::
+
