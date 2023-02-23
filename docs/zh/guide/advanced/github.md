@@ -61,3 +61,14 @@ star: true
 ### 完整填写参考示意图
 
 ![github](/img/advanced/github.png)
+
+
+
+### 视频教程
+
+<ArtPlayer
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4872400300415846&raw=true" 
+  poster="/img/advanced/github-login.png"
+/>
+
+**视频若失效可以前往观看: https://b23.tv/Fm8AkC5**

@@ -22,6 +22,16 @@ star: true
 
 设置 Aria2 URI 以供离线下载。 Aria2 需要和 AList 安装在同一台服务器(如果使用docker则是容器)上。
 
+
+
+## Qbittorrent url
+
+用于自定义**Qbittorrent**参数用来配置客户端中使用
+
+预设值为：http://admin:adminadmin@localhost:8080/，可以参考进行修改，[具体说明。](../guide/advanced/offline-download.md#_2-qbittorrent)
+
+
+
 ## Token
 
 可用于访问程序所有 API 的令牌。

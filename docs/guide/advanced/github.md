@@ -56,3 +56,14 @@ If you want to use GitHub to log in, you first need the machine you built Alist 
 ### Completely fill in the reference schematic
 
 ![github](/img/advanced/github.png)
+
+
+
+### GitHub login Video Tutorials
+
+<ArtPlayer
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4872400300415846&raw=true" 
+  poster="/img/advanced/github-login.png"
+/>
+
+**If the video fails, you can watch it here: https://b23.tv/Fm8AkC5**

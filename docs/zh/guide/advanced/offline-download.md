@@ -48,15 +48,17 @@ star: true
 - **user**：admin
 - **password**：adminadmin
 
-将以上参数我们填写到 **`qBittorrent`** 客户端，配置好后我们去Alist前端进行离线下载（**方法参考开头的说明**）
+1. 将以上参数我们填写到 **`qBittorrent`** 客户端，配置好后我们去Alist前端进行离线下载（**方法参考开头的说明**）
+   - 若提交离线链接后提示：**Qbittorrent not ready** 将Alist和qBittorrent都重启试试看
 
-- 若提交离线链接后提示：**Qbittorrent not ready** 将Alist和qBittorrent都重启试试看
 
-预设值配置查看地址：
+2. 预设值配置查看地址：
+   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+    - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
-- **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
 
-- ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
+3. 我们也可以自定义，不使用默认的预设值
+   -  修改位置：**Alist后台** --> **设置** --> **Qbittorrent url** 选项，照着修改即可
 
 ![Offline download](/img/advanced/offline-download.png)
 
@@ -71,6 +73,10 @@ star: true
 
 - **qBittorrent**官网：**https://www.qbittorrent.org/**
 - **qBittorrent**GitHub：**https://github.com/c0re100/qBittorrent-Enhanced-Edition**
+
+3. 因为用到了 `v2.8.3` 的 API，所以 qBittorrent 的版本最低应该是 `4.4.0beta2` 或者 `4.3.8` 正式版
+4. 如果 **qBittorrent** 设置了 alist 所在的 ip 免验证的话可以直接省略 `@` 前面的用户名和密码（在**qBittorrent**客户端配置）
+   - 3 和 4 是视频中没有提到的.
 
 
 
