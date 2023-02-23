@@ -40,7 +40,7 @@ star: true
 
 @tab Scan QrCoden
 
-![token](/img/drivers/aliyun/token1.png)
+![token](/img/drivers/aliyun/token2.png)
 
 :::
 
