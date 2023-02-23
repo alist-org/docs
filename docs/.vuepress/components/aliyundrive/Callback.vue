@@ -51,7 +51,7 @@ if (code && !error) {
     </NAlert>
     <NSpace vertical>
       <b>refresh_token:</b>
-      <NSpin v-if="!token?.refresh_token" />
+      <NSpin v-if="!token" />
       <NInput v-else type="textarea" autosize readonly :value="token.refresh_token" />
     </NSpace>
   </NSpace>
