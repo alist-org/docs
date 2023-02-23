@@ -9,9 +9,6 @@ toc: false
 <Request />
 </NaiveClient>
 
-![token](/img/tool/token1.png)
-
 <script setup lang="ts">
 import Request from "@Aliyundrive/Request";
 </script>
-![token](/img/tool/token2.png)
