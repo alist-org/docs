@@ -93,7 +93,7 @@ const getSiteId = () => {
     </NAlert>
     <NSpace vertical>
       <b>refresh_token:</b>
-      <NSpin v-if="!data.refreshToken" />
+      <NSpin v-if="!data.refreshToken && !data.errorMessage1" />
       <NInput v-else type="textarea" autosize readonly :value="data.refreshToken" />
     </NSpace>
     <NSpace vertical size="large" v-if="data.accessToken">

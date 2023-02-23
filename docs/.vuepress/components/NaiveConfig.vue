@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { darkTheme, lightTheme, NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
+import { darkTheme, lightTheme, NConfigProvider, GlobalThemeOverrides, NMessageProvider } from 'naive-ui'
 import { ref } from "vue";
 
 const theme = ref(lightTheme)
@@ -31,7 +31,9 @@ const themeOverrides: GlobalThemeOverrides = {
 
 <template>
   <NConfigProvider :theme-overrides="themeOverrides" :theme="theme">
-    <div style="height: 8px;"></div>
-    <slot />
+    <NMessageProvider>
+      <div style="height: 8px;"></div>
+      <slot />
+    </NMessageProvider>
   </NConfigProvider>
 </template>
