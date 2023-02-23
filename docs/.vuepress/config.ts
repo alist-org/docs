@@ -73,12 +73,12 @@ export default defineUserConfig({
       indexName: "alist",
     }),
   ],
-  bundler:viteBundler({
+  bundler: viteBundler({
     viteOptions: {
-      ssr:{
-        noExternal: ['naive-ui']
-      }
-    }
+      ssr: {
+        noExternal: ["naive-ui"],
+      },
+    },
   }),
   alias: {
     "@theme-hope/components/NormalPage": path.resolve(
@@ -117,9 +117,14 @@ export default defineUserConfig({
       __dirname,
       "./components/google/Callback.vue"
     ),
-    "@Google/Album": path.resolve(
+    "@Google/Album": path.resolve(__dirname, "./components/google/Album.vue"),
+    "@Aliyundrive/Request": path.resolve(
       __dirname,
-      "./components/google/Album.vue"
+      "./components/aliyundrive/Request.vue"
+    ),
+    "@Aliyundrive/Callback": path.resolve(
+      __dirname,
+      "./components/aliyundrive/Callback.vue"
     ),
   },
 });
