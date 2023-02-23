@@ -32,6 +32,10 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 -  ==.ipa installation requires https and a valid certificate== , not just a package can be installed without a signature
 
+:::tabs#ipa
+
+@tab How to change the name of the computer version
+
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
   poster="/img/advanced/video.png"
@@ -39,7 +43,15 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 **If the video fails, you can watch it here: https://b23.tv/oLvHHC8**
 
+@tab how to change the name of the IOS 16 mobile phone
 
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4871961534007938&raw=true" 
+/>
+
+**If the video fails, you can watch it here:https://b23.tv/GxGG8Dn**
+
+:::
 
 
 

@@ -22,6 +22,16 @@ star: true
 
 Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the same server(container if use docker) as alist.
 
+
+
+## Qbittorrent url
+
+Used to customize **Qbittorrent** parameters to configure the client to use
+
+The default value is: http://admin:adminadmin@localhost:8080/, you can modify it by referring to [specific instructions. ](../guide/advanced/offline-download.md#_2-qbittorrent)
+
+
+
 ### Token
 
 The token that can be used to access all API.

@@ -41,7 +41,7 @@ The root foler to mount, defaults to `/`, same as local storage.
 
 ### Add "User-Agent" usage example
 
-:::: details If you don't know how to set **`"User-Agent"`** see here
+:::: details If you don't know how to set "User-Agent" see here
 
  ==The following methods are limited to Baidu super member users== 
 

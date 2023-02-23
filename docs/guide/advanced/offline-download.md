@@ -47,15 +47,21 @@ According to [source code] (https://github.com/alist-org/alist/blob/main/interna
 - **user**: admin
 - **password**: adminadmin
 
-We fill in the above parameters into the **`qBittorrent`** client, after configuration, we go to the Alist front end to download offline (**method refer to the description at the beginning**)
+1. We fill in the above parameters into the **`qBittorrent`** client, after configuration, we go to the Alist front end to download offline (**method refer to the description at the beginning**)
+   - If you are prompted after submitting the offline link: **Qbittorrent not ready**, try restarting both Alist and qBittorrent
 
-- If you are prompted after submitting the offline link: **Qbittorrent not ready**, try restarting both Alist and qBittorrent
 
-Default value configuration view address:
+2. Default value configuration view address:
 
-- **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
 
-- ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
+
+   - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
+
+
+3. We can also customize, instead of using the default presets
+   -  Modification location: **Alist Manage** --> **Settings** --> **Qbittorrent url** option, just follow the modification
+
 
 ![Offline download](/img/advanced/offline-download.png)
 
@@ -70,6 +76,10 @@ The above two methods are most likely caused by the qBittorrent software itself,
 
 - **qBittorrent** official website: **https://www.qbittorrent.org/**
 - **qBittorrent** GitHub: **https://github.com/c0re100/qBittorrent-Enhanced-Edition**
+
+3. Because the `v2.8.3` API is used, the minimum version of qBittorrent should be `4.4.0beta2` or `4.3.8` official version
+4. If **qBittorrent** sets the ip where alist is located to be exempt from authentication, you can directly omit the user name and password before `@` (configured on the **qBittorrent** client side)
+   - 3 and 4 are not mentioned in the video.
 
 
 

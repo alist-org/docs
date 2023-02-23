@@ -35,12 +35,26 @@ star: true
 - ==.ipa安装 需要 https 和 有效的证书== ，不是随便一个包上传上去没签名就能安装的
 - 爱思助手签名的无法使用在线安装，只能使用爱思助手安装（经群友测试）
 
+:::tabs#ipa
+
+@tab 电脑版如何改名
+
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
   poster="/img/advanced/video.png"
 />
 
 **视频若失效可以前往观看：https://b23.tv/oLvHHC8**
+
+@tab IOS 16手机如何改名
+
+<ArtPlayer 
+  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4871961534007938&raw=true" 
+/>
+
+**视频若失效可以前往观看：https://b23.tv/GxGG8Dn**
+
+:::
 
 
 
@@ -51,3 +65,4 @@ star: true
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 
 />
+
