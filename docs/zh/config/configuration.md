@@ -55,7 +55,8 @@ star: true
     "max_age": 28,
     "compress": false
   },
-  "max_connections": 0
+  "max_connections": 0,
+  "tls_insecure_skip_verify": false
 }
 ```
 
@@ -141,3 +142,8 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 - 对于一般的设备比如n1推荐10或者20
   - 使用场景（例如打开图片模式会并发不是很好的设备就会崩溃）
+
+### tls_insecure_skip_verify
+
+是否检查SSL证书，开启后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，关闭该选项请尽量在安全的网络环境下运行程序
+
