@@ -18,6 +18,13 @@ star: true
 
 # Aliyundrive / share
 
+:::warning
+
+This driver is not recommended for use, because it is not stable and may be blocked at any time and we will remove it in a future version.
+We recommend using the official driver [Aliyundrive Open](./aliyundrive_open.md).
+
+:::
+
 :::tip
 
 Due to the limitation of the referrer of Aliyundrive, the mobile token must be used. Using the desktop web token will result in failure to download and preview.

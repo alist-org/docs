@@ -20,7 +20,7 @@ star: true
 
 :::tip
 
-Ali cloud disk open, using the official authorization API document development.
+Aliyundrive Open, using the official authorization API development.
 
 :::
 
@@ -58,4 +58,4 @@ which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 ### Client id，Client secret
 
-Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by Alist.
+Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by AList.

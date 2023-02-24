@@ -27,18 +27,19 @@ star: true
 使用 nginx 反向代理到 https://nn.ci/alist 的示例：
 
 - 正常安装
-- 将 [API url](../config/site.md#api-url) 设置为 `https://nn.ci/alist`, [Base path](../config/site.md#base-path) 到 `alist` 并点击保存按钮
+- 将 [site_url](../config/configuration.md#site_url) 设置为 `https://nn.ci/alist` 或者仅`/alist`, 然后重启alist
 - 在 nginx 中添加反向代理配置
 
 ```nginx
 location /alist/ {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
     proxy_set_header Host $http_host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header Range $http_range;
 	  proxy_set_header If-Range $http_if_range;
     proxy_redirect off;
-    proxy_pass http://127.0.0.1:5244/;
+    proxy_pass http://127.0.0.1:5244/alist/;
     # the max size of file to upload
     client_max_body_size 20000m;
 }
