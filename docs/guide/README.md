@@ -45,6 +45,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Quark](https://pan.quark.cn/)
 - [x] [Thunder](https://pan.xunlei.com)
 - [x] [Lanzou](https://www.lanzou.com/)
+- [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
 - [x] [Aliyundrive share](https://www.aliyundrive.com/)
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
