@@ -33,8 +33,9 @@ star: true
 
 如果你是 **docker**，请自行映射以下两个默认路径
 
-**/opt/alist/data/temp/aria2**
-**/opt/alist/data/temp/qbittorrent**
+- **/opt/alist/data/temp/aria2**
+
+- **/opt/alist/data/temp/qbittorrent**
 
 :::
 
