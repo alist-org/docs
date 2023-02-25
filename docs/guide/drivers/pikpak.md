@@ -38,10 +38,13 @@ Can get with https://mypikpak.com/ , default `root`.
 
 
 
-## PikPak Share(has been disabled)
+## PikPak Share(v3.12.0 fix)
 
 ::: warning
-As of **February 4, 2023**, the sharing mount  has been officially banned. Currently, you can only watch the first 4 minutes.Stay tuned for when it will be restored
+~~As of **February 4, 2023**, the sharing mount  has been officially banned. Currently, you can only watch the first 4 minutes.Stay tuned for when it will be restored~~
+
+**v3.12.0 fix,How long it can be used this time is unknown**
+
 :::
 
 You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **root folder ID** can be written or not, if not written, the default is the root directory (root directory)

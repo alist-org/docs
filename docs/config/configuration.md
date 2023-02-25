@@ -55,7 +55,8 @@ star: true
     "max_age": 28,
     "compress": false
   },
-  "max_connections": 0
+  "max_connections": 0,
+  "tls_insecure_skip_verify": false
 }
 ```
 
@@ -141,3 +142,7 @@ The maximum number of connections (concurrent) at the same time, the default is 
 
 - 10 or 20 is recommended for general equipment such as n1
    - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)
+
+### tls_insecure_skip_verify
+
+Whether to examine the SSL certificate, if there is a problem with the certificate of the website used after opening (such as not including the intermediate certificate, certificate expiration, certificate forgery, etc.), the service will not be available,Close this option, please try to run the program in a safe network environment

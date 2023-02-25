@@ -28,6 +28,13 @@ Then go back to the front-end interface, ==find the folder you want to upload of
 
 Then find the offline download button in the lower right corner, and choose to use Aria2 download or qBittorrent download (>v 3.11.0)
 
+
+
+If you are **docker**, please map the following two default paths by yourself
+
+**/opt/alist/data/temp/aria2**
+**/opt/alist/data/temp/qbittorrent**
+
 :::
 
 ## 1.Aria2

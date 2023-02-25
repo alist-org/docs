@@ -29,6 +29,13 @@ star: true
 
 然后再右下角找到离线下载按钮，自行选择使用 Aria2下载还是qBittorrent下载(＞v 3.11.0)
 
+
+
+如果你是 **docker**，请自行映射以下两个默认路径
+
+**/opt/alist/data/temp/aria2**
+**/opt/alist/data/temp/qbittorrent**
+
 :::
 
 ## 1.Aria2
