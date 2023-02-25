@@ -22,6 +22,8 @@ star: true
 
 程序默认监听 5244 端口。如有修改，请一并修改下列配置中的端口号。如果你使用反向代理，建议你设置[site_url](../../config/configuration.md#site_url)，以帮助alist更好的工作。
 
+> 如果你想使用子目录，参考[这里](../../faq/howto.md#如何对子目录进行反向代理)
+
 ## nginx
 
 在网站配置文件的 server 字段中添加

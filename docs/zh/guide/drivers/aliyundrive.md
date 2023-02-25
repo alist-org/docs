@@ -18,6 +18,12 @@ star: true
 
 # 阿里云盘/分享
 
+:::warning
+
+不推荐使用该驱动，因为它不稳定，随时可能被屏蔽，我们会在以后的版本中移除。推荐使用官方API的驱动 [Aliyundrive Open](./aliyundrive_open.md)。
+
+:::
+
 :::tip
 
 由于阿里云盘 referer 的限制，必须使用移动端 token。 使用桌面 Web 令牌将导致无法下载和预览。

@@ -21,6 +21,8 @@ star: true
 # Reverse proxy
 The program listens to port 5244 by default. If you do `reverse proxy`, recommended you set [site_url](../../config/configuration.md#site_url) so that alist can works fine.
 
+> If you want to use a sub folder, refer to [reverse proxy with sub folder](../../faq/howto.md#how-to-reverse-proxy-with-sub-directory)
+
 ### nginx
 Add in the server field of the website configuration file
 ```nginx

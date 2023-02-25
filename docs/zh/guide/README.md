@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: Introduction
 index: false
 icon: creative
 category:
