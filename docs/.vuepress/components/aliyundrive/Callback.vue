@@ -21,7 +21,7 @@ const token = ref<Token>();
 const api = "https://api.nn.ci"
 
 const getToken = async () => {
-  const resp = await fetch(api + `/alist/ali_open/token`, {
+  const resp = await fetch(api + `/alist/ali_open/code`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
