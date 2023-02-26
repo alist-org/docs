@@ -25,6 +25,7 @@ category:
 ## Support storage
 
 - [x] 本地存储
+- [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘](https://www.aliyundrive.com/)
 - [x] OneDrive / SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
@@ -43,7 +44,6 @@ category:
 - [x] [夸克网盘](https://pan.quark.cn)
 - [x] [迅雷网盘](https://pan.xunlei.com)
 - [x] [蓝奏云](https://www.lanzou.com/)
-- [x] [阿里云盘开放平台](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘分享](https://www.aliyundrive.com/)
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)

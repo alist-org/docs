@@ -24,12 +24,26 @@ Aliyundrive Open, using the official authorization API development.
 
 :::
 
+<script setup lang="ts">
+import { ref } from "vue";
+const minutes = ref<string|number>("unknown")
+const max = ref<string|number>("unknown")
+const getLimit = async ()=>{
+  const resp = await fetch("https://api.nn.ci/alist/ali_open/limit")
+  const res = await resp.json()
+  minutes.value = res.minutes
+  max.value = res.max
+}
+typeof fetch !== "undefined" && getLimit()
+</script>
 
 :::warning Read the precautions carefully
 
-1. The refresh token obtained by this tool can only be used for **Alibaba cloud disk open platform** storage mount method
+1. The refresh token obtained by this tool can only be used for **Aliyundrive open platform** storage mount method
 2. The token filled in when Alist is mounted should also be provided by this tool, and the previous acquisition method will not be available
 3. Not applicable to others, but only for Alist
+4. If the same IP requests {{ max }} times within {{ minutes }} minutes, **TooManyRequests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
+    - For example, a request is counted when saving/editing, and viewing a file or watching a video download is not counted.
 
 :::
 
