@@ -6,6 +6,8 @@ breadcrumb: false
 editLink: false
 pageInfo: false
 comment: false
+lastUpdated: false
+contributors: false
 # containerClass: fancy-container
 ---
 

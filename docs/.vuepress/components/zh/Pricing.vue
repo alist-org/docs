@@ -19,7 +19,7 @@ const data = {
         link: 'https://github.com/alist-org/alist/releases',
       }, {
         text: "赞助",
-        link: "/guide/sponsor.html",
+        link: "/zh/guide/sponsor.html",
         secondary: false,
         type: "success"
       }]
