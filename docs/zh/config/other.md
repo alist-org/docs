@@ -28,7 +28,8 @@ star: true
 
 用于自定义**Qbittorrent**参数用来配置客户端中使用
 
-预设值为：http://admin:adminadmin@localhost:8080/，可以参考进行修改，[具体说明。](../guide/advanced/offline-download.md#_2-qbittorrent)
+预设值为：http://admin:adminadmin@localhost:8080/
+可以参考进行修改，[具体说明。](../guide/advanced/offline-download.md#_2-qbittorrent)
 
 
 
