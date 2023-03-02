@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# 第三方单点登录
+# 单点登录
 
 ### Github client id
 
@@ -28,7 +28,7 @@ star: true
 
 
 
-::: warning注意事项
+::: warning 注意事项
 
 1. AList 后台参数也记得写好保存，写好保存后也要回到个人资料下方会有一个需要绑定的按钮进行绑定，否则无法使用
 
@@ -91,7 +91,7 @@ star: true
 
 
 
-首先打开 **https://open-dev.dingtalk.com/fe/app#/corp/app**，
+首先打开 **https://open-dev.dingtalk.com/fe/app#/corp/app**
 
 右上角先 `新建应用`，类型选择 `H5微应用` ,内容自己填写点击确认创建
 
