@@ -165,7 +165,7 @@ If you want to use Google to log in, you first need the machine you built Alist 
 
 2. If you are using it for the first time, you need to create a new project first (just write whatever you want, skip it if it has already been created)
 
-3. Then configure the consent screen (there is a separate instruction on how to configure the document, if it is already configured, skip it)
+3. Then configure the [consent screen](#agree-to-screen-configuration) (there is a separate instruction on how to configure the document, if it is already configured, skip it)
 
 4. After configuring the unified screen, we click the credentials on the left, create credentials, and select OAuth client ID
 
@@ -189,6 +189,12 @@ We have got the client ID and secret key and fill them in the AList single sign-
 
 
 Remember to write and save the background parameters of AList. After writing and saving, you have to go back to the bottom of the personal data and there will be a button that needs to be bound, otherwise it cannot be used
+
+#### Agree to screen configuration
+
+If it has been configured, just ignore this picture (you can zoom in if you can’t see it clearly)
+
+![Google](/img/drivers/google/Google-6.png)
 
 ### Completely fill in the reference schematic
 
