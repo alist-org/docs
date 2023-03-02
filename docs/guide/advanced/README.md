@@ -19,8 +19,7 @@ dir:
 
  - [**Search how to use tutorials and precautions**](search.md)
 
- - [**GitHub Login**](github.md)
+ - [**SingleSignOn**](sso.md)
 
  - [**offline-download**](offline-download.md)
-
 

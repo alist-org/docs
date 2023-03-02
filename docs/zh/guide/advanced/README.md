@@ -19,6 +19,6 @@ dir:
 
  - [**搜索使用教程和注意事项**](search.md)
 
- - [**GitHub登录**](github.md)
+ - [**单点登录**](sso.md)
 
  - [**离线下载**](offline-download.md)
