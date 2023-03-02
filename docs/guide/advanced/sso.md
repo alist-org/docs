@@ -16,12 +16,12 @@ sticky: true
 star: true
 ---
 
-# Third-party SingleSignOn
-### Github client id
+# Third-party single sign-on
+### Single sign-on client id
 
 client ID
 
-### Github client secrets
+### Single sign-on client secrets
 
 secrets ID
 

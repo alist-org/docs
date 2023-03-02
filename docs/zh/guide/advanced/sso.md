@@ -18,11 +18,11 @@ star: true
 
 # 单点登录
 
-### Github client id
+### Single sign-on client id
 
 客户端ID
 
-### Github client secrets
+### Single sign-on client secrets
 
 秘钥ID
 

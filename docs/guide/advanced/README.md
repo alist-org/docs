@@ -19,6 +19,6 @@ dir:
 
  - [**Search how to use tutorials and precautions**](search.md)
 
- - [**SingleSignOn**](sso.md)
+ - [**Single Sign-On**](sso.md)
 
  - [**offline-download**](offline-download.md)
