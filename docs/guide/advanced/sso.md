@@ -60,7 +60,7 @@ Open **https://github.com/settings/developers** Click **`New OAuth App`**
    - write whatever you want
 -  ==**Authorization callback URL**== 
    - Callback URL address
-   - **https://your_domain/api/auth/github_callback**
+   - **https://your_domain/api/auth/sso_callback**
      - Both **http** and **https** can be used
 
 

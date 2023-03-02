@@ -62,7 +62,7 @@ star: true
   - 随便写
 - ==**Authorization callback URL**==
   - 回调URL地址
-  - **https://你的域名/api/auth/github_callback**
+  - **https://你的域名/api/auth/sso_callback**
     - 可以使用http https都可以
 
 
