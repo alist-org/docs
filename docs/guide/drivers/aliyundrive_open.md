@@ -37,9 +37,9 @@ const getLimit = async ()=>{
 typeof fetch !== "undefined" && getLimit()
 </script>
 
-:::warning Read the precautions carefully
+:::danger Read the precautions carefully
 
-1. The refresh token obtained by this tool can only be used for **Aliyundrive open platform** storage mount method
+1.  ==The refresh token obtained by this tool can only be used for **Aliyundrive open platform** storage mount method== 
 2. The token filled in when Alist is mounted should also be provided by this tool, and the previous acquisition method will not be available
 3. Not applicable to others, but only for Alist
 4. If the same IP requests {{ max }} times within {{ minutes }} minutes, **TooManyRequests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
