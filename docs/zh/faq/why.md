@@ -45,6 +45,7 @@ star: true
 特别是对于 Safari：
 
 - 对于跨域媒体，content-type 必须是媒体类型，而不是通用的 application/octet-stream。所以如果直链返回的 content-type 是 application/octet-stream，那么 Safari 就无法播放了。（PS：为什么 AliyunDrive 可以在 Safari 中播放？因为官网的视频播放不是使用的下载链接，是经过 AliyunDrive 转码后的）
+- 阿里云盘开发平台驱动支持在线播放视频（也仅限于阿里云盘开放平台驱动并且是 **Aliyun Video Previewer** 选项播放器）
 
 ### 为什么我不能预览 Office 文件？
 
@@ -239,3 +240,11 @@ v2可以成功是因为v2会忽略空文件上传。
 - 121.89.3.30 cn-beijing-data.aliyundrive.net
 
 方法二：关闭并且禁用vps的IPv6
+
+### 123云盘挂载时出现  json: cannot unmarshal string into Go struct field TokenResp.data of type struct { Token string "json:\"token\"" }
+
+![faq](/img/faq/123error.png)
+
+大概率是你的这台搭建Alist的设备 暂时被 拉黑，冻结，封禁，限制了。先不要挂载了，等几个小时再试试看或者等一天
+
+（以上问题已经经过测试得出的结论）

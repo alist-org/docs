@@ -65,7 +65,7 @@ star: true
     - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 
-3. 我们也可以自定义，不使用默认的预设值
+3.  ==我们也可以自定义，不使用默认的预设值==
    -  修改位置：**Alist后台** --> **设置** --> **Qbittorrent url** 选项，照着修改即可
 
 ![Offline download](/img/advanced/offline-download.png)
@@ -95,4 +95,4 @@ star: true
   poster="/img/advanced/qbittorrent.png"
 />
 
-**视频若失效可以前往观看：暂无**
+**视频若失效可以前往观看：https://b23.tv/J34qDiG**

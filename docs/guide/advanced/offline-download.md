@@ -66,7 +66,7 @@ According to [source code] (https://github.com/alist-org/alist/blob/main/interna
    - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 
-3. We can also customize, instead of using the default presets
+3.  ==We can also customize, instead of using the default presets== 
    -  Modification location: **Alist Manage** --> **Settings** --> **Qbittorrent url** option, just follow the modification
 
 
@@ -97,4 +97,4 @@ The above two methods are most likely caused by the qBittorrent software itself,
   poster="/img/advanced/qbittorrent.png"
 />
 
-**If the video fails, you can watch it here: no yet**
+**If the video fails, you can watch it here: https://b23.tv/J34qDiG**

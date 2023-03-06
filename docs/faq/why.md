@@ -44,6 +44,7 @@ If you see this error when adding storage, but you don't see the corresponding d
 In particular, for Safari:
 
 - For cross-origin media, content-type must be the media type, not the generic application/octet-stream. So if the content-type returned by the direct link is application/octet-stream, then Safari will not be able to play.(PS: Why Can AliyunDrive play in Safari? Because the official website of the video playback is not the use of download links, but after the transcoding of AliyunDrive)
+- Aliyun disk development platform driver supports online video playback (also limited to Aliyun disk open platform driver and **Aliyun Video Previewer** option player)
 
 ### Why can't I preview the office file?
 
@@ -241,3 +242,11 @@ Workaround:
 
 
 **Method 2**: Turn off and disable IPv6 of vps
+
+### 123 When the cloud disk is mounted, json: cannot unmarshal string into Go struct field TokenResp.data of type struct { Token string "json:\"token\"" }
+
+![faq](/img/faq/123error.png)
+
+There is a high probability that your device that builds Alist is temporarily blocked, frozen, blocked, or restricted. Don't mount it yet, wait a few hours and try again or wait a day
+
+(Conclusions from the above questions have been tested)

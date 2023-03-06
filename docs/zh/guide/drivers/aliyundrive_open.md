@@ -37,9 +37,9 @@ const getLimit = async ()=>{
 typeof fetch !== "undefined" && getLimit()
 </script>
 
-:::warning 请仔细阅读注意事项
+:::danger 请仔细阅读注意事项
 
-1. 此工具获取的刷新令牌仅可以用于 **阿里云盘开放平台** 存储挂载方式
+1.  ==此工具获取的刷新令牌仅可以用于 **阿里云盘开放平台** 存储挂载方式== 
 2. AList 挂载时填写的 token 也应该是这个工具提供的，之前方式获取的不可以
 3. 暂不适用于其他，同时也仅限用于 Alist 使用
 4. 同一 IP 在{{ minutes }}分钟内请求{{ max }}次，会出现 **TooManyRequests** :no_entry_sign:避免滥用，请勿滥用:no_entry_sign:
