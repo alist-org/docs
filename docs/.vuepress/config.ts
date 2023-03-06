@@ -127,5 +127,6 @@ export default defineUserConfig({
       "./components/aliyundrive/Callback.vue"
     ),
     "@Pricing": path.resolve(__dirname, "./components/Pricing.vue"),
+    "@Desktop": path.resolve(__dirname, "./components/Desktop.vue")
   },
 });
