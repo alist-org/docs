@@ -16,5 +16,5 @@ contributors: false
 </NaiveClient>
 
 <script setup lang="ts">
-import Pricing from "@zh/Pricing";
+import Pricing from "@Pricing";
 </script>

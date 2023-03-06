@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { NButton, NCard, NGrid, NGridItem, NH1, NIcon, NSpace, NText } from "naive-ui";
 import Check from './icon/Check.vue'
-const data = {
+let data = {
   pricing: [
     {
       title: "Open Source",
@@ -45,6 +45,49 @@ const data = {
     }
   ],
 };
+
+if (location.pathname.startsWith("/zh/")) {
+  data = {
+    pricing: [
+      {
+        title: "开源",
+        price: "免费",
+        features: [
+          "支持所有平台",
+          "支持所有功能",
+          "支持超过30种驱动",
+          "无广告",
+          "没有限制",
+          "..."
+        ],
+        btns: [{
+          text: '下载',
+          link: 'https://github.com/alist-org/alist/releases',
+        }, {
+          text: "赞助",
+          link: "/zh/guide/sponsor.html",
+          secondary: false,
+          type: "success"
+        }]
+      },
+      {
+        title: '技术支持',
+        price: '按需付费',
+        features: [
+          '所有开源功能',
+          '针对具体案例分析解答',
+          '协助部署和调试',
+          '根据具体需求进行二次开发',
+          '...'
+        ],
+        btns: [{
+          text: '联系',
+          link: 'mailto:i@nn.ci'
+        }]
+      }
+    ],
+  };
+}
 
 function openLink(link: string) {
   window.open(link, "_blank");
