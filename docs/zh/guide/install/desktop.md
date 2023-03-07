@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# AList 桌面版
+# 桌面版
 
 <NaiveClient>
 <Desktop />

@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# AList Desktop
+# Desktop
 
 <NaiveClient>
 <Desktop />
