@@ -106,7 +106,7 @@ Your Tampermonkey answering plug-in conflicts, just close it [**For details, cli
 
 ### What is the difference between the two uploads?
 
-**1️⃣ stream** directly puts the binary content of the file into the body, so that the backend can use very little memory, but the browser may limit the size because the file needs to be read into the memory at one time.
+**1️⃣ stream** directly puts the binary content of the file into the body, so that the backend can use very little memory, it seem to have no downsides.
 
 **2️⃣ form** is to wrap the file into formdata and upload it. The memory used by the backend will be more, but there is no limit on the size.
 
