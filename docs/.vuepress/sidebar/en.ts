@@ -17,7 +17,7 @@ export const en = sidebar({
       text: "Config",
       icon: "config",
       prefix: "config/",
-      children: ["config"],
+      children: ["", "configuration"],
     },
     {
       text: "FAQ",
