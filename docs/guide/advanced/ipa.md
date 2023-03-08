@@ -109,7 +109,7 @@ If you want to use the installation is very simple, click the **TrollStore* butt
 
 2. What is the wake-up format of the TrollStore URL?
 
-    -> `apple-magnifier://install?url=<URL_to_IPA>`
+    > `apple-magnifier://install?url=<URL_to_IPA>`
 
 3. Is there any benefit to this installation?
 
@@ -121,15 +121,16 @@ If you want to use the installation is very simple, click the **TrollStore* butt
 title: Is there any benefit to this installation?
 ---
 flowchart TB
+     original process-->troll process
      subgraph original process
-     First download the application from AList --> find the downloaded software
-     Find the downloaded software --> click on the software and select share in the upper right corner
-     Click on the software and select share in the upper right corner --> find the troll icon
-     Find the troll icon --> jump into the troll software to install
-     Jump into the troll software to install --> install and delete the software
+     First download the application from AList-->find the downloaded software
+     Find the downloaded software-->click on the software and select share in the upper right corner
+     Click on the software and select share in the upper right corner-->find the troll icon
+     Find the troll icon-->jump into the troll software to install
+     Jump into the troll software to install-->install and delete the software
      end
      subgraph troll process
-     Click the AList troll install button and click the pop-up window prompt --> enter the troll app and wait for download
-     enter the troll app and wait for download --> after downloading, click the install button
+     Click the AList troll install button and click the pop-up window prompt-->enter the troll app and wait for download
+     enter the troll app and wait for download-->after downloading, click the install button
     end
 ```
