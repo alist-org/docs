@@ -18,6 +18,10 @@ star: true
 
 # IPA 安装
 
+
+
+## 1.IPA原生安装
+
 直接上传 ipa 文件即可。
 
 但是对于 **iOS 16 以上的** 设备，你需要将 ipa 文件命名为：`原文件名@bundle-identifier.ipa`，即需要在原来的基础上加入`@bundle-identifier`，其中的 `bundle-identifier` 即 IPA 包中 `Info.plist` 的 `CFBundleIdentifier`。如：
@@ -65,4 +69,72 @@ star: true
 <ArtPlayer 
   src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true" 
 />
+
+
+
+## 2. TrollStore(巨魔)安装
+
+支持安装TrollStore(巨魔)的设备（不含越狱设备）
+
+最高到iPhone13系列设备系统版本不大于 `稳定版15.4.1` `测试版15.6 beta 1 - 5 `
+
+如果你是iPhone14直接没戏啦出厂系统版本太高啦，详情查看下方表格
+
+| Version / Device       | arm64 (A8 - A11)                                             | arm64e (A12 - A15, M1)                                       |
+| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 13.7 and below         | Not Supported (CT Bug only got introduced in 14.0)           | Not Supported (CT Bug only got introduced in 14.0)           |
+| 14.0 - 14.8.1          | [checkra1n + TrollHelper](https://github.com/opa334/TrollStore/blob/main/install_trollhelper.md) | [TrollHelperOTA (arm64e)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_arm64e.md) |
+| 15.0 - 15.4.1          | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) |
+| 15.5 beta 1 - 4        | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) |
+| 15.5 (RC)              | Not Supported (CT Bug fixed)                                 | Not Supported (CT Bug fixed)                                 |
+| 15.6 beta 1 - 5        | [SSH Ramdisk](https://github.com/opa334/TrollStore/blob/main/install_sshrd.md) | [TrollHelperOTA (arm64e)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_arm64e.md) |
+| 15.6 (RC1/2) and above | Not Supported (CT Bug fixed)                                 | Not Supported (CT Bug fixed)                                 |
+
+
+
+### 安装示例
+
+如果你要使用安装很简单，点击 **TrollStore(巨魔)** 按钮即可安装
+
+![gif](http://pic.rmb.bdstatic.com/bjh/ff1e47ebc1efe5a907dbfffabf4d5f67.gif)
+
+
+
+### 其他说明
+
+1. 如果你点击 **TrollStore(巨魔)** 按钮后打开的是 Apple的放大镜是因为如下原因
+   - 你的 `TrollStore` 版本号小于1.3+版本，建议直接更新到最新版
+   - 你的使用 URL 方案没有启用，若启用后记得点击第一个选项立即注销生效 **（Rebuild Now）**
+     - ![TrollStore](/img/advanced/TrollStore.jpg)
+
+2. TrollStore URL唤醒格式是什么？
+
+   - > `apple-magnifier://install?url=<URL_to_IPA>`
+
+3. 这样安装有什么好处吗？
+
+   - **原始流程**：先从AList下载应用 ---> 找到下载的软件 ---> 点击软件然后选择右上角分享 ---> 找到巨魔图标 ---> 跳进巨魔软件进行安装 ---> 安装好了删除软件
+   - **巨魔唤醒安装流程**：点击AList巨魔安装按钮击弹窗提示  ---> 进入巨魔应用内等待下载 ---> 下载好然后点击安装按钮即可
+
+
+
+```mermaid
+---
+title: 优缺点
+---
+flowchart TB
+    原始流程-->巨魔流程
+    subgraph 原始流程
+    先从AList下载应用-->找到下载的软件
+    找到下载的软件-->点击软件然后选择右上角分享
+    点击软件然后选择右上角分享--> 找到巨魔图标
+    找到巨魔图标-->跳进巨魔软件进行安装
+    跳进巨魔软件进行安装-->安装好了删除软件
+    end
+    subgraph 巨魔流程
+    点击AList巨魔安装按钮击弹窗提示-->进入巨魔应用内等待下载
+    进入巨魔应用内等待下载-->下载好然后点击安装按钮即可
+    end
+    原生 --> 巨魔
+```
 

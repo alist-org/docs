@@ -22,6 +22,8 @@ It is required that the file structures in the two storages are exactly the same
 
 Different network disks can be used, but the file directories must be consistent.
 
+- If the network disk mounted on the main display is inconsistent with the directory tree of the network disk mounted on the load and an error is returned after modifying the network disk mounted on the main display, you can solve it by yourself to keep the directory files of the network disk on the load consistent.
+
 ### how to use​
 
 One storage can be added normally, and the other storage can be added with the mount path of `the first storage mount path + .balance + any other content`.
