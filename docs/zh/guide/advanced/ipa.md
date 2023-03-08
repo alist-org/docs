@@ -96,7 +96,7 @@ star: true
 
 如果你要使用安装很简单，点击 **TrollStore(巨魔)** 按钮即可安装
 
-![gif](http://pic.rmb.bdstatic.com/bjh/ff1e47ebc1efe5a907dbfffabf4d5f67.gif)
+![gif](https://pic.rmb.bdstatic.com/bjh/ff1e47ebc1efe5a907dbfffabf4d5f67.gif)
 
 
 
