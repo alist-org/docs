@@ -133,4 +133,4 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 Q: My version is v3.x.x and I cannot upgrade to the latest version. docker pull xhofe/alist:latest does not work to pull the latest version. After changing to docker-compose, it is still version 3.x.x
 
-A: The reason is that your docker has set up a mirror, and the latest version cannot be updated from the mirror, so modify /etc/docker/daemon.json and delete "registry-mirrors": ["<mirror accelerator address>"]
+A: The reason is that your docker has set up a mirror, and the latest version cannot be updated from the mirror, so modify /etc/docker/daemon.json and delete "registry-mirrors": ["mirror accelerator address"]
