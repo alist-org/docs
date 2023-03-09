@@ -127,7 +127,7 @@ services:
 
 6. 更新好了 去看看吧..就这么简单
 
-*图片中丢了一步，是教程中的第四步....记得执行*
+**图片中丢了一步，是教程中的第四步....记得执行**
 ![docker](/img/faq/updocker.png)
 
 :::
@@ -136,3 +136,7 @@ services:
 1. docker-compose pull
 2. docker-compose up -d
 :::
+
+Q：我的版本是v3.x.x 怎么也升级不到最新版 docker pull xhofe/alist:latest拉取最新不行 改成docker-compose安装还是3.x.x版本
+
+A：原因是你的docker设置了镜像，从镜像更新不到最新版本，改一下/etc/docker/daemon.json，删除"registry-mirrors": ["<镜像加速器地址>"]

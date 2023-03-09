@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 3
+order: 4
 # A page can have multiple categories
 category:
   - Guide
@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# 阿里云盘/分享
+# 阿里云盘
 
 :::warning
 
@@ -132,12 +132,7 @@ const onClick = async ()=>{
 如果你部署 Alist 的服务器是阿里云北京地区ECS，打开此开关可以提升文件上传速度。不符合要求的服务器请不要打开此开关，否则会出现无法上传的问题。
 
 
+
 ## 阿里云盘分享
 
-主要填写 **[刷新令牌](#刷新令牌)，分享ID**
-
-- **根文件夹ID**(默认root根目录)，想写就写不想写就是默认根目录
-
-- 分享密码有就写没有就不写
-
-![alist](/img/drivers/aliyun/aliyun.png)
+别想着了...已经修复后续不再开发和维护分享存储方式了，阿里云盘开放平台 token也不可以用在分享挂载存储。

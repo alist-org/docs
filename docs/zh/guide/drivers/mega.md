@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 30
+order: 25
 # A page can have multiple categories
 category:
   - Guide
@@ -16,21 +16,20 @@ sticky: true
 star: true
 ---
 
-# SFTP
+# MEGA 网盘
 
-That is to access files through the ssh protocol.
+MEGA官网：**https://mega.nz/login**
 
-### Address
-SSH address, need contains port.
+### 邮箱
 
-### Username
-ssh username, usually root
+MEGA登录账号
 
-### Password
-ssh password
+### 密码
 
-### Private key
-Use Private key to auth otherwise password.
+登录密码
 
-### Root folder path
-root path to mount
+
+
+### Tips
+
+默认本地代理，需要proxy

@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 30
+order: 25
 # A page can have multiple categories
 category:
   - Guide
@@ -16,21 +16,20 @@ sticky: true
 star: true
 ---
 
-# SFTP
+# MEGA Disk
 
-That is to access files through the ssh protocol.
+MEGA official website: **https://mega.nz/login**
 
-### Address
-SSH address, need contains port.
+### Mail
 
-### Username
-ssh username, usually root
+MEGA login account
 
-### Password
-ssh password
+### password
 
-### Private key
-Use Private key to auth otherwise password.
+login password
 
-### Root folder path
-root path to mount
+
+
+### Tips
+
+Default local proxy, proxy is required
