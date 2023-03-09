@@ -118,20 +118,23 @@ star: true
 
 ```mermaid
 ---
-title: 这样安装有什么好处吗？
+title: 使用安装有什么好处吗？
 ---
 flowchart TB
-    A-->B
     subgraph A[原生流程]
-    C[先从AList下载应用]-->D[找到下载的软件]
-    D-->E[点击软件然后选择右上角分享]
-    E-->F[找到巨魔图标]
-    F-->G[跳进巨魔软件进行安装]
-    G-->H[安装好了删除软件]
+    style A fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style B fill:#ff7575,stroke:#333,stroke-width:4px
+    C[1.AList点击下载]---|等待下载|D[2.找到软件]
+    D---|右上角分享|F[3.找到巨魔图标]
+    F---|点击巨魔图标|G[4.跳进巨魔软件进行安装]
+    G---|安装好软件|H[5.手动删除下载的软件]
     end
     subgraph B[巨魔流程]
-    I[点击AList巨魔安装按钮击弹窗提示]-->J[进入巨魔应用内等待下载]
-    J-->K[下载好然后点击安装按钮即可]
+    I[1.点击安装按钮击弹窗提示]---|点击打开|J[2.进入巨魔应用内等待下载]
+    J---|下载不占用空间|K[3.下载好然后点击安装按钮即可]
     end
+    C==>I
+    G==>J
+    H===|使用巨魔不用手动删除|K
 ```
 
