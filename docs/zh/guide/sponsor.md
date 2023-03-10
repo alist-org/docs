@@ -22,7 +22,7 @@ star: true
 
 如果你觉得这个项目对你有帮助，不妨考虑给我买杯奶茶😄。
 
-- 购买 AList桌面版：https://mbd.pub/o/bread/ZJaTl5xy
+- 购买 AList桌面版：https://sp.nn.ci/alist/desktop
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
 - 赞助我: https://sp.nn.ci
 - 支付宝/微信支付/QQ支付:

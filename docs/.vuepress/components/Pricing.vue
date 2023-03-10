@@ -45,7 +45,7 @@ let data = {
         },
         {
           text: 'Buy',
-          link: 'https://mbd.pub/o/bread/ZJaTl5xy',
+          link: 'https://sp.nn.ci/alist/desktop',
           type: 'success'
         }
       ]
@@ -113,7 +113,7 @@ if (location.pathname.startsWith("/zh/")) {
           },
           {
             text: '购买',
-            link: 'https://mbd.pub/o/bread/ZJaTl5xy',
+            link: 'https://sp.nn.ci/alist/desktop',
             type: 'success'
           }
         ]
