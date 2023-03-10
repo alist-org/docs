@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 10
+order: 29
 # A page can have multiple categories
 category:
   - Guide

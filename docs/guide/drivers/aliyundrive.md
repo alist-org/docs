@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: state
 # This control sidebar order
-order: 3
+order: 4
 # A page can have multiple categories
 category:
   - Guide
@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# Aliyundrive / share
+# Aliyundrive
 
 :::warning
 
@@ -129,12 +129,7 @@ Check the hash when uploading. If there is one in the cloud, directly generate t
 If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
 
+
 ## Alibaba cloud disk sharing
 
-Mainly fill in **[refresh token](#refresh-token), share ID**
-
-- **Root folder ID** (default root root directory), if you want to write, you can write or not, it is the default root directory
-
-- Write the **Share pwd** if you have it
-
-![alist](/img/drivers/aliyun/aliyun.png)
+Don't think about it... It has been repaired and will no longer develop and maintain the shared storage method, and the Alibaba cloud disk open platform token cannot be used for shared mounted storage.

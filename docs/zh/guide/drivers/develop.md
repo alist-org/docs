@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: code
 # This control sidebar order
-order: 44
+order: 99
 # A page can have multiple categories
 category:
   - Guide
