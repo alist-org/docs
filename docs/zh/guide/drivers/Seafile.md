@@ -44,3 +44,26 @@ Seafile以资料库为单位进行版本控制和同步。
 Seafile资料库ID，形如：`86fc6316-3f2a-4c64-b6f5-d4d2b341bc9a`
 
 > 在浏览器中打开Seafile资料库，即可在地址栏中看到资料库ID。
+
+
+
+### 默认使用的下载方式
+
+```mermaid
+---
+title: 默认使用的那种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.md#webdav-策略" _blank
+    click b1 "../drivers/common.md#webdav-策略" _blank
+    click c1 "../drivers/common.md#webdav-策略" _blank
+```

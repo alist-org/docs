@@ -48,6 +48,26 @@ See the image below to add
 
 ![xunlei](/img/drivers/xunlei/x2.png)
 
+### The default download method used
+
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    c1
+    end
+    c1[local proxy]:::someclass==default==>a2[user equipment]
+    classDef someclass fill:#f96
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click b1 "../drivers/common.md#webdav-policy" _blank
+    click c1 "../drivers/common.md#webdav-policy" _blank
+```
+
 ## ThunderExpert
 
 :::tip
@@ -129,3 +149,24 @@ Figure 1 contains **7** parameters | Figure 1 contains **2** parameters | a fixe
 ### ThunderExpert complete parameter filling demo:
 
 ![xunlei](/img/drivers/xunlei/x6.png)
+
+### The default download method used
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|default|a2[user equipment]
+    classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.md#webdav-policy" _blank
+    click b1 "../drivers/common.md#webdav-policy" _blank
+    click c1 "../drivers/common.md#webdav-policy" _blank
+```
