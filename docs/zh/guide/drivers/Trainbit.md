@@ -37,6 +37,8 @@ star: true
 
 我们打开首页按F12，打开开发者模式，选择网络，搜索栏搜索 list，就能看到 "`listoffiles`"，点击，然后选择响应将里面的值，自己去格式化一下（不格式化也能用自己慢慢的寻找）[详情填写示意图](#详情填写示意图)
 
+- 如何格式化：自行浏览器搜索 json在线格式化
+
 
 
 ## 注意事项
@@ -68,7 +70,7 @@ flowchart TB
     classDef someclass fill:#f96
     c1[本机代理]-.备选.->a2[用户设备]
     b1[代理URL]-.备选.->a2[用户设备]
-    click a1 "../drivers/common.md#webdav-策略" _blank
-    click b1 "../drivers/common.md#webdav-策略" _blank
-    click c1 "../drivers/common.md#webdav-策略" _blank
+    click a1 "../drivers/common.md#webdav-策略"
+    click b1 "../drivers/common.md#webdav-策略"
+    click c1 "../drivers/common.md#webdav-策略"
 ```

@@ -37,7 +37,7 @@ After entering the Trainbit webpage, press F12 to open the developer mode, open 
 
 We open the home page and press F12, open the developer mode, select the network, search the list in the search bar, you can see "`listoffiles`", click, and then select the response to format the value in it yourself (you can also format it without formatting Find it slowly by yourself) [fill in the schematic diagram for details](#fill-in-the-example)
 
-
+- How to format: search your own browser for json online formatting
 
 ## matters needing attention
 
