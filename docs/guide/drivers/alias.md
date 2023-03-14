@@ -74,7 +74,9 @@ According to the second method, we can merge and display different folders, whic
 
 ​		Of course, it is up to you to choose whether to change the mode
 
-#### What if you don’t know how the cloud disks you added are different?
+
+
+### What if you don’t know how the cloud disks you added are different?
 
 1. You can go to the bottom of the corresponding document to view the document, there is a flow chart description
 
@@ -86,3 +88,14 @@ According to the second method, we can merge and display different folders, whic
     - As you can see from the figure below, the 115 network disk does not have the option of `web proxy`, and the `webdav strategy` defaults to the local proxy. It can be judged that the 115 network disk uses the local proxy mode by default
 
     - ![alias](/img/drivers/alias/alias-2.png)
+
+
+
+### other instructions
+
+> If you are using `Windows`, the following situation will occur, and folders with different capitalization will also be regenerated
+> For example, Local 1 and Local 2 have a lowercase v for `video` respectively, and the folder OneDrive has an uppercase V `Video` folder
+> Then a lowercase video folder will be generated, which contains only `local 1, local 2` files merged by two folders
+> At the same time, the uppercase `Video` will gather the files of the three folders
+
+This is because Windows is case-insensitive, video and Video will be considered as the same folder, you will not have this problem if you switch to Linux or Mac

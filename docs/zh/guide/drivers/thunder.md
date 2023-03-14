@@ -64,8 +64,8 @@ flowchart TB
     c1[本机代理]:::someclass==默认==>a2[用户设备]
     classDef someclass fill:#f96
     b1[代理URL]-.备选.->a2[用户设备]
-    click b1 "../drivers/common.md#webdav-策略" _blank
-    click c1 "../drivers/common.md#webdav-策略" _blank
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
 ```
 
 ## 迅雷专家版
@@ -167,7 +167,7 @@ flowchart TB
     classDef someclass fill:#f96
     c1[本机代理]-.备选.->a2[用户设备]
     b1[代理URL]-.备选.->a2[用户设备]
-    click a1 "../drivers/common.md#webdav-策略" _blank
-    click b1 "../drivers/common.md#webdav-策略" _blank
-    click c1 "../drivers/common.md#webdav-策略" _blank
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
 ```

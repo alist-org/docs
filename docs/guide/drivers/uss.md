@@ -82,7 +82,7 @@ flowchart TB
     classDef someclass fill:#f96
     c1[local proxy]-.alternative.->a2[user equipment]
     b1[Download proxy URL]-.alternative.->a2[user equipment]
-    click a1 "../drivers/common.md#webdav-policy" _blank
-    click b1 "../drivers/common.md#webdav-policy" _blank
-    click c1 "../drivers/common.md#webdav-policy" _blank
+    click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
 ```
