@@ -74,6 +74,8 @@ star: true
 
 ## 2. TrollStore(巨魔)安装
 
+ ==需要AList版本 ≥ 3.12.2 及以上==
+
 支持安装TrollStore(巨魔)的设备（不含越狱设备）
 
 最高到iPhone13系列设备系统版本不大于 `稳定版15.4.1` `测试版15.6 beta 1 - 5 `
@@ -118,7 +120,7 @@ star: true
 
 ```mermaid
 ---
-title: 使用安装有什么好处吗？
+title: 使用TrollStore安装有什么好处吗？
 ---
 flowchart TB
     subgraph A[原生流程]

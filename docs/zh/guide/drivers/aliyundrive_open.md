@@ -91,7 +91,7 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
-### 其他说明
+## 其他说明
 
 一、
 
@@ -100,7 +100,7 @@ typeof fetch !== "undefined" && getLimit()
 > 详情可以通过以下两种方式查看
 >
 > 1. 扫码获取刷新令牌时的**提示**
-> 2. ###### 打开 **阿里云盘 APP --> 我的 -->右上角设置齿轮 --> 隐私设置 --> 授权管理 --> 点击 AList** 进行查看
+> 2. ##### 打开 **阿里云盘 APP --> 我的 -->右上角设置齿轮 --> 隐私设置 --> 授权管理 --> 点击 AList** 进行查看
 >    
 >    - 若不使用了可以随时手动解除权限
 
@@ -114,3 +114,26 @@ typeof fetch !== "undefined" && getLimit()
 > - 不足 30s 的视频不会触发预转码，只会在第一次播放时开始转码。
 > - 实时转码需要一定时间。
 > - 画质分别为：LD|SD|HD|FHD|QHD
+
+
+
+## 默认使用的下载方式
+
+```mermaid
+---
+title: 默认使用的那种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```

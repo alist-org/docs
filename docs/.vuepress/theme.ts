@@ -114,6 +114,8 @@ export default hopeTheme({
       flowchart: true,
       mark: true,
       mermaid: true,
+	  sub: true,
+	  sup: true,
     },
     components: {
       components: ["ArtPlayer"],

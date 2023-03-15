@@ -47,7 +47,7 @@ If you are **docker**, please map the following two default paths by yourself
 
 First of all, we need to configure the default values on the client side of **`qBittorrent`**
 
-According to [source code] (https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159), we know that the default values are admin:adminadmin@localhost:8080/
+According to [source code](https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159-L162), we know that the default values are admin:adminadmin@localhost:8080/
 
 - **ip**: localhost
 - **port**: 8080
@@ -60,14 +60,18 @@ According to [source code] (https://github.com/alist-org/alist/blob/main/interna
 
 2. Default value configuration view address:
 
-   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159-L162**
 
 
    - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 
-3.  ==We can also customize, instead of using the default presets== 
-   -  Modification location: **Alist Manage** --> **Settings** --> **Qbittorrent url** option, just follow the modification
+3.  Use **`qBittorrent`** to offline `.torrent` type files
+   -  Although you cannot directly add offline `.torrent` type files, you can save the country with a curve Reference: [View method](https://github.com/alist-org/alist/issues/2459#issuecomment-1354870010)
+4.  You can configure it yourself not to delete after the download is complete, but to do seeding, the default is `0`, and it will be deleted immediately after uploading
+   - Modification location: **Alist background** --> **Settings** --> **Qbittorrent seedtime** option, set the time you need to configure, the unit is `minute`, after the set seeding time is reached, it will automatically delete
+5.  ==We can also customize, instead of using the default presets== 
+   - Modification location: **Alist Manage** --> **Settings** --> **Qbittorrent url** option, just follow the modification
 
 
 ![Offline download](/img/advanced/offline-download.png)

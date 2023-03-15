@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: search
 # This control sidebar order
-order: 8
+order: 6
 # A page can have multiple categories
 category:
   - Guide

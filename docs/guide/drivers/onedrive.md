@@ -44,3 +44,26 @@ If you need to mount Sharepoint, after completing the previous step, an input si
 Fill in the values ​​obtained in the above process one by one.
 #### Root folder path
 The default is `/`, if you need to customize, just fill in the path, starting from the root path, the same as the local path, such as `/test`
+
+
+
+### The default download method used
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|default|a2[user equipment]
+    classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```

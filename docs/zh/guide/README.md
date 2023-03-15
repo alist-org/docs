@@ -54,6 +54,7 @@ category:
 - [x] [115](https://115.com/)
 - [x] [Seafile](https://www.seafile.com/)
 - [x] Cloudreve
+- [x] [Trainbit](https://trainbit.com/)
 
 ## Discussion
 
