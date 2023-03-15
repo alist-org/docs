@@ -49,7 +49,7 @@ star: true
 
 首先我们先要在 **`qBittorrent`** 客户端配置好预设值
 
-根据[源码](https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159)我们知道预设值分别是 admin:adminadmin@localhost:8080/
+根据[源码](https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159-L162)我们知道预设值分别是 admin:adminadmin@localhost:8080/
 
 - **ip**：localhost
 - **port**：8080
@@ -61,12 +61,14 @@ star: true
 
 
 2. 预设值配置查看地址：
-   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159**
+   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159-L162**
     - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 
 3.  ==我们也可以自定义，不使用默认的预设值==
    -  修改位置：**Alist后台** --> **设置** --> **Qbittorrent url** 选项，照着修改即可
+4.  可以自行配置下载完毕后不进行删除，进行做种，默认为`0`会上传完毕后立即删除
+   - 修改位置：**Alist后台** --> **设置** --> **Qbittorrent seedtime(做种时间)** 选项，设置你自己需要配置的时间单位是`分钟`，到了设置的做种时间后会自动删除
 
 ![Offline download](/img/advanced/offline-download.png)
 

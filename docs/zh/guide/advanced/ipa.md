@@ -120,7 +120,7 @@ star: true
 
 ```mermaid
 ---
-title: 使用安装有什么好处吗？
+title: 使用TrollStore安装有什么好处吗？
 ---
 flowchart TB
     subgraph A[原生流程]
