@@ -65,10 +65,12 @@ star: true
     - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
 
-3.  ==我们也可以自定义，不使用默认的预设值==
-   -  修改位置：**Alist后台** --> **设置** --> **Qbittorrent url** 选项，照着修改即可
+3.  使用 **`qBittorrent`** 来离线 `.torrent` 类型的文件
+   -  虽然不可以直接添加离线`.torrent` 类型的文件，可以曲线救国 参考:[查看方法](https://github.com/alist-org/alist/issues/2459#issuecomment-1354870010)
 4.  可以自行配置下载完毕后不进行删除，进行做种，默认为`0`会上传完毕后立即删除
    - 修改位置：**Alist后台** --> **设置** --> **Qbittorrent seedtime(做种时间)** 选项，设置你自己需要配置的时间单位是`分钟`，到了设置的做种时间后会自动删除
+5.  ==我们也可以自定义，不使用默认的预设值==
+   - 修改位置：**Alist后台** --> **设置** --> **Qbittorrent url** 选项，照着修改即可
 
 ![Offline download](/img/advanced/offline-download.png)
 
