@@ -14,6 +14,7 @@ tag:
 sticky: true
 # this page will appear in starred articles
 star: true
+comment: false
 ---
 
 # 桌面版

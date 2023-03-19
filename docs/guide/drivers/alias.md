@@ -32,6 +32,7 @@ We see that two different folders are merged into one folder, and the file folde
 
 See additional explanation [**alias-alias**](../advanced/alias.md)
 
+
 ## How to fill in
 
 There are two ways to fill in
@@ -101,3 +102,4 @@ According to the second method, we can merge and display different folders, whic
 This is because Windows is case-insensitive, video and Video will be considered as the same folder, you will not have this problem if you switch to Linux or Mac
 
 > Aliases are not supported for load balancing for the time being (if it is supported later, the document will be modified here, if it is not modified, it is not yet supported)
+

@@ -38,6 +38,7 @@ The folder content rules when displaying are as follows
 
 Let me explain **`same name first²`** access rules
 
+
 :::tabs#alias
 
 @tab example 1
@@ -57,8 +58,8 @@ local: /localtest/local4
 - 2, a video 3 4 yes then every visit is `3`
   - If 3 uses a local proxy and 4 uses `302`, call 4 first
 
-@tab example 2
 
+@tab example 2
 
 Example 2. Fill in the access according to the following path(302 mode has priority)
 

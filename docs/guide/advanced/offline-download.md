@@ -86,7 +86,7 @@ According to [source code](https://github.com/alist-org/alist/blob/main/internal
 The above two methods are most likely caused by the qBittorrent software itself, probably because of the green version and the modified version that have undergone some functional castration modifications. It is recommended to go to the official website to download and install it to restore it (the conclusion drawn by myself after stepping on the pit) )
 
 - **qBittorrent** official website: **https://www.qbittorrent.org/**
-- **qBittorrent** GitHub: **https://github.com/c0re100/qBittorrent-Enhanced-Edition**
+- **qBittorrent-Enhanced-Edition** GitHub: **https://github.com/c0re100/qBittorrent-Enhanced-Edition**
 
 3. Because the `v2.8.3` API is used, the minimum version of qBittorrent should be `4.4.0beta2` or `4.3.8` official version
 4. If **qBittorrent** sets the ip where alist is located to be exempt from authentication, you can directly omit the user name and password before `@` (configured on the **qBittorrent** client side)

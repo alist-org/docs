@@ -116,6 +116,7 @@ typeof fetch !== "undefined" && getLimit()
 > - 实时转码需要一定时间。
 > - 画质分别为：LD|SD|HD|FHD|QHD
 
+
 三、
 
 >如果你挂载的阿里云盘Open，在重启，重新加载，更新后，发现提示 **TooManyRequests**
@@ -135,6 +136,7 @@ typeof fetch !== "undefined" && getLimit()
 >
 >
 >如果你是一个账号一个网盘添加的数量 >   =={{ max }}== 个，那只能通过开始的办法慢慢恢复了.
+
 
 ## 默认使用的下载方式
 
