@@ -122,21 +122,29 @@ two、
 three、
 
 > If the Alibaba cloud disk you mounted is Open, after restarting, reloading, and updating, you will find a prompt **TooManyRequests**
+>
 > 
+>
 > Check whether your account exceeds the number mentioned in the note in the red prompt at the top, that is, the number of open Alibaba Cloud disks you added > =={{ max }}==
+>
 > 
+>
 > The solution is to disable all the mounted Alibaba cloud disk Open, wait for =={{ minutes }}== minutes, and then click one by one to enable the number not to exceed =={{ max }}== times, and then wait= ={{ minutes }}== After a few minutes, click to open again, and it will recover slowly.
+>
 > 
+>
 > ^(Whispering reminder: If you have more than a dozen accounts, it’s okay, it’s not a big problem to restore =={{ max }}== one at a time. If you have 30 or 50 accounts, it is recommended that you restore about 4 each time , because it will help you refresh the refresh token every 2 hours, and it will also be called to prevent you from causing GG too many times...)^
+>
 > 
-> 
-> 
+>
 > Another problem, if the Alibaba Cloud Disk Open you mounted is a cloud disk account, and then mounted different folders to the account and added multiple accounts, resulting in too many Alibaba Cloud Open accounts added, this is a good solution
+>
 > 
->  Solution: Go to the official page of Alibaba Cloud Disk and integrate all the folders you need to mount into one folder, then only mount the integrated folder, and then pass [**alias**](../advanced/alias.md) are mounted separately, just write one for each path, so that a single path can be mounted and displayed separately. Of course, you can also integrate multiple ones together, or use it directly. Example 3 to show different ones can also be
+>
+> Solution: Go to the official page of Alibaba Cloud Disk and integrate all the folders you need to mount into one folder, then only mount the integrated folder, and then pass [**alias**](../advanced/alias.md) are mounted separately, just write one for each path, so that a single path can be mounted and displayed separately. Of course, you can also integrate multiple ones together, or use it directly. Example 3 to show different ones can also be
+>
 > 
-> 
-> 
+>
 > If you add more than =={{ max }}== to one account and one network disk, then you can only restore it slowly by starting.
 
 
