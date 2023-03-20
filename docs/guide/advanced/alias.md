@@ -38,6 +38,11 @@ The folder content rules when displaying are as follows
 
 Let me explain **`same name first²`** access rules
 
+
+:::tabs#alias
+
+@tab example 1
+
 Example 1. Fill in the access according to the following path(302 mode has priority)
 
 ```
@@ -54,6 +59,8 @@ local: /localtest/local4
   - If 3 uses a local proxy and 4 uses `302`, call 4 first
 
 
+@tab example 2
+
 Example 2. Fill in the access according to the following path(302 mode has priority)
 
 ```
@@ -69,7 +76,28 @@ local: /localtest/local1
 - 2, a video 3 4 has then every visit is `4`
   - If 4 uses a local proxy and 2 uses `302`, call 2 first
 
+@tab example 3
 
+Example 3、 Fill in the access according to the following path(302 mode has priority)
+
+Of course, it is not limited to only 2 folders, just write according to personal needs
+
+```
+Local test:/local1/video
+Local test:/local2/video
+Test other:/test3/images
+Test other:/test4/video/tv
+```
+
+- local1 local2 merged together
+  - If 2 uses a local proxy and 1 uses `302`, call 2 first
+- Test 3 and Test 4 merged together
+   - If 3 uses a local proxy and 4 uses `302`, call 4 first
+- In the above two cases, two different folders will appear for display, which will be displayed as follows without interfering with each other
+
+![alias](/img/drivers/alias/alias-3.png)
+
+:::
 
 
 ### How to add
