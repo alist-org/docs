@@ -41,7 +41,7 @@ The root foler to mount, defaults to `/`, same as local storage.
 
 ### Add "User-Agent" usage example
 
-:::: details If you don't know how to set "User-Agent" see here
+::::danger If you don't know how to set "User-Agent" see here
 
  ==The following methods are limited to Baidu super member users== 
 
@@ -59,6 +59,10 @@ If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disa
 
 - The advantage of using a browser plug-in to modify is that it can be played directly online, of course, downloading is also possible.
 
+Example <Badge text="1" type="info" vertical="middle" />: If you really don’t know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
+
+Example <Badge text="2" type="info" vertical="middle" />: Another plugin method covering 360, Chrome, Edge: **https://youtu.be/PP6b0WSzYMc**
+
 ![alist](/img/drivers/baidu/bdUA.png)
 
 @tab IDM
@@ -70,8 +74,6 @@ If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disa
 ![alist](/img/drivers/baidu/aria2-ua.png)
 
 :::
-
-
 
 ::::
 
