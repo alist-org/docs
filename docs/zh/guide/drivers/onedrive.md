@@ -52,3 +52,26 @@ star: true
 ## 根目录路径
 
 默认为 `/`，如果需要自定义，就填路径就行，从根路径开始，和本地路径一样，比如 `/test`
+
+
+
+### 默认使用的下载方式
+
+```mermaid
+---
+title: 默认使用的那种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```

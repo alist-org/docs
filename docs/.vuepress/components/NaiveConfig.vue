@@ -24,7 +24,8 @@ observer.observe(document.getElementsByTagName("html")[0], {
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
-    borderRadius: "8px"
+    borderRadius: "8px",
+    borderRadiusSmall: "6px"
   }
 }
 </script>

@@ -53,9 +53,11 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [TeraBox](https://www.terabox.com/)
 - [x] Alist v2/v3
 - [x] SMB
+- [x] [alias](../guide/advanced/alias.md)
 - [x] [115](https://115.com/)
 - [x] [Seafile](https://www.seafile.com/)
 - [x] Cloudreve
+- [x] [Trainbit](https://trainbit.com/)
 
 
 ### Discussion

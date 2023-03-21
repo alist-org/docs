@@ -73,6 +73,8 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 ## 2. TrollStore install
 
+ ==Requires AList version ≥ 3.12.2 and above==
+
 Devices that support the installation of TrollStore (jailbroken devices are not explained here)
 
 The device that supports the installation of TrollStore is up to the iPhone 13 series device system version not greater than `stable version 15.4.1` `beta version 15.6 beta 1 - 5`

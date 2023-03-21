@@ -57,3 +57,25 @@ star: true
 
 **A**：如果不是账号密码填错，可能是注册的时候使用了Google，FB等第三方快捷注册，虽然看起来账号是谷歌邮箱，但实际上是不能用邮箱登入，而必须使用第三方验证，**Alist** 现在还不支持这种跳转到第三方的验证，**所以你要在账号设置里绑定一个邮箱同时设置一下登录密码**，或者重新注册一个新账号
 
+
+
+### 默认使用的下载方式
+
+```mermaid
+---
+title: 默认使用的那种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
