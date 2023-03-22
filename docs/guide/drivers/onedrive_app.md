@@ -46,7 +46,7 @@ Login to get our<Badge text="tenant ID" type="info" vertical="middle" />
 ## Create process
 
 :::tip
-Please read carefully the following **`serial numbers are added in sequence`**, if there is any error, please feedback in time
+Please read carefully the following **`serial numbers , are added in sequence`**, if there is any error, please feedback in time
 :::
 
 :::tabs#onedrive_app
@@ -91,7 +91,7 @@ matters needing attention
 
 From the beginning to the present, we have obtained the following parameters: tenant ID^1^, registered application^2^, client ID/secret key^3^, authorization API/administrator API^4^
 
-Then open the browser and finally authorize it through the following format, which are<Badge text="tenant ID" type="info" vertical="middle" /><Badge text="secret ID" type="info" vertical="middle" /><Badge text="Callback URL" type="info" vertical="middle" />Change to your own final login to receive
+Then open the browser and finally authorize it through the following format, which are<Badge text="tenant ID" type="info" vertical="middle" /><Badge text="client ID" type="info" vertical="middle" /><Badge text="Callback URL" type="info" vertical="middle" />Change to your own final login to receive
 
 ```html
 https://login.microsoftonline.com/{tenant ID or common}/adminConsent?client_id={client ID}&redirect_uri={Callback URL}

@@ -52,7 +52,7 @@ star: true
 ## 新建过程
 
 :::tip
-请仔细阅读下面的序号依次添加，如有错误可及时反馈 
+请仔细阅读下面的 **`序号，依次添加`** ，如有错误可及时反馈 
 :::
 
 :::tabs#onedrive_app
@@ -97,7 +97,7 @@ API授权后，我们去授权组织应用
 
 通过开始到现在 我们分别拿到了如下参数：租户ID^1^，注册应用^2^，拿到客户端ID/秘钥^3^，授权API/管理员API^4^
 
-然后通过下面的格式最终授权一下即可，分别是<Badge text="租户ID" type="info" vertical="middle" /><Badge text="秘钥ID" type="info" vertical="middle" /><Badge text="回调参数URL" type="info" vertical="middle" />改成自己的最终登录收取即可
+然后通过下面的格式最终授权一下即可，分别是<Badge text="租户ID" type="info" vertical="middle" /><Badge text="客户端ID" type="info" vertical="middle" /><Badge text="回调参数URL" type="info" vertical="middle" />改成自己的最终登录收取即可
 
 ```html
 https://login.microsoftonline.com/{租户ID或者common}/adminConsent?client_id={客户端ID}&redirect_uri={注册应用时的回调URL}
