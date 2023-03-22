@@ -27,7 +27,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] Local storage
 - [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
 - [x] [aliyundrive](https://www.aliyundrive.com/)
-- [x] OneDrive / Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
+- [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [GoogleDrive](https://drive.google.com/)
 - [x] [123pan](https://www.123pan.com/)
@@ -42,7 +42,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [mediatrack](https://www.mediatrack.cn/)
 - [x] [139yun](https://yun.139.com/) (Personal, Family)
 - [x] [YandexDisk](https://disk.yandex.com/)
-- [x] [BaiduNetdisk](https://pan.baidu.com/)
+- [x] [BaiduNetdisk](https://pan.baidu.com/)  / [share](./drivers/baidu_share.md)
 - [x] [Quark](https://pan.quark.cn/)
 - [x] [Thunder](https://pan.xunlei.com)
 - [x] [Lanzou](https://www.lanzou.com/)
