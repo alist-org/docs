@@ -18,6 +18,21 @@ star: true
 
 # OneDrive APP
 
+## Benefits and Precautions
+
+1. The advantage is that the administrator is only authorized to log in once, and the same is used when adding parameters later. When adding, everything is the same except for the mailbox.
+   - For example, E5 has 25 5T accounts. After you log in and initialize in advance, you can directly use the parameters before the CV. You don’t have to get the refresh token every time as before, and it will expire after a long time
+   - A1, A1P, etc. can distribute more accounts (500 - **unlimited**)
+
+
+
+2. After the administrator authorizes in this way, he can view the account of each member in the organization at will, which will leak his own files
+   - It is recommended to apply for OneDrive E5 to get better
+
+----
+
+
+
 First log in with your personal or organizational account
 
 **https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView?Microsoft_AAD_IAM_legacyAADRedirect=true**
@@ -31,7 +46,7 @@ Login to get our<Badge text="tenant ID" type="info" vertical="middle" />
 ## Create process
 
 :::tip
-Please read the addition carefully, if there is any error, please feedback in time
+Please read carefully the following **`serial numbers are added in sequence`**, if there is any error, please feedback in time
 :::
 
 :::tabs#onedrive_app
@@ -39,7 +54,7 @@ Please read the addition carefully, if there is any error, please feedback in ti
 
 1. Register an application, choose the type yourself, it is recommended to choose the third
 
-2. Redirect URL (callback parameter), select Web as the type, and fill in the parameters：**https://entra.microsoft.com/TokenAuthorize**，Otherwise, it will not be able to authorize later
+2. Redirect URL (callback parameter), select Web as the type, and fill in the parameters **https://entra.microsoft.com/TokenAuthorize** ,Otherwise, it will not be able to authorize later
 3. After filling out, click on the registration below and you can see it after jumping<Badge text="client ID" type="info" vertical="middle" />
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app1.png)
@@ -105,17 +120,6 @@ If you don't know how many users there are in your OneDrive organization, you ca
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_user.png)
 
 
-
-## Benefits and Precautions
-
-1. The advantage is that after the administrator is only authorized to log in once, the same parameters can be used when adding parameters. When adding, everything is the same except for the mailbox.
-    - For example, E5 has 25 5T accounts. After you log in and initialize in advance, you can directly use the parameters before the CV. You don’t have to get the refresh token every time as before, and it will expire after a long time
-    - A1, A1P, etc. can distribute more accounts (500 - **∞**)
-
-
-
-2. After the administrator authorizes in this way, he can view the account of each member in the organization at will, which will leak his own files
-    - It is recommended to apply for OneDrive E5 to get better
 
 ### The default download method used
 

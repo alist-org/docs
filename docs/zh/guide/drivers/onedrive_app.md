@@ -18,6 +18,27 @@ star: true
 
 # OneDrive APP
 
+
+
+## 好处以及注意事项
+
+1. 好处是只授权一次管理员登录，后续添加参数时用一样的，在添加时除了邮箱哪里不同，别的都一样
+   - 例如E5 25个5T的账号，你提前登录初始化完毕后，直接CV之前的参数即可，不用像以前一样每次都得去获取刷新令牌时间一长还失效
+   - A1 A1P等可以分发的账号更多(500 - **无限**)
+
+
+
+2. 这样的方式管理员授权后，可以随意查看组织中每个成员的账号，泄露了自己的文件
+   - 建议自己申请 OneDrive E5 去好一些
+
+
+
+-----
+
+
+
+
+
 首先使用个人或者组织账号登录
 
 **https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView?Microsoft_AAD_IAM_legacyAADRedirect=true**
@@ -28,10 +49,10 @@ star: true
 
 
 
-## 中间过程
+## 新建过程
 
 :::tip
-请仔细阅读添加，如有错误可及时反馈 
+请仔细阅读下面的序号依次添加，如有错误可及时反馈 
 :::
 
 :::tabs#onedrive_app
@@ -39,7 +60,7 @@ star: true
 
 1. 注册一个应用，类型自己选，建议选第三吧
 
-2. 重定向URL(回调参数)，类型选择Web，参数填写：**https://entra.microsoft.com/TokenAuthorize**，否则后面授权时无法授权
+2. 重定向URL(回调参数)，类型选择Web，参数填写： **https://entra.microsoft.com/TokenAuthorize** ，否则后面授权时无法授权
 3. 填好后点击下方的注册 跳转后就可以看到<Badge text="客户端ID" type="info" vertical="middle" />
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app1.png)
@@ -101,19 +122,6 @@ https://login.microsoftonline.com/{租户ID或者common}/adminConsent?client_id=
 **https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users**
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_user.png)
-
-
-
-## 好处以及注意事项
-
-1. 好处就是这样只授权一次管理员登录后，添加参数时用一样的即可，在添加时除了邮箱哪里不同别的都一样
-   - 例如E5 25个5T的账号，你提前登录初始化完毕后，直接CV之前的参数即可，不用像以前一样每次都得去获取刷新令牌时间一长还失效
-   - A1 A1P等可以分发的账号更多(500 - **∞**)
-
-
-
-2. 这样的方式管理员授权后，可以随意查看组织中每个成员的账号，泄露了自己的文件
-   - 建议自己申请 OneDrive E5 去好一些
 
 
 
