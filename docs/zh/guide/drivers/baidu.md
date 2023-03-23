@@ -48,7 +48,7 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 ## 添加 "User-Agent" 使用示例
 
-:::: details 如果你不会设置 "User-Agent" 请看这里
+::::danger 如果你不会设置 "User-Agent" 请看这里
 
  ==以下方法仅限于有百度超级会员用户使用== 
 
@@ -66,7 +66,9 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 - 使用浏览器插件修改的好处是 可以直接在线播放，当然了下载也是可以的。
 
-实在不会的可以看看一个Web网页端的例子： **https://www.bilibili.com/video/BV1UA4y1X7J8**
+例<Badge text="1" type="info" vertical="middle" />：实在不会的可以看看一个Web网页端的例子： **https://www.bilibili.com/video/BV1UA4y1X7J8**
+
+例<Badge text="2" type="info" vertical="middle" />：另一款插件方法涵盖360，Chrome，Edge： **https://youtu.be/PP6b0WSzYMc**
 
 ![alist](/img/drivers/baidu/bdUA.png)
 
@@ -79,8 +81,6 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 ![alist](/img/drivers/baidu/aria2-ua.png)
 
 :::
-
-
 
 ::::
 

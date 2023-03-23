@@ -116,9 +116,10 @@ export default hopeTheme({
       mermaid: true,
 	  sub: true,
 	  sup: true,
+	  align: true,
     },
     components: {
-      components: ["ArtPlayer"],
+      components: ["ArtPlayer","BiliBili","Badge"],
     },
   },
 });
