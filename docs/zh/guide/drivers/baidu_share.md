@@ -26,6 +26,14 @@ star: true
 surl即为分享地址`pan.baidu.com/s/`后`?`前部分，pwd填4位提取码，无提取码留空。
 BDUSS由cookie中提取，[参考教程](https://blog.imwcr.cn/2022/11/24/%e5%a6%82%e4%bd%95%e6%8a%93%e5%8c%85%e8%8e%b7%e5%8f%96%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98%e7%bd%91%e9%a1%b5%e7%89%88%e5%ae%8c%e6%95%b4-cookie/)。
 
+## QA
+|出错配置|典型报错|修复说明|
+|---|---|---|
+|surl|`{"errno":2,"errtype":0}`|分享链接可能失效, 检查链接状态|
+|pwd|`{"errno":-130,"errtype":"mispwd-9"}`|分享密码错误|
+|BDUSS|`{"errno":9019,"errmsg":"need verify"}`|BDUSS无效|
+|UA|`{"error_code":31326,"error_msg":"user is not authorized, hitcode:119"}`|user-agent违反百度限制, 访问端需设置非浏览器UA(如netdisk)或开启Web代理|
+
 ## 开发
 
 接口来自[github.com/yuantuo666/baiduwp-php](https://github.com/yuantuo666/baiduwp-php)项目，非官方api。
