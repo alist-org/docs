@@ -99,6 +99,14 @@ https://login.microsoftonline.com/{tenant ID or common}/adminConsent?client_id={
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app6.png)
 
+If you log in according to the spelled link and find that you are redirected to a blank page, such as the sample code and picture below, the authorization is successful, don’t worry
+
+```
+https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={Tenant ID}#
+```
+
+![onedriveapp](/img/drivers/onedrive_app/od_app_ok.png)
+
 :::
 
 
@@ -108,6 +116,10 @@ https://login.microsoftonline.com/{tenant ID or common}/adminConsent?client_id={
 Fill in the values obtained in the above process one by one. If you don’t know which email address it is, you can find it by [**view all users of the organization**](#view-all-users-of-the-organization)
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_Denmo.png)
+
+
+
+<BiliBili bvid="BV1Ro4y1s725" ratio="16:9" low-quality no-danmaku />
 
 
 

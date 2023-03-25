@@ -105,6 +105,14 @@ https://login.microsoftonline.com/{租户ID或者common}/adminConsent?client_id=
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app6.png)
 
+如果你按照拼写好后的链接也登录了发现跳转到了一个空白页面，例如下面示例代码和图片中的就是授权成功了不用担心
+
+```
+https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
+```
+
+![onedriveapp](/img/drivers/onedrive_app/od_app_ok.png)
+
 :::
 
 ## 填写示例
@@ -112,6 +120,10 @@ https://login.microsoftonline.com/{租户ID或者common}/adminConsent?client_id=
 将上述过程中获取得到的值依次填入即可，如果哪个邮箱你不知道是什么了 可以通过[**查看组织所有用户**](#查看组织所有用户)来查找
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_Denmo.png)
+
+
+
+<BiliBili bvid="BV1Ro4y1s725" ratio="16:9" low-quality no-danmaku />
 
 
 
