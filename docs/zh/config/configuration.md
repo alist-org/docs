@@ -99,6 +99,8 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 - https://cdn1.tianli0.top/npm/alist-web@$version/dist/
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
 - https://npm.elemecdn.com/alist-web@$version/dist/
+- https://jsd.onmicrosoft.cn/npm/alist-web@$version/dist/
+- https://jsd.onmicrosoft.cn/gh/alist-org/web-dist@$version/dist/
 
 您也可以将其设置为空以使用本地 dist。
 
