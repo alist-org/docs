@@ -30,7 +30,16 @@ When there are multiple accounts, it is used for sorting, The smaller the more f
 
 Anything you want to fill in, which is just for reminding you what this storage is
 
+## Enable signing
+
+Sign and encrypt files (no password required), only valid for this driver, if other signatures are not enabled and `signature all` and `meta-information encryption` are not set, others will not be signed
+
+Usage scenario: I don't want to enable all signatures, and I don't want to set metadata encryption. I just want to sign and encrypt a certain driver to prevent it from being scanned.
+
+Scope of influence: `Settings-->Global-->Signature All` > `Metainformation Directory Encryption` > `Single Driver Signature`
+
 ### Cache Expiration
+
 Cache time of directory structure.
 
 ### Web proxy
