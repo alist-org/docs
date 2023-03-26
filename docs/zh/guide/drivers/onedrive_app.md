@@ -67,7 +67,7 @@ star: true
 
 @tab 2
 
-我们去获取一个客户端秘钥，按照下图获取即可，记得<Badge text="秘钥ID" type="info" vertical="middle" />要及时保存，只会出现一次
+我们去获取一个客户端秘钥，按照下图获取即可，记得<Badge text="客户端秘钥" type="info" vertical="middle" />要及时保存，只会出现一次
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app3.png)
 
@@ -90,6 +90,7 @@ API授权后，我们去授权组织应用
 - 如果你在开始注册应用时，回调参数不是一样的可能点击授权时会报错，记得写一样的
 - 如何查看是否授权成功，未授权时页面是提示`未发现该应用程序具有管理员许可的授权`，授权成功后刷新一下页面会看到三条API权限如下图所示
   - 上面是未授权时的样子，下面是授权后的样子（授权后刷新页面即可）
+
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app7.png)
 
@@ -136,6 +137,12 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_user.png)
 
 
+
+## 错误提示
+
+- 提示：**Either scp or roles claim need to be present in the token** 错误
+
+是因为你没有在第`4`步的时候进行 <Badge text="代表xxxx授予管理员同意" type="info" vertical="middle" /> 导致的，注意查看第四步下面的提示
 
 ### 默认使用的下载方式
 

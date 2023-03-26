@@ -61,7 +61,7 @@ Please read carefully the following **`serial numbers , are added in sequence`**
 
 @tab 2
 
-Let's get a client secret key, just get it as shown in the figure below, remember<Badge text="secret ID" type="info" vertical="middle" />save in time, it will only appear once
+Let's get a client secret key, just get it as shown in the figure below, remember<Badge text="secret key" type="info" vertical="middle" />save in time, it will only appear once
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app3.png)
 
@@ -84,6 +84,7 @@ matters needing attention
 - If you start to register the application, the callback parameters are not the same, you may get an error when you click Authorization, remember to write the same
 - How to check whether the authorization is successful. If it is not authorized, the page will prompt `The application has not been found to have the authorization of the administrator's permission`. After the authorization is successful, refresh the page and you will see three API permissions, as shown in the figure below
   - The above is what it looks like when it is not authorized, and the following is what it looks like after authorization (just refresh the page after authorization)
+
 
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app7.png)
 
@@ -132,6 +133,12 @@ If you don't know how many users there are in your OneDrive organization, you ca
 ![onedriveapp](/img/drivers/onedrive_app/onedrive_app_user.png)
 
 
+
+## Error message
+
+- Tips：**Either scp or roles claim need to be present in the token**  Error
+
+because you didn't do it in step `4` <Badge text="grant xxx administrator consent" type="info" vertical="middle" /> caused by,Pay attention to the tips below the fourth step
 
 ### The default download method used
 
