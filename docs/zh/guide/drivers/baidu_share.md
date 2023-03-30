@@ -24,7 +24,7 @@ star: true
 
 浏览目录需设置分享surl和pwd，下载还需设置BDUSS。
 surl即为分享地址`pan.baidu.com/s/`后`?`前部分，pwd填4位提取码，无提取码留空。
-BDUSS由cookie中提取，[参考教程](https://blog.imwcr.cn/2022/11/24/%e5%a6%82%e4%bd%95%e6%8a%93%e5%8c%85%e8%8e%b7%e5%8f%96%e7%99%be%e5%ba%a6%e7%bd%91%e7%9b%98%e7%bd%91%e9%a1%b5%e7%89%88%e5%ae%8c%e6%95%b4-cookie/)。
+BDUSS由cookie中提取，[参考教程](http://pandownload.net/faq/cookie.html)(本项目中无需前缀`BDUSS=`)。
 
 ## QA
 |出错配置|典型报错|修复说明|
