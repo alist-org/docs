@@ -51,8 +51,8 @@ star: true
 
 ## 新建过程
 
-:::tip
-请仔细阅读下面的 **`序号，依次添加`** ，如有错误可及时反馈 
+:::danger 请仔细阅读注意事项
+请仔细阅读下面的**`序号，依次查看`** ，如有错误可及时反馈 
 :::
 
 :::tabs#onedrive_app
@@ -143,6 +143,70 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 - 提示：**Either scp or roles claim need to be present in the token** 错误
 
 是因为你没有在第`4`步的时候进行 <Badge text="代表xxxx授予管理员同意" type="info" vertical="middle" /> 导致的，注意查看第四步下面的提示
+
+
+
+## 批量添加OneDrive_App账号
+
+使用的软件：**https://github.com/yzbtdiy/alist_batch**
+
+教程视频：**[BV1vc411V78S](https://www.bilibili.com/video/BV1vc411V78S)**
+
+:::details 参数填写，看不懂可以看上方的视频
+
+两个配置文件不要留空白空行哦，那样也会报错的
+
+**config.yaml**
+
+```yaml
+# 自己的AList站点，可以是本地也可以是远程服务器IP或者域名，但是结尾不能带 "/"
+url: ALIST_URL
+# auth的三个参数是你AList管理员账号密码和刷新令牌
+auth:
+    username: USERNAME
+    password: PASSWORD
+token: ALIST_TOKEN
+# enable选项你需要哪个就开启哪个，不需要的关闭
+aliyun:
+    enable: false
+    refresh_token: ALI_YUNPAN_REFRESH_TOKEN
+pikpak:
+    enable: false
+    username: PIKPAK_EMAIL
+    password: PIKPAK_PASSWORD
+# 我们这里需要的是 onedrive_app，把这个开启
+onedrive_app:
+    enable: true
+# global是全局例如E5 A1 A1P, 世纪互联是cn 德国版是de 美国版是us
+    region: global
+    tenants:
+        - id: 1
+          client_id: 客户端ID
+          client_secret: 客户端秘钥
+          tenant_id: 租户ID
+# 这里可以同时挂载不同域和不同账号，每个域照着上面的配置写即可
+# 客户端ID 客户端秘钥 租户ID 就不用说了吧？
+```
+
+**onedrive_app.yaml**
+
+```yaml
+# 分类1 挂载x 可以自己随便改，相当于添加存储时候的挂载路径
+# 1 这里指的是要使用上面配置文件里面的哪个域/组织的配置
+# 后面的就是自己的邮箱账号啦~如果不写 ":/folder1",挂载的是根目录 写了就是挂载这个目录
+# 反正格式就是： 挂载路径:域/组织:邮箱账号:/文件夹目录(可选)
+分类1:
+    挂载1: 1:user1@xxx.onmicrosoft.com
+    挂载2: 1:user2@xxx.onmicrosoft.com:/folder1
+    挂载3: 1:user2@xxx.onmicrosoft.com:/folder2
+# 你可以分多个不同的列表挂载也行，照着格式写
+分类2:
+    挂载11: 1:user1@xxx.onmicrosoft.com
+    挂载22: 1:user2@xxx.onmicrosoft.com:/folder1
+    挂载33: 1:user2@xxx.onmicrosoft.com:/folder2
+```
+
+:::
 
 ### 默认使用的下载方式
 

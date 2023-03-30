@@ -54,6 +54,12 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 
 ![pik](/img/drivers/pik/pik1.png)
 
+## Batch add PikPak shared mounts
+
+software used：**https://github.com/yzbtdiy/alist_batch**
+
+Tutorial video：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
+
 ## Precautions
 
 **Q**: Prompt when adding storage: **Failed init storage: invalid_account_or_password** What should I do, the password I entered is correct

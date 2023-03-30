@@ -45,8 +45,8 @@ Login to get our<Badge text="tenant ID" type="info" vertical="middle" />
 
 ## Create process
 
-:::tip
-Please read carefully the following **`serial numbers , are added in sequence`**, if there is any error, please feedback in time
+:::danger Read the precautions carefully
+Please read carefully the following**`serial numbers , view in sequence`**, if there is any error, please feedback in time
 :::
 
 :::tabs#onedrive_app
@@ -139,6 +139,70 @@ If you don't know how many users there are in your OneDrive organization, you ca
 - Tips：**Either scp or roles claim need to be present in the token**  Error
 
 because you didn't do it in step `4` <Badge text="grant xxx administrator consent" type="info" vertical="middle" /> caused by,Pay attention to the tips below the fourth step
+
+
+
+## Add OneDrive_App accounts in batches
+
+software used：**https://github.com/yzbtdiy/alist_batch**
+
+Tutorial video: **[BV1vc411V78S](https://www.bilibili.com/video/BV1vc411V78S)**
+
+:::details Fill in the parameters. If you don’t understand, you can watch the video below.
+
+Do not leave blank lines in the two configuration files, as this will also report an error
+
+**config.yaml**
+
+```yaml
+# Your own AList site, which can be local or remote server IP or domain name, but cannot have "/" at the end
+url: ALIST_URL
+# The three parameters of auth are your AList administrator account password and refresh token
+auth:
+    username: USERNAME
+    password: PASSWORD
+token: ALIST_TOKEN
+# enable Turn on whichever option you need, and turn off the one you don’t need
+aliyun:
+    enable: false
+    refresh_token: ALI_YUNPAN_REFRESH_TOKEN
+pikpak:
+    enable: false
+    username: PIKPAK_EMAIL
+    password: PIKPAK_PASSWORD
+# What we need here is onedrive_app, turn this on
+onedrive_app:
+    enable: true
+# global is global, such as E5 A1 A1P, Vianet is cn, German version is de, American version is us
+    region: global
+    tenants:
+        - id: 1
+          client_id: client_id
+          client_secret: client_secret
+          tenant_id: tenant_id
+# Here you can mount different domains and different accounts at the same time, each domain can be written according to the above configuration
+# Client ID Client Secret Key Tenant ID Needless to say?
+```
+
+**onedrive_app.yaml**
+
+```yaml
+# Category 1 Mount x can be changed at will, which is equivalent to the mount path when adding storage
+# 1 This refers to which domain/organization configuration in the above configuration file is to be used
+# What follows is your email account~ If you don't write ":/folder1", the root directory will be mounted, and if you write it, you will mount this directory
+# Anyway, the format is: Mount path: domain/organization: email account: / folder directory (optional)
+Category:
+    mount: 1:user1@xxx.onmicrosoft.com
+    mount2: 1:user2@xxx.onmicrosoft.com:/folder1
+    mount3: 1:user2@xxx.onmicrosoft.com:/folder2
+# You can mount it in multiple different lists, and write according to the format
+Category2:
+    mount11: 1:user1@xxx.onmicrosoft.com
+    mount22: 1:user2@xxx.onmicrosoft.com:/folder1
+    mount33: 1:user2@xxx.onmicrosoft.com:/folder2
+```
+
+:::
 
 ### The default download method used
 
