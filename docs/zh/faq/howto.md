@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: How to
+title: 怎么做
 # This is the icon of the page
 icon: study
 # This control sidebar order

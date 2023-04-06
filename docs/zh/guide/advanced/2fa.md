@@ -24,13 +24,29 @@ star: true
 
 最后，单击“验证”按钮启用 2FA。
 
+- 每个用户都可以设置不同的"2FA"验证，如何解除看下面的方法
 
+<br/>
 
 ## **如何解除2FA验证：**
 
- 如何进入Alist所在的文件夹
-   1. **Windows**：进入到Alist所在的文件夹输入：**alist.exe cancel2fa**
-   2. **Linux**	   ：也一样进入Alist所在的文件夹输入，**./alist cancel2fa**
-   3. **docker**	：docker直接输入 **docker exec -it alist ./alist cancel2fa**
+一、(≥ v3.15.0)
 
- **以上输入删除后发现还有重启即可~**
+>如果你非Admin账号的2FA忘记了，可以告诉管理员帮你清除掉
+>
+>进入后台 --> 用户，点击 "取消两步验证" 即可
+>
+>若admin账号的2FA丢失，请看第二步如何清除2FA
+
+二、
+
+>如何进入Alist所在的文件夹
+>
+>   1. **Windows**：进入到Alist所在的文件夹输入：**alist.exe cancel2fa**
+>  2. **Linux**	   ：也一样进入Alist所在的文件夹输入，**./alist cancel2fa**
+>  3. **docker**	：docker直接输入 **docker exec -it alist ./alist cancel2fa**
+>
+> **以上输入删除后发现还有重启即可~**
+
+
+

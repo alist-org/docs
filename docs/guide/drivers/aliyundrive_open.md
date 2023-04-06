@@ -90,7 +90,7 @@ Normal users don’t need to fill in the blank. If they apply for official autho
 
 - Trash: Enter the cloud disk recycle bin after AList is deleted, which will occupy the cloud disk space, but it can be retrieved if it is deleted by mistake later.
 - Delete: Direct deletion will not stay in the recycle bin and will not take up cloud disk space, but if it is deleted by mistake later, it cannot be retrieved.
-  - Note: Please do not disclose the Token obtained by your Alibaba cloud disk Open. If you accidentally leak it, please immediately go to [**Other instructions ¹**](#Open%20Alibaba%20Cloud%20Disk%20APP%20-->%20My%20-->%20Settings%20gear%20in%20the%20upper%20right%20corner%20-->%20Privacy%20Settings%20-->%20Authorization%20Management%20-->%20Click%20AList%20to%20view) to deauthorize to protect the security of your account. After 2 hours after deauthorization (recommended more Wait a few hours before authorizing to obtain Token)
+  - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#Open%20Alibaba%20Cloud%20Disk%20APP%20-->%20My%20-->%20Settings%20gear%20in%20the%20upper%20right%20corner%20-->%20Privacy%20Settings%20-->%20Authorization%20Management%20-->%20Click%20AList%20to%20view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account== 
 
 
 
@@ -136,6 +136,12 @@ three、
 > 
 >
 > If you add more than =={{ max }}== to one account and one network disk, then you can only restore it slowly by starting.
+
+Four、
+
+>Q: Why can’t Alibaba Cloud Disk Open see files of the Office Family Bucket type?
+>
+>A: Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view
 
 
 ### The default download method used

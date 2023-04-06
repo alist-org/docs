@@ -8,6 +8,6 @@ category:
 
 ## Catalog
 
-- [How to](howto.md)
-- [Why](why.md)
-- [See also](seealso.md)
+- [怎么做](howto.md)
+- [为什么](why.md)
+- [第三方参考](seealso.md)

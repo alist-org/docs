@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Why
+title: 为什么
 # This is the icon of the page
 icon: repair
 # This control sidebar order
