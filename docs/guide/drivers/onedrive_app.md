@@ -46,7 +46,7 @@ Login to get our<Badge text="tenant ID" type="info" vertical="middle" />
 ## Create process
 
 :::danger Read the precautions carefully
-Please read carefully the following**`serial numbers , view in sequence`**, if there is any error, please feedback in time
+Please read carefully the following **`serial numbers , view in sequence`** , if there is any error, please feedback in time
 :::
 
 :::tabs#onedrive_app
