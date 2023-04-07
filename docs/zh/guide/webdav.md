@@ -84,7 +84,7 @@ star: true
 
 :::tabs#WebDav
 
-@tab nplayer
+@tab Nplayer
 
 ![webdav](/img/guide/webdav/nplayer.png)
 
@@ -92,7 +92,7 @@ star: true
 
 ![webdav](/img/guide/webdav/reex.png)
 
-@tab infuse
+@tab Infuse
 
 ![webdav](/img/guide/webdav/infuse.png)
 
@@ -100,8 +100,12 @@ star: true
 
 ![webdav](/img/guide/webdav/fileball.png)
 
-@tab potplayer
+@tab Potplayer
 
 ![webdav](/img/guide/webdav/potplayer.png)
+
+@tab 群辉
+
+![webdav](/img/guide/webdav/nas.png)
 
 :::
