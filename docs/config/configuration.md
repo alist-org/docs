@@ -132,6 +132,10 @@ The scheme configuration, if you want to use https, you can set this field.
 
 The temporary directory, default `data/temp`
 
+::: danger
+temp_dir is a temporary folder exclusive to alist. In order to avoid program interruption and generate garbage files, it will be cleared every time it starts, so please do not manually put any content in this folder, and do not use this folder and its subfolders when using docker Folders are mapped to folders in use.
+:::
+
 ### log
 
 The log configuration, if you want to setup the log level, you can set this field.
