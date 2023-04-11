@@ -56,7 +56,7 @@ star: true
 
 使用的软件：**https://github.com/yzbtdiy/alist_batch**
 
-教程视频：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
+<BiliBili bvid="BV1Ps4y1U7Zu" ratio="16:9" low-quality no-danmaku />
 
 
 

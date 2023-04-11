@@ -146,8 +146,6 @@ because you didn't do it in step `4` <Badge text="grant xxx administrator consen
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
-Tutorial video: **[BV1vc411V78S](https://www.bilibili.com/video/BV1vc411V78S)**
-
 :::details Fill in the parameters. If you don’t understand, you can watch the video below.
 
 Do not leave blank lines in the two configuration files, as this will also report an error
@@ -203,6 +201,8 @@ Category2:
 ```
 
 :::
+
+<BiliBili bvid="BV1vc411V78S" ratio="16:9" low-quality no-danmaku />
 
 ### The default download method used
 
