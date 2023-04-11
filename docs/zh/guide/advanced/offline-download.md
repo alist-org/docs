@@ -31,7 +31,7 @@ star: true
 
 
 
-如果你是 **docker**，请自行映射以下两个默认路径
+如果你使用 **docker**，请自行映射以下两个默认路径（映射至宿主机相同的目录）
 
 - **/opt/alist/data/temp/aria2**
 

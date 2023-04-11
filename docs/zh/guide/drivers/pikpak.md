@@ -59,7 +59,6 @@ star: true
 <BiliBili bvid="BV1Ps4y1U7Zu" ratio="16:9" low-quality no-danmaku />
 
 
-
 ## 注意事项
 
 **Q**：添加存储时提示：**Failed init storage: invalid_account_or_password** 怎么办，我输入的密码的对的

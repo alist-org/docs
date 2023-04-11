@@ -250,3 +250,7 @@ Workaround:
 There is a high probability that your device that builds Alist is temporarily blocked, frozen, blocked, or restricted. Don't mount it yet, wait a few hours and try again or wait a day
 
 (Conclusions from the above questions have been tested)
+
+### Why doesn't PikPak have a name
+
+Because PikPak's server does not set the filename in the `content-disposition` header, this is a PikPak problem and not an AList, so it cannot be fixed

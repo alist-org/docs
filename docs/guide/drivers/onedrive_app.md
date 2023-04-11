@@ -146,6 +146,7 @@ because you didn't do it in step `4` <Badge text="grant xxx administrator consen
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
+
 :::details Fill in the parameters. If you don’t understand, you can watch the video below.
 
 Do not leave blank lines in the two configuration files, as this will also report an error

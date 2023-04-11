@@ -46,8 +46,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.MY_TOKEN }}
-          external_repository: alist-org/alist-org.github.io
-          publish_branch: main
+          # external_repository: alist-org/alist-org.github.io
+          publish_branch: gh-pages
           publish_dir: docs/.vuepress/dist
           cname: alist.nn.ci
 
