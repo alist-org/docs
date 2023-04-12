@@ -56,7 +56,7 @@ interface {
 
 - `$url`: the file url
 - `$name`: the file name
-- `$durl`: the file is alist URL
+- `$durl`: the file of alist URL
 - `$e_url`: encodeURIComponent($url)
 - `$b_url`: btoa($url)
 - `$eb_url`: encodeURIComponent(btoa($url))
