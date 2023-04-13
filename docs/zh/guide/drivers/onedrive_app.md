@@ -150,9 +150,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 使用的软件：**https://github.com/yzbtdiy/alist_batch**
 
-教程视频：**[BV1vc411V78S](https://www.bilibili.com/video/BV1vc411V78S)**
-
-:::details 参数填写，看不懂可以看上方的视频
+:::details 参数填写，看不懂可以看下方的视频
 
 两个配置文件不要留空白空行哦，那样也会报错的
 
@@ -207,6 +205,8 @@ onedrive_app:
 ```
 
 :::
+
+<BiliBili bvid="BV1vc411V78S" ratio="16:9" low-quality no-danmaku />
 
 ### 默认使用的下载方式
 

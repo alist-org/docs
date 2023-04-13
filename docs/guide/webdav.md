@@ -84,7 +84,8 @@ This is basically the way of writing, and the way of writing may be different fo
 
 :::tabs#WebDav
 
-@tab nplayer
+
+@tab Nplayer
 
 ![webdav](/img/guide/webdav/nplayer.png)
 
@@ -92,7 +93,14 @@ This is basically the way of writing, and the way of writing may be different fo
 
 ![webdav](/img/guide/webdav/reex.png)
 
-@tab infuse
+@tab ES
+
+<div class="image-preview">  
+    <img src="/img/guide/webdav/es-ios.png" />  
+    <img src="/img/guide/webdav/es-android.png" />
+</div>
+
+@tab Infuse
 
 ![webdav](/img/guide/webdav/infuse.png)
 
@@ -100,8 +108,13 @@ This is basically the way of writing, and the way of writing may be different fo
 
 ![webdav](/img/guide/webdav/fileball.png)
 
-@tab potplayer
+@tab Potplayer
 
 ![webdav](/img/guide/webdav/potplayer.png)
+
+@tab nas
+
+![webdav](/img/guide/webdav/nas.png)
+
 
 :::

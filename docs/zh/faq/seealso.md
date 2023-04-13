@@ -24,7 +24,7 @@ star: true
 
 [https://space.bilibili.com/36411485/channel/collectiondetail?sid=686340](https://space.bilibili.com/36411485/channel/collectiondetail?sid=686340)
 
-[https://www.yuque.com/anwenya/alist](https://www.yuque.com/anwenya/alist)
+[https://anwen-anyi.github.io/](https://anwen-anyi.github.io/index/)
 
 [Google](https://www.google.com/search?q=alist)
 
