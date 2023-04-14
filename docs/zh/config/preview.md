@@ -54,9 +54,14 @@ interface {
 
 对于外部 url，我们提供了一些变量供您使用：
 
+基础变量：
+
 - `$url`: the file url
-- `$name`: the file name
 - `$durl`: the file of alist URL
+- `$name`: the file name
+
+拓展变量：
+在基础变量前添加[eb_]，其中e表示`encodeURIComponent`，b表示`base64`， 如
 - `$e_url`: encodeURIComponent($url)
 - `$b_url`: btoa($url)
 - `$eb_url`: encodeURIComponent(btoa($url))
