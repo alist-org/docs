@@ -48,6 +48,7 @@ Community repo may be outdated and crash, and no warranty of availability and se
     community.map((item) => fns[item.type](item))
   );
   content += communityContent.join("\n");
+  fs.appendFileSync(path, content);
   // copy to zh
   fs.copyFileSync(path, "docs/zh/guide/ecosystem.md");
 };
