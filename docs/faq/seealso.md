@@ -31,15 +31,3 @@ star: true
 [Bing](https://www.bing.com/search?q=alist)
 
 [Baidu](https://www.baidu.com/baidu?wd=alist)
-
-> AList-encrypt - https://github.com/traceless/alist-encrypt
-> A proxy for alist service, providing encryption and decryption function of webdav
-> Solve user pain points: prevent files from being harmonized
-
-> AList-oneList - https://github.com/msterzhang/onelist
-> A program similar to emby that focuses on scraping alist aggregated network disks to form a video media library
-> Solve user pain points: scraping with jellyfin or emby will download the video and intercept the cover, resulting in a ban, onelist will not use the video download strategy to intercept the cover
-
-> AList-batch - https://github.com/yzbtdiy/alist_batch
-> A batch add AList individual network disk
-> Solve user pain points: It is troublesome when adding too many

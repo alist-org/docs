@@ -1,0 +1,20 @@
+{
+  "official": [
+    { "type": "github", "repo": "alist-org/alist-proxy" },
+    { "type": "github", "repo": "alist-org/with_aria2" }
+  ],
+  "community": [
+    { "type": "github", "repo": "jinzhi0123/picgo-plugin-alist" },
+    { "type": "github", "repo": "sbwml/luci-app-alist" },
+    { "type": "github", "repo": "traceless/alist-encrypt" },
+    { "type": "github", "repo": "iranee/qnap-alist-webdav" },
+    { "type": "github", "repo": "yzbtdiy/alist_batch" },
+    { "type": "github", "repo": "msterzhang/onelist" },
+    { "type": "github", "repo": "power721/alist-tvbox" },
+    { "type": "github", "repo": "everstu/Koolcenter_alist" },
+    { "type": "github", "repo": "X-yael/AlistforMagisk" },
+    { "type": "github", "repo": "z-mio/Alist-bot" },
+    { "type": "github", "repo": "ShinChven/alist-aria2-pro-docker-compose" },
+    { "type": "github", "repo": "Kuingsmile/PicHor" }
+  ]
+}

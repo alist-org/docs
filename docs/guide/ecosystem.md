@@ -1,14 +1,16 @@
 ---
-title: 更新日志
-toc: false
-icon: change
-order: 43
+# This is the title of the article
+# title: One-click Script
+# This is the icon of the page
+icon: plugin
+# This control sidebar order
+order: 10
 # A page can have multiple categories
 category:
   - Guide
 # A page can have multiple tags
 tag:
-  - Changelog
+  - Ecosystem
   - Guide
 # this page is sticky in article list
 sticky: true
@@ -16,10 +18,5 @@ sticky: true
 star: true
 ---
 
-<NaiveClient>
-<Changelog />
-</NaiveClient>
+# Ecosystem
 
-<script setup lang="ts">
-import Changelog from "@Changelog";
-</script>

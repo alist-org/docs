@@ -4,11 +4,13 @@
   "description": "Documentation for alist v3",
   "license": "AGPL-3.0",
   "scripts": {
-    "docs:build": "vuepress build docs",
+    "ecosystem": "npx tsx scripts/ecosystem.ts",
+    "docs:build": "npm run ecosystem && vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "@vuepress/client": "2.0.0-beta.60",
     "@vuepress/plugin-docsearch": "2.0.0-beta.60",
     "@vuepress/utils": "2.0.0-beta.60",

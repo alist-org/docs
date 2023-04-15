@@ -2,7 +2,7 @@
 title: Changelog
 toc: false
 icon: change
-order: 13
+order: 43
 # A page can have multiple categories
 category:
   - Guide
