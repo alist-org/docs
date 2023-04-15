@@ -54,8 +54,14 @@ the first key `extensions` is the file extensions that split by `,`(if it's star
 
 For the external url, we provide some variables for you to use:
 
+Basic variable:
+
 - `$url`: the file url
+- `$durl`: the file of alist URL
 - `$name`: the file name
+
+Extended variables:
+Add [eb_] before the basic variable, where e means `encodeURIComponent`, b means `base64`, such as
 - `$e_url`: encodeURIComponent($url)
 - `$b_url`: btoa($url)
 - `$eb_url`: encodeURIComponent(btoa($url))
