@@ -43,9 +43,14 @@ const spStr = computed(() => {
   }
 
   .mingdao {
+    display: flex;
+    justify-content: center;
+
     a {
+      max-width: min(500px, 100%);
+
       img {
-        max-width: 500px;
+        width: 100%;
       }
     }
   }
@@ -56,21 +61,4 @@ const spStr = computed(() => {
   padding-bottom: 0 !important;
 }
 
-.wwads-cn,
-.wwads {
-  background-color: #f4f8fa;
-}
-
-.wwads-text {
-  color: #0e1011;
-}
-
-html[data-theme="dark"] .wwads-cn,
-html[data-theme="dark"] .wwads {
-  background-color: #272829 !important;
-}
-
-html[data-theme="dark"] .wwads-text {
-  color: #9e9e9e !important;
-}
 </style>

@@ -46,5 +46,6 @@ const spStr = computed(() => {
     width: 70%;
     text-align: right;
     font-size: small;
+    color: #999;
   }
 }</style>
