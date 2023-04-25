@@ -42,7 +42,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [mediatrack](https://www.mediatrack.cn/)
 - [x] [139yun](https://yun.139.com/) (Personal, Family)
 - [x] [YandexDisk](https://disk.yandex.com/)
-- [x] [BaiduNetdisk](https://pan.baidu.com/)  / [share](./drivers/baidu_share.md)
+- [x] [BaiduNetdisk](https://pan.baidu.com/) / [share](./drivers/baidu_share.md)
 - [x] [Quark](https://pan.quark.cn/)
 - [x] [Thunder](https://pan.xunlei.com)
 - [x] [Lanzou](https://www.lanzou.com/)
@@ -60,7 +60,6 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/urltree.md)
 
-
 ### Discussion
 
 Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) for general questions, **issues are for bug reports and feature request only.**
@@ -70,8 +69,10 @@ Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) 
 - https://al.nn.ci
 
 ### Special sponsors
+
+- [明道云 - 零代码开发平台，快速响应业务需求。从“IT 背锅侠”变成“IT 英雄”](https://www.mingdao.com/?s=utm_51=utm_source=liteflow&utm_medium=banner&utm_campaign=%E5%93%81%E7%89%8C%E6%8E%A8%E5%B9%BF&utm_content=IT%E8%B5%8B%E8%83%BD%E4%B8%9A%E5%8A%A1)
 - [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.la/)
-- [KinhDown 百度云盘不限速下载！永久免费！以稳定运行3年！非常可靠!](https://kinhdown.com/?Type=Tutorials)
+- [KinhDown 百度云盘不限速下载！永久免费！以稳定运行 3 年！非常可靠!](https://kinhdown.com/?Type=Tutorials)
 
 ### License
 

@@ -1,0 +1,9 @@
+.ads-card{
+  background-color: #f4f8fa;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+html[data-theme="dark"] .ads-card {
+  background-color: #272829;
+}

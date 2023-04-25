@@ -6,6 +6,7 @@
   "packageManager": "pnpm@7.9.5",
   "scripts": {
     "ecosystem": "npx tsx scripts/ecosystem.ts",
+    "dev-build": "vuepress build docs",
     "docs:build": "pnpm ecosystem && vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs"
