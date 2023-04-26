@@ -1,0 +1,1 @@
+import{_ as o,M as t,X as n,a6 as a,G as c}from"./framework-f837dd26.js";const _={};function r(s,l){const e=c("AutoCatalog");return t(),n("div",null,[a(e)])}const d=o(_,[["render",r],["__file","index.html.vue"]]);export{d as default};
