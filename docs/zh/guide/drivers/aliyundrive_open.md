@@ -57,7 +57,9 @@ typeof fetch !== "undefined" && getLimit()
 | /adrive/v1.0/openFile/list（获取列表）           | 4 QPS / 1秒4次 |
 | /adrive/v1.0/openFile/getDownloadUrl（下载文件） | 1 QPS / 1秒1次 |
 
-如果有批量下载需求：批量下载建议排队下载.
+如果有批量下载需求：建议排队下载.
+
+**QPS够用**
 
 :::
 
@@ -91,6 +93,8 @@ typeof fetch !== "undefined" && getLimit()
 这个文件夹的 file_id 即为 `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 ![file_id](/img/drivers/aliyundrive.png)
+
+
 
 ## 客户端 ID，秘钥
 

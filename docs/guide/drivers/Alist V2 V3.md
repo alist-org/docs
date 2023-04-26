@@ -91,7 +91,7 @@ The password corresponding to the `AList` username you want to mount
 
 It looks very troublesome, but you can understand it after a little operation. The details are written for Xiaobai
 
-1. The access path is prioritized using [**root directory path**](#root directory path), if you use `username&password` method for mounting, [**root folder path**] (#root folder path) It is recommended to write `/`, otherwise your access rights of this user name do not match [**root directory path**](#root directory path) and an error message will be displayed
+1. The access path is prioritized using [**root directory path**](#root directory path), if you use `username&password` method for mounting, [**root folder path**](#root folder path) It is recommended to write `/`, otherwise your access rights of this user name do not match [**root directory path**](#root directory path) and an error message will be displayed
 
     -Example ^1^: [**root directory path**](#root directory path): `file`, the access permission folder of the user name is: `video`, so access will prompt an error
 
