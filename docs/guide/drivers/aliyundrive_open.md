@@ -68,21 +68,6 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
 :::
 
-::: warning
-
-In order to ensure the user experience of all users and protect the overall performance of the cloud disk system, the cloud disk will restrict the flow of the following APIs:
-
-| API                                                   |       |
-| ----------------------------------------------------- | ----- |
-| /adrive/v1.0/openFile/list（get list）                | 4 QPS |
-| /adrive/v1.0/openFile/getDownloadUrl（download file） | 1 QPS |
-
-If there is a demand for batch downloads: it is recommended to queue up for download.
-
-**QPS enough**
-
-:::
-
 
 
 ### Root folder file_id

@@ -48,20 +48,7 @@ typeof fetch !== "undefined" && getLimit()
 
 :::
 
-::: warning
 
-为确保所有用户的使用体验及保护云盘系统整体性能，云盘会对下面 API 进行限流：
-
-| API                                              | 用户级限流     |
-| ------------------------------------------------ | -------------- |
-| /adrive/v1.0/openFile/list（获取列表）           | 4 QPS / 1秒4次 |
-| /adrive/v1.0/openFile/getDownloadUrl（下载文件） | 1 QPS / 1秒1次 |
-
-如果有批量下载需求：建议排队下载.
-
-**QPS够用**
-
-:::
 
 
 ## 刷新令牌
