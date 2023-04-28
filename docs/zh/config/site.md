@@ -22,6 +22,8 @@ star: true
 
 AList 的版本，只读。
 
+
+
 ## Api地址
 
 > 在v3.0.2及之后被弃用，已经移至[site_url](./configuration.md#site-url)
@@ -33,21 +35,29 @@ AList 的版本，只读。
 - 反向代理至二级目录
 - ...
 
+
+
 ## 基本路径
 
 > 在v3.0.2及之后被弃用，已经移至[site_url](./configuration.md#site-url)
 
 默认 `/`，如果你想反向代理子目录，详见[带有子目录的反向代理](../faq/howto.md#how-to-reverse-proxy-with-sub-directory)，需要设置该字段为 AList，比如 `https://pan.nn.ci/alist`，同时需要设置 `Api url` 为 `https://pan.nn.ci/alist`。
 
+
+
 ## 网站标题
 
 AList 的标题，例如 AList。
+
+
 
 ## 公告
 
 AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内容前添加标题，例如 `### Hello`，以免内容被关闭按钮覆盖。
 
 - 如想不显示，可以清空公告内内容即可不显示。
+
+
 
 ## 分页类型
 
@@ -56,12 +66,24 @@ AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内�
 - 加载更多：在页面底部显示“加载更多”按钮。
 - 自动加载更多：滚动到页面底部时自动加载更多文件。
 
+
+
 ## 默认每页文件数量
 
 AList 的默认每页文件数量，当 `Pagination type` 没有被设置为 `All` 时生效，例如 `20`。
 
+
+
 ## 允许索引
 
-是否允许其他人挂载你的Alist后进行索引构建，勾选后开启。
+是否允许其他人挂载你的AList后进行索引构建，勾选后开启。
 
-**默认为关闭状态，谨慎使用。** （3.8.0版本新增功能）
+**默认为关闭状态，谨慎使用。** （v3.8.0 新增功能）
+
+
+
+## 允许挂载
+
+是否允许其他人挂载你的AList,然后进行访问
+
+**默认为开启状态，建议不想让别人挂载的选择关闭**（v3.16.3新增功能）

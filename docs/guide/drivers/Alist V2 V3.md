@@ -48,6 +48,19 @@ AList link you want to mount
 
 @tab V3
 
+(**v3.16.3**) If the AList you mounted is "not" enabled [**Allow Mount**](../../config/site.md#allow-mounted), you will not be able to To mount, the following error is prompted
+
+```
+Failed init storage: the site does not allow mounted
+failed get objs: storage not init: the site does not allow mounted
+```
+
+(If) or use the `username&password` provided by the other party to mount, if the other party allows the mount, it must provide `username&password` or enable [**Allow Mount**](../../config/site.md#allow-mounted), otherwise don’t force it
+
+- v3.16.3 How to mount the lower version than v3.16.3, for the time being, you can only use the `username & password` provided by the other party to mount.
+
+-----
+
 :::warning
 
 `Username&Password` can be mounted without writing. In this way, `guest` is used for tourist access. If the other party does not enable the guest account access permission, an error will be prompted when mounting (as follows)
@@ -89,7 +102,7 @@ The password corresponding to the `AList` username you want to mount
 
 :::tip Kind tips
 
-It looks very troublesome, but you can understand it after a little operation. The details are written for Xiaobai
+It looks very troublesome, but you can understand it after a little operation. The details are written for Xiaobai(The premise is that  [**Allow Mount**](../../config/site.md#allow-mounted) is enabled on the other party)
 
 1. The access path is prioritized using [**root directory path**](#root directory path), if you use `username&password` method for mounting, [**root folder path**](#root folder path) It is recommended to write `/`, otherwise your access rights of this user name do not match [**root directory path**](#root directory path) and an error message will be displayed
 

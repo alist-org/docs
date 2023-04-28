@@ -19,3 +19,5 @@ category:
 - [全局设置](global.md)
 
 - [其他设置](other.md)
+
+<AutoCatalog />

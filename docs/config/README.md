@@ -19,3 +19,5 @@ category:
 - [Global Settings](global.md)
 
 - [Other settings](other.md)
+
+<AutoCatalog />
