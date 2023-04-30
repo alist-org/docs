@@ -33,6 +33,11 @@ secrets ID
 
 2. Only one of the four types of single sign-on can be enabled temporarily. If you used other single sign-on methods before and then changed to a new single Unbind (just one click) and then bind the single sign-on method you want to use now.
 
+3. If you use **`GitHub,Microsoft,Google,DingTalk`**, you only need to fill in the client ID and secret key, and select the corresponding platform in the options.
+
+   - If you use **`Casdoor`** the following parameters need to be filled in, just follow the tutorial to fill in
+
+
 :::
 
 
@@ -199,5 +204,27 @@ If it has been configured, just ignore this picture (you can zoom in if you canâ
 ### Completely fill in the reference schematic
 
 ![sso](/img/advanced/google.png)
+
+
+
+What is `Cadoor`? Yes, you can use other OAuth applications to log in. [**Self-deployment**](https://casdoor.org/docs/basic/server-installation) is open source and free, and official hosting requires payment.
+
+Now, Casdoor supports many OAuth application providers, as many as dozens of kinds, you have seen and not seen
+
+**GitHub open source link: https://github.com/casdoor/casdoor**
+
+-----
+
+After we enter `Casdoor`, we first create **Organization**^1^, **Token**^2^, **Application**^3^, **User**^4^
+
+Then fill in the `AList` backstage single sign-on option one by one. The userâ€™s parameters are ignored for the time being. They are filled in when the personal data is bound to the single sign-on.
+
+![sso](/img/advanced/casdoor.png)
+
+After filling in the above parameters, we come to the personal data and click `Bind point single sign-on platform` to bind
+
+Then the `Casdoor` window will pop up, we can enter our registered user name
+
+![sso](/img/advanced/casdoor-user.png)
 
 ::::
