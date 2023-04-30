@@ -109,6 +109,7 @@ If you find a bug, but the `log.log` log is not detailed, you can try to add the
 
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
+- **Mac**: Temporarily unknown, maybe it is started with the `--debug` parameter
 
 How to stop the relevant logs after startup? `Ctrl+c` can stop the program (or simply close the program directly)
 

@@ -29,6 +29,9 @@ AList 的版本，只读。
 > 在v3.0.2及之后被弃用，已经移至[site_url](./configuration.md#site-url)
 
 你的 AList 的地址，比如 `https://pan.nn.ci`。这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
+
+URL链接结尾请勿携带 `/` ,正确示例:heavy_check_mark::`https://pan.nn.ci`，错误示例：`https://pan.nn.ci/`:x:,否则将无法使用以下功能
+
 - 本地存储的缩略图
 - 开启web代理后的预览
 - 开启web代理后的下载地址

@@ -254,3 +254,10 @@ There is a high probability that your device that builds Alist is temporarily bl
 ### Why doesn't PikPak have a name
 
 Because PikPak's server does not set the filename in the `content-disposition` header, this is a PikPak problem and not an AList, so it cannot be fixed
+
+### How to query your own AList version number
+
+1. Use the command `alist version`, the console will output
+2. AList Manage --> Settings --> Site --> `Version` option
+
+Why is the old version of AList still after the update? Generally, docker encounters this problem. You can [**refer to the QA answer mentioned below**](../guide/install/docker.md#how-to-update-docker-installation)

@@ -112,7 +112,8 @@ location /alist/ {
 
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
+- **Mac**：暂时未知，可能也是可以加 `--debug` 参数启动
 
-启动后拿到相关日志，如何停止?  `Ctrl+c`可以使程序停止运行（或者简单粗暴直接关闭程序）
+启动后拿到相关日志，如何停止?  `Ctrl+c` 可以使程序停止运行（或者简单粗暴直接关闭程序）
 
 建议在使用`--debug` 参数启动之前将 **AList目录下的日志文件`/log/log.log` 清空**，这样方便开发者们后续快速定位问题

@@ -29,6 +29,9 @@ The version of the `alist`, readonly.
 > Deprecated in v3.0.2 and later, moved to [site_url](./configuration.md#site-url)
 
 The address of your `alist`, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
+
+Do not carry `/` at the end of the URL link, correct example:heavy_check_mark: :`https://pan.nn.ci`, wrong example: `https://pan.nn.ci/` :x:,Otherwise the following functions will not be available
+
 - thumbnail of `LocalStorage`
 - Preview after opening web proxy
 - The download address after opening the web proxy

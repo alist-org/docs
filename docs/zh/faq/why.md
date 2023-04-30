@@ -251,3 +251,10 @@ v2可以成功是因为v2会忽略空文件上传。
 
 ### 为何 PikPak 下载文件不显示文件名？
 因为 PikPak 的服务器在 content-disposition 头中没有设置文件名，所以这是 PikPak 的问题 而不是 AList，故无法解决
+
+### 如何查询自己的AList版本号
+
+1. 使用命令 `alist version`，控制台会输出
+2. AList后台 --> 设置 --> 站点 --> `版本`选项
+
+为什么更新后还是旧版的AList，一般遇到这个问题的都是docker，可以[**参考这个 下面提到的QA回答**](../guide/install/docker.md#docker安装怎么更新)
