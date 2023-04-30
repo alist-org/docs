@@ -261,3 +261,13 @@ Because PikPak's server does not set the filename in the `content-disposition` h
 2. AList Manage --> Settings --> Site --> `Version` option
 
 Why is the old version of AList still after the update? Generally, docker encounters this problem. You can [**refer to the QA answer mentioned below**](../guide/install/docker.md#how-to-update-docker-installation)
+
+### AList's download "Download" option suddenly blank, no content
+
+Check your plug-ins, whether there are ad blocking plug-ins, for example: **AdGuard** and others
+
+Through the console, it is found that "**https://g.alicdn.com/IMM/office-js/1.1.5/aliyun-web-office-sdk.min.js**" has been blocked,
+
+Maybe other links are blocked, manually add the blocked domain name to the whitelist or close the plug-in, or it may be that the plug-in is convulsed
+
+![faq](/img/faq/download.png)

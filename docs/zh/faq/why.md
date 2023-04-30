@@ -258,3 +258,13 @@ v2可以成功是因为v2会忽略空文件上传。
 2. AList后台 --> 设置 --> 站点 --> `版本`选项
 
 为什么更新后还是旧版的AList，一般遇到这个问题的都是docker，可以[**参考这个 下面提到的QA回答**](../guide/install/docker.md#docker安装怎么更新)
+
+### AList的下载"Download"选项突然空白,没有内容
+
+检查你的插件，是否有广告拦截插件，例如：**AdGuard**等其他的
+
+通过控制台发现"**https://g.alicdn.com/IMM/office-js/1.1.5/aliyun-web-office-sdk.min.js**" 被拦截了，
+
+也许拦截了其它链接，手动将被拦截域名添加到白名单或者关闭插件，也可能是插件抽风了
+
+![faq](/img/faq/download.png)
