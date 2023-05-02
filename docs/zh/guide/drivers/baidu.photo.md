@@ -35,7 +35,7 @@ star: true
   - https://photo.baidu.com/photo/web/album/4021858707431029901   
   - **4021858707431029901**就是 {album_id} 
 
-- {tid}:访问 **https://photo.baidu.com/youai/album/v1/list.** 获取
+- {tid}:访问 **https://photo.baidu.com/youai/album/v1/list?limit=1000** 获取
   - 进入界面后`Ctrl+F`搜索上面的ID,在下面数几行就可以看到对应的 {tid} 
 
 
