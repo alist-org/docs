@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^18.16.3
+  '@types/node': ^18.15.11
   '@vuepress/client': 2.0.0-beta.61
   '@vuepress/plugin-docsearch': 2.0.0-beta.61
   '@vuepress/utils': 2.0.0-beta.61
