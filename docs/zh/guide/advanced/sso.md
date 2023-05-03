@@ -107,7 +107,7 @@ star: true
 http://127.0.0.1:5244/api/auth/sso_callback
 ```
 
-- 注：我这里回调参数是本地测试就使用了 http://127.x 大家使用的时候写 **http(s)://自己域名/api/auth/sso_callback**
+- 注：我这里回调参数是本地测试就使用了 http://127.x 大家使用的时候写 **http(s):\//自己域名/api/auth/sso_callback**
 
 回调参数写好好我们来到左侧栏找到 `权限管理` 找到 **`通讯录个人信息读权限`** 然后点击进行授权
 
@@ -133,8 +133,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 http://localhost:5244/api/auth/sso_callback?method=sso_get_token
 http://localhost:5244/api/auth/sso_callback?method=get_sso_id
 ```
-- 大家使用的时候写 **http(s)://自己域名/api/auth/sso_callback?method=sso_get_token**
-- 大家使用的时候写 **http(s)://自己域名/api/auth/sso_callback?method=get_sso_id**
+- 大家使用的时候写 **http(s):\//自己域名/api/auth/sso_callback?method=sso_get_token**
+- 大家使用的时候写 **http(s):\//自己域名/api/auth/sso_callback?method=get_sso_id**
 - 注：在新建应用时添加重定向URL的时候只能添加一条，第二条等应用好注册好后点击应用看到 重定向 URI 后面的选项
 
 填写好后我们点击左侧栏的 `证书和密码` 新建一个 `客户端密码`即可获得我们的客户端秘钥
@@ -176,8 +176,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 http://127.0.0.1:5244/api/auth/sso_callback?method=get_sso_id
 http://127.0.0.1:5244/api/auth/sso_callback?method=sso_get_token
 ```
-- 大家使用的时候写 **http(s)://自己域名/api/auth/sso_callback?method=get_sso_id**
-- 大家使用的时候写 **http(s)://自己域名/api/auth/sso_callback?method=sso_get_token**
+- 大家使用的时候写 **http(s):\//自己域名/api/auth/sso_callback?method=get_sso_id**
+- 大家使用的时候写 **http(s):\//自己域名/api/auth/sso_callback?method=sso_get_token**
 
 填写好后，点击创建就能拿到  OAuth的客户端ID和秘钥
 
@@ -220,5 +220,17 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 然后弹出`Casdoor`窗口，我们输入我们注册的用户名即可
 
 ![sso](/img/advanced/casdoor-user.png)
+
+----
+
+#### 在Casdoor接入一些其他的厂商
+
+除了现在`AList`已经接入的 `GitHub 钉钉 谷歌 微软 `这四个除外还接入`QQ 百度 飞书 微信/企业微信  抖音 哔哩哔哩`等等等个，全部的[**点击这里查看全部可以接入的厂商**](https://casdoor.org/zh/docs/provider/oauth/overview)，当然了`AList`已经接入的四个也是可以添加到`Casdoor`
+
+**查看详细接入其它提供商教程：[点击查看](https://anwen-anyi.github.io/index/09-ssologin.html)**
+
+::: details 直接 iframe 查看
+<iframe src="https://anwen-anyi.github.io/index/09-ssologin.html#%E6%8E%A5%E5%85%A5" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+:::
 
 ::::
