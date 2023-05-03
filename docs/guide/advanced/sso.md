@@ -207,6 +207,8 @@ If it has been configured, just ignore this picture (you can zoom in if you canâ
 
 
 
+@tab Casdoor
+
 What is `Cadoor`? Yes, you can use other OAuth applications to log in. [**Self-deployment**](https://casdoor.org/docs/basic/server-installation) is open source and free, and official hosting requires payment.
 
 Now, Casdoor supports many OAuth application providers, as many as dozens of kinds, you have seen and not seen

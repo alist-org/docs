@@ -10,3 +10,6 @@ dir:
 
 ### Find the description of the network disk you need to mount in the left directory list by yourself
 
+-----
+
+<AutoCatalog />
