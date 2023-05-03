@@ -114,12 +114,12 @@ export default hopeTheme({
       flowchart: true,
       mark: true,
       mermaid: true,
-	  sub: true,
-	  sup: true,
-	  align: true,
+      sub: true,
+      sup: true,
+      align: true,
     },
     components: {
-      components: ["ArtPlayer","BiliBili","Badge"],
+      components: ["ArtPlayer", "BiliBili", "Badge"],
     },
   },
 });

@@ -89,6 +89,10 @@ export default defineUserConfig({
       __dirname,
       "./components/HomePage.vue"
     ),
+    "@theme-hope/modules/sidebar/components/Sidebar": path.resolve(
+      __dirname,
+      "./components/Sidebar.vue"
+    ),
     "@Onedrive/Request": path.resolve(
       __dirname,
       "./components/onedrive/Request.vue"
