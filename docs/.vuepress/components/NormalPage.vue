@@ -5,7 +5,7 @@
         <div class="mingdao" v-if="showMingdao">
           <a href="https://www.mingdao.com?s=utm_51=utm_source=alist&utm_medium=banner&utm_campaign=%E5%93%81%E7%89%8C%E6%8E%A8%E5%B9%BF&utm_content=IT%E8%B5%8B%E8%83%BD%E4%B8%9A%E5%8A%A1"
             target="_blank">
-            <img src="/img/ads/mingdao-h.png" alt="" />
+            <img src="/img/ss/mingdao-h.png" alt="" />
             <span>{{ spStr }}</span>
           </a>
         </div>
