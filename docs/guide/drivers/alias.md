@@ -42,8 +42,8 @@ There are two ways to fill in
     -Paths filling example:
 
       ```path
-      /local1/local
-      /local2/local
+      /file1/locala
+      /file2/localb
       ```
 
      
@@ -54,13 +54,13 @@ There are two ways to fill in
 
       ```path
       #Example 1 Directly write the root folder
-      local: /local1
-      local: /local2
+      local: /file1
+      local: /file2
      
       #Example 2 Mount different path folders for merging
-      test: /local1/localtest233
-      Test: /local2/videos/TV series
-      Test: /Local 2/TV/Domestic TV Series/Station XX
+      test: /file1/localtest233
+      Test: /file2/videos/TV series
+      Test: /file3 2/TV/Domestic TV Series/Station XX
       ```
 
 According to the second method, we can merge and display different folders, which is convenient and quick

@@ -33,6 +33,11 @@ secrets ID
 
 2. Only one of the four types of single sign-on can be enabled temporarily. If you used other single sign-on methods before and then changed to a new single Unbind (just one click) and then bind the single sign-on method you want to use now.
 
+3. If you use **`GitHub,Microsoft,Google,DingTalk`**, you only need to fill in the client ID and secret key, and select the corresponding platform in the options.
+
+   - If you use **`Casdoor`** the following parameters need to be filled in, just follow the tutorial to fill in
+
+
 :::
 
 
@@ -102,7 +107,7 @@ Go to the left column and find `Login and Share` == Fill in the callback paramet
 http://127.0.0.1:5244/api/auth/sso_callback
 ```
 
-- Note: I used the callback parameter here for local testing. http://127.x When you use it, Write **http(s)://your own domain name/api/auth/sso_callback** when filling in and using it by yourself
+- Note: I used the callback parameter here for local testing. http://127.x When you use it, Write **http(s):\//your own domain name/api/auth/sso_callback** when filling in and using it by yourself
 
 Write the callback parameters well. Let’s go to the left column and find `Privilege Management`, find **`Personal Information Read Permission of Address Book`** and click to authorize
 
@@ -133,8 +138,8 @@ http://localhost:5244/api/auth/sso_callback?method=sso_get_token
 http://localhost:5244/api/auth/sso_callback?method=get_sso_id
 ```
 
-- Write **http(s)://your own domain name/api/auth/sso_callback?method=sso_get_token** when filling in and using it by yourself
-- Write **http(s)://your own domain name/api/auth/sso_callback?method=get_sso_id** when filling in and using it by yourself
+- Write **http(s):\//your own domain name/api/auth/sso_callback?method=sso_get_token** when filling in and using it by yourself
+- Write **http(s):\//your own domain name/api/auth/sso_callback?method=get_sso_id** when filling in and using it by yourself
 - Note: When adding a redirect URL to a new application, only one can be added. After the application is registered and registered, click on the application to see the options behind the redirect URI
 
 After filling it out, we click `Certificate and Password` on the left column to create a new `Client Password` to get our client secret key
@@ -177,8 +182,8 @@ http://127.0.0.1:5244/api/auth/sso_callback?method=get_sso_id
 http://127.0.0.1:5244/api/auth/sso_callback?method=sso_get_token
 ```
 
-- Write **http(s)://your own domain name/api/auth/sso_callback?method=get_sso_id** when filling in and using it by yourself
-- Write **http(s)://your own domain name/api/auth/sso_callback?method=sso_get_token** when filling in and using it by yourself
+- Write **http(s):\//your own domain name/api/auth/sso_callback?method=get_sso_id** when filling in and using it by yourself
+- Write **http(s):\//your own domain name/api/auth/sso_callback?method=sso_get_token** when filling in and using it by yourself
 
 After filling it out, click Create to get the OAuth client ID and secret key
 
@@ -199,5 +204,42 @@ If it has been configured, just ignore this picture (you can zoom in if you can�
 ### Completely fill in the reference schematic
 
 ![sso](/img/advanced/google.png)
+
+
+
+@tab Casdoor
+
+What is `Cadoor`? Yes, you can use other OAuth applications to log in. [**Self-deployment**](https://casdoor.org/docs/basic/server-installation) is open source and free, and official hosting requires payment.
+
+Now, Casdoor supports many OAuth application providers, as many as dozens of kinds, you have seen and not seen
+
+**GitHub open source link: https://github.com/casdoor/casdoor**
+
+-----
+
+After we enter `Casdoor`, we first create **Organization**^1^, **Token**^2^, **Application**^3^, **User**^4^
+
+Then fill in the `AList` backstage single sign-on option one by one. The user’s parameters are ignored for the time being. They are filled in when the personal data is bound to the single sign-on.
+
+![sso](/img/advanced/casdoor.png)
+
+After filling in the above parameters, we come to the personal data and click `Bind point single sign-on platform` to bind
+
+Then the `Casdoor` window will pop up, we can enter our registered user name
+
+![sso](/img/advanced/casdoor-user.png)
+
+
+----
+
+#### Access some other vendors on Casdoor
+
+In addition to the four that `AList` has already connected to `GitHub Dingding Google Microsoft`, it is also connected to `QQ Baidu Feishu WeChat/Enterprise WeChat Douyin Bilibili` and so on, all [**click Check out all the manufacturers that can be accessed here**](https://casdoor.org/docs/provider/oauth/overview), of course, the four that `AList` has already accessed can also be added to `Casdoor`
+
+**View detailed tutorials on accessing other providers: [click to view](https://anwen-anyi.github.io/index/09-ssologin.html)**
+
+::: details Direct iframe viewing
+<iframe src="https://anwen-anyi.github.io/index/09-ssologin.html#%E6%8E%A5%E5%85%A5" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
+:::
 
 ::::

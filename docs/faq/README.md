@@ -6,8 +6,4 @@ category:
   - FAQ
 ---
 
-## Catalog
-
-- [How to ...](howto.md)
-- [Why ...](why.md)
-- [See also ...](seealso.md)
+<AutoCatalog />

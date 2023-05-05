@@ -102,3 +102,15 @@ Background --> Settings --> Preview --> Iframe preview, written behind the PDF
 Version 3.7.x and above already support ".epub" reading,
 But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
 If it is the first installation and startup (version 3.7.x and higher), no need to add it manually
+
+### How to quickly locate bugs
+
+If you find a bug, but the `log.log` log is not detailed, you can try to add the `--debug` parameter to start
+
+- **Windows**：`alist.exe server --debug`
+- **Linux**：`./alist server --debug`
+- **Mac**: Temporarily unknown, maybe it is started with the `--debug` parameter
+
+How to stop the relevant logs after startup? `Ctrl+c` can stop the program (or simply close the program directly)
+
+It is recommended to clear the log file `/log/log.log` in the **AList directory before starting with the `--debug` parameter**, so that developers can quickly locate problems later
