@@ -38,7 +38,7 @@ category:
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
 - [x] [分秒帧](https://www.mediatrack.cn/)
-- [x] [和彩云](https://yun.139.com/) (个人云, 家庭云)
+- [x] [中国移动云盘](https://yun.139.com/) (个人云, 家庭云)
 - [x] [Yandex.Disk](https://disk.yandex.com/)
 - [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
 - [x] [夸克网盘](https://pan.quark.cn)
