@@ -45,7 +45,7 @@ let data = {
         },
         {
           text: 'Buy',
-          link: 'https://ad.nn.ci',
+          link: 'https://r.nn.ci/ad',
           type: 'success'
         }
       ]
@@ -113,7 +113,7 @@ if (location.pathname.startsWith("/zh/")) {
           },
           {
             text: '购买',
-            link: 'https://ad.nn.ci',
+            link: 'https://r.nn.ci/ad',
             type: 'success'
           }
         ]

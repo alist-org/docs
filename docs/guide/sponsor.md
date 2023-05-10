@@ -22,7 +22,7 @@ star: true
 
 If you think this project is helpful to you, you may wish to consider buying me a cup of milk tea😄.
 
-- Buy `AList Desktop`: https://ad.nn.ci
+- Buy `AList Desktop`: https://r.nn.ci/ad
 - Buy me a coffee: https://www.buymeacoffee.com/Xhofe
 - Sponsor-me: https://sp.nn.ci
 - Alipay/WechatPay/QQPay:
