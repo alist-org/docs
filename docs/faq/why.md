@@ -271,3 +271,7 @@ Through the console, it is found that "**https://g.alicdn.com/IMM/office-js/1.1.
 Maybe other links are blocked, manually add the blocked domain name to the whitelist or close the plug-in, or it may be that the plug-in is convulsed
 
 ![faq](/img/faq/download.png)
+
+### Why is the text file garbled?
+
+Only utf-8 encoding is supported. See also: [#4131](https://github.com/alist-org/alist/issues/4131)

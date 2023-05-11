@@ -268,3 +268,7 @@ v2可以成功是因为v2会忽略空文件上传。
 也许拦截了其它链接，手动将被拦截域名添加到白名单或者关闭插件，也可能是插件抽风了
 
 ![faq](/img/faq/download.png)
+
+### 为什么文本文件乱码?
+
+仅支持utf-8编码。相关: [#4131](https://github.com/alist-org/alist/issues/4131)
