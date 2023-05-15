@@ -133,39 +133,16 @@ Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist` to load 
 
 @tab Windows
 
-method 1
+1.  Download the newest `nssm` from https://nssm.cc/download.
+2.  Unzip the archive and go to the diretory of `nssm.exe`.
+3.  Hold Shift and right click on the blank space, then release and press S or select "powershell here", you should now see a blue window named "Windows PowerShell".
+4.  Type `.\nssm.exe install alist`.
+5.  Select the path of `alist.exe` for "Path", e.g. `D:\alist\alist.exe`; type `server` for "Argument".
+6.  You can custom "Display Name", "Description" and "Startup Type" in "Details" tab.
+7.  Go to "I/O" tab and select a file for both "Output (stdout)" and "Output (stderr)", e.g. `D:\alist\stdout.log`. The file itself (`stdout.log`) may not exist, but the folder (`D:\alist`) must exist.
+8.  Click on "Install Service".
 
-Use **`.VBS`** script to start and stop, create two scripts respectively start.vbs and stop.vbs
-
-Just double-click to start it in the folder at the same level as the Alist startup program, don't worry about no response, just go to the browser to access it
-
-::: info Two startup scripts
-
-**start.vbs**
-
-```vbscript
-Dim ws
-Set ws = Wscript.CreateObject("Wscript.Shell")
-ws.run "alist.exe server",vbhide
-Wscript.quit
-```
-
-**stop.vbs**
-
-```vbscript
-Dim ws
-Set ws = Wscript.CreateObject("Wscript.Shell")
-ws.run "taskkill /f /im alist.exe",0
-Wscript.quit
-```
-
-1. If the script will not be created, you can download it yourself: [**Script Download**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
-
-2. If the script will not be used, you can watch the video: [**reference video**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
-
-:::
-
-How to realize Windows startup automatically, you can refer to the script mentioned above to use the video (second).
+You can now start the service from services.msc or task manager.
 
 ::::
 
