@@ -16,6 +16,7 @@
     { "type": "github", "repo": "X-yael/AlistforMagisk" },
     { "type": "github", "repo": "z-mio/Alist-bot" },
     { "type": "github", "repo": "ShinChven/alist-aria2-pro-docker-compose" },
-    { "type": "github", "repo": "Kuingsmile/PicHoro" }
+    { "type": "github", "repo": "Kuingsmile/PicHoro" },
+    { "type": "github", "repo": "j4587698/AListSdkSharp" }
   ]
 }
