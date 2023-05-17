@@ -103,7 +103,7 @@ Version 3.7.x and above already support ".epub" reading,
 But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
 If it is the first installation and startup (version 3.7.x and higher), no need to add it manually
 
-### How to quickly locate bugs
+### **How to quickly locate bugs**
 
 If you find a bug, but the `log.log` log is not detailed, you can try to add the `--debug` parameter to start
 
