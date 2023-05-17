@@ -112,7 +112,7 @@ services:
 如果是CPU架构是32位，目前尚无可用方案。
 
 ## Docker安装怎么更新?
-::: details docker-cli
+::: details docker-cli 更新
 
 
 1. docker ps -a #查看容器(找Alist容器的ID)
@@ -132,11 +132,15 @@ services:
 
 :::
 
-:::details docker-compose
+:::details docker-compose 更新
 1. docker-compose pull
 2. docker-compose up -d
+
 :::
 
-Q：我的版本是v3.x.x 怎么也升级不到最新版 docker pull xhofe/alist:latest拉取最新不行 改成docker-compose安装还是3.x.x版本
+Q：我的版本是v3.x.x 怎么也升级不到最新版 `docker pull xhofe/alist:latest`拉取最新不行 改成docker-compose安装还是3.x.x版本
 
 A：原因是你的docker设置了镜像，从镜像更新不到最新版本，改一下/etc/docker/daemon.json，删除"registry-mirrors": ["镜像加速器地址"]
+
+- 删除若不行，可以考虑更换一个`镜像加速地址`
+- 或者简单粗暴：下载时将`xhofe/alist: ==latest== `替换为`xhofe/alist: ==v3.16.3==`（指定版本，写教程时最新的是3.16.3）

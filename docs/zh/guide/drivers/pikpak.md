@@ -65,7 +65,11 @@ star: true
 
 **A**：如果不是账号密码填错，可能是注册的时候使用了Google，FB等第三方快捷注册，虽然看起来账号是谷歌邮箱，但实际上是不能用邮箱登入，而必须使用第三方验证，**Alist** 现在还不支持这种跳转到第三方的验证，**所以你要在账号设置里绑定一个邮箱同时设置一下登录密码**，或者重新注册一个新账号
 
+-----
 
+**Q**：添加挂载时提示：**failed get objs: failed to list objs: Sorry, sharing is not available in the current region**
+
+**A**：因为在国内^PikPak^是禁止访问的，给`AList`使用代理即可，如何让`AList`使用代理[**参考方案之一,此方法仅限于Windows搭建**](https://anwen-anyi.github.io/index/07-wenti.html#_41-alist%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-%E5%90%83%E5%88%B0-%E4%BB%A3%E7%90%86-proxy)
 
 ### 默认使用的下载方式
 

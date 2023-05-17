@@ -83,6 +83,15 @@ The url of your `alist` site, such as `https://pan.nn.ci`.This address will be u
 - Reverse proxy to sub directory
 - ...
 
+Do not carry `/` at the end when filling in the link, otherwise it cannot be used or other problems
+
+```json
+# Correct way of writing:
+"site_url": "https://pan.nn.ci",
+#Wrong way of writing:
+"site_url": "https://pan.nn.ci/",
+```
+
 ### cdn
 
 The CDN address, if you want to use CDN, you can set this field, the `$version` will be replaced with the real version of `alist-web`
@@ -113,6 +122,59 @@ User login expiration time, unit: `hours`.
 ### database
 
 The database configuration, the default is `sqlite3`, you can also use `mysql` or `postgres`.
+
+- If you do not use `MySQL` or `postgres`, the configuration file database options do not need to be modified
+
+```json
+  "database": {
+    "type": "sqlite3",	//database type
+    "host": "",			//database host
+    "port": 0,			//database port
+    "user": "",			//database account
+    "password": "",		//database password
+    "name": "",			//database name
+    "db_file": "data\\data.db",		//Database location, used by sqlite3
+    "table_prefix": "x_",			//database table name prefix
+    "ssl_mode": ""		//To control the encryption options during the SSL handshake, the parameters can be searched by themselves, or check the answer from ChatGPT below
+  },
+```
+
+:::: details Expand to view `ssl_mode` parameter options
+
+If you don’t know how to fill in, fill in the default blank, no need to modify, if you can’t use it if you don’t fill it in, do your own research, and you can’t provide much effective help
+
+-----
+
+In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of the SSL connection. Here are a few common options:
+
+- `DISABLED`: Disable SSL connections.
+- `PREFERRED`: If the server has SSL enabled, use an SSL connection; otherwise use a normal connection.
+- `REQUIRED`: Must use SSL connection, if the server does not support SSL connection, the connection will fail.
+- `VERIFY_CA`: Must use SSL connection and verify the authenticity of the server certificate.
+- `VERIFY_IDENTITY`: must use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
+
+MySQL 5.x and 8.x are also different. If you use the free/fee database provided by the service provider, the service provider will have documentation. You must know the database you deploy yourself.
+
+-----
+
+In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses SSL connections. Here are a few common options:
+
+- `disable`: Disable SSL connections.
+- `allow`: SSL connections are allowed, but not required.
+- `prefer`: If the server has SSL enabled, use an SSL connection; otherwise use a normal connection.
+- `require`: Must use SSL connection, if the server does not support SSL connection, the connection will fail.
+- `verify-ca`: Must use SSL connection and verify the authenticity of the server certificate.
+- `verify-full`: MUST connect using SSL and verify the authenticity and name of the server certificate matches the connected hostname.
+
+----
+
+::: right
+
+:warning::warning:**The above parameters are from ChatGPT, the authenticity/practicability/accuracy has not been verified**:warning::warning:
+
+:::
+
+::::
 
 ### scheme
 

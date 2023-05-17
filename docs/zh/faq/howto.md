@@ -110,10 +110,16 @@ location /alist/ {
 
 如果发现Bug，但是`log.log`的日志不详细，可以尝试在 启动时候添加 `--debug` 参数启动
 
+建议在使用`--debug` 参数启动之前将 **AList目录下的日志文件`/log/log.log` 清空**，这样方便开发者们后续快速定位问题
+
+::: danger
+使用`--debug`参数启动时，会有一些敏感数据 例如 **`账号密码，刷新令牌`** 等，所以如果在你发给别人之前需要先处理一下脱敏
+:::
+
+
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
 - **Mac**：暂时未知，可能也是可以加 `--debug` 参数启动
+- **Docker**：docker exec -it alist ./alist server --debug
 
 启动后拿到相关日志，如何停止?  `Ctrl+c` 可以使程序停止运行（或者简单粗暴直接关闭程序）
-
-建议在使用`--debug` 参数启动之前将 **AList目录下的日志文件`/log/log.log` 清空**，这样方便开发者们后续快速定位问题

@@ -107,10 +107,14 @@ If it is the first installation and startup (version 3.7.x and higher), no need 
 
 If you find a bug, but the `log.log` log is not detailed, you can try to add the `--debug` parameter to start
 
+It is recommended to clear the log file `/log/log.log` in the **AList directory before starting with the `--debug` parameter**, so that developers can quickly locate problems later
+
+::: danger
+When using the `--debug` parameter to start, there will be some sensitive data such as **`account password, refresh token`**, etc., so if you need to desensitize before sending it to others
+:::
+
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
 - **Mac**: Temporarily unknown, maybe it is started with the `--debug` parameter
 
 How to stop the relevant logs after startup? `Ctrl+c` can stop the program (or simply close the program directly)
-
-It is recommended to clear the log file `/log/log.log` in the **AList directory before starting with the `--debug` parameter**, so that developers can quickly locate problems later

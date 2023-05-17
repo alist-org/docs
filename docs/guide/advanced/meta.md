@@ -17,7 +17,10 @@ star: true
 ---
 
 # Meta
+The configuration in the meta information is only valid for `Guest`, if you want to have the corresponding permissions for the newly created ordinary users, please go to `User`-->`User Account` to modify the relative permissions
+
 ### Path
+
 The path for this meta to take effect
 ### Password
 Password required to access this path

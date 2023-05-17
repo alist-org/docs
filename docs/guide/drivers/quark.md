@@ -46,9 +46,9 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[local proxy]:::someclass==default==>a2[user equipment]
+    c1[local proxy]:::someclass==mandatory==>a2[user equipment]
     classDef someclass fill:#f96
-    b1[Download proxy URL]-.alternative.->a2[user equipment]
     click b1 "../drivers/common.html#webdav-policy"
-    click c1 "../drivers/common.html#webdav-policy"
 ```
+
+illustrate：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)

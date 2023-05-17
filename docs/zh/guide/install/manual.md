@@ -71,7 +71,7 @@ alist server
 
 ### 守护进程
 
-::::tabs#os
+:::::tabs#os
 @tab Linux
 使用任意方式编辑 `/usr/lib/systemd/system/alist.service` 并添加如下内容，其中 path_alist 为 AList 所在的路径
 
@@ -134,6 +134,8 @@ WantedBy=multi-user.target
 
 @tab Windows
 
+### 方法1
+
 1.  在 https://nssm.cc/download 下载最新版本的 `nssm`；
 2.  在解压后的文件夹内按住 Shift 并右击空白处，选择“在此处打开 Powershell 窗口”；
 3.  在弹出的窗口中输入 `.\nssm.exe install alist`；
@@ -144,7 +146,46 @@ WantedBy=multi-user.target
 
 此后可以直接在服务中启动 `alist`。
 
+### 方法2
+
+:::: details 方法2
+
+用  **`.VBS`** 脚本启动和停止，分别创建两个脚本 分别是  启动.vbs 和 停止.vbs
+
+直接在和Alist启动程序同级文件夹里面双击启动即可，不用担心没有反应 直接去 浏览器访问即可
+
+
+::: info 两个启动脚本
+
+**启动.vbs**
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "alist.exe server",vbhide
+Wscript.quit
+```
+
+**停止.vbs**
+
+```vbscript
+Dim ws
+Set ws = Wscript.CreateObject("Wscript.Shell")
+ws.run "taskkill /f /im alist.exe",0
+Wscript.quit
+```
+
+1. 脚本不会创建的可以自行下载：[**脚本下载**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
+
+2. 脚本不会使用的可以看看视频：[**参考视频**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
+
+如何实现Windows开机自启，可以参考上面提到的脚本使用视频(第二个)
+
+:::
+
 ::::
+
+:::::
 
 
 

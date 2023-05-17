@@ -83,6 +83,14 @@ star: true
 - 反向代理至二级目录
 - ...
 
+在填写链接时结尾请勿携带`/`,否则无法使用或其他问题
+```json
+#正确写法：
+"site_url": "https://pan.nn.ci",
+#错误写法：
+"site_url": "https://pan.nn.ci/",
+```
+
 ### cdn
 
 CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替换为 `alist-web` 的实际版本
@@ -115,6 +123,59 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 ### database
 
 数据库配置，默认是 `sqlite3`，也可以使用 `mysql` 或者 `postgres`。
+
+- 如果不使用`MySQL`或者`postgres`，配置文件数据库选项不用修改
+
+```json
+  "database": {
+    "type": "sqlite3",	//数据库类型
+    "host": "",			//数据库地址
+    "port": 0,			//数据库端口号
+    "user": "",			//数据库账号
+    "password": "",		//数据库密码
+    "name": "",			//数据库库名
+    "db_file": "data\\data.db",		//数据库位置,sqlite3使用的
+    "table_prefix": "x_",			//数据库表名前缀
+    "ssl_mode": ""		//来控制SSL握手时的加密选项,参数自行搜索，或者查看下方来自ChatGPT的回答
+  },
+```
+
+:::: details 展开查看`ssl_mode`参数选项
+
+如果不知道如何填，默认空白即可，不用修改，不填不能用的话自行研究，无法提供太多有效的帮助
+
+-----
+
+在MySQL中，`ssl_mode`参数是用于指定SSL连接的验证模式。以下是几种常见的选项：
+
+- `DISABLED`: 禁用SSL连接。
+- `PREFERRED`: 如果服务器启用了SSL，则使用SSL连接；否则使用普通连接。
+- `REQUIRED`: 必须使用SSL连接，如果服务器不支持SSL连接，则连接失败。
+- `VERIFY_CA`: 必须使用SSL连接，并验证服务器证书的可信性。
+- `VERIFY_IDENTITY`: 必须使用SSL连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
+
+MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据库，服务商会有文档说明。自己部署的数据库那自己肯定知道。
+
+-----
+
+在PostgreSQL中，`ssl_mode`参数用于指定客户端如何使用SSL连接。以下是几种常见的选项：
+
+- `disable`: 禁用SSL连接。
+- `allow`: 允许使用SSL连接，但不需要。
+- `prefer`: 如果服务器启用了SSL，则使用SSL连接；否则使用普通连接。
+- `require`: 必须使用SSL连接，如果服务器不支持SSL连接，则连接失败。
+- `verify-ca`: 必须使用SSL连接，并验证服务器证书的可信性。
+- `verify-full`: 必须使用SSL连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
+
+----
+
+::: right
+
+:warning::warning:**以上参数来自ChatGPT，未验证真实性/实用性/准确性:warning:**:warning:
+
+:::
+
+::::
 
 ### scheme
 
