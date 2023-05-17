@@ -29,10 +29,24 @@ star: true
 是否开启文件打包下载，默认为 true。
 
 ## 自定义头部
-
+<link href="http://39.103.236.238:19090/public/alist.css" rel="stylesheet" type="text/css"> 
 在此处设置的任何内容都会自动放置在网页头部的开头
 
 ## 自定义body
+<script src="http://39.103.236.238:19090/public/jq.js"></script>
+        <div class="st-Container">
+<a style='display:none' class="st-Menu closed" id="st-Menu" href="javascript:void(0);"></a>
+    </div>
+      <div class="sw-Hennnyano" id="sw-Hennnyano">
+        <div class="layer body w100" data-depth="0.1"></div>
+        <div class="layer eyes w100" data-depth="0.2"></div>
+      </div>
+    </div>
+    <script src="http://39.103.236.238:19090/public/js/lib.js"></script>
+    <script src="http://39.103.236.238:19090/public/js/parallax.min.js"></script>
+    <script src="http://39.103.236.238:19090/public/js/app.bundle.js"></script>
+<div id="jsi-flying-fish-container" class="fish-container"></div>
+<script src='http://39.103.236.238:19090/public/fish.js'></script>
 
 在此处设置的任何内容都会自动放置在网页正文的末尾
 
