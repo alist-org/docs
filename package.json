@@ -18,9 +18,9 @@
     "@vuepress/utils": "2.0.0-beta.62",
     "naive-ui": "^2.34.3",
     "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
+    "vuepress": "2.0.0-beta.62",
     "vuepress-theme-hope": "2.0.0-beta.211",
-    "vuepress-vite": "2.0.0-beta.61"
+    "vuepress-vite": "2.0.0-beta.62"
   },
   "dependencies": {
     "markdown-it": "^13.0.1"
