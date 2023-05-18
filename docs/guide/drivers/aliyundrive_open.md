@@ -45,7 +45,7 @@ typeof fetch !== "undefined" && getLimit()
 4. If the same IP requests =={{ max }}== times within =={{ minutes }}== minutes, **Too Many Requests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
     - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
     - The number of times and time mentioned above are dynamic~
-    - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh. **
+    - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
 
 :::
 

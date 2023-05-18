@@ -54,7 +54,7 @@ star: true
 
 ![Google](/img/drivers/google/Google-2.png)
 
-点击 **`Google Driver API` **进去后，看下图示意图，将API服务启用
+点击 **`Google Driver API`** 进去后，看下图示意图，将API服务启用
 
 ![Google](/img/drivers/google/Google-3.png)
 

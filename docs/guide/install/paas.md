@@ -22,7 +22,7 @@ star: true
 
 For specific usage, please refer to the `README.md` in the corresponding repository.
 
-### ****Koyeb**
+### **Koyeb**
 https://github.com/alist-org/alist-koyeb
 
 ### **Render**
