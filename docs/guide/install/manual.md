@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-### Get Alist
+### **Get Alist**
 Open [AList Release](https://github.com/Xhofe/alist/releases) to download the files corresponding to the system to be deployed. The latest version of the front-end has been packaged with the back-end, so there is no need to download the front-end files again.
 
 
@@ -27,7 +27,7 @@ Open [AList Release](https://github.com/Xhofe/alist/releases) to download the fi
 
 When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
 
-### Running
+### **Running**
 
 :::tabs#os
 @tab linux
@@ -71,7 +71,7 @@ alist server
 ```
 :::
 
-### Daemon
+### **Daemon**
 
 :::::tabs#os
 @tab linux
@@ -134,7 +134,7 @@ Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist` to load 
 
 @tab Windows
 
-### method one
+### **method one**
 
 1.  Download the newest `nssm` from https://nssm.cc/download.
 2.  Unzip the archive and go to the diretory of `nssm.exe`.
@@ -147,7 +147,7 @@ Then, execute `launchctl load ~/Library/LaunchAgents/ci.nn.alist.plist` to load 
 
 You can now start the service from services.msc or task manager.
 
-### method two
+### **method two**
 
 :::: details method two
 
@@ -204,6 +204,6 @@ alist restart
 :::
 
 
-### How to update
+### **How to update**
 
 Download the new version of Alist and replace the previous one.

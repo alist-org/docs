@@ -22,7 +22,7 @@ star: true
 Due to the limitation of Quark network disk, the download must carry cookies, so only the proxy function in this program can be used for transfer. (You can use other machines to transfer)
 :::
 
-### Cookie and Root folder ID
+### **Cookie and Root folder ID**
 
 The cookie and root folder ID are obtained from the request:
 
@@ -33,7 +33,7 @@ Or the root directory id can also be obtained from the address bar:
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

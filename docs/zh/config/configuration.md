@@ -62,19 +62,19 @@ star: true
 
 ## 字段说明
 
-### force
+### **force**
 
 程序会优先从环境变量中读取配置，设置 `force` 为 `true` 会使程序忽略环境变量强制读取配置文件。
 
-### address
+### address**
 
 要监听的地址，默认为 0.0.0.0
 
-### port
+### **port**
 
 要监听的端口，默认为 5244
 
-### site_url
+### **site_url**
 
 你的网站URL，比如`https://pan.nn.ci`，这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
 - 本地存储的缩略图
@@ -84,6 +84,9 @@ star: true
 - ...
 
 在填写链接时结尾请勿携带`/`,否则无法使用或其他问题
+
+- URL链接结尾请勿携带 `/` ,正确示例:heavy_check_mark::`https://pan.nn.ci`，错误示例：`https://pan.nn.ci/`:x:,否则将无法使用以下功能
+
 ```json
 #正确写法：
 "site_url": "https://pan.nn.ci",
@@ -91,7 +94,7 @@ star: true
 "site_url": "https://pan.nn.ci/",
 ```
 
-### cdn
+### **cdn**
 
 CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替换为 `alist-web` 的实际版本
 这是动态的。 现有的 dist 资源托管在 npm 和 GitHub 上，它们的位置是：
@@ -112,15 +115,15 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 您也可以将其设置为空以使用本地 dist。
 
-### jwt_secret
+### **jwt_secret**
 
 用于签署 JWT 令牌的密钥，第一次启动时随机生成。
 
-### token_expires_in
+### **token_expires_in**
 
 用户登录过期时间，单位：小时
 
-### database
+### **database**
 
 数据库配置，默认是 `sqlite3`，也可以使用 `mysql` 或者 `postgres`。
 
@@ -177,7 +180,7 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 
 ::::
 
-### scheme
+### **scheme**
 
 协议配置，如果要使用 HTTPS，可以设置该字段。
 
@@ -191,7 +194,7 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
   },
 ```
 
-### temp_dir
+### **temp_dir**
 
 程序临时目录，默认 `data/temp`
 
@@ -199,18 +202,18 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 temp_dir为alist独占的临时文件夹，为避免程序中断产生垃圾文件会在每次启动时清空，故请不要手动在此文件夹内放置任何内容，也不要在使用docker时将此文件夹及其子文件夹映射至正在使用的文件夹。
 :::
 
-### log
+### **log**
 
 日志配置，如果要查看详细日志（或禁用它），可以设置该字段。
 
-### max_connections
+### **max_connections**
 
 同时最多的连接数(并发)，默认为0即不限制.
 
 - 对于一般的设备比如n1推荐10或者20
   - 使用场景（例如打开图片模式会并发不是很好的设备就会崩溃）
 
-### tls_insecure_skip_verify
+### **tls_insecure_skip_verify**
 
 是否检查SSL证书，开启后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，关闭该选项请尽量在安全的网络环境下运行程序
 

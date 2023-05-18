@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-### The following resources may help you
+### **The following resources may help you**
 
 > Third party tutorials and information may be outdated and incorrect, and no warranty of availability is made here.
 

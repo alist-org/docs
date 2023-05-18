@@ -18,13 +18,13 @@ star: true
 
 # 谷歌相册
 
-## 根目录ID
+## **根目录ID**
 
 根目录root，其他目录ID未知( ~~貌似不能挂载单独的相册~~ 已解决下面有介绍)
 
 
 
-## 获取 client_id, client_secret
+## **获取 client_id, client_secret**
 
 获取工具 https://alist.nn.ci/tool/google/request
 
@@ -52,7 +52,7 @@ star: true
 
 
 
-## 挂载单个相册目录
+## **挂载单个相册目录**
 
 根据[上面](https://alist.nn.ci/tool/google/request)获取到的**客户端ID**和**秘钥**和**刷新令牌**
 
@@ -61,13 +61,13 @@ star: true
 - 根文件ID（就是相册ID）：默认root，展示全部，若只想展示单个相册，可以填写你想展示的相册ID
 - 在我们填写后下方也会出现一个 **`access_token`** 这个也可以填写到刷新令牌里面前使用和之前获取到的，这两个都可以用 - [解释](https://github.com/alist-org/alist/discussions/3264#discussioncomment-5051171) 
 
-#### 填写示意图
+#### **填写示意图**
 
 ![Googlephotos](/img/drivers/google/Google-photos3.png)
 
 
 
-## 两个注意事项：
+## **两个注意事项：**
 
 1. failed get objs: failed to list objs: Request had insufficient authentication scopes.: []
    - 是因为在获取授权的时候没有勾选 相册权限（查看上面提到的图片） `查看和整理您的Google相册媒体库中的内容,向媒体库上传内容。`
@@ -76,13 +76,13 @@ star: true
 2. failed get objs: failed to list objs: Photos Library API has not been used in project ... before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
    - 是因为对应的项目没有开启 **`Photos Library API`**  谷歌相册API
 
-### 挂载展示
+### **挂载展示**
 
 ![Googlephotos](/img/drivers/google/Google-photosend.png)
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid

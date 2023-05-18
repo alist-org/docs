@@ -24,15 +24,15 @@ star: true
 docker exec -it alist ./alist admin
 ```
 
-## 发行版本
+## **发行版本**
 
-##### docker-cli
+##### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
-##### docker-compose
+##### **docker-compose**
 ```yaml
 version: '3.3'
 services:
@@ -50,21 +50,21 @@ services:
         image: 'xhofe/alist:latest'
 ```
 
-### 使用 aria2 离线下载
+### **使用 aria2 离线下载**
 
 如果你想使用aria2离线下载，我们推荐你使用这个[image](https://hub.docker.com/r/xhofe/alist-aria2)，它预装了aria2。
 
-### 开发版本
+### **开发版本**
 
 仅适用于 amd64/arm64。不推荐，这可能无法正常工作。
 
-##### docker-cli
+##### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
-##### docker-compose
+##### **docker-compose**
 ```yaml
 version: '3.3'
 services:
@@ -82,11 +82,11 @@ services:
         image: 'xhofe/alist:main'
 ```
 
-### 指定版本
+### **指定版本**
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
 
-### 用户/组标识符
+### **用户/组标识符**
 
 当使用卷（`-v` 标志）权限问题时，主机操作系统和容器之间可能会出现权限问题，我们通过允许您指定用户 `PUID` 和组 `PGID` 来避免此问题。
 
@@ -99,7 +99,7 @@ services:
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
-## 有关离线下载功能的额外说明
+## **有关离线下载功能的额外说明**
 
 若没有使用```docker pull --platform```参数拉取镜像时，docker可能会在64位操作系统上拉取32位镜像,这将可能导致离线下载功能即使在正常配置情况下也无法使用。
 
@@ -111,7 +111,7 @@ services:
 
 如果是CPU架构是32位，目前尚无可用方案。
 
-## Docker安装怎么更新?
+## **Docker安装怎么更新?**
 ::: details docker-cli 更新
 
 

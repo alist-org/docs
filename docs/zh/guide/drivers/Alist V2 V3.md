@@ -23,13 +23,13 @@ star: true
 
 
 
-### 驱动
+### **驱动**
 
 首先你要知道对方的到底是V2还是V3
 
 
 
-### 根文件夹路径
+### **根文件夹路径**
 
 - 要添加的目录的pathname，不填默认为根目录，如：
   - [https://alist.nn.ci](https://alist.nn.ci/) -> `/`
@@ -38,7 +38,7 @@ star: true
 
 
 
-### 链接
+### **链接**
 
 你要挂载的AList链接
 
@@ -76,7 +76,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 :::
 
-### 元信息密码
+### **元信息密码**
 
 （元信息密码选项**不是必填**，给有需要的人说明）
 
@@ -92,11 +92,11 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 
 
-## 用户名
+## **用户名**
 
 你要挂载的`AList`用户名（账号）
 
-## 密码
+## **密码**
 
 你要挂载的`AList`用户名对应的密码
 
@@ -122,7 +122,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 
 
-### 令牌
+### **令牌**
 
 可以不用写，在填写`用户名&密码`保存后会自动填充
 
@@ -130,7 +130,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 @tab V2
 
-### 密码
+### **密码**
 
 （密码选项**不是必填**，给有需要的人说明）
 
@@ -148,7 +148,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 
 
-### 访问令牌
+### **访问令牌**
 
 （访问令牌选项**不是必填**，给有需要的人说明）
 
@@ -159,7 +159,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 ::::
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

@@ -18,13 +18,13 @@ star: true
 
 # 网站设置
 
-## 版本
+## **版本**
 
 AList 的版本，只读。
 
 
 
-## Api地址
+## **Api地址**
 
 > 在v3.0.2及之后被弃用，已经移至[site_url](./configuration.md#site-url)
 
@@ -40,7 +40,7 @@ URL链接结尾请勿携带 `/` ,正确示例:heavy_check_mark::`https://pan.nn.
 
 
 
-## 基本路径
+## **基本路径**
 
 > 在v3.0.2及之后被弃用，已经移至[site_url](./configuration.md#site-url)
 
@@ -48,13 +48,13 @@ URL链接结尾请勿携带 `/` ,正确示例:heavy_check_mark::`https://pan.nn.
 
 
 
-## 网站标题
+## **网站标题**
 
 AList 的标题，例如 AList。
 
 
 
-## 公告
+## **公告**
 
 AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内容前添加标题，例如 `### Hello`，以免内容被关闭按钮覆盖。
 
@@ -62,7 +62,7 @@ AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内�
 
 
 
-## 分页类型
+## **分页类型**
 
 - 全部：一次显示所有文件。
 - 分页：在页面底部显示一个“分页器”。
@@ -71,13 +71,13 @@ AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内�
 
 
 
-## 默认每页文件数量
+## **默认每页文件数量**
 
 AList 的默认每页文件数量，当 `Pagination type` 没有被设置为 `All` 时生效，例如 `20`。
 
 
 
-## 允许索引
+## **允许索引**
 
 是否允许其他人挂载你的AList后进行索引构建，勾选后开启。
 
@@ -85,8 +85,31 @@ AList 的默认每页文件数量，当 `Pagination type` 没有被设置为 `Al
 
 
 
-## 允许挂载
+## **允许挂载**
 
 是否允许其他人挂载你的AList,然后进行访问
 
 **默认为开启状态，建议不想让别人挂载的选择关闭**（v3.16.3新增功能）
+
+
+
+## **Robots.txt**
+
+爬虫的配置/规则
+
+默认的是允许爬虫访问所有页面
+
+- `Allow: /` 表示允许搜索引擎的爬虫访问所有页面
+
+```txt{2}
+User-agent: *
+Allow: /
+```
+
+如果想禁止爬虫访问所有页面就改成这样子
+
+```txt{2}
+User-agent: *
+Disallow: /
+```
+

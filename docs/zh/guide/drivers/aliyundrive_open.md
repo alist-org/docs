@@ -52,11 +52,11 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
-## 刷新令牌
+## **刷新令牌**
 
 前往：**https://alist.nn.ci/tool/aliyundrive/request**
 
-#### 获取示意图
+#### **获取示意图**
 
 以下两种方式都可以获得 **refresh_token**
 
@@ -72,7 +72,7 @@ typeof fetch !== "undefined" && getLimit()
 
 :::
 
-## Root folder file_id
+## **Root folder file_id**
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
@@ -84,13 +84,13 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
-## 客户端 ID，秘钥
+## **客户端 ID，秘钥**
 
 正常用户不需要填写为空即可，如果自己申请了官方授权也可以使用自己的进行填写，为空时默认使用 AList 提供的。
 
 
 
-## 移除方式
+## **移除方式**
 
 - 回收站：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
 - 删除：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
@@ -98,7 +98,7 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
-## 内部上传
+## **内部上传**
 
 如果你部署 AList 的服务器是阿里云北京地区ECS，打开此开关可以提升文件上传速度。不符合要求的服务器请不要打开此开关，否则会出现无法上传的问题。
 
@@ -106,7 +106,7 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
-## 其他说明
+## **其他说明**
 
 一、
 
@@ -136,9 +136,17 @@ typeof fetch !== "undefined" && getLimit()
 >
 >A：因为阿里云盘未开放相关API故暂时无法查看
 
+四、
+
+>Q：如何加载字幕？
+>
+>A：阿里云盘open 需要使用 **Aliyun Video Previewer**播放器，然后暂时"**只支持转码 mkv 封装的 srt、vtt 文本格式字幕**"
+>
+>- 目前只支持转码 eng、jpn、chi 三种语言，其他语言会丢失
 
 
-## 默认使用的下载方式
+
+## **默认使用的下载方式**
 
 ```mermaid
 ---

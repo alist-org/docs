@@ -20,7 +20,7 @@ star: true
 
 
 
-## 1. IPA native installation
+## **1. IPA native installation**
 
 You can directly upload the ipa file. 
 
@@ -32,7 +32,7 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 - If you are a mobile phone user, you can also rename the IPA file, but you must know the format mentioned above, but there is no mobile phone renaming software, please solve it yourself...
 
-### Tips
+### **Tips**
 
 -  ==.ipa installation requires https and a valid certificate== , not just a package can be installed without a signature
 
@@ -71,7 +71,7 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 
 
-## 2. TrollStore install
+## **2. TrollStore install**
 
  ==Requires AList version ≥ 3.12.2 and above==
 
@@ -93,7 +93,7 @@ If you are an iPhone 14, the factory system version is too high. For other detai
 
 
 
-### Installation example
+### **Installation example**
 
 If you want to use the installation is very simple, click the **TrollStore* button to install
 
@@ -101,7 +101,7 @@ If you want to use the installation is very simple, click the **TrollStore* butt
 
 
 
-### other instructions
+### **other instructions**
 
 1. If you click the **TrollStore** button to open Apple's magnifying glass, it is because of the following reasons
 

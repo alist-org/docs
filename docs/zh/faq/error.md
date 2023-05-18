@@ -55,11 +55,13 @@ star: true
 
 <Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: ForbiddenDriveNotValid:not valid driveld
 
+<br/>
+
 <Badge text="A" type="info" vertical="middle" />：一般指的是`驱动`已经弃用，例如阿里云盘，更换成[**阿里云盘open**](../guide/drivers/aliyundrive_open.md)即可,其他的暂时未知，其他的暂时没有
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：no such host、TLS handshake timeout、read: connection reset by peer、dns lookup failed、connect: connection refused、Client.Timeout exceeded while awaiting headers
+<Badge text="Q" type="warning" vertical="middle" />：no such host、TLS handshake timeout、read: connection reset by peer、dns lookup failed、connect: connection refused、Client.Timeout exceeded while awaiting headers、network is unreachable
 
 <br/>
 
@@ -111,6 +113,8 @@ star: true
 
 <Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: Sorry, sharing is not available in the current region（**PikPak/分享**）
 
+<br/>
+
 <Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: terabox is not yet available in this are（**Terabox**）
 
 <br/>
@@ -145,4 +149,21 @@ star: true
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：你的油猴答题插件冲突了，关闭了即可[**详情查看点击查看**](https://github.com/alist-org/alist/discussions/2399)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：连续登录输入6次密码错误就会锁定，重启AList即可重置。
+
+-----
+
 暂时就这些，如果还有可以留言，或者按照格式添加（为了统一直观）
+

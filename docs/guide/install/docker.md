@@ -23,15 +23,15 @@ See the log output for the admin's info:
 docker exec -it alist ./alist admin
 ```
 
-### Release version
+### **Release version**
 
-#### docker-cli
+#### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
-#### docker-compose
+#### **docker-compose**
 
 ```yaml
 version: '3.3'
@@ -50,20 +50,20 @@ services:
         image: 'xhofe/alist:latest'
 ```
 
-### Offline download with aria2
+### **Offline download with aria2**
 
 If you want to use aria2 to offline download, we recommend you to use this [image](https://hub.docker.com/r/xhofe/alist-aria2), which carries a pre-installed aria2.
 
-### Dev version
+### **Dev version**
 Just for amd64/arm64. Not recommended, this may can't work properly. 
 
-#### docker-cli
+#### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
-#### docker-compose
+#### **docker-compose**
 
 ```yaml
 version: '3.3'
@@ -82,10 +82,10 @@ services:
         image: 'xhofe/alist:main'
 ```
 
-### Specify version
+### **Specify version**
 See https://hub.docker.com/r/xhofe/alist for details
 
-### User / Group Identifiers
+### **User / Group Identifiers**
 
 When using volumes (`-v` flags) permissions issues can arise between the host OS and the container, we avoid this issue by allowing you to specify the user `PUID` and group `PGID`.
 
@@ -98,7 +98,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
-### Additional notes about the offline download feature
+### **Additional notes about the offline download feature**
 
 If the image is not pulled using the '''docker pull --platform''' parameter, docker may pull the 32-bit image on the 64-bit operating system, which may cause the offline download function to be unavailable even under normal configuration.
 
@@ -112,7 +112,7 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 
 
-### How to update Docker installation?
+### **How to update Docker installation?**
 
 ::: details docker-cli update
 1. docker ps -a #View the container (find the ID of the Alist container)

@@ -18,23 +18,23 @@ star: true
 
 # WebDAV
 
-## 地址
+## **地址**
 
 WebDAV 根地址
 
-## 用户名
+## **用户名**
 
 用户名
 
-## 密码
+## **密码**
 
 密码
 
-## 根文件夹路径
+## **根文件夹路径**
 
 要挂载的文件夹路径，与加入地址相同
 
-## OneDrive/SharePoint
+## **OneDrive/SharePoint**
 
 选择 vendor 为 sharepoint，支持国际版/世纪互联。
 
@@ -44,7 +44,7 @@ WebDAV 根地址
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid

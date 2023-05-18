@@ -18,27 +18,27 @@ star: true
 
 # Preview settings
 
-### Text types
+### **Text types**
 
 The extensions of the files you want to preview as text, split by `,`, such as `txt,md,go,tsx`.
 
-### Audio types
+### **Audio types**
 
 The extensions of the files you want to preview as audio, split by `,`, such as `mp3,wav,m4a`.
 
-### Video types
+### **Video types**
 
 The extensions of the files you want to preview as video, split by `,`, such as `mp4,webm,ogg`.
 
-### Image types
+### **Image types**
 
 The extensions of the files you want to preview as image, split by `,`, such as `jpg,jpeg,png,gif,webp`.
 
-### Proxy types
+### **Proxy types**
 
 The extensions of the files you want to separately set to download through proxy
 
-### External previews
+### **External previews**
 
 A json object that contains the external preview settings, It is defined as
 
@@ -85,7 +85,7 @@ when we enter a file with the extension `txt`, it will show:
 
 ![Open-with](/img/config/open-with.png)
 
-### Iframe previews
+### **Iframe previews**
 
 Similar to `External previews`, but it will embed an iframe in current page directly.
 :::tip
@@ -100,18 +100,18 @@ If you want to use self-deployed onlyoffice to preview office files, you can add
 ```
 :::
 
-### Audio cover
+### **Audio cover**
 
 The default audio cover.
 
-### Audio autoplay
+### **Audio autoplay**
 
 Whether to automatically play audio files.
 
-### Video autoplay
+### **Video autoplay**
 
 Whether to automatically play video files.
 
-### Proxy ignore headers
+### **Proxy ignore headers**
 
 For details, please check:  **https://github.com/alist-org/alist/issues/2763**

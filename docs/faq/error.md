@@ -61,7 +61,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：no such host、TLS handshake timeout、read: connection reset by peer、dns lookup failed、connect: connection refused、Client.Timeout exceeded while awaiting headers
+<Badge text="Q" type="warning" vertical="middle" />：no such host、TLS handshake timeout、read: connection reset by peer、dns lookup failed、connect: connection refused、Client.Timeout exceeded while awaiting headers、network is unreachable
 
 <br/>
 
@@ -113,6 +113,8 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 <Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: Sorry, sharing is not available in the current region（**PikPak/share**）
 
+<br/>
+
 <Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: terabox is not yet available in this are（**Terabox**）
 
 <br/>
@@ -144,6 +146,22 @@ It is some error codes during the use of `AList`, and how to solve them (network
 <br/>
 
 <Badge text="A" type="info" vertical="middle" />：When adding the open storage of Alibaba Cloud disk, `root folder ID` is wrong, which of the last ID above is the wrong ID, just get the correct replacement.
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：System error: SyntaxError: Invalid regular expression: /?/: Nothing to repeat
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：Your Tampermonkey answering plug-in conflicts, just close it [**For details, click to view**](https://github.com/alist-org/alist/discussions/2399)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：Too many unsuccessful sign-in attempts have been made using an incorrect username or password, Try again later.
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：If you enter the wrong password for 6 consecutive logins, it will be locked, and you can reset it by restarting AList.
 
 -----
 

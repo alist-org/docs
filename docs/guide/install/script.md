@@ -20,25 +20,25 @@ star: true
 
 Only for Linux-x86_64/arm64 platform.
 
-### Install
+### **Install**
 
 ```bash
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
 ```
 
-### update
+### **update**
 
 ```bash
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
 ```
 
-### Uninstall
+### **Uninstall**
 
 ```bash
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
 ```
 
-### Custom path
+### **Custom path**
 
 The default installation is in `/opt/alist`. To customize the installation path, add the installation path as the second parameter, which must be an absolute path (if the path ends in alist, install directly to the given path, otherwise it will be installed in the given path alist Directory), such as installing to `/root`:
 

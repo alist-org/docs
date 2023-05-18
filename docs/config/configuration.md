@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-### Initial config
+### **Initial config**
 
 ```json
 {
@@ -62,19 +62,19 @@ star: true
 
 ## Field Description
 
-### force
+### **force**
 
 The program will preferentially read the configuration from the environment variable, set `force` to `true` to force the program to read the configuration file.
 
-### address
+### **address**
 
 The address to listen on, default `0.0.0.0`
 
-### port
+### **port**
 
 The port to listen on, default `5244`
 
-### site_url
+### **site_url**
 
 The url of your `alist` site, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
 - thumbnail of `LocalStorage`
@@ -85,6 +85,8 @@ The url of your `alist` site, such as `https://pan.nn.ci`.This address will be u
 
 Do not carry `/` at the end when filling in the link, otherwise it cannot be used or other problems
 
+- Do not carry `/` at the end of the URL link, correct example:heavy_check_mark: :`https://pan.nn.ci`, wrong example: `https://pan.nn.ci/` :x:,Otherwise the following functions will not be available
+
 ```json
 # Correct way of writing:
 "site_url": "https://pan.nn.ci",
@@ -92,7 +94,7 @@ Do not carry `/` at the end when filling in the link, otherwise it cannot be use
 "site_url": "https://pan.nn.ci/",
 ```
 
-### cdn
+### **cdn**
 
 The CDN address, if you want to use CDN, you can set this field, the `$version` will be replaced with the real version of `alist-web`
 This is dynamic and changeable. Existing dist resources are hosted on both npm and GitHub, and their locations are:
@@ -111,15 +113,15 @@ So you can use any npm or github cdn as the path, for example:
 
 Also you can keep it empty to use local dist.
 
-### jwt_secret
+### **jwt_secret**
 
 The secret used to sign the JWT token, random generated first time start.
 
-### token_expires_in
+### **token_expires_in**
 
 User login expiration time, unit: `hours`.
 
-### database
+### **database**
 
 The database configuration, the default is `sqlite3`, you can also use `mysql` or `postgres`.
 
@@ -176,7 +178,7 @@ In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses S
 
 ::::
 
-### scheme
+### **scheme**
 
 The scheme configuration, if you want to use https, you can set this field.
 
@@ -190,7 +192,7 @@ The scheme configuration, if you want to use https, you can set this field.
   },
 ```
 
-### temp_dir
+### **temp_dir**
 
 The temporary directory, default `data/temp`
 
@@ -198,17 +200,17 @@ The temporary directory, default `data/temp`
 temp_dir is a temporary folder exclusive to alist. In order to avoid program interruption and generate garbage files, it will be cleared every time it starts, so please do not manually put any content in this folder, and do not use this folder and its subfolders when using docker Folders are mapped to folders in use.
 :::
 
-### log
+### **log**
 
 The log configuration, if you want to setup the log level, you can set this field.
 
-### max_connections
+### **max_connections**
 
 The maximum number of connections (concurrent) at the same time, the default is 0, that is, unlimited.
 
 - 10 or 20 is recommended for general equipment such as n1
    - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)
 
-### tls_insecure_skip_verify
+### **tls_insecure_skip_verify**
 
 Whether to examine the SSL certificate, if there is a problem with the certificate of the website used after opening (such as not including the intermediate certificate, certificate expiration, certificate forgery, etc.), the service will not be available,Close this option, please try to run the program in a safe network environment

@@ -23,7 +23,7 @@ star: true
 
 
 
-## usage
+## **usage**
 
 Let me briefly explain the specific usage. It is recommended to look at the different usages below. The more advanced the gameplay
 
@@ -34,14 +34,14 @@ Don't look at the writing, it looks difficult and long-winded, but in fact, you 
 
 <Badge text="1" type="info" vertical="middle" />The simplest usage, just write the link directly
 
-##### input
+##### **input**
 
 ``` 
 http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
 https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
 ```
 
-##### output
+##### **output**
 
 ```
 │ aff9c9c8817d943d6857a73188958d45.jpeg
@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/alist-org/alist/main/README_cn.md
 
 <Badge text="2" type="info" vertical="middle" />While there are files, you can also create folders ^the first code example^, or you can create multiple folders ^the second code example^
 
-##### input
+##### **input**
 
 ``` 
 http://pic.rmb.bdstatic.com/bjh/aff9c9c8817d943d6857a73188958d45.jpeg
@@ -74,7 +74,7 @@ folde2r:
   https://raw.githubusercontent.com/alist-org/alist/main/CONTRIBUTING.md
 ```
 
-##### output
+##### **output**
 
 ```
 │  aff9c9c8817d943d6857a73188958d45.jpeg
@@ -164,7 +164,7 @@ folder33:
 
 - It is not recommended to write like **`2.jpeg, 5.jpeg`**, it is recommended to go to that layer of folders to add links according to the format, not like the following error example to write
 
-##### incorrect usage
+##### **incorrect usage**
 
 ```
 folder22:
@@ -181,7 +181,7 @@ folder22:
         http://pic.rmb.bdstatic.com/bjh/5.jpeg
 ```
 
-##### correct usage
+##### **correct usage**
 
 When files like **`2.jpeg, 5.jpeg`** are added, they are added to the corresponding directory, which correspond to the two folders `folder222 and folder22222` respectively
 
@@ -244,7 +244,7 @@ software
 
 :::
 
-## Tips
+## **Tips**
 
 1. If you click download and find that there is no jump to download but preview, it is because it is determined according to your original link. For example, your original link is download and it will jump to download
 2. If you have the same file in a folder, it will be merged and only one will be displayed. By default, the preview is used to view and download your upper (front) or top file.
@@ -254,7 +254,7 @@ software
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

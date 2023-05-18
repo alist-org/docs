@@ -19,19 +19,19 @@ star: true
 # Terabox
 
 
-## refresh token
+## **refresh token**
 
 [**Click here to log in**](https://www.terabox.com/) to obtain a refresh token
 
 ![terabox](/img/drivers/terabox/terabox1.png)
 
-## Add method
+## **Add method**
 
 ![terabox](/img/drivers/terabox/terabox2.png)
 
 
 
-#### Note: The default root file path is /
+#### **Note: The default root file path is /**
 
 - If you don't want to write to the root directory **/** you want to write to other directories
 - Mount other single subdirectories, put a picture for reference
@@ -40,7 +40,7 @@ star: true
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

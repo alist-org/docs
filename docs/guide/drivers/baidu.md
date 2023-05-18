@@ -26,20 +26,20 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent: pan.baidu.com'
 Or use the proxy function in this program to transfer.
 :::
 
-### Refresh token
+### **Refresh token**
 [Click here](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) to get the refresh token.
 
-### Root folder path
+### **Root folder path**
 The root foler to mount, defaults to `/`, same as local storage.
 
-### Download api
+### **Download api**
 - official: The official interface, very stable, but for larger files, UA needs to be modified and the speed is slow
-- crack: unofficial interface, no need to modify UA and some files may not limit the speed, but **maybe** unstable
+- ~~crack: unofficial interface, no need to modify UA and some files may not limit the speed, but **maybe** unstable~~
   - ==crack: Unofficial Interface== Seems to be Harmonized? [**Click here for details to view FAQs**](../../faq/why.md#baidu-cloud-disk-unofficial-download-error-appears-hit-black-userlist-hit-illegal-dlna)
 
 
 
-### Add "User-Agent" usage example
+### **Add "User-Agent" usage example**
 
 ::::danger If you don't know how to set "User-Agent" see here
 
@@ -77,7 +77,7 @@ Example <Badge text="2" type="info" vertical="middle" />: Another plugin method 
 
 ::::
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

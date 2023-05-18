@@ -20,11 +20,11 @@ star: true
 
 UPYUN 存储服务，简称 USS
 
-## Bucket
+## **Bucket**
 
-UPYUN 存储服务名称
+**UPYUN 存储服务名称**
 
-## Endpoint
+## **Endpoint**
 
 加速域名（默认的测试域名或已绑定域名，不是CNAME域名）
 
@@ -33,26 +33,26 @@ UPYUN 存储服务名称
 又拍云提供的默认测试域名在部分网络环境下无法访问，且不支持https，建议使用自行绑定的域名
 
 
-## Operator name
+## **Operator name**
 
 操作员名称
 
-## Operator password
+## **Operator password**
 
 操作员密码
 
-## Root folder path
+## **Root folder path**
 
 根路径，不填则默认为根目录。
 
-## Sign url expire
+## **Sign url expire**
 
 签名下载地址的有效期默认为 4 小时。
 
 
 
 
-## 详情填写示意图
+## **详情填写示意图**
 
 ::: tip
 
@@ -68,7 +68,7 @@ UPYUN 存储服务名称
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

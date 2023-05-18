@@ -18,19 +18,19 @@ star: true
 
 # Common
 
-### Mount Path
+### **Mount Path**
 
 Unique identifier, that is the location you want to mount to, if you want to mount to the root directory, it is `/`
 
-### Order
+### **Order**
 
 When there are multiple accounts, it is used for sorting, The smaller the more forward
 
-### Remark
+### **Remark**
 
 Anything you want to fill in, which is just for reminding you what this storage is
 
-## Enable signing
+## **Enable signing**
 
 Sign and encrypt files (no password required), only valid for this driver, if other signatures are not enabled and `signature all` and `meta-information encryption` are not set, others will not be signed
 
@@ -38,21 +38,21 @@ Usage scenario: I don't want to enable all signatures, and I don't want to set m
 
 Scope of influence: `Settings-->Global-->Signature All` > `Metainformation Directory Encryption` > `Single Driver Signature`
 
-### Cache Expiration
+### **Cache Expiration**
 
 Cache time of directory structure.
 
-### Web proxy
+### **Web proxy**
 
 Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [site_url](../../config/configuration.md#site_url) so that alist can works fine.
 
-### Webdav policy
+### **Webdav policy**
 
 - 302 redirect: redirect to the real link
 - use proxy URL: redirect to proxy URL
 - native proxy: return data directly through local transit(best compatibility)
 
-### Description of three modes
+### **Description of three modes**
 ```flow
 1=>start: cloud disk
 2=>end: you

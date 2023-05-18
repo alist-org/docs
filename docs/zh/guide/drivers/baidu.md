@@ -30,23 +30,23 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 :::
 
-## 刷新令牌
+## **刷新令牌**
 
 [点击这里](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) 来获取刷新令牌。
 
-## 根文件夹路径
+## **根文件夹路径**
 
 要挂载的根文件夹，默认为`/`，与本地存储相同。
 
-## Download API
+## **Download API**
 
 - official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢
-- crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定
+- ~~crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定~~
   -  ==crack: 非官方接口== 似乎已经和谐了？[**详情自行点击查看常见问题说明**](../../faq/why.md#百度云盘非官方下载报错出现-hit-black-userlist-hit-illeage-dlna)
 
 
 
-## 添加 "User-Agent" 使用示例
+## **添加 "User-Agent" 使用示例**
 
 ::::danger 如果你不会设置 "User-Agent" 请看这里
 
@@ -84,7 +84,7 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 ::::
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

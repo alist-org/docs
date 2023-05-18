@@ -31,7 +31,7 @@ Wait for the more detailed tutorials to be supplemented after the relevant equip
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

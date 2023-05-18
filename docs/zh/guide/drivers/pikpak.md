@@ -18,17 +18,17 @@ star: true
 
 # PikPak/分享
 
-## PikPak挂载
+## **PikPak挂载**
 
-### 用户名
+### **用户名**
 
 邮件地址或者电话号码？
 
-### 密码
+### **密码**
 
 密码
 
-### 根文件夹ID
+### **根文件夹ID**
 
 可以通过 https://mypikpak.com/ 获取，默认为 `root`。
 
@@ -36,7 +36,7 @@ star: true
 
 
 
-## PikPak分享挂载（v3.12.0修复）
+## **PikPak分享挂载（v3.12.0修复）**
 
 ::: warning
 ~~截止 **2023年2月4日** 挂载分享已被官方河蟹，目前只可以看前4分钟，后续还能不能用等待即可~~ 
@@ -52,14 +52,14 @@ star: true
 
 ![pik](/img/drivers/pik/pik1.png)
 
-## 批量添加PikPak分享挂载
+## **批量添加PikPak分享挂载**
 
 使用的软件：**https://github.com/yzbtdiy/alist_batch**
 
 <BiliBili bvid="BV1Ps4y1U7Zu" ratio="16:9" low-quality no-danmaku />
 
 
-## 注意事项
+## **注意事项**
 
 **Q**：添加存储时提示：**Failed init storage: invalid_account_or_password** 怎么办，我输入的密码的对的
 
@@ -71,7 +71,7 @@ star: true
 
 **A**：因为在国内^PikPak^是禁止访问的，给`AList`使用代理即可，如何让`AList`使用代理[**参考方案之一,此方法仅限于Windows搭建**](https://anwen-anyi.github.io/index/07-wenti.html#_41-alist%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-%E5%90%83%E5%88%B0-%E4%BB%A3%E7%90%86-proxy)
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

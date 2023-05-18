@@ -19,16 +19,16 @@ star: true
 # Meta
 The configuration in the meta information is only valid for `Guest`, if you want to have the corresponding permissions for the newly created ordinary users, please go to `User`-->`User Account` to modify the relative permissions
 
-### Path
+### **Path**
 
 The path for this meta to take effect
-### Password
+### **Password**
 Password required to access this path
-### Write
+### **Write**
 Allow guest to make directory, new file and upload files.
-### Hide
+### **Hide**
 The objects to hide of this path, One regular expression (in `Golang`) per line.
-### Readme
+### **Readme**
 The Readme to render while enter this path, support markdown content or markdown link.
-### Apply to sub folder
+### **Apply to sub folder**
 Apply this meta to sub folder of specific path

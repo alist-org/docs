@@ -37,11 +37,11 @@ If you use **docker**, please map the following two default paths by yourself. (
 
 :::
 
-## 1.Aria2
+## **1.Aria2**
 
 [**Click to view instructions for use**](../../config/other.md)
 
-## 2.qBittorrent
+## **2.qBittorrent**
 
 (Here we take the Windows side as an example, I don’t know if there is one on the Linux side)
 
@@ -82,7 +82,7 @@ According to [source code](https://github.com/alist-org/alist/blob/main/internal
 
 
 
-### Precautions
+### **Precautions**
 
 1. Appeared in the background qBittorrent task: **`torrent parse timeout`**, parsing timed out
 2. The torrent can be parsed, but **`The system cannot find the path specified.`** appears when uploading.
