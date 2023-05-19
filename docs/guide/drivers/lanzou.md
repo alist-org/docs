@@ -29,13 +29,13 @@ There are two **modes (types)** of Lanzuo network disk mount, respectively **coo
 
 
 
-## refresh token
+## **refresh token**
 
 Log in to your [**Lanzuo Cloud Disk**](https://pc.woozooo.com/) account, then F12 to open the developer mode, you can find `Cookie`, there is no specific one, such as the left side of the picture Just click one and there will be `Cookie` in the blue part of the right picture.
 
 ![lanzou](/img/drivers/lanzou/lanzou1.png)
 
-## root folder ID
+## **root folder ID**
 
 Lanzuo cloud disk root directory ID, the default is `-1`
 
@@ -43,7 +43,7 @@ Lanzuo cloud disk root directory ID, the default is `-1`
    - Two ways to obtain (see the picture below)
    - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
 
-## Share link and share password
+## **Share link and share password**
 
 - **Share link**: Randomly generate a share link in the Lanzuo cloud disk
    - Small tip: **lanzouX** in the link, the last default **X** content sometimes cannot be opened in some areas, you can try to change it yourself, for example, change to i, x, u, t, etc. Anyway, try it out for yourself.
@@ -51,19 +51,19 @@ Lanzuo cloud disk root directory ID, the default is `-1`
 
 
 
-## Repair file info
+## **Repair file info**
 
 If you need **WebDav** service, you need to open it
 
 
 
-## Mount and fill in the example
+## **Mount and fill in the example**
 
 ![lanzou](/img/drivers/lanzou/lanzou3.png)
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

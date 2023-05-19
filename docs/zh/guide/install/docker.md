@@ -24,15 +24,15 @@ star: true
 docker exec -it alist ./alist admin
 ```
 
-## 发行版本
+## **发行版本**
 
-##### docker-cli
+##### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
-##### docker-compose
+##### **docker-compose**
 ```yaml
 version: '3.3'
 services:
@@ -50,21 +50,21 @@ services:
         image: 'xhofe/alist:latest'
 ```
 
-### 使用 aria2 离线下载
+### **使用 aria2 离线下载**
 
 如果你想使用aria2离线下载，我们推荐你使用这个[image](https://hub.docker.com/r/xhofe/alist-aria2)，它预装了aria2。
 
-### 开发版本
+### **开发版本**
 
 仅适用于 amd64/arm64。不推荐，这可能无法正常工作。
 
-##### docker-cli
+##### **docker-cli**
 
 ```bash
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
-##### docker-compose
+##### **docker-compose**
 ```yaml
 version: '3.3'
 services:
@@ -82,11 +82,11 @@ services:
         image: 'xhofe/alist:main'
 ```
 
-### 指定版本
+### **指定版本**
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
 
-### 用户/组标识符
+### **用户/组标识符**
 
 当使用卷（`-v` 标志）权限问题时，主机操作系统和容器之间可能会出现权限问题，我们通过允许您指定用户 `PUID` 和组 `PGID` 来避免此问题。
 
@@ -99,7 +99,7 @@ services:
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
-## 有关离线下载功能的额外说明
+## **有关离线下载功能的额外说明**
 
 若没有使用```docker pull --platform```参数拉取镜像时，docker可能会在64位操作系统上拉取32位镜像,这将可能导致离线下载功能即使在正常配置情况下也无法使用。
 
@@ -111,8 +111,8 @@ services:
 
 如果是CPU架构是32位，目前尚无可用方案。
 
-## Docker安装怎么更新?
-::: details docker-cli
+## **Docker安装怎么更新?**
+::: details docker-cli 更新
 
 
 1. docker ps -a #查看容器(找Alist容器的ID)
@@ -132,11 +132,15 @@ services:
 
 :::
 
-:::details docker-compose
+:::details docker-compose 更新
 1. docker-compose pull
 2. docker-compose up -d
+
 :::
 
-Q：我的版本是v3.x.x 怎么也升级不到最新版 docker pull xhofe/alist:latest拉取最新不行 改成docker-compose安装还是3.x.x版本
+Q：我的版本是v3.x.x 怎么也升级不到最新版 `docker pull xhofe/alist:latest`拉取最新不行 改成docker-compose安装还是3.x.x版本
 
 A：原因是你的docker设置了镜像，从镜像更新不到最新版本，改一下/etc/docker/daemon.json，删除"registry-mirrors": ["镜像加速器地址"]
+
+- 删除若不行，可以考虑更换一个`镜像加速地址`
+- 或者简单粗暴：下载时将`xhofe/alist: ==latest== `替换为`xhofe/alist: ==v3.16.3==`（指定版本，写教程时最新的是3.16.3）

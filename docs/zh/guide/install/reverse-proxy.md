@@ -24,7 +24,7 @@ star: true
 
 > 如果你想使用子目录，参考[这里](../../faq/howto.md#如何对子目录进行反向代理)
 
-## nginx
+## **nginx**
 
 在网站配置文件的 server 字段中添加
 
@@ -54,7 +54,7 @@ location / {
 
 :::
 
-## Apache
+## **Apache**
 
 在 VirtualHost 字段下添加配置项 ProxyPass，如：
 
@@ -69,7 +69,7 @@ location / {
 </VirtualHost>
 ```
 
-## Caddy
+## **Caddy**
 
 在 Caddyfile 文件下添加 reverse_proxy，如：
 
@@ -89,7 +89,7 @@ example.com {
 将 `example.com` 替换为你自己解析后的域名。
 
 ```
-## 宝塔设置反向代理简单示范
+## **宝塔设置反向代理简单示范**
 
 首先新建一个站点，**Alist启动程序** 在不在这个站点文件夹内都无所谓，然后照着下图添加即可。
 

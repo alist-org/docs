@@ -29,13 +29,13 @@ star: true
 
 
 
-## 刷新令牌
+## **刷新令牌**
 
 登录自己的 [**蓝奏云盘**](https://pc.woozooo.com/) 账号，然后F12打开开发者模式，就能找到 `Cookie`，没有具体的，例如图片中左侧的随便点一个然后有右图蓝色部分的 `Cookie` 即可.
 
 ![lanzou](/img/drivers/lanzou/lanzou1.png)
 
-## 根文件夹ID
+## **根文件夹ID**
 
 蓝奏云盘根目录ID，默认为`-1`
 
@@ -43,7 +43,7 @@ star: true
   - 两种获取方式（看下图即可）
   - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
 
-## 分享链接和分享密码
+## **分享链接和分享密码**
 
 - **分享链接**：在蓝奏云盘内随便生成一个分享链接
   - 小提示 ：链接里面的 **lanzouX**，最后这个默认的 **X**内容有时候有些地区打不开，可以自己更换一下试试看比如换成 i,x,u,t 等等等反正好多自己试试看就行.
@@ -51,19 +51,19 @@ star: true
 
 
 
-## Repair file info
+## **Repair file info**
 
 需要 **WebDav** 服务的，需要打开它
 
 
 
-## 挂载填写示例
+## **挂载填写示例**
 
 ![lanzou](/img/drivers/lanzou/lanzou3.png)
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

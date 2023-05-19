@@ -32,7 +32,7 @@ Of course, you can also turn on the proxy so that `refresh token` of desktop web
 
 :::
 
-### Refresh token
+### **Refresh token**
 
 Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (/data/media/0/Android/data/com.alicloud.databox/ files/logs/trace/). Or you can click:
 
@@ -113,30 +113,30 @@ const onClick = async ()=>{
 
 *API is hosted on replit.com*
 
-### Root folder file_id
+### **Root folder file_id**
 
 Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940, which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`:
 
 ![file_id](/img/drivers/aliyundrive.png)
 
-## Second pass
+## **Second pass**
 
 Check the hash when uploading. If there is one in the cloud, directly generate the file without consuming traffic
 
 
-## Internal upload
+## **Internal upload**
 
 If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
 
 
-## Alibaba cloud disk sharing
+## **Alibaba cloud disk sharing**
 
 Don't think about it... It has been repaired and will no longer develop and maintain the shared storage method, and the Alibaba cloud disk open platform token cannot be used for shared mounted storage.
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

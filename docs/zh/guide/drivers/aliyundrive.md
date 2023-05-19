@@ -31,7 +31,7 @@ star: true
 
 :::
 
-## 刷新令牌
+## **刷新令牌**
 
 按照这个 [issue](https://github.com/Xhofe/alist/issues/88) 在手机上捕获/查找日志 (/data/media/0/Android/data/com.alicloud.databox/ 文件/日志/跟踪/）。 或者您可以点击：
 
@@ -113,7 +113,7 @@ const onClick = async ()=>{
 
 *API is hosted on replit.com*
 
-## Root folder file_id
+## **Root folder file_id**
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
@@ -123,23 +123,23 @@ const onClick = async ()=>{
 
 ![file_id](/img/drivers/aliyundrive.png)
 
-## 秒传
+## **秒传**
 
 上传的时候校验hash，如果云端有，直接生成文件，不消耗流量
 
-## 内部上传
+## **内部上传**
 
 如果你部署 Alist 的服务器是阿里云北京地区ECS，打开此开关可以提升文件上传速度。不符合要求的服务器请不要打开此开关，否则会出现无法上传的问题。
 
 
 
-## 阿里云盘分享
+## **阿里云盘分享**
 
 别想着了...已经修复后续不再开发和维护分享存储方式了，阿里云盘开放平台 token也不可以用在分享挂载存储。
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

@@ -39,11 +39,11 @@ star: true
 
 :::
 
-## 1.Aria2
+## **1.Aria2**
 
 [**点击查看使用说明**](../../config/other.md)
 
-## 2.qBittorrent
+## **2.qBittorrent**
 
 （这里以Windows端举例，Linux端不清楚有没有）
 
@@ -80,7 +80,7 @@ star: true
 
 
 
-### 注意事项
+### **注意事项**
 
 1. 在后台qBittorrent任务中出现：**`torrent parse timeout`**，解析超时
 2. 可以解析种子下载，但是在上传的时候出现 **`The system cannot find the path specified.`** 找不到路径

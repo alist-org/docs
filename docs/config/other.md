@@ -18,13 +18,13 @@ star: true
 
 # Other settings
 
-### Aria2
+### **Aria2**
 
 Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the same server(container if use docker) as alist.
 
 
 
-## Qbittorrent url
+## **Qbittorrent url**
 
 Used to customize **Qbittorrent** parameters to configure the client to use
 
@@ -32,12 +32,12 @@ The default value is: http://admin:adminadmin@localhost:8080/, you can modify it
 
 
 
-### Token
+### **Token**
 
 The token that can be used to access all API.
 
 
 
-### other
+### **other**
 
 When using it, I found that there are two Aria2, but what is the difference? [**Click to view the detailed description**](../faq/why.md#what-is-the-difference-between-the-two-aria2)

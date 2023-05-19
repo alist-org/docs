@@ -20,17 +20,17 @@ star: true
 
 
 
-## PikPak
+## **PikPak**
 
-### Username
+### **Username**
 
 email or phone?
 
-### Password
+### **Password**
 
 password
 
-### Root folder id
+### **Root folder id**
 
 Can get with https://mypikpak.com/ , default `root`.
 
@@ -38,7 +38,7 @@ Can get with https://mypikpak.com/ , default `root`.
 
 
 
-## PikPak Share(v3.12.0 fix)
+## **PikPak Share(v3.12.0 fix)**
 
 ::: warning
 ~~As of **February 4, 2023**, the sharing mount  has been officially banned. Currently, you can only watch the first 4 minutes.Stay tuned for when it will be restored~~
@@ -54,21 +54,25 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 
 ![pik](/img/drivers/pik/pik1.png)
 
-## Batch add PikPak shared mounts
+## **Batch add PikPak shared mounts**
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
 Tutorial video：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
 
-## Precautions
+## **Precautions**
 
 **Q**: Prompt when adding storage: **Failed init storage: invalid_account_or_password** What should I do, the password I entered is correct
 
 **A**: If the account password is not filled in incorrectly, it may be that you used Google, FB and other third-party quick registration when you registered. Although it seems that the account is a Google mailbox, you cannot log in with the mailbox, but you must use the first Three-party verification, **Alist** does not support this kind of jumping to third-party verification, **so you need to bind an email address in the account settings and set a login password**, or register a new account
 
+-----
 
+**Q**: Prompt when adding mount: **failed get objs: failed to list objs: Sorry, sharing is not available in the current region**
 
-### The default download method used
+**A**: Because access to ^PikPak^ is prohibited in China, just use a proxy for `AList`, how to make `AList` use a proxy [**One of the reference solutions, this method is limited to Windows build**](https://anwen-anyi.github.io/index/07-wenti.html#_41-alist%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-%E5%90%83%E5%88%B0-%E4%BB%A3%E7%90%86-proxy)
+
+### **The default download method used**
 
 ```mermaid
 ---

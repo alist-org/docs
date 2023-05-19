@@ -21,25 +21,25 @@ Seafile uses libraries as a unit for version control and synchronization.
 
 Use this driver to mount a Seafile repository to Alist, encrypted repositories are not supported yet.
 
-## Root folder path
+## **Root folder path**
 
 Directory within the Seafile repository to be mounted, default root directory: `/`
 
-## Address
+## **Address**
 
 Your Seafile server address, e.g.
 - `https://seacloud.cc`
 - `http://192.168.1.24:8000`
 
-## Username
+## **Username**
 
 The email or username used to log in to your Seafile server.
 
-## Password
+## **Password**
 
 The password for your email or username.
 
-## RepoId
+## **RepoId**
 
 Seafile library ID, e.g. `86fc6316-3f2a-4c64-b6f5-d4d2b341bc9a`
 
@@ -47,7 +47,7 @@ Seafile library ID, e.g. `86fc6316-3f2a-4c64-b6f5-d4d2b341bc9a`
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

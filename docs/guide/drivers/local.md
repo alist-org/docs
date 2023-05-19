@@ -17,7 +17,7 @@ star: true
 ---
 # Local storage
 
-### Root folder path
+### **Root folder path**
 
 The path of folder you wanted to mount. For example:
 
@@ -26,7 +26,7 @@ The path of folder you wanted to mount. For example:
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

@@ -20,24 +20,24 @@ star: true
 
 That is to access files through the ssh protocol.
 
-### Address
+### **Address**
 SSH address, need contains port.
 
-### Username
+### **Username**
 ssh username, usually root
 
-### Password
+### **Password**
 ssh password
 
-### Private key
+### **Private key**
 Use Private key to auth otherwise password.
 
-### Root folder path
+### **Root folder path**
 root path to mount
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

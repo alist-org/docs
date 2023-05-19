@@ -20,13 +20,13 @@ star: true
 
 Driver for BaiduYun share link, supports downloading but not uploading, using an unofficial api.
 
-## Settings
+## **Settings**
 
 Viewing folders require the surl and pwd, and BDUSS is needed for downloading.
 surl is the part between `pan.baidu.com/s/` and the `?`, and pwd is the password if the link got one.
 You can get BDUSS from your cookie, follow the [guidance](http://pandownload.net/faq/cookie.html), prefix not needed.
 
-## QA
+## **QA**
 |setting|error message|tips|
 |---|---|---|
 |surl|`{"errno":2,"errtype":0}`|invalid share link|
@@ -34,7 +34,7 @@ You can get BDUSS from your cookie, follow the [guidance](http://pandownload.net
 |BDUSS|`{"errno":9019,"errmsg":"need verify"}`|invalid BDUSS, get a new one|
 |UA|`{"error_code":31326,"error_msg":"user is not authorized, hitcode:119"}`|invalid user-agent, set a non-browser UA(ex. netdisk) or use web proxy|
 
-## Developing
+## **Developing**
 
 The api is from [github.com/yuantuo666/baiduwp-php](https://github.com/yuantuo666/baiduwp-php), an unofficial project.
 We have developed the folder viewing and file downloading function, further developments are welcome.

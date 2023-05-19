@@ -23,7 +23,7 @@ The program listens to port 5244 by default. If you do `reverse proxy`, recommen
 
 > If you want to use a sub folder, refer to [reverse proxy with sub folder](../../faq/howto.md#how-to-reverse-proxy-with-sub-directory)
 
-### nginx
+### **nginx**
 Add in the server field of the website configuration file
 ```nginx
 location / {
@@ -48,7 +48,7 @@ If you use the bt.cn, be sure to delete the following default configuration
 :::
 
 
-### Apache
+### **Apache**
 Add the anti-generation configuration item ProxyPass under the VirtualHost field, such as:
 ```xml
 <VirtualHost *:80>
@@ -61,7 +61,7 @@ Add the anti-generation configuration item ProxyPass under the VirtualHost field
 </VirtualHost>
 ```
 
-### Caddy
+### **Caddy**
 Add the reverse_proxy configuration item reverse_proxy under the Caddyfile file, for example:
 ```xml
 :80 {
@@ -69,7 +69,7 @@ Add the reverse_proxy configuration item reverse_proxy under the Caddyfile file,
 }
 ```
 
-### A simple demonstration of setting up a reverse proxy in Pagoda
+### **A simple demonstration of setting up a reverse proxy in Pagoda**
 
 First create a new site, **Alist Launcher** does not matter whether it is in the site folder, and then add it as shown in the figure below.
 

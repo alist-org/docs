@@ -18,21 +18,21 @@ star: true
 
 # FTP
 
-### Address
+### **Address**
 FTP address, need contains port.
 
-### Username
+### **Username**
 FTP username
 
-### Password
+### **Password**
 FTP password
 
-### Root folder path
+### **Root folder path**
 root folder , default `/`, same as local storage.
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

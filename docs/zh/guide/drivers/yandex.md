@@ -18,13 +18,13 @@ star: true
 
 # Yandex云盘
 
-### 刷新令牌
+### **刷新令牌**
 [点击这里](https://oauth.yandex.com/authorize?response_type=code&client_id=a78d5a69054042fa936f6c77f9a0ae8b) 来获取刷新令牌。
 
-### 根文件夹路径
+### **根文件夹路径**
 要挂载的根文件夹，默认为 `/`
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

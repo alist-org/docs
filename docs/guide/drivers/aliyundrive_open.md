@@ -42,17 +42,18 @@ typeof fetch !== "undefined" && getLimit()
 1.  ==The refresh token obtained by this tool can only be used for **Aliyundrive open platform** storage mount method== 
 2. The token filled in when Alist is mounted should also be provided by this tool, and the previous acquisition method will not be available
 3. Not applicable to others, but only for Alist
-4. If the same IP requests =={{ max }}== times within =={{ minutes }}== minutes, **TooManyRequests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
-    - For example, a request is counted when saving/editing, and viewing a file or watching a video download is not counted.
+4. If the same IP requests =={{ max }}== times within =={{ minutes }}== minutes, **Too Many Requests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
+    - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
     - The number of times and time mentioned above are dynamic~
+    - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
 
 :::
 
-## refresh token
+## **refresh token**
 
 Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
-#### Get example graph
+#### **Get example graph**
 
 **refresh_token** can be obtained in the following two ways
 
@@ -70,7 +71,7 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
 
 
-### Root folder file_id
+### **Root folder file_id**
 
 Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
 
@@ -80,13 +81,13 @@ which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 
 
-### Client id，Client secret
+### **Client id，Client secret**
 
 Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by Alist.
 
 
 
-## Remove way
+## **Remove way**
 
 - Trash: Enter the cloud disk recycle bin after AList is deleted, which will occupy the cloud disk space, but it can be retrieved if it is deleted by mistake later.
 - Delete: direct deletion will not stay in the recycle bin, and will not occupy cloud disk space, but if deleted by mistake later, it cannot be retrieved.
@@ -94,8 +95,15 @@ Normal users don’t need to fill in the blank. If they apply for official autho
 
 
 
+## **Internal upload**
 
-## other instructions
+If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
+
+- **Internal upload** Can Alibaba Cloud ECS in non-Beijing areas be used? No, because Alibaba Cloud Disk is using object storage in the Beijing area
+
+
+
+## **other instructions**
 
 one、
 
@@ -121,30 +129,20 @@ two、
 
 three、
 
-> - If the Alibaba cloud disk you mounted is Open, after restarting, reloading, and updating, you will find a prompt **TooManyRequests**
->
-> - Check whether your account exceeds the number mentioned in the note in the red prompt at the top, that is, the number of open Alibaba Cloud disks you added > =={{ max }}==
->
-> - The solution is to disable all the mounted Alibaba cloud disk Open, wait for =={{ minutes }}== minutes, and then click one by one to enable the number not to exceed =={{ max }}== times, and then wait =={{ minutes }}== After a few minutes, click to open again, and it will recover slowly.
->  - (Whispering reminder: If you have more than a dozen accounts, it’s okay, it’s not a big problem to restore =={{ max }}== one at a time. If you have 30 or 50 accounts, it is recommended that you restore about 4 each time , because it will help you refresh the refresh token every 2 hours, and it will also be called to prevent you from causing GG too many times...)
-> 
->
-> 
->- Another problem, if the Alibaba Cloud Disk Open you mounted is a cloud disk account, and then mounted different folders to the account and added multiple accounts, resulting in too many Alibaba Cloud Open accounts added, this is a good solution
->   - Solution: Go to the official page of Alibaba Cloud Disk and integrate all the folders you need to mount into one folder, then only mount the integrated folder, and then pass [**alias**](../advanced/alias.md) are mounted separately, just write one for each path, so that a single path can be mounted and displayed separately. Of course, you can also integrate multiple ones together, or use it directly. Example 3 to show different ones can also be
->
-> 
->
-> If you add more than =={{ max }}== to one account and one network disk, then you can only restore it slowly by starting.
-
-Four、
-
 >Q: Why can’t Alibaba Cloud Disk Open see files of the Office Family Bucket type?
 >
 >A: Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view
 
+Four、
 
-### The default download method used
+>Q: How to load subtitles?
+>
+>A: Aliyun Disk Open needs to use **Aliyun Video Previewer** player, and temporarily "**Only support transcoding mkv-encapsulated srt, vtt text format subtitles**"
+>
+>- Currently only supports transcoding eng, jpn, chi three languages, other languages will be lost
+
+
+### **The default download method used**
 
 ```mermaid
 ---

@@ -24,7 +24,7 @@ If your account does not support the API, (for example, the school account has n
 
 First open https://alist.nn.ci/tool/onedrive/request
 
-### Create an application
+### **Create an application**
 > You can also choose to skip this step and use the client provided by default, but requires the approval of the organization administrator.
 
 - On the page that opens, select the region and click Create Application
@@ -35,19 +35,19 @@ First open https://alist.nn.ci/tool/onedrive/request
   ![client_secret](/img/drivers/onedrive-new-password.png)
 - Select `API Permissions`, click `MicroSoft Graph`, enter file in the `Select Permissions`, and check `Files.read` (Note: Files.read is a read-only minimum permission. The permission in the figure is larger, and the same can be done ), click `Update Permission`
   ![api](/img/drivers/onedrive-update-permission.png)
-### Get refresh token
+### **Get refresh token**
 Fill in the client_id and client_secret obtained in the previous step into the https://alist.nn.ci/tool/onedrive/request page, click Get Refresh Token, you can get the refresh token
 
-### Get Sharepoint site_id
+### **Get Sharepoint site_id**
 If you need to mount Sharepoint, after completing the previous step, an input site address will appear on the interface that displays the refresh token. After entering the site address, click Get site_id.
-### Add storage
+### **Add storage**
 Fill in the values ​​obtained in the above process one by one.
-#### Root folder path
+#### **Root folder path**
 The default is `/`, if you need to customize, just fill in the path, starting from the root path, the same as the local path, such as `/test`
 
 
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

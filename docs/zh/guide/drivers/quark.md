@@ -22,7 +22,7 @@ star: true
 由于夸克网盘的限制，下载必须携带 Cookies，所以只能使用本程序中的代理功能进行传输。 （可以用其他机器转）
 :::
 
-## Cookie 和 根文件夹ID
+## **Cookie 和 根文件夹ID**
 
 从请求中获取 Cookie 和根文件夹 ID：
 方法：按F12打开“调试”，选中“网络”，找到一个以“sort”开头的文件即可找到
@@ -34,7 +34,7 @@ star: true
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid
@@ -47,9 +47,9 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[本机代理]:::someclass==默认==>a2[用户设备]
+    c1[本机代理]:::someclass==强制==>a2[用户设备]
     classDef someclass fill:#f96
-    b1[代理URL]-.备选.->a2[用户设备]
-    click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```
+
+说明：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)

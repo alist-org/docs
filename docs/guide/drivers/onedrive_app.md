@@ -18,7 +18,7 @@ star: true
 
 # OneDrive APP
 
-## Benefits and Precautions
+## **Benefits and Precautions**
 
 1. The advantage is that the administrator is only authorized to log in once, and the same is used when adding parameters later. When adding, everything is the same except for the mailbox.
    - For example, E5 has 25 5T accounts. After you log in and initialize in advance, you can directly use the parameters before the CV. You don’t have to get the refresh token every time as before, and it will expire after a long time
@@ -43,7 +43,7 @@ Login to get our<Badge text="tenant ID" type="info" vertical="middle" />
 
 
 
-## Create process
+## **Create process**
 
 :::danger Read the precautions carefully
 Please read carefully the following **`serial numbers , view in sequence`** , if there is any error, please feedback in time
@@ -112,7 +112,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={Tenant ID}
 
 
 
-## Fill in the example
+## **Fill in the example**
 
 Fill in the values obtained in the above process one by one. If you don’t know which email address it is, you can find it by [**view all users of the organization**](#view-all-users-of-the-organization)
 
@@ -124,7 +124,7 @@ Fill in the values obtained in the above process one by one. If you don’t know
 
 
 
-## View all users of the organization
+## **View all users of the organization**
 
 If you don't know how many users there are in your OneDrive organization, you can go to the link below to log in to the `admin` account to view
 
@@ -134,7 +134,7 @@ If you don't know how many users there are in your OneDrive organization, you ca
 
 
 
-## Error message
+## **Error message**
 
 - Tips：**Either scp or roles claim need to be present in the token**  Error
 
@@ -142,7 +142,7 @@ because you didn't do it in step `4` <Badge text="grant xxx administrator consen
 
 
 
-## Add OneDrive_App accounts in batches
+## **Add OneDrive_App accounts in batches**
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
@@ -205,7 +205,7 @@ Category2:
 
 <BiliBili bvid="BV1vc411V78S" ratio="16:9" low-quality no-danmaku />
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

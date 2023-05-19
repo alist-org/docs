@@ -17,7 +17,7 @@ star: true
 ---
 # 本地存储
 
-## 根文件夹路径
+## **根文件夹路径**
 
 您要挂载的文件夹的路径。 例如：
 
@@ -26,12 +26,12 @@ star: true
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: **默认使用的那种下载方式？**
 ---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

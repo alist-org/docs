@@ -24,17 +24,17 @@ Please use Thunder directly instead of ThunderExpert if you are not good at it.
 ThunderExpert mainly provides more free settings and realizes more login methods
 :::
 
-## Thunder
+## **Thunder**
 
-### username
+### **username**
 
 That is, the mobile phone number, email, and username used for login (there is a probability that you cannot log in, you need to try)
 
-### password
+### **password**
 
 password for login
 
-### CaptchaToken
+### **CaptchaToken**
 
 Need verify: {url} may appear when logging in or uploading, please visit the link in the error to complete the verification and get CaptchaToken (verification code)
 
@@ -48,7 +48,7 @@ See the image below to add
 
 ![xunlei](/img/drivers/xunlei/x2.png)
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid
@@ -68,20 +68,20 @@ flowchart TB
     click c1 "../drivers/common.html#webdav-policy"
 ```
 
-## ThunderExpert
+## **ThunderExpert**
 
 :::tip
 If Xunlei needs to download, you must specify UserAgent (same as DownUserAgent below)
 Or use the proxy function in this program to transfer.
 :::
 
-### Login Type
+### **Login Type**
 
 When selecting User, you only need to fill in the username and password
 
 **Recommended**: Just fill in RefreshToken when selecting RefreshToken
 
-### Signature Type
+### **Signature Type**
 
 When selecting Algorithms, just fill in the Algorithms (it is difficult to obtain, and needs to be reversed)
 
@@ -100,24 +100,24 @@ Login type and Sign type recommended options
 
 ![xunlei](/img/drivers/xunlei/x3.png)
 
-### DeviceID
+### **DeviceID**
 
 The value calculated by md5 is used to determine the logged in device
 
-### ClientID, ClientSecret, ClientVersion, PackageName
+### **ClientID, ClientSecret, ClientVersion, PackageName**
 
 It is related to the signature, fill in according to the actual situation
 
-### UserAgent
+### **UserAgent**
 
 UserAgent used by API requests, may be inaccessible or speed limited if the setting is incorrect
 
-### DownUserAgent
+### **DownUserAgent**
 
 The User Agent used for downloading, if the setting is wrong, it will not be downloaded (it will be used when the agent is turned on) Fixed parameters:
 **Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36**
 
-## Key data acquisition process
+## **Key data acquisition process**
 
 Obtain Xunlei request data through network analysis tools (packet capture tools) --- Please read the following information carefully
 
@@ -146,11 +146,11 @@ The request to https://xluser-ssl.xunlei.com/v1/auth/token contains RefreshToken
 
 Figure 1 contains **7** parameters | Figure 1 contains **2** parameters | a fixed parameter (Down UserAgent), ten parameters and 3 options and a mount path, just write and save, before saving Remember to check~
 
-### ThunderExpert complete parameter filling demo:
+### **ThunderExpert complete parameter filling demo:**
 
 ![xunlei](/img/drivers/xunlei/x6.png)
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

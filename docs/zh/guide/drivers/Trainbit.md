@@ -19,7 +19,7 @@ star: true
 
 **Trainbit** 官网：https://trainbit.com/
 
-## AUSHELLPORTAL ，Apikey
+## **AUSHELLPORTAL ，Apikey**
 
 进入 Trainbit网页后，按F12打开开发者模式   在网络选项中随便打开一个刷新出来的数据，然后找到带有Cookie选项的都可以
 
@@ -31,7 +31,7 @@ star: true
 
 (具体填写可以查看[详情填写示意图](#详情填写示意图))
 
-## Root folder id
+## **Root folder id**
 
 - `<目录ID>_<目录uploadurl的q参数>`
 
@@ -41,20 +41,20 @@ star: true
 
 
 
-## 注意事项
+## **注意事项**
 
 1. 如果你是从`AList` 上传到 `trainbit` 的文件后缀后面会增加一个 `.delete_suffix`，不用担心
 2. 官网说免费用户文件下载15天后会删除文件，但是现在未进行文件删除，以防万一请勿存放重要文件，到时候导致文件丢失
 
 
 
-## 详情填写示意图
+## **详情填写示意图**
 
 ![Trainbit](/img/drivers/trainbit/Trainbit-1.png)
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

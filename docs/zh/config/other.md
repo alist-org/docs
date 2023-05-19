@@ -18,13 +18,13 @@ star: true
 
 # 其他设置
 
-## Aria2
+## **Aria2**
 
 设置 Aria2 URI 以供离线下载。 Aria2 需要和 AList 安装在同一台服务器(如果使用docker则是容器)上。
 
 
 
-## Qbittorrent url
+## **Qbittorrent url**
 
 用于自定义**Qbittorrent**参数用来配置客户端中使用
 
@@ -33,13 +33,13 @@ star: true
 
 
 
-## Token
+## **Token**
 
 可用于访问程序所有 API 的令牌。
 
 
 
-### 其他
+### **其他**
 
 
 使用起来时候发现有两个Aria2，但是有什么不同呢? [**点击查看详情说明**](../faq/why.md#两个aria2有什么不同)

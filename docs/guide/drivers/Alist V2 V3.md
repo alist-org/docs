@@ -23,13 +23,13 @@ star: true
 
 
 
-### Driver
+### **Driver**
 
 First of all, you need to know whether the other party is V2 or V3.
 
 
 
-### root directory path
+### **root directory path**
 
 - The pathname of the directory to be added, if not filled, it defaults to the root directory, such as:
    - [https://alist.nn.ci](https://alist.nn.ci/) -> `/`
@@ -38,7 +38,7 @@ First of all, you need to know whether the other party is V2 or V3.
 
 
 
-### Link
+### **Link**
 
 AList link you want to mount
 
@@ -74,7 +74,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 :::
 
-### Meta password
+### **Meta password**
 
 (The Meta  password option **is not required**, explain to those who need it)
 
@@ -90,11 +90,11 @@ The AList path you want to mount has a meta information password set
   - But the root directory `/` of the other party has no password set, but other individual folders such as Ali, Baidu, 123 have set passwords, so you can fill in these but only one password.
     - If the passwords of the three folders mentioned above are set differently, then you can only enter the folder with this password in the one you fill in, and you will not be able to enter without this password. You should understand.
 
-## Username
+## **Username**
 
 `AList` user name (account) you want to mount
 
-## Password
+## **Password**
 
 The password corresponding to the `AList` username you want to mount
 
@@ -118,7 +118,7 @@ It looks very troublesome, but you can understand it after a little operation. T
 
 :::
 
-### Token
+### **Token**
 
 You don’t need to write, it will be automatically filled after filling in `Username & Password` and saving
 
@@ -126,7 +126,7 @@ You don’t need to write, it will be automatically filled after filling in `Use
 
 @tab V2
 
-### password
+### **password**
 
 (The password option **is not required**, explain to those who need it)
 
@@ -144,7 +144,7 @@ The Alist path you want to mount has a meta information password set
 
 
 
-### Access Token
+### **Access Token**
 
 (The access token option **is not required**, explain to those who need it)
 
@@ -155,7 +155,7 @@ The Alist path you want to mount has a meta information password set
 
 ::::
 
-### The default download method used
+### **The default download method used**
 
 ```mermaid
 ---

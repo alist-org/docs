@@ -20,23 +20,23 @@ star: true
 
 MEGA official website: **https://mega.nz/login**
 
-### Mail
+### **Mail**
 
 MEGA login account
 
-### password
+### **password**
 
 login password
 
 
 
-### Tips
+### **Tips**
 
 Default local proxy, proxy is required
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

@@ -17,11 +17,11 @@ star: true
 ---
 
 # Third-party single sign-on
-### Single sign-on client id
+### **Single sign-on client id**
 
 client ID
 
-### Single sign-on client secrets
+### **Single sign-on client secrets**
 
 secrets ID
 
@@ -54,7 +54,7 @@ Open **https://github.com/settings/developers** Click **`New OAuth App`**
 
 
 
-### Register OAuth Instructions
+### **Register OAuth Instructions**
 
 - Application name
      - Write whatever you want to call it
@@ -74,13 +74,13 @@ Remember to get **Client secrets** after filling it out, and then fill it in the
 
 Remember to write and save the background parameters of AList. After writing and saving, you have to go back to the bottom of the personal data and there will be a button that needs to be bound, otherwise it cannot be used
 
-### Completely fill in the reference schematic
+### **Completely fill in the reference schematic**
 
 ![sso](/img/advanced/github.png)
 
 
 
-### GitHub login Video Tutorials
+### **GitHub login Video Tutorials**
 
 <ArtPlayer
   src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4872400300415846&raw=true" 
@@ -115,7 +115,7 @@ Write the callback parameters well. Let’s go to the left column and find `Priv
 
 Remember to write and save the background parameters of AList. After writing and saving, you have to go back to the bottom of the personal data and there will be a button that needs to be bound, otherwise it cannot be used
 
-### Completely fill in the reference schematic
+### **Completely fill in the reference schematic**
 
 ![sso](/img/advanced/dingding.png)
 
@@ -154,7 +154,7 @@ The client ID is in `Overview` at the top of the left column, find the applicati
 
 Remember to write and save the background parameters of AList. After writing and saving, you have to go back to the bottom of the personal data and there will be a button that needs to be bound, otherwise it cannot be used
 
-### Completely fill in the reference schematic
+### **Completely fill in the reference schematic**
 
 ![sso](/img/advanced/weiruan.png)
 
@@ -195,13 +195,13 @@ We have got the client ID and secret key and fill them in the AList single sign-
 
 Remember to write and save the background parameters of AList. After writing and saving, you have to go back to the bottom of the personal data and there will be a button that needs to be bound, otherwise it cannot be used
 
-#### Agree to screen configuration
+#### **Agree to screen configuration**
 
 If it has been configured, just ignore this picture (you can zoom in if you can’t see it clearly)
 
 ![Google](/img/drivers/google/Google-6.png)
 
-### Completely fill in the reference schematic
+### **Completely fill in the reference schematic**
 
 ![sso](/img/advanced/google.png)
 
@@ -232,7 +232,7 @@ Then the `Casdoor` window will pop up, we can enter our registered user name
 
 ----
 
-#### Access some other vendors on Casdoor
+#### **Access some other vendors on Casdoor**
 
 In addition to the four that `AList` has already connected to `GitHub Dingding Google Microsoft`, it is also connected to `QQ Baidu Feishu WeChat/Enterprise WeChat Douyin Bilibili` and so on, all [**click Check out all the manufacturers that can be accessed here**](https://casdoor.org/docs/provider/oauth/overview), of course, the four that `AList` has already accessed can also be added to `Casdoor`
 

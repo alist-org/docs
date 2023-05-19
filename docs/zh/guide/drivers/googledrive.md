@@ -20,17 +20,17 @@ star: true
 
 支持团队盘（根目录ID填写团队盘的目录ID）
 
-### 获取 client_id, client_secret, refresh_token
+### **获取 client_id, client_secret, refresh_token**
 
 参考 https://alist.nn.ci/tool/google/request
 
-### 根目录file_id
+### **根目录file_id**
 
 与阿里云盘类似，官网 URL 的最后一个字符串，如：
 
 ![google](/img/drivers/googledrive.png)
 
-## 详细文本教程
+## **详细文本教程**
 
 ::: warning 注意事项
 
@@ -54,7 +54,7 @@ star: true
 
 ![Google](/img/drivers/google/Google-2.png)
 
-点击 **`Google Driver API` **进去后，看下图示意图，将API服务启用
+点击 **`Google Driver API`** 进去后，看下图示意图，将API服务启用
 
 ![Google](/img/drivers/google/Google-3.png)
 
@@ -106,7 +106,7 @@ star: true
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid

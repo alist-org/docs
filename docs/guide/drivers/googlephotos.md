@@ -18,13 +18,13 @@ star: true
 
 # Google Photos
 
-## Root folder file_id
+## **Root folder file_id**
 
 The root directory is root, and other directory IDs are unknown (~~It seems that a separate album cannot be mounted~~ It has not been resolved yet [**Reference**](https://github.com/alist-org/alist/discussions/3264#discussioncomment-4874536))
 
 
 
-## Get client_id, client_secret
+## **Get client_id, client_secret**
 
 Get the tool https://alist.nn.ci/tool/google/request
 
@@ -52,7 +52,7 @@ Remember to enable **`Photos Library API`**
 
 
 
-## Mount a single album directory
+## **Mount a single album directory**
 
 According to [above](https://alist.nn.ci/tool/google/request) obtained **client ID** and **secret key** and **refresh_token**
 
@@ -61,13 +61,13 @@ We fill in **https://alist.nn.ci/tool/google/album** to get a single catalog ID 
 - Root file ID (that is, the album ID): default root, display all, if you only want to display a single album, you can fill in the album ID you want to display
 - After we fill in, there will also be an **`access_token`** below. This can also be filled in the Alist background refresh token option and used. The refresh token obtained at the beginning can be used for both of them- [Explanation]( https://github.com/alist-org/alist/discussions/3264#discussioncomment-5051171)
 
-#### Fill in the example diagram
+#### **Fill in the example diagram**
 
 ![Googlephotos](/img/drivers/google/Google-photos3.png)#get-client-id-client-secret)
 
 
 
-## Two notes:
+## **Two notes:**
 
 1. failed get objs: failed to list objs: Request had insufficient authentication scopes.: []
     - It's because you didn't check the album permission (see the picture mentioned above) `view and organize the content in your Google Photos media library, and upload content to the media library when obtaining authorization. Learn more`
@@ -76,13 +76,13 @@ We fill in **https://alist.nn.ci/tool/google/album** to get a single catalog ID 
 2. failed get objs: failed to list objs: Photos Library API has not been used in project ... before or it is disabled. Enable it by visiting <https://console.developers.google.com/apis/api/photoslibrary.googleapis.com/overview> then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.: []
     - because **`Photos Library API`** is not enabled in your project, Google Photos API
 
-### Finish
+### **Finish**
 
 ![Googlephotos](/img/drivers/google/Google-photosend.png)
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid

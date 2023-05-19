@@ -18,13 +18,13 @@ star: true
 
 # Site settings
 
-### Version
+### **Version**
 
 The version of the `alist`, readonly.
 
 
 
-### Api url
+### **Api url**
 
 > Deprecated in v3.0.2 and later, moved to [site_url](./configuration.md#site-url)
 
@@ -40,7 +40,7 @@ Do not carry `/` at the end of the URL link, correct example:heavy_check_mark: :
 
 
 
-### Base path
+### **Base path**
 
 > Deprecated in v3.0.2 and later, moved to [site_url](./configuration.md#site-url)
 
@@ -48,13 +48,13 @@ Default `/`, if you want reverse proxy with sub directory(see [reverse proxy wit
 
 
 
-### Site title
+### **Site title**
 
 The title of the `alist`, such as `Alist`.
 
 
 
-### Announcement
+### **Announcement**
 
 The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We suggest you add a title in front of the content, such as `### Hello`, so that the content will not be covered by `Close Button`.
 
@@ -62,7 +62,7 @@ The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We s
 
 
 
-### Pagination type
+### **Pagination type**
 
 - All: All files will be displayed at once.
 - Pagination: Show a `Paginator` at the bottom of the page.
@@ -71,13 +71,13 @@ The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We s
 
 
 
-### Default page size
+### **Default page size**
 
 The default page size of the `alist` if `Pagination type` doesn't set to `All`, such as `20`.
 
 
 
-### allow indexing
+### **allow indexing**
 
 Whether to allow others to mount your AList to build the index, check it and enable it.
 
@@ -85,8 +85,30 @@ The default is off, use with caution.  (New features in version 3.8.0)
 
 
 
-## allow mounted
+## **allow mounted**
 
 Do you allow others to mount your AList and then access it
 
 **It is enabled by default, it is recommended to turn it off if you don’t want others to mount it** (v3.16.3 new feature)
+
+
+
+## **Robots.txt**
+
+Crawler configuration/rules
+
+The default is to allow crawlers to access all pages
+
+- `Allow: /` Indicates that the crawlers of search engines are allowed to visit all pages
+
+```txt{2}
+User-agent: *
+Allow: /
+```
+
+If you want to prevent crawlers from accessing all pages, you can change it to this
+
+```txt{2}
+User-agent: *
+Disallow: /
+```

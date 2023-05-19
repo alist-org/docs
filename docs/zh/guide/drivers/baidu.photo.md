@@ -19,11 +19,11 @@ star: true
 # 一刻相册
 
 
-## 刷新令牌（同百度网盘的一样）
+## **刷新令牌（同百度网盘的一样）**
 
 [点此](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1)获取刷新令牌。
 
-## 相册ID
+## **相册ID**
 
 - **默认为空时,直接显示根目录全部相册.**
 - 如果挂载单个相册时需填写如下内容
@@ -40,7 +40,7 @@ star: true
 
 
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

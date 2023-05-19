@@ -57,6 +57,7 @@ category:
 - [x] Cloudreve
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/urltree.md)
+- [x] IPFS
 
 ## Discussion
 

@@ -13,14 +13,14 @@
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
-    "@vuepress/utils": "2.0.0-beta.61",
+    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
+    "@vuepress/utils": "2.0.0-beta.62",
     "naive-ui": "^2.34.3",
     "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-theme-hope": "2.0.0-beta.207",
-    "vuepress-vite": "2.0.0-beta.61"
+    "vuepress": "2.0.0-beta.62",
+    "vuepress-theme-hope": "2.0.0-beta.211",
+    "vuepress-vite": "2.0.0-beta.62"
   },
   "dependencies": {
     "markdown-it": "^13.0.1"

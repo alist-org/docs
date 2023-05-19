@@ -33,7 +33,7 @@ We see that two different folders are merged into one folder, and the file folde
 See additional explanation [**alias-alias**](../advanced/alias.md)
 
 
-## How to fill in
+## **How to fill in**
 
 There are two ways to fill in
 
@@ -67,7 +67,7 @@ According to the second method, we can merge and display different folders, whic
 
 
 
-### The download method to use
+### **The download method to use**
 
 ​		 When adding **`alias`**, `Web Proxy` and `Webdav Policy` are not modified by default. The storage path filled in the Paths path can be `302`, `Local Proxy`, `Download Proxy URL`, three modes Mixed Playback Mixed Playback is possible
 
@@ -77,7 +77,7 @@ According to the second method, we can merge and display different folders, whic
 
 
 
-### What if you don’t know how the cloud disks you added are different?
+### **What if you don’t know how the cloud disks you added are different?**
 
 1. You can go to the bottom of the corresponding document to view the document, there is a flow chart description
 
@@ -92,7 +92,7 @@ According to the second method, we can merge and display different folders, whic
 
 
 
-### other instructions
+### **other instructions**
 
 > If you are using `Windows`, the following situation will occur, and folders with different capitalization will also be regenerated
 > For example, Local 1 and Local 2 have a lowercase v for `video` respectively, and the folder OneDrive has an uppercase V `Video` folder

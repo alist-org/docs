@@ -22,7 +22,7 @@ star: true
 Due to the limitation of Quark network disk, the download must carry cookies, so only the proxy function in this program can be used for transfer. (You can use other machines to transfer)
 :::
 
-### Cookie and Root folder ID
+### **Cookie and Root folder ID**
 
 The cookie and root folder ID are obtained from the request:
 
@@ -33,7 +33,7 @@ Or the root directory id can also be obtained from the address bar:
 
 
 
-### The default download method used
+### **The default download method used**
 
 
 ```mermaid
@@ -46,9 +46,9 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[local proxy]:::someclass==default==>a2[user equipment]
+    c1[local proxy]:::someclass==mandatory==>a2[user equipment]
     classDef someclass fill:#f96
-    b1[Download proxy URL]-.alternative.->a2[user equipment]
     click b1 "../drivers/common.html#webdav-policy"
-    click c1 "../drivers/common.html#webdav-policy"
 ```
+
+illustrate：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)

@@ -24,17 +24,17 @@ star: true
 ThunderExpert 主要提供更自由的设置,实现更多登录方式
 :::
 
-## 迅雷
+## **迅雷**
 
-### 用户名
+### **用户名**
 
 即用于登陆的手机号,邮箱,用户名(有概率无法登录,需要尝试)
 
-### 密码
+### **密码**
 
 即用于登陆的密码
 
-### CaptchaToken
+### **CaptchaToken**
 
 在登录或上传是可能出现 need verify: {url},请访问错误中的链接完成验证得到 CaptchaToken（验证码）
 
@@ -48,7 +48,7 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 ![xunlei](/img/drivers/xunlei/x2.png)
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 
 ```mermaid
@@ -68,20 +68,20 @@ flowchart TB
     click c1 "../drivers/common.html#webdav-策略"
 ```
 
-## 迅雷专家版
+## **迅雷专家版**
 
 :::tip
 迅雷如果需要下载必须指定 UserAgent(同下 DownUserAgent)
 或使用本程序中的代理功能进行中转。
 :::
 
-### 登录类型
+### **登录类型**
 
 选择 User 时填用户名和密码
 
 选择 RefreshToken 时只需填写 `RefreshToken`
 
-### 签名类型
+### **签名类型**
 
 选择 Algorithms 时需填写 `Algorithms`(比较难获取,需要逆向)
 
@@ -100,25 +100,25 @@ CaptchaSign = "1." + str
 
 ![xunlei](/img/drivers/xunlei/x3.png)
 
-### DeviceID
+### **DeviceID**
 
 通过 MD5 计算的值，用于判断登录的设备
 
-### ClientID, ClientSecret, ClientVersion, PackageName
+### **ClientID, ClientSecret, ClientVersion, PackageName**
 
 与签名有关，根据实际情况填写
 
-### UserAgent
+### **UserAgent**
 
 API 请求使用的 UserAgent，设置错误可能无法访问或限速
 
-### DownUserAgent
+### **DownUserAgent**
 
 下载时用到的 User Agent，如果设置错误会无法下载(开启代理会使用) 固定参数：
 
 `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36`
 
-## 关键数据获取流程
+## **关键数据获取流程**
 
 通过网络分析工具(抓包工具)获取迅雷请求数据
 
@@ -147,11 +147,11 @@ CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、Us
 
 图一包含 **7 条** 参数 | 图一包含 **2 条** 参数 | 一条固定参数(Down UserAgent) ，十条参数 和 3 个选项 以及一个挂载路径，写好保存即可，保存前记得检查喔~~
 
-### ThunderExpert 完整的参数填演示图
+### **ThunderExpert 完整的参数填演示图**
 
 ![xunlei](/img/drivers/xunlei/x6.png)
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---

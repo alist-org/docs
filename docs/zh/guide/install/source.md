@@ -26,15 +26,15 @@ star: true
 
 :::
 
-## 环境准备
+## **环境准备**
 
 首先，你需要一个有`git`，`nodejs`，`pnpm`，`golang>=1.20`，`gcc`的环境
 
-## 构建前端
+## **构建前端**
 
 使用 `git clone --recursive https://github.com/alist-org/alist-web.git` 克隆前端 ，执行 `pnpm install && pnpm build` 得到 dist 目录下的目标文件
 
-## 构建后端
+## **构建后端**
 
 克隆 https://github.com/alist-org/alist ，将上一步的 `dist` 目录复制到项目下的 `public` 目录下，然后执行：
 

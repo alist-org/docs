@@ -20,7 +20,7 @@ star: true
 
 
 
-## 好处以及注意事项
+## **好处以及注意事项**
 
 1. 好处是只授权一次管理员登录，后续添加参数时用一样的，在添加时除了邮箱哪里不同，别的都一样
    - 例如E5 25个5T的账号，你提前登录初始化完毕后，直接CV之前的参数即可，不用像以前一样每次都得去获取刷新令牌时间一长还失效
@@ -49,7 +49,7 @@ star: true
 
 
 
-## 新建过程
+## **新建过程**
 
 :::danger 请仔细阅读注意事项
 请仔细阅读下面的 **`序号，依次查看`** ，如有错误可及时反馈 
@@ -116,7 +116,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 :::
 
-## 填写示例
+## **填写示例**
 
 将上述过程中获取得到的值依次填入即可，如果哪个邮箱你不知道是什么了 可以通过[**查看组织所有用户**](#查看组织所有用户)来查找
 
@@ -128,7 +128,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 
 
-## 查看组织所有用户
+## **查看组织所有用户**
 
 如果不知道自己的OneDrive组织有多少用户可以前往下面的链接登录 `admin`账号查看
 
@@ -138,7 +138,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 
 
-## 错误提示
+## **错误提示**
 
 - 提示：**Either scp or roles claim need to be present in the token** 错误
 
@@ -146,7 +146,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 
 
-## 批量添加OneDrive_App账号
+## **批量添加OneDrive_App账号**
 
 使用的软件：**https://github.com/yzbtdiy/alist_batch**
 
@@ -208,7 +208,7 @@ onedrive_app:
 
 <BiliBili bvid="BV1vc411V78S" ratio="16:9" low-quality no-danmaku />
 
-### 默认使用的下载方式
+### **默认使用的下载方式**
 
 ```mermaid
 ---
