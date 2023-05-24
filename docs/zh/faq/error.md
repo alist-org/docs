@@ -27,7 +27,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：**TooManyRequests** 、**Too Many Requests**
+<Badge text="Q" type="warning" vertical="middle" />：阿里云盘open出现 **TooManyRequests** 、**Too Many Requests**
 
 <br/>
 
@@ -35,7 +35,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Token is expired（出现在登录AList账号时）
+<Badge text="Q" type="warning" vertical="middle" />：Token is expired（**出现在登录AList账号时**）
 
 <br/>
 
@@ -71,7 +71,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path （出现在挂载驱动时）
+<Badge text="Q" type="warning" vertical="middle" />：Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path （**出现在挂载驱动时**）
 
 <br/>
 
@@ -79,7 +79,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag（出现在挂载驱动时）
+<Badge text="Q" type="warning" vertical="middle" />：Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag（**出现在挂载驱动时**）
 
 <br/>
 
@@ -87,7 +87,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：UNIQUE constraint failed: x_meta.path（出现在添加元信息时）
+<Badge text="Q" type="warning" vertical="middle" />：UNIQUE constraint failed: x_meta.path（**出现在添加元信息时**）
 
 <br/>
 
@@ -95,7 +95,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Key: 'Meta.Path' Error:Field validation for 'Path' failed on the 'required' tag（出现在添加元信息时）
+<Badge text="Q" type="warning" vertical="middle" />：Key: 'Meta.Path' Error:Field validation for 'Path' failed on the 'required' tag（**出现在添加元信息时**）
 
 <br/>
 
@@ -125,7 +125,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Search not available（出现在构建索引时）
+<Badge text="Q" type="warning" vertical="middle" />：Search not available（**出现在构建索引时**）
 
 <br/>
 
@@ -133,7 +133,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：only chinese and english, numbers and underscores are supported, and the length is no more than 50（出现在一刻相册文件改名时）
+<Badge text="Q" type="warning" vertical="middle" />：only chinese and english, numbers and underscores are supported, and the length is no more than 50（**出现在一刻相册文件改名时**）
 
 <br/>
 
@@ -141,7 +141,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: NotFound.FileId:The resource file_id cannot be found. file_id:634e704cefa78f92fefd4c779f7422d820082d041（添加阿里云盘open）
+<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: NotFound.FileId:The resource file_id cannot be found. file_id:634e704cefa78f92fefd4c779f7422d820082d041（**添加阿里云盘open**）
 
 <br/>
 
@@ -162,6 +162,30 @@ star: true
 <br/>
 
 <Badge text="A" type="info" vertical="middle" />：连续登录输入6次密码错误就会锁定，重启AList即可重置。
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：Failed get storage: please add a storage first. （**添加离线下载内容时**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：添加离线下载文件时，你需要进入你想把离线下载的文件下载到哪个云盘然后就进入哪个`文件夹`，而不是在首页添加 [**完整使用说明**](../guide/advanced/offline-download.md)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: Unable to retrieve user's mysite URL（**添加onedrive_app时**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：新建的 `OneDrive`用户账号不是实时生效，会延时生效等待几小时后试试看 [**案例**](https://github.com/alist-org/docs/discussions/189#discussioncomment-5928892)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：failed to start: listen tcp 0.0.0.0:5244: bind: address already in use （**启动AList程序时**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：5244端口号已经被使用，排查是否被占用(一般来说你已经启动了一个5244端口的AList导致的)，或者修改AList启动的端口号,[**如何修改**](../config/configuration.md#port)
 
 -----
 

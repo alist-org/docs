@@ -120,6 +120,7 @@ export default hopeTheme(
         sub: true,
         sup: true,
         align: true,
+        include: true,
       },
       components: {
         components: ["ArtPlayer", "BiliBili", "Badge"],

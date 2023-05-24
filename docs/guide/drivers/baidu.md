@@ -65,13 +65,28 @@ Example <Badge text="2" type="info" vertical="middle" />: Another plugin method 
 
 ![alist](/img/drivers/baidu/bdUA.png)
 
-@tab IDM
-
-![alist](/img/drivers/baidu/idm-ua.png)
-
 @tab Aria2
 
+1. First follow the figure below to set the **`user-agent" `**, and then click the button option in the lower right corner, click ** gear ** (local settings) to configure the parameters well 
+
+2. Then open the third button option in the lower right corner (**Open the check box**), and then go to the list to select the file we want to download
+3. Select the files we need to download. After selecting, there will be a row of buttons. Select the second option on the right. One is sent to Aria2.
+
+If you use the webpage to modify the **`user-agent`**, you do not need to configure the `UA` of ==**Aria2**==, and you can download it directly to Aria2
+
 ![alist](/img/drivers/baidu/aria2-ua.png)
+
+@tab Motrix
+
+1. First follow the figure below to set the **`user-agent" `**, and then click the button option in the lower right corner, click ** gear ** (local settings) to configure the parameters well 
+2. Then open the third button option in the lower right corner (**Open the check box**), and then go to the list to select the file we want to download
+3. Select the files we need to download. After selecting, there will be a row of buttons. Select the second option on the right. One is sent to Aria2.
+
+If you use the webpage to modify the **`user-agent`**, you do not need to configure the `UA` of ==**Motrix**==, and you can download it directly to Aria2
+
+- Motrix Download link：[Motrix Official website](https://motrix.app/)，[Motrix-GitHub](https://github.com/agalwood/Motrix)
+
+![alist](/img/drivers/baidu/motrix-ua.png)
 
 :::
 

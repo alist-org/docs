@@ -99,9 +99,10 @@ Background --> Settings --> Preview --> Iframe preview, written behind the PDF
   }
 ```
 
-Version 3.7.x and above already support ".epub" reading,
+Version 3.7.x and higher already support ".epub" reading
 But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
 If it is the first installation and startup (version 3.7.x and higher), no need to add it manually
+If the secondary directory reverse generation is set, please add the corresponding prefix in [site_url](../config/configuration.md#site-url), and then restart AList to take effect
 
 ### **How to quickly locate bugs**
 

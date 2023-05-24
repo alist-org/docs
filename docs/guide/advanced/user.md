@@ -45,3 +45,6 @@ The root path that users see when he/she log in
 
 2. **`Guest user is disabled, login please`**: In order to protect your Alist security, the guest access permission is closed, if you need guest access, open it yourself 
    - AList Manage --> users --> `guest` -->  **Disable** uncheck
+3. Question about **`Copy/Upload`**
+
+   - If you upload (including offline download and upload) large files, or upload a lot of files (hundreds or thousands), it is not recommended to use AList to operate, please go to the corresponding network disk official website to operate directly
