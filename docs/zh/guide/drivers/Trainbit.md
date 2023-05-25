@@ -31,7 +31,7 @@ star: true
 
 (具体填写可以查看[详情填写示意图](#详情填写示意图))
 
-## **Root folder id**
+## **根文件夹 ID**
 
 - `<目录ID>_<目录uploadurl的q参数>`
 

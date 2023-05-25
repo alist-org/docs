@@ -22,6 +22,8 @@ star: true
 
 [Click here](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) to get the refresh token.
 
+
+
 ## **album_id**
 
 - **When the default is empty, all albums in the root directory will be displayed directly.**
@@ -36,6 +38,14 @@ star: true
 
 - {tid}: Visit **https://photo.baidu.com/youai/album/v1/list?limit=1000** to get it.
   - After entering the interface, `Ctrl+F` searches for the ID above, and you can see the corresponding {tid} in the following lines
+
+
+
+## **display type** 
+
+Choose according to your needs
+
+
 
 ### **The default download method used**
 
