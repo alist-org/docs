@@ -189,5 +189,13 @@ star: true
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：**[AList上传文件时提示](why.md#为什么我在上传文件时得到-http-413-错误)**：Request failed with status code 413
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：Nginx配置的文件大小所限制，修改Nginx的`client_max_body_size`就可以，如果你是宝塔搭建的去宝塔页面修改[示例](https://blog.csdn.net/u012514495/article/details/127981183)
+
+-----
+
 暂时就这些，如果还有可以留言，或者按照格式添加（为了统一直观）
 

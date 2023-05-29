@@ -22,13 +22,40 @@ The configuration in the meta information is only valid for `Guest`, if you want
 ### **Path**
 
 The path for this meta to take effect
+
+
+
 ### **Password**
 Password required to access this path
+
+
+
 ### **Write**
 Allow guest to make directory, new file and upload files.
+
+
+
 ### **Hide**
 The objects to hide of this path, One regular expression (in `Golang`) per line.
+
+
+
 ### **Readme**
 The Readme to render while enter this path, support markdown content or markdown link.
+
+
+
 ### **Apply to sub folder**
 Apply this meta to sub folder of specific path
+
+
+
+## :warning: Tips
+
+> Regarding hidden, users without permissions can search for hidden folders/files, solutions
+
+:white_check_mark: If you want to hide the folder in a folder, create a new Yuan information alone, and select the folder we want to hide,，Hidden if you want to hide everything, write directly`.*`
+
+:x: You cannot directly fill in the meta information of the root directory `/`, and then fill in the folder we want to hide, the error case [View details](https://github.com/alist-org/alist/issues/4494)
+
+![](/img/advanced/hide-tips.png)

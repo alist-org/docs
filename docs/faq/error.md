@@ -189,5 +189,13 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：**[When AList upload file](why.md#why-do-i-get-413-http-code-when-i-upload-a-file)**：Request failed with status code 413
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：Limit the size of the files configured nginx, modify the nginx's `client_max_body_size`,If you are a pagoda to go to the pagoda page to modify [Example](https://blog.csdn.net/u012514495/article/details/127981183)
+
+-----
+
 That's all for the time being, if there are more, you can leave a message, or add according to the format (for uniformity and intuitiveness)
 
