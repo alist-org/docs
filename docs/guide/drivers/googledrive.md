@@ -27,6 +27,20 @@ Similar to Aliyundrive, the last string of the official website URL, such as:
 
 ![google](/img/drivers/googledrive.png)
 
+### **refresh_token [Google Service Account/SA]**
+> You will be allowed to use Google Service Account/SA to access files in your Google Drive in v3.17.0 and later versions. 
+
+> Simply fill in the **refresh_token** field with the **path to the SA file** or the **folder where it is located** to access your Google Drive using the Google Service Account/SA.
+
+The following methods will be allowed(recommend 1st):
+  - `/accounts` This method will automatically use all SA files in that folder. 
+  - `/accounts/the_sa_file.json` 
+
+As in the example above, all **paths must be absolute**, and the SA file name must also be ***.json** 
+
+#### **Generate your SA file**
+> For generating SA files, you can see the following link, [xyou365/AutoRclone](https://github.com/xyou365/AutoRclone/blob/master/Readme.md "AutoRclone")
+
 ## **Detailed Text Tutorial**
 
 ::: warning matters needing attention
