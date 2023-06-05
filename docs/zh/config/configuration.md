@@ -86,9 +86,9 @@ star: true
 URL链接结尾请勿携带 `/` ，参照如下示例，否则也将无法使用上述功能或出现异常
 
 ```json
-#正确写法：
+# 正确写法：
 "site_url": "https://pan.nn.ci",
-#错误写法：
+# 错误写法：
 "site_url": "https://pan.nn.ci/",
 ```
 
