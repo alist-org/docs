@@ -83,9 +83,9 @@ star: true
 - 反向代理至二级目录
 - ...
 
-在填写链接时结尾请勿携带`/`,否则无法使用或其他问题
+在填写链接时结尾请勿携带`/`，否则无法使用或其他问题
 
-- URL链接结尾请勿携带 `/` ,正确示例:heavy_check_mark::`https://pan.nn.ci`，错误示例：`https://pan.nn.ci/`:x:,否则将无法使用以下功能
+- URL链接结尾请勿携带 `/` ，正确示例:heavy_check_mark:: `https://pan.nn.ci`，错误示例：`https://pan.nn.ci/`:x:，否则将无法使用上述功能
 
 ```json
 #正确写法：
