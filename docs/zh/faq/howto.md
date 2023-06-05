@@ -93,7 +93,7 @@ location /alist/ {
 
 后台 ——>设置——>预览——>Iframe 预览，写在PDF后面
 
-```html
+```html{2-5}
 /*下面的这个逗号也是哦，这个注释就不要复制了，从第二行开始复制*/
 ,
   "epub": {
@@ -120,6 +120,6 @@ location /alist/ {
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
 - **Mac**：暂时未知，可能也是可以加 `--debug` 参数启动
-- **Docker**：docker exec -it alist ./alist server --debug
+- **Docker**：`docker exec -it alist ./alist server --debug`
 
 启动后拿到相关日志，如何停止?  `Ctrl+c` 可以使程序停止运行（或者简单粗暴直接关闭程序）

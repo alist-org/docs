@@ -91,7 +91,7 @@ For network problems such as these, please troubleshoot and solve them yourself.
 
 Background --> Settings --> Preview --> Iframe preview, written behind the PDF
 
-```html
+```html{2-5}
  /*The comma below is also oh, don’t copy this comment, start copying from the second line*/
 ,
   "epub": {
@@ -117,5 +117,6 @@ When using the `--debug` parameter to start, there will be some sensitive data s
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
 - **Mac**: Temporarily unknown, maybe it is started with the `--debug` parameter
+- **Docker**：`docker exec -it alist ./alist server --debug`
 
 How to stop the relevant logs after startup? `Ctrl+c` can stop the program (or simply close the program directly)

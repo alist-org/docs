@@ -46,6 +46,7 @@ typeof fetch !== "undefined" && getLimit()
     - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
     - The number of times and time mentioned above are dynamic~
     - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
+5.  Online playback video reminder: **`Exceed Capacity Forbidden`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space
 
 :::
 
@@ -134,6 +135,12 @@ three、
 >A: Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view
 
 Four、
+
+>Q：Unable to play Alibaba Cloud disk video online, prompt:  **` ExceedCapacityForbidden`** error
+>
+>A：**User capacity exceeded**, playback restricted, need to expand or delete unnecessary files to free up space
+
+five、
 
 >Q: How to load subtitles?
 >

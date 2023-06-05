@@ -58,6 +58,7 @@ category:
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/urltree.md)
 - [x] IPFS
+- [x] [UC](https://drive.uc.cn/)
 
 ## Discussion
 

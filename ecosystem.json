@@ -6,6 +6,7 @@
   "community": [
     { "type": "github", "repo": "jinzhi0123/picgo-plugin-alist" },
     { "type": "github", "repo": "sbwml/luci-app-alist" },
+    { "type": "github", "repo": "BFWXKJGS/AlistClient" },
     { "type": "github", "repo": "traceless/alist-encrypt" },
     { "type": "github", "repo": "iranee/qnap-alist-webdav" },
     { "type": "github", "repo": "yzbtdiy/alist_batch" },
