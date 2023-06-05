@@ -41,6 +41,16 @@ BDUSS is extracted from the cookie
 
 
 
+## **Root folder file_id**
+
+The root folder to be mounted, the default is `/` 
+
+If you want to mount other folders, please see the example below
+
+![](/img/drivers/baidu/bd_share_test.png)
+
+
+
 ## **QA**
 
 |setting|error message|tips|
