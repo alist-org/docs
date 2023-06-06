@@ -35,6 +35,14 @@ star: true
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：阿里云盘open出现 **Throttled by PLUGIN Flow Control** 
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：[**点我查看详细说明**](../guide/drivers/aliyundrive_open.md#四、)
+
+-----
+
 <Badge text="Q" type="warning" vertical="middle" />：Token is expired（**出现在登录AList账号时**）
 
 <br/>

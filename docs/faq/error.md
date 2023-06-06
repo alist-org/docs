@@ -35,6 +35,14 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：Ali cloud disk open appears **Throttled by PLUGIN Flow Control** 
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：[**Click me to view detailed description**](../guide/drivers/aliyundrive_open.md#four、)
+
+-----
+
 <Badge text="Q" type="warning" vertical="middle" />：Token is expired（**Appears when logging in to the AList account**）
 
 <br/>
