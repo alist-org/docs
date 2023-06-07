@@ -87,14 +87,12 @@ The url of your `alist` site, such as `https://pan.nn.ci`.This address will be u
 - Reverse proxy to sub directory
 - ...
 
-Do not carry `/` at the end when filling in the link, otherwise it cannot be used or other problems
-
-- Do not carry `/` at the end of the URL link, correct example:heavy_check_mark: :`https://pan.nn.ci`, wrong example: `https://pan.nn.ci/` :x:,Otherwise the following functions will not be available
+Please do not include `/` at the end of the URL link, refer to the following example, otherwise the above function will also not be available or exceptions will occur
 
 ```json
 # Correct way of writing:
 "site_url": "https://pan.nn.ci",
-#Wrong way of writing:
+# Wrong way of writing:
 "site_url": "https://pan.nn.ci/",
 ```
 
