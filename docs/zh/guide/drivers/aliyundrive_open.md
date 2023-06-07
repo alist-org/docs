@@ -46,7 +46,7 @@ typeof fetch !== "undefined" && getLimit()
    - 例如在 ~~保存/编辑 的时候算一次请求~~，查看文件看视频下载不算。
    - 上述的分钟和次数是动态的喔~
    - 新增优化：**只会在请求发现令牌过期时去刷新令牌，更新 重启 编辑如果令牌仍然有效则不会去刷新。**
-5.  在线播放视频提示：**`Throttled by PLUGIN Flow Control`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
+5.  在线播放视频提示：**`ExceedCapacityForbidden`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
 
 :::
 
@@ -132,7 +132,7 @@ typeof fetch !== "undefined" && getLimit()
 
 ##### 四、
 
->Q：在线播放阿里云盘视频无法播放，提示：**`Throttled by PLUGIN Flow Control`** 错误
+>Q：在线播放阿里云盘视频无法播放，提示：**`ExceedCapacityForbidden`** 错误
 >
 >A：**用户容量超限**，限制播放，需要扩容或者删除不必要的文件释放空间，在AList和阿里云盘官方APP分别如下图提示
 >

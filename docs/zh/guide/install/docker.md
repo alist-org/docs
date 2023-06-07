@@ -143,4 +143,4 @@ Q：我的版本是v3.x.x 怎么也升级不到最新版 `docker pull xhofe/alis
 A：原因是你的docker设置了镜像，从镜像更新不到最新版本，改一下/etc/docker/daemon.json，删除"registry-mirrors": ["镜像加速器地址"]
 
 - 删除若不行，可以考虑更换一个`镜像加速地址`
-- 或者简单粗暴：下载时将`xhofe/alist: ==latest== `替换为`xhofe/alist: ==v3.16.3==`（指定版本，写教程时最新的是3.16.3）
+- 或者简单粗暴：下载时将`xhofe/alist:latest` 替换为`xhofe/alist:v3.16.3`（指定版本，写教程时最新的是3.16.3）

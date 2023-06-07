@@ -35,7 +35,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Ali cloud disk open appears **Throttled by PLUGIN Flow Control** 
+<Badge text="Q" type="warning" vertical="middle" />：Ali cloud disk open appears **ExceedCapacityForbidden** 
 
 <br/>
 

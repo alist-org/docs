@@ -46,7 +46,7 @@ typeof fetch !== "undefined" && getLimit()
     - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
     - The number of times and time mentioned above are dynamic~
     - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
-5.  Online playback video reminder: **`Throttled by PLUGIN Flow Control`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space,[View details](#four、)
+5.  Online playback video reminder: **`ExceedCapacityForbidden`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space,[View details](#four、)
 
 :::
 
@@ -129,7 +129,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 
 ##### Four、
 
->Q：Unable to play Alibaba Cloud disk video online, prompt:  **` Throttled by PLUGIN Flow Control`** error
+>Q：Unable to play Alibaba Cloud disk video online, prompt:  **`ExceedCapacityForbidden`** error
 >
 >A：**User capacity exceeded**, playback restricted, need to expand or delete unnecessary files to free up space,The prompts of the Alist and Alibaba Cloud Drive APP are as shown below
 >

@@ -35,7 +35,7 @@ star: true
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：阿里云盘open出现 **Throttled by PLUGIN Flow Control** 
+<Badge text="Q" type="warning" vertical="middle" />：阿里云盘open出现 **ExceedCapacityForbidden** 
 
 <br/>
 
