@@ -18,8 +18,8 @@ star: true
 
 # 夸克网盘
 
-:::tip
-由于夸克网盘的限制，下载必须携带 Cookies，所以只能使用本程序中的代理功能进行传输。 （可以用其他机器转）
+:::danger
+由于夸克网盘限速问题，夸克网盘现在只能使用本地代理进行传输，[说明详见](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
 :::
 
 ## **Cookie 和 根文件夹ID**

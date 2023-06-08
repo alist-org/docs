@@ -18,8 +18,8 @@ star: true
 
 # Quark
 
-:::tip
-Due to the limitation of Quark network disk, the download must carry cookies, so only the proxy function in this program can be used for transfer. (You can use other machines to transfer)
+:::danger
+Due to the speed limit of Quark Cloud,Quick Cloud must use local agents for transmission now,[For details, see](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
 :::
 
 ### **Cookie and Root folder ID**
