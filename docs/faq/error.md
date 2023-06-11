@@ -27,7 +27,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：**TooManyRequests** 、**Too Many Requests**
+<Badge text="Q" type="warning" vertical="middle" />：Ali cloud disk open appears **TooManyRequests** 、**Too Many Requests**
 
 <br/>
 
@@ -35,7 +35,15 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Token is expired（Appears when logging in to the AList account）
+<Badge text="Q" type="warning" vertical="middle" />：Ali cloud disk open appears **ExceedCapacityForbidden** 
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：[**Click me to view detailed description**](../guide/drivers/aliyundrive_open.md#four、)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：Token is expired（**Appears when logging in to the AList account**）
 
 <br/>
 
@@ -71,7 +79,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path (appears when mounting the driver)
+<Badge text="Q" type="warning" vertical="middle" />：Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path (**appears when mounting the driver**)
 
 <br/>
 
@@ -79,7 +87,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag (appears when mounting the driver)
+<Badge text="Q" type="warning" vertical="middle" />：Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag (**appears when mounting the driver**)
 
 <br/>
 
@@ -125,7 +133,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：Search not available（appears when indexing）
+<Badge text="Q" type="warning" vertical="middle" />：Search not available（**appears when indexing**）
 
 <br/>
 
@@ -133,7 +141,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：only chinese and english, numbers and underscores are supported, and the length is no more than 50 (Appears when the baidu.photo folder is renamed)
+<Badge text="Q" type="warning" vertical="middle" />：only chinese and english, numbers and underscores are supported, and the length is no more than 50 (**Appears when the baidu.photo folder is renamed**)
 
 <br/>
 
@@ -141,7 +149,7 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
-<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: NotFound.FileId:The resource file_id cannot be found. file_id:634e704cefa78f92fefd4c779f7422d820082d041（Add Alibaba cloud disk open）
+<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: NotFound.FileId:The resource file_id cannot be found. file_id:634e704cefa78f92fefd4c779f7422d820082d041（**Add Alibaba cloud disk open**）
 
 <br/>
 
@@ -165,4 +173,37 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：Failed get storage: please add a storage first. （**When adding offline download files**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：When adding an offline download file, you need to enter which cloud disk you want to download the offline download file to and then click on the `folder` instead of adding it on the home page [**Complete Instructions**](../guide/advanced/offline-download.md)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：failed get objs: failed to list objs: Unable to retrieve user's mysite URL（**When adding onedrive_app**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：The newly created `OneDrive` user account does not take effect in real time, Delay takes effect, wait for a few hours and try again [**Case**](https://github.com/alist-org/docs/discussions/189#discussioncomment-5928892)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：failed to start: listen tcp 0.0.0.0:5244: bind: address already in use （**When starting the AList program**）
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：Port number 5244 is already in use, check whether it is occupied (generally you have started an AList with port 5244), or modify the port number started by AList, [**How to modify**](../config/configuration.md#port)
+
+-----
+
+<Badge text="Q" type="warning" vertical="middle" />：**[When AList upload file](why.md#why-do-i-get-413-http-code-when-i-upload-a-file)**：Request failed with status code 413
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：Limit the size of the files configured nginx, modify the nginx's `client_max_body_size`,If you are a pagoda to go to the pagoda page to modify [Example](https://blog.csdn.net/u012514495/article/details/127981183)
+
+-----
+
 That's all for the time being, if there are more, you can leave a message, or add according to the format (for uniformity and intuitiveness)
+

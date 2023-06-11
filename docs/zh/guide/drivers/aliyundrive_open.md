@@ -46,6 +46,7 @@ typeof fetch !== "undefined" && getLimit()
    - 例如在 ~~保存/编辑 的时候算一次请求~~，查看文件看视频下载不算。
    - 上述的分钟和次数是动态的喔~
    - 新增优化：**只会在请求发现令牌过期时去刷新令牌，更新 重启 编辑如果令牌仍然有效则不会去刷新。**
+5.  在线播放视频提示：**`ExceedCapacityForbidden`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
 
 :::
 
@@ -60,19 +61,12 @@ typeof fetch !== "undefined" && getLimit()
 
 以下两种方式都可以获得 **refresh_token**
 
-:::tabs#alitoken
+<div class="image-preview">  
+    <img src="/img/drivers/aliyun/token1.png" alt="Go to login" title="Go to login-登录云盘帐号"/>
+    <img src="/img/drivers/aliyun/token2.png" alt="Scan QrCode" title="Scan QrCode-扫描获取"/>
+</div>
 
-@tab Go to login
-
-![token](/img/drivers/aliyun/token1.png)
-
-@tab Scan QrCoden
-
-![token](/img/drivers/aliyun/token2.png)
-
-:::
-
-## **Root folder file_id**
+## **根文件夹ID**
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
@@ -94,7 +88,7 @@ typeof fetch !== "undefined" && getLimit()
 
 - 回收站：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
 - 删除：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
-  - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开%20阿里云盘%20APP%20-->%20我的%20-->右上角设置齿轮%20-->%20隐私设置%20-->%20授权管理%20-->%20点击%20AList%20进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
+  - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开-阿里云盘-app-我的-右上角设置齿轮-隐私设置-授权管理-点击-alist-进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
 
 
 
@@ -108,7 +102,7 @@ typeof fetch !== "undefined" && getLimit()
 
 ## **其他说明**
 
-一、
+##### 一、
 
 > AList 仅获取了 云盘用户 (**名称 头像 ¹**)，(**访问文件权限 ²**)和(**写入文件权限 ³**)，未获取手机号权限
 >
@@ -119,7 +113,7 @@ typeof fetch !== "undefined" && getLimit()
 >    
 >    - 若不使用了可以随时手动解除权限
 
-二、
+##### 二、
 
 > 默认使用的是阿里云盘自带播放器 - **Aliyun Video Previewer**
 >
@@ -130,13 +124,21 @@ typeof fetch !== "undefined" && getLimit()
 > - 实时转码需要一定时间。
 > - 画质分别为：LD|SD|HD|FHD|QHD
 
-三、
+##### 三、
 
 >Q：阿里云盘Open怎么看不了 Office 全家桶类型的文件
 >
 >A：因为阿里云盘未开放相关API故暂时无法查看
 
-四、
+##### 四、
+
+>Q：在线播放阿里云盘视频无法播放，提示：**`ExceedCapacityForbidden`** 错误
+>
+>A：**用户容量超限**，限制播放，需要扩容或者删除不必要的文件释放空间，在AList和阿里云盘官方APP分别如下图提示
+>
+><img src="/img/drivers/aliyun/error.png" style="zoom:70%;" />
+
+##### 五、
 
 >Q：如何加载字幕？
 >

@@ -20,6 +20,10 @@ star: true
 
 ### 初始配置
 
+::: tip
+`config.json`内配置文件修改后都需要重启AList才会生效
+:::
+
 ```json
 {
   "force": false,

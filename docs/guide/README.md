@@ -60,6 +60,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/urltree.md)
 - [x] IPFS
+- [x] [UC](https://drive.uc.cn/)
 
 ### Discussion
 

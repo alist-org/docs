@@ -20,11 +20,15 @@ star: true
 
 支持团队盘（根目录ID填写团队盘的目录ID）
 
+
+
 ### **获取 client_id, client_secret, refresh_token**
 
 参考 https://alist.nn.ci/tool/google/request
 
-### **根目录file_id**
+
+
+### **根文件夹 ID**
 
 与阿里云盘类似，官网 URL 的最后一个字符串，如：
 

@@ -138,4 +138,4 @@ Q: My version is v3.x.x and I cannot upgrade to the latest version. `docker pull
 A: The reason is that your docker has set up a mirror, and the latest version cannot be updated from the mirror, so modify /etc/docker/daemon.json and delete "registry-mirrors": ["mirror accelerator address"]
 
 - If deletion doesn’t work, you can consider replacing it with a `mirror acceleration address`
-- Or simple and rude: when downloading, replace `xhofe/alist: ==latest==` with `xhofe/alist: ==v3.16.3==` (specify the version, the latest when writing the tutorial is 3.16.3)
+- Or simple and rude: when downloading, replace `xhofe/alist:latest` with `xhofe/alist:v3.16.3` (specify the version, the latest when writing the tutorial is 3.16.3)

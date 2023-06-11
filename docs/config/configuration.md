@@ -20,6 +20,10 @@ star: true
 
 ### **Initial config**
 
+::: tip
+After modifying the configuration file in `config.json`, you need to restart AList to take effect
+:::
+
 ```json
 {
   "force": false,

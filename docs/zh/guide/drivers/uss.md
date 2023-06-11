@@ -20,9 +20,13 @@ star: true
 
 UPYUN 存储服务，简称 USS，[**又拍云USS官网**](https://console.upyun.com/services/file/)
 
-## **Bucket**
 
-**UPYUN 存储服务名称**
+
+## **存储桶**
+
+**UPYUN 存储桶服务名称**
+
+
 
 ## **Endpoint**
 
@@ -33,19 +37,26 @@ UPYUN 存储服务，简称 USS，[**又拍云USS官网**](https://console.upyun
 又拍云提供的默认测试域名在部分网络环境下无法访问，且不支持https，建议使用自行绑定的域名
 
 
-## **Operator name**
+
+## **操作员名称**
 
 操作员名称
 
-## **Operator password**
+
+
+## **操作员密码**
 
 操作员密码
 
-## **Root folder path**
+
+
+## **根文件夹 ID**
 
 根路径，不填则默认为根目录。
 
-## **Sign url expire**
+
+
+## **签名链接有效期**
 
 签名下载地址的有效期默认为 4 小时。
 

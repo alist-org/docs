@@ -32,6 +32,8 @@ star: true
 | Username | Same as web username        |
 | Password | Same as web password        |
 
+Can't fill in? [Click to view Fill in Example](#webdav-fill-in-example)
+
 ### **WebDav Support**
 
 | Storage strategy | list | download | mkdir | rename | move | copy | upload |

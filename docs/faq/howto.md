@@ -91,7 +91,7 @@ For network problems such as these, please troubleshoot and solve them yourself.
 
 Background --> Settings --> Preview --> Iframe preview, written behind the PDF
 
-```html
+```html{2-5}
  /*The comma below is also oh, don’t copy this comment, start copying from the second line*/
 ,
   "epub": {
@@ -99,9 +99,10 @@ Background --> Settings --> Preview --> Iframe preview, written behind the PDF
   }
 ```
 
-Version 3.7.x and above already support ".epub" reading,
+Version 3.7.x and higher already support ".epub" reading
 But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
 If it is the first installation and startup (version 3.7.x and higher), no need to add it manually
+If the secondary directory reverse generation is set, please add the corresponding prefix in [site_url](../config/configuration.md#site-url), and then restart AList to take effect
 
 ### **How to quickly locate bugs**
 
@@ -116,5 +117,6 @@ When using the `--debug` parameter to start, there will be some sensitive data s
 - **Windows**：`alist.exe server --debug`
 - **Linux**：`./alist server --debug`
 - **Mac**: Temporarily unknown, maybe it is started with the `--debug` parameter
+- **Docker**：`docker exec -it alist ./alist server --debug`
 
 How to stop the relevant logs after startup? `Ctrl+c` can stop the program (or simply close the program directly)

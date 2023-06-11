@@ -31,6 +31,10 @@ star: true
 
 ----
 
+::: tip
+It is not applicable to the home version. If you are in the configuration process, it does not match the options that appear in the tutorial. It may not be supported
+:::
+
 
 
 First log in with your personal or organizational account
@@ -139,6 +143,10 @@ If you don't know how many users there are in your OneDrive organization, you ca
 - Tips：**Either scp or roles claim need to be present in the token**  Error
 
 because you didn't do it in step `4` <Badge text="grant xxx administrator consent" type="info" vertical="middle" /> caused by,Pay attention to the tips below the fourth step
+
+- Tips：**failed get objs: failed to list objs: Unable to retrieve user's mysite URL** Error
+
+The newly created `OneDrive` user account does not take effect in real time, Delay takes effect, wait for a few hours and try again [**Case**](https://github.com/alist-org/docs/discussions/189#discussioncomment-5928892)
 
 
 

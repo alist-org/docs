@@ -37,19 +37,27 @@ star: true
 - 选择 "API 权限"，点击 "Microsoft Graph"，在"选择权限"中输入 `file`，勾选 `Files.read`（注：Files.read 是只读最小权限，图中权限较大，也同样可以），点击"确定"
   ![api](/img/drivers/onedrive-update-permission.png)
 
+
+
 ## **获取刷新令牌**
 
 将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://alist.nn.ci/tool/onedrive/request ，点击"获取刷新令牌"即可
+
+
 
 ## **获取 SharePoint site_id**
 
 如果需要挂载 SharePoint，完成上一步后，在显示刷新令牌的界面会出现一个输入站点地址，输入站点地址后点击获取 `site_id` 即可。
 
+
+
 ## **添加账号**
 
 将上述过程中获取得到的值依次填入即可。
 
-## **根目录路径**
+
+
+## **根文件夹路径**
 
 默认为 `/`，如果需要自定义，就填路径就行，从根路径开始，和本地路径一样，比如 `/test`
 

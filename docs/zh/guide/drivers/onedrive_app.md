@@ -35,7 +35,9 @@ star: true
 
 -----
 
-
+::: tip
+不适用于家庭版，如果你在配置过程中，与教程中出现的选项不符可能是不支持
+:::
 
 
 
@@ -116,6 +118,8 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 
 :::
 
+
+
 ## **填写示例**
 
 将上述过程中获取得到的值依次填入即可，如果哪个邮箱你不知道是什么了 可以通过[**查看组织所有用户**](#查看组织所有用户)来查找
@@ -143,6 +147,10 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 - 提示：**Either scp or roles claim need to be present in the token** 错误
 
 是因为你没有在第`4`步的时候进行 <Badge text="代表xxxx授予管理员同意" type="info" vertical="middle" /> 导致的，注意查看第四步下面的提示
+
+- 提示：**failed get objs: failed to list objs: Unable to retrieve user's mysite URL** 错误
+
+新建的 `OneDrive`用户账号不是实时生效，会延时生效等待几小时后试试看 [**案例**](https://github.com/alist-org/docs/discussions/189#discussioncomment-5928892)
 
 
 

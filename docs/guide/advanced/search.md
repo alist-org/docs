@@ -26,6 +26,8 @@ Follow the steps below to enable search:
 2. After the index is saved, click `Build indexes` to build the index.
 3. Now you can search for files by click the search block on the top right corner of the page or by using the shortcut `Ctrl + K`.
 
+:exclamation::exclamation::exclamation: If you do not follow the above prompts, the prompt will be opened: **Search Not available**
+
 ### **Difference between different search indexes**
 
 - `database`: Search by database, which is using the existing data.db. It will create a new table, record the parent directory, name, and size of every object, but the search does not split words which means that match whether the keywords you enter appear in the name of object. In general, if you don't have a specific search requirement, we recommend you choose it.
@@ -80,7 +82,7 @@ Paths to be skipped during index building, one path per line, multiple lines can
    - example:
    
       - /aaa network disk
-     
+      
       - /bbb network disk/ccc folder
 
    ### **Automatically update the index**
@@ -123,4 +125,6 @@ Explanation: The directory can enter up to several layers. For example, if you h
    - Don't ask why V2 is not supported, because the V2 version is no longer maintained, so there is no follow-up
 
 - Why not directly open V2 V3 index construction: **https://github.com/alist-org/alist/discussions/2529**
+
+- After building an index, users without permissions can search for hidden file/folder solutions [click to view](meta.md#tips)
 

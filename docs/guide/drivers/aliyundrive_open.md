@@ -46,6 +46,7 @@ typeof fetch !== "undefined" && getLimit()
     - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
     - The number of times and time mentioned above are dynamic~
     - New optimization:  **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
+5.  Online playback video reminder: **`ExceedCapacityForbidden`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space,[View details](#four、)
 
 :::
 
@@ -57,17 +58,10 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
 **refresh_token** can be obtained in the following two ways
 
-:::tabs#alitoken
-
-@tab Go to login
-
-![token](/img/drivers/aliyun/token1.png)
-
-@tab Scan QrCoden
-
-![token](/img/drivers/aliyun/token2.png)
-
-:::
+<div class="image-preview">  
+    <img src="/img/drivers/aliyun/token1.png" alt="Go to login" title="Go to login"/>
+    <img src="/img/drivers/aliyun/token2.png" alt="Scan QrCode" title="Scan QrCode"/>
+</div>
 
 
 
@@ -91,7 +85,7 @@ Normal users don’t need to fill in the blank. If they apply for official autho
 
 - Trash: Enter the cloud disk recycle bin after AList is deleted, which will occupy the cloud disk space, but it can be retrieved if it is deleted by mistake later.
 - Delete: direct deletion will not stay in the recycle bin, and will not occupy cloud disk space, but if deleted by mistake later, it cannot be retrieved.
-  - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#Open%20Alibaba%20Cloud%20Disk%20APP%20-->%20My%20-->%20Settings%20gear%20in%20the%20upper%20right%20corner%20-->%20Privacy%20Settings%20-->%20Authorization%20Management%20-->%20Click%20AList%20to%20view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account== 
+  - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#open-alibaba-cloud-disk-app-my-settings-gear-in-the-upper-right-corner-privacy-settings-authorization-management-click-alist-to-view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account== 
 
 
 
@@ -105,7 +99,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 
 ## **other instructions**
 
-one、
+##### one、
 
 > AList only obtained cloud disk users (**name avatar¹**), (**access file permission²**) and (**write file permission³**), and did not obtain mobile phone number permission
 >
@@ -116,7 +110,7 @@ one、
 >     
 >     - If you don't use it, you can manually cancel the permission at any time
 
-two、
+##### two、
 
 >By default, the built-in player of Aliyun Disk is used - **Aliyun Video Previewer**
 >
@@ -127,13 +121,21 @@ two、
 >- Real-time transcoding takes some time.
 >- The picture quality are: LD|SD|HD|FHD|QHD
 
-three、
+##### three、
 
 >Q: Why can’t Alibaba Cloud Disk Open see files of the Office Family Bucket type?
 >
 >A: Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view
 
-Four、
+##### Four、
+
+>Q：Unable to play Alibaba Cloud disk video online, prompt:  **`ExceedCapacityForbidden`** error
+>
+>A：**User capacity exceeded**, playback restricted, need to expand or delete unnecessary files to free up space,The prompts of the Alist and Alibaba Cloud Drive APP are as shown below
+>
+><img src="/img/drivers/aliyun/error.png" style="zoom:70%;" />
+
+##### five、
 
 >Q: How to load subtitles?
 >
