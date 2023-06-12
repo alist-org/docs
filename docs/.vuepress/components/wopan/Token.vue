@@ -10,9 +10,13 @@ const input = reactive({
 const err1 = ref()
 const err2 = ref()
 
+const loading1 = ref()
+const loading2 = ref()
+
 const token = ref()
 
 async function getVerifyCode() {
+  loading1.value = true
   const res = await fetch('https://api.nn.ci/alist/wopan/login', {
     method: 'POST',
     headers: {
@@ -21,12 +25,14 @@ async function getVerifyCode() {
     body: JSON.stringify(input)
   })
   const data = await res.json()
+  loading1.value = false
   if (data.error) {
     err1.value = data.error
     return
   }
 }
 async function getToken() {
+  loading2.value = true
   const res = await fetch('https://api.nn.ci/alist/wopan/verify_code', {
     method: 'POST',
     headers: {
@@ -35,6 +41,7 @@ async function getToken() {
     body: JSON.stringify(input)
   })
   const data = await res.json()
+  loading2.value = false
   if (data.error) {
     err2.value = data.error
     return
@@ -50,12 +57,12 @@ async function getToken() {
 
     <NInput size="large" placeholder="Phone number" v-model:value="input.phone"></NInput>
     <NInput size="large" placeholder="Password" v-model:value="input.password" type="password"></NInput>
-    <NButton type="primary" size="large" block @click="getVerifyCode">Get Verify Code</NButton>
+    <NButton type="primary" secondary size="large" block @click="getVerifyCode" :loading="loading1">Get Verify Code</NButton>
     <NAlert title="Error" type="error" v-if="err1">
       {{ err1 }}
     </NAlert>
     <NInput size="large" placeholder="Verify code" v-model:value="input.verify_code"></NInput>
-    <NButton type="primary" size="large" block @click="getToken">Get Token</NButton>
+    <NButton type="primary" size="large" block @click="getToken" :loading="loading2">Get Token</NButton>
     <NAlert title="Error" type="error" v-if="err2">
       {{ err2 }}
     </NAlert>
