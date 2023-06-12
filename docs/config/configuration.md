@@ -106,6 +106,7 @@ This is dynamic and changeable. Existing dist resources are hosted on both npm a
 
 So you can use any npm or github cdn as the path, for example:
 
+- https://registry.npmmirror.com/alist-web/$version/files/dist/
 - https://cdn.jsdelivr.net/npm/alist-web@$version/dist/
 - https://unpkg.com/alist-web@$version/dist/
 - https://cdn.jsdelivr.net/gh/alist-org/web-dist@$version/dist/

@@ -106,6 +106,7 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 所以你可以使用任何 npm 或 GitHub CDN 作为路径，例如：
 
+- https://registry.npmmirror.com/alist-web/$version/files/dist/
 - https://cdn.jsdelivr.net/npm/alist-web@$version/dist/
 - https://unpkg.com/alist-web@$version/dist/
 - https://cdn.jsdelivr.net/gh/alist-org/web-dist@$version/dist/
