@@ -5,5 +5,8 @@ export const apis = {
 };
 export const defaultApi = "cf";
 export const api = () => {
+  if (typeof localStorage === "undefined") {
+    return apis[defaultApi];
+  }
   return localStorage.getItem("api") || apis[defaultApi];
 };
