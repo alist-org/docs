@@ -38,6 +38,7 @@ Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find th
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { api } from "@Api"
 const btnText = ref("Get Token");
 // 0 -> Initial
 // 1 -> Wait qr
@@ -51,7 +52,7 @@ const ckData = ref('')
 const getQr = async ()=>{
   btnText.value = 'Waiting...';
   state.value = 1;
-  const resp = await fetch("https://api.nn.ci/alist/ali/qr");
+  const resp = await fetch(`${api()}/alist/ali/qr`);
   const res = await resp.json();
   console.log(res)
   btnText.value='Use AliyunDrive APP To Scan Then Click'
@@ -60,12 +61,12 @@ const getQr = async ()=>{
     ck: res.content.data.ck,
     t: res.content.data.t.toString(),
   });
-  src.value = `https://api.nn.ci/qr/?size=400&text=${encodeURIComponent(res.content.data.codeContent)}`
+  src.value = `${api()}/qr/?size=400&text=${encodeURIComponent(res.content.data.codeContent)}`
 }
 const getToken = async ()=>{
   state.value = 3;
   btnText.value = 'Waiting...';
-  const resp = await fetch('https://api.nn.ci/alist/ali/ck',{
+  const resp = await fetch(`${api()}/alist/ali/ck`,{
     method: 'POST',
     headers:{
       "Content-Type": "application/json",

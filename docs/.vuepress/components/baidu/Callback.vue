@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { NAlert, NSpace, NSpin, NInput } from 'naive-ui';
 import { ref } from 'vue';
+import { api } from '../api';
 
 const client_id = "iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v";
 const client_secret = "jXiFMOPVPCWlO2M5CwWQzffpNPaGTRBG";
@@ -24,7 +25,7 @@ interface Token {
 const token = ref<Token>();
 
 const getToken = async () => {
-  const resp = await fetch(`https://api.nn.ci/alist/baidu/get_refresh_token?code=${code}`);
+  const resp = await fetch(`${api()}/alist/baidu/get_refresh_token?code=${code}`);
   const res: Token = await resp.json();
   token.value = res;
 };
@@ -36,7 +37,7 @@ if (code && !error) {
 </script>
 
 <template>
-  <NAlert :title="error || 'Error'" type="error" v-if="!code ||  error">
+  <NAlert :title="error || 'Error'" type="error" v-if="!code || error">
     {{ error_description }}
   </NAlert>
   <NSpace vertical size="large" v-else>

@@ -134,5 +134,6 @@ export default defineUserConfig({
     "@Pricing": path.resolve(__dirname, "./components/Pricing.vue"),
     "@Desktop": path.resolve(__dirname, "./components/Desktop.vue"),
     "@Changelog": path.resolve(__dirname, "./components/changelog/index.vue"),
+    "@Api": path.resolve(__dirname, "./components/api/index.ts"),
   },
 });

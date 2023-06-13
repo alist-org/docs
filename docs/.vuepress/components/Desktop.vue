@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { NButtonGroup, NImage, NSpace, NButton, NDropdown } from 'naive-ui';
 import { computed, ref } from 'vue';
+import { api } from './api'
 
 const platform = navigator.platform.toLowerCase()
 const plat = ref<"win" | 'linux' | 'mac'>('win')
@@ -14,7 +15,7 @@ if (platform.includes('win')) {
 
 console.log(plat.value)
 
-const res = await fetch('https://api.nn.ci/proxy/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop-proxy.json')
+const res = await fetch(`${api()}/proxy/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop-proxy.json`)
 const data = await res.json()
 const version = (data.name as string).slice(1)
 const urls = {

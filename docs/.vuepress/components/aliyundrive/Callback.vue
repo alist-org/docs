@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { NAlert, NSpace, NSpin, NInput } from 'naive-ui';
 import { ref } from 'vue';
+import { api } from '../api';
 
 const url = new URL(window.location.href);
 const code = url.searchParams.get("code");
@@ -18,10 +19,9 @@ interface Token {
 const token = ref<Token>();
 
 // const api = "http://localhost:3000"
-const api = "https://api.nn.ci"
 
 const getToken = async () => {
-  const resp = await fetch(api + `/alist/ali_open/code`, {
+  const resp = await fetch(api() + `/alist/ali_open/code`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

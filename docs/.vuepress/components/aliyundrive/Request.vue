@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { NButton, NSpace, NAlert, NImage, useMessage } from 'naive-ui';
+import { NButton, NSpace, NAlert, NImage, useMessage, NSelect } from 'naive-ui';
 import { ref } from 'vue';
+import { api } from '../api'
 
 const alist_redirect_uri = "https://alist.nn.ci/tool/aliyundrive/callback"
 const app_id = "76917ccccd4441c39457a04f6084fb2f"
@@ -30,15 +31,12 @@ interface QrCodeResp {
 
 const qrcode = ref<QrCodeResp>()
 
-// const api = "http://localhost:3000"
-const api = "https://api.nn.ci"
-
 const gettingQrCode = ref(false)
 
 async function getQrCode() {
   try {
     gettingQrCode.value = true
-    const resp = await fetch(api + "/alist/ali_open/qr", {
+    const resp = await fetch(api() + "/alist/ali_open/qr", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -72,7 +70,7 @@ const message = useMessage()
 async function haveScan() {
   try {
     gettingScanStatus.value = true
-    const resp = await fetch(`${api}/proxy/https://open.aliyundrive.com/oauth/qrcode/${qrcode.value?.sid}/status`)
+    const resp = await fetch(`${api()}/proxy/https://open.aliyundrive.com/oauth/qrcode/${qrcode.value?.sid}/status`)
     const res: ScanStatus = await resp.json()
     scanStatus.value = res
     if (res.status === "LoginSuccess") {

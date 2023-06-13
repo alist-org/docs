@@ -11,6 +11,7 @@
         </div>
         <div class="wwads wwads-cn wwads-horizontal" data-id="213" style="width:100% !important" v-else>
         </div>
+        <ApiSelect v-if="isTool" />
       </div>
     </template>
     <template #contentAfter>
@@ -26,18 +27,21 @@ import NormalPage from "vuepress-theme-hope/components/NormalPage";
 import { usePageFrontmatter } from "@vuepress/client";
 import { computed } from "vue";
 import { usePageData } from '@vuepress/client'
+import NaiveClient from './NaiveClient.vue'
+import ApiSelect from "./api/ApiSelect.vue";
 
 const pageData = usePageData()
 
 // get is enable sidebar from frontmatter
 const frontmatter = usePageFrontmatter();
-const showMingdao = computed(() => {
+const isTool = computed(() => {
   if (pageData.value.path.startsWith("/tool/")) {
     return true;
   }
   const sidebar = frontmatter.value.sidebar;
   return sidebar === false;
 })
+const showMingdao = isTool
 
 const spStr = computed(() => {
   if (pageData.value.path.startsWith("/zh/")) {
@@ -76,6 +80,7 @@ const spStr = computed(() => {
   justify-content: center;
   margin-top: 20px;
 }
+
 .ads-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;

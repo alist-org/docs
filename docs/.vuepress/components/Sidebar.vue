@@ -7,6 +7,9 @@
             target="_blank"><img src="/img/ss/mingdao.png" alt="" /></a>
           <span>{{ spStr }}</span>
         </div>
+        <div style="padding-right: 8px;" v-if="isDrivers">
+          <ApiSelect />
+        </div>
       </div>
     </template>
   </Sidebar>
@@ -15,6 +18,7 @@
 import Sidebar from "vuepress-theme-hope/modules/sidebar/components/Sidebar";
 import { usePageData } from '@vuepress/client'
 import { computed } from "vue";
+import ApiSelect from "./api/ApiSelect.vue";
 
 const pageData = usePageData()
 const spStr = computed(() => {
@@ -23,7 +27,9 @@ const spStr = computed(() => {
   }
   return "Sponsorship";
 })
-
+const isDrivers = computed(() => {
+  return pageData.value.path.includes("/drivers/");
+})
 </script>
 
 <style scoped lang="scss">
@@ -48,4 +54,5 @@ const spStr = computed(() => {
     font-size: small;
     color: #999;
   }
-}</style>
+}
+</style>

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { NAlert, NButton, NInput, NSpace, NSpin } from 'naive-ui';
 import { reactive } from 'vue';
+import { api } from '../api';
 
 const url = new URL(window.location.href);
 const code = url.searchParams.get("code");
@@ -21,7 +22,7 @@ const data = reactive({
 })
 
 const getToken = () => {
-  fetch("https://api.nn.ci/alist/onedrive/get_refresh_token", {
+  fetch(`${api()}/alist/onedrive/get_refresh_token`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -51,7 +52,7 @@ const [client_id, client_secret, zone] = atob(client as string).split("::");
 
 const getSiteId = () => {
   data.gettingSiteId = true;
-  fetch("https://api.nn.ci/alist/onedrive/get_site_id", {
+  fetch(`${api()}/alist/onedrive/get_site_id`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -101,7 +102,8 @@ const getSiteId = () => {
       <NAlert :title="data.error2" type="error" v-if="data.error2 || data.errorMessage2">
         {{ data.errorMessage2 }}
       </NAlert>
-      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large" v-model:value="data.siteUrl" />
+      <NInput placeholder="input site url (https://xx.sharepoint.xx/sites/xx)" size="large"
+        v-model:value="data.siteUrl" />
       <NButton type="primary" size="large" @click="getSiteId">Get SiteID</NButton>
       <NSpin v-if="data.gettingSiteId" />
       <p v-else-if="data.siteId"><b>site_id: </b>{{ data.siteId }}</p>

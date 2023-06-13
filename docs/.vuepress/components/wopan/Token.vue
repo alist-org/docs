@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { NInput, NSpace, NButton, NAlert, NTag } from 'naive-ui'
 import { reactive, ref } from 'vue';
+import { api } from '../api';
 const input = reactive({
   phone: '',
   password: '',
@@ -17,7 +18,7 @@ const token = ref()
 
 async function getVerifyCode() {
   loading1.value = true
-  const res = await fetch('https://api.nn.ci/alist/wopan/login', {
+  const res = await fetch(`${api()}/alist/wopan/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -33,7 +34,7 @@ async function getVerifyCode() {
 }
 async function getToken() {
   loading2.value = true
-  const res = await fetch('https://api.nn.ci/alist/wopan/verify_code', {
+  const res = await fetch(`${api()}/alist/wopan/verify_code`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -57,7 +58,8 @@ async function getToken() {
 
     <NInput size="large" placeholder="Phone number" v-model:value="input.phone"></NInput>
     <NInput size="large" placeholder="Password" v-model:value="input.password" type="password"></NInput>
-    <NButton type="primary" secondary size="large" block @click="getVerifyCode" :loading="loading1">Get Verify Code</NButton>
+    <NButton type="primary" secondary size="large" block @click="getVerifyCode" :loading="loading1">Get Verify Code
+    </NButton>
     <NAlert title="Error" type="error" v-if="err1">
       {{ err1 }}
     </NAlert>
