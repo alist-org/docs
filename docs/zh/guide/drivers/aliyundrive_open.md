@@ -51,6 +51,20 @@ typeof fetch !== "undefined" && getLimit()
 
 :::
 
+:::danger 关于阿里云open的OAuth验证API无法连接
+
+1.  由于原api `https://api.nn.ci`被sni阻断，导致国内无法连接的情况，故提供两个新的api供使用：
+    - `https://api-cf.nn.ci` (套了一层cloudflare)
+    - `https://api.xhofe.top` (辽宁多线， 由[亚洲云](https://www.asiayun.com/aff/QQCOOQKZ)赞助)
+2.  需要将`aliyundrive_open`后台配置中的`Oauth令牌链接`更换为
+    - `https://api-cf.nn.ci/alist/ali_open/token`
+    - `https://api.xhofe.top/alist/ali_open/token`
+    - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
+
+3. 查看详情：https://github.com/alist-org/alist/discussions/4572
+
+:::
+
 
 
 
