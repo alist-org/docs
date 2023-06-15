@@ -124,6 +124,47 @@ export default hopeTheme(
       },
       components: {
         components: ["ArtPlayer", "BiliBili", "Badge"],
+        // 临时弹窗
+        rootComponents: {
+          notice: [
+            {
+              path: "/",
+              title: 'Kind tips',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.</span>',
+              actions: [
+                {
+                  text: "Aliyun open",
+                  link: "/guide/drivers/aliyundrive_open",
+                  type: "primary",
+                },
+                {
+                  text: "GitHub",
+                  link: "https://github.com/alist-org/alist/discussions/4572",
+                  type: "primary",
+                },
+              ],
+              showOnce: true,
+            },
+            {
+              path: "/zh",
+              title: '温馨提示',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</span>',
+              actions: [
+                {
+                  text: "阿里云open",
+                  link: "/guide/drivers/aliyundrive_open",
+                  type: "primary",
+                },
+                {
+                  text: "GitHub",
+                  link: "https://github.com/alist-org/alist/discussions/4572",
+                  type: "primary",
+                },
+              ],
+              showOnce: true,
+            },
+          ],
+        },
       },
     },
   },
