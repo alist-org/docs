@@ -70,7 +70,7 @@ star: true
    - 若只看阿里可以使用阿里官方合作的
      - 欢视商店-阿里云盘TV版，网盘播放器-阿里云盘TV版
 5. **Mac**
-   - IINA，[Mountain Duck](https://mountainduck.io/)，infuse，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
+   - [VidHub](https://zh.okaapps.com/product/1659622164)，IINA，[Mountain Duck](https://mountainduck.io/)，infuse，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
 6. **Linux**
    - davfs2，[rclone](https://rclone.org/)
 
