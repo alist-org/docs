@@ -29,9 +29,10 @@ After modifying the configuration file in `config.json`, you need to restart ALi
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
+  "https_port": 5245,
   "site_url": "",
   "cdn": "",
-  "jwt_secret": "random generated",
+  "jwt_secret": "",
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
@@ -45,7 +46,9 @@ After modifying the configuration file in `config.json`, you need to restart ALi
     "ssl_mode": ""
   },
   "scheme": {
+    "disable_http": false,
     "https": false,
+    "force_https": false,
     "cert_file": "",
     "key_file": ""
   },
@@ -59,8 +62,9 @@ After modifying the configuration file in `config.json`, you need to restart ALi
     "max_age": 28,
     "compress": false
   },
+  "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": false
+  "tls_insecure_skip_verify": true
 }
 ```
 
@@ -77,6 +81,10 @@ The address to listen on, default `0.0.0.0`
 ### **port**
 
 The port to listen on, default `5244`
+
+**https_port**
+
+HTTPS port，default 5245
 
 ### **site_url**
 
@@ -189,9 +197,11 @@ The scheme configuration, if you want to use https, you can set this field.
 
 ```json
   "scheme": {
-    "https": true,
-    "cert_file": "data\\public.crt",
-    "key_file": "data\\key.key"
+    "disable_http": false,		//Whether the HTTP protocol is forbidden
+    "https": true,				//Enable https, the default is false
+    "force_https": false,		//Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
+    "cert_file": "data\\public.crt",	//Path selection file
+    "key_file": "data\\key.key"			//Path selection file
   },
 ```
 
