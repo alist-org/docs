@@ -29,9 +29,10 @@ star: true
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
+  "https_port": 5245,
   "site_url": "",
   "cdn": "",
-  "jwt_secret": "random generated",
+  "jwt_secret": "",
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
@@ -45,7 +46,9 @@ star: true
     "ssl_mode": ""
   },
   "scheme": {
+    "disable_http": false,
     "https": false,
+    "force_https": false,
     "cert_file": "",
     "key_file": ""
   },
@@ -59,8 +62,9 @@ star: true
     "max_age": 28,
     "compress": false
   },
+  "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": false
+  "tls_insecure_skip_verify": true
 }
 ```
 
@@ -77,6 +81,10 @@ star: true
 ### **port**
 
 要监听的端口，默认为 5244
+
+**https_port**
+
+HTTPS端口，默认为 5245
 
 ### **site_url**
 
@@ -191,9 +199,11 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 
 ```json
   "scheme": {
-    "https": true,
-    "cert_file": "data\\public.crt",
-    "key_file": "data\\key.key"
+    "disable_http": false,		//是否禁止使用HTTP协议
+    "https": true,				//启用HTTPS，默认是false
+    "force_https": false,		//是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
+    "cert_file": "data\\public.crt",	//路径选择文件
+    "key_file": "data\\key.key"			//路径选择文件
   },
 ```
 

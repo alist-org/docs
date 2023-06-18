@@ -92,10 +92,14 @@ The workers code can be found at https://github.com/alist-org/alist-proxy/blob/m
 
 - When mounting the configuration in the Alist background, fill in the **download proxy URL** at the end of the link without `/`
 
+If you do n’t understand [**Disassembled for details**](https://anwen-nyi.github.io/index/11-durl.html)
+
 @tab Universal Binary
 You can also use another machine for proxying, download the program at https://github.com/alist-org/alist-proxy/releases
 
 `./alist-proxy -help` to see how to use it.
+
+If you do n’t understand [**Disassembled for details**](https://anwen-nyi.github.io/index/11-durl.html)
 
 ::::
 
