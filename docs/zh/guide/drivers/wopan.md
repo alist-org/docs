@@ -20,7 +20,7 @@ star: true
 
 云盘地址：**https://pan.wo.cn/**
 
-- :warning: AList 3.19.0版本及以上版本菜鸟使用本驱动
+- :warning: AList 3.19.0版本及以上版本才能使用本驱动
 
 ::: tip
 挂载联通云盘使用的是Web端，如果你先使用工具获取了令牌再去登录网页端会将AList挂载的挤掉
