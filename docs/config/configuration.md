@@ -82,9 +82,11 @@ The address to listen on, default `0.0.0.0`
 
 The port to listen on, default `5244`
 
-**https_port**
+### **https_port**
 
 HTTPS port，default 5245
+
+- You need to open the https in [`Scheme`](#scheme) to enable it.If you use Nginx reverse proxy and open HTTPS, this is not related to this
 
 ### **site_url**
 
@@ -213,9 +215,32 @@ The temporary directory, default `data/temp`
 temp_dir is a temporary folder exclusive to alist. In order to avoid program interruption and generate garbage files, it will be cleared every time it starts, so please do not manually put any content in this folder, and do not use this folder and its subfolders when using docker Folders are mapped to folders in use.
 :::
 
+### **bleve_dir**
+
+When you use **`bleve`** indexes, the location of the data storage
+
 ### **log**
 
 The log configuration, if you want to setup the log level, you can set this field.
+
+```json
+  "log": {
+    "enable": true,					//Whether to turn on the log record function, the default is to open the status true
+    "name": "data\\log\\log.log",	//The path and name of the log file
+    "max_size": 10,					//the maximum size of a single log file, in MB. After reaching the specified size, the file will be automatically split.
+    "max_backups": 5,				//the number of log backups to keep. Old backups will be deleted automatically when the limit is exceeded.
+    "max_age": 28,					//The maximum number of days preserved in the log file, the log file that exceeds the number of days will be deleted
+    "compress": false				//Whether to enable log file compression functions. After compression, the file size can be reduced, but you need to decompress when viewing, and the default is to close the state false
+  },
+```
+
+### **delayed_start**
+
+**Unit: s** (V3.19.0 new function)
+
+Whether to delay start, generally this function is often used in Alist to start the self -startup option
+
+Because sometimes the network connection is slow, the driver that needs to be connected after the Alist is launched is too fast, so that it cannot be opened normally.
 
 ### **max_connections**
 
