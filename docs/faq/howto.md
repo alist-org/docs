@@ -82,6 +82,7 @@ It may be that the risk detection system has been triggered. Please changing the
 - Click Edit, write the verification code you just saw into the configuration and click Save
 - Click Edit and turn on the Do not use OCR button
 - Or build it yourself [**Ocr interface**](../config/global.md#ocr-api)
+- **189 Cloud** Driver has been replaced with sliding verification code because web login has been replaced.**No longer supports OCR and manual input**, if the verification code needs to be used, please use the addition of `Cookie to log in` or use the `189 Cloud PC` Driver, ^Note_that_it_is_189_Cloud_driver_is_not_189_Cloud_PC^
 
 ### **TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers? / no such host?**
 

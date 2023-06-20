@@ -130,7 +130,7 @@ export default hopeTheme(
             {
               path: "/",
               title: 'Kind tips',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.</span>',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.<br/>3.<a href="/guide/drivers/139.html">139Cloud</a>和<a href="/guide/drivers/189.html">189Cloud</a>For details of changes, please view the document by yourself, respectively</br>4.New HTTPS port can be monitored separately.For details <a href="/config/configuration.html">check the configuration document page</a></span>',
               actions: [
                 {
                   text: "Aliyun open",
@@ -142,22 +142,32 @@ export default hopeTheme(
                   link: "https://github.com/alist-org/alist/discussions/4572",
                   type: "primary",
                 },
+                {
+                  text: "Config",
+                  link: "/config/configuration",
+                  type: "primary",
+                },
               ],
               showOnce: true,
             },
             {
               path: "/zh",
               title: '温馨提示',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</span>',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</br>3.<a href="/zh/guide/drivers/139.html">移动云盘</a>和<a href="/zh/guide/drivers/189.html">天翼云</a>分别有改动详情请自行查看文档</br>4.新增HTTPS端口,可单独监听详情查看<a href="/zh/config/configuration.html">配置文档页面</a></span>',
               actions: [
                 {
                   text: "阿里云open",
-                  link: "/guide/drivers/aliyundrive_open",
+                  link: "/zh/guide/drivers/aliyundrive_open",
                   type: "primary",
                 },
                 {
                   text: "GitHub",
                   link: "https://github.com/alist-org/alist/discussions/4572",
+                  type: "primary",
+                },
+                {
+                  text: "配置",
+                  link: "/zh/config/configuration",
                   type: "primary",
                 },
               ],
