@@ -22,6 +22,13 @@ star: true
 
 ::: tip
 `config.json`内配置文件修改后都需要重启AList才会生效
+
+- Windows/Mac：和AList同级文件夹內的 `data/config.json`
+- Linux：一键脚本路径,、/opt/alist/`data/config.json`，手动安装 /xx路径/`data/config.json`
+- Docker：进入Docker容器内`data/config.json`
+- openwrt：如果使用的是`luci-app-alist`,请在网页修改,其他自行找到AList执行文件同级目录`data/config.json`
+- 其他：找到AList同级文件夹內的`data/config.json`
+
 :::
 
 ```json

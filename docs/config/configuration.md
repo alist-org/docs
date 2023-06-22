@@ -22,6 +22,13 @@ star: true
 
 ::: tip
 After modifying the configuration file in `config.json`, you need to restart AList to take effect
+
+- Windows/Mac：`data/config.json` in the same level folder as AList
+- Linux：One-click Script /opt/alist/data/config.json, manually install /xx-path/`data/config.json`
+- Docker：Enter the docker container, `data/config.json`
+- openwrt：If you use `Luci-APP-Alist`, please modify on the webpage,other Please find the AList execution file, the same level directory `data/config.json`
+- Other：Find the `data/config.json` in AList executing files
+
 :::
 
 ```json
