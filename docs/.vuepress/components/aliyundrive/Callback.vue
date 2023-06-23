@@ -18,8 +18,6 @@ interface Token {
 
 const token = ref<Token>();
 
-// const api = "http://localhost:3000"
-
 const getToken = async () => {
   const resp = await fetch(api() + `/alist/ali_open/code`, {
     method: "POST",

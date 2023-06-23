@@ -2,8 +2,6 @@
 import { NInput, NSelect, NButton, NSpace, NCheckbox } from "naive-ui";
 import { ref } from "vue";
 
-const cur = "http://localhost:8080";
-
 const client = ref({
   id: "76lrwrklhdn1icb",
   secret: "",
@@ -19,7 +17,7 @@ const getToken = () => {
   const url = new URL(`https://www.dropbox.com/oauth2/authorize`);
   url.searchParams.set("client_id", client.value.id);
   url.searchParams.set("response_type", "code");
-  url.searchParams.set("redirect_uri", `${cur}/tool/dropbox/callback`);
+  url.searchParams.set("redirect_uri", `${location.origin}/tool/dropbox/callback`);
   url.searchParams.set("token_access_type", "offline");
   url.searchParams.set(
     "state",

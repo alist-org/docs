@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { NSelect } from "naive-ui";
-import { computed, ref, watch } from "vue";
+import { ref, watch } from "vue";
 import { apis, defaultApi } from ".";
 import NaiveClient from "../NaiveClient.vue";
 

@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import { NAlert, NButton, NInput, NSpace, NSpin } from "naive-ui";
+import { NAlert, NInput, NSpace, NSpin } from "naive-ui";
 import { reactive } from "vue";
 import { api } from "../api";
 
-const cur = "http://localhost:8080";
-const redirect_uri = `${cur}/tool/dropbox/callback`;
+const redirect_uri = `${location.origin}/tool/dropbox/callback`;
 
 const url = new URL(window.location.href);
 const code = url.searchParams.get("code");
