@@ -51,7 +51,7 @@ star: true
 
 个人云：将`Family ID`空着就是个人云
 
-家庭云：填写`Family ID`
+家庭云：填写`Family ID` 未知(后续补充)
 
 
 

@@ -50,7 +50,7 @@ Get the token tool address：**https://alist.nn.ci/tool/wopan/token.html**
 
 Personal cloud：Put the `family ID` blank is the personal cloud
 
-Family cloud：add `Family ID`
+Family cloud：add `Family ID `Unknown (wait for replenishment)
 
 
 
