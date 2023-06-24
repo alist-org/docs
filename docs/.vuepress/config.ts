@@ -135,5 +135,13 @@ export default defineUserConfig({
     "@Desktop": path.resolve(__dirname, "./components/Desktop.vue"),
     "@Changelog": path.resolve(__dirname, "./components/changelog/index.vue"),
     "@Api": path.resolve(__dirname, "./components/api/index.ts"),
+    "@Dropbox/Request": path.resolve(
+      __dirname,
+      "./components/dropbox/Request.vue"
+    ),
+    "@Dropbox/Callback": path.resolve(
+      __dirname,
+      "./components/dropbox/Callback.vue"
+    ),
   },
 });
