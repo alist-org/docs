@@ -22,11 +22,12 @@ WoPan address：**https://pan.wo.cn/**
 - :warning: AList v3.19.0 version and above can use this driver
 
 ::: tip
-~~WoPan使用的是网页端，如果你先使用工具获取了令牌，再去登录网页端会将AList登录的踢下线~~
 
-Conversely, if you log in to the web page first, and then log in to Alist, you will kick the web page to get off the line
+AList WoPan is web-based platform is used to access WoPan storage. 
 
-Log in to the mobile phone is no problem and will not be squeezed out.
+After mounting WoPan storage using AList, please do not log in to the web version of the WoPan again, as this will log out the AList session and make the invalid.
+
+Logging in on the mobile app does not pose any issue, as it can be done simultaneously without any conflicts.
 
 :::
 
@@ -50,7 +51,7 @@ Get the token tool address：**https://alist.nn.ci/tool/wopan/token.html**
 
 Personal cloud：Put the `family ID` blank is the personal cloud
 
-Family cloud：add `Family ID `Unknown (wait for replenishment)
+Family cloud：add `Family ID` Unknown (wait for replenishment)
 
 
 

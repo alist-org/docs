@@ -150,15 +150,15 @@ The database configuration, the default is `sqlite3`, you can also use `mysql` o
 
 ```json
   "database": {
-    "type": "sqlite3",	//database type
-    "host": "",			//database host
-    "port": 0,			//database port
-    "user": "",			//database account
-    "password": "",		//database password
-    "name": "",			//database name
-    "db_file": "data\\data.db",		//Database location, used by sqlite3
-    "table_prefix": "x_",			//database table name prefix
-    "ssl_mode": ""		//To control the encryption options during the SSL handshake, the parameters can be searched by themselves, or check the answer from ChatGPT below
+    "type": "sqlite3",  //database type
+    "host": "",         //database host
+    "port": 0,          //database port
+    "user": "",         //database account
+    "password": "",     //database password
+    "name": "",         //database name
+    "db_file": "data\\data.db",     //Database location, used by sqlite3
+    "table_prefix": "x_",           //database table name prefix
+    "ssl_mode": ""      //To control the encryption options during the SSL handshake, the parameters can be searched by themselves, or check the answer from ChatGPT below
   },
 ```
 
@@ -207,11 +207,11 @@ The scheme configuration, if you want to use https, you can set this field.
 
 ```json
   "scheme": {
-    "disable_http": false,		//Whether the HTTP protocol is forbidden
-    "https": true,				//Enable https, the default is false
-    "force_https": false,		//Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
-    "cert_file": "data\\public.crt",	//Path selection file
-    "key_file": "data\\key.key"			//Path selection file
+    "disable_http": false,      //Whether the HTTP protocol is forbidden
+    "https": true,              //Enable https, the default is false
+    "force_https": false,       //Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
+    "cert_file": "data\\public.crt",    //Path selection file
+    "key_file": "data\\key.key"         //Path selection file
   },
 ```
 

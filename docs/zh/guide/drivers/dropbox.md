@@ -36,7 +36,9 @@ Dropbox官网：https://www.dropbox.com/
 
 - 如果使用自己新建的应用需要填写`客户端ID`和`客户端秘钥`
 
-- 获取方式如上图右图（添加链接：**https://www.dropbox.com/developers/apps** ）
+- 获取方式如上图右图（创建应用链接：**https://www.dropbox.com/developers/apps** ）
+
+- 回调参数链接：**https://alist.nn.ci/tool/dropbox/callback**
 
 
 

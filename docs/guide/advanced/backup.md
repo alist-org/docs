@@ -26,7 +26,7 @@ Use `AList` to manage `Backup/Restore` options
 >
 > Recovery: Backup files before recovery 
 >
-> Cover: Select coverage when recovery, and will cover the user information
+> Override: Select override when recovery, and will override the user information
 
 ![](/img/advanced/backup.png)
 

@@ -37,7 +37,9 @@ Go to：**https://alist.nn.ci/tool/dropbox/request.html**
 
 - If you use your own new applications, you need to fill in the `client id` and the `client secret key`
 
-- The method is shown in the right side of the example above（Get a link：**https://www.dropbox.com/developers/apps** ）
+- The method is shown in the right side of the example above(Create an application link：**https://www.dropbox.com/developers/apps**)
+
+- Redirect URLs：**https://alist.nn.ci/tool/dropbox/callback**
 
 
 
