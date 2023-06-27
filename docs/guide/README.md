@@ -42,6 +42,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [mediatrack](https://www.mediatrack.cn/)
 - [x] [139yun](https://yun.139.com/) (Personal, Family)
 - [x] [Wopan](https://pan.wo.cn)
+- [x] [MoPan](https://mopan.sc.189.cn/mopan/#/downloadPc)
 - [x] [YandexDisk](https://disk.yandex.com/)
 - [x] [BaiduNetdisk](https://pan.baidu.com/) / [share](./drivers/baidu_share.md)
 - [x] [Quark](https://pan.quark.cn/)
