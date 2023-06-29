@@ -28,6 +28,42 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 或者使用本程序中的代理功能进行传输。
 
+```mermaid
+---
+title: 百度云盘如何在线播放？
+---
+flowchart TB
+  style l fill:#f9f,stroke:#333,stroke-width:4px
+  style m fill:#ff7575,stroke:#333,stroke-width:4px
+  style a fill:#f9f,stroke:#333,stroke-width:4px
+  classDef class1 fill:#0f0
+  classDef class2 fill:#0ff
+  classDef class3 fill:#f96
+  a[(百度云盘)]
+  b[超级会员]
+  c[改UA]
+  d[会改UA]
+  e[不会改UA]
+  f[本地代理]
+  g[机器带宽大]
+  k[机器带宽小带不动]
+  l[可以播放]
+  m[结束]
+  a ==> b
+  b:::class2 ==>|是| c
+  b -.->|不是| m
+  c ==> d
+  c -.-> e
+  d:::class1 ===> l
+  e:::class3 -.-> m
+  e:::class3 -->|因WebDav无法改UA| f
+  f ==> g
+  f -.-> k
+  g:::class1 ===> l
+  k:::class3 ===> m
+  click c,e,d,m "#添加-user-agent-使用示例"
+```
+
 :::
 
 ## **刷新令牌**
