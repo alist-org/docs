@@ -36,6 +36,13 @@ AList挂载联通云盘使用的是Web端
 
 - ![](/img/drivers/wopan/wopan-tool.png)
 
+此工具可能因为使用人数过多导致出现图形验证码，若出现图形验证码，则需要手动抓包：
+- 打开开发者工具
+- 打开官网 https://pan.wo.cn/ 登录
+- 找到请求内容为这个的请求：
+  ![](/img/drivers/wopan/wopan-req.png)
+- 在响应中找到token：
+  ![](/img/drivers/wopan/wopan-resp.png)
 
 
 ## **根文件夹ID**
