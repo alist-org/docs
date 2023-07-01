@@ -26,12 +26,21 @@ star: true
 
 
 
+## **本地存储视频封面**
+
+需要使用`ffmpeg` 工具来添加，暂时还不会（后续补充）
+
+- 需要使用AList版本 ≥ [**v3.12.0**](https://github.com/alist-org/alist/releases/tag/v3.12.0)
+  - Add thumbnail for video with ffmpeg  -  by [**@GodFinal**](https://github.com/GodFinal) and [**@Xhofe**](https://github.com/Xhofe) in [**#3556**](https://github.com/alist-org/alist/pull/3556) [**(309d6)**](https://github.com/alist-org/alist/commit/309d655)
+
+
+
 ### **默认使用的下载方式**
 
 
 ```mermaid
 ---
-title: **默认使用的那种下载方式？**
+title: 默认使用的那种下载方式？
 ---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

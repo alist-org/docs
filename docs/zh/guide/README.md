@@ -39,6 +39,8 @@ category:
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
 - [x] [分秒帧](https://www.mediatrack.cn/)
 - [x] [中国移动云盘](https://yun.139.com/) (个人云, 家庭云)
+- [x] [中国联通云盘](https://pan.wo.cn)
+- [x] [四川电信魔盘](https://mopan.sc.189.cn/mopan/#/downloadPc)
 - [x] [Yandex.Disk](https://disk.yandex.com/)
 - [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
 - [x] [夸克网盘](https://pan.quark.cn)
@@ -49,7 +51,7 @@ category:
 - [x] [Mega.nz](https://mega.nz)
 - [x] [一刻相册](https://photo.baidu.com/)
 - [x] [TeraBox -海外百度](https://www.terabox.com/)
-- [x] Alist v2/v3
+- [x] [AList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
 - [x] SMB
 - [x] [别名](../guide/advanced/alias.md)
 - [x] [115](https://115.com/)
@@ -59,6 +61,7 @@ category:
 - [x] [UrlTree](../guide/drivers/urltree.md)
 - [x] IPFS
 - [x] [UC](https://drive.uc.cn/)
+- [x] [Dropbox](https://www.dropbox.com)
 
 ## Discussion
 

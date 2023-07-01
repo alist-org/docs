@@ -22,6 +22,13 @@ star: true
 
 ::: tip
 `config.json`内配置文件修改后都需要重启AList才会生效
+
+- Windows/Mac：和AList同级文件夹內的 `data/config.json`
+- Linux：一键脚本路径,、/opt/alist/`data/config.json`，手动安装 /xx路径/`data/config.json`
+- Docker：进入Docker容器内`data/config.json`
+- openwrt：如果使用的是`luci-app-alist`,请在网页修改,其他自行找到AList执行文件同级目录`data/config.json`
+- 其他：找到AList同级文件夹內的`data/config.json`
+
 :::
 
 ```json
@@ -82,9 +89,12 @@ star: true
 
 要监听的端口，默认为 5244
 
-**https_port**
+### **https_port**
 
 HTTPS端口，默认为 5245
+
+- 需要开启 [`scheme`](#scheme)里面的https才会启用，正常使用Nginx反向代理并开启HTTPS和这个无关
+
 
 ### **site_url**
 
@@ -142,15 +152,15 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 ```json
   "database": {
-    "type": "sqlite3",	//数据库类型
-    "host": "",			//数据库地址
-    "port": 0,			//数据库端口号
-    "user": "",			//数据库账号
-    "password": "",		//数据库密码
-    "name": "",			//数据库库名
-    "db_file": "data\\data.db",		//数据库位置,sqlite3使用的
-    "table_prefix": "x_",			//数据库表名前缀
-    "ssl_mode": ""		//来控制SSL握手时的加密选项,参数自行搜索，或者查看下方来自ChatGPT的回答
+    "type": "sqlite3",  //数据库类型
+    "host": "",         //数据库地址
+    "port": 0,          //数据库端口号
+    "user": "",         //数据库账号
+    "password": "",     //数据库密码
+    "name": "",         //数据库库名
+    "db_file": "data\\data.db",     //数据库位置,sqlite3使用的
+    "table_prefix": "x_",           //数据库表名前缀
+    "ssl_mode": ""      //来控制SSL握手时的加密选项,参数自行搜索，或者查看下方来自ChatGPT的回答
   },
 ```
 
@@ -199,11 +209,11 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 
 ```json
   "scheme": {
-    "disable_http": false,		//是否禁止使用HTTP协议
-    "https": true,				//启用HTTPS，默认是false
-    "force_https": false,		//是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
-    "cert_file": "data\\public.crt",	//路径选择文件
-    "key_file": "data\\key.key"			//路径选择文件
+    "disable_http": false,      //是否禁止使用HTTP协议
+    "https": true,              //启用HTTPS，默认是false
+    "force_https": false,       //是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
+    "cert_file": "data\\public.crt",    //路径选择文件
+    "key_file": "data\\key.key"         //路径选择文件
   },
 ```
 
@@ -215,9 +225,32 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 temp_dir为alist独占的临时文件夹，为避免程序中断产生垃圾文件会在每次启动时清空，故请不要手动在此文件夹内放置任何内容，也不要在使用docker时将此文件夹及其子文件夹映射至正在使用的文件夹。
 :::
 
+### **bleve_dir**
+
+你使用 **`bleve`** 索引时,数据存放的位置
+
 ### **log**
 
 日志配置，如果要查看详细日志（或禁用它），可以设置该字段。
+
+```json
+  "log": {
+    "enable": true,					//开启日志记录功能，默认为开启状态 true
+    "name": "data\\log\\log.log",	//日志文件的路径和名称
+    "max_size": 10,					//单个日志文件的最大大小，单位为MB。达到指定大小后会自动切分文件
+    "max_backups": 5,				//保留的日志备份数量，超过数量会自动删除旧的备份
+    "max_age": 28,					//日志文件保存的最大天数，超过天数的日志文件会被删除
+    "compress": false				//是否启用日志文件压缩功能。压缩后可以减小文件大小，但查看时需要解压缩，默认为关闭状态 false
+  },
+```
+
+### **delayed_start**
+
+**单位：秒** (v3.19.0新增功能)
+
+是否延时启动，一般此功能常用于AList开机自启动选项
+
+因为有时候网络连接的慢，导致AList启动过快后需要网络连接的驱动无法连接导致无法正常打开
 
 ### **max_connections**
 

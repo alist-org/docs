@@ -26,6 +26,16 @@ The path of folder you wanted to mount. For example:
 
 
 
+## **Local storage video thumbnail**
+
+You need to use the `ffmpeg` tool to add, I will not (wait for replenishment) for the time being
+
+- You need to use AList version ≥ [**v3.12.0**](https://github.com/alist-org/alist/releases/tag/v3.12.0)
+  - Add thumbnail for video with ffmpeg  -  by [**@GodFinal**](https://github.com/GodFinal) and [**@Xhofe**](https://github.com/Xhofe) in [**#3556**](https://github.com/alist-org/alist/pull/3556) [**(309d6)**](https://github.com/alist-org/alist/commit/309d655)
+
+
+
+
 ### **The default download method used**
 
 

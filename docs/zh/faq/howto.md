@@ -81,8 +81,9 @@ location /alist/ {
 ### **添加 天翼云盘客户端 存储时：提示 need img validate code: 验证码**
 
 - 点击编辑，把刚刚看到的验证码写进配置里面点击保存
-- 点击编辑，把不使用OCR 按钮打开
+- 点击编辑，把不使用OCR 按钮打开 ^(荐)^
 - 或者自己进行搭建[**Ocr接口**](../config/global.md#ocr-api)
+- **天翼云盘**驱动因Web端登录已更换为滑动验证码，**不再支持ocr与手动输入**，若需要验证码请使用添加`Cookie进行登录`或使用`天翼云盘客户端`驱动(^注意看是天翼云盘驱动不是天翼云盘客户端^)
 
 ### **TLS handshake timeout? / read: connection reset by peer? / dns lookup failed? / connect: connection refused / Client.Timeout exceeded while awaiting headers?  / no such host?**
 

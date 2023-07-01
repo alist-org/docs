@@ -28,6 +28,42 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 或者使用本程序中的代理功能进行传输。
 
+```mermaid
+---
+title: 百度云盘如何在线播放？
+---
+flowchart TB
+  style l fill:#f9f,stroke:#333,stroke-width:4px
+  style m fill:#ff7575,stroke:#333,stroke-width:4px
+  style a fill:#f9f,stroke:#333,stroke-width:4px
+  classDef class1 fill:#0f0
+  classDef class2 fill:#0ff
+  classDef class3 fill:#f96
+  a[(百度云盘)]
+  b[超级会员]
+  c[改UA]
+  d[会改UA]
+  e[不会改UA]
+  f[本地代理]
+  g[机器带宽大]
+  k[机器带宽小带不动]
+  l[可以播放]
+  m[结束]
+  a ==> b
+  b:::class2 ==>|是| c
+  b -.->|不是| m
+  c ==> d
+  c -.-> e
+  d:::class1 ===> l
+  e:::class3 -.-> m
+  e:::class3 -->|因WebDav无法改UA| f
+  f ==> g
+  f -.-> k
+  g:::class1 ===> l
+  k:::class3 ===> m
+  click c,e,d,m "#添加-user-agent-使用示例"
+```
+
 :::
 
 ## **刷新令牌**
@@ -44,9 +80,22 @@ curl -L -X GET 'YOUR_LINK' -H 'User-Agent:pan.baidu.com'
 
 ## **Download API**
 
-- official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢
-- ~~crack: 非官方接口，无需修改UA且部分文件可能不限速，但是**可能**会不稳定~~
-  -  ==crack: 非官方接口== 似乎已经和谐了？[**详情自行点击查看常见问题说明**](../../faq/why.md#百度云盘非官方下载报错出现-hit-black-userlist-hit-illeage-dlna)
+- official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢 (SVIP速度快)
+- crack: 非官方接口，现在也需要修改UA且部分文件可能不限速，但是会不稳定（不保证100%可用性）需要使用大于`3.19.0`的版本
+  -  ==需要将UA改成`netdisk`==，修改方法参考下方[添加-user-agent-使用示例](#添加-user-agent-使用示例)
+  -  或者开启Web代理（需要大宽带才能带的动）
+  -  仅限于播放/下载 **`视频(只测试了mp4格式其他格式未测试)`**，其他类型文件的会出现下方提示
+  -  如果出现下面的提示请勿担心，这不是错误不是Bug，这只是限制，请勿填写`issue`上报.
+
+```json{3}
+{
+	error_code: 31119,
+	error_msg: "hit black userlist , hit illeage dlna",
+	request_id: 541111111111111140
+}
+```
+
+
 
 
 
