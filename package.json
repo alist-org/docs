@@ -9,7 +9,8 @@
     "dev-build": "vuepress build docs",
     "docs:build": "pnpm ecosystem && vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs"
+    "docs:dev": "vuepress dev docs",
+    "dev": "pnpm docs:dev"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",

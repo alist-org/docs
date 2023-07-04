@@ -41,7 +41,7 @@ const isTool = computed(() => {
   const sidebar = frontmatter.value.sidebar;
   return sidebar === false;
 })
-const showMingdao = isTool
+const showMingdao = false
 
 const spStr = computed(() => {
   if (pageData.value.path.startsWith("/zh/")) {
