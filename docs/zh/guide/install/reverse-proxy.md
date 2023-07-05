@@ -93,20 +93,20 @@ example.com {
 
 #### 1.登录宝塔面板，添加站点；
 
-![](D:\alist-github\docs\docs\.vuepress\public\img\guide\reverse_proxy\bt_new_website.png)
+![bt_new_website](/img/guide/reverse_proxy/bt_new_website.png)
 
 #### 2.修改站点设置；
 
-![](D:\alist-github\docs\docs\.vuepress\public\img\guide\reverse_proxy\bt_new_website_01.png)
+![bt_new_website_01](/img/guide/reverse_proxy/bt_new_website_01.png)
 
 #### 3.删除面板默认代码；
 
-   ![](D:\alist-github\docs\docs\.vuepress\public\img\guide\reverse_proxy\bt_delete_default_config_01.png)
+![bt_delete_default_config_01](/img/guide/reverse_proxy/bt_delete_default_config_01.png)
 
-​            ![](D:\alist-github\docs\docs\.vuepress\public\img\guide\reverse_proxy\bt_delete_default_config_02.png)
+![bt_delete_default_config_02](/img/guide/reverse_proxy/bt_delete_default_config_02.png)
 
 #### 4.添加反向代理；
 
-![](D:\alist-github\docs\docs\.vuepress\public\img\guide\reverse_proxy\bt_reverse_proxy.png)
+![bt_reverse_proxy](/img/guide/reverse_proxy/bt_reverse_proxy.png)
 
 > 如需申请`SSL`证书，可先在`SSL`选项中申请证书，然后在设置反向代理。或者设置反向代理之后，关闭反向代理功能，申请`SSL`证书后再次开启代理。
