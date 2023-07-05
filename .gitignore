@@ -12,3 +12,4 @@ yalc.lock
 # Vuepress Output
 dist/
 
+.VSCodeCounter

@@ -21,49 +21,48 @@ star: true
 ### 初始配置
 
 ::: tip
-`config.json`内配置文件修改后都需要重启AList才会生效
+`config.json`内配置文件修改后都需要重启 AList 才会生效
 
-- Windows/Mac：和AList同级文件夹內的 `data/config.json`
-- Linux：一键脚本路径,、/opt/alist/`data/config.json`，手动安装 /xx路径/`data/config.json`
-- Docker：进入Docker容器内`data/config.json`
-- openwrt：如果使用的是`luci-app-alist`,请在网页修改,其他自行找到AList执行文件同级目录`data/config.json`
-- 其他：找到AList同级文件夹內的`data/config.json`
+- Windows/Mac：和 AList 同级文件夹內的 `data/config.json`
+- Linux：一键脚本路径,、/opt/alist/`data/config.json`，手动安装 /xx 路径/`data/config.json`
+- Docker：进入 Docker 容器内`data/config.json`
+- openwrt：如果使用的是`luci-app-alist`,请在网页修改,其他自行找到 AList 执行文件同级目录`data/config.json`
+- 其他：找到 AList 同级文件夹內的`data/config.json`
 
 :::
 
 ```json
 {
   "force": false,
-  "address": "0.0.0.0",
-  "port": 5244,
-  "https_port": 5245,
   "site_url": "",
   "cdn": "",
-  "jwt_secret": "",
+  "jwt_secret": "random_generated",
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
-    "host": "",
-    "port": 0,
-    "user": "",
-    "password": "",
-    "name": "",
-    "db_file": "data\\data.db",
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "securepasswd",
+    "name": "alist",
+    "db_file": "data/data1.db",
     "table_prefix": "x_",
-    "ssl_mode": ""
+    "ssl_mode": "disable"
   },
   "scheme": {
-    "disable_http": false,
-    "https": false,
+    "address": "0.0.0.0",
+    "http_port": 5244,
+    "https_port": -1,
     "force_https": false,
     "cert_file": "",
-    "key_file": ""
+    "key_file": "",
+    "unix_file": ""
   },
-  "temp_dir": "data\\temp",
+  "temp_dir": "data/temp",
   "bleve_dir": "data\\bleve",
   "log": {
-    "enable": true,
-    "name": "data\\log\\log.log",
+    "enable": false,
+    "name": "log/log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
@@ -71,7 +70,7 @@ star: true
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": true
+  "tls_insecure_skip_verify": false
 }
 ```
 
@@ -81,37 +80,23 @@ star: true
 
 程序会优先从环境变量中读取配置，设置 `force` 为 `true` 会使程序忽略环境变量强制读取配置文件。
 
-### **address**
-
-要监听的地址，默认为 0.0.0.0
-
-### **port**
-
-要监听的端口，默认为 5244
-
-### **https_port**
-
-HTTPS端口，默认为 5245
-
-- 需要开启 [`scheme`](#scheme)里面的https才会启用，正常使用Nginx反向代理并开启HTTPS和这个无关
-
-
 ### **site_url**
 
-你的网站URL，比如`https://pan.nn.ci`，这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
+你的网站 URL，比如`https://pan.nn.ci`，这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
+
 - 本地存储的缩略图
-- 开启web代理后的预览
-- 开启web代理后的下载地址
+- 开启 web 代理后的预览
+- 开启 web 代理后的下载地址
 - 反向代理至二级目录
 - ...
 
-URL链接结尾请勿携带 `/` ，参照如下示例，否则也将无法使用上述功能或出现异常
+URL 链接结尾请勿携带 `/` ，参照如下示例，否则也将无法使用上述功能或出现异常
 
 ```json
 # 正确写法：
-"site_url": "https://pan.nn.ci",
+"site_url": "https://al.nn.ci",
 # 错误写法：
-"site_url": "https://pan.nn.ci/",
+"site_url": "https://al.nn.ci/",
 ```
 
 ### **cdn**
@@ -168,34 +153,34 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 如果不知道如何填，默认空白即可，不用修改，不填不能用的话自行研究，无法提供太多有效的帮助
 
------
+---
 
-在MySQL中，`ssl_mode`参数是用于指定SSL连接的验证模式。以下是几种常见的选项：
+在 MySQL 中，`ssl_mode`参数是用于指定 SSL 连接的验证模式。以下是几种常见的选项：
 
-- `DISABLED`: 禁用SSL连接。
-- `PREFERRED`: 如果服务器启用了SSL，则使用SSL连接；否则使用普通连接。
-- `REQUIRED`: 必须使用SSL连接，如果服务器不支持SSL连接，则连接失败。
-- `VERIFY_CA`: 必须使用SSL连接，并验证服务器证书的可信性。
-- `VERIFY_IDENTITY`: 必须使用SSL连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
+- `DISABLED`: 禁用 SSL 连接。
+- `PREFERRED`: 如果服务器启用了 SSL，则使用 SSL 连接；否则使用普通连接。
+- `REQUIRED`: 必须使用 SSL 连接，如果服务器不支持 SSL 连接，则连接失败。
+- `VERIFY_CA`: 必须使用 SSL 连接，并验证服务器证书的可信性。
+- `VERIFY_IDENTITY`: 必须使用 SSL 连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
 
-MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据库，服务商会有文档说明。自己部署的数据库那自己肯定知道。
+MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数据库，服务商会有文档说明。自己部署的数据库那自己肯定知道。
 
------
+---
 
-在PostgreSQL中，`ssl_mode`参数用于指定客户端如何使用SSL连接。以下是几种常见的选项：
+在 PostgreSQL 中，`ssl_mode`参数用于指定客户端如何使用 SSL 连接。以下是几种常见的选项：
 
-- `disable`: 禁用SSL连接。
-- `allow`: 允许使用SSL连接，但不需要。
-- `prefer`: 如果服务器启用了SSL，则使用SSL连接；否则使用普通连接。
-- `require`: 必须使用SSL连接，如果服务器不支持SSL连接，则连接失败。
-- `verify-ca`: 必须使用SSL连接，并验证服务器证书的可信性。
-- `verify-full`: 必须使用SSL连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
+- `disable`: 禁用 SSL 连接。
+- `allow`: 允许使用 SSL 连接，但不需要。
+- `prefer`: 如果服务器启用了 SSL，则使用 SSL 连接；否则使用普通连接。
+- `require`: 必须使用 SSL 连接，如果服务器不支持 SSL 连接，则连接失败。
+- `verify-ca`: 必须使用 SSL 连接，并验证服务器证书的可信性。
+- `verify-full`: 必须使用 SSL 连接，并验证服务器证书的可信性和名称是否与连接的主机名匹配。
 
-----
+---
 
 ::: right
 
-:warning::warning:**以上参数来自ChatGPT，未验证真实性/实用性/准确性:warning:**:warning:
+:warning::warning:**以上参数来自 ChatGPT，未验证真实性/实用性/准确性:warning:**:warning:
 
 :::
 
@@ -205,15 +190,17 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 
 协议配置，如果要使用 HTTPS，可以设置该字段。
 
-- 填写示例：记得把证书文件丢到data目录里面才会识别到喔~
+- 填写示例：记得把证书文件丢到 data 目录里面才会识别到喔~
 
 ```json
   "scheme": {
-    "disable_http": false,      //是否禁止使用HTTP协议
-    "https": true,              //启用HTTPS，默认是false
-    "force_https": false,       //是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
-    "cert_file": "data\\public.crt",    //路径选择文件
-    "key_file": "data\\key.key"         //路径选择文件
+    "address": "0.0.0.0", // 要监听的http/https地址，默认为 0.0.0.0
+    "http_port": 5244, // 监听的http端口,默认的“5244”,如果你想禁用http,将其设置为'-1'
+    "https_port": -1, // https端口监听,默认的'-1',如果你想启用https,将其设置为非'-1'
+    "force_https": false, // 是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
+    "cert_file": "", // 证书文件路径
+    "key_file": "", // 证书密钥文件路径
+    "unix_file": "" // Unix监听套接字文件路径,默认的空的,如果你想使用Unix socket,将其设置为非空
   },
 ```
 
@@ -222,7 +209,7 @@ MySQL 5.x和8.x也不一样。如果使用服务商提供的免费/收费数据�
 程序临时目录，默认 `data/temp`
 
 ::: danger
-temp_dir为alist独占的临时文件夹，为避免程序中断产生垃圾文件会在每次启动时清空，故请不要手动在此文件夹内放置任何内容，也不要在使用docker时将此文件夹及其子文件夹映射至正在使用的文件夹。
+temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾文件会在每次启动时清空，故请不要手动在此文件夹内放置任何内容，也不要在使用 docker 时将此文件夹及其子文件夹映射至正在使用的文件夹。
 :::
 
 ### **bleve_dir**
@@ -246,20 +233,19 @@ temp_dir为alist独占的临时文件夹，为避免程序中断产生垃圾文�
 
 ### **delayed_start**
 
-**单位：秒** (v3.19.0新增功能)
+**单位：秒** (v3.19.0 新增功能)
 
-是否延时启动，一般此功能常用于AList开机自启动选项
+是否延时启动，一般此功能常用于 AList 开机自启动选项
 
-因为有时候网络连接的慢，导致AList启动过快后需要网络连接的驱动无法连接导致无法正常打开
+因为有时候网络连接的慢，导致 AList 启动过快后需要网络连接的驱动无法连接导致无法正常打开
 
 ### **max_connections**
 
-同时最多的连接数(并发)，默认为0即不限制.
+同时最多的连接数(并发)，默认为 0 即不限制.
 
-- 对于一般的设备比如n1推荐10或者20
+- 对于一般的设备比如 n1 推荐 10 或者 20
   - 使用场景（例如打开图片模式会并发不是很好的设备就会崩溃）
 
 ### **tls_insecure_skip_verify**
 
-是否检查SSL证书，开启后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，关闭该选项请尽量在安全的网络环境下运行程序
-
+是否检查 SSL 证书，开启后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，关闭该选项请尽量在安全的网络环境下运行程序

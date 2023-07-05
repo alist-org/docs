@@ -34,36 +34,35 @@ After modifying the configuration file in `config.json`, you need to restart ALi
 ```json
 {
   "force": false,
-  "address": "0.0.0.0",
-  "port": 5244,
-  "https_port": 5245,
   "site_url": "",
   "cdn": "",
-  "jwt_secret": "",
+  "jwt_secret": "random_generated",
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
-    "host": "",
-    "port": 0,
-    "user": "",
-    "password": "",
-    "name": "",
-    "db_file": "data\\data.db",
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "securepasswd",
+    "name": "alist",
+    "db_file": "data/data1.db",
     "table_prefix": "x_",
-    "ssl_mode": ""
+    "ssl_mode": "disable"
   },
   "scheme": {
-    "disable_http": false,
-    "https": false,
+    "address": "0.0.0.0",
+    "http_port": 5244,
+    "https_port": -1,
     "force_https": false,
     "cert_file": "",
-    "key_file": ""
+    "key_file": "",
+    "unix_file": ""
   },
-  "temp_dir": "data\\temp",
+  "temp_dir": "data/temp",
   "bleve_dir": "data\\bleve",
   "log": {
-    "enable": true,
-    "name": "data\\log\\log.log",
+    "enable": false,
+    "name": "log/log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
@@ -71,7 +70,7 @@ After modifying the configuration file in `config.json`, you need to restart ALi
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": true
+  "tls_insecure_skip_verify": false
 }
 ```
 
@@ -81,24 +80,10 @@ After modifying the configuration file in `config.json`, you need to restart ALi
 
 The program will preferentially read the configuration from the environment variable, set `force` to `true` to force the program to read the configuration file.
 
-### **address**
-
-The address to listen on, default `0.0.0.0`
-
-### **port**
-
-The port to listen on, default `5244`
-
-
-### **https_port**
-
-HTTPS port，default 5245
-
-- You need to open the https in [`Scheme`](#scheme) to enable it.If you use Nginx reverse proxy and open HTTPS, this is not related to this
-
 ### **site_url**
 
 The url of your `alist` site, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
+
 - thumbnail of `LocalStorage`
 - Preview after opening web proxy
 - The download address after opening the web proxy
@@ -109,9 +94,9 @@ Please do not include `/` at the end of the URL link, refer to the following exa
 
 ```json
 # Correct way of writing:
-"site_url": "https://pan.nn.ci",
+"site_url": "https://al.nn.ci",
 # Wrong way of writing:
-"site_url": "https://pan.nn.ci/",
+"site_url": "https://al.nn.ci/",
 ```
 
 ### **cdn**
@@ -131,6 +116,8 @@ So you can use any npm or github cdn as the path, for example:
 - https://cdn1.tianli0.top/npm/alist-web@$version/dist/
 - https://cdn1.tianli0.top/gh/alist-org/web-dist@$version/dist/
 - https://npm.elemecdn.com/alist-web@$version/dist/
+- https://jsd.onmicrosoft.cn/npm/alist-web@$version/dist/
+- https://jsd.onmicrosoft.cn/gh/alist-org/web-dist@$version/dist/
 
 Also you can keep it empty to use local dist.
 
@@ -166,7 +153,7 @@ The database configuration, the default is `sqlite3`, you can also use `mysql` o
 
 If you don’t know how to fill in, fill in the default blank, no need to modify, if you can’t use it if you don’t fill it in, do your own research, and you can’t provide much effective help
 
------
+---
 
 In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of the SSL connection. Here are a few common options:
 
@@ -178,7 +165,7 @@ In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of
 
 MySQL 5.x and 8.x are also different. If you use the free/fee database provided by the service provider, the service provider will have documentation. You must know the database you deploy yourself.
 
------
+---
 
 In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses SSL connections. Here are a few common options:
 
@@ -189,7 +176,7 @@ In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses S
 - `verify-ca`: Must use SSL connection and verify the authenticity of the server certificate.
 - `verify-full`: MUST connect using SSL and verify the authenticity and name of the server certificate matches the connected hostname.
 
-----
+---
 
 ::: right
 
@@ -207,11 +194,13 @@ The scheme configuration, if you want to use https, you can set this field.
 
 ```json
   "scheme": {
-    "disable_http": false,      //Whether the HTTP protocol is forbidden
-    "https": true,              //Enable https, the default is false
-    "force_https": false,       //Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
-    "cert_file": "data\\public.crt",    //Path selection file
-    "key_file": "data\\key.key"         //Path selection file
+    "address": "0.0.0.0", // The http/https address to listen on, default `0.0.0.0`
+    "http_port": 5244, // The http port to listen on, default `5244`, if you want to disable http, set it to `-1`
+    "https_port": -1, // The https port to listen on, default `-1`, if you want to enable https, set it to non `-1`
+    "force_https": false, // Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
+    "cert_file": "", // Path of cert file
+    "key_file": "", // Path of key file
+    "unix_file": "" // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
   },
 ```
 
@@ -255,7 +244,7 @@ Because sometimes the network connection is slow, the driver that needs to be co
 The maximum number of connections (concurrent) at the same time, the default is 0, that is, unlimited.
 
 - 10 or 20 is recommended for general equipment such as n1
-   - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)
+  - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)
 
 ### **tls_insecure_skip_verify**
 
