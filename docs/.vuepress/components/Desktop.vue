@@ -10,7 +10,7 @@ if (platform.includes("win")) {
 } else if (platform.includes("linux")) {
   plat.value = "linux";
 } else if (platform.includes("mac")) {
-  plat.value = "mac";
+  plat.value = "mac_arm64";
 }
 
 console.log(plat.value);
