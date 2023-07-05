@@ -16,10 +16,10 @@ if (platform.includes("win")) {
 console.log(plat.value);
 
 const res = await fetch(
-  `${api()}/proxy/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop-proxy.json`
+  `${api()}/proxy/https://github.com/alist-org/desktop-release/releases/latest/download/proxy.json`
 );
 const data = await res.json();
-const version = (data.name as string).slice(1);
+const version = data.version as string;
 
 let text = {
   down: "Download",
