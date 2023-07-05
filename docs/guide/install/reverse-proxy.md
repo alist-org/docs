@@ -69,12 +69,24 @@ Add the reverse_proxy configuration item reverse_proxy under the Caddyfile file,
 }
 ```
 
-### **A simple demonstration of setting up a reverse proxy in Pagoda**
+## **Demonstration of Setting up Reverse Proxy in BT Panel**
 
-First create a new site, **Alist Launcher** does not matter whether it is in the site folder, and then add it as shown in the figure below.
+#### 1.Login to the BT panel and add a new website.
 
--  ==Also, if you want to use Pagoda to open **SSL(HTTPS)**, you need to add it before the reverse proxy, otherwise you cannot open SSL==
-  - If you have already added a reverse proxy, you can stop it first **(the one in the picture that turns on the proxy button can just turn it off)**, enable SSL and then turn on the reverse proxy
+![bt_new_website](/img/guide/reverse_proxy/bt_new_website.png)
 
+#### 2.Modify the website settings.
 
-![BT](https://alist-doc.nn.ci/assets/images/BT-Proxy-5913c3786afba1417362c71f0af73ea9.png)
+![bt_new_website_01](/img/guide/reverse_proxy/bt_new_website_01.png)
+
+#### 3.Remove the default panel code.
+
+![bt_delete_default_config_01](/img/guide/reverse_proxy/bt_delete_default_config_01.png)
+
+![bt_delete_default_config_02](/img/guide/reverse_proxy/bt_delete_default_config_02.png)
+
+#### 4.Add the reverse proxy.
+
+![bt_reverse_proxy](/img/guide/reverse_proxy/bt_reverse_proxy.png)
+
+> If you need to apply for an `SSL certificate`, you can first apply for the certificate in the `SSL` option, and then set up the reverse proxy. Alternatively, you can set up the reverse proxy first, disable the proxy function, apply for an `SSL` certificate, and then enable the proxy again.
