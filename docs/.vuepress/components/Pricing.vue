@@ -32,6 +32,7 @@ let data = {
       features: [
         'All Open Source features',
         'Use a nice UI to manage the Alist program instead of the command line, and easily view logs',
+        'Mount all storages as a local disk',
         'The native start with system',
         'Automatically check for updates',
         'Quick view administrator information',
@@ -100,6 +101,7 @@ if (location.pathname.startsWith("/zh/")) {
         features: [
           '所有开源功能',
           '使用好看的UI管理AList程序而不是命令行，方便的查看日志',
+          '将所有存储挂载为本地磁盘',
           '原生的开机自启',
           '自动检查更新',
           '快捷查看管理员信息',
