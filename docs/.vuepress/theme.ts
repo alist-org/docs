@@ -121,6 +121,7 @@ export default hopeTheme(
         sup: true,
         align: true,
         include: true,
+        card: true,
       },
       components: {
         components: ["ArtPlayer", "BiliBili", "Badge"],
@@ -130,46 +131,46 @@ export default hopeTheme(
             {
               path: "/",
               title: 'Kind tips',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.<br/>3.<a href="/guide/drivers/139.html">139Cloud</a>和<a href="/guide/drivers/189.html">189Cloud</a>For details of changes, please view the document by yourself, respectively</br>4.New HTTPS port can be monitored separately.For details <a href="/config/configuration.html#scheme">check the configuration document page</a></span>',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.<br/>3.<a href="/guide/drivers/139.html">139Cloud</a>和<a href="/guide/drivers/189.html">189Cloud</a>For details of changes, please view the document by yourself, respectively</br>4.v3.20.1version Breaking Changes <a href="https://github.com/alist-org/alist/discussions/4702">View detailed description</a>, go to <a href="/config/configuration.html#scheme">Configure documentation page</a></br>5.123 Cloud disk anti-leeching problem <a href="/guide/drivers/123.html#usage-issues">Click to view</a></span>',
               actions: [
-                {
-                  text: "Aliyun open",
-                  link: "/guide/drivers/aliyundrive_open",
-                  type: "primary",
-                },
-                {
-                  text: "GitHub",
-                  link: "https://github.com/alist-org/alist/discussions/4572",
-                  type: "primary",
-                },
-                {
-                  text: "Config",
-                  link: "/config/configuration",
-                  type: "primary",
-                },
+                // {
+                //   text: "Aliyun open",
+                //   link: "/guide/drivers/aliyundrive_open",
+                //   type: "primary",
+                // },
+                // {
+                //   text: "GitHub",
+                //   link: "https://github.com/alist-org/alist/discussions/4572",
+                //   type: "primary",
+                // },
+                // {
+                //   text: "Config",
+                //   link: "/config/configuration",
+                //   type: "primary",
+                // },
               ],
               showOnce: true,
             },
             {
               path: "/zh",
               title: '温馨提示',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</br>3.<a href="/zh/guide/drivers/139.html">移动云盘</a>和<a href="/zh/guide/drivers/189.html">天翼云</a>分别有改动详情请自行查看文档</br>4.新增HTTPS端口,可单独监听详情查看<a href="/zh/config/configuration.html#scheme">配置文档页面</a></span>',
+              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</br>3.<a href="/zh/guide/drivers/139.html">移动云盘</a>和<a href="/zh/guide/drivers/189.html">天翼云</a>分别有改动详情请自行查看文档</br>4.v3.20.1的版本破坏性更新<a href="https://github.com/alist-org/alist/discussions/4702">查看详细说明</a>，前往<a href="/zh/config/configuration.html#scheme">配置文档页面</a></br>5.123云盘防盗链问题<a href="/zh/guide/drivers/123.html#使用问题">点击查看</a></span>',
               actions: [
-                {
-                  text: "阿里云open",
-                  link: "/zh/guide/drivers/aliyundrive_open",
-                  type: "primary",
-                },
-                {
-                  text: "GitHub",
-                  link: "https://github.com/alist-org/alist/discussions/4572",
-                  type: "primary",
-                },
-                {
-                  text: "配置",
-                  link: "/zh/config/configuration",
-                  type: "primary",
-                },
+                // {
+                //   text: "阿里云open",
+                //   link: "/zh/guide/drivers/aliyundrive_open",
+                //   type: "primary",
+                // },
+                // {
+                //   text: "GitHub",
+                //   link: "https://github.com/alist-org/alist/discussions/4572",
+                //   type: "primary",
+                // },
+                // {
+                //   text: "配置",
+                //   link: "/zh/config/configuration",
+                //   type: "primary",
+                // },
               ],
               showOnce: true,
             },
