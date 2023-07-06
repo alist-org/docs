@@ -99,7 +99,7 @@ You can also use another machine for proxying, download the program at https://g
 
 `./alist-proxy -help` to see how to use it.
 
-If you do n’t understand [**Disassembled for details**](https://anwen-anyi.github.io/index/11-durl.html)
+If you don’t understand, there are detailed [**video tutorial**](https://www.bilibili.com/video/BV17N411S7fg/)
 
 ::::
 

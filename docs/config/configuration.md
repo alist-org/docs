@@ -40,14 +40,14 @@ After modifying the configuration file in `config.json`, you need to restart ALi
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
-    "host": "localhost",
-    "port": 5432,
-    "user": "postgres",
-    "password": "securepasswd",
-    "name": "alist",
-    "db_file": "data/data1.db",
+    "host": "",
+    "port": 0,
+    "user": "",
+    "password": "",
+    "name": "",
+    "db_file": "data\\data.db",
     "table_prefix": "x_",
-    "ssl_mode": "disable"
+    "ssl_mode": ""
   },
   "scheme": {
     "address": "0.0.0.0",
@@ -58,11 +58,11 @@ After modifying the configuration file in `config.json`, you need to restart ALi
     "key_file": "",
     "unix_file": ""
   },
-  "temp_dir": "data/temp",
+  "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
   "log": {
-    "enable": false,
-    "name": "log/log.log",
+    "enable": true,
+    "name": "data\\log\\log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
@@ -70,7 +70,7 @@ After modifying the configuration file in `config.json`, you need to restart ALi
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": false
+  "tls_insecure_skip_verify": true
 }
 ```
 
@@ -194,13 +194,13 @@ The scheme configuration, if you want to use https, you can set this field.
 
 ```json
   "scheme": {
-    "address": "0.0.0.0", // The http/https address to listen on, default `0.0.0.0`
-    "http_port": 5244, // The http port to listen on, default `5244`, if you want to disable http, set it to `-1`
-    "https_port": -1, // The https port to listen on, default `-1`, if you want to enable https, set it to non `-1`
-    "force_https": false, // Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
-    "cert_file": "", // Path of cert file
-    "key_file": "", // Path of key file
-    "unix_file": "" // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
+    "address": "0.0.0.0",   // The http/https address to listen on, default `0.0.0.0`
+    "http_port": 5244,      // The http port to listen on, default `5244`, if you want to disable http, set it to `-1`
+    "https_port": -1,       // The https port to listen on, default `-1`, if you want to enable https, set it to non `-1`
+    "force_https": false,   // Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
+    "cert_file": "data\\cert.crt",  // Path of cert file
+    "key_file": "data\\key.key",    // Path of key file
+    "unix_file": ""         // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
   },
 ```
 

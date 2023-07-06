@@ -99,6 +99,8 @@ WantedBy=multi-user.target
 - 状态: `systemctl status alist`
 - 重启: `systemctl restart alist`
 
+守护进程不配置? [**视频教程**](https://www.bilibili.com/video/BV1rF41197Qv?t=187.0)
+
 @tab macOS
 使用任意方式编辑 `~/Library/LaunchAgents/ci.nn.alist.plist` 并添加如下内容，修改 `path_alist` 为 AList 所在的路径，`path/to/working/dir` 为 AList的工作路径
 
