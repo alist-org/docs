@@ -46,7 +46,7 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[local proxy]:::someclass==mandatory==>a2[user equipment]
+    c1[local proxy]:::someclass==mandatory===>a2[user equipment]
     classDef someclass fill:#f96
     click b1 "../drivers/common.html#webdav-policy"
 ```
