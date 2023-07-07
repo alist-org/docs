@@ -20,9 +20,12 @@ export const zh = navbar([
     ],
   },
   {
-    text: "版本",
-    icon: "branch",
-    children: [{ text: "V2", link: "https://alist-doc.nn.ci" }],
+    text: "更多",
+    icon: "more",
+    children: [
+      { text: "V2", link: "https://alist-doc.nn.ci" },
+      { text: "桌面版", link: "https://ad.nn.ci/" },
+    ],
   },
   {
     text: "Github",

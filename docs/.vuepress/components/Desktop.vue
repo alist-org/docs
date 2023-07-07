@@ -23,6 +23,7 @@ const version = data.version as string;
 
 let text = {
   down: "Download",
+  website: "Website",
 };
 
 const raw = [
@@ -64,6 +65,7 @@ const options = computed(() => {
 if (location.pathname.startsWith("/zh/")) {
   text = {
     down: "下载",
+    website: "官网",
   };
 }
 
@@ -74,30 +76,41 @@ function down() {
 function handleSelect(key) {
   plat.value = key;
 }
+
+function openWebsite() {
+  window.open("https://ad.nn.ci/", "_blank");
+}
 </script>
 
 <template>
   <NSpace align="center" vertical size="large">
-    <NButtonGroup class="down">
-      <NDropdown
-        trigger="hover"
-        :options="options"
-        @select="handleSelect"
-        size="large"
-      >
-        <NButton size="large" type="primary" tertiary>💻{{ fullPlat }}</NButton>
-      </NDropdown>
-      <NButton size="large" @click="down" type="info" secondary>{{
-        text.down
+    <NSpace class="btn">
+      <NButton size="large" type="info" @click="openWebsite" tertiary>{{
+        text.website
       }}</NButton>
-    </NButtonGroup>
+      <NButtonGroup>
+        <NDropdown
+          trigger="hover"
+          :options="options"
+          @select="handleSelect"
+          size="large"
+        >
+          <NButton size="large" type="primary" tertiary
+            >💻{{ fullPlat }}</NButton
+          >
+        </NDropdown>
+        <NButton size="large" @click="down" type="info" secondary>{{
+          text.down
+        }}</NButton>
+      </NButtonGroup></NSpace
+    >
     <NImage src="/img/guide/desktop.png"></NImage>
   </NSpace>
 </template>
 
 <style scoped>
-.down {
-  transform: scale(150%);
+.btn {
+  transform: scale(125%);
   margin-top: 30px;
   margin-bottom: 30px;
 }

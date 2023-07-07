@@ -20,9 +20,12 @@ export const en = navbar([
     ],
   },
   {
-    text: "Version",
-    icon: "branch",
-    children: [{ text: "V2", link: "https://alist-doc.nn.ci" }],
+    text: "More",
+    icon: "more",
+    children: [
+      { text: "V2", link: "https://alist-doc.nn.ci" },
+      { text: "Desktop", link: "https://ad.nn.ci/" },
+    ],
   },
   {
     text: "Github",

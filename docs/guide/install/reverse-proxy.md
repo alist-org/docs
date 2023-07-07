@@ -23,6 +23,10 @@ The program listens to port 5244 by default. If you do `reverse proxy`, recommen
 
 > If you want to use a sub folder, refer to [reverse proxy with sub folder](../../faq/howto.md#how-to-reverse-proxy-with-sub-directory)
 
+:::tip Can't play video when reverse-proxy non-standard ports or enable https?
+You need to passed correct host header, refer to [#726](https://github.com/alist-org/alist/issues/726) [#1159](https://github.com/alist-org/alist/issues/1159) [#2429](https://github.com/alist-org/alist/issues/2429) [#3644](https://github.com/alist-org/alist/issues/3644) [#4181](https://github.com/alist-org/alist/issues/4181) [#4719](https://github.com/alist-org/alist/issues/4719)
+:::
+
 ### **nginx**
 Add in the server field of the website configuration file
 ```nginx
