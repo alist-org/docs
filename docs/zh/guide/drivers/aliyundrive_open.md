@@ -37,6 +37,11 @@ const getLimit = async ()=>{
 }
 typeof fetch !== "undefined" && getLimit()
 </script>
+::: info 阿里云盘会员
+
+**阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
+
+:::
 
 :::danger 请仔细阅读注意事项
 
@@ -50,6 +55,7 @@ typeof fetch !== "undefined" && getLimit()
 5.  在线播放视频提示：**`ExceedCapacityForbidden`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
 
 :::
+
 
 :::danger 关于阿里云open的OAuth验证API无法连接
 

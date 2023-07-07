@@ -40,14 +40,14 @@ star: true
   "token_expires_in": 48,
   "database": {
     "type": "sqlite3",
-    "host": "localhost",
-    "port": 5432,
-    "user": "postgres",
-    "password": "securepasswd",
-    "name": "alist",
-    "db_file": "data/data1.db",
+    "host": "",
+    "port": 0,
+    "user": "",
+    "password": "",
+    "name": "",
+    "db_file": "data\\data.db",
     "table_prefix": "x_",
-    "ssl_mode": "disable"
+    "ssl_mode": ""
   },
   "scheme": {
     "address": "0.0.0.0",
@@ -58,11 +58,11 @@ star: true
     "key_file": "",
     "unix_file": ""
   },
-  "temp_dir": "data/temp",
+  "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
   "log": {
-    "enable": false,
-    "name": "log/log.log",
+    "enable": true,
+    "name": "data\\log\\log.log",
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
@@ -70,7 +70,7 @@ star: true
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": false
+  "tls_insecure_skip_verify": true
 }
 ```
 
@@ -194,13 +194,13 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ```json
   "scheme": {
-    "address": "0.0.0.0", // 要监听的http/https地址，默认为 0.0.0.0
-    "http_port": 5244, // 监听的http端口,默认的“5244”,如果你想禁用http,将其设置为'-1'
-    "https_port": -1, // https端口监听,默认的'-1',如果你想启用https,将其设置为非'-1'
-    "force_https": false, // 是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
-    "cert_file": "", // 证书文件路径
-    "key_file": "", // 证书密钥文件路径
-    "unix_file": "" // Unix监听套接字文件路径,默认的空的,如果你想使用Unix socket,将其设置为非空
+    "address": "0.0.0.0",   // 要监听的http/https地址，默认为 0.0.0.0
+    "http_port": 5244,      // 监听的http端口,默认的“5244”,如果你想禁用http,将其设置为'-1'
+    "https_port": -1,       // https端口监听,默认的'-1',如果你想启用https,将其设置为非'-1'
+    "force_https": false,   // 是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
+    "cert_file": "data\\cert.crt",  // 证书文件路径
+    "key_file": "data\\key.key",    // 证书密钥文件路径
+    "unix_file": ""         // Unix监听套接字文件路径,默认的空的,如果你想使用Unix socket,将其设置为非空
   },
 ```
 

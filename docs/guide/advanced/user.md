@@ -27,6 +27,13 @@ Password is invalid for guest user.
 
 ### **Base path**
 The root path that users see when he/she log in
+
+-----
+
+Q: How to allow a user to see multiple folder paths?
+
+A: You can create a new [alias](alias.md) storage, add all the paths you need to show the user to the alias, and then point to the newly created alias storage in the user path
+
 ### **Permission**
 - Can see hides: Can see the hides files and folders
 - Access without password: Can access without password
