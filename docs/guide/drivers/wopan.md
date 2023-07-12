@@ -35,7 +35,7 @@ Get the token tool address：**https://alist.nn.ci/tool/wopan/token.html**
 
 - ![](/img/drivers/wopan/wopan-tool.png)
 
-This tool may have a graphic verification code due to too many users. If a graphic verification code appears, you need to manually capture the packet:
+==This tool may have a graphic verification code due to too many users. If a graphic verification code appears, you need to manually capture the packet:==
 - Open developer tools
 - Open the official website https://pan.wo.cn/ to log in
 - Find the request with this content:

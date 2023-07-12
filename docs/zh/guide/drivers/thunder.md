@@ -61,7 +61,7 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[本机代理]:::someclass==默认==>a2[用户设备]
+    c1[本机代理]:::someclass==默认===>a2[用户设备]
     classDef someclass fill:#f96
     b1[代理URL]-.备选.->a2[用户设备]
     click b1 "../drivers/common.html#webdav-策略"

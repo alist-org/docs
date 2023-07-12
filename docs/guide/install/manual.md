@@ -99,6 +99,8 @@ Then `systemctl daemon-reload`, now you can use these commands to manage the pro
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
 
+Daemon will not use? [**Video Tutorial**](https://www.bilibili.com/video/BV1rF41197Qv?t=187.0)
+
 @tab macOS
 Edit `~/Library/LaunchAgents/ci.nn.alist.plist` in any way and add the following content, modify `path_alist` to be the path where AList is located, and `path/to/working/dir` to be the working path of AList
 

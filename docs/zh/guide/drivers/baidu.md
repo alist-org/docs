@@ -34,12 +34,15 @@ title: 百度云盘如何在线播放？
 ---
 flowchart TB
   style l fill:#f9f,stroke:#333,stroke-width:4px
+  style ll fill:#f9f,stroke:#333,stroke-width:4px
   style m fill:#ff7575,stroke:#333,stroke-width:4px
   style a fill:#f9f,stroke:#333,stroke-width:4px
   classDef class1 fill:#0f0
   classDef class2 fill:#0ff
   classDef class3 fill:#f96
   a[(百度云盘)]
+  1[官方接口]
+  2[非官方接口]
   b[超级会员]
   c[改UA]
   d[会改UA]
@@ -49,19 +52,41 @@ flowchart TB
   k[机器带宽小带不动]
   l[可以播放]
   m[结束]
-  a ==> b
+  a ==> 1
+  1 ==> b
   b:::class2 ==>|是| c
   b -.->|不是| m
   c ==> d
   c -.-> e
-  d:::class1 ===> l
+  d:::class1 ===>|UA改成 \n pan.baidu.com| l
   e:::class3 -.-> m
-  e:::class3 -->|因WebDav无法改UA| f
+  e:::class3 -->|不会修改UA只能使用本地代理 \n 同时若使用WebDav也无法改UA \n WebDav只能使用本地代理| f
   f ==> g
   f -.-> k
   g:::class1 ===> l
   k:::class3 ===> m
-  click c,e,d,m "#添加-user-agent-使用示例"
+  a ==>|不保证100%可用性 \n 需要大于>v3.19.0| 2
+  cc[改UA]
+  dd[会改UA]
+  ee[不会改UA]
+  mm[WebDav]
+  ff[本地代理]
+  ll[可以播放]
+  gg[机器带宽大]
+  kk[机器带宽小带不动]
+  2 --> |不需要超级会员| cc
+  cc -.-> ee
+  cc ==> dd
+  dd ==>|UA改成 \n netdisk| ll
+  mm:::class1 ==> |直接播放| ll
+  ee -.-> m
+  ee ===> |非官方不会修改UA \n 只能使用本地代理\n 或者Webdav播放| ff
+  ee ===> |WebDav 可以302 \n 不用修改UA| mm
+  ff -.-> kk
+  ff ==> gg
+  kk -.-> m
+  gg --> ll
+  click c,e,d,m,cc,dd,ee "#添加-user-agent-使用示例"
 ```
 
 :::
@@ -84,6 +109,7 @@ flowchart TB
 - crack: 非官方接口，现在也需要修改UA且部分文件可能不限速，但是会不稳定（不保证100%可用性）需要使用大于`3.19.0`的版本
   -  ==需要将UA改成`netdisk`==，修改方法参考下方[添加-user-agent-使用示例](#添加-user-agent-使用示例)
   -  或者开启Web代理（需要大宽带才能带的动）
+  -  WebDav播放不需要修改UA，可以直接302播放
   -  仅限于播放/下载 **`视频(只测试了mp4格式其他格式未测试)`**，其他类型文件的会出现下方提示
   -  如果出现下面的提示请勿担心，这不是错误不是Bug，这只是限制，请勿填写`issue`上报.
 
