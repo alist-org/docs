@@ -93,11 +93,24 @@ example.com {
 将 `example.com` 替换为你自己解析后的域名。
 
 ```
-## **宝塔设置反向代理简单示范**
+## **宝塔设置反向代理示范**
 
-首先新建一个站点，**Alist启动程序** 在不在这个站点文件夹内都无所谓，然后照着下图添加即可。
+#### 1.登录宝塔面板，添加站点；
 
--  ==还有就是如果你要用宝塔开启 **SSL(HTTPS)**， 你需要在反向代理之前添加不然无法开启SSL==
-  - 如果你已经添加了反向代理，可以先停止 **(图片里面哪个开启代理按钮关了它就行)** ,开启了SSL再把反向代理打开即可
+![bt_new_website](/img/guide/reverse_proxy/bt_new_website.png)
 
-![BT](https://alist-doc.nn.ci/assets/images/BT-Proxy-5913c3786afba1417362c71f0af73ea9.png)
+#### 2.修改站点设置；
+
+![bt_new_website_01](/img/guide/reverse_proxy/bt_new_website_01.png)
+
+#### 3.删除面板默认代码；
+
+![bt_delete_default_config_01](/img/guide/reverse_proxy/bt_delete_default_config_01.png)
+
+![bt_delete_default_config_02](/img/guide/reverse_proxy/bt_delete_default_config_02.png)
+
+#### 4.添加反向代理；
+
+![bt_reverse_proxy](/img/guide/reverse_proxy/bt_reverse_proxy.png)
+
+> 如需申请`SSL`证书，可先在`SSL`选项中申请证书，然后在设置反向代理。或者设置反向代理之后，关闭反向代理功能，申请`SSL`证书后再次开启代理。
