@@ -75,9 +75,8 @@ Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) 
 
 ### Special sponsors
 
-- [明道云 - 零代码开发平台，快速响应业务需求。从“IT 背锅侠”变成“IT 英雄”](https://www.mingdao.com?s=utm_51=utm_source=alist&utm_medium=banner&utm_campaign=%E5%93%81%E7%89%8C%E6%8E%A8%E5%B9%BF&utm_content=IT%E8%B5%8B%E8%83%BD%E4%B8%9A%E5%8A%A1)
-- [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.la/)
-- [KinhDown 百度云盘不限速下载！永久免费！以稳定运行 3 年！非常可靠!](https://kinhdown.com/?Type=Tutorials)
+- [亚洲云 - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商](https://www.asiayun.com/aff/QQCOOQKZ) (国内API服务器赞助)
+- [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.pw/)
 
 ### License
 
