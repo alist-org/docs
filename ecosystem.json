@@ -19,6 +19,7 @@
     { "type": "github", "repo": "Kuingsmile/PicHoro" },
     { "type": "github", "repo": "BFWXKJGS/AlistClient" },
     { "type": "github", "repo": "xlist-io/xlist" },
-    { "type": "github", "repo": "j4587698/AListSdkSharp" }
+    { "type": "github", "repo": "j4587698/AListSdkSharp" },
+    { "type": "github", "repo": "ShiroNeri4u/Neribox" }
   ]
 }
