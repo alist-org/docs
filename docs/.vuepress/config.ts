@@ -17,6 +17,22 @@ export default defineUserConfig({
         // async: true,
       },
     ],
+    [
+      "link",
+      {
+        type: "text/css",
+        rel: "stylesheet",
+        href: "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
+        media: "all"
+      }
+    ],
+    [
+      "link",
+      {
+        href: "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
+        rel: "stylesheet"
+      }
+    ],
     // [
     //   "script",
     //   {

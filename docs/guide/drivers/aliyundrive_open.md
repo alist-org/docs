@@ -41,6 +41,8 @@ typeof fetch !== "undefined" && getLimit()
 
 **Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
 
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1), which is cheaper than buying directly on Alibaba Cloud Disk~
+
 :::
 
 :::danger Read the precautions carefully
@@ -97,7 +99,19 @@ which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by Alist.
 
+## **Rapid upload**
+
+- **v.3.22.1** version New add
+
+It is Rapid upload. When adding the driver, you need to check Rapid upload to enable it. The premise of Rapid upload is that the Aliyun disk already has this file before you can perform Rapid upload, otherwise it is a normal upload.
+
+Rapid upload calculates the `sha1` value of the file (should be correct), you don’t need to calculate it, you just need to upload it and upload it, it will automatically calculate it for you and upload it
+
+- The interface provided by the official API of Alibaba Cloud Disk is used, check :point_right: [**Rapid upload logic**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
+
 ## **Remove way**
+
+If you don’t set it, it will be deleted to the recycle bin by default. If there is not enough space, you need to manually clean up the recycle bin. If you delete the wrong file, please go to the Alibaba Cloud Disk official website client to retrieve and restore it.
 
 - Trash: Enter the cloud disk recycle bin after AList is deleted, which will occupy the cloud disk space, but it can be retrieved if it is deleted by mistake later.
 - Delete: direct deletion will not stay in the recycle bin, and will not occupy cloud disk space, but if deleted by mistake later, it cannot be retrieved.
@@ -137,7 +151,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 
 > Q: Why can’t Alibaba Cloud Disk Open see files of the Office Family Bucket type?
 >
-> A: Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view
+> A: ~~Because Aliyun disk has not opened the relevant API, it is temporarily unavailable to view~~ (please look forward to)
 
 ##### Four、
 

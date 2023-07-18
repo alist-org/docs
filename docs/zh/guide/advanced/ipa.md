@@ -43,18 +43,13 @@ star: true
 
 @tab 电脑版如何改名
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
-  poster="/img/advanced/video.png"
-/>
+<BiliBili bvid="BV1bT411N7tT" ratio="16:9" low-quality no-danmaku />
 
 **视频若失效可以前往观看：https://b23.tv/oLvHHC8**
 
 @tab IOS 16手机如何改名
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4871961534007938&raw=true" 
-/>
+<BiliBili bvid="BV1kX4y1X7vo" />
 
 **视频若失效可以前往观看：https://b23.tv/GxGG8Dn**
 

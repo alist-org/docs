@@ -41,6 +41,8 @@ typeof fetch !== "undefined" && getLimit()
 
 **阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
 
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)，比直接在阿里云盘购买便宜喔~
+
 :::
 
 :::danger 请仔细阅读注意事项
@@ -105,10 +107,24 @@ typeof fetch !== "undefined" && getLimit()
 
 
 
+## **秒传**
+
+- **v.3.22.1** 版本 新增功能
+
+就是秒传，需要在挂载时，需要启用`秒传`，要秒传的前提是阿里云盘已经有这个文件才可以进行秒传否则就是普通的上传
+
+秒传计算的是文件`sha1`值(应该没错)不需要你计算,你只需要上传即可上传好了会自动帮你计算然后上传完成
+
+- 使用的是阿里云盘官方API提供的接口，查看 :point_right: [**秒传逻辑**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
+
+
+
 ## **移除方式**
 
-- 回收站：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
-- 删除：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
+不进行设置默认是删除到回收站內了，如果空间不够需要自己手动清理回收站/若删错文件请前往阿里云盘官网客户端进行找回恢复
+
+- **回收站**：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
+- **删除**：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
   - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开-阿里云盘-app-我的-右上角设置齿轮-隐私设置-授权管理-点击-alist-进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
 
 
@@ -149,7 +165,7 @@ typeof fetch !== "undefined" && getLimit()
 
 >Q：阿里云盘Open怎么看不了 Office 全家桶类型的文件
 >
->A：因为阿里云盘未开放相关API故暂时无法查看
+>A：~~因为阿里云盘未开放相关API故暂时无法查看~~（敬请期待）
 
 ##### 四、
 
