@@ -82,10 +82,7 @@ star: true
 
 ### **视频教程**
 
-<ArtPlayer
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4872400300415846&raw=true" 
-  poster="/img/advanced/github-login.png"
-/>
+<BiliBili bvid="BV1KA41117m5" />
 
 **视频若失效可以前往观看: https://b23.tv/Fm8AkC5**
 
@@ -211,6 +208,8 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 我们进入`Casdoor`后，首先分别新建一下 **组织**^1^，**令牌**^2^，**应用**^3^，**用户**^4^
 
+请勿直接使用默认组织(**app-built-in**),因为这个组织内的用户都是全局管理员帐号
+
 然后依次填写到`AList`后台单点登录选项内，用户的参数暂时不用管，是在个人资料绑定单点登录的时候填写的
 
 ![sso](/img/advanced/casdoor.png)
@@ -232,5 +231,142 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 ::: details 直接 iframe 查看
 <iframe src="https://anwen-anyi.github.io/index/09-ssologin.html#%E6%8E%A5%E5%85%A5" name="iframe_a" scrolling="ok" frameborder="0" width="100%" height="1000" style="scrolling: no;1px solid #ccc; border-radius: 16px;"></iframe>
 :::
+
+::::
+
+
+
+## **单点登录自动注册为AList帐号**
+
+::::tabs#sso
+
+@tab GitHub
+
+暂无，目前只支持`Casdoor`
+
+@tab 钉钉
+
+暂无，目前只支持`Casdoor`
+
+@tab 微软
+
+暂无，目前只支持`Casdoor`
+
+@tab 谷歌
+
+暂无，目前只支持`Casdoor`
+
+@tab Casdoor
+
+在使用单点登录注册为AList帐号前，我们需要先将AList的单点登录进行绑定，绑定方法在上面有说明
+
+- 请勿直接使用默认组织(**app-built-in**),因为这个组织内的用户都是全局管理员帐号
+
+目前目前只支持使用`Casdoor`自动注册为AList帐号
+
+
+
+### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>.SSO完整填写示例**
+
+分别如何填写看下面的详细说明，示意图只是一个填写参考并不适合每个人的用户习惯
+
+![](/img/advanced/sso-add.png)
+
+
+
+### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>.SSO自动注册**
+
+如果我们想让SSO单点登录注册为AList帐号我们需要打开这个选项才可以使用
+
+
+
+### **<i class="fa-solid fa-circle-2" style="color: #409eff;"></i>.SSO默认路径**
+
+也就是说注册的帐号默认使用的路径，相当于AList用户设置里面的`基本路径`
+
+可以是根目录`/`，也可以是用户指定的路径`/path/test/Demo`
+
+![](/img/advanced/sso-dir.png)
+
+
+
+### **<i class="fa-solid fa-circle-3" style="color: #409eff;"></i>.SSO默认权限**
+
+相当于注册的用户默认开通哪些权限，就如下面所示的
+
+![](/img/advanced/sso-permission.png)
+
+默认为0，不开通任何权限
+
+如果在注册时我们需要开通一些权限我们只需要不同权限的数字相加即可
+
+例如：
+
+1. 我们需要默认开通用户的`WebDav读取`和`WebDav管理`那就是256+512=768，我们就在填写选项填写`768`即可
+2. 如果我们需要注册时默认开通`创建目录或上传`和`重命名`和`删除`这三个权限 那就是8+16+128=152，我们在后台填写`152`即可
+
+例子就不多说了，需要那个权限自己相加就可以
+
+
+
+### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>.SSO用户群组**
+
+填写参数可以为空不写，或者填写`Casdoor`群组名称
+
+-----
+
+**说下为空和不为空的优点和缺点：**
+
+| 填写参数 | 优点                     | 缺点                             |
+| :------: | :----------------------- | :------------------------------- |
+|   为空   | 方便注册为AList帐号      | 任何人都可以随意注册，不安全     |
+|  不为空  | 可以阻止用户恶意注册帐号 | 需要手动为用户添加群组，但是安全 |
+
+默认为空，什么都不用填写
+
+-----
+
+如果不为空，那么需要在`Casdoor`新建一个群组，然后给指定的人分配群组
+
+1. 新建一个群组，绑定好组织
+2. 进入用户找到添加群组的用户
+3. 进入用户设置，下拉找到群组给该用户分配群组
+
+![](/img/advanced/sso-group.png)
+
+
+
+#### **<i class="fa-solid fa-circle-5" style="color: #409eff;"></i>.注意事项以及说明**
+
+**5.1-AList用户数据库已经有这个用户**
+
+```json{3}
+{
+  "code": 400,
+  "message": "UNIQUE constraint failed: x_users.username",
+  "data": null
+}
+```
+**5.2-未给用户添加组，或者添加的群组和AList后台填写的群组不一致**
+
+```json{3}
+{
+  "code": 400,
+  "message": "user group not allow to register",
+  "data": null
+}
+```
+
+**5.3-旧版本升级后没有找到群组选项，在用户信息也没有群组选项**
+
+如果第一次安装使用的若是 **v1.365.0** 以上版本不会出现这个问题，第一次安装使用建议使用**Releases**最新版的
+
+1. `Casdoor`顶部没有群组选项是因为旧版本升级后配置文件没配置
+   - 在配置文件`/conf/app.conf`的最后一行添加 **`initDataFile = "./init_data.json"`**
+
+1. 在用户信息没找到群组配置，是因为低版本升级导致的，解决办法如下
+   - 因为没有清除数据库(不需要清除)，升级的话要需要先修改`Group`属性,将`immutable`修改为`admin`， 在组织配置中修改:
+
+![](/img/advanced/sso-org-config.png)
 
 ::::
