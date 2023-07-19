@@ -40,6 +40,8 @@ star: true
 
 
 
+## **注册绑定单点登录**
+
 ::::tabs#sso
 
 @tab GitHub
@@ -238,35 +240,18 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 ## **单点登录自动注册为AList帐号**
 
-::::tabs#sso
-
-@tab GitHub
-
-暂无，目前只支持`Casdoor`
-
-@tab 钉钉
-
-暂无，目前只支持`Casdoor`
-
-@tab 微软
-
-暂无，目前只支持`Casdoor`
-
-@tab 谷歌
-
-暂无，目前只支持`Casdoor`
-
-@tab Casdoor
+- ==AList 版本 > **v3.22.1** 新增功能==
 
 在使用单点登录注册为AList帐号前，我们需要先将AList的单点登录进行绑定，绑定方法在上面有说明
 
-- 请勿直接使用默认组织(**app-built-in**),因为这个组织内的用户都是全局管理员帐号
+- 支持上述提到的`五个`单点登录方法
 
-目前目前只支持使用`Casdoor`自动注册为AList帐号
+- 如果使用`Casdoor`,请勿直接使用默认组织(**app-built-in**),因为这个组织内的用户都是全局管理员帐号
+- 除了`Casdoor`其它的只需要填写`客户端ID`和`客户端秘钥`以及下面新增的单点登录帐号注册为AList帐号的配置
 
 
 
-### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>.SSO完整填写示例**
+### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>SSO完整填写示例**
 
 分别如何填写看下面的详细说明，示意图只是一个填写参考并不适合每个人的用户习惯
 
@@ -274,13 +259,13 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 
 
-### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>.SSO自动注册**
+### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>SSO自动注册**
 
 如果我们想让SSO单点登录注册为AList帐号我们需要打开这个选项才可以使用
 
 
 
-### **<i class="fa-solid fa-circle-2" style="color: #409eff;"></i>.SSO默认路径**
+### **<i class="fa-solid fa-circle-2" style="color: #409eff;"></i>SSO默认路径**
 
 也就是说注册的帐号默认使用的路径，相当于AList用户设置里面的`基本路径`
 
@@ -290,7 +275,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 
 
-### **<i class="fa-solid fa-circle-3" style="color: #409eff;"></i>.SSO默认权限**
+### **<i class="fa-solid fa-circle-3" style="color: #409eff;"></i>SSO默认权限**
 
 相当于注册的用户默认开通哪些权限，就如下面所示的
 
@@ -309,64 +294,18 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 
 
-### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>.SSO用户群组**
+### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>.注意事项以及说明**
 
-填写参数可以为空不写，或者填写`Casdoor`群组名称
+**4.1-AList用户数据库已经的帐号**
 
------
+| username          | password | base_path | role | permission | opt_secret | github_id | disabled | sso_id      |
+| ----------------- | -------- | --------- | ---- | ---------- | ---------- | --------- | -------- | ----------- |
+| anyi              | FzdDfkmU | /本地1    | 0    | 3          |            |           | 0        |             |
+| anyi_**dc188911** | RUCtgqCw | /本地1    | 0    | 3          |            |           | 0        | **dc18891** |
 
-**说下为空和不为空的优点和缺点：**
+如上表格所示，新注册的单点登录用户名称后增加了一串多余的id
 
-| 填写参数 | 优点                     | 缺点                             |
-| :------: | :----------------------- | :------------------------------- |
-|   为空   | 方便注册为AList帐号      | 任何人都可以随意注册，不安全     |
-|  不为空  | 可以阻止用户恶意注册帐号 | 需要手动为用户添加群组，但是安全 |
+这是因为AList用户数据库中已有了相同的用户，所以在用户名后把单点登录ID也添加上去了
 
-默认为空，什么都不用填写
+如果你新注册的单点登录用户名在AList用户数据库中没有，它就不会在名字后面添加单点登录ID
 
------
-
-如果不为空，那么需要在`Casdoor`新建一个群组，然后给指定的人分配群组
-
-1. 新建一个群组，绑定好组织
-2. 进入用户找到添加群组的用户
-3. 进入用户设置，下拉找到群组给该用户分配群组
-
-![](/img/advanced/sso-group.png)
-
-
-
-#### **<i class="fa-solid fa-circle-5" style="color: #409eff;"></i>.注意事项以及说明**
-
-**5.1-AList用户数据库已经有这个用户**
-
-```json{3}
-{
-  "code": 400,
-  "message": "UNIQUE constraint failed: x_users.username",
-  "data": null
-}
-```
-**5.2-未给用户添加组，或者添加的群组和AList后台填写的群组不一致**
-
-```json{3}
-{
-  "code": 400,
-  "message": "user group not allow to register",
-  "data": null
-}
-```
-
-**5.3-旧版本升级后没有找到群组选项，在用户信息也没有群组选项**
-
-如果第一次安装使用的若是 **v1.365.0** 以上版本不会出现这个问题，第一次安装使用建议使用**Releases**最新版的
-
-1. `Casdoor`顶部没有群组选项是因为旧版本升级后配置文件没配置
-   - 在配置文件`/conf/app.conf`的最后一行添加 **`initDataFile = "./init_data.json"`**
-
-1. 在用户信息没找到群组配置，是因为低版本升级导致的，解决办法如下
-   - 因为没有清除数据库(不需要清除)，升级的话要需要先修改`Group`属性,将`immutable`修改为`admin`， 在组织配置中修改:
-
-![](/img/advanced/sso-org-config.png)
-
-::::

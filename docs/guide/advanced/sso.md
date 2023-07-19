@@ -37,10 +37,11 @@ secrets ID
 
    - If you use **`Casdoor`** the following parameters need to be filled in, just follow the tutorial to fill in
 
-
 :::
 
 
+
+## **Registration binding single sign-on**
 
 ::::tabs#sso
 
@@ -82,10 +83,7 @@ Remember to write and save the background parameters of AList. After writing and
 
 ### **GitHub login Video Tutorials**
 
-<ArtPlayer
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4872400300415846&raw=true" 
-  poster="/img/advanced/github-login.png"
-/>
+<BiliBili bvid="BV1KA41117m5" />
 
 **If the video fails, you can watch it here: https://b23.tv/Fm8AkC5**
 
@@ -248,35 +246,18 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
 
 ## **SSO automatically registers as an AList account**
 
-::::tabs#sso
-
-@tab GitHub
-
-None, currently only supports `Casdoor`
-
-@tab Dingtalk
-
-None, currently only supports `Casdoor`
-
-@tab Microsoft
-
-None, currently only supports `Casdoor`
-
-@tab Google
-
-None, currently only supports `Casdoor`
-
-@tab Casdoor
+- ==AList Version > **v3.22.1** New Features==
 
 Before using single sign-on to register as an AList account, we need to bind the single sign-on of AList first, the binding method is explained above
 
+- Supports the `five` single sign-on methods mentioned above
+
 - Do not use the default organization (**app-built-in**) directly, because all users in this organization are global administrator accounts
-
-At present, it only supports automatic registration as an AList account using `Casdoor`
-
+- Except `CASDOOR`, you only need to fill in the` Client id` and the `Client secrets`and the newly added single login account registered as Alist account configuration
 
 
-### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>.SSO Full Fill Demo**
+
+### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>SSO Full Fill Demo**
 
 Please refer to the detailed description below for how to fill in, the schematic diagram is just a reference for filling in and not suitable for everyone’s user habits
 
@@ -284,13 +265,13 @@ Please refer to the detailed description below for how to fill in, the schematic
 
 
 
-### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>.SSO auto register**
+### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>SSO auto register**
 
 If we want SSO single sign-on to be registered as an AList account, we need to enable this option before it can be used
 
 
 
-### **<i class="fa-solid fa-circle-2" style="color: #409eff;"></i>.SSO default dir**
+### **<i class="fa-solid fa-circle-2" style="color: #409eff;"></i>SSO default dir**
 
 That is to say, the default path used by the registered account is equivalent to the `Base path` in the AList user settings.
 
@@ -300,7 +281,7 @@ It can be the root directory `/`, or the path `/path/test/Demo` specified by the
 
 
 
-### **<i class="fa-solid fa-circle-3" style="color: #409eff;"></i>.SSO default permission**
+### **<i class="fa-solid fa-circle-3" style="color: #409eff;"></i>SSO default permission**
 
 It is equivalent to which permissions are enabled by default for registered users, as shown below
 
@@ -319,64 +300,17 @@ I won’t say much about the examples, just add the permissions you need
 
 
 
-### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>.SSO user group**
+#### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>Precautions and instructions**
 
-Fill in the parameters can be empty or not, or fill in the name of the `Casdoor` Group
+**4.1-There is already this user in the AList user database**
 
------
+| username          | password | base_path | role | permission | opt_secret | github_id | disabled | sso_id      |
+| ----------------- | -------- | --------- | ---- | ---------- | ---------- | --------- | -------- | ----------- |
+| anyi              | FzdDfkmU | /test1    | 0    | 3          |            |           | 0        |             |
+| anyi_**dc188911** | RUCtgqCw | /test1    | 0    | 3          |            |           | 0        | **dc18891** |
 
-**Let's talk about the advantages and disadvantages of being empty and not being empty:**
+As shown in the above table, a string of redundant ids is added after the newly registered single sign-on user name
 
-| Fill in the parameters | advantage                                               | shortcoming                                               |
-| :--------------------: | :------------------------------------------------------ | :-------------------------------------------------------- |
-|          null          | Easy to register as an AList account                    | Anyone can register at will, not safe                     |
-|        not null        | Can prevent users from maliciously registering accounts | You need to manually add groups for users, but it is safe |
+This is because the same user already exists in the AList user database, so the sso_id is also added after the user name
 
-The default is empty, nothing needs to be filled
-
------
-
-If it is not empty, you need to create a new group in `Casdoor`, and then assign the group to the specified person
-
-1. Create a new Group and bind the organization
-2. Enter the user to find the user who added the Group
-3. Enter the user settings, pull down to find the group and assign the Group to the user
-
-![](/img/advanced/sso-group.png)
-
-
-
-#### **<i class="fa-solid fa-circle-5" style="color: #409eff;"></i>.Precautions and instructions**
-
-**5.1-There is already this user in the AList user database**
-
-```json{3}
-{
-  "code": 400,
-  "message": "UNIQUE constraint failed: x_users.username",
-  "data": null
-}
-```
-**5.2-No group has been added to the user, or the added group is inconsistent with the group filled in the AList background**
-
-```json{3}
-{
-  "code": 400,
-  "message": "user group not allow to register",
-  "data": null
-}
-```
-
-**5.3-After the old version was upgraded, no group option was found, and there was no group option in the user information**
-
-If the version above **v1.365.0** is used for the first installation, this problem will not occur. It is recommended to use the latest version of **Releases** for the first installation.
-
-1. There is no group option at the top of `Casdoor` because the configuration file is not configured after the upgrade of the old version
-    - Add **`initDataFile = "./init_data.json"`** to the last line of configuration file `/conf/app.conf`
-
-2. The group configuration is not found in the user information, which is caused by the upgrade of the lower version. The solution is as follows
-    - Because the database is not cleared (no need to clear it), you need to modify the `Group` attribute first, change `immutable` to `admin`, and modify it in the organization configuration:
-
-![](/img/advanced/sso-org-config.png)
-
-::::
+If your newly registered single sign-on user name does not exist in the AList user database, it will not add the sso_id after the name
