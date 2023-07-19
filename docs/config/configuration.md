@@ -23,11 +23,11 @@ star: true
 ::: tip
 After modifying the configuration file in `config.json`, you need to restart AList to take effect
 
-- Windows/Mac：`data/config.json` in the same level folder as AList
-- Linux：One-click Script /opt/alist/data/config.json, manually install /xx-path/`data/config.json`
-- Docker：Enter the docker container, `data/config.json`
-- openwrt：If you use `Luci-APP-Alist`, please modify on the webpage,other Please find the AList execution file, the same level directory `data/config.json`
-- Other：Find the `data/config.json` in AList executing files
+- Windows/Mac: `data/config.json` in the same level folder as AList
+- Linux: One-click Script /opt/alist/data/config.json, manually install /xx-path/`data/config.json`
+- Docker: Enter the docker container, `data/config.json`
+- openwrt: If you use `Luci-APP-Alist`, please modify on the webpage,other Please find the AList execution file, the same level directory `data/config.json`
+- Other: Find the `data/config.json` in AList executing files
 
 :::
 
@@ -56,7 +56,8 @@ After modifying the configuration file in `config.json`, you need to restart ALi
     "force_https": false,
     "cert_file": "",
     "key_file": "",
-    "unix_file": ""
+    "unix_file": "",
+    "unix_file_perm": ""
   },
   "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
@@ -151,7 +152,7 @@ The database configuration, the default is `sqlite3`, you can also use `mysql` o
 
 :::: details Expand to view `ssl_mode` parameter options
 
-If you don’t know how to fill in, fill in the default blank, no need to modify, if you can’t use it if you don’t fill it in, do your own research, and you can’t provide much effective help
+If you don't know how to fill in, fill in the default blank, no need to modify, if you can't use it if you don't fill it in, do your own research, and you can't provide much effective help
 
 ---
 
@@ -200,7 +201,8 @@ The scheme configuration, if you want to use https, you can set this field.
     "force_https": false,   // Whether the HTTPS protocol is forcibly, if it is set to True, the user can only access the website through HTTPS
     "cert_file": "data\\cert.crt",  // Path of cert file
     "key_file": "data\\key.key",    // Path of key file
-    "unix_file": ""         // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
+    "unix_file": "",        // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
+    "unix_file_perm": ""    // Unix socket file permission, set to the appropriate permissions
   },
 ```
 
