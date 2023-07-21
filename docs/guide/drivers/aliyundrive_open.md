@@ -55,6 +55,7 @@ typeof fetch !== "undefined" && getLimit()
     - The number of times and time mentioned above are dynamic~
     - New optimization: **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
 5.  Online playback video reminder: **`ExceedCapacityForbidden`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space,[View details](#four、)
+6.  <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> **==Do not share the Alibaba cloud disk publicly, and the account is prohibited from being accessed by multiple IPs. If the account is frozen after sharing, you will be responsible for the consequences== <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i>  After adding storage, please set up meta information and other measures in time to prevent the account from being frozen by {other people/crawlers} malicious [access/sharing]，Other cloud disks also need to be prevented from being frozen/banned**
 
 :::
 
@@ -95,9 +96,13 @@ which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 ![file_id](/img/drivers/aliyundrive.png)
 
+<br/>
+
 ### **Client id，Client secret**
 
 Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by Alist.
+
+<br/>
 
 ## **Rapid upload**
 
@@ -109,6 +114,8 @@ Rapid upload calculates the `sha1` value of the file (should be correct), you do
 
 - The interface provided by the official API of Alibaba Cloud Disk is used, check :point_right: [**Rapid upload logic**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
 
+<br/>
+
 ## **Remove way**
 
 If you don’t set it, it will be deleted to the recycle bin by default. If there is not enough space, you need to manually clean up the recycle bin. If you delete the wrong file, please go to the Alibaba Cloud Disk official website client to retrieve and restore it.
@@ -117,11 +124,15 @@ If you don’t set it, it will be deleted to the recycle bin by default. If ther
 - Delete: direct deletion will not stay in the recycle bin, and will not occupy cloud disk space, but if deleted by mistake later, it cannot be retrieved.
   - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#open-alibaba-cloud-disk-app-my-settings-gear-in-the-upper-right-corner-privacy-settings-authorization-management-click-alist-to-view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account==
 
+<br/>
+
 ## **Internal upload**
 
 If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
 - **Internal upload** Can Alibaba Cloud ECS in non-Beijing areas be used? No, because Alibaba Cloud Disk is using object storage in the Beijing area
+
+<br/>
 
 ## **other instructions**
 

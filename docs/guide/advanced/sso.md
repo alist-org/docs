@@ -244,6 +244,10 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
 
 ::::
 
+<br/>
+
+
+
 ## **SSO automatically registers as an AList account**
 
 - ==AList Version > **v3.22.1** New Features==
@@ -255,6 +259,8 @@ Before using single sign-on to register as an AList account, we need to bind the
 - Do not use the default organization (**app-built-in**) directly, because all users in this organization are global administrator accounts
 - Except `CASDOOR`, you only need to fill in the` Client id` and the `Client secrets`and the newly added single login account registered as Alist account configuration
 
+<br/>
+
 
 
 ### **<i class="fa-solid fa-circle-0" style="color: #409eff;"></i>SSO Full Fill Demo**
@@ -263,11 +269,15 @@ Please refer to the detailed description below for how to fill in, the schematic
 
 ![](/img/advanced/sso-add.png)
 
+<br/>
+
 
 
 ### **<i class="fa-solid fa-circle-1" style="color: #409eff;"></i>SSO auto register**
 
 If we want SSO single sign-on to be registered as an AList account, we need to enable this option before it can be used
+
+<br/>
 
 
 
@@ -278,6 +288,8 @@ That is to say, the default path used by the registered account is equivalent to
 It can be the root directory `/`, or the path `/path/test/Demo` specified by the user
 
 ![](/img/advanced/sso-dir.png)
+
+<br/>
 
 
 
@@ -298,6 +310,8 @@ For example：
 
 I won’t say much about the examples, just add the permissions you need
 
+<br/>
+
 
 
 #### **<i class="fa-solid fa-circle-4" style="color: #409eff;"></i>Precautions and instructions**
@@ -314,3 +328,35 @@ As shown in the above table, a string of redundant ids is added after the newly 
 This is because the same user already exists in the AList user database, so the sso_id is also added after the user name
 
 If your newly registered single sign-on user name does not exist in the AList user database, it will not add the sso_id after the name
+
+<br/>
+
+**4.2-What should I do if I don’t want the SSO account to be registered as an AList account?**
+
+Just turn `SSO auto register` off,This will not affect the use of accounts that have been registered using Sso
+
+<br/>
+
+**4.3-If I turn off the single sign-on option, what should I do with the account registered with Sso?**
+
+Don't worry, after using single sign-on to register and log in to AList, log in in the background, and find `personal information` after logging in
+
+- You can modify **`username`** and **`password`** by yourself, save it after modification, so that you can log in with the AList account normally
+- At this time, you can click `Unbind Single Sign-On Platform`, you can unbind or not unbind, and the subsequent [**default path**](#sso-default-dir) and [**default permissions**](#sso-default-permission) of this user can only be modified by the administrator in the AList background user
+
+<br/>
+
+**4.4-Why is this error code displayed when using sso?**
+
+```json{3}
+{
+    "code": 400,
+    "message": "The single sign on platform is not bound to any users: record not found",
+    "data": null
+}
+```
+
+This is because [Single Sign-On Automatic Registration](#sso-auto-register) is not enabled for the AList account, and the single sign-on cannot be registered as an AList account
+
+- If you are an administrator, you can turn it on
+- If you are a user, you can contact the administrator to enable
