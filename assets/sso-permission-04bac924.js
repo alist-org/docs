@@ -1,0 +1,1 @@
+const s="/img/advanced/github.png",a="/img/advanced/dingding.png",n="/img/advanced/weiruan.png",o="/img/advanced/google.png",d="/img/advanced/casdoor.png",i="/img/advanced/casdoor-user.png",g="/img/advanced/sso-add.png",c="/img/advanced/sso-dir.png",p="/img/advanced/sso-permission.png";export{s as _,a,n as b,o as c,d,i as e,g as f,c as g,p as h};
