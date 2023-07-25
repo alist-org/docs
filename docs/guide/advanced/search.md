@@ -20,19 +20,22 @@ star: true
 
 ### **how to use**
 
-Follow the steps below to enable search:
+::: danger Follow the steps below to enable search:
 
-1. Go to the `indexes` page to select a search index and click `Save`.
+1. Go to the `indexes` page to select a **Search index** and click `Save`.
 2. After the index is saved, click `Build indexes` to build the index.
 3. Now you can search for files by click the search block on the top right corner of the page or by using the shortcut `Ctrl + K`.
 
 :exclamation::exclamation::exclamation: If you do not follow the above prompts, the prompt will be opened: **Search Not available**
+
+:::
 
 ### **Difference between different search indexes**
 
 - `database`: Search by database, which is using the existing data.db. It will create a new table, record the parent directory, name, and size of every object, but the search does not split words which means that match whether the keywords you enter appear in the name of object. In general, if you don't have a specific search requirement, we recommend you choose it.
 - `database (non-full-text search)`: The full-text search mode is used above, but full-text search will have some strange problems when using **MySQL database** as an Alist database, which has not been resolved yet, so if your Alist database Change to **MySQL**, and your Alist version **`≥3.9.1`** It is recommended that you use this to build an index, although it is slower than full-text search and the gap is not very big, but it will not search for strange files , it’s more secure. After the future version is repaired, we will inform you to use the new full-text search to build the index. If you are using **sqlite3**, you can use whichever you like.
 - `bleve`: An open source full-text search engine. It will split the words in the name of object and search for the keywords you enter. But its search results may be so strange that you can't get the results you want, and it will take up more resources.
+- **sqlite3** is easy to trigger `database is locked` lock library cannot write files
 
 The following table could help you understand the difference between the two search indexes quickly:
 

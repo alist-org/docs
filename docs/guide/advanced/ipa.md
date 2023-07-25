@@ -40,18 +40,13 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 @tab How to change the name of the computer version
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2786278463950405640&raw=true" 
-  poster="/img/advanced/video.png"
-/>
+<BiliBili bvid="BV1bT411N7tT" ratio="16:9" low-quality no-danmaku />
 
 **If the video fails, you can watch it here: https://b23.tv/oLvHHC8**
 
 @tab how to change the name of the IOS 16 mobile phone
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4871961534007938&raw=true" 
-/>
+<BiliBili bvid="BV1kX4y1X7vo"/>
 
 **If the video fails, you can watch it here:https://b23.tv/GxGG8Dn**
 

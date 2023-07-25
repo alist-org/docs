@@ -41,18 +41,21 @@ typeof fetch !== "undefined" && getLimit()
 
 **阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
 
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)，比直接在阿里云盘购买便宜喔~
+
 :::
 
 :::danger 请仔细阅读注意事项
 
 1.  ==此工具获取的刷新令牌仅可以用于 **阿里云盘开放平台** 存储挂载方式== 
-2. AList 挂载时填写的 token 也应该是这个工具提供的，之前方式获取的不可以
-3. 暂不适用于其他，同时也仅限用于 Alist 使用
-4. 同一 IP 在 =={{ minutes }}== 分钟内请求 =={{ max }}== 次，会出现 **Too Many Requests** :no_entry_sign:避免滥用，请勿滥用:no_entry_sign:
+2.  AList 挂载时填写的 token 也应该是这个工具提供的，之前方式获取的不可以
+3.  暂不适用于其他，同时也仅限用于 Alist 使用
+4.  同一 IP 在 =={{ minutes }}== 分钟内请求 =={{ max }}== 次，会出现 **Too Many Requests** :no_entry_sign:避免滥用，请勿滥用:no_entry_sign:
    - 例如在 ~~保存/编辑 的时候算一次请求~~，查看文件看视频下载不算。
    - 上述的分钟和次数是动态的喔~
    - 新增优化：**只会在请求发现令牌过期时去刷新令牌，更新 重启 编辑如果令牌仍然有效则不会去刷新。**
 5.  在线播放视频提示：**`ExceedCapacityForbidden`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
+6.  <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> **==请勿将阿里云盘进行公开分享，禁止帐号被多IP访问，若进行分享后帐号被冻结后果自负== <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> 添加存储后请及时设置元信息等措施防止被{其他人/爬虫}恶意[访问/分享]导致帐号被冻结，其他云盘也一样防止被冻结/封号**
 
 :::
 
@@ -87,6 +90,7 @@ typeof fetch !== "undefined" && getLimit()
     <img src="/img/drivers/aliyun/token2.png" alt="Scan QrCode" title="Scan QrCode-扫描获取"/>
 </div>
 
+
 ## **根文件夹ID**
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
@@ -97,21 +101,35 @@ typeof fetch !== "undefined" && getLimit()
 
 ![file_id](/img/drivers/aliyundrive.png)
 
-
+<br/>
 
 ## **客户端 ID，秘钥**
 
 正常用户不需要填写为空即可，如果自己申请了官方授权也可以使用自己的进行填写，为空时默认使用 AList 提供的。
 
+<br/>
 
+## **秒传**
+
+- **v.3.22.1** 版本 新增功能
+
+就是秒传，需要在挂载时，需要启用`秒传`，要秒传的前提是阿里云盘已经有这个文件才可以进行秒传否则就是普通的上传
+
+秒传计算的是文件`sha1`值(应该没错)不需要你计算,你只需要上传即可上传好了会自动帮你计算然后上传完成
+
+- 使用的是阿里云盘官方API提供的接口，查看 :point_right: [**秒传逻辑**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
+
+<br/>
 
 ## **移除方式**
 
-- 回收站：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
-- 删除：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
+不进行设置默认是删除到回收站內了，如果空间不够需要自己手动清理回收站/若删错文件请前往阿里云盘官网客户端进行找回恢复
+
+- **回收站**：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
+- **删除**：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
   - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开-阿里云盘-app-我的-右上角设置齿轮-隐私设置-授权管理-点击-alist-进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
 
-
+<br/>
 
 ## **内部上传**
 
@@ -119,7 +137,7 @@ typeof fetch !== "undefined" && getLimit()
 
 - **内部上传**非北京地区的阿里云ECS可以使用吗？不能，因为阿里云盘在使用北京地区的对象存储
 
-
+<br/>
 
 ## **其他说明**
 
@@ -149,7 +167,7 @@ typeof fetch !== "undefined" && getLimit()
 
 >Q：阿里云盘Open怎么看不了 Office 全家桶类型的文件
 >
->A：因为阿里云盘未开放相关API故暂时无法查看
+>A：~~因为阿里云盘未开放相关API故暂时无法查看~~（敬请期待）
 
 ##### 四、
 
