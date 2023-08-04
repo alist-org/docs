@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 3
 # A page can have multiple categories
@@ -39,9 +39,9 @@ typeof fetch !== "undefined" && getLimit()
 </script>
 ::: info 阿里云盘会员
 
-**阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
+**阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)，比直接在阿里云盘购买便宜喔~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~
 
 :::
 
@@ -93,6 +93,8 @@ typeof fetch !== "undefined" && getLimit()
 
 ## **根文件夹ID**
 
+默认为`root`，展示全部云盘内容，若只想展示某文件夹內内容，可以改为`file_id `
+
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
 如 https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
@@ -128,6 +130,26 @@ typeof fetch !== "undefined" && getLimit()
 - **回收站**：在AList删除后进入网盘回收站，会占用云盘空间，但是后期如果误删可以找回。
 - **删除**：直接删除不会停留在回收站，不会占用云盘空间，但是后期如果误删不能找回。
   - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开-阿里云盘-app-我的-右上角设置齿轮-隐私设置-授权管理-点击-alist-进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
+
+<br/>
+
+## **云盘类型**
+
+默认展示的是资源库内容
+
+- **资源库**：对应云盘的`资源库`
+- **备份盘**：对应云盘的`备份盘`
+
+如果你云盘內没有上述提到的内容，需要登录一下阿里云盘手机端`4.9.0`以上的版本就可以看到
+
+<br/>
+
+## **Livp 下载格式**
+
+即 IOS`实况`照片因为非IOS系统无法解析，然后就无法下载，现根据自己的需求是需要`Jpeg`还是`Mov`
+
+- Jpeg：就是`实况`照片所展示的封面
+- Mov：长按`实况`照片的视频画面
 
 <br/>
 

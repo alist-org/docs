@@ -2,14 +2,14 @@ import { navbar } from "vuepress-theme-hope";
 
 export const en = navbar([
   // "/",
-  { text: "Guide", icon: "creative", link: "/guide/" },
-  { text: "Config", icon: "config", link: "/config/" },
-  { text: "FAQ", icon: "question", link: "/faq/" },
-  { text: "Pricing", icon: "tag", link: "/pricing" },
+  { text: "Guide", icon: "iconfont icon-creative", link: "/guide/" },
+  { text: "Config", icon: "iconfont icon-config", link: "/config/" },
+  { text: "FAQ", icon: "iconfont icon-question", link: "/faq/" },
+  { text: "Pricing", icon: "iconfont icon-tag", link: "/pricing" },
   // { text: "Tool", icon: "tool", link: "/tool/" },
   {
     text: "Community",
-    icon: "community",
+    icon: "iconfont icon-community",
     children: [
       {
         text: "Discussion",
@@ -21,7 +21,7 @@ export const en = navbar([
   },
   {
     text: "More",
-    icon: "more",
+    icon: "iconfont icon-more",
     children: [
       { text: "V2", link: "https://alist-doc.nn.ci" },
       { text: "Desktop", link: "https://ad.nn.ci/" },
@@ -29,7 +29,7 @@ export const en = navbar([
   },
   {
     text: "Github",
-    icon: "github",
+    icon: "iconfont icon-github",
     link: "https://github.com/alist-org/alist",
   },
 ]);

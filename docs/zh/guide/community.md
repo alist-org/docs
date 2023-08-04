@@ -2,7 +2,7 @@
 # This is the title of the article
 # title: One-click Script
 # This is the icon of the page
-icon: community
+icon: iconfont icon-community
 # This control sidebar order
 order: 11
 # A page can have multiple categories

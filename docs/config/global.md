@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: chrome
+icon: iconfont icon-chrome
 # This control sidebar order
 order: 9
 # A page can have multiple categories

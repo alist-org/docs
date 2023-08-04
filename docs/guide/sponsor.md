@@ -2,7 +2,7 @@
 # This is the title of the article
 # title: One-click Script
 # This is the icon of the page
-icon: like
+icon: iconfont icon-like
 # This control sidebar order
 order: 44
 # A page can have multiple categories

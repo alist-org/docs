@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: mini-app
+icon: iconfont icon-mini-app
 # This control sidebar order
 order: 8
 # A page can have multiple categories

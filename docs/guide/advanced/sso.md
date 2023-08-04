@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: group
+icon: iconfont icon-group
 # This control sidebar order
 order: 9
 # A page can have multiple categories

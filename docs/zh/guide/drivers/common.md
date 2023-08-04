@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 1
 # A page can have multiple categories
@@ -89,7 +89,7 @@ Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist
 - ADDRESS: 你的 AList 地址，必须加上协议头，后面不能跟 `/`。如 `https://pan.nn.ci`；
 - TOKEN: 在 AList 管理页面中进入“其他设置”得到。
 
-:warning: Cloudflare Workers 免费CDN支持兼容国内的只有 **http80端口** 和 **https443端口**，来自群友测试
+:warning: Cloudflare Workers 免费CDN支持兼容(不论国内还是国外)的只有 **http80端口** 和 **https443端口**，来自群友测试
 
 - 在Alist后台挂载配置时 填写 **下载代理URL** 时候的 链接结尾 不可以带 `/`
 

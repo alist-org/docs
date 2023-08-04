@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 9
 # A page can have multiple categories
@@ -18,30 +18,46 @@ star: true
 
 # LanZou Cloud
 
-There are two **modes (types)** of Lanzuo network disk mount, respectively **cookie** and **link**
+::: tip
 
-- cookie: All files in the network disk can be displayed, but the cookie of the network disk needs to be provided
-- Link: only display the content in the link (you can mount it without providing a cookie)
+Lanzuo Network Disk has three types of **modes (types) **, which are **accounts, Cookie** and **Url**
 
-
-
-⚠It is recommended to use the **cookie** method to mount. Using the link mode will always cause convulsions. I don’t know what’s going on and suddenly prompts: **failed get objs:failed to list objs: not find data**
-
+- **Account** : You can display all the files of your own cloud disk, you only need to fill in the account password, which will automatically help you refresh the cookie
+- **cookie** : All files in the network disk can be displayed, but the cookie of the network disk needs to be provided
+- **Url** : only display the content in the link (you can mount it without providing a cookie)
 
 
-## **refresh token**
+
+:warning: It is recommended to use the **Account** method to mount：
+
+- Cookie mode needs to manually update Cookie
+- Using the Url mode will always cause convulsions. I don’t know what’s going on and suddenly prompts
+
+:::
+
+## **root folder ID**
+
+Lanzuo cloud disk root directory ID, the default is `-1`，If you use `Url`Type to mount the root folder ID, please see the third item of [Fill in instructions](#fill-in-instructions)
+
+- **Additional Folder ID**
+  - Two ways to obtain (see the picture below)
+  - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
+
+
+
+## **Account**
+
+Just fill in your own Lanzou Cloud Account Password
+
+
+
+## **Cooike**
 
 Log in to your [**Lanzuo Cloud Disk**](https://pc.woozooo.com/) account, then F12 to open the developer mode, you can find `Cookie`, there is no specific one, such as the left side of the picture Just click one and there will be `Cookie` in the blue part of the right picture.
 
 ![lanzou](/img/drivers/lanzou/lanzou1.png)
 
-## **root folder ID**
 
-Lanzuo cloud disk root directory ID, the default is `-1`
-
-- **Additional Folder ID**
-   - Two ways to obtain (see the picture below)
-   - <img src="/img/drivers/lanzou/lanzou2.gif" alt="LanZou folder_id" style="zoom:50%;" />
 
 ## **Share link and share password**
 
@@ -57,9 +73,23 @@ If you need **WebDav** service, you need to open it
 
 
 
-## **Mount and fill in the example**
+## **Fill in instructions**
 
-![lanzou](/img/drivers/lanzou/lanzou3.png)
+1. **Acount mode**: Type selects `account`, fill in` account` and `password` options, and the `root folder ID` (the default is all files of the root directory)
+
+2. **Cookie mode**: Type selects `Cookie`, fill in` Cookie`, and the `root folder ID` (the default is all files of the root directory)
+
+3. **URL mode**: Type selects `Url`, fill in` ShareUrl` and `root folder ID` and`Share Password (if there is a password)` 
+
+   - The sharing link is :point_right: https://xxx.lanzou.com/aaabbbccc :point_left: in this format
+
+   - Fill in `ShareUrl`: https://xxx.lanzou.com
+
+   - Fill in `root folder ID`: aaabbbccc
+
+   - Share Password: if there is a password
+
+![lanzou](/img/drivers/lanzou/lanzou_add.png)
 
 
 

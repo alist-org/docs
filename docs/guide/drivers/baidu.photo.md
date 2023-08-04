@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 13
 # A page can have multiple categories
@@ -45,7 +45,9 @@ star: true
 
 Choose according to your needs
 
+## **Delete origin**
 
+<i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #ff0000;"></i>‪‪ ‪ By default, it just removes the album, not the real deletion. If you enable this option to delete the file, it will be completely deleted. Please enable it carefully.
 
 ### **The default download method used**
 

@@ -2,7 +2,7 @@
 # This is the title of the article
 title: Configuration file
 # This is the icon of the page
-icon: json
+icon: iconfont icon-json
 # This control sidebar order
 order: 1
 # A page can have multiple categories

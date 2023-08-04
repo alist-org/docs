@@ -2,7 +2,7 @@
 # This is the title of the article
 title: AList错误码整合
 # This is the icon of the page
-icon: question
+icon: iconfont icon-question
 # This control sidebar order
 order: 4
 # A page can have multiple categories

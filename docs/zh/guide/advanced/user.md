@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: people
+icon: iconfont icon-people
 # This control sidebar order
 order: 2
 # A page can have multiple categories

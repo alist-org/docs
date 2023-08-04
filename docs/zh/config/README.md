@@ -1,7 +1,7 @@
 ---
 title: Config
 index: false
-icon: config
+icon: iconfont icon-config
 category:
   - Config
 ---

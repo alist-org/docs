@@ -1,7 +1,7 @@
 ---
 title: Introduction
 index: false
-icon: creative
+icon: iconfont icon-creative
 category:
   - Guide
 ---
@@ -25,12 +25,13 @@ category:
 ## Support storage
 
 - [x] 本地存储
+- [x] [Crypt](/zh/guide/drivers/Crypt.md)
 - [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘](https://www.aliyundrive.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123云盘](https://www.123pan.com/)
+- [x] [123云盘/分享](https://www.123pan.com/)
 - [x] FTP / SFTP
 - [x] [PikPak / 分享](https://www.mypikpak.com/)
 - [x] [S3](https://aws.amazon.com/cn/s3/)
@@ -62,6 +63,7 @@ category:
 - [x] IPFS
 - [x] [UC](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
+- [x] [腾讯微云](https://www.weiyun.com/)
 
 ## Discussion
 

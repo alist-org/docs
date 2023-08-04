@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 13
 # A page can have multiple categories
@@ -45,6 +45,12 @@ star: true
 ## **展示类型**
 
 根据自己的需求选择
+
+
+
+## **删除源文件**
+
+<i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #ff0000;"></i>‪‪ ‪ 默认只是移除相册，并非真正删除，如果开启此选项删除文件后将会彻底删除，谨慎开启
 
 
 

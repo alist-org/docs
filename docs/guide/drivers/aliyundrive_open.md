@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 3
 # A page can have multiple categories
@@ -39,9 +39,9 @@ typeof fetch !== "undefined" && getLimit()
 </script>
 ::: info Aliyundrive VIP
 
-**Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1)
+**Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1), which is cheaper than buying directly on Alibaba Cloud Disk~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~
 
 :::
 
@@ -90,6 +90,8 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
 ### **Root folder file_id**
 
+The default is `root`, which displays all cloud disk contents. If you only want to display the contents of a certain folder, you can change it to `file_id`
+
 Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
 
 which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
@@ -125,6 +127,24 @@ If you don’t set it, it will be deleted to the recycle bin by default. If ther
   - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#open-alibaba-cloud-disk-app-my-settings-gear-in-the-upper-right-corner-privacy-settings-authorization-management-click-alist-to-view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account==
 
 <br/>
+
+## **Drive type**
+
+The default display is the content of the Resource library
+
+- **Resource**: corresponding to `Resource` of the cloud disk
+- **Backup**: corresponding to the `Backup` of the cloud disk
+
+If you don’t have the content mentioned above in your cloud disk, you need to log in to the Aliyun disk mobile terminal version `4.9.0` or later to see it
+
+<br/>
+
+## **Livp download format**
+
+That is, the IOS `live` photo cannot be downloaded because the non-IOS system cannot parse it, and now it needs `Jpeg` or `Mov` according to your own needs
+
+- Jpeg: is the cover shown in the `live` photo
+- Mov: Long press the video screen of the `live` photo
 
 ## **Internal upload**
 

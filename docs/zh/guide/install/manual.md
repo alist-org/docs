@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: interact
+icon: iconfont icon-interact
 # This control sidebar order
 order: 3
 # A page can have multiple categories

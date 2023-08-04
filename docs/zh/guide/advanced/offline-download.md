@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: link
+icon: iconfont icon-link
 # This control sidebar order
 order: 10
 # A page can have multiple categories
