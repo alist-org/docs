@@ -130,7 +130,7 @@ If you don’t set it, it will be deleted to the recycle bin by default. If ther
 
 ## **Drive type**
 
-The default display is the content of the Resource library
+Have Intelligeent level users default to `Resource`, No Have Intelligent User's default display is` Backup`
 
 - **Resource**: corresponding to `Resource` of the cloud disk
 - **Backup**: corresponding to the `Backup` of the cloud disk
