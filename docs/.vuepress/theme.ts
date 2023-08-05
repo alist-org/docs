@@ -22,8 +22,8 @@ export default hopeTheme(
       "iconfont",
       "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/fontawesome.min.css",
       "https://npm.onmicrosoft.cn/font6pro@6.4.1/css/all.min.css",
-      "https://npm.elemecdn.com/font6pro@6.4.1/css/fontawesome.min.css",
-      "https://npm.elemecdn.com/font6pro@6.4.1/css/all.min.css",
+      "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
+      "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
     ],
 
     logo: "/logo.svg",
