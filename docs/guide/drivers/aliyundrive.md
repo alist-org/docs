@@ -34,7 +34,7 @@ Of course, you can also turn on the proxy so that `refresh token` of desktop web
 
 ### **Refresh token**
 
-Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (/data/media/0/Android/data/com.alicloud.databox/ files/logs/trace/). Or you can click:
+Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (`/data/media/0/Android/data/com.alicloud.databox/files/logs/trace/`). Or you can click:
 
 <script setup lang="ts">
 import { ref } from "vue";

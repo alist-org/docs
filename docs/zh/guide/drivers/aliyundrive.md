@@ -33,7 +33,7 @@ star: true
 
 ## **刷新令牌**
 
-按照这个 [issue](https://github.com/Xhofe/alist/issues/88) 在手机上捕获/查找日志 (/data/media/0/Android/data/com.alicloud.databox/ 文件/日志/跟踪/）。 或者您可以点击：
+按照这个 [issue](https://github.com/Xhofe/alist/issues/88) 在手机上捕获/查找日志（`/data/media/0/Android/data/com.alicloud.databox/files/logs/trace/`）。 或者您可以点击：
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -141,7 +141,7 @@ _API is hosted on replit.com_
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
