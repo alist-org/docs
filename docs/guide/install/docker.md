@@ -20,20 +20,20 @@ star: true
 
 See the log output for the admin's info:
 
-#### 低于v3.25.0版本
+#### Lower than v3.25.0
 
 ```bash
 docker exec -it alist ./alist admin
 ```
 
-#### 高于v3.25.0版本
+#### Higher than v3.25.0
 
-3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新 **`随机生成`** 或者 **`手动设置`**
+Versions above 3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
 
 ```bash
-# 随机生成一个密码
+# Randomly generate a password
 docker exec -it alist ./alist admin random
-# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+# Manually set a password, `NEW_PASSWORD` refers to the password you need to set
 docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
