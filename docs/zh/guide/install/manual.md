@@ -26,10 +26,15 @@ xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist
 
 当你看到 `start server@0.0.0.0:5244` 的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开 `http://ip:5244` 可以看到登录页面，WebDAV 请参阅 [WebDav](../webdav.md)。
 
+
+
 ### **手动运行**
+
+v3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新 **`随机生成`** 或者 **`手动设置`**
 
 :::tabs#os
 @tab Linux
+
 ```bash
 # 解压下载的文件，得到可执行文件：
 tar -zxvf alist-xxxx.tar.gz
@@ -37,10 +42,19 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # 运行程序
 ./alist server
-# 获得管理员信息
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
 ./alist admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
 ```
 @tab macOS
+
 ```bash
 # 解压下载的文件，得到可执行文件：
 tar -zxvf alist-xxxx.tar.gz
@@ -48,19 +62,37 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # 运行程序
 ./alist server
-# 获得管理员信息
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
 ./alist admin
+
+#高于v3.25.0版本
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
 ```
 @tab Windows
+
 ```bash
 # 解压下载的文件，得到可执行文件：
 unzip alist-xxxx.zip
 # 运行程序
 .\alist.exe server
-# 获得管理员信息
+
+# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
+# 低于v3.25.0版本
 .\alist.exe admin
+
+# 高于v3.25.0版本
+# 随机生成一个密码
+.\alist.exe admin random
+# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
+.\alist.exe admin set NEW_PASSWORD
 ```
 @tab win(scoop)
+
 ```bash
 # 安装
 scoop install alist

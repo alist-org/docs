@@ -57,3 +57,27 @@ curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
 - Shut down: `systemctl stop alist`
 - Status: `systemctl status alist`
 - Restart: `systemctl restart alist`
+
+
+
+## **Get Password**
+
+You need to enter the directory folder where the script installs AList and execute the following command
+
+#### Lower than v3.25.0
+
+```bash
+./alist admin
+```
+
+
+#### Higher than v3.25.0
+
+Versions above 3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
+
+```bash
+# Randomly generate a password
+./alist admin random
+# Manually set a password, `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
+```

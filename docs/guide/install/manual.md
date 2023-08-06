@@ -29,6 +29,8 @@ When you see the output of `start server @ 0.0.0.0:5244` and no error is reporte
 
 ### **Running**
 
+Versions above v3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
+
 :::tabs#os
 @tab linux
 
@@ -39,8 +41,16 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # Run the program
 ./alist server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 ./alist admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+./alist admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
 ```
 @tab macOS
 ```bash
@@ -50,8 +60,16 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # Run the program
 ./alist server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 ./alist admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+./alist admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
 ```
 @tab Windows
 ```bash
@@ -59,8 +77,16 @@ chmod +x alist
 unzip alist-xxxx.zip
 # Run the program
 .\alist.exe server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 .\alist.exe admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+.\alist.exe admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+.\alist.exe admin set NEW_PASSWORD
 ```
 @tab win(scoop)
 ```bash
