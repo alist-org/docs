@@ -138,9 +138,13 @@ SUCCESS() {
 #   cd $INSTALL_PATH
 #   get_password=$(./alist password 2>&1)
 #   echo -e "初始管理密码：${GREEN_COLOR}$(echo $get_password | awk -F'your password: ' '{print $2}')${RES}"
-  echo -e "---------管理员信息--------"
-  cd $INSTALL_PATH
-  ./alist admin
+  echo -e "---------如何找回密码？--------"
+  echo -e "先cd到alist所在目录:"
+  echo -e "${GREEN_COLOR}cd $INSTALL_PATH${RES}"
+  echo -e "随机设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin random${RES}"
+  echo -e "或者手动设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin set ${RES}${RED_COLOR}NEW_PASSWORD${RES}"
   echo -e "--------------------------"
   
   echo -e "启动服务中"
