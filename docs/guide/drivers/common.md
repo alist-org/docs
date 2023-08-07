@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 1
 # A page can have multiple categories
@@ -88,7 +88,7 @@ The workers code can be found at https://github.com/alist-org/alist-proxy/blob/m
 - ADDRESS: your Alist address, The protocol header must be added, and cannot be followed by /. Such as `https://pan.nn.ci`;
 - TOKEN: you can get in `Other settings` in your Alist manage page.
 
-:warning: Cloudflare Workers free CDN supports domestic only **http80 port** and **https443 port**，From group friend test
+:warning: Cloudflare Workers free CDN only supports (regardless of domestic or foreign) **http80 port** and **https443 port**, from group friend test
 
 - When mounting the configuration in the Alist background, fill in the **download proxy URL** at the end of the link without `/`
 

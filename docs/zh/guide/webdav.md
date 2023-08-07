@@ -2,7 +2,7 @@
 # This is the title of the article
 # title: One-click Script
 # This is the icon of the page
-icon: waline
+icon: iconfont icon-waline
 # This control sidebar order
 order: 9
 # A page can have multiple categories
@@ -83,6 +83,8 @@ star: true
 举几个填写 **`WebDav示例`** 账号密码就是你AList用户的账号密码
 
 基本是这个写法，软件不同写法也可能不同，如果没有单独留路径选项那正常就是在 站点后面添加`/dav`选项
+
+下方顶部不同按钮是可以点击查看的
 
 :::tabs#WebDav
 

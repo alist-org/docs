@@ -1,6 +1,6 @@
 ---
 title: Storage
-icon: storage
+icon: iconfont icon-storage
 index: false
 dir:
   order: 3

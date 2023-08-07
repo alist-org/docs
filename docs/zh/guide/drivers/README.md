@@ -1,6 +1,6 @@
 ---
 title: 添加存储
-icon: storage
+icon: iconfont icon-storage
 index: false
 dir:
   order: 3

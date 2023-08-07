@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: geometry
+icon: iconfont icon-geometry
 # This control sidebar order
 order: 5
 # A page can have multiple categories
@@ -19,8 +19,22 @@ star: true
 # Use Docker
 
 See the log output for the admin's info:
+
+#### Lower than v3.25.0
+
 ```bash
 docker exec -it alist ./alist admin
+```
+
+#### Higher than v3.25.0
+
+Versions above 3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
+
+```bash
+# Randomly generate a password
+docker exec -it alist ./alist admin random
+# Manually set a password, `NEW_PASSWORD` refers to the password you need to set
+docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
 ### **Release version**

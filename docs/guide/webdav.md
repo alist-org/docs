@@ -2,7 +2,7 @@
 # This is the title of the article
 # title: One-click Script
 # This is the icon of the page
-icon: waline
+icon: iconfont icon-waline
 # This control sidebar order
 order: 9
 # A page can have multiple categories
@@ -83,6 +83,8 @@ If there is a suitable addition, please add~
 Give a few examples of filling in **`WebDav`**, the account password is the account password of your AList user
 
 This is basically the way of writing, and the way of writing may be different for different software. If there is no separate path option, it is normal to add the `/dav` option after the site
+
+The different buttons at the top below can be clicked to view
 
 :::tabs#WebDav
 

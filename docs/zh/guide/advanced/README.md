@@ -1,6 +1,6 @@
 ---
 title: 高级
-icon: advance
+icon: iconfont icon-advance
 index: false
 dir:
   order: 5

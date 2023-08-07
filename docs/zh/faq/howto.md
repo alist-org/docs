@@ -2,7 +2,7 @@
 # This is the title of the article
 title: 怎么做
 # This is the icon of the page
-icon: study
+icon: iconfont icon-study
 # This control sidebar order
 order: 1
 # A page can have multiple categories

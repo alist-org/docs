@@ -1,7 +1,7 @@
 ---
 title: Introduction
 index: false
-icon: creative
+icon: iconfont icon-creative
 category:
   - Guide
 ---
@@ -25,12 +25,13 @@ A file list program that supports multiple storage, and supports web browsing an
 ### Support storage
 
 - [x] Local storage
+- [x] [Crypt](/guide/drivers/Crypt.md)
 - [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
 - [x] [aliyundrive](https://www.aliyundrive.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123pan](https://www.123pan.com/)
+- [x] [123pan/Share](https://www.123pan.com/)
 - [x] [Alist](https://github.com/Xhofe/alist)
 - [x] FTP
 - [x] SFTP
@@ -64,6 +65,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] IPFS
 - [x] [UC](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
+- [x] [Tencent weiyun](https://www.weiyun.com/)
 
 ### Discussion
 
