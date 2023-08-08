@@ -175,7 +175,7 @@ star: true
 
 高级用法仅适用于对 **`Rclone`** 了解的人
 
-如果你对 **`Rclone`** 很了解可以看 :point_right: [**Rclone Crypt 文档**](https://rclont.org/crypt) 目前完全兼容
+如果你对 **`Rclone`** 很了解可以看 :point_right: [**Rclone Crypt 文档**](https://rclone.org/crypt) 目前完全兼容
 
 
 
