@@ -22,15 +22,15 @@ star: true
 
 What is `Crypt`?
 
-In simple words, it's a two-password-protected safe. No one can be open it without the key. The password and salt value in the configuration form the key.
+In simple words, it's a two-password-protected safe. No one can open it without the key. The password and the salt in the configuration form the key.
 
 ::: Tips
 
 1. If you don’t know how to use this encryption/decryption driver, please read this guide carefully
-2. Please test it locally to understand it before use it in the production environment.
-3. The data loss is 100% caused by configuration change. If data has been stored within Crypt, change configuration won't re-encrypt data!
+2. Please test it locally to understand it fully before use in the production environment.
+3. The data loss is 100% caused by configuration change. If data has been stored within Crypt, change configuration won't re-encrypt data, those data will be inaccessible to Crypt!
 
-==Remind again, please read the document carefully, otherwise the data will be lost！==
+==Remind again, please read the document carefully, otherwise the data may be lost！==
 
 :::
 
@@ -61,17 +61,17 @@ If you don’t know how to configure, you can use the simpler default configurat
 
 
 
-:::danger  Please read the precautions carefully --- very important
+:::danger  Please read carefully --- very important
 
-Once the configuration is filled and started using, do not modify it, do not modify it, do not modify it!
+Once the configuration is set and started using, do not modify it, do not modify it, do not modify it!
 
-[**Password**](#password) 和 [**Salt**](#salt) Keep in mind，after saving config, these two options will be encrypted and can't be reveled (the text above shows that it has not been stored)
+The original [**Password**](#password) and [**Salt**](#salt) should be kept in other places. These two options will be encrypted and can't be reveled after saving.
 
 - **If you forget the password before uploading any file, you can modify and re-fill in the password configuration**
 
 -----
 
-If you have not uploaded files in the Crypt drive, you can modify the configuration, otherwise do not modify it!!!
+If you have not uploaded any file in the Crypt, you may modify the configuration, otherwise do not modify it!!!
 
 If you have data in Crypt, and changed the configuration, `Crypt` will try to filter out illegal files/folders, but the illegal data still exist in the remote storage
 
@@ -169,11 +169,11 @@ If the file name is encrypted, the encryption suffix `will not be used
 
 Advanced usage is only applicable to those who know about **`rclone`**
 
-If you know the **`rclone`** very well, you can check :point_right: [**rclone crypt document **](https://rclone.org/crypt) Currently fully compatible
+If you know the **`rclone`** very well, you can check :point_right: [**rclone crypt document**](https://rclone.org/crypt) Currently fully compatible
 
 Note: `Alist Crypt` used `filename_encoding = base64` in default. If you want to use Rclone, please config it in the advanced config. (Reason: more friendly to long filename)
 
-since Alist does not consider any case-insensitive internally, you may encounter problems when remote storage is case-insensitive. e.g.: use alist local driver on Windows, then use Crypt on it.
+Since Alist does not consider any case-insensitive internally, you may encounter problems when remote storage is case-insensitive. e.g.: use alist local driver on Windows, then use Crypt on it.
 
 
 <br/>
