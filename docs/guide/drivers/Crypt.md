@@ -102,10 +102,10 @@ If you don’t understand, you can use the default configuration
 
 - 1.**The default is `off` state**
   - Whether the file name needs to be encrypted, and the file name is encrypted after uploading
-  
+
 - 2.**Standard Encryption**
   - Standard encryption safety level high^(recommended)^
-  
+
 - 3.**Simple Obfuscate**
   - The security level is very low, but friendly to long file name. Note: for the Chinese file name, special characters will be generated. Some network disk storage may not support them
 
@@ -121,7 +121,7 @@ If you don’t understand, you can use the default configuration
 
 ### <i class="fa-solid fa-folder-open" style="color: #409eff;"></i> **Directory name encryption**
 
- default is `false`, i.e disabled. don't use it if you don't understand below description
+default is `false`, i.e disabled. don't use it if you don't understand below description
 
 When you turn on the folder encryption, you must select a **filename encryption** type. Otherwise, the folder encryption will not take effect
 
