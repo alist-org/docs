@@ -175,7 +175,7 @@ If the file name is encrypted, the encryption suffix `will not be displayed (but
 
 Advanced usage is only applicable to those who know about **`rclone`**
 
-If you know the **`rclone`** very well, you can view :point_right: [**rclone crypt document **] (https://rclont.org/crypt) Currently, completely compatible
+If you know the **`rclone`** very well, you can view :point_right: [**rclone crypt document**] (https://rclone.org/crypt) Currently, completely compatible
 
 
 
