@@ -200,7 +200,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 @tab Casdoor
 
-`Cadoor` 是什么？ 是可以使用其他 OAuth 应用程序登录，[**自行部署**](https://casdoor.org/zh/docs/basic/server-installation)开源免费，使用他们官方托管是需要付费的。
+`Casdoor` 是什么？ 是可以使用其他 OAuth 应用程序登录，[**自行部署**](https://casdoor.org/zh/docs/basic/server-installation)开源免费，使用他们官方托管是需要付费的。
 
 现在，Casdoor 支持许多OAuth 应用程序提供者，多达几十种，你见过的没见过的都有
 
