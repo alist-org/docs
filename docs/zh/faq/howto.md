@@ -55,6 +55,24 @@ location /alist/ {
 如果你使用v3.9.0及以上版本，你需要先停止alist服务因为这个pr: https://github.com/alist-org/alist/pull/3074
 :::
 
+#### **低于v3.25.0版本**
+
+```bash
+./alist admin
+```
+
+
+#### **高于v3.25.0版本**
+
+3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新 **`随机生成`** 或者 **`手动设置`**
+
+```bash
+# 随机生成一个密码
+./alist admin random
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+./alist admin set NEW_PASSWORD
+```
+
 ### **如何修改监听端口 ​**
 
 参考[config](../config/configuration.md#port)

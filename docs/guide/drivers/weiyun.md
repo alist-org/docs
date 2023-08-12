@@ -47,6 +47,9 @@ It is recommended to use WeChat to log in
 After logging in to Weiyun, **Open the developer debugging tool (F12)**, find the request that carries the cookie in any request, copy and fill in it.
 
 - The token obtained by WeChat login is longer than the cookie field of QQ login
+- QQ WeChat fills in the `Cookie` field value, and you can see it by just looking for a request
+
+![](/img/drivers/weiyun/weiyun_cookie.png)
 
 
 

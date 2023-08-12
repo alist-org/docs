@@ -44,8 +44,9 @@ star: true
 登录微云后，**打开开发者调试工具(F12)**，在任意请求中找到携带cookie的请求复制填写就可以。
 
 - 微信登录获取的token比QQ登录的cookie字段要长
+- QQ微信都是填写这个`Cookie`字段值，随意找一个请求就能看到
 
-
+![](/img/drivers/weiyun/weiyun_cookie.png)
 
 ## **其他说明**
 
