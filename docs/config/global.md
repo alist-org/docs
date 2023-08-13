@@ -73,3 +73,11 @@ For example, the `/` symbol is a path symbol in the Alist program. Some peopleâ€
 ```
 
 The default is the first one at the beginning. If you want to add it later, you can add it later. The format is as simple as above.
+
+## **Webauthn login enabled**
+
+What is **Webauthn**? Search for yourself, today I just teach you how to use it
+
+In the background `Settings`-->`Global`-->Open `Webauthn login enabled`, go back to the background `Profile`-->Bind `Add a Webauthn credential`
+
+- `Add a Webauthn credential` using the `PIN` of this computer or `complementary devices (such as bracelets, watches)` [support all options in Windows Hello configuration, such as `face` and `fingerprint`]
