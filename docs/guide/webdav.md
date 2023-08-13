@@ -70,7 +70,7 @@ Can't fill in? [Click to view Fill in Example](#webdav-fill-in-example)
    - If you only look at Ali, you can use Ali's official cooperation
      - Huanshi store-Alibaba cloud disk TV version, online disk player-Alibaba cloud disk TV version
 5. **Mac**
-   - IINA，[Mountain Duck](https://mountainduck.io/)，infuse，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
+   - [VidHub](https://zh.okaapps.com/product/1659622164), IINA，[Mountain Duck](https://mountainduck.io/)，infuse，[netdrive](https://www.netdrive.net/)，[rclone](https://rclone.org/)
 6. **Linux**
    - davfs2，[rclone](https://rclone.org/)
 7. **Notes**
