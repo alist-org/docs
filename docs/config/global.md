@@ -81,3 +81,6 @@ What is **Webauthn**? Search for yourself, today I just teach you how to use it
 In the background `Settings`-->`Global`-->Open `Webauthn login enabled`, go back to the background `Profile`-->Bind `Add a Webauthn credential`
 
 - `Add a Webauthn credential` using the `PIN` of this computer or `complementary devices (such as bracelets, watches)` [support all options in Windows Hello configuration, such as `face` and `fingerprint`]
+- Just like binding single sign-on, we can use **`Webauthn`** to log in after binding
+
+  - On the login page, click the login button on the far right, enter our user name, click login, and then unlock the required `Webauthn` verification method to log in
