@@ -22,64 +22,60 @@ star: true
 
 What is `Crypt`?
 
-It is equivalent to a two -layer password -encrypted safe. No one else can be opened except you have the key to open it. The password and salt value in the configuration are equivalent to the key
+In simple words, it's a two-password-protected safe. No one can open it without the key. The password and the salt in the configuration form the key.
 
-Of course, you have to remember the password and salt value. If you lose it yourself, you can't open it yourself, unless you are poor or guess the correct password.
+::: tip
 
-::: tip Use reminder
+1. If you don’t know how to use this encryption/decryption driver, please read this guide carefully
+2. Please test it locally to understand it fully before use in the production environment.
+3. The data loss is 100% caused by configuration change. If data has been stored within Crypt, change configuration won't re-encrypt data, those data will be inaccessible to Crypt!
 
-1. If you don’t know how to use this plus/decryption driver, please check carefully each text
-2. Please use it locally to understand and then move to the production environment to deploy and use it, otherwise the data will be lost!
-3. The data loss is 100%because the configuration file is modified. If the file has been uploaded, please do not modify the configuration file, otherwise the data will be lost!
-
-==Remind again, please read the document carefully, otherwise the data will be lost and bear the loss！==
+==Remind again, please read the document carefully, otherwise the data may be lost！==
 
 :::
 
 
 
-## **Instructions for use**
+## **Instruction**
 
-We only need to build a new **blank folder** in the driver (network disk) that has been mounted now.
+We need to build a new **empty folder** in the driver (network disk) that has been mounted now.
 
-Then fill in the name of our new blank folder to the `Remote path` `Crypt` drive configuration
+Then fill in the name of our new empty folder to the `Remote path` `Crypt` driver configuration
 
 E.g:
 
-- Our original driving path was `/123`, we built a new `air` blank folder in the 123 directory
-- We are going to `Remote Path` options driven by` Crypt`,Fill in `/123/air`
-- To encrypt files, you need to upload them to the newly created "Crypt" drive. Encryption will only be applied when files are uploaded to this drive.
-  - Crypto files We go to **`remote path`** can see the encrypted file, unable to open it normally
-  - If you want to open it, you need to view it at the `Crypt` Drive Folder
+- Our original driving path was `/123`, we built a new `air` empty folder in the '123' directory
+- Fill `Remote Path` option in `Crypt` config page with `/123/air`
+- To encrypt files, you need to upload them to the newly created "Crypt" drive. Encryption will only be applied when files are uploaded to this driver.
+  - Encrypted files are stored in **`remote path`** , and they can't be opened normally due to the encryption
+  - If you want to open them, you need to view them in the `Crypt` Driver Folder
 
 
 
 
-## **Fill in the example**
+## **Config Example**
 
-If you do n’t know how to configure, you can use the simpler default configuration as follows. The role of each configuration will be explained in detail below
+If you don’t know how to configure, you can use the simpler default configuration as follows. The role of each configuration will be explained in detail below
 
 ![image-20230721230425597](/img/drivers/crypt/crypt-demo1.png)
 
 
 
-:::danger  Please read the precautions carefully --- very important
+:::danger  Please read carefully --- very important
 
-State again, please do not think you are
+Once the configuration is set and started using, do not modify it, do not modify it, do not modify it!
 
-Once the configuration is filled in storage, do not modify it, do not modify it, do not modify it! Emphasized things three times
+The original [**Password**](#password) and [**Salt**](#salt) should be kept in other places. These two options will be encrypted and can't be reveled after saving.
 
-[**Password**](#password) 和 [**Salt**](#salt) Must remember，After clicking, these two options will be encrypted and unable to display (the text above shows that it has not been stored)
-
-- **If you forget the password before uploading the file, you can modify and fill in the password configuration**
+- **If you forget the password before uploading any file, you can modify and re-fill in the password configuration**
 
 -----
 
-If you have not uploaded files in the Crypt drive, you can modify the configuration, otherwise do not modify it!!!
+If you have not uploaded any file in the Crypt, you may modify the configuration, otherwise do not modify it!!!
 
-Because different encryption methods will appear in different configuration methods, `Crypt` will not display (filtering) illegal files
+If you have data in Crypt, and changed the configuration, `Crypt` will try to filter out illegal files/folders, but the illegal data still exist in the remote storage
 
-- **Illegal files are encrypted files generated by different configurations and no encryption files**
+- **Illegal means data that is encrypted by another config**
 
 :::
 
@@ -88,11 +84,11 @@ Because different encryption methods will appear in different configuration meth
 There are 5 methods for the encryption combination, (in fact 6 types) Because only the **folder encryption is turned on, the file name is not encrypted** and the configuration does not take effect (the first one of the example below)
 
 1. <Badge text="invalid" color="red" vertical="middle" /> Filename `Off`，Directory `true`
-2. <Badge text="efficient" type="tip" vertical="middle" /> Filename `Off`，Directory `false`
-3. <Badge text="efficient" type="tip" vertical="middle" /> Filename `Standard`，Directory `false`
-4. <Badge text="efficient" type="tip" vertical="middle" /> Filename `Standard`，Directory `true`
-5. <Badge text="efficient" type="tip" vertical="middle" /> Filename `Obfuscate`，Directory `false`
-6. <Badge text="efficient" type="tip" vertical="middle" /> Filename `Obfuscate`，Directory `true`
+2. <Badge text="valid" type="tip" vertical="middle" /> Filename `Off`，Directory `false`
+3. <Badge text="valid" type="tip" vertical="middle" /> Filename `Standard`，Directory `false`
+4. <Badge text="valid" type="tip" vertical="middle" /> Filename `Standard`，Directory `true`
+5. <Badge text="valid" type="tip" vertical="middle" /> Filename `Obfuscate`，Directory `false`
+6. <Badge text="valid" type="tip" vertical="middle" /> Filename `Obfuscate`，Directory `true`
 
 :::
 
@@ -106,16 +102,16 @@ If you don’t understand, you can use the default configuration
 
 - 1.**The default is `off` state**
   - Whether the file name needs to be encrypted, and the file name is encrypted after uploading
-  
+
 - 2.**Standard Encryption**
   - Standard encryption safety level high^(recommended)^
-  
+
 - 3.**Simple Obfuscate**
-  - The security level is very low, and the name of the long file is friendly, but for the Chinese file name, special characters will be generated. Some network disk storage does not support special characters.
+  - The security level is very low, but friendly to long file name. Note: for the Chinese file name, special characters will be generated. Some network disk storage may not support them
 
 - The left side of the figure below is encrypted [**Remote path**](#remote-path)，On the right is the decrypted 'crypt` driver to view the file
-  - If not open<Badge text="Filename" type="tip" vertical="middle" />encryption，It will be displayed<Badge text="Upper left corner" color="rgb(216,100,69)" vertical="middle" /> A new encrypted suffix is added behind the source file（xxxxx\.xxx **.bin** ）(The suffix name can be customized, not necessarily .bin)
-  - If you open<Badge text="Filename" type="tip" vertical="middle" />encryption，It will be displayed<Badge text="Lower left corner" color="rgb(78,130,184)" vertical="middle" />In this way, the file name is also confused with encryption, no suffix and the original file name，Others can't know what it is, but it can be driven by `crypt`（<Badge text="The folder displayed on the right" color="rgb(0.0.0.0)" vertical="middle" />）View the complete decryption and transparent file name
+  - If not enabled <Badge text="Filename" type="tip" vertical="middle" /> encryption，It will be like <Badge text="Upper left corner pic" color="rgb(216,100,69)" vertical="middle" /> A new encrypted suffix is added behind the source file（xxxxx\.xxx **.bin** ）(The suffix name can be customized)
+  - If you enabled <Badge text="Filename" type="tip" vertical="middle" /> encryption，It will be like <Badge text="Lower left corner pic" color="rgb(78,130,184)" vertical="middle" /> In this way, the file name is also confused with encryption, no suffix and the original file name，others can't know what it is, but it can be viewed in `crypt`（<Badge text="The folder displayed on the right" color="rgb(0.0.0.0)" vertical="middle" />）
 
 ![image-20230721230425597](/img/drivers/crypt/crypt-demo2.png)
 
@@ -125,13 +121,13 @@ If you don’t understand, you can use the default configuration
 
 ### <i class="fa-solid fa-folder-open" style="color: #409eff;"></i> **Directory name encryption**
 
-Use the enable folder to encrypt, the default `false` is not enabled, if you don’t understand, you can choose not to use it
+default is `false`, i.e disabled. don't use it if you don't understand below description
 
-When you turn on the folder encryption, you must select a **filename encryption**. Otherwise, the folder encryption will not take effect
+When you turn on the folder encryption, you must select a **filename encryption** type. Otherwise, the folder encryption will not take effect
 
 - The left side of the figure below is encrypted [**Remote path**](#remote-path)，On the right is the decrypted 'crypt` driver to view the file
-  - If not open<Badge text="Directory" type="tip" vertical="middle" />encryption，It will be displayed<Badge text="Upper left corner" color="rgb(216,100,69)" vertical="middle" />That kind of folder without any change
-  - If you open<Badge text="Directory" type="tip" vertical="middle" />encryption，It will be displayed<Badge text="Lower left corner" color="rgb(78,130,184)" vertical="middle" />In that way, the folder name is also confused by encryption
+  - If disabled <Badge text="Directory" type="tip" vertical="middle" /> encryption，It will be like<Badge text="Upper left corner pic" color="rgb(216,100,69)" vertical="middle" /> No change to folder name
+  - If enabled <Badge text="Directory" type="tip" vertical="middle" /> encryption，It will be displayed<Badge text="Lower left corner pic" color="rgb(78,130,184)" vertical="middle" /> folder name is encrypted
 
 ![image-20230721230425597](/img/drivers/crypt/crypt-demo2.png)
 
@@ -153,7 +149,7 @@ Just literally meaning password
 
 ### <i class="fa-solid fa-lock-keyhole" style="color: #409eff;"></i> **Salt**
 
-It can also be understood as the second password
+It can be treated as the second password if you don't understand it
 
 <br/>
 
@@ -163,9 +159,7 @@ It can also be understood as the second password
 
 The default is `.bin`, the custom must start with` .`, such as .abc .aaa .Psd.
 
-If the file name is encrypted, the encryption suffix `will not be displayed (but still have to be configured)
-
-- The high -level gameplay is to manually change the suffix to the suffix in the configuration file to display the access (provided that it is consistent with the **`password`** and **`Salt`** when encrypted
+If the file name is encrypted, the encryption suffix `will not be used
 
 <br/>
 
@@ -175,8 +169,11 @@ If the file name is encrypted, the encryption suffix `will not be displayed (but
 
 Advanced usage is only applicable to those who know about **`rclone`**
 
-If you know the **`rclone`** very well, you can view :point_right: [**rclone crypt document**] (https://rclone.org/crypt) Currently, completely compatible
+If you know the **`rclone`** very well, you can check :point_right: [**rclone crypt document**](https://rclone.org/crypt) Currently fully compatible
 
+Note: `Alist Crypt` used `filename_encoding = base64` in default. If you want to use Rclone, please config it in the advanced config. (Reason: more friendly to long filename)
+
+Since Alist does not consider any case-insensitive internally, you may encounter problems when remote storage is case-insensitive. e.g.: use alist local driver on Windows, then use Crypt on it.
 
 
 <br/>
