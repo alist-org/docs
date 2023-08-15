@@ -84,3 +84,5 @@ In the background `Settings`-->`Global`-->Open `Webauthn login enabled`, go back
 - Just like binding single sign-on, we can use **`Webauthn`** to log in after binding
 
   - On the login page, click the login button on the far right, enter our user name, click login, and then unlock the required `Webauthn` verification method to log in
+- Adding `Webauthn` requires a secure origin and can only be used on `https` or `localhost`
+  - Unsafe sources, such as: http, 192.168.x.x, 127.0.0.1, or directly use the server IP, etc. These places cannot be used
