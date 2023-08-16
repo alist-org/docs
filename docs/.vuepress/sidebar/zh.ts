@@ -10,7 +10,7 @@ export const zh = sidebar({
       text: "使用指南",
       icon: "iconfont icon-creative",
       prefix: "guide/",
-      children: ["install/", "drivers/", "advanced/"],
+      children: ["api/", "install/", "drivers/", "advanced/"],
     },
     {
       text: "配置",
