@@ -61,7 +61,7 @@ category:
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/urltree.md)
 - [x] IPFS
-- [x] [UC](https://drive.uc.cn/)
+- [x] [UC网盘](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
 - [x] [腾讯微云](https://www.weiyun.com/)
 
