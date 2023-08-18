@@ -182,8 +182,6 @@ WantedBy=multi-user.target
 
 ### **方法2**
 
-:::: details 方法2
-
 用  **`.VBS`** 脚本启动和停止，分别创建两个脚本 分别是  启动.vbs 和 停止.vbs
 
 直接在和Alist启动程序同级文件夹里面双击启动即可，不用担心没有反应 直接去 浏览器访问即可
@@ -214,8 +212,6 @@ Wscript.quit
 2. 脚本不会使用的可以看看视频：[**参考视频**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
 
 如何实现Windows开机自启，可以参考上面提到的脚本使用视频(第二个)
-
-:::
 
 ::::
 

@@ -24,7 +24,7 @@ What is `Crypt`?
 
 In simple words, it's a two-password-protected safe. No one can open it without the key. The password and the salt in the configuration form the key.
 
-::: Tips
+::: tip
 
 1. If you don’t know how to use this encryption/decryption driver, please read this guide carefully
 2. Please test it locally to understand it fully before use in the production environment.
