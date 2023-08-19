@@ -11,7 +11,7 @@ export const en = sidebar({
       text: "Guide",
       icon: "iconfont icon-creative",
       prefix: "guide/",
-      children: ["install/", "drivers/", "advanced/"],
+      children: ["api/","install/", "drivers/", "advanced/"],
     },
     {
       text: "Config",
