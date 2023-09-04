@@ -171,7 +171,7 @@ star: true
 
 ### **文件名编码**
 
-高级选项，非专业人士请勿修改，默认为 **`Base64`**，但是除了**`Base64`**之外的选项并没有测试，遇到问题需要自己解决。
+高级选项，非专业人士请勿修改，默认为 **`Base64`**，但是除了 **`Base64`** 之外的选项并没有测试，遇到问题需要自己解决。
 
 - 参考[#5109](https://github.com/alist-org/alist/issues/5109)，[#5080](https://github.com/alist-org/alist/issues/5080)
 
