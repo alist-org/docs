@@ -47,7 +47,7 @@ features:
     details: 使用单点登录快速登录AList
 
   - title: 自动注册AList帐号
-    icon: fa-sharp fa-solid fa-webhook
+    icon: fa-solid fa-file-user
     details: 使用单点登录自动注册为AList帐号快速注册
 
   - title: 离线下载
