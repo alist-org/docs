@@ -41,7 +41,9 @@ typeof fetch !== "undefined" && getLimit()
 
 **Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~ `20T`Large -capacity package, sale in a limited time~
+
+<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
 
 :::
 
@@ -115,6 +117,13 @@ It is Rapid upload. When adding the driver, you need to check Rapid upload to en
 Rapid upload calculates the `sha1` value of the file (should be correct), you don’t need to calculate it, you just need to upload it and upload it, it will automatically calculate it for you and upload it
 
 - The interface provided by the official API of Alibaba Cloud Disk is used, check :point_right: [**Rapid upload logic**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
+
+-----
+
+- **v.3.27.0** version enhanced Rapid upload: you can directly transfer files with `115 network disk` by copying
+  - The premise is that the file to be transferred from the Alibaba Cloud disk to 115 in seconds, 115 already exists, otherwise it is a normal copy task.
+
+If you want to upload files using Second Transmission, it is recommended to build an AList locally on your home computer and add a `Local Storage` and `Alibaba Cloud Disk` to copy Second Transmission to save resources.
 
 <br/>
 

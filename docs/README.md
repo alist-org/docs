@@ -47,7 +47,7 @@ features:
     details: Use single sign-on to quickly log in to AList
 
   - title: Automatic registration of AList account
-    icon: fa-sharp fa-solid fa-webhook
+    icon: fa-solid fa-file-user
     details: Use single sign-on to automatically register as an AList account to quickly register
 
   - title: offline download

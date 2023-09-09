@@ -31,8 +31,6 @@ Or the root directory id can also be obtained from the address bar:
 
 ![url](/img/drivers/quark-rootid.png)
 
-
-
 ### **The default download method used**
 
 

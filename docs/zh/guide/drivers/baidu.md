@@ -74,7 +74,7 @@ flowchart TB
   ll[可以播放]
   gg[机器带宽大]
   kk[机器带宽小带不动]
-  2 --> |不需要超级会员| cc
+  2 --> |不需要超级会员 \n 不保证100%可用性| cc
   cc -.-> ee
   cc ==> dd
   dd ==>|UA改成 \n netdisk| ll

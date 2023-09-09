@@ -41,7 +41,9 @@ typeof fetch !== "undefined" && getLimit()
 
 **阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~ `20T`大容量套餐限时回归~
+
+<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
 
 :::
 
@@ -120,6 +122,14 @@ typeof fetch !== "undefined" && getLimit()
 秒传计算的是文件`sha1`值(应该没错)不需要你计算,你只需要上传即可上传好了会自动帮你计算然后上传完成
 
 - 使用的是阿里云盘官方API提供的接口，查看 :point_right: [**秒传逻辑**](https://www.yuque.com/aliyundrive/zpfszx/ezlzok#y7lyH)
+
+-----
+
+- **v.3.27.0** 版本 增强秒传：可以直接通过复制方式来和`115网盘`进行相互秒传文件
+
+  - 前提是要从阿里云盘秒传到115的文件，115已经存在，否则就是正常复制任务。
+
+如果要使用秒传来上传文件建议在自己家用电脑本地搭建一个AList添加一个`本地存储`和`阿里云盘`进行复制秒传这样节省资源。
 
 <br/>
 
