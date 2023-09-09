@@ -62,7 +62,7 @@ star: true
 1. **Windows**
    - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，[RaiDrive](https://www.raidrive.com/)，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)，[netdrive](https://www.netdrive.net/) :x:，[rclone](https://rclone.org/)
 2. **Android**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[reex](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx 文件管理器，Solid Explore,[X-plore File Manager](https://www.lonelycatgames.com/apps/xplore)
+   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[reex](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx 文件管理器，Solid Explorer,[X-plore File Manager](https://www.lonelycatgames.com/apps/xplore)
 3. **IOS**
    - Nplayer，[kmplayer](https://www.kmplayer.com/home)，infuse，Fileball文件管理器
 4. **电视TV**
