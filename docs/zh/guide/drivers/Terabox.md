@@ -21,13 +21,19 @@ star: true
 
 ## **刷新令牌**
 
-[**点此登录**](https://www.terabox.com/)进行获取刷新令牌
+[**点此登录**](https://www.terabox.com/)进行获取刷新令牌，随意找一个请求即可找到 **`Cookie`**
 
-![terabox](/img/drivers/terabox/terabox1.png)
+![terabox](/img/drivers/terabox/terabox_cookie.png)
 
-## **添加方式**
 
-![terabox](/img/drivers/terabox/terabox2.png)
+<br/>
+
+## **JS Token**
+
+1. 在请求中找到带有`载荷`页面的标签的复制`jsToken`值
+2. 直接在搜索栏搜索`jsToken`即可立刻找到带有`载荷`页面的请求
+
+![terabox](/img/drivers/terabox/terabox_js_token.png)
 
 
 
