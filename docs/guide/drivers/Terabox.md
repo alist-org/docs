@@ -25,9 +25,16 @@ star: true
 
 ![terabox](/img/drivers/terabox/terabox1.png)
 
-## **Add method**
 
-![terabox](/img/drivers/terabox/terabox2.png)
+
+<br/>
+
+## **JS Token**
+
+1. Find the copied `jsToken` value for the tag with the `Payload` page in the request
+2. Search for `jsToken` directly in the search bar to immediately find the request with the `Payload` page
+
+![terabox](/img/drivers/terabox/terabox_js_token.png)
 
 
 

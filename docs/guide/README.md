@@ -31,7 +31,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123pan/Share](https://www.123pan.com/)
+- [x] [123pan/Share/Link](https://www.123pan.com/)
 - [x] [Alist](https://github.com/Xhofe/alist)
 - [x] FTP
 - [x] SFTP

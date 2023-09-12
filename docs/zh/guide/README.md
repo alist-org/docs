@@ -31,7 +31,7 @@ category:
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123云盘/分享](https://www.123pan.com/)
+- [x] [123云盘/分享/直链](https://www.123pan.com/)
 - [x] FTP / SFTP
 - [x] [PikPak / 分享](https://www.mypikpak.com/)
 - [x] [S3](https://aws.amazon.com/cn/s3/)
