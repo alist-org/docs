@@ -8,12 +8,6 @@ title: Introduction
 New versions (V3 and later) are not compatible with V2, so we recommend that you full reinstall Alist if you are upgrading from V2.
 :::
 
-[![](https://img.shields.io/github/release/Xhofe/alist?style=flat-square)](https://github.com/Xhofe/alist/releases/latest)
-[![GitHub Discussions](https://img.shields.io/github/discussions/Xhofe/alist?color=%23ED8936&style=flat-square)](https://github.com/Xhofe/alist/discussions)
-[![](https://img.shields.io/github/actions/workflow/status/Xhofe/alist/build.yml?style=flat-square)](https://github.com/Xhofe/alist/actions?query=workflow%3ABuild)
-[![](https://img.shields.io/github/downloads/Xhofe/alist/total?style=flat-square&color=%239F7AEA)](https://github.com/Xhofe/alist/releases)
-[![](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](https://pay.xhofe.top)
-
 ### What's this
 
 A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and Solidjs.
@@ -73,7 +67,7 @@ Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) 
 
 ### Special sponsors
 
-- [亚洲云 - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商](https://www.asiayun.com/aff/QQCOOQKZ) (国内API服务器赞助)
+- [亚洲云 - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商](https://www.asiayun.com/aff/QQCOOQKZ) (国内 API 服务器赞助)
 - [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.pw/)
 
 ### License
