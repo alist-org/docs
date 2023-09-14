@@ -5,11 +5,7 @@ yarn-error.log
 .yalc
 yalc.lock
 
-# Vuepress Cache
-.cache/
-# Vuepress Temp
-.temp/
-# Vuepress Output
-dist/
+.vitepress/cache
+.vitepress/dist
 
 .VSCodeCounter

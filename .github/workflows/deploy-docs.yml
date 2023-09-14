@@ -38,16 +38,14 @@ jobs:
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
-          > docs/.vuepress/dist/.nojekyll
+        run: |
+          pnpm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.MY_TOKEN }}
-          # external_repository: alist-org/alist-org.github.io
           publish_branch: gh-pages
-          publish_dir: docs/.vuepress/dist
+          publish_dir: .vitepress/dist
           cname: alist.nn.ci
 

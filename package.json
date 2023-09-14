@@ -1,29 +1,19 @@
 {
-  "name": "alist-doc",
-  "version": "3.0.0",
-  "description": "Documentation for alist v3",
-  "license": "AGPL-3.0",
-  "packageManager": "pnpm@7.9.5",
   "scripts": {
-    "ecosystem": "npx tsx scripts/ecosystem.ts",
-    "dev-build": "vuepress build docs",
-    "docs:build": "pnpm ecosystem && vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "dev": "pnpm docs:dev"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@vuepress/client": "2.0.0-beta.62",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
-    "@vuepress/utils": "2.0.0-beta.62",
-    "naive-ui": "^2.34.3",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.62",
-    "vuepress-theme-hope": "2.0.0-beta.211",
-    "vuepress-vite": "2.0.0-beta.62"
+    "vitepress": "1.0.0-rc.13",
+    "vue": "^3.3.4"
   },
-  "dependencies": {
-    "markdown-it": "^13.0.1"
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
   }
 }
