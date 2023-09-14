@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide
+      link: /guide/
     - theme: alt
       text: View on GitHub
       link: https://github.com/alist-org/alist
@@ -20,15 +20,15 @@ hero:
 features:
   - title: Easy to Use
     icon: ⚒️
-    details: Alist was designed from the ground up to be easily installed and it can be used on all platforms.
+    details: AList was designed from the ground up to be easily installed and it can be used on all platforms.
 
   - title: Multiple storage
     icon: 💾
-    details: Alist supports multiple storage providers, including local storage, Aliyundrive, Onedrive, Google Drive, etc., and is easily expand.
+    details: AList supports multiple storage providers, including local storage, Aliyundrive, Onedrive, Google Drive, etc., and is easily expand.
 
   - title: WebDAV Support
     icon: 🗃️
-    details: Alist supports all storage WebDAV, which is a standard for accessing files on.
+    details: AList supports all storage WebDAV, which is a standard for accessing files on.
 
   - title: Dark Mode
     icon: 🌗
@@ -44,7 +44,11 @@ features:
 
   - title: Package download / Batch download
     icon: 📦
-    details: Use stream api of brower to support package download without server usage / Batch download support folder using Aria2
+    details: Use stream api of browser to support package download without server usage / Batch download support folder using Aria2
+
+  - title: (Rapid) Copy between different storage
+    icon: 📤
+    details: Support (Rapid) copy between different storage
 
   - title: Single sign-on
     icon: 🕹️
