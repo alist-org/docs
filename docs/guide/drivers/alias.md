@@ -132,7 +132,7 @@ Test other:/test4/video/tv
 ```
 
 - local1 local2 merged together
-  - If 2 uses a local proxy and 1 uses `302`, call 2 first
+  - If 2 uses a local proxy and 1 uses `302`, call 1 first
 - Test 3 and Test 4 merged together
    - If 3 uses a local proxy and 4 uses `302`, call 4 first
 - In the above two cases, two different folders will appear for display, which will be displayed as follows without interfering with each other

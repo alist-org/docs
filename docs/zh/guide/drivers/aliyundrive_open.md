@@ -41,7 +41,7 @@ typeof fetch !== "undefined" && getLimit()
 
 **阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~ `20T`大容量套餐限时回归~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~ `20TB`大容量套餐限时回归~ 更有超大 `50TB`容量
 
 <img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
 
@@ -73,7 +73,11 @@ typeof fetch !== "undefined" && getLimit()
     - `https://api.xhofe.top/alist/ali_open/token`
     - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
 
-3. 查看详情：https://github.com/alist-org/alist/discussions/4572
+3.  查看详情：https://github.com/alist-org/alist/discussions/4572
+
+4.  是否可以自己搭建授权OAuth验证API？
+    - 暂时不可以，但是你可以反向代理[源站](https://api.nni.ci)
+
 
 :::
 
