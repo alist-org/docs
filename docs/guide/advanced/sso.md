@@ -99,7 +99,7 @@ Click on the new application and we will see the application credentials option,
 
 - Just fill in the corresponding parameters in the Alist background single sign-on
 
-Go to the left column and find `Login and Share` == Fill in the callback parameters **`http://127.0.0.1:5234/api/auth/sso_callback`**==
+Go to the left column and find `Login and Share` ==Fill in the callback parameters **`http://127.0.0.1:5234/api/auth/sso_callback`**==
 
 ```Callback parameter example
 http://127.0.0.1:5244/api/auth/sso_callback
@@ -360,3 +360,53 @@ This is because [Single Sign-On Automatic Registration](#sso-auto-register) is n
 
 - If you are an administrator, you can turn it on
 - If you are a user, you can contact the administrator to enable
+
+<br/>
+
+## **Sso compatibility mode**
+
+AList single -point login is bound to Dingtalk, and then opens Alist in the **`Dingtalk`** application, When you log in, choose Dingtalk login and jump to your computer browser. After authorization, you find that there is no response, because the browser cannot jump to the Dingtalk application inner browser page
+
+At this time, you need to open the **`sso compatability mode`** again to click on the login to log in successfully
+
+**AList applied in Dingtalk and opened as shown in the figure：**
+
+![](/img/advanced/sso_cm.png)
+
+<br/>
+
+### **How to create the application in Dingtalk workbench**
+
+A picture teaches you to create a new application and add it
+
+- LOGO is not modified when the newly -built newly built, you can wait for the newly built and then modify ^(See_Figure_2)^ 
+- If you just browse AList in the Dingtalk application, you do n’t need a single -point login management, you do n’t need to set up a single -point login configuration, you can just add an application
+
+![](/img/advanced/sso_add_app.png)
+
+<br/>
+
+#### Modify the application logo
+
+Open [**DingTalk open platform management**](https://open-dev.dingtalk.com/fe/app#/corp/app) Find your newly built app to modify the logo.
+
+![](/img/advanced/sso_fix_logo.png)
+
+<br/>
+
+
+
+### **redirect url**
+
+After turning on **`Sso compatibility mode`** Then you need to log in to the corresponding software to modify the redirect url to change it to the two redirect url below
+
+- `GitHub` only needs to add one：`http(s)://You_Url/api/auth/sso_get_token`
+- `Microsoft` and` Google` both need to be added, you can add multiple Redirect urls, so you only need to add two Redirect URLs.
+
+```New
+http(s)://You_Url/api/auth/get_sso_id
+http(s)://You_Url/api/auth/sso_get_token
+```
+
+If you enable the **Sso compatibility mode** if you do not modify it, you will prompt `Invalid Redirect URL` Error
+

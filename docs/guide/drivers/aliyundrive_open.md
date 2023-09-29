@@ -41,7 +41,7 @@ typeof fetch !== "undefined" && getLimit()
 
 **Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~ `20T`Large -capacity package, sale in a limited time~
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~ `20TB`Large -capacity package, sale in a limited time~ There are also oversized `50TB` capacity
 
 <img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
 
@@ -65,7 +65,7 @@ typeof fetch !== "undefined" && getLimit()
 :::danger About Alibaba Cloud OAUTH verification API cannot be connected
 
 1. Since the original API `https://api.nn.ci` is blocked by SNI, resulting in the case that cannot be connected, two new APIs are provided for use:
-    - `https://api-cf.nn.ci` (A layer of Cloudflare)
+   - `https://api-cf.nn.ci` (A layer of Cloudflare)
    - `https://api.xhofe.top` (LiaoNing multi -line， Sponsored by [Asia Cloud](https://www.asiayun.com/aff/QQCOOQKZ))
 
 2. You need to replace the OAUTH token link in the ALIYUNDRIVE_OPEN configuration to
@@ -74,6 +74,10 @@ typeof fetch !== "undefined" && getLimit()
    - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
 
 3. check the details：https://github.com/alist-org/alist/discussions/4572
+
+4. Can I create an authorized OAUTH verification API by themselves?
+    - The is not available at present, but you can reverse proxy [Source Station](https://api.nni.ci)
+
 
 
 :::
