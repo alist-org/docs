@@ -73,6 +73,16 @@ If you need **WebDav** service, you need to open it
 
 
 
+## **error message**
+
+Use cookie type or account type to add prompt `not find file page param` error because lanzou changed the domain name
+
+- Solution: It is recommended to use account type to add
+   - Change the sharing link to `https://wwop.lanzoul.com` and save it. If it still doesn't work, refresh the lower right corner.
+   - lanzoul will also make changes in the future
+
+
+
 ## **Fill in instructions**
 
 1. **Acount mode**: Type selects `account`, fill in` account` and `password` options, and the `root folder ID` (the default is all files of the root directory)
