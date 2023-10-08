@@ -20,7 +20,7 @@ star: true
 
 ::: tip
 
-Lanzuo Network Disk has three types of **modes (types) **, which are **accounts, Cookie** and **Url**
+Lanzuo Network Disk has three types of **modes (types)**, which are **accounts, Cookie** and **Url**
 
 - **Account** : You can display all the files of your own cloud disk, you only need to fill in the account password, which will automatically help you refresh the cookie
 - **cookie** : All files in the network disk can be displayed, but the cookie of the network disk needs to be provided
