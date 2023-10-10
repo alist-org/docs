@@ -20,7 +20,7 @@ star: true
 
 ::: tip
 
-Lanzuo Network Disk has three types of **modes (types) **, which are **accounts, Cookie** and **Url**
+Lanzuo Network Disk has three types of **modes (types)**, which are **accounts, Cookie** and **Url**
 
 - **Account** : You can display all the files of your own cloud disk, you only need to fill in the account password, which will automatically help you refresh the cookie
 - **cookie** : All files in the network disk can be displayed, but the cookie of the network disk needs to be provided
@@ -70,6 +70,16 @@ Log in to your [**Lanzuo Cloud Disk**](https://pc.woozooo.com/) account, then F1
 ## **Repair file info**
 
 If you need **WebDav** service, you need to open it
+
+
+
+## **error message**
+
+Use cookie type or account type to add prompt `not find file page param` error because lanzou changed the domain name
+
+- Solution: It is recommended to use account type to add
+   - Change the sharing link to `https://wwop.lanzoul.com` and save it. If it still doesn't work, refresh the lower right corner.
+   - lanzoul will also make changes in the future
 
 
 

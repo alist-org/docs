@@ -127,6 +127,7 @@ Rapid upload calculates the `sha1` value of the file (should be correct), you do
 
 - **v.3.27.0** version enhanced Rapid upload: you can directly transfer files with `115 network disk` by copying
   - The premise is that the file to be transferred from the Alibaba Cloud disk to 115 in seconds, 115 already exists, otherwise it is a normal copy task.
+  - If you want to transfer 115 cloud disk files to Alibaba Cloud Disk in seconds, you need to turn on the Rapid upload option of Alibaba Cloud Disk, otherwise it will be uploaded in normal mode.
 
 If you want to upload files using Second Transmission, it is recommended to build an AList locally on your home computer and add a `Local Storage` and `Alibaba Cloud Disk` to copy Second Transmission to save resources.
 

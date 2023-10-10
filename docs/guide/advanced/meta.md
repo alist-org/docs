@@ -23,30 +23,46 @@ The configuration in the meta information is only valid for `Guest`, if you want
 
 The path for this meta to take effect
 
-
+<br/>
 
 ### **Password**
 Password required to access this path
 
-
+<br/>
 
 ### **Write**
 Allow guest to make directory, new file and upload files.
 
-
+<br/>
 
 ### **Hide**
 The objects to hide of this path, One regular expression (in `Golang`) per line.
 
-
+<br/>
 
 ### **Readme**
 The Readme to render while enter this path, support markdown content or markdown link.
 
+- Show at bottom of list
 
+- The automatically rendered file name is: **`readme.md`**
+
+<br/>
+
+## **Header**
+
+The Readme to render while enter this path, support markdown content or markdown link.
+
+- Show at top of list
+
+- The automatically rendered file name is: **`top.md`**
+
+<br/>
 
 ### **Apply to sub folder**
 Apply this meta to sub folder of specific path
+
+<br/>
 
 
 

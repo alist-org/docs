@@ -30,9 +30,13 @@ ThunderExpert mainly provides more free settings and realizes more login methods
 
 That is, the mobile phone number, email, and username used for login (there is a probability that you cannot log in, you need to try)
 
+- You need to bring the `+86` area code, for example +8613722223333 fill in like this
+
 ### **password**
 
 password for login
+
+
 
 ### **CaptchaToken**
 
@@ -78,6 +82,8 @@ Or use the proxy function in this program to transfer.
 ### **Login Type**
 
 When selecting User, you only need to fill in the username and password
+
+- User You need to bring the `+86` area code, for example +8613722223333 fill in like this
 
 **Recommended**: Just fill in RefreshToken when selecting RefreshToken
 
@@ -148,7 +154,7 @@ Figure 1 contains **7** parameters | Figure 1 contains **2** parameters | a fixe
 
 ### **ThunderExpert complete parameter filling demo:**
 
-![xunlei](/img/drivers/xunlei/x6.png)
+![xunlei](/img/drivers/xunlei/x6.png)                                      
 
 ### **The default download method used**
 

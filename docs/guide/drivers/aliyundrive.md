@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# Aliyundrive
+# Aliyundrive/share
 
 :::warning
 
@@ -120,20 +120,28 @@ Open the official website of Aliyundrive and click the string behind the url whe
 
 ![file_id](/img/drivers/aliyundrive.png)
 
-## **Second pass**
+### **Second pass**
 
 Check the hash when uploading. If there is one in the cloud, directly generate the file without consuming traffic
 
 
-## **Internal upload**
+### **Internal upload**
 
 If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
 
 
-## **Alibaba cloud disk sharing**
+<br/>
 
-Don't think about it... It has been repaired and will no longer develop and maintain the shared storage method, and the Alibaba cloud disk open platform token cannot be used for shared mounted storage.
+
+
+## **Aliyundrive Share Url**
+
+It is no longer available, and the shared storage method will no longer be developed and maintained in the future. At the same time, the token obtained by [**AliyundriveOpen**](./aliyundrive_open.md) cannot be used in the Alibaba Cloud Disk shared mount storage.
+
+
+
+<br/>
 
 
 
