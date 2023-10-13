@@ -21,13 +21,13 @@ star: true
 ### **Initial config**
 
 ::: tip
-After modifying the configuration file in `config.json`, you need to restart AList to take effect
+After modifying the configuration file, restart AList for changes to take effect
 
-- Windows/Mac: `data/config.json` in the same level folder as AList
-- Linux: One-click Script /opt/alist/data/config.json, manually install /xx-path/`data/config.json`
-- Docker: Enter the docker container, `data/config.json`
-- openwrt: If you use `Luci-APP-Alist`, please modify on the webpage,other Please find the AList execution file, the same level directory `data/config.json`
-- Other: Find the `data/config.json` in AList executing files
+- Windows/MacOS: `<alist dir>/data/config.json`
+- Linux: one-click script directory, `/opt/alist/data/config.json` or `<alist dir>/data/config.json`
+- Docker: `<docker container dir>/data/config.json`
+- openwrt: modify config on server if using `luci-app-alist` , otherwise `<alist dir>/data/config.json`
+- Other: `<alist dir>/data/config.json`
 
 :::
 
@@ -75,40 +75,39 @@ After modifying the configuration file in `config.json`, you need to restart ALi
 }
 ```
 
-## Field Description
+## Field Explanation
 
 ### **force**
 
-The program will preferentially read the configuration from the environment variable, set `force` to `true` to force the program to read the configuration file.
+By default AList will read the configuration from environment variables, set `force` to `true` to force the program to read config from the configuration file.
 
 ### **site_url**
 
-The url of your `alist` site, such as `https://pan.nn.ci`.This address will be used in some places in the program, If you do not set this field, Some features may not work properly, such as:
+The address of your AList server, such as `https://pan.nn.ci`. This address is essential for some features, and thus thry may not work properly if unset:
 
-- thumbnail of `LocalStorage`
-- Preview after opening web proxy
-- The download address after opening the web proxy
-- Reverse proxy to sub directory
+- thumbnailing `LocalStorage`
+- previewing site after setting web proxy
+- displaying download address after setting web proxy
+- reverse-proxying to site sub directories
 - ...
 
-Please do not include `/` at the end of the URL link, refer to the following example, otherwise the above function will also not be available or exceptions will occur
+Do not include the slash \(`/`\) at the end of the address. For example:
 
 ```json
-# Correct way of writing:
+# correct:
 "site_url": "https://al.nn.ci",
-# Wrong way of writing:
+# incorrect (exceptions occur):
 "site_url": "https://al.nn.ci/",
 ```
 
 ### **cdn**
 
-The CDN address, if you want to use CDN, you can set this field, the `$version` will be replaced with the real version of `alist-web`
-This is dynamic and changeable. Existing dist resources are hosted on both npm and GitHub, and their locations are:
+The address of the CDN. Included `$version` values will be dynamically replaced by the version of AList. Existing dist resources are hosted on both npm and GitHub, which can be found at:
 
 - https://www.npmjs.com/package/alist-web
 - https://github.com/alist-org/web-dist
 
-So you can use any npm or github cdn as the path, for example:
+Thus it is possible to use any npm or GitHub CDN path for this field. For example:
 
 - https://registry.npmmirror.com/alist-web/$version/files/dist/
 - https://cdn.jsdelivr.net/npm/alist-web@$version/dist/
@@ -120,21 +119,21 @@ So you can use any npm or github cdn as the path, for example:
 - https://jsd.onmicrosoft.cn/npm/alist-web@$version/dist/
 - https://jsd.onmicrosoft.cn/gh/alist-org/web-dist@$version/dist/
 
-Also you can keep it empty to use local dist.
+Keep empty to use local dist resources.
 
 ### **jwt_secret**
 
-The secret used to sign the JWT token, random generated first time start.
+The secret used to sign the JWT token, randomly generated on first run.
 
 ### **token_expires_in**
 
-User login expiration time, unit: `hours`.
+User login expiration time, in hours.
 
 ### **database**
 
-The database configuration, the default is `sqlite3`, you can also use `mysql` or `postgres`.
+The database configuration, which is by default `sqlite3`. Available options are `sqlite3`, `mysql` and `postgres`.
 
-- If you do not use `MySQL` or `postgres`, the configuration file database options do not need to be modified
+- The database options do not need to be modified if using `sqlite3`.
 
 ```json
   "database": {
@@ -150,17 +149,17 @@ The database configuration, the default is `sqlite3`, you can also use `mysql` o
   },
 ```
 
-:::: details Expand to view `ssl_mode` parameter options
+:::: details Expand to view details of `ssl_mode`
 
-If you don't know how to fill in, fill in the default blank, no need to modify, if you can't use it if you don't fill it in, do your own research, and you can't provide much effective help
+Leave blank if you do not understand what this is; no effective help can be given easily.
 
 ---
 
 In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of the SSL connection. Here are a few common options:
 
 - `DISABLED`: Disable SSL connections.
-- `PREFERRED`: If the server has SSL enabled, use an SSL connection; otherwise use a normal connection.
-- `REQUIRED`: Must use SSL connection, if the server does not support SSL connection, the connection will fail.
+- `PREFERRED`: Use an SSL connection if server has SSL enabled; otherwise use a normal connection.
+- `REQUIRED`: Must use SSL connection, fail if the server does not support SSL connection
 - `VERIFY_CA`: Must use SSL connection and verify the authenticity of the server certificate.
 - `VERIFY_IDENTITY`: must use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
 
