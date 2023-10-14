@@ -158,29 +158,29 @@ Leave blank if you do not understand what this is; no effective help can be give
 In MySQL, the `ssl_mode` parameter is used to specify the authentication mode of the SSL connection. Here are a few common options:
 
 - `DISABLED`: Disable SSL connections.
-- `PREFERRED`: Use an SSL connection if server has SSL enabled; otherwise use a normal connection.
-- `REQUIRED`: Must use SSL connection, fail if the server does not support SSL connection
-- `VERIFY_CA`: Must use SSL connection and verify the authenticity of the server certificate.
-- `VERIFY_IDENTITY`: must use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
+- `PREFERRED`: Use an SSL connection if server has SSL enabled, and otherwise fallback to a normal connection.
+- `REQUIRED`: Force to use SSL connection and fail if the server does not support SSL connection.
+- `VERIFY_CA`: Force to use SSL connection and verify the authenticity of the server certificate.
+- `VERIFY_IDENTITY`: Force to use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
 
-MySQL 5.x and 8.x are also different. If you use the free/fee database provided by the service provider, the service provider will have documentation. You must know the database you deploy yourself.
+Additional, MySQL 5.x and 8.x have differences. If you are using databases provided by service providers, BTFM. If you deployed the database yourself, STFW.
 
 ---
 
 In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses SSL connections. Here are a few common options:
 
 - `disable`: Disable SSL connections.
-- `allow`: SSL connections are allowed, but not required.
-- `prefer`: If the server has SSL enabled, use an SSL connection; otherwise use a normal connection.
-- `require`: Must use SSL connection, if the server does not support SSL connection, the connection will fail.
-- `verify-ca`: Must use SSL connection and verify the authenticity of the server certificate.
-- `verify-full`: MUST connect using SSL and verify the authenticity and name of the server certificate matches the connected hostname.
+- `allow`: Allow SSL connections.
+- `prefer`: Use an SSL connection if server has SSL enabled, and otherwise fallback to a normal connection.
+- `require`: Force to use SSL connection and fail if the server does not support SSL connection.
+- `verify-ca`: Force to use SSL connection and verify the authenticity of the server certificate.
+- `verify-full`: Force to use an SSL connection and verify the authenticity of the server certificate and that the name matches the connecting hostname.
 
 ---
 
 ::: right
 
-:warning::warning:**The above parameters are from ChatGPT, the authenticity/practicability/accuracy has not been verified**:warning::warning:
+:warning::warning:**The above information is from ChatGPT, so the accuracy has not been verified**:warning::warning:
 
 :::
 
@@ -188,9 +188,9 @@ In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses S
 
 ### **scheme**
 
-The scheme configuration, if you want to use https, you can set this field.
+The configuration of scheme. Set this field if using HTTPS.
 
-- Fill in the example: Remember to throw the certificate file into the data directory to be recognized~
+- Remember to copy the certificate file to the data directory. Config example:
 
 ```json
   "scheme": {
@@ -207,23 +207,23 @@ The scheme configuration, if you want to use https, you can set this field.
 
 ### **temp_dir**
 
-The temporary directory, default `data/temp`
+The directory to keep temporary files. By default AList uses `data/temp`.
 
 ::: danger
-temp_dir is a temporary folder exclusive to alist. In order to avoid program interruption and generate garbage files, it will be cleared every time it starts, so please do not manually put any content in this folder, and do not use this folder and its subfolders when using docker Folders are mapped to folders in use.
+temp_dir is a temporary folder exclusive to alist. In order to prevent AList from generating garbage files when being interrupted, the directory will be cleared every time AList starts, so do not store anything in this directory or map this directory & subdirectories to directories in use when using Docker.
 :::
 
 ### **bleve_dir**
 
-When you use **`bleve`** indexes, the location of the data storage
+Where data is stored when using  **`bleve`** index.
 
 ### **log**
 
-The log configuration, if you want to setup the log level, you can set this field.
+The log configuration. Set this field to save detailed logs of disable.
 
 ```json
   "log": {
-    "enable": true,					//Whether to turn on the log record function, the default is to open the status true
+    "enable": true,					// Whether AList should store logs
     "name": "data\\log\\log.log",	//The path and name of the log file
     "max_size": 10,					//the maximum size of a single log file, in MB. After reaching the specified size, the file will be automatically split.
     "max_backups": 5,				//the number of log backups to keep. Old backups will be deleted automatically when the limit is exceeded.
@@ -234,19 +234,18 @@ The log configuration, if you want to setup the log level, you can set this fiel
 
 ### **delayed_start**
 
-**Unit: s** (V3.19.0 new function)
+**Time unit: second** (new feature of v3.19.0)
 
-Whether to delay start, generally this function is often used in Alist to start the self -startup option
-
-Because sometimes the network connection is slow, the driver that needs to be connected after the Alist is launched is too fast, so that it cannot be opened normally.
+Whether to delay AList startup.
+Generally this option is used when AList is configured to auto-start. The reason is that sometimes network takes some time to connect, so drivers requiring cannot start correctly after Alist starts.
 
 ### **max_connections**
 
-The maximum number of connections (concurrent) at the same time, the default is 0, that is, unlimited.
+The maximum amount of connections at the same time. The default is 0, which is unlimited.
 
-- 10 or 20 is recommended for general equipment such as n1
-  - Use scenarios (for example, if the picture mode is turned on, the device will crash if the concurrency is not very good)
+- 10 or 20 is recommended for general devices such as n1.
+- Usage Scenarios: the device will crash if the device is bad at concurrency when picture mode is enabled.
 
 ### **tls_insecure_skip_verify**
 
-Whether to examine the SSL certificate, if there is a problem with the certificate of the website used after opening (such as not including the intermediate certificate, certificate expiration, certificate forgery, etc.), the service will not be available,Close this option, please try to run the program in a safe network environment
+Whether not to verify the SSL certificate. If there is a problem with the certificate of the website used when this option is not enabled (such as not including the intermediate certificate, having the certificate expired, or forging the certificate, etc.), the service will not be available. Run the program in a safe network environment when this option is enabled.
