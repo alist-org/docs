@@ -79,7 +79,7 @@ After modifying the configuration file, restart AList for changes to take effect
 
 ### **force**
 
-By default AList will read the configuration from environment variables, set `force` to `true` to force the program to read config from the configuration file.
+By default AList reads the configuration from environment variables, set this field to `true` to force AList to read config from the configuration file.
 
 ### **site_url**
 
