@@ -41,9 +41,9 @@ typeof fetch !== "undefined" && getLimit()
 
 **阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，比直接在阿里云盘购买便宜喔~ `20TB`大容量套餐限时回归~ 更有超大 `50TB`容量
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，双11大促！历史底价！3折SVIP再送3个月。[**立即抢购**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) 3折SVIP再送3个月 ==仅  1 万份==
 
-<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
+<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:30%;" />
 
 :::
 
