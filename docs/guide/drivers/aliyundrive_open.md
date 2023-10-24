@@ -41,9 +41,9 @@ typeof fetch !== "undefined" && getLimit()
 
 **Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), which is cheaper than buying directly on Alibaba Cloud Disk~ `20TB`Large -capacity package, sale in a limited time~ There are also oversized `50TB` capacity
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), 11.11 Promotion! Historical base price! The original price of 30%paid SVIP and given an additional 3 -month SVIP. [**immediately buy**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) The original price of 30%paid SVIP and given an additional 3 -month SVIP. ==Only 10,000 copies==
 
-<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:20%;" />
+<img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:30%;" />
 
 :::
 
