@@ -40,6 +40,8 @@ elif [ "$platform" = "aarch64" ]; then
   ARCH=arm64
 fi
 
+GH_PROXY='https://github.abskoop.workers.dev/'
+
 if [ "$(id -u)" != "0" ]; then
   echo -e "\r\n${RED_COLOR}出错了，请使用 root 权限重试！${RES}\r\n" 1>&2
   exit 1
@@ -83,7 +85,7 @@ CHECK() {
 INSTALL() {
   # 下载 Alist 程序
   echo -e "\r\n${GREEN_COLOR}下载 Alist $VERSION ...${RES}"
-  curl -L https://ghproxy.com/https://github.com/Xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
+  curl -L ${GH_PROXY}https://github.com/xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
   tar zxf /tmp/alist.tar.gz -C $INSTALL_PATH/
 
   if [ -f $INSTALL_PATH/alist ]; then
@@ -189,7 +191,7 @@ UPDATE() {
     # 备份 alist 二进制文件，供下载更新失败回退
     cp $INSTALL_PATH/alist /tmp/alist.bak
     echo -e "${GREEN_COLOR}下载 Alist $VERSION ...${RES}"
-    curl -L https://ghproxy.com/https://github.com/Xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
+    curl -L ${GH_PROXY}https://github.com/xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
     tar zxf /tmp/alist.tar.gz -C $INSTALL_PATH/
     if [ -f $INSTALL_PATH/alist ]; then
       echo -e "${GREEN_COLOR} 下载成功 ${RES}"
