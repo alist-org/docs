@@ -23,6 +23,11 @@ Username for login
 Password for login
 :::tip
 Password is invalid for guest user.
+
+If you enter an incorrect password 6 times in a row, the current IP will be blocked for 30 minutes and you will not be able to enter your account and password to log in. However, it will not affect other IPs. It will only target IPs that entered 6 incorrect passwords.
+
+- Restarting will immediately remove the 30-minute ban time
+
 :::
 
 ### **Base path**
