@@ -67,5 +67,11 @@ const showMingdao = false;
 .wwads-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  img {
+    display: unset;
+    max-width: unset;
+    max-height: unset;
+    margin: unset;
+  }
 }
 </style>
