@@ -22,7 +22,7 @@ BLUE_COLOR='\e[1;34m'
 PINK_COLOR='\e[1;35m'
 SHAN='\e[1;33;5m'
 RES='\e[0m'
-GH_PROXY='https://github.abskoop.workers.dev/'
+GH_PROXY='https://gh-proxy.com/'
 clear
 
 # Get platform
