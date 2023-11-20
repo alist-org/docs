@@ -40,7 +40,7 @@ elif [ "$platform" = "aarch64" ]; then
   ARCH=arm64
 fi
 
-GH_PROXY='https://github.abskoop.workers.dev/'
+GH_PROXY='https://gh-proxy.com/'
 
 if [ "$(id -u)" != "0" ]; then
   echo -e "\r\n${RED_COLOR}出错了，请使用 root 权限重试！${RES}\r\n" 1>&2
