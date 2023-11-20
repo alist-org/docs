@@ -34,7 +34,7 @@ category:
 - [x] [123云盘/分享/直链](https://www.123pan.com/)
 - [x] FTP / SFTP
 - [x] [PikPak / 分享](https://www.mypikpak.com/)
-- [x] [S3](https://aws.amazon.com/cn/s3/)
+- [x] [S3[对象存储]](../guide/drivers/s3.md)
 - [x] [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
@@ -59,7 +59,7 @@ category:
 - [x] [Seafile](https://www.seafile.com/)
 - [x] Cloudreve
 - [x] [Trainbit](https://trainbit.com/)
-- [x] [UrlTree](../guide/drivers/urltree.md)
+- [x] [UrlTree](../guide/drivers/UrlTree.md)
 - [x] IPFS
 - [x] [UC网盘](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)

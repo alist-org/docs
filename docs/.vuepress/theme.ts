@@ -126,10 +126,11 @@ export default hopeTheme(
         sup: true,
         align: true,
         include: true,
-        card: true,
+        demo:true,
+        // card: true,
       },
       components: {
-        components: ["ArtPlayer", "BiliBili", "Badge"],
+        components: ["ArtPlayer", "BiliBili", "Badge","VPCard"],
         // 临时弹窗
         rootComponents: {
           notice: [

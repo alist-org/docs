@@ -223,8 +223,6 @@ typeof fetch !== "undefined" && getLimit()
 >
 >- 目前只支持转码 eng、jpn、chi 三种语言，其他语言会丢失
 
-
-
 ## **默认使用的下载方式**
 
 ```mermaid

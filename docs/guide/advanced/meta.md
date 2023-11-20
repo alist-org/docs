@@ -51,11 +51,13 @@ The Readme to render while enter this path, support markdown content or markdown
 
 ## **Header**
 
-The Readme to render while enter this path, support markdown content or markdown link.
+(new in v3.29.0) The Readme to render while enter this path, support markdown content or markdown link.
 
 - Show at top of list
-
 - The automatically rendered file name is: **`top.md`**
+  - Files can not be displayed in the list, for example `readme.md` is not displayed in the list
+  - Backstage --> Settings --> Global --> Hidden files --> Add newline `/\/top.md/i`
+
 
 <br/>
 

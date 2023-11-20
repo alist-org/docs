@@ -13,17 +13,23 @@
     "dev": "pnpm docs:dev"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@vuepress/client": "2.0.0-beta.62",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
-    "@vuepress/utils": "2.0.0-beta.62",
-    "naive-ui": "^2.34.3",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.62",
-    "vuepress-theme-hope": "2.0.0-beta.211",
-    "vuepress-vite": "2.0.0-beta.62"
+    "@types/node": "^18.18.9",
+    "@vuepress/client": "2.0.0-beta.68",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.68",
+    "@vuepress/utils": "2.0.0-beta.68",
+    "dashjs": "^4.7.2",
+    "flowchart.ts": "^1.0.1",
+    "hls.js": "^1.4.12",
+    "mathjax-full": "^3.2.2",
+    "mermaid": "^10.6.1",
+    "mpegts.js": "^1.7.3",
+    "naive-ui": "^2.35.0",
+    "vue": "^3.3.8",
+    "vuepress": "2.0.0-beta.68",
+    "vuepress-theme-hope": "2.0.0-beta.250",
+    "vuepress-vite": "2.0.0-beta.68"
   },
   "dependencies": {
-    "markdown-it": "^13.0.1"
+    "markdown-it": "^13.0.2"
   }
 }
