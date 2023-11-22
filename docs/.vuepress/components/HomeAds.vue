@@ -8,7 +8,7 @@ const isZh = computed(() => {
   return pageData.value.path.startsWith("/zh/");
 });
 
-let vidHub = {
+const vidHubEn = {
   title: "VidHub - An elegant cloud video player within the Apple ecosystem.",
   hero: [
     "Support for iPhone, iPad, Mac, and Apple TV.",
@@ -18,17 +18,20 @@ let vidHub = {
   tag: "Free",
 };
 
-if (isZh.value) {
-  vidHub = {
-    title: "VidHub - 苹果生态下优雅的网盘视频播放器",
-    hero: [
-      "iPhone，iPad，Mac，Apple TV全平台支持,",
-      "直接挂载阿里云盘、百度网盘、OneDrive、GoogleDrive、Dropbox、Alist挂载各种夸克云盘，pikpak, 115等等。",
-    ],
-    url: "https://zh.okaapps.com/product/1659622164?ref=alist",
-    tag: "免费",
-  };
-}
+const vidHubCN = {
+  title: "VidHub - 苹果生态下优雅的网盘视频播放器",
+  hero: [
+    "iPhone，iPad，Mac，Apple TV全平台支持,",
+    "直接挂载阿里云盘、百度网盘、OneDrive、GoogleDrive、Dropbox、Alist挂载各种夸克云盘，pikpak, 115等等。",
+  ],
+  url: "https://zh.okaapps.com/product/1659622164?ref=alist",
+  tag: "免费",
+};
+
+const vidHub = computed(() => {
+  if (isZh.value) return vidHubCN;
+  return vidHubEn;
+});
 
 const isApple = computed(() => {
   if (navigator.platform)
@@ -65,7 +68,7 @@ const isApple = computed(() => {
   width: 100%;
   height: 150px;
   @media screen and (max-width: 700px) {
-    height: 120px;
+    height: 160px;
   }
   background-image: url(/img/ss/vidhub-bg.png);
   background-size: cover;
@@ -81,7 +84,9 @@ const isApple = computed(() => {
     img {
       height: 60%;
       width: auto;
-      
+      @media screen and (max-width: 700px) {
+        height: 40%;
+      }
     }
     div {
       display: flex;
@@ -100,6 +105,7 @@ const isApple = computed(() => {
         height: auto;
         @media screen and (max-width: 700px) {
           font-size: medium;
+          word-break: break-all;
         }
         .tag {
           background-color: green;
