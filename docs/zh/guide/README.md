@@ -75,8 +75,9 @@ category:
 
 ## 特别赞助
 
-- [亚洲云 - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商](https://www.asiayun.com/aff/QQCOOQKZ) (国内API服务器赞助)
-- [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.pw/)
+- [VidHub](https://zh.okaapps.com/product/1659622164?ref=alist) - 苹果生态下优雅的网盘视频播放器，iPhone，iPad，Mac，Apple TV全平台支持。
+- [亚洲云](https://www.asiayun.com/aff/QQCOOQKZ) - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商 (国内API服务器赞助)
+- [找资源](https://zhaoziyuan.pw/) - 阿里云盘资源搜索引擎
 
 ## 许可
 
