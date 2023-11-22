@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@vuepress/client": "2.0.0-beta.62",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-beta.62",
     "naive-ui": "^2.34.3",
     "vue": "^3.2.47",
