@@ -73,8 +73,9 @@ const isApple = computed(() => {
   background-image: url(/img/ss/vidhub-bg.png);
   background-size: cover;
   background-position: right;
-  border-radius: 8px;
+  border-radius: 14px;
   display: block;
+  padding-right: 4px;
   div {
     display: flex;
     height: 100%;
@@ -110,10 +111,14 @@ const isApple = computed(() => {
         .tag {
           background-color: green;
           display: inline;
-          border-radius: 10px;
-          padding: 4px;
+          border-radius: 40px;
+          padding: 6px;
+          padding-left: 14px;
+          padding-right: 14px;
           margin-left: 4px;
+          white-space: nowrap;
         }
+        padding-bottom: 5px;
       }
       .hero {
         height: auto;
