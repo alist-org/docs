@@ -24,17 +24,28 @@ Match files hidden by regular expressions(`javascript`). If you don't understand
 
 It's not really hiding. It still exists in the list returned by the api, it just doesn't show up in the frontend list. So if you want to really hide, add a [meta](../guide/advanced/meta.md) record instead.
 
+
+
 ### **Package download**
 
-Whether to enable package download, default is true.
+Whether to enable package download, default is true. 【Not recommended especially when there are many or large files】
+
+- It is recommended to push files to Aria2 for downloading. Aria2 supports the download folder to save the directory structure.
+- View in detail【[What is the difference between the two Aria2](./other.md#other)】
+
+
 
 ### **Customize head**
 
 Any content you want which are automatically placed at the beginning of the head of the web page
 
+
+
 ### **Customize body**
 
 Any content you want which are automatically placed at the end of the body of the web page
+
+
 
 ### **Link expiration**
 
@@ -43,13 +54,18 @@ The expiration time of the direct link, in hours. If it equals 0, it will not ex
 Only the straight chain of the path with the password added will have an expiration time, otherwise it will not expire.Because the expiration time is added to the sign query parameter, and the path without adding the password will not check the sign.
 :::
 
+
+
 ### **Privacy regs**
 
 What you don't want to show in the error message, One regular expression (in `Golang`) per line. The matched content will be replaced with * of the corresponding length.
 
+
+
 ### **Ocr api**
 
 Used to identify verification codes. You can deploy yourself: https://hub.docker.com/r/xhofe/ddddocr_server. The default ocr api is deployed on the [koyeb](https://app.koyeb.com/)(No availability guarantee), which is not recommended to use in production environment.
+
 
 
 ### **Sign all**
@@ -58,9 +74,13 @@ Add signatures to the direct link of all files (whether with password or not) Th
 
 If you need to close it, you can close it yourself, but you need to pay attention to security issues. After closing the signature, if the site can be accessed by the public network, the password may be bypassed to access private files.
 
+
+
 ## **Forward direct link params**
 
 You can check it out yourself：**https://github.com/alist-org/alist/issues/3123**
+
+
 
 ### **Filename char mapping**
 
@@ -73,6 +93,8 @@ For example, the `/` symbol is a path symbol in the Alist program. Some people�
 ```
 
 The default is the first one at the beginning. If you want to add it later, you can add it later. The format is as simple as above.
+
+
 
 ## **Webauthn login enabled**
 

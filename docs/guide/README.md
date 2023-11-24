@@ -66,6 +66,8 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [UC Clouddrive](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
 - [x] [Tencent weiyun](https://www.weiyun.com/)
+- [x] [vtencent](https://app.v.tencent.com/)
+- [x] [ChaoxingGroupCloud](../guide/drivers/chaoxing.md)
 
 ### Discussion
 
