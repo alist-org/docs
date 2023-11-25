@@ -231,3 +231,5 @@ alist restart
 ### **How to update**
 
 Download the new version of Alist and replace the previous one.
+
+<!-- @include: script.md{87-265} -->

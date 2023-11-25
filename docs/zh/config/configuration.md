@@ -187,6 +187,14 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ::::
 
+:::: details 已有数据情况下修改数据库注意事项
+
+1. 如果将`sqlite`数据库改为`mysql`数据库优先推荐使用备份再恢复的方法
+2. 如果直接将`sqlite`的数据导入到`mysql`可以查看此视频教程：[查看教程](https://www.bilibili.com/video/BV1iV4y1T7kh)
+   - 因为直接导入云盘数据库表时`sqlite`的时间和`mysql`的时间填写方式不同会提示报错 [请查看注意事项如何解决](https://www.bilibili.com/video/BV1iV4y1T7kh?t=343.7)
+
+::::
+
 ### **scheme**
 
 协议配置，如果要使用 HTTPS，可以设置该字段。

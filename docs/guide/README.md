@@ -36,7 +36,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] FTP
 - [x] SFTP
 - [x] [PikPak / share](https://www.mypikpak.com/)
-- [x] [S3](https://aws.amazon.com/cn/s3/)
+- [x] [S3](../guide/drivers/s3.md)
 - [x] [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
 - [x] WebDAV
 - [x] Teambition（[China](https://www.teambition.com/)，[International](https://us.teambition.com/)）
@@ -61,11 +61,13 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Seafile](https://www.seafile.com/)
 - [x] Cloudreve
 - [x] [Trainbit](https://trainbit.com/)
-- [x] [UrlTree](../guide/drivers/urltree.md)
+- [x] [UrlTree](../guide/drivers/UrlTree.md)
 - [x] IPFS
 - [x] [UC Clouddrive](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
 - [x] [Tencent weiyun](https://www.weiyun.com/)
+- [x] [vtencent](https://app.v.tencent.com/)
+- [x] [ChaoxingGroupCloud](../guide/drivers/chaoxing.md)
 
 ### Discussion
 

@@ -53,8 +53,7 @@ typeof fetch !== "undefined" && getLimit()
 2.  The token filled in when Alist is mounted should also be provided by this tool, and the previous acquisition method will not be available
 3.  Not applicable to others, but only for Alist
 4.  If the same IP requests =={{ max }}== times within =={{ minutes }}== minutes, **Too Many Requests** will appear. :no_entry_sign:So please do not abuse:no_entry_sign:
-    - For example, it is counted as a request when ~~saving/editing~~, and viewing files and watching video downloads is not counted.
-    - The number of times and time mentioned above are dynamic~
+    - and viewing files and watching video downloads is not counted，The number of times and time mentioned above are dynamic~
     - New optimization: **will only refresh the token when the request finds that the token is expired, update restart editing if the token is still valid will not refresh.**
 5.  Online playback video reminder: **`ExceedCapacityForbidden`** error, the capacity exceeds restrictions, implements restrictions, needs to be expanded or deleted unnecessary file saving space to save space,[View details](#four、)
 6.  <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> **==Do not share the Alibaba cloud disk publicly, and the account is prohibited from being accessed by multiple IPs. If the account is frozen after sharing, you will be responsible for the consequences== <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i>  After adding storage, please set up meta information and other measures in time to prevent the account from being frozen by {other people/crawlers} malicious [access/sharing]，Other cloud disks also need to be prevented from being frozen/banned**

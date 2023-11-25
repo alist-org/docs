@@ -53,8 +53,7 @@ typeof fetch !== "undefined" && getLimit()
 2.  AList 挂载时填写的 token 也应该是这个工具提供的，之前方式获取的不可以
 3.  暂不适用于其他，同时也仅限用于 Alist 使用
 4.  同一 IP 在 =={{ minutes }}== 分钟内请求 =={{ max }}== 次，会出现 **Too Many Requests** :no_entry_sign:避免滥用，请勿滥用:no_entry_sign:
-   - 例如在 ~~保存/编辑 的时候算一次请求~~，查看文件看视频下载不算。
-   - 上述的分钟和次数是动态的喔~
+   - 查看文件看视频下载不算，上述的分钟和次数是动态的
    - 新增优化：**只会在请求发现令牌过期时去刷新令牌，更新 重启 编辑如果令牌仍然有效则不会去刷新。**
 5.  在线播放视频提示：**`ExceedCapacityForbidden`** 错误，容量超限限制播放，需要扩容或者删除不必要的文件释放空间,[查看详情](#四、)
 6.  <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> **==请勿将阿里云盘进行公开分享，禁止帐号被多IP访问，若进行分享后帐号被冻结后果自负== <i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> 添加存储后请及时设置元信息等措施防止被{其他人/爬虫}恶意[访问/分享]导致帐号被冻结，其他云盘也一样防止被冻结/封号**
@@ -223,8 +222,6 @@ typeof fetch !== "undefined" && getLimit()
 >A：阿里云盘open 需要使用 **Aliyun Video Previewer**播放器，然后暂时"**只支持转码 mkv 封装的 srt、vtt 文本格式字幕**"
 >
 >- 目前只支持转码 eng、jpn、chi 三种语言，其他语言会丢失
-
-
 
 ## **默认使用的下载方式**
 

@@ -19,8 +19,6 @@ star: true
 # alias别名
 
 
-
-
 我们先看一张示意图
 
 ![alias](/img/drivers/alias/alias.png)

@@ -186,6 +186,14 @@ In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses S
 
 ::::
 
+:::: details Notes on modifying the database when there is already data
+
+1. If you change the `sqlite` database to `mysql` database, it is first recommended to use the backup and recovery method.
+2. If you directly import `sqlite` data into `mysql`, you can view this video tutorial: [View tutorial](https://www.bilibili.com/video/BV1iV4y1T7kh)
+   - Because when directly importing the cloud disk database table, the time of `sqlite` and the time of `mysql` are filled in differently, an error will be reported [please check the precautions and how to solve it](https://www.bilibili.com/video/BV1iV4y1T7kh?t=343.7)
+
+::::
+
 ### **scheme**
 
 The configuration of scheme. Set this field if using HTTPS.
