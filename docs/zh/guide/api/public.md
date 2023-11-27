@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-token
 # This control sidebar order
-order: 3
+order: 4
 # A page can have multiple categories
 category:
   - Guide
