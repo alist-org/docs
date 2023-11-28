@@ -43,30 +43,15 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 ##### **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
 ```
 
 ##### **docker-compose**
-
-```bash
-#创建alist目录
-mkdir /etc/alist
-#进入该目录
-cd /etc/alist
-#下载docker-compose.yml文件
-wget https://alist.nn.ci/docker-compose.yml
-#运行容器
-docker-compose up -d
-```
-
-**你也可以手动创建`docker-compose.yml`文件，内容如下：**
-
 ```yaml
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:latest'
-        container_name: alist
+        restart: always
         volumes:
             - '/etc/alist:/opt/alist/data'
         ports:
@@ -75,7 +60,8 @@ services:
             - PUID=0
             - PGID=0
             - UMASK=022
-        restart: unless-stopped
+        container_name: alist
+        image: 'xhofe/alist:latest'
 ```
 
 ### **使用 aria2 离线下载**
@@ -89,7 +75,7 @@ services:
 ##### **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
 ```
 
 ##### **docker-compose**
@@ -97,8 +83,7 @@ docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:524
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:main'
-        container_name: alist
+        restart: always
         volumes:
             - '/etc/alist:/opt/alist/data'
         ports:
@@ -107,7 +92,8 @@ services:
             - PUID=0
             - PGID=0
             - UMASK=022
-        restart: unless-stopped
+        container_name: alist
+        image: 'xhofe/alist:main'
 ```
 
 ### **指定版本**
