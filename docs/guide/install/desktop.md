@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: computer
+icon: iconfont icon-computer
 # This control sidebar order
 order: 6
 # A page can have multiple categories

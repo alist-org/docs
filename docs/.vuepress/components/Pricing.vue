@@ -28,7 +28,7 @@ let data = {
     },
     {
       title: 'AList Desktop',
-      price: '＄8',
+      price: '＄10',
       features: [
         'All Open Source features',
         'Use a nice UI to manage the Alist program instead of the command line, and easily view logs',

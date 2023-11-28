@@ -2,7 +2,7 @@
 # This is the title of the article
 title: 为什么
 # This is the icon of the page
-icon: repair
+icon: iconfont icon-repair
 # This control sidebar order
 order: 1
 # A page can have multiple categories
@@ -187,7 +187,7 @@ v2可以成功是因为v2会忽略空文件上传。
 
 ### **想让游客登录后才能看到内容怎么设置?**
 
-一下三种版本总有一款适合你 快速速食用吧！！
+以下三种版本总有一款适合你 快速速食用吧！！
 
 1. 将  **`guest`** 用户看到的目录 指向一个空文件夹，然后写一个readme说明，别问怎么弄自行操作[点击查看](#如何新建一个完全空白的文件夹)
 2. 在元信息直接将根目录加密码

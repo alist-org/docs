@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 34
 # A page can have multiple categories
@@ -27,18 +27,23 @@ Dropbox官网：https://www.dropbox.com/
 前往：**https://alist.nn.ci/tool/dropbox/request.html**
 
 - 有两种方式，一种是直接使用AList提供的，一种是自己新建应用
-  - 获取方式如下（推荐使用第一种^{左侧的}^）
+  - 获取方式如下（推荐使用第二种^{右侧的}^因为AList提供的已经无法新建用户了）
+  - 使用右侧自建`客户端ID`和`秘钥`时，记得授权^{第三张图}^
 
 <div class="image-preview">  
     <img src="/img/drivers/dropbox/dropbox-1.png" alt="使用自带的获取token" title="使用自带的获取token"/>
     <img src="/img/drivers/dropbox/dropbox-2.png" alt="自己新建客户端获取token" title="自己新建客户端获取token"/>
+    <img src="/img/drivers/dropbox/dropbox-2-2.png" alt="自己新建客户端获取token" title="自己新建客户端获取token"/>
 </div>
+
 
 - 如果使用自己新建的应用需要填写`客户端ID`和`客户端秘钥`
 
 - 获取方式如上图右图（创建应用链接：**https://www.dropbox.com/developers/apps** ）
 
 - 回调参数链接：**https://alist.nn.ci/tool/dropbox/callback**
+
+参考链接：[**点击查看**](https://github.com/alist-org/alist/commit/cfee536b96f38e5ba3f3575fab4e89f6c0e1bc5b#commitcomment-119688700)
 
 
 
@@ -58,7 +63,7 @@ Dropbox官网：https://www.dropbox.com/
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: link
+icon: iconfont icon-link
 # This control sidebar order
 order: 10
 # A page can have multiple categories
@@ -98,9 +98,6 @@ star: true
 
 **qBittorrent**视频教程
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&hd=2&raw=true" 
-  poster="/img/advanced/qbittorrent.png"
-/>
+<BiliBili bvid="BV1NT411q7EN" />
 
 **视频若失效可以前往观看：https://b23.tv/J34qDiG**

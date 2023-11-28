@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: geometry
+icon: iconfont icon-geometry
 # This control sidebar order
 order: 5
 # A page can have multiple categories
@@ -18,10 +18,24 @@ star: true
 
 # 使用 Docker
 
-查看管理员信息：
+## **查看管理员信息：**
+
+#### **低于v3.25.0版本**
 
 ```bash
 docker exec -it alist ./alist admin
+```
+
+
+#### **高于v3.25.0版本**
+
+3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新 **`随机生成`** 或者 **`手动设置`**
+
+```bash
+# 随机生成一个密码
+docker exec -it alist ./alist admin random
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
+docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
 ## **发行版本**

@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 28
 # A page can have multiple categories
@@ -38,7 +38,7 @@ star: true
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

@@ -16,7 +16,7 @@ if (platform.includes("win")) {
 console.log(plat.value);
 
 const res = await fetch(
-  `${api()}/proxy/https://github.com/alist-org/desktop-release/releases/latest/download/proxy.json`
+  `https://ad-api.nn.ci/v0/app/latest`
 );
 const data = await res.json();
 const version = data.version as string;

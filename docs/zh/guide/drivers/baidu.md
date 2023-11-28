@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 12
 # A page can have multiple categories
@@ -74,7 +74,7 @@ flowchart TB
   ll[可以播放]
   gg[机器带宽大]
   kk[机器带宽小带不动]
-  2 --> |不需要超级会员| cc
+  2 --> |不需要超级会员 \n 不保证100%可用性| cc
   cc -.-> ee
   cc ==> dd
   dd ==>|UA改成 \n netdisk| ll
@@ -99,7 +99,10 @@ flowchart TB
 
 ## **根文件夹路径**
 
-要挂载的根文件夹，默认为`/`，与本地存储相同。
+要挂载的根文件夹，默认为`/`
+
+- 单独挂载某文件夹，按照下面格式，`/`是根目录，想挂载那个目录就延伸到那个目录就可以
+  - /文件夹-A/……/文件夹-x
 
 
 
@@ -183,7 +186,7 @@ flowchart TB
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

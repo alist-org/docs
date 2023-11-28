@@ -2,7 +2,7 @@
 # This is the title of the article
 # title: One-click Script
 # This is the icon of the page
-icon: page
+icon: iconfont icon-page
 # This control sidebar order
 order: 11
 # A page can have multiple categories
@@ -24,7 +24,7 @@ star: true
 
 > 如果你想使用子目录，参考[这里](../../faq/howto.md#如何对子目录进行反向代理)
 
-:::tip 反向代理非标准端口或启用https不能播放视频?
+:::tip 反向代理非标准端口或启用https后丢失https或端口号/无法播放视频?
 你需要通过正确的Host头,请参考 [#726](https://github.com/alist-org/alist/issues/726) [#1159](https://github.com/alist-org/alist/issues/1159) [#2429](https://github.com/alist-org/alist/issues/2429) [#3644](https://github.com/alist-org/alist/issues/3644) [#4181](https://github.com/alist-org/alist/issues/4181) [#4719](https://github.com/alist-org/alist/issues/4719)
 :::
 

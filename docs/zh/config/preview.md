@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: preview
+icon: iconfont icon-preview
 # This control sidebar order
 order: 7
 # A page can have multiple categories
@@ -105,7 +105,7 @@ interface {
 
 歌曲无播放封面时显示的默认封面。
 
-## *音频自动播放**
+## **音频自动播放**
 
 是否自动播放音频文件。
 

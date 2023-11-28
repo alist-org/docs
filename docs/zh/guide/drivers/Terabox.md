@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 37
 # A page can have multiple categories
@@ -21,15 +21,22 @@ star: true
 
 ## **刷新令牌**
 
-[**点此登录**](https://www.terabox.com/)进行获取刷新令牌
+[**点此登录**](https://www.terabox.com/)进行获取刷新令牌，随意找一个请求即可找到 **`Cookie`**
 
-![terabox](/img/drivers/terabox/terabox1.png)
-
-## **添加方式**
-
-![terabox](/img/drivers/terabox/terabox2.png)
+![terabox](/img/drivers/terabox/terabox_cookie.png)
 
 
+<br/>
+
+
+
+## **下载接口**
+
+**下载接口需要选择 ==`非官方`==** ，才可以使用 ^(v3.29)^
+
+
+
+<br/>
 
 #### **注意事项：根文件路径默认是 /**
 
@@ -44,7 +51,7 @@ star: true
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

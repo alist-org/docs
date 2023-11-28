@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: tab
+icon: iconfont icon-tab
 # This control sidebar order
 order: 3
 # A page can have multiple categories
@@ -60,7 +60,15 @@ The announcement of the `alist`, such as `### Hello\nWelcome to use Alist`. We s
 
 - If you don't want to display it, you can clear the contents of the announcement to not display it.
 
+If you think the `x` button in the upper right corner is in the way, you can use the following CSS to remove it
 
+```css
+<style>
+.notify-render .hope-close-button {
+    display: none;
+}
+</style>
+```
 
 ### **Pagination type**
 

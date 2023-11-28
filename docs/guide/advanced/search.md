@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: search
+icon: iconfont icon-search
 # This control sidebar order
 order: 6
 # A page can have multiple categories
@@ -20,19 +20,26 @@ star: true
 
 ### **how to use**
 
-Follow the steps below to enable search:
+::: danger Follow the steps below to enable search:
 
-1. Go to the `indexes` page to select a search index and click `Save`.
+1. Go to the `indexes` page to select a **Search index** and click `Save`.
 2. After the index is saved, click `Build indexes` to build the index.
 3. Now you can search for files by click the search block on the top right corner of the page or by using the shortcut `Ctrl + K`.
 
 :exclamation::exclamation::exclamation: If you do not follow the above prompts, the prompt will be opened: **Search Not available**
+
+:::
+
+<br/>
+
+
 
 ### **Difference between different search indexes**
 
 - `database`: Search by database, which is using the existing data.db. It will create a new table, record the parent directory, name, and size of every object, but the search does not split words which means that match whether the keywords you enter appear in the name of object. In general, if you don't have a specific search requirement, we recommend you choose it.
 - `database (non-full-text search)`: The full-text search mode is used above, but full-text search will have some strange problems when using **MySQL database** as an Alist database, which has not been resolved yet, so if your Alist database Change to **MySQL**, and your Alist version **`≥3.9.1`** It is recommended that you use this to build an index, although it is slower than full-text search and the gap is not very big, but it will not search for strange files , it’s more secure. After the future version is repaired, we will inform you to use the new full-text search to build the index. If you are using **sqlite3**, you can use whichever you like.
 - `bleve`: An open source full-text search engine. It will split the words in the name of object and search for the keywords you enter. But its search results may be so strange that you can't get the results you want, and it will take up more resources.
+- **sqlite3** is easy to trigger `database is locked` lock library cannot write files
 
 The following table could help you understand the difference between the two search indexes quickly:
 
@@ -56,12 +63,20 @@ Full-text search: It will not search in the text of all files, don't get it wron
 
 :::
 
+<br/>
+
+
+
 ### **Search tips**
 
 - If you want to search for a specific folder, you must choose `database` as the search index;
 - If you choose `database` as the search index and the type of your database is `sqlite3`, we suggest that you don't make any changes in the admin page while building the index, as sqlite3 does not support concurrent writes and can cause `database-lock` issues;
 - If you choose `bleve` as the search index, and if you want to search for new files or if you don't want to search for deleted files, the index needs to be completely rebuilt to take effect because `bleve` does not support incremental updates;
 - But for `database`, it supports incremental updates, so you can search for new files or deleted files just by access the modified folder (and click `refresh` icon if cached) without rebuilding the index, which is much more convenient than `bleve`.
+
+<br/>
+
+
 
 ### **Ignore paths**
 
@@ -72,6 +87,10 @@ Paths to be skipped during index building, one path per line, multiple lines can
    
    - /bbb network disk/ccc folder
    
+
+<br/>
+
+
 
 ### **Update index**
 
@@ -84,6 +103,10 @@ Paths to be skipped during index building, one path per line, multiple lines can
       - /aaa network disk
       
       - /bbb network disk/ccc folder
+
+<br/>
+
+
 
    ### **Automatically update the index**
 
@@ -108,6 +131,10 @@ Paths to be skipped during index building, one path per line, multiple lines can
    - [**Automatically update index**](#automatically-update-the-index): suitable for users who build indexes for all files
    - [**Update Index**](#update-index): Suitable for **not** to build indexes for all files, but there are files that need to be built, manually build indexes to avoid all being indexed
 
+<br/>
+
+
+
 ### **Maximum index depth**
 
 default 20.
@@ -128,3 +155,36 @@ Explanation: The directory can enter up to several layers. For example, if you h
 
 - After building an index, users without permissions can search for hidden file/folder solutions [click to view](meta.md#tips)
 
+<br/>
+
+
+
+### **The database file is very large, what should I do if it is still the same after clearing the index?**
+
+Normal users do not modify the database options. They use the `sqlite` database to build indexes, which will cause the database file to be particularly large
+
+- -Data files, `Data` folders in the same directory in Alist program,`data.db，data.db-shm，data.db-wal`
+
+After turning on the constructive index, the more the number you build, the larger the files. Finally, you accidentally occupy the machine's hard disk, and then click the clear index button. What should I do if the file is still as big?
+
+- This is caused by the cache of `sqlite`, there are two solutions
+
+  1. We use commands or tools to connect to `sqlite` database, input：**`VACUUM;`**
+
+  ```sqlite
+  VACUUM;
+  ```
+
+  2. After using the command to clean up, we replace it with `mysql` database before constructing indexes
+     - Sqlite replaced with mysql database tutorial：**[BV1iV4y1T7kh](https://www.bilibili.com/video/BV1iV4y1T7kh)**
+
+Comparison after cleaning the command: The picture above shows before cleaning up, and the following figure shows that after cleaning, you can execute several commands several times if there is no effect.
+
+![](/img/advanced/sqlite-mysql.png)
+
+-----
+
+`data.db, data.db-shm, data.db-wal` when backup, when backup，`data.db-shm，data.db-wal`Do these two files need backup？
+
+- In the backup, stop the program first, and then backup. You only need to backup the `data.db` database file. The other two do not need to backup
+- It may be after you stop the program`data.db-shm，data.db-wal`will automatically disappear, don't worry

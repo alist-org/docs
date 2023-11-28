@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 18
 # A page can have multiple categories
@@ -30,8 +30,6 @@ The cookie and root folder ID are obtained from the request:
 Or the root directory id can also be obtained from the address bar:
 
 ![url](/img/drivers/quark-rootid.png)
-
-
 
 ### **The default download method used**
 

@@ -1,7 +1,7 @@
 ---
 title: 更新日志
 toc: false
-icon: change
+icon: iconfont icon-change
 order: 43
 # A page can have multiple categories
 category:

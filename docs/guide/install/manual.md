@@ -2,7 +2,7 @@
 # This is the title of the article
 title: Manual installation
 # This is the icon of the page
-icon: interact
+icon: iconfont icon-interact
 # This control sidebar order
 order: 3
 # A page can have multiple categories
@@ -29,6 +29,8 @@ When you see the output of `start server @ 0.0.0.0:5244` and no error is reporte
 
 ### **Running**
 
+Versions above v3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
+
 :::tabs#os
 @tab linux
 
@@ -39,8 +41,16 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # Run the program
 ./alist server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 ./alist admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+./alist admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
 ```
 @tab macOS
 ```bash
@@ -50,8 +60,16 @@ tar -zxvf alist-xxxx.tar.gz
 chmod +x alist
 # Run the program
 ./alist server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 ./alist admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+./alist admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
 ```
 @tab Windows
 ```bash
@@ -59,8 +77,16 @@ chmod +x alist
 unzip alist-xxxx.zip
 # Run the program
 .\alist.exe server
-# Get admin's info
+
+# Obtain administrator information The following two different versions, the new version also has random generation and manual settings
+# Versions lower than v3.25.0
 .\alist.exe admin
+
+# higher than v3.25.0 version
+# Randomly generate a password
+.\alist.exe admin random
+# Manually set a password `NEW_PASSWORD` refers to the password you need to set
+.\alist.exe admin set NEW_PASSWORD
 ```
 @tab win(scoop)
 ```bash
@@ -151,8 +177,6 @@ You can now start the service from services.msc or task manager.
 
 ### **method two**
 
-:::: details method two
-
 Use **`.VBS`** script to start and stop, create two scripts respectively start.vbs and stop.vbs
 
 Just double-click to start it in the folder at the same level as the Alist startup program, don't worry about no response, just go to the browser to access it
@@ -181,8 +205,6 @@ Wscript.quit
 
 2. If the script will not be used, you can watch the video: [**reference video**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
 
-:::
-
 How to realize Windows startup automatically, you can refer to the script mentioned above to use the video (second).
 
 ::::
@@ -209,3 +231,5 @@ alist restart
 ### **How to update**
 
 Download the new version of Alist and replace the previous one.
+
+<!-- @include: script.md{87-265} -->

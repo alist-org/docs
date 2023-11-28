@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 34
 # A page can have multiple categories
@@ -27,12 +27,15 @@ Dropbox Official：https://www.dropbox.com/
 Go to：**https://alist.nn.ci/tool/dropbox/request.html**
 
 - There are two ways, one is provided directly using AList, and the other is to create a new application by yourself
-  - The method of getting as follows (Recommend the first type^{left}^)
+  - The method of getting as follows (Recommend the first type^{right}^Because the AList provided can no longer create new users)
+  - When using the self-built `client ID` and `secret key` on the right, remember to authorize^{the_third_picture}^
 
 <div class="image-preview">  
     <img src="/img/drivers/dropbox/dropbox-1.png" alt="Use AList default to get token" title="Use AList default to get token"/>
     <img src="/img/drivers/dropbox/dropbox-2.png" alt="Create your own new application to obtain the client to get token" title="Create your own new application to obtain the client to get token"/>
+    <img src="/img/drivers/dropbox/dropbox-2-2.png" alt="Create your own new application to obtain the client to get token" title="Create your own new application to obtain the client to get token"/>
 </div>
+
 
 
 - If you use your own new applications, you need to fill in the `client id` and the `client secret key`
@@ -40,6 +43,8 @@ Go to：**https://alist.nn.ci/tool/dropbox/request.html**
 - The method is shown in the right side of the example above(Create an application link：**https://www.dropbox.com/developers/apps**)
 
 - Redirect URLs：**https://alist.nn.ci/tool/dropbox/callback**
+
+Reference link: [**Click to view**](https://github.com/alist-org/alist/commit/cfee536b96f38e5ba3f3575fab4e89f6c0e1bc5b#commitcomment-119688700)
 
 
 

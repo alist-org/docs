@@ -1,6 +1,5 @@
 export const apis: Record<string, string> = {
-  raw_jp: "https://api.nn.ci",
-  cf: "https://api-cf.nn.ci",
+  cf: "https://api.nn.ci",
   cn: "https://api.xhofe.top",
 };
 

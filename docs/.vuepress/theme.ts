@@ -17,7 +17,12 @@ export default hopeTheme(
       url: "https://i.nn.ci",
     },
 
-    iconAssets: "iconfont",
+    // iconAssets: "iconfont",
+    iconAssets: [
+      "iconfont",
+      "https://npm.elemecdn.com/font6pro@6.4.0/css/fontawesome.min.css",
+      "https://npm.elemecdn.com/font6pro@6.4.0/css/all.min.css",
+    ],
 
     logo: "/logo.svg",
 
@@ -121,17 +126,18 @@ export default hopeTheme(
         sup: true,
         align: true,
         include: true,
-        card: true,
+        demo:true,
+        // card: true,
       },
       components: {
-        components: ["ArtPlayer", "BiliBili", "Badge"],
+        components: ["ArtPlayer", "BiliBili", "Badge","VPCard"],
         // 临时弹窗
         rootComponents: {
           notice: [
             {
               path: "/",
               title: 'Kind tips',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span></br></br>1.The original API https://api.nn.ci is blocked by SNI </br>2.Alibaba Cloud Plate and applications using this API are all affected. For specific solutions, please check the two options below.<br/>3.<a href="/guide/drivers/139.html">139Cloud</a>和<a href="/guide/drivers/189.html">189Cloud</a>For details of changes, please view the document by yourself, respectively</br>4.v3.20.1version Breaking Changes <a href="https://github.com/alist-org/alist/discussions/4702">View detailed description</a>, go to <a href="/config/configuration.html#scheme">Configure documentation page</a></br>5.123 Cloud disk anti-leeching problem <a href="/guide/drivers/123.html#usage-issues">Click to view</a></span>',
+              content: '<i class="fa-solid fa-light-emergency-on fa-bounce" style="color: #ff0000;"></i>&nbsp;<span style="color:rgb(255, 0, 0);font-weight:bold;">Please check the reminder content carefully</span><br/><br/>1.<span style="color:blue; font-weight:bold;">The new version v3.25.0 has updated the new password method, and the acquisition method has also been changed. For details, please refer to the documentation page of your own installation method</span><br/>2.v3.25.1 Aliyun_open can choose to mount the backup disk or resource library by itself, for details <a href="/guide/drivers/aliyundrive_open.html#drive-type">Click to view for details</a><br/>3.The new version of AList version greater than v3.22.1 adds single sign-on to automatically register as an AList account, click to view the <a href="/guide/advanced/sso.html#sso-automatically-registers-as-an-alist-account">detailed description</a><br/>4.<a href="/guide/drivers/139.html">139Cloud</a>和<a href="/guide/drivers/189.html">189Cloud</a>For details of changes, please view the document by yourself, respectively<br/>5.v3.20.1version Breaking Changes <a href="https://github.com/alist-org/alist/discussions/4702">View detailed description</a>, go to <a href="/config/configuration.html#scheme">Configure documentation page</a><br/>6. If there is an update to mount Lanzou Cloud, please refer to the document for details.<br/><span style="color:rgb(255, 0, 0);font-weight:bold;">7.After adding the cloud disk, please configure [anti-theft/meta information] and other measures in time to prevent the account from being [frozen/disabled] due to malicious [access/sharing] by [crawlers/others].</span></span>',
               actions: [
                 // {
                 //   text: "Aliyun open",
@@ -154,7 +160,7 @@ export default hopeTheme(
             {
               path: "/zh",
               title: '温馨提示',
-              content: '<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span></br></br>1.原API https://api.nn.ci被sni阻断</br>2.阿里云盘以及其他使用此API的都受影响,具体解决办法请查看下方两个选项二选一查看</br>3.<a href="/zh/guide/drivers/139.html">移动云盘</a>和<a href="/zh/guide/drivers/189.html">天翼云</a>分别有改动详情请自行查看文档</br>4.v3.20.1的版本破坏性更新<a href="https://github.com/alist-org/alist/discussions/4702">查看详细说明</a>，前往<a href="/zh/config/configuration.html#scheme">配置文档页面</a></br>5.123云盘防盗链问题<a href="/zh/guide/drivers/123.html#使用问题">点击查看</a></span>',
+              content: '<i class="fa-solid fa-light-emergency-on fa-bounce" style="color: #ff0000;"></i>&nbsp;<span style="color:rgb(255, 0, 0);font-weight:bold;">请仔细查看弹窗提示内容</span><br/><br/>1.<span style="color:blue; font-weight:bold;">v3.25.1新版更新了新的密码方式,获取方式也进行了更改，详细说明请看自己安装方式的文档页面内</span><br/>2.v3.25.1阿里云盘open可以自行选择挂载备份盘或者资源库，详情<a href="/zh/guide/drivers/aliyundrive_open.html#云盘类型">详情点击查看</a><br/>3.AList版本大于v3.22.1,新版本新增单点登录自动注册为AList账户，点击查看<a href="/zh/guide/advanced/sso.html#单点登录自动注册为alist帐号">详细说明</a><br/>4.<a href="/zh/guide/drivers/139.html">移动云盘</a>和<a href="/zh/guide/drivers/189.html">天翼云</a>分别有改动详情请自行查看文档<br/>5.v3.20.1的版本破坏性更新<a href="https://github.com/alist-org/alist/discussions/4702">查看详细说明</a>，前往<a href="/zh/config/configuration.html#scheme">配置文档页面</a><br/>6.挂载蓝奏云有更新,详细请看文档.<br/><span style="color:rgb(255, 0, 0);font-weight:bold;">7.添加云盘后请及时配置[防盗/元信息]等措施，防止被[爬虫/其他人]恶意[访问/分享]导致帐号被[冻结/禁用].</span></span>',
               actions: [
                 // {
                 //   text: "阿里云open",

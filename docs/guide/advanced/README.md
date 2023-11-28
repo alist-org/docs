@@ -1,6 +1,6 @@
 ---
 title: Advanced
-icon: advance
+icon: iconfont icon-advance
 index: false
 dir:
   order: 5

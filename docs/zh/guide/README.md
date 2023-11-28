@@ -1,7 +1,7 @@
 ---
 title: Introduction
 index: false
-icon: creative
+icon: iconfont icon-creative
 category:
   - Guide
 ---
@@ -25,15 +25,16 @@ category:
 ## Support storage
 
 - [x] 本地存储
+- [x] [Crypt](/zh/guide/drivers/Crypt.md)
 - [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘](https://www.aliyundrive.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123云盘](https://www.123pan.com/)
+- [x] [123云盘/分享/直链](https://www.123pan.com/)
 - [x] FTP / SFTP
 - [x] [PikPak / 分享](https://www.mypikpak.com/)
-- [x] [S3](https://aws.amazon.com/cn/s3/)
+- [x] [S3[对象存储]](../guide/drivers/s3.md)
 - [x] [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
@@ -58,10 +59,13 @@ category:
 - [x] [Seafile](https://www.seafile.com/)
 - [x] Cloudreve
 - [x] [Trainbit](https://trainbit.com/)
-- [x] [UrlTree](../guide/drivers/urltree.md)
+- [x] [UrlTree](../guide/drivers/UrlTree.md)
 - [x] IPFS
-- [x] [UC](https://drive.uc.cn/)
+- [x] [UC网盘](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
+- [x] [腾讯微云](https://www.weiyun.com/)
+- [x] [腾讯智能创作平台](https://app.v.tencent.com/)
+- [x] [超星星小组盘](../guide/drivers/chaoxing.md)
 
 ## Discussion
 
@@ -73,9 +77,9 @@ category:
 
 ## 特别赞助
 
-- [明道云 - 零代码开发平台，快速响应业务需求。从“IT 背锅侠”变成“IT 英雄”](https://www.mingdao.com?s=utm_51=utm_source=alist&utm_medium=banner&utm_campaign=%E5%93%81%E7%89%8C%E6%8E%A8%E5%B9%BF&utm_content=IT%E8%B5%8B%E8%83%BD%E4%B8%9A%E5%8A%A1)
-- [找资源 - 阿里云盘资源搜索引擎](https://zhaoziyuan.la/)
-- [KinhDown 百度云盘不限速下载！永久免费！以稳定运行3年！非常可靠!](https://kinhdown.com/?Type=Tutorials)
+- [VidHub](https://zh.okaapps.com/product/1659622164?ref=alist) - 苹果生态下优雅的网盘视频播放器，iPhone，iPad，Mac，Apple TV全平台支持。
+- [亚洲云](https://www.asiayun.com/aff/QQCOOQKZ) - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商 (国内API服务器赞助)
+- [找资源](https://zhaoziyuan.pw/) - 阿里云盘资源搜索引擎
 
 ## 许可
 

@@ -2,14 +2,14 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zh = navbar([
   // "/zh/",
-  { text: "使用指南", icon: "creative", link: "/zh/guide/" },
-  { text: "配置", icon: "config", link: "/zh/config/" },
-  { text: "常见问题", icon: "question", link: "/zh/faq/" },
-  { text: "定价", icon: "tag", link: "/zh/pricing" },
-  // { text: "工具", icon: "tool", link: "/tool/" },
+  { text: "使用指南", icon: "iconfont icon-creative", link: "/zh/guide/" },
+  { text: "配置", icon: "iconfont icon-config", link: "/zh/config/" },
+  { text: "常见问题", icon: "iconfont icon-question", link: "/zh/faq/" },
+  { text: "定价", icon: "iconfont icon-tag", link: "/zh/pricing" },
+  // { text: "工具", "iconfont icon-tool", link: "/tool/" },
   {
     text: "社区",
-    icon: "community",
+    icon: "iconfont icon-community",
     children: [
       {
         text: "Discussion",
@@ -21,7 +21,7 @@ export const zh = navbar([
   },
   {
     text: "更多",
-    icon: "more",
+    icon: "iconfont icon-more",
     children: [
       { text: "V2", link: "https://alist-doc.nn.ci" },
       { text: "桌面版", link: "https://ad.nn.ci/" },
@@ -29,7 +29,7 @@ export const zh = navbar([
   },
   {
     text: "Github",
-    icon: "github",
+    icon: "iconfont icon-github",
     link: "https://github.com/alist-org/alist",
   },
 ]);

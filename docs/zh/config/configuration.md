@@ -2,7 +2,7 @@
 # This is the title of the article
 title: 配置文件
 # This is the icon of the page
-icon: json
+icon: iconfont icon-json
 # This control sidebar order
 order: 1
 # A page can have multiple categories
@@ -26,8 +26,8 @@ star: true
 - Windows/Mac：和 AList 同级文件夹內的 `data/config.json`
 - Linux：一键脚本路径,、/opt/alist/`data/config.json`，手动安装 /xx 路径/`data/config.json`
 - Docker：进入 Docker 容器内`data/config.json`
-- openwrt：如果使用的是`luci-app-alist`,请在网页修改,其他自行找到 AList 执行文件同级目录`data/config.json`
-- 其他：找到 AList 同级文件夹內的`data/config.json`
+- openwrt：如果使用的是 `luci-app-alist`,请在网页修改,其他自行找到 AList 执行文件同级目录`data/config.json`
+- 其他：找到 AList 同级文件夹內的 `data/config.json`
 
 :::
 
@@ -56,7 +56,8 @@ star: true
     "force_https": false,
     "cert_file": "",
     "key_file": "",
-    "unix_file": ""
+    "unix_file": "",
+    "unix_file_perm": ""
   },
   "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
@@ -82,7 +83,7 @@ star: true
 
 ### **site_url**
 
-你的网站 URL，比如`https://pan.nn.ci`，这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
+你的网站 URL，比如 `https://pan.nn.ci`，这个地址会在程序中的某些地方使用，如果不设置这个字段，一些功能可能无法正常工作，比如
 
 - 本地存储的缩略图
 - 开启 web 代理后的预览
@@ -133,7 +134,7 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 数据库配置，默认是 `sqlite3`，也可以使用 `mysql` 或者 `postgres`。
 
-- 如果不使用`MySQL`或者`postgres`，配置文件数据库选项不用修改
+- 如果不使用 `MySQL` 或者 `postgres`，配置文件数据库选项不用修改
 
 ```json
   "database": {
@@ -149,13 +150,13 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
   },
 ```
 
-:::: details 展开查看`ssl_mode`参数选项
+:::: details 展开查看 `ssl_mode` 参数选项
 
 如果不知道如何填，默认空白即可，不用修改，不填不能用的话自行研究，无法提供太多有效的帮助
 
 ---
 
-在 MySQL 中，`ssl_mode`参数是用于指定 SSL 连接的验证模式。以下是几种常见的选项：
+在 MySQL 中，`ssl_mode` 参数是用于指定 SSL 连接的验证模式。以下是几种常见的选项：
 
 - `DISABLED`: 禁用 SSL 连接。
 - `PREFERRED`: 如果服务器启用了 SSL，则使用 SSL 连接；否则使用普通连接。
@@ -167,7 +168,7 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ---
 
-在 PostgreSQL 中，`ssl_mode`参数用于指定客户端如何使用 SSL 连接。以下是几种常见的选项：
+在 PostgreSQL 中，`ssl_mode` 参数用于指定客户端如何使用 SSL 连接。以下是几种常见的选项：
 
 - `disable`: 禁用 SSL 连接。
 - `allow`: 允许使用 SSL 连接，但不需要。
@@ -180,9 +181,17 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ::: right
 
-:warning::warning:**以上参数来自 ChatGPT，未验证真实性/实用性/准确性:warning:**:warning:
+:warning::warning:**以上信息来自 ChatGPT，未验证真实性/实用性/准确性:warning:**:warning:
 
 :::
+
+::::
+
+:::: details 已有数据情况下修改数据库注意事项
+
+1. 如果将`sqlite`数据库改为`mysql`数据库优先推荐使用备份再恢复的方法
+2. 如果直接将`sqlite`的数据导入到`mysql`可以查看此视频教程：[查看教程](https://www.bilibili.com/video/BV1iV4y1T7kh)
+   - 因为直接导入云盘数据库表时`sqlite`的时间和`mysql`的时间填写方式不同会提示报错 [请查看注意事项如何解决](https://www.bilibili.com/video/BV1iV4y1T7kh?t=343.7)
 
 ::::
 
@@ -194,13 +203,14 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ```json
   "scheme": {
-    "address": "0.0.0.0",   // 要监听的http/https地址，默认为 0.0.0.0
-    "http_port": 5244,      // 监听的http端口,默认的“5244”,如果你想禁用http,将其设置为'-1'
-    "https_port": -1,       // https端口监听,默认的'-1',如果你想启用https,将其设置为非'-1'
-    "force_https": false,   // 是否强制使用HTTPS协议,如果设置为true,则用户只能通过HTTPS访问该网站
+    "address": "0.0.0.0",   // 要监听的 http/https 地址，默认为 0.0.0.0
+    "http_port": 5244,      // 监听的 http 端口,默认的 '5244',如果你想禁用 http,将其设置为 '-1'
+    "https_port": -1,       // https 端口监听,默认的 '-1',如果你想启用 https,将其设置为非 '-1'
+    "force_https": false,   // 是否强制使用 HTTPS 协议,如果设置为 true ,则用户只能通过 HTTPS 访问该网站
     "cert_file": "data\\cert.crt",  // 证书文件路径
     "key_file": "data\\key.key",    // 证书密钥文件路径
-    "unix_file": ""         // Unix监听套接字文件路径,默认的空的,如果你想使用Unix socket,将其设置为非空
+    "unix_file": "",         // Unix 监听套接字文件路径,默认的空的,如果你想使用 Unix socket,将其设置为非空
+    "unix_file_perm": ""     // Unix 监听套接字文件，设置为合适的权限
   },
 ```
 
@@ -224,7 +234,7 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
   "log": {
     "enable": true,					//开启日志记录功能，默认为开启状态 true
     "name": "data\\log\\log.log",	//日志文件的路径和名称
-    "max_size": 10,					//单个日志文件的最大大小，单位为MB。达到指定大小后会自动切分文件
+    "max_size": 10,					//单个日志文件的最大大小，单位为 MB。达到指定大小后会自动切分文件
     "max_backups": 5,				//保留的日志备份数量，超过数量会自动删除旧的备份
     "max_age": 28,					//日志文件保存的最大天数，超过天数的日志文件会被删除
     "compress": false				//是否启用日志文件压缩功能。压缩后可以减小文件大小，但查看时需要解压缩，默认为关闭状态 false
@@ -248,4 +258,4 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 
 ### **tls_insecure_skip_verify**
 
-是否检查 SSL 证书，开启后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，关闭该选项请尽量在安全的网络环境下运行程序
+是否不检查 SSL 证书，关闭后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，开启该选项请尽量在安全的网络环境下运行程序

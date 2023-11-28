@@ -40,6 +40,8 @@ elif [ "$platform" = "aarch64" ]; then
   ARCH=arm64
 fi
 
+GH_PROXY='https://mirror.ghproxy.com/'
+
 if [ "$(id -u)" != "0" ]; then
   echo -e "\r\n${RED_COLOR}出错了，请使用 root 权限重试！${RES}\r\n" 1>&2
   exit 1
@@ -83,7 +85,7 @@ CHECK() {
 INSTALL() {
   # 下载 Alist 程序
   echo -e "\r\n${GREEN_COLOR}下载 Alist $VERSION ...${RES}"
-  curl -L https://ghproxy.com/https://github.com/Xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
+  curl -L ${GH_PROXY}https://github.com/xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
   tar zxf /tmp/alist.tar.gz -C $INSTALL_PATH/
 
   if [ -f $INSTALL_PATH/alist ]; then
@@ -138,10 +140,14 @@ SUCCESS() {
 #   cd $INSTALL_PATH
 #   get_password=$(./alist password 2>&1)
 #   echo -e "初始管理密码：${GREEN_COLOR}$(echo $get_password | awk -F'your password: ' '{print $2}')${RES}"
-  echo -e "---------管理员信息--------"
-  cd $INSTALL_PATH
-  ./alist admin
-  echo -e "--------------------------"
+  echo -e "---------如何获取密码？--------"
+  echo -e "先cd到alist所在目录:"
+  echo -e "${GREEN_COLOR}cd $INSTALL_PATH${RES}"
+  echo -e "随机设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin random${RES}"
+  echo -e "或者手动设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin set ${RES}${RED_COLOR}NEW_PASSWORD${RES}"
+  echo -e "----------------------------"
   
   echo -e "启动服务中"
   systemctl restart alist
@@ -185,7 +191,7 @@ UPDATE() {
     # 备份 alist 二进制文件，供下载更新失败回退
     cp $INSTALL_PATH/alist /tmp/alist.bak
     echo -e "${GREEN_COLOR}下载 Alist $VERSION ...${RES}"
-    curl -L https://ghproxy.com/https://github.com/Xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
+    curl -L ${GH_PROXY}https://github.com/xhofe/alist/releases/latest/download/alist-linux-musl-$ARCH.tar.gz -o /tmp/alist.tar.gz $CURL_BAR
     tar zxf /tmp/alist.tar.gz -C $INSTALL_PATH/
     if [ -f $INSTALL_PATH/alist ]; then
       echo -e "${GREEN_COLOR} 下载成功 ${RES}"
@@ -196,10 +202,14 @@ UPDATE() {
       systemctl start alist
       exit 1
     fi
-    echo -e "---------管理员信息--------"
-    cd $INSTALL_PATH
-    ./alist admin
-    echo -e "--------------------------"
+  echo -e "---------如何获取密码？--------"
+  echo -e "先cd到alist所在目录:"
+  echo -e "${GREEN_COLOR}cd $INSTALL_PATH${RES}"
+  echo -e "随机设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin random${RES}"
+  echo -e "或者手动设置新密码:"
+  echo -e "${GREEN_COLOR}./alist admin set ${RES}${RED_COLOR}NEW_PASSWORD${RES}"
+  echo -e "----------------------------"
     echo -e "\r\n${GREEN_COLOR}启动 Alist 进程${RES}"
     systemctl start alist
     echo -e "\r\n${GREEN_COLOR}Alist 已更新到最新稳定版！${RES}\r\n"

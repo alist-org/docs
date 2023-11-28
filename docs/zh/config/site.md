@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: tab
+icon: iconfont icon-tab
 # This control sidebar order
 order: 3
 # A page can have multiple categories
@@ -60,7 +60,15 @@ AList的公告，如 `### Hello\nWelcome to use Alist`。我们建议您在内�
 
 - 如想不显示，可以清空公告内内容即可不显示。
 
+如果嫌右上角的 `x` 按钮碍事可以使用如下CSS去掉
 
+```css
+<style>
+.notify-render .hope-close-button {
+    display: none;
+}
+</style>
+```
 
 ## **分页类型**
 

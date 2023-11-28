@@ -1,7 +1,7 @@
 ---
 title: FAQ
 index: false
-icon: question
+icon: iconfont icon-question
 category:
   - FAQ
 ---

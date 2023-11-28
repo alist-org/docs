@@ -1,6 +1,6 @@
 ---
 home: true
-icon: home
+icon: iconfont icon-home
 title: Home
 heroImage: /logo.svg
 heroText: ALIST
@@ -15,35 +15,51 @@ actions:
 
 features:
   - title: Easy to Use
-    icon: light
+    icon: iconfont icon-light
     details: Alist was designed from the ground up to be easily installed and it can be used on all platforms.
 
   - title: Multiple storage
-    icon: storage
+    icon: iconfont icon-storage
     details: Alist supports multiple storage providers, including local storage, Aliyundrive, Onedrive, Google Drive, etc., and is easily expand.
 
   - title: Support WebDAV
-    icon: waline
+    icon: iconfont icon-waline
     details: Alist supports all storage WebDAV, which is a standard for accessing files on.
 
   - title: Dark Mode
-    icon: contrast
+    icon: iconfont icon-contrast
     details: Switch between light and dark modes freely
 
   - title: Protected routes
-    icon: token
+    icon: iconfont icon-token
     details: Add password protection and authentication for specific path
 
   - title: File preview
-    icon: preview
+    icon: iconfont icon-preview
     details: Support video, audio, office, pdf, code, image preview, etc. Even ipa install
 
-  - title: Package download
-    icon: cache
-    details: Use stream api of brower to support package download without server usage
+  - title: Package download / Batch download
+    icon: iconfont icon-cache
+    details: Use stream api of brower to support package download without server usage / Batch download support folder using Aria2
+
+  - title: single sign-on
+    icon: font-icon icon fa-solid fa-repeat-1
+    details: Use single sign-on to quickly log in to AList
+
+  - title: Automatic registration of AList account
+    icon: fa-solid fa-file-user
+    details: Use single sign-on to automatically register as an AList account to quickly register
+
+  - title: offline download
+    icon: fa-solid fa-folder-arrow-down
+    details: To download the torrent content offline to the specified directory, a good network environment is required
+
+  - title: Crypt encrypt/decrypt files
+    icon: fa-solid fa-binary-lock
+    details: Anyone can securely store encrypted data on remote storage providers. Data is stored in a Crypt, and the provider can only see the Crypt, not your data.
 
   - title: More new features
-    icon: more
+    icon: iconfont icon-more
     details: Including text editor, readme/html render, file permalink, cloudflare workers proxy, etc.
 
 copyright: false

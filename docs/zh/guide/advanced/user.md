@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: people
+icon: iconfont icon-people
 # This control sidebar order
 order: 2
 # A page can have multiple categories
@@ -27,7 +27,12 @@ star: true
 登录密码
 
 :::tip
-密码对游客是无效的。
+密码对游客是无效的，
+
+如果连续输入6次密码错误会对当前IP封禁30分钟无法输入账号密码登录，但是不会影响其它IP，只针对输入6此密码错误的IP
+
+- 重启可立刻消除30分钟封禁时间
+
 :::
 
 ## **基本路径**
@@ -36,7 +41,7 @@ star: true
 
 -----
 
-Q：如何否允许一个用户可以看到多个文件夹路径?
+Q：**如何否允许一个用户可以看到多个文件夹路径?**
 
 A：可以新建一个[别名](alias.md)存储,将你需要给用户展示的路径都添加到别名，然后在用户路径这里指向新建的别名存储
 

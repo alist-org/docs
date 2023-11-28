@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 17
 # A page can have multiple categories
@@ -30,9 +30,13 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 即用于登陆的手机号,邮箱,用户名(有概率无法登录,需要尝试)
 
+- 需要携带 `+86` 区号，例如 +8613722223333 这样填写
+
 ### **密码**
 
 即用于登陆的密码
+
+
 
 ### **CaptchaToken**
 
@@ -53,7 +57,7 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
@@ -78,6 +82,8 @@ flowchart TB
 ### **登录类型**
 
 选择 User 时填用户名和密码
+
+- 用户名需要携带 `+86` 区号，例如 +8613722223333 这样填写
 
 选择 RefreshToken 时只需填写 `RefreshToken`
 
@@ -155,7 +161,7 @@ CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、Us
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

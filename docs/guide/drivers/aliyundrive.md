@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 4
 # A page can have multiple categories
@@ -16,7 +16,7 @@ sticky: true
 star: true
 ---
 
-# Aliyundrive
+# Aliyundrive/share
 
 :::warning
 
@@ -34,7 +34,7 @@ Of course, you can also turn on the proxy so that `refresh token` of desktop web
 
 ### **Refresh token**
 
-Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (/data/media/0/Android/data/com.alicloud.databox/ files/logs/trace/). Or you can click:
+Follow to this [issue](https://github.com/Xhofe/alist/issues/88) Capture/find the log on the mobile phone (`/data/media/0/Android/data/com.alicloud.databox/files/logs/trace/`). Or you can click:
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -120,20 +120,28 @@ Open the official website of Aliyundrive and click the string behind the url whe
 
 ![file_id](/img/drivers/aliyundrive.png)
 
-## **Second pass**
+### **Second pass**
 
 Check the hash when uploading. If there is one in the cloud, directly generate the file without consuming traffic
 
 
-## **Internal upload**
+### **Internal upload**
 
 If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
 
 
-## **Alibaba cloud disk sharing**
+<br/>
 
-Don't think about it... It has been repaired and will no longer develop and maintain the shared storage method, and the Alibaba cloud disk open platform token cannot be used for shared mounted storage.
+
+
+## **Aliyundrive Share Url**
+
+It is no longer available, and the shared storage method will no longer be developed and maintained in the future. At the same time, the token obtained by [**AliyundriveOpen**](./aliyundrive_open.md) cannot be used in the Alibaba Cloud Disk shared mount storage.
+
+
+
+<br/>
 
 
 

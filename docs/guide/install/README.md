@@ -1,6 +1,6 @@
 ---
 title: Install
-icon: install
+icon: iconfont icon-install
 index: false
 dir:
   order: 1

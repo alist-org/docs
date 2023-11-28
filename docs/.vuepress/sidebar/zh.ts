@@ -8,13 +8,13 @@ export const zh = sidebar({
     "",
     {
       text: "使用指南",
-      icon: "creative",
+      icon: "iconfont icon-creative",
       prefix: "guide/",
-      children: ["install/", "drivers/", "advanced/"],
+      children: ["api/", "install/", "drivers/", "advanced/"],
     },
     {
       text: "配置",
-      icon: "config",
+      icon: "iconfont icon-config",
       prefix: "config/",
       children: [
         "config",
@@ -22,7 +22,7 @@ export const zh = sidebar({
     },
     {
       text: "常见问题",
-      icon: "question",
+      icon: "iconfont icon-question",
       prefix: "faq/",
       children: ["howto", "why"],
     },

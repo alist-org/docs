@@ -2,7 +2,7 @@
 # This is the title of the article
 title: How to
 # This is the icon of the page
-icon: study
+icon: iconfont icon-study
 # This control sidebar order
 order: 1
 # A page can have multiple categories
@@ -52,6 +52,23 @@ Otherwise you can ask the owner to reset the password.
 :::tip
 You need to stop alist server first if the version of your alist is v3.9.0 or later as this pr: https://github.com/alist-org/alist/pull/3074
 :::
+
+#### Lower than v3.25.0
+
+```bash
+./alist admin
+```
+
+#### Higher than v3.25.0
+
+Versions above 3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
+
+```bash
+# Randomly generate a password
+./alist admin random
+# Manually set a password, `NEW_PASSWORD` refers to the password you need to set
+./alist admin set NEW_PASSWORD
+```
 
 ### **How to modify the listening port​**
 

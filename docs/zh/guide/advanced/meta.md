@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: set
+icon: iconfont icon-set
 # This control sidebar order
 order: 7
 # A page can have multiple categories
@@ -24,33 +24,53 @@ star: true
 
 此元信息生效的路径
 
+<br/>
+
 ## **密码**
 
 访问此路径需要密码
 
-
+<br/>
 
 ## **写入**
 
 允许访客新建目录、新文件和上传文件。
 
-
+<br/>
 
 ## **隐藏**
 
 此路径要隐藏的对象，每行一个正则表达式（在 `Golang` 中）。
 
+<br/>
 
-
-## **README**
+## **说明**
 
 进入该路径时渲染的自述文件，支持 Markdown 内容或 Markdown 链接。
 
+- 在列表底部显示
 
+- 自动渲染的文件名为：**`readme.md`**
+
+<br/>
+
+## **顶部说明**
+
+（v3.29.0 新增）进入该路径时渲染的自述文件，支持 Markdown 内容或 Markdown 链接。
+
+- 在列表顶部显示
+- 自动渲染的文件名为：**`top.md`**
+  - 可以在列表中不显示文件，例如`readme.md`不在列表显示
+  - 后台 --> 设置 --> 全局 --> 隐藏文件 --> 换行添加 `/\/top.md/i`
+
+
+<br/>
 
 ## **应用到子文件夹**
 
 将此元应用于特定路径的子文件夹
+
+<br/>
 
 
 

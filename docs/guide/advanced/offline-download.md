@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: link
+icon: iconfont icon-link
 # This control sidebar order
 order: 10
 # A page can have multiple categories
@@ -100,9 +100,6 @@ The above two methods are most likely caused by the qBittorrent software itself,
 
 **qBittorrent** Video Tutorials
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/wechat?wxv=wxv_2804817007920660481&hd=2&raw=true" 
-  poster="/img/advanced/qbittorrent.png"
-/>
+<BiliBili bvid="BV1NT411q7EN" />
 
 **If the video fails, you can watch it here: https://b23.tv/J34qDiG**

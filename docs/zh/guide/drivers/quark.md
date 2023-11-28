@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: state
+icon: iconfont icon-state
 # This control sidebar order
 order: 18
 # A page can have multiple categories
@@ -32,6 +32,23 @@ star: true
 
 ![url](/img/drivers/quark-rootid.png)
 
+<br/>
+
+
+
+## **[在线预览/下载]很慢?**
+
+夸克云盘下载很慢是因为夸克云盘需要开通**会员**，并且挂载只能^(强制)^使用`本地代理`方式，就需要你搭建AList的机器有一个很高的带宽速度
+
+- 什么是`本地代理`？
+
+  - `本地代理`就是你搭建AList的机器来中转,就是先下载到你搭建AList的机器，在由机器转发给你，你搭建AList的机器速度不够快，再转发给你的速度自然也不够快
+1. 换带宽高的服务器来中转
+    
+2. 在自己家里电脑搭建
+    
+3. 直接放弃不用.
+
 
 
 ### **默认使用的下载方式**
@@ -39,7 +56,7 @@ star: true
 
 ```mermaid
 ---
-title: 默认使用的那种下载方式？
+title: 默认使用的哪种下载方式？
 ---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff

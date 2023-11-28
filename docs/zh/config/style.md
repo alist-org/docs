@@ -1,6 +1,6 @@
 ---
 # This is the icon of the page
-icon: style
+icon: iconfont icon-style
 # This control sidebar order
 order: 5
 # A page can have multiple categories
@@ -20,7 +20,7 @@ star: true
 
 ## **logo**
 
-徽标显示在页面的左上角。 默认为 AList Logo、
+徽标显示在页面的左上角。 默认为 AList Logo
 
 - 可以分别设置夜间和白天两个不同的，方法一行一个链接
 
