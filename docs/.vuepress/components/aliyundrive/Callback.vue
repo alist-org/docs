@@ -7,8 +7,8 @@ const url = new URL(window.location.href)
 const code = url.searchParams.get("code")
 const error = url.searchParams.get("error")
 const error_description = url.searchParams.get("error_description")
-const state = url.searchParams.get("state") || "::"
-const [client_id, client_secret] = state.split("::")
+const state = url.searchParams.get("state") || "Ojo="
+const [client_id, client_secret] = window.atob(state).split("::")
 
 interface Token {
   token_type: string
