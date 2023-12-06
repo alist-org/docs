@@ -30,22 +30,22 @@ const raw = [
   {
     key: "win",
     label: "Windows",
-    url: `https://ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_x64_en-US.msi`,
+    url: `https://mirror.ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_x64_en-US.msi`,
   },
   {
     key: "mac_arm64",
     label: "MacOS (Apple Silicon)",
-    url: `https://ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_aarch64.dmg`,
+    url: `https://mirror.ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_aarch64.dmg`,
   },
   {
     key: "mac_x64",
     label: "MacOS (Intel)",
-    url: `https://ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_x64.dmg`,
+    url: `https://mirror.ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_x64.dmg`,
   },
   {
     key: "linux",
     label: "Linux",
-    url: `https://ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_amd64.deb`,
+    url: `https://mirror.ghproxy.com/https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_amd64.deb`,
   },
 ];
 
