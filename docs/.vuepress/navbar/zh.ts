@@ -1,4 +1,4 @@
-import { navbar } from "vuepress-theme-hope";
+import { navbar } from "vuepress-theme-hope"
 
 export const zh = navbar([
   // "/zh/",
@@ -23,6 +23,7 @@ export const zh = navbar([
     text: "更多",
     icon: "iconfont icon-more",
     children: [
+      { text: "演示", link: "https://alist.pages.dev/" },
       { text: "V2", link: "https://alist-doc.nn.ci" },
       { text: "桌面版", link: "https://ad.nn.ci/" },
     ],
@@ -32,4 +33,4 @@ export const zh = navbar([
     icon: "iconfont icon-github",
     link: "https://github.com/alist-org/alist",
   },
-]);
+])
