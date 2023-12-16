@@ -151,7 +151,7 @@ https://entra.microsoft.com/TokenAuthorize?admin_consent=True&tenant={租户ID}#
 - 提示：**failed get objs: failed to list objs: Unable to retrieve user's mysite URL** 错误
 
 新建的 `OneDrive`用户账号不是实时生效，会延时生效等待几小时后试试看 [**案例**](https://github.com/alist-org/docs/discussions/189#discussioncomment-5928892)
-
+还有一种情况是你保存以后又更改了邮箱，可以删除存储并重新创建 [**思路**](https://github.com/alist-org/docs/discussions/189#discussioncomment-7871497)
 
 
 ## **批量添加OneDrive_App账号**
