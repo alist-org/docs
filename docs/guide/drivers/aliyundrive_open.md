@@ -39,9 +39,9 @@ typeof fetch !== "undefined" && getLimit()
 </script>
 ::: info Aliyundrive VIP
 
-**Aliyundrive VIP**：[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
+**Aliyundrive VIP**：[https://www.alipan.com/cpx/member](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), 11.11 Promotion! Historical base price! The original price of 30%paid SVIP and given an additional 3 -month SVIP. [**immediately buy**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) The original price of 30%paid SVIP and given an additional 3 -month SVIP. ==Only 10,000 copies==
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> Click the link to get [**Coupon**](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES), 11.11 Promotion! Historical base price! The original price of 30%paid SVIP and given an additional 3 -month SVIP. [**immediately buy**](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) The original price of 30%paid SVIP and given an additional 3 -month SVIP. ==Only 10,000 copies==
 
 <img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:30%;" />
 
@@ -98,7 +98,7 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
 
 The default is `root`, which displays all cloud disk contents. If you only want to display the contents of a certain folder, you can change it to `file_id`
 
-Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
+Open the official website of Aliyundrive and click the string behind the url when you click into the folder you want to set, such as https://www.alipan.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
 
 which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 

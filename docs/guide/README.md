@@ -27,7 +27,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] Local storage
 - [x] [Crypt](/guide/drivers/Crypt.md)
 - [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
-- [x] [aliyundrive](https://www.aliyundrive.com/)
+- [x] [aliyundrive](https://www.alipan.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [GoogleDrive](https://drive.google.com/)
@@ -48,8 +48,8 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [BaiduNetdisk](https://pan.baidu.com/) / [share](./drivers/baidu_share.md)
 - [x] [Quark](https://pan.quark.cn/)
 - [x] [Thunder](https://pan.xunlei.com)
-- [x] [Lanzou](https://www.lanzou.com/)
-- [x] [Aliyundrive share](https://www.aliyundrive.com/)
+- [x] [Lanzou](https://www.lanzou.com/)、[NewLanzou](https://www.ilanzou.com)
+- [x] [Aliyundrive share](https://www.alipan.com/)
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [Baidu photo](https://photo.baidu.com/)

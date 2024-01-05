@@ -39,9 +39,9 @@ typeof fetch !== "undefined" && getLimit()
 </script>
 ::: info 阿里云盘会员
 
-**阿里云盘会员：**[https://www.aliyundrive.com/cpx/member](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
+**阿里云盘会员：**[https://www.alipan.com/cpx/member](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)
 
-- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，双11大促！历史底价！3折SVIP再送3个月。[**立即抢购**](https://www.aliyundrive.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) 3折SVIP再送3个月 ==仅  1 万份==
+- <i class="fa-solid fa-lightbulb fa-bounce" style="color: orange;"></i> 点击链接领取[**优惠券**](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES)，双11大促！历史底价！3折SVIP再送3个月。[**立即抢购**](https://www.alipan.com/cpx/member?userCode=MzAwMDM1&disableNav=YES) 3折SVIP再送3个月 ==仅  1 万份==
 
 <img src="/img/drivers/aliyun/vip2.png" alt="vip2" style="zoom:30%;" />
 
@@ -103,7 +103,7 @@ typeof fetch !== "undefined" && getLimit()
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 
-如 https://www.aliyundrive.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
+如 https://www.alipan.com/drive/folder/5fe01e1830601baf774e4827a9fb8fb2b5bf7940
 
 这个文件夹的 file_id 即为 `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 

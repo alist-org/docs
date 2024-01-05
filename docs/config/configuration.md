@@ -71,7 +71,36 @@ After modifying the configuration file, restart AList for changes to take effect
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": true
+  "tls_insecure_skip_verify": true,
+  "tasks": {
+    "download": {
+      "workers": 5,
+      "max_retry": 1
+    },
+    "transfer": {
+      "workers": 5,
+      "max_retry": 2
+    },
+    "upload": {
+      "workers": 5,
+      "max_retry": 0
+    },
+    "copy": {
+      "workers": 5,
+      "max_retry": 2
+    }
+  },
+  "cors": {
+    "allow_origins": [
+      "*"
+    ],
+    "allow_methods": [
+      "*"
+    ],
+    "allow_headers": [
+      "*"
+    ]
+  }    
 }
 ```
 
@@ -80,6 +109,10 @@ After modifying the configuration file, restart AList for changes to take effect
 ### **force**
 
 By default AList reads the configuration from environment variables, set this field to `true` to force AList to read config from the configuration file.
+
+<br/>
+
+
 
 ### **site_url**
 
@@ -99,6 +132,10 @@ Do not include the slash \(`/`\) at the end of the address. For example:
 # incorrect (exceptions occur):
 "site_url": "https://al.nn.ci/",
 ```
+
+<br/>
+
+
 
 ### **cdn**
 
@@ -121,13 +158,25 @@ Thus it is possible to use any npm or GitHub CDN path for this field. For exampl
 
 Keep empty to use local dist resources.
 
+<br/>
+
+
+
 ### **jwt_secret**
 
 The secret used to sign the JWT token, randomly generated on first run.
 
+<br/>
+
+
+
 ### **token_expires_in**
 
 User login expiration time, in hours.
+
+<br/>
+
+
 
 ### **database**
 
@@ -194,6 +243,10 @@ In PostgreSQL, the `ssl_mode` parameter is used to specify how the client uses S
 
 ::::
 
+<br/>
+
+
+
 ### **scheme**
 
 The configuration of scheme. Set this field if using HTTPS.
@@ -213,6 +266,10 @@ The configuration of scheme. Set this field if using HTTPS.
   },
 ```
 
+<br/>
+
+
+
 ### **temp_dir**
 
 The directory to keep temporary files. By default AList uses `data/temp`.
@@ -221,9 +278,17 @@ The directory to keep temporary files. By default AList uses `data/temp`.
 temp_dir is a temporary folder exclusive to alist. In order to prevent AList from generating garbage files when being interrupted, the directory will be cleared every time AList starts, so do not store anything in this directory or map this directory & subdirectories to directories in use when using Docker.
 :::
 
+<br/>
+
+
+
 ### **bleve_dir**
 
 Where data is stored when using  **`bleve`** index.
+
+<br/>
+
+
 
 ### **log**
 
@@ -240,12 +305,20 @@ The log configuration. Set this field to save detailed logs of disable.
   },
 ```
 
+<br/>
+
+
+
 ### **delayed_start**
 
 **Time unit: second** (new feature of v3.19.0)
 
 Whether to delay AList startup.
 Generally this option is used when AList is configured to auto-start. The reason is that sometimes network takes some time to connect, so drivers requiring cannot start correctly after Alist starts.
+
+<br/>
+
+
 
 ### **max_connections**
 
@@ -254,6 +327,76 @@ The maximum amount of connections at the same time. The default is 0, which is u
 - 10 or 20 is recommended for general devices such as n1.
 - Usage Scenarios: the device will crash if the device is bad at concurrency when picture mode is enabled.
 
+<br/>
+
+
+
 ### **tls_insecure_skip_verify**
 
 Whether not to verify the SSL certificate. If there is a problem with the certificate of the website used when this option is not enabled (such as not including the intermediate certificate, having the certificate expired, or forging the certificate, etc.), the service will not be available. Run the program in a safe network environment when this option is enabled.
+
+<br/>
+
+
+
+### **tasks**
+
+Configuration for background task threads.
+
+```json
+  "tasks": {
+    "download": {
+      "workers": 5,
+      "max_retry": 1
+    },
+    "transfer": {
+      "workers": 5,
+      "max_retry": 2
+    },
+    "upload": {
+      "workers": 5,
+      "max_retry": 0
+    },
+    "copy": {
+      "workers": 5,
+      "max_retry": 2
+    }
+  }
+```
+
+- **workers**: Number of task threads.
+- **max_retry**: Number of retries.
+  - 0: Retries disabled.
+
+- **download**: Download task when downloading offline
+- **transfer**: upload transfer task after offline download is completed
+- **upload**: upload task
+- **copy**: copy the task
+
+<br/>
+
+
+
+### **cors**
+
+Configuration for Cross-Origin Resource Sharing (CORS).
+
+```json
+  "cors": {
+    "allow_origins": [
+      "*"
+    ],
+    "allow_methods": [
+      "*"
+    ],
+    "allow_headers": [
+      "*"
+    ]
+  }
+```
+
+- **allow_origins**: Allowed sources.
+- **allow_methods**: Allowed request methods.
+- **allow_headers**: Allowed request headers.
+
+Use it to understand it by yourself, and then configure it. If you do n’t know, please do n’t modify it at will. Use the default configuration.

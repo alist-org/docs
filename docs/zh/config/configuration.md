@@ -71,8 +71,36 @@ star: true
   },
   "delayed_start": 0,
   "max_connections": 0,
-  "tls_insecure_skip_verify": true
-}
+  "tls_insecure_skip_verify": true,
+  "tasks": {
+    "download": {
+      "workers": 5,
+      "max_retry": 1
+    },
+    "transfer": {
+      "workers": 5,
+      "max_retry": 2
+    },
+    "upload": {
+      "workers": 5,
+      "max_retry": 0
+    },
+    "copy": {
+      "workers": 5,
+      "max_retry": 2
+    }
+  },
+  "cors": {
+    "allow_origins": [
+      "*"
+    ],
+    "allow_methods": [
+      "*"
+    ],
+    "allow_headers": [
+      "*"
+    ]
+  }    
 ```
 
 ## 字段说明
@@ -80,6 +108,10 @@ star: true
 ### **force**
 
 程序会优先从环境变量中读取配置，设置 `force` 为 `true` 会使程序忽略环境变量强制读取配置文件。
+
+<br/>
+
+
 
 ### **site_url**
 
@@ -99,6 +131,10 @@ URL 链接结尾请勿携带 `/` ，参照如下示例，否则也将无法使�
 # 错误写法：
 "site_url": "https://al.nn.ci/",
 ```
+
+<br/>
+
+
 
 ### **cdn**
 
@@ -122,13 +158,25 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
 
 您也可以将其设置为空以使用本地 dist。
 
+<br/>
+
+
+
 ### **jwt_secret**
 
 用于签署 JWT 令牌的密钥，第一次启动时随机生成。
 
+<br/>
+
+
+
 ### **token_expires_in**
 
 用户登录过期时间，单位：小时
+
+<br/>
+
+
 
 ### **database**
 
@@ -195,6 +243,10 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 ::::
 
+<br/>
+
+
+
 ### **scheme**
 
 协议配置，如果要使用 HTTPS，可以设置该字段。
@@ -214,6 +266,10 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
   },
 ```
 
+<br/>
+
+
+
 ### **temp_dir**
 
 程序临时目录，默认 `data/temp`
@@ -222,9 +278,17 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾文件会在每次启动时清空，故请不要手动在此文件夹内放置任何内容，也不要在使用 docker 时将此文件夹及其子文件夹映射至正在使用的文件夹。
 :::
 
+<br/>
+
+
+
 ### **bleve_dir**
 
 你使用 **`bleve`** 索引时,数据存放的位置
+
+<br/>
+
+
 
 ### **log**
 
@@ -241,6 +305,10 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
   },
 ```
 
+<br/>
+
+
+
 ### **delayed_start**
 
 **单位：秒** (v3.19.0 新增功能)
@@ -249,6 +317,10 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 
 因为有时候网络连接的慢，导致 AList 启动过快后需要网络连接的驱动无法连接导致无法正常打开
 
+<br/>
+
+
+
 ### **max_connections**
 
 同时最多的连接数(并发)，默认为 0 即不限制.
@@ -256,6 +328,77 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 - 对于一般的设备比如 n1 推荐 10 或者 20
   - 使用场景（例如打开图片模式会并发不是很好的设备就会崩溃）
 
+<br/>
+
+
+
 ### **tls_insecure_skip_verify**
 
 是否不检查 SSL 证书，关闭后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，开启该选项请尽量在安全的网络环境下运行程序
+
+<br/>
+
+
+
+### **tasks**
+
+后台任务线程数量配置
+
+```json
+  "tasks": {
+    "download": {
+      "workers": 5,
+      "max_retry": 1
+    },
+    "transfer": {
+      "workers": 5,
+      "max_retry": 2
+    },
+    "upload": {
+      "workers": 5,
+      "max_retry": 0
+    },
+    "copy": {
+      "workers": 5,
+      "max_retry": 2
+    }
+  }
+```
+
+- **workers**：任务线程数量
+- **max_retry**：重试次数
+  - 0：禁用重试
+- **download**：离线下载时的下载任务
+- **transfer**：离线下载时上传中转的任务
+- **upload**：上传任务
+- **copy**：复制任务
+
+
+
+<br/>
+
+
+
+### **cors**
+
+**跨源资源共享**配置
+
+```json
+  "cors": {
+    "allow_origins": [
+      "*"
+    ],
+    "allow_methods": [
+      "*"
+    ],
+    "allow_headers": [
+      "*"
+    ]
+  }
+```
+
+- **allow_origins**：允许的源
+- **allow_methods**：允许的请求方法
+- **allow_headers**：允许的请求头
+
+具体使用方式自行了解进行配置，如果不了解请勿随意修改，使用默认配置就可以。
