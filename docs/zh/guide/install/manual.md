@@ -207,7 +207,7 @@ ws.run "taskkill /f /im alist.exe",0
 Wscript.quit
 ```
 
-1. 脚本不会创建的可以自行下载：[**脚本下载**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
+1. 脚本不会创建的可以自行下载：[**脚本下载**](https://www.alipan.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
 
 2. 脚本不会使用的可以看看视频：[**参考视频**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
 

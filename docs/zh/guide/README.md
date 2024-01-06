@@ -27,7 +27,7 @@ category:
 - [x] 本地存储
 - [x] [Crypt](/zh/guide/drivers/Crypt.md)
 - [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
-- [x] [阿里云盘](https://www.aliyundrive.com/)
+- [x] [阿里云盘](https://www.alipan.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [GoogleDrive](https://drive.google.com/)
@@ -46,8 +46,8 @@ category:
 - [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
 - [x] [夸克网盘](https://pan.quark.cn)
 - [x] [迅雷网盘](https://pan.xunlei.com)
-- [x] [蓝奏云](https://www.lanzou.com/)
-- [x] [阿里云盘分享](https://www.aliyundrive.com/)
+- [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
+- [x] [阿里云盘分享](https://www.alipan.com/)
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
 - [x] [一刻相册](https://photo.baidu.com/)
