@@ -201,7 +201,7 @@ ws.run "taskkill /f /im alist.exe",0
 Wscript.quit
 ```
 
-1. If the script will not be created, you can download it yourself: [**Script Download**](https://www.aliyundrive.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
+1. If the script will not be created, you can download it yourself: [**Script Download**](https://www.alipan.com/s/DHPMhRtKUzY/folder/63e0961eae317bd4d4d945cda69dbb00f9837fb7)
 
 2. If the script will not be used, you can watch the video: [**reference video**](https://www.bilibili.com/video/BV1DG411s7j5?t=266.2)
 

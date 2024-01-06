@@ -24,7 +24,7 @@ star: true
 
 ==There is a premise that the files required for Rapid upload in network disk A are already available in network disk B, so that Rapid upload can be performed, otherwise it will be uploaded normally==
 
-|             |       Aliyun       |        115         |       Baidu        |        189         |     Xunlei      |       PikPak       |   GoogleDrive   |    OndDrive     |    localhost    |
+|             |       Aliyun       |        115         |       Baidu        |        189         |     Xunlei      |       PikPak       |   GoogleDrive   |    OneDrive     |    localhost    |
 | :---------: | :----------------: | :----------------: | :----------------: | :----------------: | :-------------: | :----------------: | :-------------: | :-------------: | :-------------: |
 |  localhost  | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
 |   Aliyun    | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |

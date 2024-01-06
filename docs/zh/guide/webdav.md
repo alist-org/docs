@@ -62,11 +62,11 @@ star: true
 1. **Windows**
    - [Potplayer](https://potplayer.daum.net/)，[kmplayer](https://www.kmplayer.com/home)，[RaiDrive](https://www.raidrive.com/)，[kodi](https://kodi.tv/download)，[OneCommander](https://www.onecommander.com/)，[Mountain Duck](https://mountainduck.io/)，[netdrive](https://www.netdrive.net/) :x:，[rclone](https://rclone.org/)，[AIMP](https://www.aimp.ru/)
 2. **Android**
-   - [Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[reex](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx 文件管理器，Solid Explorer,[X-plore File Manager](https://www.lonelycatgames.com/apps/xplore)
+   - [Nplayer](https://www.alipan.com/s/cf3p39UXkxa)，[kmplayer](https://www.kmplayer.com/home)，ES文件管理器，[kodi](https://kodi.tv/download)，[nova魔改](https://www.alipan.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)，[reex](https://www.alipan.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07)，cx 文件管理器，Solid Explorer,[X-plore File Manager](https://www.lonelycatgames.com/apps/xplore)
 3. **IOS**
    - [VidHub](https://zh.okaapps.com/product/1659622164)，Nplayer，[kmplayer](https://www.kmplayer.com/home)，infuse，zFuse, Fileball文件管理器
 4. **电视TV**
-   - [VidHub](https://zh.okaapps.com/product/1659622164)，[Nplayer](https://www.aliyundrive.com/s/cf3p39UXkxa)，[kodi](https://kodi.tv/download)，[nova魔改](https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)
+   - [VidHub](https://zh.okaapps.com/product/1659622164)，[Nplayer](https://www.alipan.com/s/cf3p39UXkxa)，[kodi](https://kodi.tv/download)，[nova魔改](https://www.alipan.com/s/cf3p39UXkxa/folder/63e8dcc229204583fff34f8cbd53dfcd6a86f526)
    - 若只看阿里可以使用阿里官方合作的
      - 欢视商店-阿里云盘TV版，网盘播放器-阿里云盘TV版
 5. **Mac**
