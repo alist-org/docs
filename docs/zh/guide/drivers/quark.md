@@ -32,9 +32,7 @@ star: true
 
 ![url](/img/drivers/quark-rootid.png)
 
-<br/>
-
-
+注意：请使用Chrome浏览器来获取Cookies，使用Firefox获取的Cookies或仍将停留在访客并请求登录。
 
 ## **[在线预览/下载]很慢?**
 
