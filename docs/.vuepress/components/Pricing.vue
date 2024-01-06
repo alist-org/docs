@@ -28,7 +28,7 @@ let data = {
     },
     {
       title: 'AList Desktop',
-      price: '＄10',
+      price: '＄9.99',
       features: [
         'All Open Source features',
         'Use a nice UI to manage the Alist program instead of the command line, and easily view logs',
@@ -46,7 +46,7 @@ let data = {
         },
         {
           text: 'Buy',
-          link: 'https://r.nn.ci/ad',
+          link: 'https://store.nn.ci/checkout/buy/51dca247-20df-4991-8104-54ca534bcc82',
           type: 'success'
         }
       ]
