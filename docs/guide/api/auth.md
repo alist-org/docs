@@ -35,12 +35,12 @@ POST /api/auth/login
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|body|body|object| 否 ||none|
-|» username|body|string| 是 | 用户名|用户名|
-|» password|body|string| 是 | 密码|密码|
-|» otp_code|body|string| 是 | 二步验证码|二步验证码|
+| 名称       | 位置 | 类型   | 必选 | 中文名     | 说明       |
+| ---------- | ---- | ------ | ---- | ---------- | ---------- |
+| body       | body | object | 否   |            | none       |
+| » username | body | string | 是   | 用户名     | 用户名     |
+| » password | body | string | 是   | 密码       | 密码       |
+| » otp_code | body | string | 是   | 二步验证码 | 二步验证码 |
 
 > 返回示例
 
@@ -58,20 +58,20 @@ POST /api/auth/login
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none||状态码|
-|» message|string|true|none||信息|
-|» data|object|true|none||data|
-|»» token|string|true|none||token|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none |        | 状态码 |
+| » message | string  | true | none |        | 信息   |
+| » data    | object  | true | none |        | data   |
+| »» token  | string  | true | none |        | token  |
 
 ## POST token获取hash
 
@@ -90,12 +90,12 @@ POST /api/auth/login/hash
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|body|body|object| 否 ||none|
-|» username|body|string| 是 | 用户名|用户名|
-|» password|body|string| 是 | 密码|hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)`|
-|» otp_code|body|string| 是 | 二步验证码|二步验证码|
+| 名称       | 位置 | 类型   | 必选 | 中文名     | 说明                                                                    |
+| ---------- | ---- | ------ | ---- | ---------- | ----------------------------------------------------------------------- |
+| body       | body | object | 否   |            | none                                                                    |
+| » username | body | string | 是   | 用户名     | 用户名                                                                  |
+| » password | body | string | 是   | 密码       | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
+| » otp_code | body | string | 是   | 二步验证码 | 二步验证码                                                              |
 
 > 返回示例
 
@@ -113,20 +113,20 @@ POST /api/auth/login/hash
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none||状态码|
-|» message|string|true|none||信息|
-|» data|object|true|none||data|
-|»» token|string|true|none||token|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none |        | 状态码 |
+| » message | string  | true | none |        | 信息   |
+| » data    | object  | true | none |        | data   |
+| »» token  | string  | true | none |        | token  |
 
 ## POST 生成2FA密钥
 
@@ -134,9 +134,9 @@ POST /api/auth/2fa/generate
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|Authorization|header|string| 是 ||none|
+| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明 |
+| ------------- | ------ | ------ | ---- | ------ | ---- |
+| Authorization | header | string | 是   |        | none |
 
 > 返回示例
 
@@ -155,21 +155,21 @@ POST /api/auth/2fa/generate
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|none|
-|» message|string|true|none|信息|none|
-|» data|object|true|none|数据|none|
-|»» qr|string|true|none|二维码|二维码图片的data url|
-|»» secret|string|true|none|密钥|none|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明                 |
+| --------- | ------- | ---- | ---- | ------ | -------------------- |
+| » code    | integer | true | none | 状态码 | none                 |
+| » message | string  | true | none | 信息   | none                 |
+| » data    | object  | true | none | 数据   | none                 |
+| »» qr     | string  | true | none | 二维码 | 二维码图片的data url |
+| »» secret | string  | true | none | 密钥   | none                 |
 
 ## POST 验证2FA code
 
@@ -186,12 +186,12 @@ POST /api/auth/2fa/verify
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|Authorization|header|string| 是 ||none|
-|body|body|object| 否 ||none|
-|» code|body|string| 是 | 2FA验证码|none|
-|» secret|body|string| 是 | 2FA密钥|none|
+| 名称          | 位置   | 类型   | 必选 | 中文名    | 说明 |
+| ------------- | ------ | ------ | ---- | --------- | ---- |
+| Authorization | header | string | 是   |           | none |
+| body          | body   | object | 否   |           | none |
+| » code        | body   | string | 是   | 2FA验证码 | none |
+| » secret      | body   | string | 是   | 2FA密钥   | none |
 
 > 返回示例
 
@@ -207,19 +207,19 @@ POST /api/auth/2fa/verify
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|none|
-|» message|string|true|none|信息|none|
-|» data|null|true|none||none|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明 |
+| --------- | ------- | ---- | ---- | ------ | ---- |
+| » code    | integer | true | none | 状态码 | none |
+| » message | string  | true | none | 信息   | none |
+| » data    | null    | true | none |        | none |
 
 ## GET 获取当前用户信息
 
@@ -227,9 +227,9 @@ GET /api/me
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|Authorization|header|string| 否 ||none|
+| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明 |
+| ------------- | ------ | ------ | ---- | ------ | ---- |
+| Authorization | header | string | 否   |        | none |
 
 > 返回示例
 
@@ -256,29 +256,26 @@ GET /api/me
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|none|
-|» message|string|true|none|信息|none|
-|» data|object|true|none|数据|none|
-|»» id|integer|true|none|id|none|
-|»» username|string|true|none|用户名|none|
-|»» Salt|string|true|none|salt|none|
-|»» password|string|true|none|密码|none|
-|»» base_path|string|true|none|根目录|none|
-|»» role|integer|true|none|角色|none|
-|»» disabled|boolean|true|none|是否禁用|none|
-|»» permission|integer|true|none|权限|none|
-|»» sso_id|string|true|none|sso id|none|
-|»» otp|boolean|true|none|是否开启二步验证|none|
-
-# 数据模型
-
+| 名称          | 类型    | 必选 | 约束 | 中文名           | 说明 |
+| ------------- | ------- | ---- | ---- | ---------------- | ---- |
+| » code        | integer | true | none | 状态码           | none |
+| » message     | string  | true | none | 信息             | none |
+| » data        | object  | true | none | 数据             | none |
+| »» id         | integer | true | none | id               | none |
+| »» username   | string  | true | none | 用户名           | none |
+| »» Salt       | string  | true | none | salt             | none |
+| »» password   | string  | true | none | 密码             | none |
+| »» base_path  | string  | true | none | 根目录           | none |
+| »» role       | integer | true | none | 角色             | none |
+| »» disabled   | boolean | true | none | 是否禁用         | none |
+| »» permission | integer | true | none | 权限             | none |
+| »» sso_id     | string  | true | none | sso id           | none |
+| »» otp        | boolean | true | none | 是否开启二步验证 | none |

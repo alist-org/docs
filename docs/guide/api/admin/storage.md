@@ -25,11 +25,11 @@ GET /api/admin/storage/list
 
 ### 请求参数
 
-|名称|位置|类型|必选|说明|
-|---|---|---|---|---|
-|page|query|string| 否 |页数|
-|per_page|query|string| 否 |每页数目|
-|Authorization|header|string| 是 |token|
+| 名称          | 位置   | 类型   | 必选 | 说明     |
+| ------------- | ------ | ------ | ---- | -------- |
+| page          | query  | string | 否   | 页数     |
+| per_page      | query  | string | 否   | 每页数目 |
+| Authorization | header | string | 是   | token    |
 
 > 返回示例
 
@@ -68,38 +68,38 @@ GET /api/admin/storage/list
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|状态码|
-|» message|string|true|none|信息|信息|
-|» data|object|true|none||none|
-|»» content|[object]|true|none||none|
-|»»» id|integer|false|none|id|id|
-|»»» mount_path|string|false|none|挂载路径|挂载路径|
-|»»» order|integer|false|none|排序|顺序|
-|»»» driver|string|false|none|驱动|驱动类型|
-|»»» cache_expiration|integer|false|none|缓存过期时间|缓存时间|
-|»»» status|string|false|none|状态|状态|
-|»»» addition|string|false|none|额外信息|额外信息|
-|»»» remark|string|false|none|备注|备注名|
-|»»» modified|string|false|none|修改时间|修改时间|
-|»»» disabled|boolean|false|none|禁用|是否被禁用|
-|»»» enable_sign|boolean|false|none|启用签名|none|
-|»»» order_by|string|false|none|排序|排序方式|
-|»»» order_direction|string|false|none|排序方向|排序方向|
-|»»» extract_folder|string|false|none|提取文件夹|提取目录顺序|
-|»»» web_proxy|boolean|false|none|web代理|http代理|
-|»»» webdav_policy|string|false|none|webdav代理|webdav策略|
-|»»» down_proxy_url|string|false|none|下载代理url|下载代理url|
-|»» total|integer|true|none|总数|none|
+| 名称                 | 类型     | 必选  | 约束 | 中文名       | 说明         |
+| -------------------- | -------- | ----- | ---- | ------------ | ------------ |
+| » code               | integer  | true  | none | 状态码       | 状态码       |
+| » message            | string   | true  | none | 信息         | 信息         |
+| » data               | object   | true  | none |              | none         |
+| »» content           | [object] | true  | none |              | none         |
+| »»» id               | integer  | false | none | id           | id           |
+| »»» mount_path       | string   | false | none | 挂载路径     | 挂载路径     |
+| »»» order            | integer  | false | none | 排序         | 顺序         |
+| »»» driver           | string   | false | none | 驱动         | 驱动类型     |
+| »»» cache_expiration | integer  | false | none | 缓存过期时间 | 缓存时间     |
+| »»» status           | string   | false | none | 状态         | 状态         |
+| »»» addition         | string   | false | none | 额外信息     | 额外信息     |
+| »»» remark           | string   | false | none | 备注         | 备注名       |
+| »»» modified         | string   | false | none | 修改时间     | 修改时间     |
+| »»» disabled         | boolean  | false | none | 禁用         | 是否被禁用   |
+| »»» enable_sign      | boolean  | false | none | 启用签名     | none         |
+| »»» order_by         | string   | false | none | 排序         | 排序方式     |
+| »»» order_direction  | string   | false | none | 排序方向     | 排序方向     |
+| »»» extract_folder   | string   | false | none | 提取文件夹   | 提取目录顺序 |
+| »»» web_proxy        | boolean  | false | none | web代理      | http代理     |
+| »»» webdav_policy    | string   | false | none | webdav代理   | webdav策略   |
+| »»» down_proxy_url   | string   | false | none | 下载代理url  | 下载代理url  |
+| »» total             | integer  | true  | none | 总数         | none         |
 
 ## POST 启用存储
 
@@ -107,10 +107,10 @@ POST /api/admin/storage/enable
 
 ### 请求参数
 
-|名称|位置|类型|必选|说明|
-|---|---|---|---|---|
-|id|query|integer| 是 |存储id|
-|Authorization|header|string| 是 |token|
+| 名称          | 位置   | 类型    | 必选 | 说明   |
+| ------------- | ------ | ------- | ---- | ------ |
+| id            | query  | integer | 是   | 存储id |
+| Authorization | header | string  | 是   | token  |
 
 > 返回示例
 
@@ -126,19 +126,19 @@ POST /api/admin/storage/enable
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|状态码|
-|» message|string|true|none|信息|信息|
-|» data|null|true|none|data|data|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none | 状态码 | 状态码 |
+| » message | string  | true | none | 信息   | 信息   |
+| » data    | null    | true | none | data   | data   |
 
 ## POST 禁用存储
 
@@ -146,10 +146,10 @@ POST /api/admin/storage/disable
 
 ### 请求参数
 
-|名称|位置|类型|必选|说明|
-|---|---|---|---|---|
-|id|query|string| 是 |存储id|
-|Authorization|header|string| 是 |token|
+| 名称          | 位置   | 类型   | 必选 | 说明   |
+| ------------- | ------ | ------ | ---- | ------ |
+| id            | query  | string | 是   | 存储id |
+| Authorization | header | string | 是   | token  |
 
 > 返回示例
 
@@ -165,19 +165,19 @@ POST /api/admin/storage/disable
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|状态码|
-|» message|string|true|none|信息|信息|
-|» data|null|true|none|data|data|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none | 状态码 | 状态码 |
+| » message | string  | true | none | 信息   | 信息   |
+| » data    | null    | true | none | data   | data   |
 
 ## POST 更新存储
 
@@ -205,20 +205,20 @@ POST /api/admin/storage/create
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|Authorization|header|string| 是 ||token|
-|body|body|object| 否 ||none|
-|» mount_path|body|string| 是 | 挂载路径|挂载路径|
-|» order|body|integer| 是 | 排序|排序|
-|» remark|body|string| 是 | 备注名|备注名|
-|» cache_expiration|body|integer| 是 | 缓存过期时间|缓存过期时间|
-|» web_proxy|body|boolean| 是 | web代理|web代理|
-|» webdav_policy|body|string| 是 | webdav策略|webdav策略|
-|» down_proxy_url|body|string| 是 | 下载代理|下载代理|
-|» extract_folder|body|string| 是 | 提取目录|提取目录|
-|» driver|body|string| 是 | 驱动|驱动|
-|» addition|body|string| 是 | 额外信息|额外信息|
+| 名称               | 位置   | 类型    | 必选 | 中文名       | 说明         |
+| ------------------ | ------ | ------- | ---- | ------------ | ------------ |
+| Authorization      | header | string  | 是   |              | token        |
+| body               | body   | object  | 否   |              | none         |
+| » mount_path       | body   | string  | 是   | 挂载路径     | 挂载路径     |
+| » order            | body   | integer | 是   | 排序         | 排序         |
+| » remark           | body   | string  | 是   | 备注名       | 备注名       |
+| » cache_expiration | body   | integer | 是   | 缓存过期时间 | 缓存过期时间 |
+| » web_proxy        | body   | boolean | 是   | web代理      | web代理      |
+| » webdav_policy    | body   | string  | 是   | webdav策略   | webdav策略   |
+| » down_proxy_url   | body   | string  | 是   | 下载代理     | 下载代理     |
+| » extract_folder   | body   | string  | 是   | 提取目录     | 提取目录     |
+| » driver           | body   | string  | 是   | 驱动         | 驱动         |
+| » addition         | body   | string  | 是   | 额外信息     | 额外信息     |
 
 > 返回示例
 
@@ -236,20 +236,20 @@ POST /api/admin/storage/create
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|状态码|
-|» message|string|true|none|信息|信息|
-|» data|object|true|none|data|data|
-|»» id|integer|true|none||none|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none | 状态码 | 状态码 |
+| » message | string  | true | none | 信息   | 信息   |
+| » data    | object  | true | none | data   | data   |
+| »» id     | integer | true | none |        | none   |
 
 ## GET 查询指定存储信息
 
@@ -257,10 +257,10 @@ GET /api/admin/storage/get
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|id|query|string| 是 ||存储id|
-|Authorization|header|string| 是 ||token|
+| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明   |
+| ------------- | ------ | ------ | ---- | ------ | ------ |
+| id            | query  | string | 是   |        | 存储id |
+| Authorization | header | string | 是   |        | token  |
 
 > 返回示例
 
@@ -293,35 +293,35 @@ GET /api/admin/storage/get
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|none|
-|» message|string|true|none|信息|none|
-|» data|object|true|none||none|
-|»» id|integer|true|none|id|none|
-|»» mount_path|string|true|none|挂载路径|none|
-|»» order|integer|true|none|排序|none|
-|»» driver|string|true|none|驱动|none|
-|»» cache_expiration|integer|true|none|缓存过期时间|none|
-|»» status|string|true|none|状态|none|
-|»» addition|string|true|none|额外信息|none|
-|»» remark|string|true|none|备注|none|
-|»» modified|string|true|none|修改时间|none|
-|»» disabled|boolean|true|none|是否被禁用|none|
-|»» order_by|string|true|none|排序方式|none|
-|»» order_direction|string|true|none|排序方向|none|
-|»» extract_folder|string|true|none|提取目录|none|
-|»» web_proxy|boolean|true|none|web代理|none|
-|»» webdav_policy|string|true|none|webdav策略|none|
-|»» down_proxy_url|string|true|none|下载代理|none|
+| 名称                | 类型    | 必选 | 约束 | 中文名       | 说明 |
+| ------------------- | ------- | ---- | ---- | ------------ | ---- |
+| » code              | integer | true | none | 状态码       | none |
+| » message           | string  | true | none | 信息         | none |
+| » data              | object  | true | none |              | none |
+| »» id               | integer | true | none | id           | none |
+| »» mount_path       | string  | true | none | 挂载路径     | none |
+| »» order            | integer | true | none | 排序         | none |
+| »» driver           | string  | true | none | 驱动         | none |
+| »» cache_expiration | integer | true | none | 缓存过期时间 | none |
+| »» status           | string  | true | none | 状态         | none |
+| »» addition         | string  | true | none | 额外信息     | none |
+| »» remark           | string  | true | none | 备注         | none |
+| »» modified         | string  | true | none | 修改时间     | none |
+| »» disabled         | boolean | true | none | 是否被禁用   | none |
+| »» order_by         | string  | true | none | 排序方式     | none |
+| »» order_direction  | string  | true | none | 排序方向     | none |
+| »» extract_folder   | string  | true | none | 提取目录     | none |
+| »» web_proxy        | boolean | true | none | web代理      | none |
+| »» webdav_policy    | string  | true | none | webdav策略   | none |
+| »» down_proxy_url   | string  | true | none | 下载代理     | none |
 
 ## POST 删除指定存储
 
@@ -329,10 +329,10 @@ POST /api/admin/storage/delete
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|id|query|string| 否 ||存储id|
-|Authorization|header|string| 是 ||token|
+| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明   |
+| ------------- | ------ | ------ | ---- | ------ | ------ |
+| id            | query  | string | 否   |        | 存储id |
+| Authorization | header | string | 是   |        | token  |
 
 > 返回示例
 
@@ -348,19 +348,19 @@ POST /api/admin/storage/delete
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|状态码|
-|» message|string|true|none|信息|信息|
-|» data|null|true|none|data|data|
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none | 状态码 | 状态码 |
+| » message | string  | true | none | 信息   | 信息   |
+| » data    | null    | true | none | data   | data   |
 
 ## POST 重新加载所有存储
 
@@ -368,9 +368,9 @@ POST /api/admin/storage/load_all
 
 ### 请求参数
 
-|名称|位置|类型|必选|中文名|说明|
-|---|---|---|---|---|---|
-|Authorization|header|string| 是 ||none|
+| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明 |
+| ------------- | ------ | ------ | ---- | ------ | ---- |
+| Authorization | header | string | 是   |        | none |
 
 > 返回示例
 
@@ -386,19 +386,16 @@ POST /api/admin/storage/load_all
 
 ### 返回结果
 
-|状态码|状态码含义|说明|数据模型|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|成功|Inline|
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
 
 ### 返回数据结构
 
 状态码 **200**
 
-|名称|类型|必选|约束|中文名|说明|
-|---|---|---|---|---|---|
-|» code|integer|true|none|状态码|none|
-|» message|string|true|none|信息|none|
-|» data|null|true|none||none|
-
-# 数据模型
-
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明 |
+| --------- | ------- | ---- | ---- | ------ | ---- |
+| » code    | integer | true | none | 状态码 | none |
+| » message | string  | true | none | 信息   | none |
+| » data    | null    | true | none |        | none |
