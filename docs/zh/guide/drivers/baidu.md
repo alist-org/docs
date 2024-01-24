@@ -106,6 +106,12 @@ flowchart TB
 
 
 
+## **自定义破解ua**
+
+[**使用【本地代理 & Crack API】时候使用的UA**](https://github.com/alist-org/alist/issues/5602#issuecomment-1831188682)
+
+
+
 ## **Download API**
 
 - official: 官方接口，很稳定，但是文件比较大，需要修改UA，速度慢 (SVIP速度快)

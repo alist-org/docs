@@ -29,7 +29,6 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
 - [x] [aliyundrive](https://www.alipan.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
-- [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [GoogleDrive](https://drive.google.com/)
 - [x] [123pan/Share/Link](https://www.123pan.com/)
 - [x] [Alist](https://github.com/Xhofe/alist)
@@ -41,6 +40,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] WebDAV
 - [x] Teambition（[China](https://www.teambition.com/)，[International](https://us.teambition.com/)）
 - [x] [mediatrack](https://www.mediatrack.cn/)
+- [x] [189cloud](https://cloud.189.cn) (Personal, Family)
 - [x] [139yun](https://yun.139.com/) (Personal, Family)
 - [x] [Wopan](https://pan.wo.cn)
 - [x] [MoPan](https://mopan.sc.189.cn/mopan/#/downloadPc)
@@ -49,6 +49,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Quark](https://pan.quark.cn/)
 - [x] [Thunder](https://pan.xunlei.com)
 - [x] [Lanzou](https://www.lanzou.com/)、[NewLanzou](https://www.ilanzou.com)
+- [x] [Feiji Cloud](https://feijipan.com/)
 - [x] [Aliyundrive share](https://www.alipan.com/)
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
@@ -68,6 +69,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Tencent weiyun](https://www.weiyun.com/)
 - [x] [vtencent](https://app.v.tencent.com/)
 - [x] [ChaoxingGroupCloud](../guide/drivers/chaoxing.md)
+- [x] [Quqi Cloud](https://quqi.com)
 
 ### Discussion
 

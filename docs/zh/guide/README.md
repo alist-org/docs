@@ -29,7 +29,6 @@ category:
 - [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘](https://www.alipan.com/)
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
-- [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [GoogleDrive](https://drive.google.com/)
 - [x] [123云盘/分享/直链](https://www.123pan.com/)
 - [x] FTP / SFTP
@@ -39,6 +38,7 @@ category:
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
 - [x] [分秒帧](https://www.mediatrack.cn/)
+- [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
 - [x] [中国移动云盘](https://yun.139.com/) (个人云, 家庭云)
 - [x] [中国联通云盘](https://pan.wo.cn)
 - [x] [四川电信魔盘](https://mopan.sc.189.cn/mopan/#/downloadPc)
@@ -47,6 +47,7 @@ category:
 - [x] [夸克网盘](https://pan.quark.cn)
 - [x] [迅雷网盘](https://pan.xunlei.com)
 - [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
+- [x] [小飞机网盘](https://feijipan.com/)
 - [x] [阿里云盘分享](https://www.alipan.com/)
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
@@ -66,6 +67,7 @@ category:
 - [x] [腾讯微云](https://www.weiyun.com/)
 - [x] [腾讯智能创作平台](https://app.v.tencent.com/)
 - [x] [超星星小组盘](../guide/drivers/chaoxing.md)
+- [x] [曲奇云盘](https://quqi.com)
 
 ## Discussion
 

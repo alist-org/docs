@@ -81,6 +81,8 @@ typeof fetch !== "undefined" && getLimit()
 
 :::
 
+
+
 ## **refresh token**
 
 Go to：**https://alist.nn.ci/tool/aliyundrive/request**
@@ -94,6 +96,7 @@ Go to：**https://alist.nn.ci/tool/aliyundrive/request**
     <img src="/img/drivers/aliyun/token2.png" alt="Scan QrCode" title="Scan QrCode"/>
 </div>
 
+
 ### **Root folder file_id**
 
 The default is `root`, which displays all cloud disk contents. If you only want to display the contents of a certain folder, you can change it to `file_id`
@@ -106,11 +109,17 @@ which is `5fe01e1830601baf774e4827a9fb8fb2b5bf7940`
 
 <br/>
 
+
+
 ### **Client id，Client secret**
 
 Normal users don’t need to fill in the blank. If they apply for official authorization, they can also use their own to fill in. If it is blank, the default is to use the one provided by Alist.
 
+- If you use your own developer account, the Oauth token link must also be modified, and you must also use your own developer account ID and secret key to obtain the refresh token.
+
 <br/>
+
+
 
 ## **Rapid upload**
 
@@ -132,6 +141,8 @@ If you want to upload files using Second Transmission, it is recommended to buil
 
 <br/>
 
+
+
 ## **Remove way**
 
 If you don’t set it, it will be deleted to the recycle bin by default. If there is not enough space, you need to manually clean up the recycle bin. If you delete the wrong file, please go to the Alibaba Cloud Disk official website client to retrieve and restore it.
@@ -141,6 +152,8 @@ If you don’t set it, it will be deleted to the recycle bin by default. If ther
   - Note: Please do not disclose the Token obtained by your Alibaba Cloud Disk Open, ==If you accidentally leak it, please immediately go to [**Other instructions¹**](#open-alibaba-cloud-disk-app-my-settings-gear-in-the-upper-right-corner-privacy-settings-authorization-management-click-alist-to-view) to deauthorize, and then re-scan the code to authorize a new refresh token , at the same time, all the previous acquisitions will become invalid after the authorization is deactivated, so as to protect the security of your account==
 
 <br/>
+
+
 
 ## **Drive type**
 
@@ -154,6 +167,8 @@ You can choose the type of cloud disk, and you can choose a different type accor
 If you don’t have the content mentioned above in your cloud disk, you need to log in to the Aliyun disk mobile terminal version `4.9.0` or later to see it
 
 <br/>
+
+
 
 ## **Livp download format**
 
@@ -169,6 +184,8 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 - **Internal upload** Can Alibaba Cloud ECS in non-Beijing areas be used? No, because Alibaba Cloud Disk is using object storage in the Beijing area
 
 <br/>
+
+
 
 ## **other instructions**
 

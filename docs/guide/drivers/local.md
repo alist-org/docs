@@ -35,6 +35,21 @@ You need to use the `ffmpeg` tool to add, I will not (wait for replenishment) fo
 
 
 
+## **Recycle bin path**
+
+path to recycle bin, delete permanently if empty or keep 'delete permanently'
+
+If you fill in this path, you will move the file into the folder when deleting the local storage file, so that you have a chance to regret it.
+
+The method of filling in the above -mentioned mounting path is different from different system filling methods.
+
+If you do n’t know if you fill in it correctly, you can test it yourself first and then use the production environment to use it yourself.
+
+- Linux: `/root`
+- Windows: `C:`
+
+
+
 
 ### **The default download method used**
 

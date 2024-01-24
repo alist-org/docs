@@ -29,11 +29,21 @@ Or use the proxy function in this program to transfer.
 ### **Refresh token**
 [Click here](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) to get the refresh token.
 
+
+
 ### **Root folder path**
 The root foler to mount, defaults to `/`
 
 - Mount a folder separately, according to the following format, `/` is the root directory, just extend to that directory if you want to mount that directory
   - /folder_A/....../folder_x
+
+
+
+## **Custom crack ua**
+
+[**UA used when using 【Native Proxy & Crack API】**](https://github.com/alist-org/alist/issues/5602#issuecomment-1831188682)
+
+
 
 ### **Download api**
 - official: The official interface, very stable, but for larger files, UA needs to be modified and the speed is slow (SVIP speed fast)

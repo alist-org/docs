@@ -25,22 +25,31 @@ star: true
 
 ==有个前提 就是A网盘需要秒传的文件，在B网盘已经有了，才可以进行秒传否则就是正常上传==
 
-|          |      阿里云盘      |        115         |      百度云盘      |      天翼云盘      |    迅雷云盘     |       PikPak       |    谷歌云盘     |    OndDrive     |    本地存储     |
-| :------: | :----------------: | :----------------: | :----------------: | :----------------: | :-------------: | :----------------: | :-------------: | :-------------: | :-------------: |
-| 本地存储 | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
-| 阿里云盘 | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
-|   115    | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
-| 百度云盘 |        :x:         |        :x:         | :white_check_mark: | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
-| 天翼云盘 |        :x:         |        :x:         | :white_check_mark: | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
-| 迅雷云盘 |        :x:         |        :x:         |        :x:         |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
-|  PikPak  |        :x:         |        :x:         |        :x:         |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
-| 谷歌云盘 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
-| OneDrive |  :grey_question:   |  :grey_question:   |  :grey_question:   |  :grey_question:   | :grey_question: |  :grey_question:   | :grey_question: | :grey_question: | :no_entry_sign: |
+::: tip
+
+<i class="fa-solid fa-square-left fa-bounce" style="color: rgb(13, 109, 252)"></i> **左侧**为来源网盘、<i class="fa-solid fa-square-arrow-up fa-bounce" style="color: rgb(13, 109, 252)"></i> **顶部**为目标网盘
+
+:::
+
+
+
+|          |      阿里云盘      |        115         |        百度云盘         |      天翼云盘      |    迅雷云盘     |       PikPak       |    谷歌云盘     |    OndDrive     |    本地存储     |
+| :------: | :----------------: | :----------------: | :---------------------: | :----------------: | :-------------: | :----------------: | :-------------: | :-------------: | :-------------: |
+| 本地存储 | :white_check_mark: | :white_check_mark: | :white_check_mark:^(5)^ |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
+| 阿里云盘 | :white_check_mark: | :white_check_mark: |           :x:           |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
+|   115    | :white_check_mark: | :white_check_mark: |           :x:           |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
+| 百度云盘 |        :x:         |        :x:         |           :x:           | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
+| 天翼云盘 |        :x:         |        :x:         |   :white_check_mark:    | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
+| 迅雷云盘 |        :x:         |        :x:         |           :x:           |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
+|  PikPak  |        :x:         |        :x:         |           :x:           |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
+| 谷歌云盘 | :white_check_mark: | :white_check_mark: |   :white_check_mark:    | :white_check_mark: |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
+| OneDrive |  :grey_question:   |  :grey_question:   |     :grey_question:     |  :grey_question:   | :grey_question: |  :grey_question:   | :grey_question: | :grey_question: | :no_entry_sign: |
 
 - 注^(1)^：这里提到的**阿里云盘**是指的[**阿里云盘Open**](../../../zh/guide/drivers/aliyundrive_open.md)
 - 注^(2)^：**OneDrive** 是因为已经没有了帐号暂时没有进行测试，如果有进行测试有效无问题，欢迎反馈
 - 注^(3)^：**阿里云盘Open** 和 **天翼云盘** ：都需要在存储配置中将配置中的秒传选项打开，否则无法秒传
 - 注^(4)^：将**谷歌云盘**文件秒传到**天翼云盘** 和 **天翼云盘**将文件秒传到**天翼云盘**，可能有一些问题，并不是很稳定，需要留意观察
+- 注^(5)^：**百度云盘**只能从本地存储秒传到网盘，如果是使用跨存储进行复制秒传只能先将文件下载下来再进行秒传行为
 
 
 
@@ -54,4 +63,3 @@ star: true
     <img src="/img/advanced/r_upload_1.png" alt="秒传" title="秒传"/>
     <img src="/img/advanced/r_upload_2.png" alt="秒传" title="秒传"/>
 </div>
-
