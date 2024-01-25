@@ -68,23 +68,32 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 ## **2. TrollStore install**
 
- ==Requires AList version ≥ 3.12.2 and above==
+ ==Requires AList version ≥ 3.12.2 and above==，Devices that support the installation of TrollStore (jailbroken devices are not explained here)
 
-Devices that support the installation of TrollStore (jailbroken devices are not explained here)
+For more devices, please see the table below. The content of the chart comes from [**TrollStore**](https://github.com/opa334/TrollStore)
 
-The device that supports the installation of TrollStore is up to the iPhone 13 series device system version not greater than `stable version 15.4.1` `beta version 15.6 beta 1 - 5`
+Chart information update is uncertain, you can go to view <i class="fa-regular fa-hand-point-right" style="color: #B197FC;"></i>  https://ios.cfw.guide/installing-trollstore
 
-If you are an iPhone 14, the factory system version is too high. For other details, please check the table below.
+|       From       |        To        |                       arm64 (A8 - A11)                       |                 arm64e (A12 - A17 / M1 - M2)                 |
+| :--------------: | :--------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 13.7 and earlier | 13.7 and earlier |                         Unsupported                          |                         Unsupported                          |
+|       14.0       |      14.8.1      | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|       15.0       |   15.5 beta 4    | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|       15.5       |       15.5       | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|   15.6 beta 1    |   15.6 beta 5    | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|       15.6       |      15.6.1      | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollHelperOTA)](https://ios.cfw.guide/installing-trollhelperota) |
+|       15.7       |      15.7.1      | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
+|      15.7.2      |      15.8.1      | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) | [Installing TrollStore (TrollMisaka)](https://ios.cfw.guide/installing-trollhelper-trollmisaka) |
+|       16.0       |      16.1.2      | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) | [Installing TrollStore (TrollInstallerMDC)](https://ios.cfw.guide/installing-trollhelper-mdc) |
+|       16.2       |      16.6.1      | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) | [Installing TrollStore (TrollStar)](https://ios.cfw.guide/installing-trollhelper-trollstar) |
+|     16.7 RC      |     16.7 RC      | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                    No Installation Method                    |
+|       16.7       |      16.7.5      |                         Unsupported                          |                         Unsupported                          |
+|       17.0       |       17.0       | [Installing TrollStore (TrollHelper)](https://ios.cfw.guide/installing-trollhelper) |                    No Installation Method                    |
+| 17.0.1 and later | 17.0.1 and later |                         Unsupported                          |                         Unsupported                          |
 
-| Version / Device       | arm64 (A8 - A11)                                             | arm64e (A12 - A15, M1)                                       |
-| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 13.7 and below         | Not Supported (CT Bug only got introduced in 14.0)           | Not Supported (CT Bug only got introduced in 14.0)           |
-| 14.0 - 14.8.1          | [checkra1n + TrollHelper](https://github.com/opa334/TrollStore/blob/main/install_trollhelper.md) | [TrollHelperOTA (arm64e)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_arm64e.md) |
-| 15.0 - 15.4.1          | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) |
-| 15.5 beta 1 - 4        | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) | [TrollHelperOTA (iOS 15+)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_ios15.md) |
-| 15.5 (RC)              | Not Supported (CT Bug fixed)                                 | Not Supported (CT Bug fixed)                                 |
-| 15.6 beta 1 - 5        | [SSH Ramdisk](https://github.com/opa334/TrollStore/blob/main/install_sshrd.md) | [TrollHelperOTA (arm64e)](https://github.com/opa334/TrollStore/blob/main/install_trollhelperota_arm64e.md) |
-| 15.6 (RC1/2) and above | Not Supported (CT Bug fixed)                                 | Not Supported (CT Bug fixed)                                 |
+<span><a href="https://www.alipan.com/s/Z3mrsfdFY5h"><i class="fa-solid fa-party-horn fa-shake" style="color: #74C0FC;"></i> IPA Resources</a></span> :gift:
+
+<br/>
 
 
 
