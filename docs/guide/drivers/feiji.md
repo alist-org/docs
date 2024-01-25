@@ -17,23 +17,25 @@ sticky: true
 star: true
 ---
 
-# Mediatrack
+# FeiJi Cloud
 
-### **Access token**
-You can get it in request header after logging in
+FeiJi Cloud：https://feijipan.com/
 
-![token](/img/drivers/mediatrack-token.png)
+## **root folder ID**
 
-### **Project id**
-Get from official website url:
+root folder ID the default is `0`，Other directory ID View the figure below obtaining method
 
-![Project id](/img/drivers/mediatrack-projectid.png)
+<img src="/img/drivers/feiji/feiji.png" alt="FeiJi folder_id" />
 
-### **Root folder id**
+<br/>
 
-Get it from the request after logging in
 
-![id](/img/drivers/mediatrack-rootid.png)
+
+## **username、password**
+
+Just fill in your own Feiji Cloud Account Password
+
+<br/>
 
 
 

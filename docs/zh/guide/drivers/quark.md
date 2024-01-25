@@ -10,6 +10,7 @@ category:
 tag:
   - Storage
   - Guide
+  - "本地代理"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -42,9 +43,9 @@ star: true
 
   - `本地代理`就是你搭建AList的机器来中转,就是先下载到你搭建AList的机器，在由机器转发给你，你搭建AList的机器速度不够快，再转发给你的速度自然也不够快
 1. 换带宽高的服务器来中转
-    
+   
 2. 在自己家里电脑搭建
-    
+   
 3. 直接放弃不用.
 
 

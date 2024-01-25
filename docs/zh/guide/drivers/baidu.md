@@ -10,6 +10,7 @@ category:
 tag:
   - Storage
   - Guide
+  - "302"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -104,6 +105,16 @@ flowchart TB
 - 单独挂载某文件夹，按照下面格式，`/`是根目录，想挂载那个目录就延伸到那个目录就可以
   - /文件夹-A/……/文件夹-x
 
+<br/>
+
+
+
+## **自定义破解ua**
+
+[**使用【本地代理 & Crack API】时候使用的UA**](https://github.com/alist-org/alist/issues/5602#issuecomment-1831188682)
+
+<br/>
+
 
 
 ## **Download API**
@@ -124,7 +135,7 @@ flowchart TB
 }
 ```
 
-
+<br/>
 
 
 
