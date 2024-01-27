@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 18
+order: 16
 # A page can have multiple categories
 category:
   - Guide
@@ -17,29 +17,29 @@ sticky: true
 star: true
 ---
 
-# 超星星小组盘
+# 曲奇云盘
 
-超星星小组盘也是隶属于超星星，登录超星星后在左侧侧边栏下方能看到一个小组
-
-官网链接：**https://i.chaoxing.com**
+曲奇云盘官网：https://quqi.com
 
 <br/>
 
 
 
-### **用户名 密码**
+### **手机号、密码**
 
-超星星的帐号密码
+登录手机号和密码，建议使用 [Cookie](#cookie)方式登录
 
 <br/>
 
 
 
-### **Bbsid**
+### **Cookie**
 
-按照下面示例流程获取
+使用Cookie登录 **可保持多终端同时在线使用**，如果使用 `手机号、密码`进行挂载会顶掉其它终端登录状态
 
-![](/img/drivers/chaoxing/chaoxing_bbsid.png)
+- 获取方式：随意在`F12`网络请求中找到一个携带`Cookie`参数的进行复制即可
+
+![cookie](/img/drivers/quqi/quqi_cookie.png)
 
 <br/>
 
@@ -47,13 +47,17 @@ star: true
 
 ### **根文件夹ID**
 
-默认为`-1`，其它子文件夹ID获取方式看下图示例
+根文件夹ID为 `0`，其它子文件夹ID参考下图
 
-- 在请求中搜索关键词`getResourceList`，为了方便我们可以直接搜索 `list`也可以看到，然后我们进入我们需要挂载的文件夹，进文件夹后再去看请求就可以找到`子文件夹ID`
-
-![](/img/drivers/chaoxing/chaoxing_folder_id.gif)
+![folder_id](/img/drivers/quqi/quqi_folder_id.png)
 
 <br/>
+
+
+
+### **CDN**
+
+提升VIP用户单连接下载速度，解决非VIP用户下载连接数限制问题，**CDN内容需要解密，会占用一些计算资源**
 
 
 
@@ -76,4 +80,3 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```
-

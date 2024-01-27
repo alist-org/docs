@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 36
+order: 10
 # A page can have multiple categories
 category:
   - Guide
@@ -17,13 +17,27 @@ sticky: true
 star: true
 ---
 
-# Yandex云盘
+# 小飞机网盘
 
-### **刷新令牌**
-[点击这里](https://oauth.yandex.com/authorize?response_type=code&client_id=a78d5a69054042fa936f6c77f9a0ae8b) 来获取刷新令牌。
+小飞机网盘：https://feijipan.com/
 
-### **根文件夹路径**
-要挂载的根文件夹，默认为 `/`
+## **根文件夹ID**
+
+根目录ID，默认为`0`，其它目录ID查看下图获取方式
+
+<img src="/img/drivers/feiji/feiji.png" alt="FeiJi folder_id" />
+
+<br/>
+
+
+
+## **账户、密码**
+
+填写自己的小飞机网盘帐号密码
+
+<br/>
+
+
 
 ### **默认使用的下载方式**
 

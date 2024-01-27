@@ -10,6 +10,8 @@ category:
 tag:
   - Storage
   - Guide
+  - "Native Rroxy"
+  - "302"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles

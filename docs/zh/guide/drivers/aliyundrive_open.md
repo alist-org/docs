@@ -10,6 +10,7 @@ category:
 tag:
   - Storage
   - Guide
+  - "302"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -87,6 +88,8 @@ typeof fetch !== "undefined" && getLimit()
 
 前往：**https://alist.nn.ci/tool/aliyundrive/request**
 
+
+
 #### **获取示意图**
 
 以下两种方式都可以获得 **refresh_token**
@@ -111,11 +114,17 @@ typeof fetch !== "undefined" && getLimit()
 
 <br/>
 
+
+
 ## **客户端 ID，秘钥**
 
 正常用户不需要填写为空即可，如果自己申请了官方授权也可以使用自己的进行填写，为空时默认使用 AList 提供的。
 
+- 如果使用自己的开发者帐号，Oauth令牌链接也要修改，同时也要使用自己开发者帐号ID和秘钥获取刷新令牌
+
 <br/>
+
+
 
 ## **秒传**
 
@@ -137,6 +146,8 @@ typeof fetch !== "undefined" && getLimit()
 
 <br/>
 
+
+
 ## **移除方式**
 
 不进行设置默认是删除到回收站內了，如果空间不够需要自己手动清理回收站/若删错文件请前往阿里云盘官网客户端进行找回恢复
@@ -146,6 +157,8 @@ typeof fetch !== "undefined" && getLimit()
   - 注：请勿泄露自己阿里云盘Open获取的Token， ==若不小心泄露请立刻马上去  [**其他说明 ¹**](#打开-阿里云盘-app-我的-右上角设置齿轮-隐私设置-授权管理-点击-alist-进行查看) 解除授权,再重新扫码授权换新的刷新令牌，同时解除授权后之前获取的都会失效，以保护您账号的安全== 
 
 <br/>
+
+
 
 ## **云盘类型**
 
@@ -160,6 +173,8 @@ typeof fetch !== "undefined" && getLimit()
 
 <br/>
 
+
+
 ## **Livp 下载格式**
 
 即 IOS`实况`照片因为非IOS系统无法解析，然后就无法下载，现根据自己的需求是需要`Jpeg`还是`Mov`
@@ -169,6 +184,8 @@ typeof fetch !== "undefined" && getLimit()
 
 <br/>
 
+
+
 ## **内部上传**
 
 如果你部署 AList 的服务器是阿里云北京地区ECS，打开此开关可以提升文件上传速度。不符合要求的服务器请不要打开此开关，否则会出现无法上传的问题。
@@ -176,6 +193,8 @@ typeof fetch !== "undefined" && getLimit()
 - **内部上传**非北京地区的阿里云ECS可以使用吗？不能，因为阿里云盘在使用北京地区的对象存储
 
 <br/>
+
+
 
 ## **其他说明**
 
