@@ -61,9 +61,7 @@ star: true
 
 - **安装演示使用环境**： IOS15.4.1 iPhone12PM，个人证书，HTTPS
 
-<ArtPlayer
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true&no_cache=false" 
-/>
+<ArtPlayer src="https://r2.izyt.cc/ios/ios_ts.m3u8" />
 
 
 

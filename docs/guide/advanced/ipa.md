@@ -58,9 +58,7 @@ Recommended to use [ipa-renamer](https://github.com/Xhofe/ipa-renamer) to rename
 
 - **Installation demo environment**: IOS15.4.1 iPhone12PM, personal certificate, HTTPS
 
-<ArtPlayer 
-  src="https://hub.onmicrosoft.cn/public/video/weibo?uid=7821998556&cursor=4870951244144255&raw=true&no_cache=false" 
-/>
+<ArtPlayer src="https://r2.izyt.cc/ios/ios_ts.m3u8" />
 
 
 
