@@ -32,7 +32,7 @@ const raw = [
   {
     key: "linux",
     label: "Linux",
-    url: `https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_$version_amd64.deb`,
+    url: `https://github.com/alist-org/desktop-release/releases/latest/download/alist-desktop_${version}_amd64.deb`,
   },
 ] as const
 
