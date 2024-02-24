@@ -19,7 +19,7 @@ star: true
 
 # 小飞机网盘
 
-小飞机网盘：https://feijipan.com/
+( >3.30.0)小飞机网盘：https://feijipan.com/
 
 ## **根文件夹ID**
 

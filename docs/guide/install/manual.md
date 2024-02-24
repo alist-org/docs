@@ -18,16 +18,26 @@ sticky: true
 star: true
 ---
 
-### **Get Alist**
+## **Get Alist**
 Open [AList Release](https://github.com/Xhofe/alist/releases) to download the files corresponding to the system to be deployed. The latest version of the front-end has been packaged with the back-end, so there is no need to download the front-end files again.
 
 
 
-*The xxxx refers to the names corresponding to different systems/architectures, generally Linux-x86/64 is alist-linux-amd64. [If your glibc version is too low](../../faq/why.md#lib64-libc-so-6-version-glibc-2-28-not-found-required-by-alist-or-accept-function-not-implemented), it is recommended to download the musl version*
+The xxxx refers to the names corresponding to different systems/architectures, generally Linux-x86/64 is alist-linux-amd64. 
+
+If there is a prompt as follows：It is because [your GLIBC version is too low](../../faq/why.md#lib64-libc-so-6-version-glibc-2-28-not-found-required-by-alist-or-accept-function-not-implemented), it is recommended to download the musl version
+
+```txt
+lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)  
+# or
+accept: function not implemented
+```
+
+
 
 When you see the output of `start server @ 0.0.0.0:5244` and no error is reported afterwards, it means that the operation is successful. The initial password will be output when running for the first time. The program listens to port 5244 by default. Now open `http://ip:5244` You can see the login page, please see [WebDav](../webdav.md) for webdav.
 
-### **Running**
+## **Running**
 
 Versions above v3.25.0 change the password to an encrypted hash value, and the password cannot be calculated directly. If the password is forgotten, it can only be re-**`randomly generated`** or **`manually set`**
 
@@ -97,7 +107,7 @@ alist server
 ```
 :::
 
-### **Daemon**
+## **Daemon**
 
 :::::tabs#os
 @tab linux
@@ -228,7 +238,7 @@ alist restart
 :::
 
 
-### **How to update**
+## **How to update**
 
 Download the new version of Alist and replace the previous one.
 

@@ -21,36 +21,36 @@ star: true
 MoPan address：**https://mopan.sc.189.cn/mopan/#/downloadPc**
 
 - There is no web version, only `Android`, `iOS`, `PC-Win64bit`, `iPad`, and `TV`.
-- :warning: AList v3.19.0 version and above can use this driver
+- :warning: Alist version > ==3.30.0== to use this driver
 
-::: danger
+<br/>
 
-==MoPan has multiple security issues, therefore it is not recommended to store confidential files in it. It is also advised not to use commonly used passwords as the server may store them unencrypted.==
 
-1. Due to encrypted requests, an appropriate method for obtaining folder IDs has not yet been found, so currently it can only be set to -11 (root folder ID).
-2. Folders under the ID -11 cannot be deleted arbitrarily, otherwise various bugs may occur. (If you don't plan to use the fancy official functions, you can delete them all 🤔）
-3. The folder named Files in the directory is the user space, Private Space corresponds to the private space, and the one named a long string of numbers is the shared space.
-   - The folder named Albums corresponds to the album function, but direct operation may cause bugs and there are no plans to adapt the album yet.
-     - Directly uploading files to the album folder in AList's shared space not be displayed in the app.
-   - Currently there is a bug in the official software regarding the folder deletion function, and we are waiting for a fix.
 
-:::
+## **Sms code**
+
+Enter the option of the mobile phone number and password when the first addition, and then enter the `SMS Code` input ==Send==, and then click Save to send it to you.
+
+<br/>
 
 
 
 ## **root folder ID**
 
-`-11`
+Do not fill in this option, it will automatically fill into the root directory
 
-- Due to encrypted requests, an appropriate method for obtaining folder IDs has not yet been found, so currently it can only be set to -11 (root folder ID).
+- Due to encrypted requests, an appropriate method for obtaining folder IDs has not yet been found
+
+<br/>
 
 
 
-### **AList fill in examples：**
+### **Tips**
 
-You only need to fill in your `phone number` and `password` to mount, and you don't need to fill in the `device info`, as it will be automatically filled in for you.
+1. `root folder ID`,` equipment information `does not need to be filled in, will automatically help you fill
+2. If you enter the send in [SMS Code] (#SMS-Code), it is found that it has been saved,Please click Edit to enter the verification code received
 
-![](/img/drivers/mopan/add-mopan.png)
+<br/>
 
 
 
