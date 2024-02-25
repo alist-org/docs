@@ -108,6 +108,70 @@ services:
 ### **Specify version**
 See https://hub.docker.com/r/xhofe/alist for details
 
+### **Docker-ffmpeg**
+
+- https://github.com/alist-org/alist/pull/6054
+
+I'm not sure if the method of **docker-compose** is correct. If it's not correct, you can give us feedback.
+
+::: tabs#Docker-ffmpeg
+
+@tab latest
+
+**docker-cli**
+
+```bash
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest-ffmpeg
+```
+
+**docker-compose**
+
+```bash
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:latest-ffmpeg'
+        container_name: alist
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        restart: unless-stopped
+```
+
+@tab main
+
+**docker-cli**
+
+```bash
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main-ffmpeg
+```
+
+**docker-compose**
+
+```bash
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:main-ffmpeg'
+        container_name: alist
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        restart: unless-stopped
+```
+
+:::
+
 ### **User / Group Identifiers**
 
 When using volumes (`-v` flags) permissions issues can arise between the host OS and the container, we avoid this issue by allowing you to specify the user `PUID` and group `PGID`.

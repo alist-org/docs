@@ -45,19 +45,24 @@ star: true
     - It's because the database is building the index. If you are still in the building process, please wait patiently.
     - If the index has been completed, it is caused by turning on [Automatically update the index](#automatically-update-the-index). Please turn off [Automatically update the index](#automatically-update-the-index). If the problem still occurs, please close and restart AList.
     - Or switch the database to MySQL
-
+- `meilisearch`: I haven’t experienced it in depth yet and I don’t know much about the specific differences. It’s for professionals to use or you can check it yourself. [View PR link](https://github.com/alist-org/alist/pull/6060) , the only thing I know is that you have to [build it yourself](https://www.meilisearch.com/docs/learn/getting_started/installation) to use it. It supports many methods, but there is no daemon and other lazy operations, and it does not support the system [ It relies on Linux systems lower than `GLIBC_2.27`](https://github.com/meilisearch/meilisearch/issues/4022) If it is built on this machine, it will be automatically recognized. If it is another device, you can modify the **meilisearch** field content of the configuration file.
+  - Daemon：If you want to use it, you can create a new daemon process in the same way as manually starting AList.
+  - Download  Url：https://github.com/meilisearch/meilisearch/releases
+    - `meilisearch` Docs Url：https://www.meilisearch.com/docs/learn/getting_started/installation
 
 <br/>
 
+
+
 The following table could help you understand the difference between the two search indexes quickly:
 
-|                         | database(full text search)                      | Database (non-full-text search)                              | bleve       |
-| ----------------------- | ----------------------------------------------- | ------------------------------------------------------------ | ----------- |
-| Search results          | Can't find it in Chinese                        | More accurate than full-text search, you can search Chinese  | Fuzzy match |
-| Search speed            | Fast,see above for advantages and disadvantages | Slower than full-text search, see above for advantages and disadvantages | Fast        |
-| Specify folder search   | Yes                                             | Yes                                                          | No          |
-| Disk usage              | Low                                             | Low                                                          | High        |
-| Auto incremental update | Yes                                             | Yes                                                          | No          |
+|                         | database(full text search)                      | Database (non-full-text search)                              | bleve       | meilisearch |
+| ----------------------- | ----------------------------------------------- | ------------------------------------------------------------ | ----------- | ----------- |
+| Search results          | Can't find it in Chinese                        | More accurate than full-text search, you can search Chinese  | Fuzzy match | :question:  |
+| Search speed            | Fast,see above for advantages and disadvantages | Slower than full-text search, see above for advantages and disadvantages | Fast        | :question:  |
+| Specify folder search   | Yes                                             | Yes                                                          | No          | :question:  |
+| Disk usage              | Low                                             | Low                                                          | High        | :question:  |
+| Auto incremental update | Yes                                             | Yes                                                          | No          | :question:  |
 
 ::: warning
 

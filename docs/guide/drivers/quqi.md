@@ -19,7 +19,7 @@ star: true
 
 # Quqi Cloud
 
-( >3.30.0)Quqi Cloud：https://quqi.com
+Quqi Cloud：https://quqi.com ( v3.31.0)
 
 <br/>
 

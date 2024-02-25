@@ -47,6 +47,7 @@ docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:524
 ```
 
 ##### **docker-compose**
+
 ```yaml
 version: '3.3'
 services:
@@ -113,6 +114,72 @@ services:
 ### **指定版本**
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
+
+
+
+### **Docker-ffmpeg**
+
+- https://github.com/alist-org/alist/pull/6054
+
+**docker-compose** 的方式不确定是否正确，如果不正确可以反馈
+
+::: tabs#Docker-ffmpeg
+
+@tab 正式版
+
+**docker-cli**
+
+```bash
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest-ffmpeg
+```
+
+**docker-compose**
+
+```bash
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:latest-ffmpeg'
+        container_name: alist
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        restart: unless-stopped
+```
+
+@tab 测试版
+
+**docker-cli**
+
+```bash
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main-ffmpeg
+```
+
+**docker-compose**
+
+```bash
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:main-ffmpeg'
+        container_name: alist
+        volumes:
+            - '/etc/alist:/opt/alist/data'
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=0
+            - PGID=0
+            - UMASK=022
+        restart: unless-stopped
+```
+
+:::
 
 ### **用户/组标识符**
 

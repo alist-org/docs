@@ -19,7 +19,7 @@ star: true
 
 # 曲奇云盘
 
-( >3.30.0)曲奇云盘官网：https://quqi.com
+曲奇云盘官网：https://quqi.com ( v3.31.0)
 
 <br/>
 

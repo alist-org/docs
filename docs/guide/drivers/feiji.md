@@ -19,7 +19,7 @@ star: true
 
 # FeiJi Cloud
 
-( >3.30.0)FeiJi Cloud：https://feijipan.com/
+FeiJi Cloud：https://feijipan.com/ ( v3.31.0)
 
 ## **root folder ID**
 
