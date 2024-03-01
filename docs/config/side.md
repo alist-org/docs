@@ -44,13 +44,13 @@ Let me briefly introduce it, probably, the functions that are often used
 
    
 
-2. New File、New Folder、`Remove Empty Folder`、`Batch Rename` No explanations need
+2. `New File`、`New Folder`、`Remove Empty Folder`、`Batch Rename` No explanations need
 
    
 
-3. **Recursive Move**，Move all the files in the current directory and all files in the subfolder to the designated folder
+3. **Recursive Move**：Move all the files in the current directory and all files in the subfolder to the designated folder
 
-   - :warning: Dangerous operation, please use it with caution
+   - :warning: <b style="color:red;">Dangerous operation, please use it with caution</b>
 
    
 
@@ -107,19 +107,40 @@ Let me briefly introduce it, probably, the functions that are often used
 
       - Normal：No need to display
       - Stick to top of page：adsorb LOGO and navigation bar
-      - Only nav bar sticky：adsorb LOGO and navigation bar
+      - Only nav bar sticky：Do not adsorb LOGO, only adsorb navigation bar
 
       
 
    6. **Grid item size** ：Adjust the picture size in the Grid item mode
-
-      
-
-   7. **Filename scrollable**：When the text is too long, the automatic rolling text display is all，[#149](https://github.com/alist-org/alist-web/pull/149)
-
-      
-
-   8. **Language package selection** and **night mode and daytime mode switch**
+   
+   
+   
+   7. **List item filename overflow**：When the text is too long, the three state selection
+   
+      - **Ellipsis**（default）
+   
+      - **Scrollable** (PC users use the `shift`+` mousewheel `on the file, if it is a mobile phone user sliding the file left and right)
+   
+      - **Multi-line**
+   
+   
+   
+   8. **Open item on Checkbox**：
+   
+      - Direct (Open the file/enter the folder)
+   
+      - With `Ctrl or Command` hold
+   
+      - With `Alt or Option` hold
+        - `Ctrl`、`Alt` is Windows
+        - `command`、`Option` is Mac
+      - If the button option does not take effect, please check whether the browser plugin conflict :point_right: [Case](https://github.com/alist-org/alist-web/pull/154#issuecomment-1972681627)
+   
+      <i class="fa-solid fa-lightbulb fa-bounce" style="color: green;"></i> Tips：You can press the `Shift` key to select one, and then select one end. You can quickly select all the files in the middle
+   
+   
+   
+   9.  **Language package selection** and **night mode and daytime mode switch**
 
    
 

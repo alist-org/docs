@@ -318,7 +318,16 @@ Where data is stored when using  **`bleve`** index.
 
 ### **dist_dir**
 
-https://github.com/alist-org/alist/issues/5531
+If this item is set, the front -end file of this option is preferred to render, support the use of other front -end files, and the back -end continues to use the original application
+
+- https://github.com/alist-org/alist/issues/5531
+- https://github.com/alist-org/alist/discussions/6110
+
+Upload the front -end file (dist) to the `data` folder of the application, and then fill in this way. The disadvantage is that if you update each time, you need to change the file manually
+
+```json
+  "dist_dir": "data\\dist",
+```
 
 <br/>
 
