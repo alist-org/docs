@@ -17,18 +17,30 @@ star: true
 ---
 # 手动安装
 
-### **获取 AList**
+## **获取 AList**
 打开 [AList Release](https://github.com/Xhofe/alist/releases) 下载待部署系统对应的文件。最新版的前端已经和后端打包好了，不用再下载前端文件了。
 
 
 
-xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64。如果[你的 glibc 版本太低](../../faq/why.md#lib64-libc-so-6-version-glibc-2-28-not-found-required-by-alist-或者-accept-function-not-implemented)，建议下载 musl 版本
+xxxx 指的是不同系统/架构对应的名称，一般 Linux-x86/64 为 alist-linux-amd64
+
+手动安装如果有如下提示：是因为[你的 GLIBC 版本太低](../../faq/why.md#lib64-libc-so-6-version-glibc-2-28-not-found-required-by-alist-或者-accept-function-not-implemented)，建议下载 musl 版本
+
+```txt
+lib64/libc.so.6: version `GLIBC_2.28' not found (required by ./alist)  
+#或者
+accept: function not implemented
+```
+
+
 
 当你看到 `start server@0.0.0.0:5244` 的输出，之后没有报错，说明操作成功。 第一次运行时会输出初始密码。程序默认监听 5244 端口。 现在打开 `http://ip:5244` 可以看到登录页面，WebDAV 请参阅 [WebDav](../webdav.md)。
 
+<br/>
 
 
-### **手动运行**
+
+## **手动运行**
 
 v3.25.0以上版本将密码改成加密方式存储的hash值，无法直接反算出密码，如果忘记了密码只能通过重新 **`随机生成`** 或者 **`手动设置`**
 
@@ -101,7 +113,11 @@ alist server
 ```
 :::
 
-### **守护进程**
+<br/>
+
+
+
+## **守护进程**
 
 :::::tabs#os
 @tab Linux
@@ -233,9 +249,16 @@ alist restart
 
 :::
 
+<br/>
 
-### **如何更新**
+
+
+## **如何更新**
 
 下载新版Alist，把之前的替换了即可。
+
+<br/>
+
+
 
 <!-- @include: script.md{89-265} -->

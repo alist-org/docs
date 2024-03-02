@@ -19,7 +19,7 @@ star: true
 
 # Quqi Cloud
 
-Quqi Cloud：https://quqi.com
+Quqi Cloud：https://quqi.com ( v3.31.0)
 
 <br/>
 
@@ -58,6 +58,8 @@ The root folder ID is `0`, other subfolder IDs refer to the figure below
 ### **CDN**
 
 Improve the single-connection download speed for VIP users and solve the problem of limiting the number of download connections for non-VIP users. **CDN content needs to be decrypted, which will occupy some computing resources**
+
+<br/>
 
 
 

@@ -17,6 +17,7 @@
     "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/plugin-docsearch": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
+    "artplayer": "^5.1.1",
     "dashjs": "^4.7.2",
     "flowchart.ts": "^1.0.1",
     "hls.js": "^1.4.12",

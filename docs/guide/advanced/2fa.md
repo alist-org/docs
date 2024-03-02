@@ -47,3 +47,9 @@ two、
 > - 3. **docker**: docker directly input **docker exec -it alist ./alist cancel2fa**
 >
 >  **After the above input is deleted, it is found that there is still a restart~**
+
+three、(>3.30.0)
+
+> Open the manage user page, you can see the option of the `Cancel 2FA`. After the cancellation, if you still have 2FA, you can choose to restart the Alist
+>
+> - You need to use the new version, if there is no option of the `Cancel 2Fa`，Explain that you need to update the version

@@ -47,7 +47,13 @@ star: true
     "name": "",
     "db_file": "data\\data.db",
     "table_prefix": "x_",
-    "ssl_mode": ""
+    "ssl_mode": "",
+    "dsn": ""
+  },
+  "meilisearch": {
+    "host": "http://localhost:7700",
+    "api_key": "",
+    "index_prefix": ""
   },
   "scheme": {
     "address": "0.0.0.0",
@@ -61,11 +67,12 @@ star: true
   },
   "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
+  "dist_dir": "",
   "log": {
     "enable": true,
     "name": "data\\log\\log.log",
-    "max_size": 10,
-    "max_backups": 5,
+    "max_size": 50,
+    "max_backups": 30,
     "max_age": 28,
     "compress": false
   },
@@ -100,7 +107,8 @@ star: true
     "allow_headers": [
       "*"
     ]
-  }    
+  }
+}
 ```
 
 ## 字段说明
@@ -194,7 +202,8 @@ CDN 地址，如果要使用 CDN，可以设置该字段，`$version` 会被替�
     "name": "",         //数据库库名
     "db_file": "data\\data.db",     //数据库位置,sqlite3使用的
     "table_prefix": "x_",           //数据库表名前缀
-    "ssl_mode": ""      //来控制SSL握手时的加密选项,参数自行搜索，或者查看下方来自ChatGPT的回答
+    "ssl_mode": "",     //来控制SSL握手时的加密选项,参数自行搜索，或者查看下方来自ChatGPT的回答
+    "dsn": ""           // https://github.com/alist-org/alist/pull/6031
   },
 ```
 
@@ -247,6 +256,24 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 
 
+### **meilisearch**
+
+```json
+  "meilisearch": {
+    "host": "http://localhost:7700",    //使用`meilisearch`的链接，默认使用的是本机
+    "api_key": "",                      //请查阅`meilisearch`文档
+    "index_prefix": ""                  //请查阅`meilisearch`文档
+  },
+```
+
+文档链接：https://www.meilisearch.com/docs
+
+
+
+<br/>
+
+
+
 ### **scheme**
 
 协议配置，如果要使用 HTTPS，可以设置该字段。
@@ -285,6 +312,23 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 ### **bleve_dir**
 
 你使用 **`bleve`** 索引时,数据存放的位置
+
+<br/>
+
+
+
+### **dist_dir**
+
+如果设置此项，优先使用本前端文件进行渲染，支持使用其它前端文件，后端继续使用原版应用
+
+- https://github.com/alist-org/alist/issues/5531
+- https://github.com/alist-org/alist/discussions/6110
+
+将前端文件(dist)上传到应用的`data`文件夹下，然后按照下方这样填写，缺点就是如果每次更新都得需要手动更新一次
+
+```json
+  "dist_dir": "data\\dist",
+```
 
 <br/>
 
