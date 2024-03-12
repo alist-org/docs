@@ -72,7 +72,7 @@ Can't fill in? [Click to view Fill in Example](#webdav-fill-in-example)
 5. **Mac**
    - [VidHub](https://okaapps.com/product/1659622164), IINA, [Mountain Duck](https://mountainduck.io/), infuse, [netdrive](https://www.netdrive.net/), [rclone](https://rclone.org/)
 6. **Linux**
-   - davfs2, [rclone](https://rclone.org/)
+   - davfs2, [rclone](https://rclone.org/), [cadaver](https://notroj.github.io/cadaver), Dolphin, Nautilus, Thunar.
 7. **Notes**
    - [Joplin ](https://joplinapp.org/)
 
