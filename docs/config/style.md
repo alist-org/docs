@@ -47,7 +47,7 @@ The home icon is displayed in the left of the navigation bar. The default is `ðŸ
 ### **Home container**
 
 - Max 980px: the main width will set to `min(99%, 980px)`
-- Hope container: sets the max-width of the content to match the min-width of the current breakpoint, refer to https://hope-ui.com/docs/layout/container .
+- Hope container: sets the max-width of the content to match the min-width of the current breakpoint, refer to https://hope-ui.com/docs/layout/container
 
 
 

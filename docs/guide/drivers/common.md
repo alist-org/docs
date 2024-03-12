@@ -46,11 +46,25 @@ Cache time of directory structure.
 
 Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [site_url](../../config/configuration.md#site_url) so that alist can works fine.
 
+-----
+
+- Web proxy Strategies ：It is a strategy when using the webpage. The default is a local agent. If you fill in the proxy URL and enable the web agent to use the proxy URL
+- Webdav policy Strategies：It is an option to use the webdav function
+  - If there are 302 options default to 302, if there is no 302 option default to the local agent, if you want to use the agent URL, please fill in and manually switch to the proxy URL strategy
+
+The two are different configurations
+
 ### **Webdav policy**
 
 - 302 redirect: redirect to the real link
 - use proxy URL: redirect to proxy URL
 - native proxy: return data directly through local transit(best compatibility)
+
+-----
+
+- 302 redirect：Although it does not consume traffic, it is not recommended to share and use it.
+- use proxy URL：It will consume the traffic of the agent URL
+- native proxy：The traffic of the construction of Alist device will consume
 
 ### **Description of three modes**
 ```flow
