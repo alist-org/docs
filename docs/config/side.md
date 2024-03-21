@@ -40,6 +40,12 @@ After the expand
 
 Let me briefly introduce it, probably, the functions that are often used
 
+::: tip
+
+If you didn't find this feature, please update the version
+
+:::
+
 1. **Refresh**：The refresh we mentioned is not to use F5 to refresh the webpage,  **but use** <span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" tips="refresh" height="1em" width="1em" style="overflow: visible;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5.463 4.433A9.961 9.961 0 0112 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 006.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0112 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0013.54 5.772l.997 1.795z"></path></svg></span> **to refresh**, so that the files that just uploaded to the network disk can be refreshed out
 
    
@@ -112,35 +118,39 @@ Let me briefly introduce it, probably, the functions that are often used
       
 
    6. **Grid item size** ：Adjust the picture size in the Grid item mode
+
    
-   
-   
+
    7. **List item filename overflow**：When the text is too long, the three state selection
-   
+
       - **Ellipsis**（default）
-   
+
       - **Scrollable** (PC users use the `shift`+` mousewheel `on the file, if it is a mobile phone user sliding the file left and right)
-   
+
       - **Multi-line**
+
    
-   
-   
+
    8. **Open item on Checkbox**：
-   
+
       - Direct (Open the file/enter the folder)
-   
+
       - With `Ctrl or Command` hold
-   
+
       - With `Alt or Option` hold
         - `Ctrl`、`Alt` is Windows
         - `command`、`Option` is Mac
       - If the button option does not take effect, please check whether the browser plugin conflict :point_right: [Case](https://github.com/alist-org/alist-web/pull/154#issuecomment-1972681627)
-   
+
       <i class="fa-solid fa-lightbulb fa-bounce" style="color: green;"></i> Tips：You can press the `Shift` key to select one, and then select one end. You can quickly select all the files in the middle
-   
-   
-   
-   9.  **Language package selection** and **night mode and daytime mode switch**
+
+   9. **Select item with mouse while checkbox closed**
+      - The default disable: You can click the mouse to open the file
+      - D double -click: You can use the mouse box to select multiple files, or you can use the button `ctrl` to select multiple files
+
+   ![](/img/config/side/side_10.png)
+
+   10. **Language package selection** and **night mode and daytime mode switch**
 
    
 
