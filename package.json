@@ -13,7 +13,7 @@
     "dev": "pnpm docs:dev"
   },
   "devDependencies": {
-    "@types/node": "^18.18.10",
+    "@types/node": "^20.0.0",
     "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/plugin-docsearch": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
