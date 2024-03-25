@@ -20,7 +20,7 @@ star: true
 # OneDrive
 
 :::tip
-如果你的账号不支持 API，（比如学校账号没有验证管理员，或者管理员禁用了 API），那么你也可以通过 WebDAV 挂载。 有关详细信息，请参阅 [WevDAV 页面](webdav.md)
+如果你的账号不支持 API，（比如学校账号没有验证管理员，或者管理员禁用了 API），那么你也可以通过 WebDAV 挂载。 有关详细信息，请参阅 [WebDAV 页面](webdav.md)
 :::
 
 首先打开 https://alist.nn.ci/tool/onedrive/request
