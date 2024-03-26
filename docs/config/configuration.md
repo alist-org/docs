@@ -107,6 +107,11 @@ After modifying the configuration file, restart AList for changes to take effect
     "allow_headers": [
       "*"
     ]
+  },
+  "s3": {
+    "enable": false,
+    "port": 5246,
+    "ssl": false
   }
 }
 ```
@@ -443,3 +448,23 @@ Configuration for Cross-Origin Resource Sharing (CORS).
 - **allow_headers**: Allowed request headers.
 
 Use it to understand it by yourself, and then configure it. If you do n’t know, please do n’t modify it at will. Use the default configuration.
+
+<br/>
+
+
+
+### **S3**
+
+```json
+  "s3": {
+    "enable": false,
+    "port": 5246,
+    "ssl": false
+  }
+```
+
+- `enable`：Whether the S3 function is enabled, the default is not enabled
+- `port`：port
+- `SSL`：Enable the HTTPS certificate, not enabled by default
+
+Function introduction: [Click to view](../guide/advanced/s3.md)

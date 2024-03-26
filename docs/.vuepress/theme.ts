@@ -130,7 +130,7 @@ export default hopeTheme(
         // card: true,
       },
       components: {
-        components: ["ArtPlayer", "BiliBili", "Badge","VPCard"],
+        components: ["ArtPlayer", "BiliBili", "Badge","VPCard","Replit"],
         // 临时弹窗
         rootComponents: {
           notice: [

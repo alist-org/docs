@@ -210,7 +210,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 
 ## **other instructions**
 
-##### one、
+##### One、
 
 > AList only obtained cloud disk users (**name avatar¹**), (**access file permission²**) and (**write file permission³**), and did not obtain mobile phone number permission
 >
@@ -221,7 +221,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 >
 >    - If you don't use it, you can manually cancel the permission at any time
 
-##### two、
+##### Two、
 
 > By default, the built-in player of Aliyun Disk is used - **Aliyun Video Previewer**
 >
@@ -232,7 +232,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 > - Real-time transcoding takes some time.
 > - The picture quality are: LD|SD|HD|FHD|QHD
 
-##### three、
+##### Three、
 
 > Q: Why can’t Alibaba Cloud Disk Open see files of the Office Family Bucket type?
 >
@@ -246,7 +246,7 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 >
 > <img src="/img/drivers/aliyun/error.png" style="zoom:70%;" />
 
-##### five、
+##### Five、
 
 > Q: How to load subtitles?
 >
@@ -254,7 +254,10 @@ If the server you deploy AList on is Aliyun ECS for Beijing area, turn on this s
 >
 > - Currently only supports transcoding eng, jpn, chi three languages, other languages will be lost
 
+##### Six、
 
+> Q: View video prompts in alipan `In the transcoding, please try again later` and linger prompts in AList: `failed link: failed get link: UserNotAllowedAccessResource:user not allowed access resource for violation`
+> A: The representative account has been frozen (in the past, it was unable to log in directly), Please look at the red content on the top
 
 ### **The default download method used**
 

@@ -260,6 +260,14 @@ typeof fetch !== "undefined" && getLimit()
 >
 >- 目前只支持转码 eng、jpn、chi 三种语言，其他语言会丢失
 
+##### 六、
+
+>Q：在阿里云盘查看视频提示 `转码中，请稍后重试` 和 在AList挂载提示：`failed link: failed get link: UserNotAllowedAccessResource:user not allowed access resource for violation`
+>
+>A：代表帐号已经被冻结（以前都是直接无法登录），具体情况请查看顶部的红色内容注意事项
+
+
+
 ## **默认使用的下载方式**
 
 ```mermaid
