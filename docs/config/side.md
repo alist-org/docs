@@ -135,6 +135,8 @@ If you didn't find this feature, please update the version
 
       - Direct (Open the file/enter the folder)
 
+      - Disable while checked
+
       - With `Ctrl or Command` hold
 
       - With `Alt or Option` hold

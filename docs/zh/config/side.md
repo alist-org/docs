@@ -133,13 +133,15 @@ star: true
    
       - 直接 (打开文件/进入文件夹)
    
-      - 使用 `Ctrl 或者 Command` 打开
+      - 选中时禁用
    
+      - 使用 `Ctrl 或者 Command` 打开
+      
       - 使用 `Alt 或者 Option` 打开
         - `Ctrl`、`Alt `是 Windows
         - `command`、`Option` 是 Mac
       - 如果按键选项未生效，请检查浏览器插件是否冲突 :point_right: [案例](https://github.com/alist-org/alist-web/pull/154#issuecomment-1972681627)
-   
+      
       <i class="fa-solid fa-lightbulb fa-bounce" style="color: green;"></i> Tips：可以按着`shift`键选择一个开头，再选择一个结尾可以快速选择中间的全部
    
    
