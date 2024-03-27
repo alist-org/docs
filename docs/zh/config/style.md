@@ -47,7 +47,7 @@ favicon 显示在浏览器选项卡中。 默认为 AList Logo
 ## **Hope容器**
 
 - Max 980px：主宽度将设置为 `min(99%, 980px)`
-- Hope容器：设置内容的最大宽度以匹配当前断点的最小宽度，参考 https://hope-ui.com/docs/layout/container。
+- Hope容器：设置内容的最大宽度以匹配当前断点的最小宽度，参考 https://hope-ui.com/docs/layout/container
 
 
 

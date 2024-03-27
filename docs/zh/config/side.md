@@ -40,6 +40,12 @@ star: true
 
 下面简单介绍一下大概说明吧，一些常见功能
 
+::: tip
+
+如果你没有找到此功能，请更新版本
+
+:::
+
 1. **刷新**：我们常说的刷新不是使用F5刷新网页，**而是使用** <span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" tips="refresh" height="1em" width="1em" style="overflow: visible;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5.463 4.433A9.961 9.961 0 0112 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 006.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0112 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0013.54 5.772l.997 1.795z"></path></svg></span> **进行刷新**，这样你刚刚上传到网盘的文件可以刷新出来
 
    
@@ -50,7 +56,7 @@ star: true
 
 3. **聚合移动**：将当前目录內所有文件以及子文件夹內所有文件都移动到指定文件夹內（不会移动子文件夹，是将所有的文件和子文件夹內的文件移动到一个文件夹內）
 
-   - :warning: <b style="color:red;">危险操作，请谨慎使用</b>>
+   - :warning: <b style="color:red;">危险操作，请谨慎使用</b>
 
    
 
@@ -127,18 +133,26 @@ star: true
    
       - 直接 (打开文件/进入文件夹)
    
-      - 使用 `Ctrl 或者 Command` 打开
+      - 选中时禁用
    
+      - 使用 `Ctrl 或者 Command` 打开
+      
       - 使用 `Alt 或者 Option` 打开
         - `Ctrl`、`Alt `是 Windows
         - `command`、`Option` 是 Mac
       - 如果按键选项未生效，请检查浏览器插件是否冲突 :point_right: [案例](https://github.com/alist-org/alist-web/pull/154#issuecomment-1972681627)
-   
+      
       <i class="fa-solid fa-lightbulb fa-bounce" style="color: green;"></i> Tips：可以按着`shift`键选择一个开头，再选择一个结尾可以快速选择中间的全部
    
    
    
-   9. **语言包选择** 和 **夜间白天切换**
+   9. **在关闭复选框时选择鼠标的项目**
+      - 默认为禁用：可以单击鼠标打开文件
+      - 用双击打开：可以使用鼠标框选多个文件，也可以按着`Ctrl`选择多个文件
+   
+   ![](/img/config/side/side_10.png)
+   
+   10. **语言包选择** 和 **夜间白天切换**
    
    
    

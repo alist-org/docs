@@ -34,6 +34,7 @@ category:
 - [x] FTP / SFTP
 - [x] [PikPak / 分享](https://www.mypikpak.com/)
 - [x] [S3[对象存储]](../guide/drivers/s3.md)
+- [x] [多吉云](../guide/drivers/s3.md#添加对象存储示例及官方文档)
 - [x] [又拍云对象存储](https://www.upyun.com/products/file-storage)
 - [x] WebDAV(支持无API的OneDrive/SharePoint)
 - [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
