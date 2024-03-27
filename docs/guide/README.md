@@ -36,6 +36,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] SFTP
 - [x] [PikPak / share](https://www.mypikpak.com/)
 - [x] [S3](../guide/drivers/s3.md)
+- [x] [Doge](../guide/drivers/s3.md#add-object-storage-examples-and-official-documents)
 - [x] [UPYUN Storage Service](https://www.upyun.com/products/file-storage)
 - [x] WebDAV
 - [x] Teambition（[China](https://www.teambition.com/)，[International](https://us.teambition.com/)）
