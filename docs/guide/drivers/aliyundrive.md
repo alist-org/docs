@@ -56,7 +56,7 @@ const getQr = async ()=>{
   const resp = await fetch(`${api()}/alist/ali/qr`);
   const res = await resp.json();
   console.log(res)
-  btnText.value='Use AliyunDrive APP To Scan Then Click'
+  btnText.value='Use AliyunDrive APP To Scan Then Click this Button again'
   state.value = 2;
   ckData.value = JSON.stringify({
     ck: res.content.data.ck,
@@ -97,9 +97,10 @@ const onClick = async ()=>{
   }
 }
 </script>
-<button :disabled="state === 3 || state === 1" 
-  style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;"
-  @click="onClick">
+
+<button :disabled="state === 3 || state === 1"
+style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;"
+@click="onClick">
 {{ btnText }}
 </button>
 
@@ -111,9 +112,10 @@ const onClick = async ()=>{
 
 :::info Token: {{ token }}
 :::
+
 </div>
 
-*API is hosted on replit.com*
+_API is hosted on replit.com_
 
 ### **Root folder file_id**
 
@@ -125,26 +127,17 @@ Open the official website of Aliyundrive and click the string behind the url whe
 
 Check the hash when uploading. If there is one in the cloud, directly generate the file without consuming traffic
 
-
 ### **Internal upload**
 
 If the server you deploy Alist on is Aliyun ECS for Beijing area, turn on this switch to improve the upload speed. Do not turn on this switch for servers that do not meet the requirements, otherwise you will have problems with inability to upload.
 
-
-
 <br/>
-
-
 
 ## **Aliyundrive Share Url**
 
 It is no longer available, and the shared storage method will no longer be developed and maintained in the future. At the same time, the token obtained by [**AliyundriveOpen**](./aliyundrive_open.md) cannot be used in the Alibaba Cloud Disk shared mount storage.
 
-
-
 <br/>
-
-
 
 ### **The default download method used**
 
