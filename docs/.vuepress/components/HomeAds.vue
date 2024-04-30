@@ -14,7 +14,7 @@ const vidHubEn = {
     "Support for iPhone, iPad, Mac, and Apple TV.",
     "Supports various cloud storage providers such as Aliyun, Baidu Cloud, OneDrive, Google Drive, Dropbox, Alist, mounted with different cloud drives like Quark Cloud, pikpak, 115, and more.",
   ],
-  url: "https://okaapps.com/product/1659622164?ref=alist",
+  url: "https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8",
   tag: "Free",
 };
 
