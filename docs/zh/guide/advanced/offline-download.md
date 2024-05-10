@@ -35,7 +35,7 @@ star: true
 
 - **/opt/alist/data/temp/aria2**
 
-- **/opt/alist/data/temp/qbittorrent**
+- **/opt/alist/data/temp/qBittorrent**
 
 :::
 
