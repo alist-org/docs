@@ -52,6 +52,12 @@ If you use the bt.cn, be sure to delete the following default configuration
 :::
 
 
+Disable Nginx caching in `/www/server/nginx/conf/proxy.conf` or the corresponding website configuration file. Otherwise, with the default configuration, when accessing large files, Nginx will attempt to cache the remote file locally first, resulting in playback failures.
+```conf
+proxy_cache cache_one; # Remove this line
+proxy_max_temp_file_size 0; # Add this line
+```
+
 ### **Apache**
 Add the anti-generation configuration item ProxyPass under the VirtualHost field, such as:
 ```xml
