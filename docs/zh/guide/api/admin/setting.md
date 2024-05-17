@@ -32,7 +32,7 @@ GET /api/admin/setting/list
 | group         | query  | string | 否   | 1-站点；2-样式；3-预览；4-全局；7-单点登录 |
 | Authorization | header | string | 否   | none                                       |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -134,7 +134,7 @@ GET /api/admin/setting/get
 | key           | query  | string | 否   | none |
 | Authorization | header | string | 否   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -267,7 +267,7 @@ POST /api/admin/setting/save
 | Authorization | header | string        | 是   |        | none |
 | body          | body   | array[object] | 否   | 数组   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -308,7 +308,7 @@ POST /api/admin/setting/delete
 | key           | query  | string | 是   |        | none |
 | Authorization | header | string | 是   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 200 Response
 
@@ -334,7 +334,7 @@ POST /api/admin/setting/reset_token
 | ------------- | ------ | ------ | ---- | ------ | ---- |
 | Authorization | header | string | 否   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -384,7 +384,7 @@ POST /api/admin/setting/set_aria2
 | » uri         | body   | string | 是   | aria2地址 | none |
 | » secret      | body   | string | 是   | aria2密钥 | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -434,7 +434,7 @@ POST /api/admin/setting/set_qbit
 | » url         | body   | string | 是   | qBittorrent链接 | none |
 | » seedtime    | body   | string | 是   | 做种时间        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 

@@ -22,7 +22,7 @@ star: true
 
 POST /api/auth/login
 
-获取某个用户的临时JWt token
+获取某个用户的临时JWt token，有效期默认48小时
 
 > Body 请求参数
 
@@ -40,9 +40,9 @@ POST /api/auth/login
 | body       | body | object | 否   |            | none       |
 | » username | body | string | 是   | 用户名     | 用户名     |
 | » password | body | string | 是   | 密码       | 密码       |
-| » otp_code | body | string | 是   | 二步验证码 | 二步验证码 |
+| » otp_code | body | string | 否   | 二步验证码 | 二步验证码 |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -77,7 +77,7 @@ POST /api/auth/login
 
 POST /api/auth/login/hash
 
-获取某个用户的临时JWt token，传入的密码需要在添加-https://github.com/alist-org/alist后缀后再进行sha256
+获取某个用户的临时JWt token，传入的密码需要在添加`-https://github.com/alist-org/alist`后缀后再进行sha256
 
 > Body 请求参数
 
@@ -95,9 +95,9 @@ POST /api/auth/login/hash
 | body       | body | object | 否   |            | none                                                                    |
 | » username | body | string | 是   | 用户名     | 用户名                                                                  |
 | » password | body | string | 是   | 密码       | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
-| » otp_code | body | string | 是   | 二步验证码 | 二步验证码                                                              |
+| » otp_code | body | string | 否   | 二步验证码 | 二步验证码                                                              |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -138,7 +138,7 @@ POST /api/auth/2fa/generate
 | ------------- | ------ | ------ | ---- | ------ | ---- |
 | Authorization | header | string | 是   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -193,7 +193,7 @@ POST /api/auth/2fa/verify
 | » code        | body   | string | 是   | 2FA验证码 | none |
 | » secret      | body   | string | 是   | 2FA密钥   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -231,7 +231,7 @@ GET /api/me
 | ------------- | ------ | ------ | ---- | ------ | ---- |
 | Authorization | header | string | 否   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -242,7 +242,6 @@ GET /api/me
   "data": {
     "id": 1,
     "username": "admin",
-    "Salt": "EV1R",
     "password": "",
     "base_path": "/",
     "role": 2,
@@ -271,7 +270,6 @@ GET /api/me
 | » data        | object  | true | none | 数据             | none |
 | »» id         | integer | true | none | id               | none |
 | »» username   | string  | true | none | 用户名           | none |
-| »» Salt       | string  | true | none | salt             | none |
 | »» password   | string  | true | none | 密码             | none |
 | »» base_path  | string  | true | none | 根目录           | none |
 | »» role       | integer | true | none | 角色             | none |
