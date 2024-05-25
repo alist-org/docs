@@ -186,6 +186,13 @@ Note: `Alist Crypt` used `filename_encoding = base64` in default. If you want to
 
 Since Alist does not consider any case-insensitive internally, you may encounter problems when remote storage is case-insensitive. e.g.: use alist local driver on Windows, then use Crypt on it.
 
+<br/>
+
+
+
+## **Precautions**
+
+When starting alist, I found that the Crypt  prompts errors because Crypt can not find the relevant path when starting, You can fill in the Crypt [order](common.md#order) to make Crypt start slowly
 
 <br/>
 

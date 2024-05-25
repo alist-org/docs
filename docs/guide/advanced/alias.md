@@ -175,3 +175,68 @@ Test other:/test4/video/tv
 This is because Windows is case-insensitive, video and Video will be considered as the same folder, you will not have this problem if you switch to Linux or Mac
 
 > Aliases are not supported for load balancing for the time being (if it is supported later, the document will be modified here, if it is not modified, it is not yet supported)
+
+<br/>
+
+
+
+### **Proxy Range**
+
+You need to enable `Web Proxy` or` Webdav Native Proxy` to take effect
+
+- Currently only applicable to：`alias`、`139Yun`、`AList V3`
+  - Function Description：**https://github.com/alist-org/alist/pull/6496#issue-2309839607**
+
+<br/>
+
+
+
+### **Protect same name**
+
+^>v3.34.0^Now alias supports the two operations of `Delete` and` Rename`，==By default, use==
+
+File names like file names may appear in the alias. For folders with the same folder name, you cannot `Delete` or `Rename` when the `Protect same name` is opened.
+
+-----
+
+::: details Protect same name Use for example
+
+We fill in the two folders of `a` and` b` to the alias options
+
+```
+a/          b/                  alias
+a/1.png     b/1.png             alias/1.png
+a/2.mp3     b/2.mp3             alias/2.mp3
+a/3.mp4     b/3.mp4     ---->   alias/3.mp4
+a/4.mkv     b/4.mkv     ---->   alias/4.mkv
+a/5.bin     b/6.css             alias/5.bin ---> According to the rule, aliases in directories listed earlier take precedence, and files with different names in separate folders are given priority.
+                                alias/6.css
+```
+
+If we attempt to Rename or Delete a file named `1.png` while the `Protect same name` feature is enabled, the following message will be displayed in the top right corner:
+
+<div style="color: red; display: flex; justify-content: center; align-items: center; border: 3px solid red;">
+    <ul style="list-style-type: none;">
+        <li><i class="fa-solid fa-circle-exclamation">&nbsp;</i><b>same-name files cannot be Rename</b></li><br/>
+        <li><i class="fa-solid fa-circle-exclamation">&nbsp;</i><b>same-name files cannot be Delete</b></li>
+    </ul>
+</div>
+
+If we turn off the options of `Protect Same Name`, change to` a/1.png` to `a/11.png` will become the following display
+
+- 因为a/b两个文件夹都有一样的文件，`重命名`和`下载`一样优先下载填写时候靠前的文件夹，同理重名修改也是先修改靠前文件夹中的文件 ( Can't translate the meaning that can be understood)
+
+```
+a/          b/                  alias
+a/1.png     b/1.png             alias/11.png
+a/2.mp3     b/2.mp3             alias/2.mp3
+a/3.mp4     b/3.mp4     ---->   alias/3.mp4
+a/4.mkv     b/4.mkv     ---->   alias/4.mkv
+a/5.bin     b/6.css             alias/5.bin
+                                alias/1.png  ---> Because the b folder is in the rear, the file list display is relatively backward
+                                alias/6.css
+```
+
+If you really do n’t understand, you can test it yourself and then install the production environment by yourself
+
+:::

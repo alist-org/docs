@@ -29,20 +29,37 @@ star: true
 
 密码
 
+<br/>
+
+
+
 ### **根文件夹ID**
 
 可以通过 https://mypikpak.com/ 获取，默认为 `root`。
 
 ![image.png](/img/drivers/pikpak.png)
 
+<br/>
 
 
-## **PikPak分享挂载（v3.12.0修复）**
+
+### **禁用媒体链接**
+
+- **https://github.com/alist-org/alist/issues/4735**
+
+<br/><br/>
+
+
+
+## **PikPak分享挂载**
 
 ::: warning
 ~~截止 **2023年2月4日** 挂载分享已被官方河蟹，目前只可以看前4分钟，后续还能不能用等待即可~~ 
 
-**v3.12.0修复,这次能活多久未知**
+~~**v3.12.0修复,这次能活多久未知（20240522）**~~
+
+已知目前pikpak分享只能看40%-50% **（v3.35.0）**
+
 :::
 
 
@@ -53,11 +70,18 @@ star: true
 
 ![pik](/img/drivers/pik/pik1.png)
 
-## **批量添加PikPak分享挂载**
+<br/>
+
+
+
+### **批量添加PikPak分享挂载**
 
 使用的软件：**https://github.com/yzbtdiy/alist_batch**
 
 <BiliBili bvid="BV1Ps4y1U7Zu" ratio="16:9" low-quality no-danmaku />
+
+<br/>
+
 
 
 ## **注意事项**
@@ -71,6 +95,10 @@ star: true
 **Q**：添加挂载时提示：**failed get objs: failed to list objs: Sorry, sharing is not available in the current region**
 
 **A**：因为在国内^PikPak^是禁止访问的，给`AList`使用代理即可，如何让`AList`使用代理[**参考方案之一,此方法仅限于Windows搭建**](https://anwen-anyi.github.io/index/07-wenti.html#_41-alist%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-%E5%90%83%E5%88%B0-%E4%BB%A3%E7%90%86-proxy)
+
+<br/>
+
+
 
 ### **默认使用的下载方式**
 

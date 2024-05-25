@@ -92,6 +92,8 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
   - 但是对方根目录 `/`，没设置密码，但是其他的个别文件夹 比如 阿里,百度,123 这几个设置了密码，那么你可以填写这些的不过只能写一个密码.
     - 如果上面提到的三个文件夹密码设置的不一样那么你填写的一个只能进其中是这个密码的文件夹，不是这个密码的就进不去了，应该都明白了.
 
+<br/>
+
 
 
 ## **用户名**
@@ -101,8 +103,6 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 ## **密码**
 
 你要挂载的`AList`用户名对应的密码
-
-
 
 :::tip 温馨提示
 
@@ -127,6 +127,17 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 ### **令牌**
 
 可以不用写，在填写`用户名&密码`保存后会自动填充
+
+<br/>
+
+
+
+### **代理range**
+
+需要先启用 `Web代理` 或者 `Webdav本地代理` 才会生效
+
+- 目前仅适用于：`别名`、`中国移动云盘`、`AList V3`
+  - 具体功能说明：**https://github.com/alist-org/alist/pull/6496#issue-2309839607**
 
 
 
