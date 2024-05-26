@@ -39,7 +39,7 @@ POST /api/fs/mkdir
 | body          | body   | object | 否   |            | none  |
 | » path        | body   | string | 是   | 新目录路径 | none  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -90,7 +90,7 @@ POST /api/fs/rename
 | » name        | body   | string | 是   | 目标文件名，不支持'/' | none  |
 | » path        | body   | string | 是   | 源文件名              | none  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -141,7 +141,7 @@ file: []
 | body           | body   | object         | 否   |        | none                       |
 | » file         | body   | string(binary) | 是   |        | 文件                       |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -213,7 +213,7 @@ POST /api/fs/list
 | » per_page    | body   | integer | 否   | 每页数目     | none |
 | » refresh     | body   | boolean | 否   | 是否强制刷新 | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -224,19 +224,23 @@ POST /api/fs/list
   "data": {
     "content": [
       {
-        "name": "m",
-        "size": 0,
-        "is_dir": true,
-        "modified": "2023-07-19T09:48:13.695585868+08:00",
+        "name": "Alist V3.md",
+        "size": 1592,
+        "is_dir": false,
+        "modified": "2024-05-17T13:47:55.4174917+08:00",
+        "created": "2024-05-17T13:47:47.5725906+08:00",
         "sign": "",
         "thumb": "",
-        "type": 1
+        "type": 4,
+        "hashinfo": "null",
+        "hash_info": null
       }
     ],
     "total": 1,
     "readme": "",
+    "header": "",
     "write": true,
-    "provider": "unknown"
+    "provider": "Local"
   }
 }
 ```
@@ -251,23 +255,27 @@ POST /api/fs/list
 
 状态码 **200**
 
-| 名称         | 类型     | 必选 | 约束 | 中文名       | 说明 |
-| ------------ | -------- | ---- | ---- | ------------ | ---- |
-| » code       | integer  | true | none | 状态码       | none |
-| » message    | string   | true | none | 信息         | none |
-| » data       | object   | true | none |              | none |
-| »» content   | [object] | true | none | 内容         | none |
-| »»» name     | string   | true | none | 文件名       | none |
-| »»» size     | integer  | true | none | 大小         | none |
-| »»» is_dir   | boolean  | true | none | 是否是文件夹 | none |
-| »»» modified | string   | true | none | 修改时间     | none |
-| »»» sign     | string   | true | none | 签名         | none |
-| »»» thumb    | string   | true | none | 缩略图       | none |
-| »»» type     | integer  | true | none | 类型         | none |
-| »» total     | integer  | true | none | 总数         | none |
-| »» readme    | string   | true | none | 说明         | none |
-| »» write     | boolean  | true | none | 是否可写入   | none |
-| »» provider  | string   | true | none |              | none |
+| 名称          | 类型     | 必选  | 约束 | 中文名       | 说明 |
+| ------------- | -------- | ----- | ---- | ------------ | ---- |
+| » code        | integer  | true  | none | 状态码       | none |
+| » message     | string   | true  | none | 信息         | none |
+| » data        | object   | true  | none |              | none |
+| »» content    | [object] | true  | none | 内容         | none |
+| »»» name      | string   | true  | none | 文件名       | none |
+| »»» size      | integer  | true  | none | 大小         | none |
+| »»» is_dir    | boolean  | true  | none | 是否是文件夹 | none |
+| »»» modified  | string   | true  | none | 修改时间     | none |
+| »»» sign      | string   | true  | none | 签名         | none |
+| »»» thumb     | string   | true  | none | 缩略图       | none |
+| »»» type      | integer  | true  | none | 类型         | none |
+| »»» created   | string   | false | none | 创建时间     | none |
+| »»» hashinfo  | string   | false | none |              | none |
+| »»» hash_info | null     | false | none |              | none |
+| »» total      | integer  | true  | none | 总数         | none |
+| »» readme     | string   | true  | none | 说明         | none |
+| »» write      | boolean  | true  | none | 是否可写入   | none |
+| »» provider   | string   | true  | none |              | none |
+| »» header     | string   | true  | none |              | none |
 
 ## POST 获取某个文件/目录信息
 
@@ -287,14 +295,17 @@ POST /api/fs/get
 
 ### 请求参数
 
-| 名称          | 位置   | 类型   | 必选 | 中文名 | 说明 |
-| ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是   |        | none |
-| body          | body   | object | 否   |        | none |
-| » path        | body   | string | 否   | 路径   | none |
-| » password    | body   | string | 否   | 密码   | none |
+| 名称          | 位置   | 类型    | 必选 | 中文名    | 说明 |
+| ------------- | ------ | ------- | ---- | --------- | ---- |
+| Authorization | header | string  | 是   |           | none |
+| body          | body   | object  | 否   |           | none |
+| » path        | body   | string  | 是   | 路径      | none |
+| » password    | body   | string  | 是   | 密码      | none |
+| » page        | body   | integer | 否   |           | none |
+| » per_page    | body   | integer | 否   |           | none |
+| » refresh     | body   | boolean | 否   | 强制 刷新 | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -303,16 +314,20 @@ POST /api/fs/get
   "code": 200,
   "message": "success",
   "data": {
-    "name": "root",
-    "size": 0,
-    "is_dir": true,
-    "modified": "0001-01-01T00:00:00Z",
+    "name": "Alist V3.md",
+    "size": 2618,
+    "is_dir": false,
+    "modified": "2024-05-17T16:05:36.4651534+08:00",
+    "created": "2024-05-17T16:05:29.2001008+08:00",
     "sign": "",
     "thumb": "",
-    "type": 0,
-    "raw_url": "",
+    "type": 4,
+    "hashinfo": "null",
+    "hash_info": null,
+    "raw_url": "http://127.0.0.1:5244/p/local/Alist%20V3.md",
     "readme": "",
-    "provider": "unknown",
+    "header": "",
+    "provider": "Local",
     "related": null
   }
 }
@@ -328,22 +343,26 @@ POST /api/fs/get
 
 状态码 **200**
 
-| 名称        | 类型    | 必选 | 约束 | 中文名       | 说明 |
-| ----------- | ------- | ---- | ---- | ------------ | ---- |
-| » code      | integer | true | none | 状态码       | none |
-| » message   | string  | true | none | 信息         | none |
-| » data      | object  | true | none |              | none |
-| »» name     | string  | true | none | 文件名       | none |
-| »» size     | integer | true | none | 大小         | none |
-| »» is_dir   | boolean | true | none | 是否是文件夹 | none |
-| »» modified | string  | true | none | 修改时间     | none |
-| »» sign     | string  | true | none | 签名         | none |
-| »» thumb    | string  | true | none | 缩略图       | none |
-| »» type     | integer | true | none | 类型         | none |
-| »» raw_url  | string  | true | none | 原始url      | none |
-| »» readme   | string  | true | none | 说明         | none |
-| »» provider | string  | true | none |              | none |
-| »» related  | null    | true | none |              | none |
+| 名称         | 类型    | 必选 | 约束 | 中文名       | 说明 |
+| ------------ | ------- | ---- | ---- | ------------ | ---- |
+| » code       | integer | true | none | 状态码       | none |
+| » message    | string  | true | none | 信息         | none |
+| » data       | object  | true | none |              | none |
+| »» name      | string  | true | none | 文件名       | none |
+| »» size      | integer | true | none | 大小         | none |
+| »» is_dir    | boolean | true | none | 是否是文件夹 | none |
+| »» modified  | string  | true | none | 修改时间     | none |
+| »» sign      | string  | true | none | 签名         | none |
+| »» thumb     | string  | true | none | 缩略图       | none |
+| »» type      | integer | true | none | 类型         | none |
+| »» raw_url   | string  | true | none | 原始url      | none |
+| »» readme    | string  | true | none | 说明         | none |
+| »» provider  | string  | true | none |              | none |
+| »» related   | null    | true | none |              | none |
+| »» created   | string  | true | none | 创建时间     | none |
+| »» hashinfo  | string  | true | none |              | none |
+| »» hash_info | null    | true | none |              | none |
+| »» header    | string  | true | none |              | none |
 
 ## POST 搜索文件或文件夹
 
@@ -375,7 +394,7 @@ POST /api/fs/search
 | » per_page    | body   | integer | 是   | 每页数目 | none                   |
 | » password    | body   | string  | 是   | 密码     | none                   |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -431,9 +450,7 @@ POST /api/fs/dirs
 {
   "path": "/t",
   "password": "",
-  "page": 1,
-  "per_page": 0,
-  "refresh": false
+  "force_root": false
 }
 ```
 
@@ -447,7 +464,7 @@ POST /api/fs/dirs
 | » password    | body   | string  | 否   | 密码   | none |
 | » force_root  | body   | boolean | 否   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -479,7 +496,7 @@ POST /api/fs/dirs
 | » code      | integer  | true | none | 状态码   | none |
 | » message   | string   | true | none | 信息     | none |
 | » data      | [object] | true | none |          | none |
-| »» name     | string   | true | none | 文件名   | none |
+| »» name     | string   | true | none | 文件夹名 | none |
 | »» modified | string   | true | none | 修改时间 | none |
 
 ## POST 批量重命名
@@ -512,7 +529,7 @@ POST /api/fs/batch_rename
 | »» src_name      | body   | string   | 否   | 原文件名 | none  |
 | »» new_name      | body   | string   | 否   | 新文件名 | none  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -569,7 +586,7 @@ POST /api/fs/regex_rename
 | » src_name_regex | body   | string | 是   | 源文件匹配正则 | none  |
 | » new_name_regex | body   | string | 是   | 新文件名正则   | none  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -623,7 +640,7 @@ POST /api/fs/move
 | » dst_dir     | body   | string   | 是   | 目标文件夹 | none |
 | » names       | body   | [string] | 是   | 文件名     | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -673,7 +690,7 @@ POST /api/fs/recursive_move
 | » src_dir     | body   | string | 是   | 源文件夹   | none |
 | » dst_dir     | body   | string | 是   | 目标文件夹 | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -727,7 +744,7 @@ POST /api/fs/copy
 | » dst_dir     | body   | string   | 是   | 目标文件夹 | none |
 | » names       | body   | [string] | 是   | 文件名     | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -779,7 +796,7 @@ POST /api/fs/remove
 | » names       | body   | [string] | 是   | 文件名 | none |
 | » dir         | body   | string   | 是   | 目录   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -827,7 +844,7 @@ POST /api/fs/remove_empty_directory
 | body          | body   | object | 否   |        | none |
 | » src_dir     | body   | string | 是   | 目录   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -877,7 +894,7 @@ string
 | Content-Length | header | string         | 是   |        | none                          |
 | body           | body   | string(binary) | 否   |        | none                          |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -921,31 +938,35 @@ string
 | »»» progress | integer | true | none |        | none |
 | »»» error    | string  | true | none |        | none |
 
-## POST 添加aria2下载
+## POST 添加离线下载
 
-POST /api/fs/add_aria2
+POST /api/fs/add_offline_download
 
 > Body 请求参数
 
 ```json
 {
+  "path": "/local",
   "urls": [
-    "string"
+    "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"
   ],
-  "path": "string"
+  "tool": "SimpleHttp",
+  "delete_policy": "delete_on_upload_succeed"
 }
 ```
 
 ### 请求参数
 
-| 名称          | 位置   | 类型     | 必选 | 中文名   | 说明 |
-| ------------- | ------ | -------- | ---- | -------- | ---- |
-| Authorization | header | string   | 是   |          | none |
-| body          | body   | object   | 否   |          | none |
-| » urls        | body   | [string] | 是   | url      | none |
-| » path        | body   | string   | 是   | 目标路径 | none |
+| 名称            | 位置   | 类型     | 必选 | 中文名   | 说明                                                                                    |
+| --------------- | ------ | -------- | ---- | -------- | --------------------------------------------------------------------------------------- |
+| Authorization   | header | string   | 是   |          | none                                                                                    |
+| body            | body   | object   | 否   |          | none                                                                                    |
+| » urls          | body   | [string] | 是   | url      | none                                                                                    |
+| » path          | body   | string   | 是   | 目标路径 | none                                                                                    |
+| » tool          | body   | string   | 是   | 工具     | 可选`aria2`,`SimpleHttp`和`qBittorrent`                                                 |
+| » delete_policy | body   | string   | 是   | 删除策略 | 可选`delete_on_upload_succeed`,`delete_on_upload_failed`,`delete_never`,`delete_always` |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -953,7 +974,18 @@ POST /api/fs/add_aria2
 {
   "code": 200,
   "message": "success",
-  "data": null
+  "data": {
+    "tasks": [
+      {
+        "id": "jwy7BrfZRzbI2xWg7-y",
+        "name": "download https://www.baidu.com/img/20d6cf.png to (/local)",
+        "state": 0,
+        "status": "",
+        "progress": 0,
+        "error": ""
+      }
+    ]
+  }
 }
 ```
 
@@ -967,60 +999,15 @@ POST /api/fs/add_aria2
 
 状态码 **200**
 
-| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明 |
-| --------- | ------- | ---- | ---- | ------ | ---- |
-| » code    | integer | true | none | 状态码 | none |
-| » message | string  | true | none | 信息   | none |
-| » data    | null    | true | none |        | none |
-
-## POST 添加qBittorrent下载
-
-POST /api/fs/add_qbit
-
-> Body 请求参数
-
-```json
-{
-  "urls": [
-    "string"
-  ],
-  "path": "string"
-}
-```
-
-### 请求参数
-
-| 名称          | 位置   | 类型     | 必选 | 中文名   | 说明 |
-| ------------- | ------ | -------- | ---- | -------- | ---- |
-| Authorization | header | string   | 是   |          | none |
-| body          | body   | object   | 否   |          | none |
-| » urls        | body   | [string] | 是   | url      | none |
-| » path        | body   | string   | 是   | 目标路径 | none |
-
-> 返回示例
-
-> 成功
-
-```json
-{
-  "code": 200,
-  "message": "success",
-  "data": null
-}
-```
-
-### 返回结果
-
-| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
-| ------ | ------------------------------------------------------- | ---- | -------- |
-| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
-
-### 返回数据结构
-
-状态码 **200**
-
-| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明 |
-| --------- | ------- | ---- | ---- | ------ | ---- |
-| » code    | integer | true | none | 状态码 | none |
-| » message | string  | true | none | 信息   | none |
-| » data    | null    | true | none |        | none |
+| 名称         | 类型     | 必选  | 约束 | 中文名 | 说明 |
+| ------------ | -------- | ----- | ---- | ------ | ---- |
+| » code       | integer  | true  | none | 状态码 | none |
+| » message    | string   | true  | none | 信息   | none |
+| » data       | object   | true  | none |        | none |
+| »» tasks     | [object] | true  | none |        | none |
+| »»» id       | string   | false | none |        | none |
+| »»» name     | string   | false | none |        | none |
+| »»» state    | integer  | false | none |        | none |
+| »»» status   | string   | false | none |        | none |
+| »»» progress | integer  | false | none |        | none |
+| »»» error    | string   | false | none |        | none |

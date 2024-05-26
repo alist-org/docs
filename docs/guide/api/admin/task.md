@@ -54,7 +54,7 @@ POST /api/admin/task/upload/info
 | tid           | query  | string | no   | 任务id |
 | Authorization | header | string | yes  | none   |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -107,7 +107,7 @@ GET /api/admin/task/upload/done
 | ------------- | ------ | ------ | ---- | ---- |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -160,7 +160,7 @@ GET /api/admin/task/upload/undone
 | ------------- | ------ | ------ | ---- | ---- |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -214,7 +214,7 @@ POST /api/admin/task/upload/delete
 | tid           | query  | string | 是   | 任务id |
 | Authorization | header | string | 是   | none   |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -253,7 +253,7 @@ POST /api/admin/task/upload/cancel
 | tid           | query  | string | 是   | 任务id |
 | Authorization | header | string | 是   | none   |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -291,7 +291,7 @@ POST /api/admin/task/upload/clear_done
 | ------------- | ------ | ------ | ---- | ---- |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -329,7 +329,7 @@ POST /api/admin/task/upload/clear_succeeded
 | ------------- | ------ | ------ | ---- | ---- |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -368,7 +368,7 @@ POST /api/admin/task/upload/retry
 | tid           | query  | string | 是   | 任务id |
 | Authorization | header | string | 是   | none   |
 
-> 返回示例
+### 返回示例
 
 > 成功
 

@@ -24,7 +24,7 @@ GET /ping
 
 连通性ping检测
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -40,7 +40,7 @@ GET /ping
 
 GET /api/public/settings
 
-> 返回示例
+### 返回示例
 
 > 成功
 

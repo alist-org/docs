@@ -29,7 +29,7 @@ GET /api/admin/user/list
 | ------------- | ------ | ------ | ---- | ---- |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -42,7 +42,6 @@ GET /api/admin/user/list
       {
         "id": 1,
         "username": "admin",
-        "Salt": "W",
         "password": "",
         "base_path": "/",
         "role": 2,
@@ -53,7 +52,6 @@ GET /api/admin/user/list
       {
         "id": 2,
         "username": "guest",
-        "Salt": "M",
         "password": "",
         "base_path": "/",
         "role": 1,
@@ -64,7 +62,6 @@ GET /api/admin/user/list
       {
         "id": 3,
         "username": "N",
-        "Salt": "L",
         "password": "",
         "base_path": "/",
         "role": 0,
@@ -96,7 +93,6 @@ GET /api/admin/user/list
 | »» content     | [object] | true | none |          | none |
 | »»» id         | integer  | true | none | id       | none |
 | »»» username   | string   | true | none | 用户名   | none |
-| »»» Salt       | string   | true | none | salt     | none |
 | »»» password   | string   | true | none | 密码     | none |
 | »»» base_path  | string   | true | none | 基本路径 | none |
 | »»» role       | integer  | true | none | 角色     | none |
@@ -116,7 +112,7 @@ GET /api/admin/user/get
 | id            | query  | string | 是   | none |
 | Authorization | header | string | 是   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -127,7 +123,6 @@ GET /api/admin/user/get
   "data": {
     "id": 1,
     "username": "admin",
-    "Salt": "s",
     "password": "",
     "base_path": "/",
     "role": 2,
@@ -148,22 +143,19 @@ GET /api/admin/user/get
 
 状态码 **200**
 
-| 名称           | 类型     | 必选 | 约束 | 中文名   | 说明 |
-| -------------- | -------- | ---- | ---- | -------- | ---- |
-| » code         | integer  | true | none | 状态码   | none |
-| » message      | string   | true | none | 信息     | none |
-| » data         | object   | true | none |          | none |
-| »» content     | [object] | true | none |          | none |
-| »»» id         | integer  | true | none | id       | none |
-| »»» username   | string   | true | none | 用户名   | none |
-| »»» Salt       | string   | true | none | salt     | none |
-| »»» password   | string   | true | none | 密码     | none |
-| »»» base_path  | string   | true | none | 基本路径 | none |
-| »»» role       | integer  | true | none | 角色     | none |
-| »»» disabled   | boolean  | true | none | 是否禁用 | none |
-| »»» permission | integer  | true | none | 权限     | none |
-| »»» sso_id     | string   | true | none | sso id   | none |
-| »» total       | integer  | true | none | 总数     | none |
+| 名称          | 类型    | 必选 | 约束 | 中文名   | 说明 |
+| ------------- | ------- | ---- | ---- | -------- | ---- |
+| » code        | integer | true | none |          | none |
+| » message     | string  | true | none |          | none |
+| » data        | object  | true | none |          | none |
+| »» id         | integer | true | none | id       | none |
+| »» username   | string  | true | none | 用户名   | none |
+| »» password   | string  | true | none | 密码     | none |
+| »» base_path  | string  | true | none | 基本路径 | none |
+| »» role       | integer | true | none | 角色     | none |
+| »» disabled   | boolean | true | none | 是否禁用 | none |
+| »» permission | integer | true | none | 权限     | none |
+| »» sso_id     | string  | true | none | sso id   | none |
 
 ## POST 新建用户
 
@@ -199,7 +191,7 @@ POST /api/admin/user/create
 | » disabled    | body   | boolean | 否   | 是否禁用 | none |
 | » sso_id      | body   | string  | 否   | sso id   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -261,7 +253,7 @@ POST /api/admin/user/update
 | » disabled    | body   | boolean | 否   | 是否禁用 | none |
 | » sso_id      | body   | string  | 否   | sso id   | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -300,7 +292,7 @@ POST /api/admin/user/cancel_2fa
 | id            | query  | string | 是   |        | none |
 | Authorization | header | string | 是   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -339,7 +331,7 @@ POST /api/admin/user/delete
 | id            | query  | string | 是   |        | none |
 | Authorization | header | string | 否   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -378,7 +370,7 @@ POST /api/admin/user/del_cache
 | username      | query  | string | 是   |        | none |
 | Authorization | header | string | 否   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 

@@ -31,7 +31,7 @@ GET /api/admin/storage/list
 | per_page      | query  | string | 否   | 每页数目 |
 | Authorization | header | string | 是   | token    |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -61,7 +61,7 @@ GET /api/admin/storage/list
         "down_proxy_url": ""
       }
     ],
-    "total": 5
+    "total": 1
   }
 }
 ```
@@ -112,7 +112,7 @@ POST /api/admin/storage/enable
 | id            | query  | integer | 是   | 存储id |
 | Authorization | header | string  | 是   | token  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -151,7 +151,7 @@ POST /api/admin/storage/disable
 | id            | query  | string | 是   | 存储id |
 | Authorization | header | string | 是   | token  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -179,7 +179,7 @@ POST /api/admin/storage/disable
 | » message | string  | true | none | 信息   | 信息   |
 | » data    | null    | true | none | data   | data   |
 
-## POST 更新存储
+## POST 创建存储
 
 POST /api/admin/storage/create
 
@@ -205,22 +205,104 @@ POST /api/admin/storage/create
 
 ### 请求参数
 
-| 名称               | 位置   | 类型    | 必选 | 中文名       | 说明         |
-| ------------------ | ------ | ------- | ---- | ------------ | ------------ |
-| Authorization      | header | string  | 是   |              | token        |
-| body               | body   | object  | 否   |              | none         |
-| » mount_path       | body   | string  | 是   | 挂载路径     | 挂载路径     |
-| » order            | body   | integer | 是   | 排序         | 排序         |
-| » remark           | body   | string  | 是   | 备注名       | 备注名       |
-| » cache_expiration | body   | integer | 是   | 缓存过期时间 | 缓存过期时间 |
-| » web_proxy        | body   | boolean | 是   | web代理      | web代理      |
-| » webdav_policy    | body   | string  | 是   | webdav策略   | webdav策略   |
-| » down_proxy_url   | body   | string  | 是   | 下载代理     | 下载代理     |
-| » extract_folder   | body   | string  | 是   | 提取目录     | 提取目录     |
-| » driver           | body   | string  | 是   | 驱动         | 驱动         |
-| » addition         | body   | string  | 是   | 额外信息     | 额外信息     |
+| 名称               | 位置   | 类型    | 必选 | 中文名       | 说明  |
+| ------------------ | ------ | ------- | ---- | ------------ | ----- |
+| Authorization      | header | string  | 是   |              | token |
+| body               | body   | object  | 否   |              | none  |
+| » id               | body   | string  | 否   | ID           | none  |
+| » mount_path       | body   | string  | 是   | 挂载路径     | none  |
+| » order            | body   | integer | 否   | 排序         | none  |
+| » driver           | body   | string  | 是   | 驱动         | none  |
+| » remark           | body   | string  | 否   | 备注名       | none  |
+| » cache_expiration | body   | integer | 否   | 缓存过期时间 | none  |
+| » status           | body   | string  | 是   |              | none  |
+| » web_proxy        | body   | boolean | 是   | web代理      | none  |
+| » webdav_policy    | body   | string  | 否   | webdav策略   | none  |
+| » down_proxy_url   | body   | string  | 否   | 下载代理     | none  |
+| » order_by         | body   | string  | 是   | 排序方式     | none  |
+| » extract_folder   | body   | string  | 是   | 提取目录     | none  |
+| » order_direction  | body   | string  | 是   | 排序方向     | none  |
+| » addition         | body   | string  | 是   | 额外信息     | none  |
+| » enable_sign      | body   | string  | 是   | 启用签名     | none  |
 
-> 返回示例
+### 返回示例
+
+> 成功
+
+```json
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "id": 7
+  }
+}
+```
+
+### 返回结果
+
+| 状态码 | 状态码含义                                              | 说明 | 数据模型 |
+| ------ | ------------------------------------------------------- | ---- | -------- |
+| 200    | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline   |
+
+### 返回数据结构
+
+状态码 **200**
+
+| 名称      | 类型    | 必选 | 约束 | 中文名 | 说明   |
+| --------- | ------- | ---- | ---- | ------ | ------ |
+| » code    | integer | true | none | 状态码 | 状态码 |
+| » message | string  | true | none | 信息   | 信息   |
+| » data    | object  | true | none | data   | data   |
+| »» id     | integer | true | none |        | none   |
+
+## POST 更新存储
+
+POST /api/admin/storage/update
+
+> Body 请求参数
+
+```json
+{
+  "mount_path": "/lll",
+  "order": 0,
+  "remark": "",
+  "cache_expiration": 30,
+  "web_proxy": false,
+  "webdav_policy": "native_proxy",
+  "down_proxy_url": "",
+  "extract_folder": "front",
+  "enable_sign": false,
+  "driver": "Local",
+  "order_by": "name",
+  "order_direction": "asc",
+  "addition": "{\"root_folder_path\":\"/\",\"thumbnail\":false,\"thumb_cache_folder\":\"\",\"show_hidden\":true,\"mkdir_perm\":\"777\"}"
+}
+```
+
+### 请求参数
+
+| 名称               | 位置   | 类型    | 必选 | 中文名       | 说明  |
+| ------------------ | ------ | ------- | ---- | ------------ | ----- |
+| Authorization      | header | string  | 是   |              | token |
+| body               | body   | object  | 否   |              | none  |
+| » id               | body   | string  | 否   | ID           | none  |
+| » mount_path       | body   | string  | 是   | 挂载路径     | none  |
+| » order            | body   | integer | 否   | 排序         | none  |
+| » driver           | body   | string  | 是   | 驱动         | none  |
+| » remark           | body   | string  | 否   | 备注名       | none  |
+| » cache_expiration | body   | integer | 否   | 缓存过期时间 | none  |
+| » status           | body   | string  | 是   |              | none  |
+| » web_proxy        | body   | boolean | 是   | web代理      | none  |
+| » webdav_policy    | body   | string  | 否   | webdav策略   | none  |
+| » down_proxy_url   | body   | string  | 否   | 下载代理     | none  |
+| » order_by         | body   | string  | 是   | 排序方式     | none  |
+| » extract_folder   | body   | string  | 是   | 提取目录     | none  |
+| » order_direction  | body   | string  | 是   | 排序方向     | none  |
+| » addition         | body   | string  | 是   | 额外信息     | none  |
+| » enable_sign      | body   | string  | 是   | 启用签名     | none  |
+
+### 返回示例
 
 > 成功
 
@@ -262,7 +344,7 @@ GET /api/admin/storage/get
 | id            | query  | string | 是   |        | 存储id |
 | Authorization | header | string | 是   |        | token  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -334,7 +416,7 @@ POST /api/admin/storage/delete
 | id            | query  | string | 否   |        | 存储id |
 | Authorization | header | string | 是   |        | token  |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
@@ -372,7 +454,7 @@ POST /api/admin/storage/load_all
 | ------------- | ------ | ------ | ---- | ------ | ---- |
 | Authorization | header | string | 是   |        | none |
 
-> 返回示例
+### 返回示例
 
 > 成功
 
