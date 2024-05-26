@@ -47,6 +47,14 @@ location / {
 }
 ```
 
+如果需要使用HTTP/3，需要将对应`HOST`行修改为：
+
+```conf
+proxy_set_header Host $host:$server_port;
+```
+
+这样修改后的配置同时也可以兼容HTTP/2及更低版本的请求。
+
 :::warning
 如果使用宝塔面板，请务必删除以下默认配置
 
