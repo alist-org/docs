@@ -19,8 +19,6 @@ star: true
 
 # PikPak / share
 
-
-
 ## **PikPak**
 
 ### **Username**
@@ -31,20 +29,36 @@ email or phone?
 
 password
 
+<br/>
+
+
+
 ### **Root folder id**
 
 Can get with https://mypikpak.com/ , default `root`.
 
 ![image.png](/img/drivers/pikpak.png)
 
+<br/>
 
 
-## **PikPak Share(v3.12.0 fix)**
+
+### **Disable media link**
+
+- **https://github.com/alist-org/alist/issues/4735**
+
+<br/><br/>
+
+
+
+## **PikPak Share**
 
 ::: warning
 ~~As of **February 4, 2023**, the sharing mount  has been officially banned. Currently, you can only watch the first 4 minutes.Stay tuned for when it will be restored~~
 
-**v3.12.0 fix,How long it can be used this time is unknown**
+~~**v3.12.0 fix,How long it can be used this time is unknown**~~
+
+It is known that PIKPAK sharing can only see 40%-50% **(v3.35.0)**
 
 :::
 
@@ -55,11 +69,19 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 
 ![pik](/img/drivers/pik/pik1.png)
 
-## **Batch add PikPak shared mounts**
+<br/>
+
+
+
+### **Batch add PikPak shared mounts**
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
 Tutorial video：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
+
+<br/>
+
+
 
 ## **Precautions**
 
@@ -72,6 +94,10 @@ Tutorial video：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
 **Q**: Prompt when adding mount: **failed get objs: failed to list objs: Sorry, sharing is not available in the current region**
 
 **A**: Because access to ^PikPak^ is prohibited in China, just use a proxy for `AList`, how to make `AList` use a proxy [**One of the reference solutions, this method is limited to Windows build**](https://anwen-anyi.github.io/index/07-wenti.html#_41-alist%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-%E5%90%83%E5%88%B0-%E4%BB%A3%E7%90%86-proxy)
+
+<br/>
+
+
 
 ### **The default download method used**
 

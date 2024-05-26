@@ -92,6 +92,10 @@ The AList path you want to mount has a meta information password set
   - But the root directory `/` of the other party has no password set, but other individual folders such as Ali, Baidu, 123 have set passwords, so you can fill in these but only one password.
     - If the passwords of the three folders mentioned above are set differently, then you can only enter the folder with this password in the one you fill in, and you will not be able to enter without this password. You should understand.
 
+<br/>
+
+
+
 ## **Username**
 
 `AList` user name (account) you want to mount
@@ -99,8 +103,6 @@ The AList path you want to mount has a meta information password set
 ## **Password**
 
 The password corresponding to the `AList` username you want to mount
-
-
 
 :::tip Kind tips
 
@@ -123,6 +125,17 @@ It looks very troublesome, but you can understand it after a little operation. T
 ### **Token**
 
 You don’t need to write, it will be automatically filled after filling in `Username & Password` and saving
+
+<br/>
+
+
+
+### **Proxy Range**
+
+You need to enable `Web Proxy` or` Webdav Native Proxy` to take effect
+
+- Currently only applicable to：`alias`、`139Yun`、`AList V3`
+  - Function Description：**https://github.com/alist-org/alist/pull/6496#issue-2309839607**
 
 
 

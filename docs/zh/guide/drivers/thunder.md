@@ -21,22 +21,46 @@ star: true
 # 迅雷云盘
 
 :::tip
-小白请直接使用 Thunder 不要使用 ThunderExpert
 
-ThunderExpert 主要提供更自由的设置,实现更多登录方式
+迅雷 前两个是服务国内用户
+
+小白请直接使用 迅雷不要使用 `迅雷专家版`
+
+`迅雷专家版`主要提供更自由的设置,实现更多登录方式
+
+-----
+
+迅雷 X（后两个）服务海外用户，截止文档发布时只有 安卓版其它版本暂未发布
+
+迅雷 X 本地代理模式，迅雷 X  专家版有302方式 
+
+- 迅雷 X 目前未开启会员的速度也符合使用情况，后期更改暂时未知
+- 使用APP可能需要Proxy，挂载在AList不需要
+
 :::
 
-## **迅雷**
+
+
+:::: tabs#thunder
+
+@tab 迅雷
 
 ### **用户名**
 
 即用于登陆的手机号,邮箱,用户名(有概率无法登录,需要尝试)
 
-- 需要携带 `+86` 区号，例如 +8613722223333 这样填写
+1. 在获取验证码之前填写手机号先不要携带 `+86` 区号
+2. 获取验证码后填写需要携带 `+86` 区号，例如 +8613722223333 这样填写
+
+<br/>
+
+
 
 ### **密码**
 
 即用于登陆的密码
+
+<br/>
 
 
 
@@ -53,6 +77,10 @@ ThunderExpert 主要提供更自由的设置,实现更多登录方式
 看下图添加
 
 ![xunlei](/img/drivers/xunlei/x2.png)
+
+<br/>
+
+
 
 ### **默认使用的下载方式**
 
@@ -74,7 +102,7 @@ flowchart TB
     click c1 "../drivers/common.html#webdav-策略"
 ```
 
-## **迅雷专家版**
+@tab 迅雷专家版
 
 :::tip
 迅雷如果需要下载必须指定 UserAgent(同下 DownUserAgent)
@@ -83,17 +111,21 @@ flowchart TB
 
 ### **登录类型**
 
-选择 User 时填用户名和密码
+1. 选择 `用户名` 时填用户名和密码
+   - 用户名需要携带 `+86` 区号，例如 +8613722223333 这样填写
 
-- 用户名需要携带 `+86` 区号，例如 +8613722223333 这样填写
 
-选择 RefreshToken 时只需填写 `RefreshToken`
+2. 选择 `刷新令牌`时只需填写 `刷新令牌`
+
+<br/>
+
+
 
 ### **签名类型**
 
-选择 Algorithms 时需填写 `Algorithms`(比较难获取,需要逆向)
+选择 `算法` 时需填写 `算法`(比较难获取,需要逆向)
 
-选择 CaptchaSign 时只需填写 `CaptchaSign` 和 `Timestamp`
+选择 `验证码签名` 时只需填写 `验证码签名` 和 `时间戳`
 
 ```
 //签名算法
@@ -108,23 +140,31 @@ CaptchaSign = "1." + str
 
 ![xunlei](/img/drivers/xunlei/x3.png)
 
-### **DeviceID**
+<br/>
+
+
+
+### **设备ID**
 
 通过 MD5 计算的值，用于判断登录的设备
 
-### **ClientID, ClientSecret, ClientVersion, PackageName**
+### **客户端ID, 客户端秘钥, 客户端版本, 包名**
 
 与签名有关，根据实际情况填写
 
-### **UserAgent**
+### **用户代理**
 
 API 请求使用的 UserAgent，设置错误可能无法访问或限速
 
-### **DownUserAgent**
+### **下载用户代理**
 
 下载时用到的 User Agent，如果设置错误会无法下载(开启代理会使用) 固定参数：
 
 `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36`
+
+<br/>
+
+
 
 ## **关键数据获取流程**
 
@@ -155,9 +195,25 @@ CaptchaSign、Timestamp、DeviceID、ClientID、ClientVersion、PackageName、Us
 
 图一包含 **7 条** 参数 | 图一包含 **2 条** 参数 | 一条固定参数(Down UserAgent) ，十条参数 和 3 个选项 以及一个挂载路径，写好保存即可，保存前记得检查喔~~
 
-### **ThunderExpert 完整的参数填演示图**
+<br/>
+
+
+
+### **使用视频URL**
+
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **迅雷专家版 完整的参数填演示图**
 
 ![xunlei](/img/drivers/xunlei/x6.png)
+
+<br/>
+
+
 
 ### **默认使用的下载方式**
 
@@ -179,3 +235,169 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```
+
+@tab 迅雷 X
+
+### **用户名、密码**
+
+即用于登陆的邮箱和密码
+
+<br/>
+
+
+
+### **验证码**
+
+会自动填充，不用自己填写
+
+<br/>
+
+
+
+### **根文件夹ID**
+
+默认为空展示全部目录，如果想用子文件夹做根目录请抓包获取
+
+- 抓包请求中的`https://api-pan.xunleix.com/drive/v1/files?parent_id=&page_token=&filters=`，可以得到下面参数
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- 根目录下获取的`文件夹ID（Folder id）`（例如：`我接收的文件`、`我的云盘`、`高速云下载`），**这个会随着账号不同而变动，没有通用的值，自己抓包获取**
+
+![xunlei](/img/drivers/xunlei/xlx_name.jpg)
+
+<br/>
+
+
+
+### **使用视频URL**
+
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **默认使用的下载方式**
+
+
+```mermaid
+---
+title: 默认使用的哪种下载方式？
+---
+flowchart TB
+    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    c1
+    end
+    c1[本机代理]:::someclass==默认===>a2[用户设备]
+    classDef someclass fill:#f96
+    b1[代理URL]-.备选.->a2[用户设备]
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
+
+@tab 迅雷 X 专家版
+
+### **用户名、密码**
+
+即用于登陆的邮箱和密码
+
+<br/>
+
+
+
+### **根文件夹ID**
+
+默认为空展示全部目录，如果想用子文件夹做根目录请抓包获取
+
+- 抓包请求中的`https://api-pan.xunleix.com/drive/v1/files?parent_id=&page_token=&filters=`，可以得到下面参数
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- 根目录下获取的`文件夹ID（Folder id）`（例如：`我接收的文件`、`我的云盘`、`高速云下载`），**这个会随着账号不同而变动，没有固定一样的值，自己抓包获取**
+
+![xunlei](/img/drivers/xunlei/xlx_name.jpg)
+
+<br/>
+
+
+
+### **登录类型**
+
+- `用户`：选择 `用户`时填`用户名和密码`
+- `刷新令牌`：选择 `刷新令牌` 时只需填写 `刷新令牌`
+
+<br/>
+
+
+
+### **签名类型**
+
+- `算法`：选择 `算法（Algorithms）` 时需填写 `算法（Algorithms）`
+- `验证码签名`：选择 `验证码签名（Captcha sign）` 时只需填写 `验证码签名（Captcha sign）` 和 `时间戳（Timestamp）`
+
+<br/>
+
+
+
+### **部分参数抓包说明**
+
+- `验证码` ：无需填写
+- `设备id`：通过 MD5 计算的值，用于判断登录的设备
+- `客户端ID`, `客户端密钥`, `客户端版本`, `包名`：与签名有关，根据实际情况填写
+- `用户代理`：API 请求使用的 `用户代理`，设置错误可能无法访问或限速
+- `下载用户代理`：下载时用到的 `用户代理`，如果设置错误会无法下载(开启代理会使用) 固定参数：`Dalvik/2.1.0 (Linux; U; Android 12; M2004J7AC Build/SP1A.210812.016)`
+
+-----
+
+抓包请求中的`https://xluser-ssl.xunleix.com/v1/shield/captcha/init`，可以得到下面参数^6个^
+
+- `客户端ID（Client id）`、`设备id（Device id）`、`验证码签名（Captcha sign）`
+- `包名（Package name）`、`客户端版本（Client version）`、`时间戳（Timestamp）`
+  - ![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
+
+
+
+
+抓包请求中的`https://xluser-ssl.xunleix.com/v1/auth/signin`，可以得到下面的参数^2个^
+
+  - `客户端ID（Client id）`、`客户端密钥（Client secret）`
+    - ![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
+
+
+<br/>
+
+
+
+### **使用视频URL**
+
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **默认使用的下载方式**
+
+```mermaid
+---
+title: 默认使用的哪种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
+
+::::

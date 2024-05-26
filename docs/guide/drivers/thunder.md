@@ -24,19 +24,40 @@ star: true
 Please use Thunder directly instead of ThunderExpert if you are not good at it.
 
 ThunderExpert mainly provides more free settings and realizes more login methods
+
+-----
+
+迅雷 X（后两个）服务海外用户，截止文档发布时只有 安卓版其它版本暂未发布
+
+迅雷 X 本地代理模式，迅雷 X  专家版有302方式 
+
+- 迅雷 X 在未开启会员的情况下速度也够用，后期更改暂时未知
+- 使用APP可能需要proxy，挂载在AList不需要
+
 :::
 
-## **Thunder**
+
+
+:::: tabs#thunder
+
+@tab Thunder
 
 ### **username**
 
 That is, the mobile phone number, email, and username used for login (there is a probability that you cannot log in, you need to try)
 
+- 在获取验证码之前填写手机号先不要携带 `+86` 区号
 - You need to bring the `+86` area code, for example +8613722223333 fill in like this
+
+<br/>
+
+
 
 ### **password**
 
 password for login
+
+<br/>
 
 
 
@@ -53,6 +74,10 @@ Let's go back to adding an account to copy from Https to the end to a new window
 See the image below to add
 
 ![xunlei](/img/drivers/xunlei/x2.png)
+
+<br/>
+
+
 
 ### **The default download method used**
 
@@ -74,7 +99,7 @@ flowchart TB
     click c1 "../drivers/common.html#webdav-policy"
 ```
 
-## **ThunderExpert**
+@tab ThunderExpert
 
 :::tip
 If Xunlei needs to download, you must specify UserAgent (same as DownUserAgent below)
@@ -83,17 +108,21 @@ Or use the proxy function in this program to transfer.
 
 ### **Login Type**
 
-When selecting User, you only need to fill in the username and password
+1. When selecting User, you only need to fill in the username and password
+   - User You need to bring the `+86` area code, for example +8613722223333 fill in like this
 
-- User You need to bring the `+86` area code, for example +8613722223333 fill in like this
 
-**Recommended**: Just fill in RefreshToken when selecting RefreshToken
+2. **RefreshToken**: Just fill in RefreshToken when selecting RefreshToken
+
+<br/>
+
+
 
 ### **Signature Type**
 
-When selecting Algorithms, just fill in the Algorithms (it is difficult to obtain, and needs to be reversed)
+**Algorithms**：When selecting Algorithms, just fill in the Algorithms (it is difficult to obtain, and needs to be reversed)
 
-**Recommended**: Only fill in CaptchaSign and Timestamp when selecting CaptchaSign
+**Captcha sign**: Only fill in CaptchaSign and Timestamp when selecting CaptchaSign
 
 ```
 //signature algorithm
@@ -107,6 +136,10 @@ CaptchaSign = "1." + str
 Login type and Sign type recommended options
 
 ![xunlei](/img/drivers/xunlei/x3.png)
+
+<br/>
+
+
 
 ### **DeviceID**
 
@@ -124,6 +157,10 @@ UserAgent used by API requests, may be inaccessible or speed limited if the sett
 
 The User Agent used for downloading, if the setting is wrong, it will not be downloaded (it will be used when the agent is turned on) Fixed parameters:
 **Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36**
+
+<br/>
+
+
 
 ## **Key data acquisition process**
 
@@ -154,9 +191,17 @@ The request to https://xluser-ssl.xunlei.com/v1/auth/token contains RefreshToken
 
 Figure 1 contains **7** parameters | Figure 1 contains **2** parameters | a fixed parameter (Down UserAgent), ten parameters and 3 options and a mount path, just write and save, before saving Remember to check~
 
+<br/>
+
+
+
 ### **ThunderExpert complete parameter filling demo:**
 
-![xunlei](/img/drivers/xunlei/x6.png)                                      
+![xunlei](/img/drivers/xunlei/x6.png) 
+
+<br/>
+
+
 
 ### **The default download method used**
 
@@ -178,3 +223,153 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
+
+
+@tab Thunder  X
+
+### **username、password**
+
+The mailbox and password used for login
+
+<br/>
+
+
+
+### **CaptchaToken**
+
+It will be filled automatically without filling in manually
+
+<br/>
+
+
+
+### **Use video url**
+
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **The default download method used**
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    c1
+    end
+    c1[local proxy]:::someclass==default===>a2[user equipment]
+    classDef someclass fill:#f96
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```
+
+@tab Thunder  X Expert
+
+### **username、password**
+
+The mailbox and password used for login
+
+<br/>
+
+
+
+### **Root folder id**
+
+The default is the full directory of the empty display, If you want to use a subfolder to make the root directory, grab the request to get it
+
+- In the request in the package`https://api-pan.xunleix.com/drive/v1/files?parent_id=&page_token=&filters=`，you can get the following parameters
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- The `folder ID` obtained in the root directory (for example : `我接收的文件`、`我的云盘`、`高速云下载`), **This will change with different account numbers, there is no the same value, In the request in the package**
+
+![xunlei](/img/drivers/xunlei/xlx_name.jpg)
+
+<br/>
+
+
+
+### **Login Type**
+
+- ` User `: Only fill in the username and password
+
+- ` Refresh token `: Just fill in`RefreshToken`
+
+<br/>
+
+
+
+### **Sign Type**
+
+- `Algorithms`：Choose `Algorithms` Just fill in `Algorithms` (It has been automatically filled. You do n’t have to fill in it yourself. You only need to fill in the username and password.When the algorithm is not invalidated)
+- `Captcha sign`: Choose `Captcha sign` Just fill in `Captcha sign` and `Timestamp`
+
+<br/>
+
+
+
+### **Part of parameter Packet Capture description**
+
+- `Captcha token` ：No need to fill in
+- `Device id`：The value calculated by MD5 is used to judge the login device
+- `Client id`, `Client secret`, `Client version`, `Package name`：It related to the signature, fill in according to the actual situation
+- `User agent`：API requests `User agent`, setting errors may not access or speed limit
+- `Download user agent`：下When downloading, use the user agent `,If the setting error cannot be downloaded (the agent will use it) fixed parameters：`Dalvik/2.1.0 (Linux; U; Android 12; M2004J7AC Build/SP1A.210812.016)`
+
+-----
+
+In the request in the package `https://xluser-ssl.xunleix.com/v1/shield/captcha/init`，you can get the following parameters^6个^
+
+- `Client id`、`Device id`、`Captcha sign`
+- `Package name`、`Client version`、`Timestamp`
+  - ![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
+
+
+
+In the request in the package `https://xluser-ssl.xunleix.com/v1/auth/signin`, you can get the following parameters^2^
+
+  - `Client id`、`Client secret`
+    - ![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
+
+<br/>
+
+
+
+### **Use video url**
+
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **The default download method used**
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|default|a2[user equipment]
+    classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```
+
+::::

@@ -195,6 +195,14 @@ star: true
 
 
 
+## **注意事项**
+
+启动AList时发现Crypt提示错误，是因为Crypt靠前启动时候找不到相关路径，可以通过给Crypt驱动填写[序号](common.md#序号)让Crypt启动靠后
+
+<br/>
+
+
+
 ## **默认使用的下载方式**
 
 ```mermaid

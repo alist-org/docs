@@ -183,3 +183,68 @@ star: true
 这是因为Windows 大小写不敏感，video和Video会被认为是同一个文件夹,你换成Linux或者Mac就不会有这个问题了
 
 > 暂时不支持别名进行负载均衡（后期若支持了这里会进行文档修改，如果没有修改就是还不支持）
+
+<br/>
+
+
+
+### **代理range**
+
+需要先启用 `Web代理` 或者 `Webdav本地代理` 才会生效
+
+- 目前仅适用于：`别名`、`中国移动云盘`、`AList V3`
+  - 具体功能说明：**https://github.com/alist-org/alist/pull/6496#issue-2309839607**
+
+<br/>
+
+
+
+### **同名保护**
+
+^>v3.34.0^现在别名支持 `删除`、`重命名`两个操作，==默认开启==
+
+别名中可能会出现文件名一样的文件，对于文件夹名一致的文件夹，在`同名保护`开启状态下无法删除或者重命名
+
+-----
+
+::: details 同名保护使用举例子
+
+我们分别将 `a`和`b`两个文件夹填写到别名选项中
+
+```
+a/          b/                  alias
+a/1.png     b/1.png             alias/1.png
+a/2.mp3     b/2.mp3             alias/2.mp3
+a/3.mp4     b/3.mp4     ---->   alias/3.mp4
+a/4.mkv     b/4.mkv     ---->   alias/4.mkv
+a/5.bin     b/6.css             alias/5.bin ---> 根据规则别名目录靠前的，不同文件夹中不同名的文件靠前
+                                alias/6.css
+```
+
+如果我们在 `同名保护` 开启状态下把同名文件 `1.png` 进行重名名或者删除会提示如下信息在右上角
+
+<div style="color: red; display: flex; justify-content: center; align-items: center; border: 3px solid red;">
+    <ul style="list-style-type: none;">
+        <li><i class="fa-solid fa-circle-exclamation">&nbsp;</i><b>same-name files cannot be Rename / 同名文件无法重命名</b></li><br/>
+        <li><i class="fa-solid fa-circle-exclamation">&nbsp;</i><b>same-name files cannot be Delete / 同名文件无法删除</b></li>
+    </ul>
+</div>
+
+如果我们把 `同名保护` 选项关闭，将 `a/1.png`改成 `a/11.png` 会变成如下展示
+
+- 因为a/b两个文件夹都有一样的文件，`重命名`和`下载`一样优先下载填写时候靠前的文件夹，同理重名修改也是先修改靠前文件夹中的文件
+
+```
+a/          b/                  alias
+a/1.png     b/1.png             alias/11.png
+a/2.mp3     b/2.mp3             alias/2.mp3
+a/3.mp4     b/3.mp4     ---->   alias/3.mp4
+a/4.mkv     b/4.mkv     ---->   alias/4.mkv
+a/5.bin     b/6.css             alias/5.bin
+                                alias/1.png  ---> 因为b文件夹靠后，所以文件列表展示页靠后
+                                alias/6.css
+```
+
+实在不懂 可以自行本地测试一下再进行生产环境实装
+
+:::
