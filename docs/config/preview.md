@@ -115,3 +115,20 @@ Whether to automatically play video files.
 ### **Proxy ignore headers**
 
 For details, please check:  **https://github.com/alist-org/alist/issues/2763**
+
+### **Force preview**
+
+We can force the preview type through the `type` query parameter.
+
+Available values:
+
+```
+UNKNOWN
+FOLDER
+VIDEO
+AUDIO
+TEXT
+IMAGE
+```
+
+Example: `http://yourdomain/test-file.ahk?type=text`

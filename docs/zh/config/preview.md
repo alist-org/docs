@@ -117,3 +117,19 @@ interface {
 
 详情查看： **https://github.com/alist-org/alist/issues/2763**
 
+### **强制预览**
+
+可以通过 `type` 请求参数来强制设置预览类型。
+
+可选值:
+
+```
+UNKNOWN
+FOLDER
+VIDEO
+AUDIO
+TEXT
+IMAGE
+```
+
+示例: `http://yourdomain/test-file.ahk?type=text`
