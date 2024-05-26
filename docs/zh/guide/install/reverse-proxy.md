@@ -64,6 +64,13 @@ proxy_set_header Host $host:$server_port;
 - location ~ .\*\.(js|css)?$
 ```
 
+并在`/www/server/nginx/conf/proxy.conf`中或对应网站配置文件中设置禁用Nginx缓存，否则默认配置下访问较大文件时Nginx会先尝试将远程文件缓存至本机，导致播放失败
+
+```conf
+proxy_cache cache_one; # 删除这一行
+proxy_max_temp_file_size 0; #加上这一行
+```
+
 :::
 
 ## **Apache**
