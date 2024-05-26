@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { usePageData } from "@vuepress/client";
-import { computed } from "vue";
+import { usePageData } from "@vuepress/client"
+import { computed } from "vue"
 
-const pageData = usePageData();
+const pageData = usePageData()
 
 const isZh = computed(() => {
-  return pageData.value.path.startsWith("/zh/");
-});
+  return pageData.value.path.startsWith("/zh/")
+})
 
 const vidHubEn = {
   title: "VidHub - An elegant cloud video player within the Apple ecosystem.",
@@ -16,7 +16,7 @@ const vidHubEn = {
   ],
   url: "https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8",
   tag: "Free",
-};
+}
 
 const vidHubCN = {
   title: "VidHub - 苹果生态下优雅的网盘视频播放器",
@@ -26,18 +26,17 @@ const vidHubCN = {
   ],
   url: "https://zh.okaapps.com/product/1659622164?ref=alist",
   tag: "免费",
-};
+}
 
 const vidHub = computed(() => {
-  if (isZh.value) return vidHubCN;
-  return vidHubEn;
-});
+  if (isZh.value) return vidHubCN
+  return vidHubEn
+})
 
 const isApple = computed(() => {
-  if (navigator.platform)
-    return /Mac|iPod|iPhone|iPad/.test(navigator.platform);
-  return /Mac|iPod|iPhone|iPad/.test(navigator.userAgent);
-});
+  if (navigator.platform) return /Mac|iPod|iPhone|iPad/.test(navigator.platform)
+  return /Mac|iPod|iPhone|iPad/.test(navigator.userAgent)
+})
 </script>
 
 <template>
@@ -57,7 +56,9 @@ const isApple = computed(() => {
               <span>{{ vidHub.title }}</span>
               <span class="tag">{{ vidHub.tag }}</span>
             </div>
-            <div class="hero" v-for="hero in vidHub.hero">{{ hero }}</div>
+            <div class="hero" v-for="hero in vidHub.hero" :key="hero">
+              {{ hero }}
+            </div>
           </div>
         </div>
       </a>
@@ -95,7 +96,7 @@ const isApple = computed(() => {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: start;
+      align-items: flex-start;
       width: 100%;
       .title {
         color: white;
@@ -103,7 +104,7 @@ const isApple = computed(() => {
         font-size: 24px;
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         height: auto;
         @media screen and (max-width: 700px) {
