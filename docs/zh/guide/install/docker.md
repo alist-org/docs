@@ -65,6 +65,8 @@ services:
         restart: unless-stopped
 ```
 
+服务运行之后，容器默认的时区为UTC时区，如果你想指定容器运行的时区，则可以通过传递此变量来实现：`-e "TZ=Asia/Shanghai"`。
+
 ### **使用 aria2 离线下载**
 
 如果你想使用aria2离线下载，我们推荐你使用这个[image](https://hub.docker.com/r/xhofe/alist-aria2)，它预装了aria2。
