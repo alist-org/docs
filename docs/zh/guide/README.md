@@ -5,7 +5,6 @@ icon: iconfont icon-creative
 category:
   - Guide
 ---
-
 # 简介
 
 :::warning
@@ -24,52 +23,52 @@ category:
 
 ## Support storage
 
-- [x] 本地存储
-- [x] [Crypt](/zh/guide/drivers/Crypt.md)
-- [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
-- [x] [阿里云盘](https://www.alipan.com/)
-- [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
-- [x] [GoogleDrive](https://drive.google.com/)
-- [x] [123云盘/分享/直链](https://www.123pan.com/)
-- [x] FTP / SFTP
-- [x] [PikPak / 分享](https://www.mypikpak.com/)
-- [x] [S3[对象存储]](../guide/drivers/s3.md)
-- [x] [多吉云](../guide/drivers/s3.md#添加对象存储示例及官方文档)
-- [x] [又拍云对象存储](https://www.upyun.com/products/file-storage)
-- [x] WebDAV(支持无API的OneDrive/SharePoint)
-- [x] Teambition（[中国](https://www.teambition.com/ )，[国际](https://us.teambition.com/ )）
-- [x] [分秒帧](https://www.mediatrack.cn/)
-- [x] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
-- [x] [中国移动云盘](https://yun.139.com/) (个人云, 家庭云)
-- [x] [中国联通云盘](https://pan.wo.cn)
-- [x] [四川电信魔盘](https://mopan.sc.189.cn/mopan/#/downloadPc)
-- [x] [Yandex.Disk](https://disk.yandex.com/)
-- [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
-- [x] [夸克网盘](https://pan.quark.cn)
-- [x] [迅雷网盘 / X](https://pan.xunlei.com)
-- [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
-- [x] [小飞机网盘](https://feijipan.com/)
-- [x] [阿里云盘分享](https://www.alipan.com/)
-- [x] [谷歌相册](https://photos.google.com/)
-- [x] [Mega.nz](https://mega.nz)
-- [x] [一刻相册](https://photo.baidu.com/)
-- [x] [TeraBox -海外百度](https://www.terabox.com/)
-- [x] [AList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
-- [x] SMB
-- [x] [别名](../guide/advanced/alias.md)
-- [x] [115](https://115.com/)
-- [x] [Seafile](https://www.seafile.com/)
-- [x] Cloudreve
-- [x] [Trainbit](https://trainbit.com/)
-- [x] [UrlTree](../guide/drivers/UrlTree.md)
-- [x] IPFS
-- [x] [UC网盘](https://drive.uc.cn/)
-- [x] [Dropbox](https://www.dropbox.com)
-- [x] [腾讯微云](https://www.weiyun.com/)
-- [x] [腾讯智能创作平台](https://app.v.tencent.com/)
-- [x] [超星星小组盘](../guide/drivers/chaoxing.md)
-- [x] [曲奇云盘](https://quqi.com)
-- [x] [网易云音乐云盘](../guide/drivers/163music.md)
+- [X] 本地存储
+- [X] [Crypt](/zh/guide/drivers/Crypt.md)
+- [X] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
+- [X] [阿里云盘](https://www.alipan.com/)
+- [X] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ SharePoint（[国际版](https://www.office.com/), [世纪互联](https://portal.partner.microsoftonline.cn),de,us）
+- [X] [GoogleDrive](https://drive.google.com/)
+- [X] [123云盘/分享/直链](https://www.123pan.com/)
+- [X] FTP / SFTP
+- [X] [PikPak / 分享](https://www.mypikpak.com/)
+- [X] [S3[对象存储]](../guide/drivers/s3.md)
+- [X] [多吉云](../guide/drivers/s3.md#添加对象存储示例及官方文档)
+- [X] [又拍云对象存储](https://www.upyun.com/products/file-storage)
+- [X] WebDAV(支持无API的OneDrive/SharePoint)
+- [X] Teambition（[中国](https://www.teambition.com/)，[国际](https://us.teambition.com/)）
+- [X] [分秒帧](https://www.mediatrack.cn/)
+- [X] [天翼云盘](https://cloud.189.cn) (个人云, 家庭云)
+- [X] [中国移动云盘](https://yun.139.com/) (个人云, 家庭云)
+- [X] [中国联通云盘](https://pan.wo.cn)
+- [X] [四川电信魔盘](https://mopan.sc.189.cn/mopan/#/downloadPc)
+- [X] [Yandex.Disk](https://disk.yandex.com/)
+- [X] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
+- [X] [夸克网盘](https://pan.quark.cn)
+- [X] [迅雷网盘 / X](https://pan.xunlei.com)
+- [X] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
+- [X] [小飞机网盘](https://feijipan.com/)
+- [X] [阿里云盘分享](https://www.alipan.com/)
+- [X] [谷歌相册](https://photos.google.com/)
+- [X] [Mega.nz](https://mega.nz)
+- [X] [一刻相册](https://photo.baidu.com/)
+- [X] [TeraBox -海外百度](https://www.terabox.com/)
+- [X] [AList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
+- [X] SMB
+- [X] [别名](../guide/advanced/alias.md)
+- [X] [115](https://115.com/)
+- [X] [Seafile](https://www.seafile.com/)
+- [X] Cloudreve
+- [X] [Trainbit](https://trainbit.com/)
+- [X] [UrlTree](../guide/drivers/UrlTree.md)
+- [X] IPFS
+- [X] [UC网盘](https://drive.uc.cn/)
+- [X] [Dropbox](https://www.dropbox.com)
+- [X] [腾讯微云](https://www.weiyun.com/)
+- [X] [腾讯智能创作平台](https://app.v.tencent.com/)
+- [X] [超星小组盘](../guide/drivers/chaoxing.md)
+- [X] [曲奇云盘](https://quqi.com)
+- [X] [网易云音乐云盘](../guide/drivers/163music.md)
 
 ## Discussion
 
