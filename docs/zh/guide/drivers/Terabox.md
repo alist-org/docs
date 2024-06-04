@@ -27,6 +27,13 @@ star: true
 ![terabox](/img/drivers/terabox/terabox_cookie.png)
 
 
+## **jsToken**
+
+查看 [**主页**](https://www.terabox.com/main?category=all) 的网页源代码，按 `Ctrl` + `F` 键搜索 `jsToken`，后面会跟着字符串类似 `%20%3D%20a%7D%3Bfn%28%22xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx%22%29`
+
+中间的 `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` 就是要获取的 **jsToken**
+
+
 <br/>
 
 
