@@ -29,9 +29,11 @@ star: true
 
 ## **jsToken**
 
-View [**HOME**](https://www.terabox.com/main?category=all) source code，use `Ctrl` + `F` search `jsToken`，find string like `%20%3D%20a%7D%3Bfn%28%22xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx%22%29`
+View [**HOME**](https://www.terabox.com/main?category=all) source code，use `Ctrl` + `F` search `jsToken`
 
-This `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` is the **jsToken**
+find string like `%20%3D%20a%7D%3Bfn%28%22xxxxxxxxxxxxxxx%22%29`
+
+This `xxxxxxxxxxxxxxx` is the **jsToken**
 
 <br/>
 
