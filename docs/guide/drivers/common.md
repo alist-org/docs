@@ -100,7 +100,8 @@ You can use `cloudflare workers` for proxy, just fill in the `cloudflare workers
 The workers code can be found at https://github.com/alist-org/alist-proxy/blob/main/alist-proxy.js. in:
 
 - ADDRESS: your Alist address, The protocol header must be added, and cannot be followed by /. Such as `https://pan.nn.ci`;
-- TOKEN: you can get in `Other settings` in your Alist manage page.
+- TOKEN: you can get in `Other settings` in your Alist manage page;
+- WORKER_ADDRESS: your worker address, which should normally be same as **Download proxy URL**.
 
 :warning: Cloudflare Workers free CDN only supports (regardless of domestic or foreign) **http80 port** and **https443 port**, from group friend test
 
