@@ -96,7 +96,8 @@ flowchart LR
 Workers 代码可以在 https://github.com/alist-org/alist-proxy/blob/main/alist-proxy.js 找到，实际使用时需要替换其中的这两个变量：
 
 - ADDRESS: 你的 AList 地址，必须加上协议头，后面不能跟 `/`。如 `https://pan.nn.ci`；
-- TOKEN: 在 AList 管理页面中进入“其他设置”得到。
+- TOKEN: 在 AList 管理页面中进入“其他设置”得到；
+- WORKER_ADDRESS: 你的 Worker 地址，通常与 **下载代理URL** 相同。
 
 :warning: Cloudflare Workers 免费CDN支持兼容(不论国内还是国外)的只有 **http80端口** 和 **https443端口**，来自群友测试
 
