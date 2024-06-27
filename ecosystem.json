@@ -22,6 +22,7 @@
     { "type": "github", "repo": "xlist-io/xlist" },
     { "type": "github", "repo": "j4587698/AListSdkSharp" },
     { "type": "github", "repo": "ShiroNeri4u/Neribox" },
-    { "type": "github", "repo": "synctv-org/synctv" }
+    { "type": "github", "repo": "synctv-org/synctv" },
+    { "type": "github", "repo": "wy580477/Alist-EX-container" } 
   ]
 }
