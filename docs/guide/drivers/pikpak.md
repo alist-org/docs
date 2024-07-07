@@ -19,6 +19,24 @@ star: true
 
 # PikPak / share
 
+::: danger
+
+1. `Pikpak`：Who makes the request, who can use it
+   
+   
+   
+   - For example, if you build an AList on the server with IP `1.1.1.1`, but your own IP is `2.2.2.2`, you cannot play or download it.
+   - Or enable Proxy policy
+
+-----
+2. `PikPak Share`：There is a size limit. After the specified file size is exceeded, only 40%~50% can be played.
+
+   
+
+   - The specific size of the file is currently unknown
+
+:::
+
 ## **PikPak**
 
 ### **Username**
