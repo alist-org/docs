@@ -46,7 +46,7 @@ category:
 - [x] [Yandex.Disk](https://disk.yandex.com/)
 - [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
 - [x] [夸克网盘](https://pan.quark.cn)
-- [x] [迅雷网盘 / X](https://pan.xunlei.com)
+- [x] [迅雷网盘 / X / 浏览器](../guide/drivers/thunder.md)
 - [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
 - [x] [小飞机网盘](https://feijipan.com/)
 - [x] [阿里云盘分享](https://www.alipan.com/)
@@ -70,6 +70,7 @@ category:
 - [x] [超星星小组盘](../guide/drivers/chaoxing.md)
 - [x] [曲奇云盘](https://quqi.com)
 - [x] [网易云音乐云盘](../guide/drivers/163music.md)
+- [x] [6盘](../guide/drivers/halalcloud.md)
 
 ## Discussion
 
