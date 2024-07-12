@@ -89,12 +89,12 @@ typeof fetch !== "undefined" && getLimit()
 2.  需要将`aliyundrive_open`后台配置中的`Oauth令牌链接`更换为
     - `https://api-cf.nn.ci/alist/ali_open/token`
     - `https://api.xhofe.top/alist/ali_open/token`
-    - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
+    - ![](/img/drivers/aliyun/aliyun_api.png)
 
 3.  查看详情：https://github.com/alist-org/alist/discussions/4572
 
 4.  是否可以自己搭建授权OAuth验证API？
-    - 暂时不可以，但是你可以反向代理[源站](https://api.nni.ci)
+    - 需要使用自己申请的开发者帐号搭建
 
 
 :::
@@ -188,6 +188,8 @@ typeof fetch !== "undefined" && getLimit()
 - **备份盘**：对应云盘的`备份文件`
 
 202407 --> 阿里云盘更新 `6.0` 版本后，备份盘变更为备份文件和全部文件合并在一起了，但是在OpenAPI方面还是区分 `资源库` 和 `备份盘` 类型
+
+![](/img/drivers/aliyun/aliyun_type.png)
 
 <br/>
 

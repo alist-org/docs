@@ -205,5 +205,14 @@ star: true
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：**failed get objs: failed to list objs: query fail [61008]**
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：可能是因为某些驱动不支持修改文件排序导致的，取消文件排序试试看
+
+-----
+
+
 暂时就这些，如果还有可以留言，或者按照格式添加（为了统一直观）
 

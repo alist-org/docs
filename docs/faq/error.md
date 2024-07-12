@@ -205,5 +205,13 @@ It is some error codes during the use of `AList`, and how to solve them (network
 
 -----
 
+<Badge text="Q" type="warning" vertical="middle" />：**failed get objs: failed to list objs: query fail [61008]**
+
+<br/>
+
+<Badge text="A" type="info" vertical="middle" />：It may be because some drivers do not support modifying the file sorting. Try to cancel the file sorting.
+
+-----
+
 That's all for the time being, if there are more, you can leave a message, or add according to the format (for uniformity and intuitiveness)
 
