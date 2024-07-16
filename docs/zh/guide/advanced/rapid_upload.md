@@ -33,7 +33,7 @@ star: true
 
 
 
-|          |      阿里云盘      |        115         |   百度云盘^(5)^    |      天翼云盘      |    迅雷云盘     |       PikPak       |    谷歌云盘     |    OndDrive     |    本地存储     |
+|          |      阿里云盘      |        115         |   百度云盘^(5)^    |      天翼云盘      |    迅雷云盘     |       PikPak       |    谷歌云盘     |    OneDrive     |    本地存储     |
 | :------: | :----------------: | :----------------: | :----------------: | :----------------: | :-------------: | :----------------: | :-------------: | :-------------: | :-------------: |
 | 本地存储 | :white_check_mark: | :white_check_mark: | :white_check_mark: |        :x:         |       :x:       | :white_check_mark: |       :x:       |       :x:       | :no_entry_sign: |
 | 阿里云盘 | :white_check_mark: | :white_check_mark: |     :question:     |        :x:         |       :x:       |        :x:         |       :x:       |       :x:       | :no_entry_sign: |
