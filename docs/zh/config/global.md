@@ -43,6 +43,8 @@ star: true
 
 在此处设置的任何内容都会自动放置在网页头部的开头
 
+- 如何配置PWA（Desktop、Android、IOS）：**[alist/issues/6724](https://github.com/alist-org/alist/issues/6724#issuecomment-2220251541)**
+
 <br/>
 
 

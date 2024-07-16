@@ -27,12 +27,17 @@ ThunderExpert mainly provides more free settings and realizes more login methods
 
 -----
 
-迅雷 X（后两个）服务海外用户，截止文档发布时只有 安卓版其它版本暂未发布
+Thunder X serves overseas users. As of the time of document release, only the Android version is available. Other versions have not yet been released.
 
-迅雷 X 本地代理模式，迅雷 X  专家版有302方式 
+- Thunder X has sufficient speed even without membership. Future changes are unknown.
+- Using the APP may require a proxy, but not when mounted on AList.
 
-- 迅雷 X 在未开启会员的情况下速度也够用，后期更改暂时未知
-- 使用APP可能需要proxy，挂载在AList不需要
+-----
+
+Thunder Browser：Currently only supports mobile phones (Android, iOS)
+
+- **https://x.xunlei.com/**
+- If you log in to AList, the mobile phone will be kicked offline. On the contrary, if you log in to AList first and then log in to the mobile phone, AList will be kicked offline but there will be no prompt
 
 :::
 
@@ -46,7 +51,6 @@ ThunderExpert mainly provides more free settings and realizes more login methods
 
 That is, the mobile phone number, email, and username used for login (there is a probability that you cannot log in, you need to try)
 
-- 在获取验证码之前填写手机号先不要携带 `+86` 区号
 - You need to bring the `+86` area code, for example +8613722223333 fill in like this
 
 <br/>
@@ -244,6 +248,22 @@ It will be filled automatically without filling in manually
 
 
 
+### **Root folder id**
+
+The default is the full directory of the empty display, If you want to use a subfolder to make the root directory, grab the request to get it
+
+- In the request in the package`https://api-pan.xunleix.com/drive/v1/files?parent_id=&page_token=&filters=`，you can get the following parameters
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- The `folder ID` obtained in the root directory (for example : `我接收的文件`、`我的云盘`、`高速云下载`), **This will change with different account numbers, there is no the same value, In the request in the package**
+
+![xunlei](/img/drivers/xunlei/xlx_name.jpg)
+
+
+
+<br/>
+
 ### **Use video url**
 
 - **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
@@ -259,23 +279,35 @@ It will be filled automatically without filling in manually
 title: Which download method is used by default?
 ---
 flowchart TB
-    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
     style a2 fill:#ff7575,stroke:#333,stroke-width:4px
     subgraph ide1 [ ]
-    c1
+    a1
     end
-    c1[local proxy]:::someclass==default===>a2[user equipment]
+    a1[302]:::someclass====|default|a2[user equipment]
     classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
     b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
+
 
 @tab Thunder  X Expert
 
 ### **username、password**
 
 The mailbox and password used for login
+
+<br/>
+
+
+
+### **CaptchaToken**
+
+It will be filled automatically without filling in manually
 
 <br/>
 
@@ -321,23 +353,30 @@ The default is the full directory of the empty display, If you want to use a sub
 - `Captcha token` ：No need to fill in
 - `Device id`：The value calculated by MD5 is used to judge the login device
 - `Client id`, `Client secret`, `Client version`, `Package name`：It related to the signature, fill in according to the actual situation
-- `User agent`：API requests `User agent`, setting errors may not access or speed limit
-- `Download user agent`：下When downloading, use the user agent `,If the setting error cannot be downloaded (the agent will use it) fixed parameters：`Dalvik/2.1.0 (Linux; U; Android 12; M2004J7AC Build/SP1A.210812.016)`
 
 -----
 
-In the request in the package `https://xluser-ssl.xunleix.com/v1/shield/captcha/init`，you can get the following parameters^6个^
+- `User agent`：API requests `User agent`, setting errors may not access or speed limit
+- `Download user agent`：When downloading, use the `user agent `,If the setting error cannot be downloaded (the agent will use it)
+  - `User agent` and `Download user agent`：You can fill it out by yourself. If you don’t know how to fill it out, you can leave it blank and it will be automatically filled in.
+
+
+-----
+
+In the request in the package `https://xluser-ssl.xunleix.com/v1/shield/captcha/init`，you can get the following parameters^6^
 
 - `Client id`、`Device id`、`Captcha sign`
 - `Package name`、`Client version`、`Timestamp`
-  - ![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
+
+![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
 
 
 
 In the request in the package `https://xluser-ssl.xunleix.com/v1/auth/signin`, you can get the following parameters^2^
 
   - `Client id`、`Client secret`
-    - ![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
+
+![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
 
 <br/>
 
@@ -345,6 +384,231 @@ In the request in the package `https://xluser-ssl.xunleix.com/v1/auth/signin`, y
 
 ### **Use video url**
 
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **The default download method used**
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|default|a2[user equipment]
+    classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```
+
+@tab Thunder  Browser
+
+### **username、password**
+
+Mobile phone number, email, username, and password used to log in
+
+- When filling in the mobile phone number, please bring the `+86` area code, for example `+8613822334455`
+
+<br/>
+
+
+
+### **CaptchaToken**
+
+It will be filled automatically without filling in manually
+
+<br/>
+
+
+
+### **Root folder id**
+
+The default is the full directory of the empty display, If you want to use a subfolder to make the root directory, grab the request to get it
+
+- In the request in the package`https://x-api-pan.xunlei.com/drive/v1/files?parent_id&page_token&space=`，you can get the following parameters
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- The `folder ID` obtained in the root directory (for example : `来自分享`、`超级保险箱`), **This will change with different account numbers, there is no the same value, In the request in the package**
+
+![xunlei](/img/drivers/xunlei/x_br_foled.png)
+
+<br/>
+
+
+
+### **Safe password**
+
+Thunder  Browser Safe password
+
+- Files in Safe password can only be deleted directly and cannot be deleted to the recycle bin, so the [**Deletion method**](#remove-way) below has nothing to do with this configuration.
+
+<br/>
+
+
+
+### **Remove way**
+
+**Trash**：Use AList to delete files and then move them to the Recycle Bin. If you delete them accidentally, you can restore them through Thunder Cloud Disk.
+
+**Delete**：Deleting it directly cannot restore it.
+
+<br/>
+
+
+
+### **Use video url**
+
+- When `Use video url` is turned on, some types of files may not be accessible properly.
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **The default download method used**
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|default|a2[user equipment]
+    classDef someclass fill:#f96
+    c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```
+
+@tab Thunder Browser Expert
+
+### **username、password**
+
+Mobile phone number, email, username, and password used to log in
+
+- When filling in the mobile phone number, please bring the `+86` area code, for example `+8613822334455`
+
+<br/>
+
+
+
+### **CaptchaToken**
+
+It will be filled automatically without filling in manually
+
+<br/>
+
+
+
+### **Root folder id**
+
+The default is the full directory of the empty display, If you want to use a subfolder to make the root directory, grab the request to get it
+
+- In the request in the package`https://x-api-pan.xunlei.com/drive/v1/files?parent_id&page_token&space=`，you can get the following parameters
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- The `folder ID` obtained in the root directory (for example : `来自分享`、`超级保险箱`), **This will change with different account numbers, there is no the same value, In the request in the package**
+
+![xunlei](/img/drivers/xunlei/x_br_foled.png)
+
+<br/>
+
+
+
+### **Safe password**
+
+Thunder  Browser Safe password
+
+- Files in Safe password can only be deleted directly and cannot be deleted to the recycle bin, so the [**Deletion method**](#remove-way-1) below has nothing to do with this configuration.
+
+<br/>
+
+
+
+### **Remove way**
+
+**Trash**：Use AList to delete files and then move them to the Recycle Bin. If you delete them accidentally, you can restore them through Thunder Cloud
+
+**Delete**：Deleting it directly cannot restore it.
+
+<br/>
+
+
+
+### **Login Type**
+
+- ` User `: Only fill in the username and password
+
+- ` Refresh token `: Just fill in`RefreshToken`
+
+<br/>
+
+
+
+### **Sign Type**
+
+- `Algorithms`：Choose `Algorithms` Just fill in `Algorithms` (It has been automatically filled. You do n’t have to fill in it yourself. You only need to fill in the username and password.When the algorithm is not invalidated)
+- `Captcha sign`: Choose `Captcha sign` Just fill in `Captcha sign` and `Timestamp`
+
+<br/>
+
+
+
+### **Part of parameter Packet Capture description**
+
+- `Captcha token` ：No need to fill in
+- `Device id`：The value calculated by MD5 is used to judge the login device
+- `Client id`, `Client secret`, `Client version`, `Package name`：It related to the signature, fill in according to the actual situation
+
+-----
+
+- `User agent`：API requests `User agent`, setting errors may not access or speed limit
+- `Download user agent`：When downloading, use the `user agent `,If the setting error cannot be downloaded (the agent will use it) 
+  - `User agent` and `Download user agent`：You can fill it out by yourself. If you don’t know how to fill it out, you can leave it blank and it will be automatically filled in.
+
+-----
+
+In the request in the package `https://xluser-ssl.xunlei.com/v1/shield/captcha/init`，you can get the following parameters^6个^
+
+- `Client id`、`Device id`、`Captcha sign`
+
+- `Package name`、`Client version`、`Timestamp`
+
+![xunlei](/img/drivers/xunlei/x_br_add1.png)
+
+
+
+In the request in the package `https://xluser-ssl.xunlei.com/v1/auth/signin/token`, you can get the following parameters^3^
+
+  - `Client id`、`Client secret`、`Refresh token`
+
+![xunlei](/img/drivers/xunlei/x_br_add2.png)
+
+<br/>
+
+
+
+### **Use video url**
+
+- Open `Use video url` 可能会遇到部分类型的文件无法正常访问
 - **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
 
 <br/>

@@ -89,12 +89,12 @@ typeof fetch !== "undefined" && getLimit()
 2. You need to replace the OAUTH token link in the ALIYUNDRIVE_OPEN configuration to
    - `https://api-cf.nn.ci/alist/ali_open/token`
    - `https://api.xhofe.top/alist/ali_open/token`
-   - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
+   - ![](/img/drivers/aliyun/aliyun_api.png)
 
 3. check the details：https://github.com/alist-org/alist/discussions/4572
 
 4. Can I create an authorized OAUTH verification API by themselves?
-    - The is not available at present, but you can reverse proxy [Source Station](https://api.nni.ci)
+    - You need to use your own developer account to build
 
 
 
@@ -178,12 +178,14 @@ If you don’t set it, it will be deleted to the recycle bin by default. If ther
 
 You can choose the type of cloud disk, and you can choose a different type according to your needs. You can set it when adding a driver using AList of v3.25.1 and above. The default is the `default` type
 
-- **default**: Have Intelligeent level users default to `Resource`, No Have Intelligent User's default display is` Backup`
+- **default**: Have Intelligeent level users default to `Non-backup files`, No Have Intelligent User's default display is` Backup file`
 
-- **Resource**: corresponding to `Resource` of the cloud disk
-- **Backup**: corresponding to the `Backup` of the cloud disk
+- **Resource**: corresponding to `Non-backup files` of the cloud disk
+- **Backup**: corresponding to the `Backup file` of the cloud disk
 
-If you don’t have the content mentioned above in your cloud disk, you need to log in to the Aliyun disk mobile terminal version `4.9.0` or later to see it
+202407 --> After AliyunDrive is updated to `6.0` version, the backup disk is changed to backup files and all files are merged together, but in terms of OpenAPI, there is still a distinction between `Resource` and `Backup` types
+
+![](/img/drivers/aliyun/aliyun_type.png)
 
 <br/>
 

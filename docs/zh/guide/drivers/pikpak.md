@@ -19,6 +19,25 @@ star: true
 
 # PikPak/分享
 
+::: danger
+
+1. `个人Pikpak`：谁发出请求谁能用
+   
+   
+   
+   - 例如你在 IP `1.1.1.1`服务器搭建的AList，但是你本人IP是`2.2.2.2`，无法播放下载，或者开启代理中转策略
+
+-----
+2. `分享Pikpak`：有大小限制，超出指定文件大小后只能播放40%~50%
+
+   
+
+   - 具体多大文件暂时未知具体数值
+
+:::
+
+
+
 ## **PikPak挂载**
 
 ### **用户名**
@@ -47,7 +66,22 @@ star: true
 
 - **https://github.com/alist-org/alist/issues/4735**
 
-<br/><br/>
+<br/>
+
+### **离线下载**
+
+v3.36.0及以上版本支持在AList调用Pikpak离线下载功能
+
+右下角选择 <span style="color: rgb(24, 144, 255);"><svg fill="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="toolbar-toggle hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" height="1em" width="1em" style="overflow: visible;"><path fill="currentColor" d="M7 14a2 2 0 100-4 2 2 0 000 4zM14 12a2 2 0 11-4 0 2 2 0 014 0zM17 14a2 2 0 100-4 2 2 0 000 4z"></path><path fill="currentColor" fill-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-2 0c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" clip-rule="evenodd"></path></svg></span><span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-iipViGO-css" tips="offline_download" height="1em" width="1em" style="overflow: visible;"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M421.83 293.82A144 144 0 00218.18 90.17M353.94 225.94a48 48 0 00-67.88-67.88"></path><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M192 464v-48M90.18 421.82l33.94-33.94M48 320h48"></path><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M286.06 158.06L172.92 271.19a32 32 0 01-45.25 0L105 248.57a32 32 0 010-45.26L218.18 90.17M421.83 293.82L308.69 407a32 32 0 01-45.26 0l-22.62-22.63a32 32 0 010-45.26l113.13-113.17M139.6 169.98l67.88 67.89M275.36 305.75l67.89 67.88"></path> </svg></span>离线下载选项选择`Pikpak`
+
+- 支持：`magne`、`http`、 `ed2k` 链接
+- 也支持：X、TikTok、Facebook、TG的网址链接
+
+仅支持使用Pikpak离线下载，非Pikpak会提示如下错误：
+
+- unsupported storage driver for offline download, only Pikpak is supported
+
+<br/>
 
 
 

@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-# 迅雷云盘
+# 迅雷云盘/X/浏览器
 
 :::tip
 
@@ -30,12 +30,17 @@ star: true
 
 -----
 
-迅雷 X（后两个）服务海外用户，截止文档发布时只有 安卓版其它版本暂未发布
-
-迅雷 X 本地代理模式，迅雷 X  专家版有302方式 
+迅雷 X 服务海外用户，截止文档发布时只有 安卓版其它版本暂未发布
 
 - 迅雷 X 目前未开启会员的速度也符合使用情况，后期更改暂时未知
-- 使用APP可能需要Proxy，挂载在AList不需要
+- 使用APP可能需要 Proxy，挂载在AList不需要
+
+-----
+
+迅雷浏览器：目前仅支持手机端（Android、iOS）
+
+- **https://x.xunlei.com/**
+- 如果在AList登录后会将手机端踢下线，反之如果先在AList登录再登录手机，会将AList踢下线但是没有提示
 
 :::
 
@@ -238,6 +243,12 @@ flowchart TB
 
 @tab 迅雷 X
 
+::: danger
+
+目前官方对于频繁调用接口行为会进行封号处理，请谨慎使用，后果自负。
+
+:::
+
 ### **用户名、密码**
 
 即用于登陆的邮箱和密码
@@ -280,29 +291,46 @@ flowchart TB
 
 ### **默认使用的下载方式**
 
-
 ```mermaid
 ---
 title: 默认使用的哪种下载方式？
 ---
 flowchart TB
-    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
     style a2 fill:#ff7575,stroke:#333,stroke-width:4px
     subgraph ide1 [ ]
-    c1
+    a1
     end
-    c1[本机代理]:::someclass==默认===>a2[用户设备]
+    a1[302]:::someclass====|默认|a2[用户设备]
     classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
     b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
     click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```
 
+
+
 @tab 迅雷 X 专家版
+
+::: danger
+
+目前官方对于频繁调用接口行为会进行封号处理，请谨慎使用，后果自负。
+
+:::
 
 ### **用户名、密码**
 
 即用于登陆的邮箱和密码
+
+<br/>
+
+
+
+### **验证码**
+
+会自动填充，不用自己填写
 
 <br/>
 
@@ -347,8 +375,12 @@ flowchart TB
 - `验证码` ：无需填写
 - `设备id`：通过 MD5 计算的值，用于判断登录的设备
 - `客户端ID`, `客户端密钥`, `客户端版本`, `包名`：与签名有关，根据实际情况填写
+
+-----
+
 - `用户代理`：API 请求使用的 `用户代理`，设置错误可能无法访问或限速
-- `下载用户代理`：下载时用到的 `用户代理`，如果设置错误会无法下载(开启代理会使用) 固定参数：`Dalvik/2.1.0 (Linux; U; Android 12; M2004J7AC Build/SP1A.210812.016)`
+- `下载用户代理`：下载时用到的 `用户代理`，如果设置错误会无法下载(开启代理会使用) 
+  - `用户代理` 和 `下载用户代理` 可以自己填写，如果不知道如何填写可以留空会自动填充
 
 -----
 
@@ -356,7 +388,8 @@ flowchart TB
 
 - `客户端ID（Client id）`、`设备id（Device id）`、`验证码签名（Captcha sign）`
 - `包名（Package name）`、`客户端版本（Client version）`、`时间戳（Timestamp）`
-  - ![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
+
+![xunlei](/img/drivers/xunlei/xlx_z1.jpg)
 
 
 
@@ -364,7 +397,8 @@ flowchart TB
 抓包请求中的`https://xluser-ssl.xunleix.com/v1/auth/signin`，可以得到下面的参数^2个^
 
   - `客户端ID（Client id）`、`客户端密钥（Client secret）`
-    - ![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
+
+![xunlei](/img/drivers/xunlei/xlx_z2.jpg)
 
 
 <br/>
@@ -373,6 +407,232 @@ flowchart TB
 
 ### **使用视频URL**
 
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+### **默认使用的下载方式**
+
+```mermaid
+---
+title: 默认使用的哪种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
+
+@tab 迅雷浏览器
+
+### **用户名、密码**
+
+即用于登陆的手机号,邮箱,用户名，以及密码
+
+- 填写手机号要携带 `+86` 区号，例如 `+8613822334455`
+
+<br/>
+
+
+
+### **验证码**
+
+会自动填充，不用自己填写
+
+<br/>
+
+
+
+### **根文件夹ID**
+
+默认为空展示全部目录，如果想用子文件夹做根目录请抓包获取
+
+- 抓包请求中的`https://x-api-pan.xunlei.com/drive/v1/files?parent_id&page_token&space=`，可以得到下面参数
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- 根目录下获取的`文件夹ID（Folder id）`（例如：`来自分享`、`超级保险箱`），**这个会随着账号不同而变动，没有固定一样的值，自己抓包获取**
+
+![xunlei](/img/drivers/xunlei/x_br_foled.png)
+
+<br/>
+
+
+
+### **保险箱密码**
+
+迅雷浏览器云盘的保险箱密码
+
+- 超级保险箱內文件只能直接删除 无法删除到回收站，所以下方[**删除方式**](#删除方式)与此配置无关
+
+<br/>
+
+
+
+### **删除方式**
+
+**回收站**：在AList删除后移除到回收站，如果有误删可以通过迅雷云盘恢复
+
+**删除**：直接删除不可以恢复找回
+
+<br/>
+
+
+
+### **使用视频URL**
+
+- 开启 `视频视频URL` 可能会遇到部分类型的文件无法正常访问
+- **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
+
+<br/>
+
+
+
+
+### **默认使用的下载方式**
+
+```mermaid
+---
+title: 默认使用的哪种下载方式？
+---
+flowchart TB
+    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    a1
+    end
+    a1[302]:::someclass====|默认|a2[用户设备]
+    classDef someclass fill:#f96
+    c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
+    click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
+
+@tab 迅雷浏览器专家版
+
+### **用户名、密码**
+
+即用于登陆的手机号,邮箱,用户名，以及密码
+
+- 填写手机号要携带 `+86` 区号，例如 `+8613822334455`
+
+<br/>
+
+
+
+### **验证码**
+
+会自动填充，不用自己填写
+
+<br/>
+
+
+
+### **根文件夹ID**
+
+默认为空展示全部目录，如果想用子文件夹做根目录请抓包获取
+
+- 抓包请求中的`https://x-api-pan.xunlei.com/drive/v1/files?parent_id&page_token&space=`，可以得到下面参数
+  - `文件夹ID（id）`
+  - `文件夹名称（name）`
+  - `父文件夹ID（parent_id）`
+- 根目录下获取的`文件夹ID（Folder id）`（例如：`来自分享`、`超级保险箱`），**这个会随着账号不同而变动，没有固定一样的值，自己抓包获取**
+
+![xunlei](/img/drivers/xunlei/x_br_foled.png)
+
+<br/>
+
+
+
+### **保险箱密码**
+
+迅雷浏览器云盘的保险箱密码
+
+- 超级保险箱內文件只能直接删除 无法删除到回收站，所以下方[**删除方式**](#删除方式-1)与此配置无关
+
+<br/>
+
+
+
+### **删除方式**
+
+**回收站**：在AList删除后移除到回收站，如果有误删可以通过迅雷云盘恢复
+
+**删除**：直接删除不可以恢复找回
+
+<br/>
+
+
+
+### **登录类型**
+
+- `用户`：选择 `用户`时填`用户名和密码`
+- `刷新令牌`：选择 `刷新令牌` 时只需填写 `刷新令牌`
+
+<br/>
+
+
+
+### **签名类型**
+
+- `算法`：选择 `算法（Algorithms）` 时需填写 `算法（Algorithms）`
+- `验证码签名`：选择 `验证码签名（Captcha sign）` 时只需填写 `验证码签名（Captcha sign）` 和 `时间戳（Timestamp）`
+
+<br/>
+
+
+
+### **部分参数抓包说明**
+
+- `验证码` ：无需填写
+- `设备id`：通过 MD5 计算的值，用于判断登录的设备
+- `客户端ID`, `客户端密钥`, `客户端版本`, `包名`：与签名有关，根据实际情况填写
+
+-----
+
+- `用户代理`：API 请求使用的 `用户代理`，设置错误可能无法访问或限速
+- `下载用户代理`：下载时用到的 `用户代理`，如果设置错误会无法下载(开启代理会使用) 
+  - `用户代理` 和 `下载用户代理` 可以自己填写，如果不知道如何填写可以留空会自动填充
+
+
+-----
+
+抓包请求中的`https://xluser-ssl.xunlei.com/v1/shield/captcha/init`，可以得到下面参数^6个^
+
+- `客户端ID（Client id）`、`设备id（Device id）`、`验证码签名（Captcha sign）`
+- `包名（Package name）`、`客户端版本（Client version）`、`时间戳（Timestamp）`
+![xunlei](/img/drivers/xunlei/x_br_add1.png)
+
+
+
+
+抓包请求中的`https://xluser-ssl.xunlei.com/v1/auth/signin/token`，可以得到下面的参数^3个^
+
+  - `客户端ID（Client id）`、`客户端密钥（Client secret）`、`刷新令牌（Refresh token）`
+
+![xunlei](/img/drivers/xunlei/x_br_add2.png)
+
+
+<br/>
+
+
+
+### **使用视频URL**
+
+- 开启 `视频视频URL` 可能会遇到部分类型的文件无法正常访问
 - **https://github.com/alist-org/alist/pull/6464#issuecomment-2124306443**
 
 <br/>

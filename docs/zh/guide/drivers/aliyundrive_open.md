@@ -89,12 +89,12 @@ typeof fetch !== "undefined" && getLimit()
 2.  需要将`aliyundrive_open`后台配置中的`Oauth令牌链接`更换为
     - `https://api-cf.nn.ci/alist/ali_open/token`
     - `https://api.xhofe.top/alist/ali_open/token`
-    - ![](https://user-images.githubusercontent.com/56105412/245379419-bc90dd81-35d5-4773-952c-d160830efce8.png)
+    - ![](/img/drivers/aliyun/aliyun_api.png)
 
 3.  查看详情：https://github.com/alist-org/alist/discussions/4572
 
 4.  是否可以自己搭建授权OAuth验证API？
-    - 暂时不可以，但是你可以反向代理[源站](https://api.nni.ci)
+    - 需要使用自己申请的开发者帐号搭建
 
 
 :::
@@ -182,12 +182,14 @@ typeof fetch !== "undefined" && getLimit()
 
 云盘类型可以选择，可以自己的需求选择不同类型，使用 v3.25.1及以上版本的AList添加驱动时进行设置，默认选择的是`默认`类型
 
-- **默认**：有达人等级用户默认展示的是`资源库`内容，没有达人等级用户默认展示的是`备份盘`内容
+- **默认**：有达人等级用户默认展示的是`非备份文件`内容，没有达人等级用户默认展示的是`备份文件`内容
 
-- **资源库**：对应云盘的`资源库`
-- **备份盘**：对应云盘的`备份盘`
+- **资源库**：对应云盘的`非备份文件内容`
+- **备份盘**：对应云盘的`备份文件`
 
-如果你云盘內没有上述提到的内容，需要登录一下阿里云盘手机端`4.9.0`以上的版本就可以看到
+202407 --> 阿里云盘更新 `6.0` 版本后，备份盘变更为备份文件和全部文件合并在一起了，但是在OpenAPI方面还是区分 `资源库` 和 `备份盘` 类型
+
+![](/img/drivers/aliyun/aliyun_type.png)
 
 <br/>
 
