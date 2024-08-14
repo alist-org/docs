@@ -82,7 +82,7 @@ The TV version supports `302`, but only `List` and `Download` operations are sup
 
 1. Select the `UC TV` driver, fill in the mounting path, and then save
 
-2. Return to the all driver page and use the mobile APP to scan the QR code
+2. Return to the all driver page and use the mobile APP to scan the QR code (If the QR code is not displayed, click on `Table Layout` in the upper right corner of the driver to switch from list mode to table mode)
 
 3. After scanning the QR code to confirm, disable the driver, then enable the `driver` to use it.
    - `Refresh token`、`Device id`、`Query token`,It will be filled in automatically, no manual filling is required
