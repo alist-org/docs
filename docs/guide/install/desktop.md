@@ -26,3 +26,29 @@ comment: false
 <script setup lang="ts">
 import Desktop from "@Desktop";
 </script>
+
+
+## **Remove device limits**
+
+:::: details Remove device limits
+
+::: tabs#Desktop
+
+@tab mbd
+
+Enter the `key` purchased on mbd to deactivate the device that is no longer in use and kick it offline.
+
+- **https://ad.nn.ci/zh/usage**
+
+![](/img/desktop/mianbaoduo.png)
+
+@tab Lemon Squeezy
+
+Log in to **https://app.lemonsqueezy.com/my-orders**
+log in with the email address you used when you purchased [:lemon:Lemon Squeezy](https://store.nn.ci/buy/51dca247-20df-4991-8104-54ca534bcc82) and follow the instructions below.
+
+![](/img/desktop/llemonsqueezy.png)
+
+:::
+
+::::

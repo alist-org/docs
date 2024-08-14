@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 36
+order: 9
 # A page can have multiple categories
 category:
   - Guide
@@ -17,13 +17,48 @@ sticky: true
 star: true
 ---
 
-# Yandex云盘
+# 联想家庭储存链接分享
 
-### **刷新令牌**
-[点击这里](https://oauth.yandex.com/authorize?response_type=code&client_id=a78d5a69054042fa936f6c77f9a0ae8b) 来获取刷新令牌。
+**https://pc.lenovo.com.cn**
 
-### **根文件夹ID**
-要挂载的根文件夹，默认为 `/`
+- 需要购买联想设备
+
+<br/>
+
+
+
+## **根文件夹ID**
+
+根文件夹ID：空着
+
+子文件夹ID：进入需要获取子文件夹ID的文件夹，找到该请求，获取子文件夹ID
+
+![](/img/drivers/lenovonasshare/lenovonasshare_fileid.png)
+
+<br/>
+
+
+
+## **分享ID和分享密码**
+
+分享链接链接示例： https://siot-share.lenovo.com.cn/s/#/Ss.JjMaJJwcgrDT46qhVA 提取码：`fr0w`
+
+- **分享ID**：分享链接中末尾的字符串 `Ss.JjMaJJwcgrDT46qhVA`
+- **分享密码** ：提取码
+
+<br/>
+
+
+
+### **主机地址**
+
+默认使用公网的：**https://siot-share.lenovo.com.cn**
+
+如果你使用局域网的可以改成联想设备内网地址：**http://192.168.XX.XX**
+
+<br/>
+
+
 
 ### **默认使用的下载方式**
 

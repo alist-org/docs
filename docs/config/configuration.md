@@ -82,19 +82,23 @@ After modifying the configuration file, restart AList for changes to take effect
   "tasks": {
     "download": {
       "workers": 5,
-      "max_retry": 1
+      "max_retry": 1,
+      "task_persistant": true
     },
     "transfer": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     },
     "upload": {
       "workers": 5,
-      "max_retry": 0
+      "max_retry": 0,
+      "task_persistant": false
     },
     "copy": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     }
   },
   "cors": {
@@ -395,21 +399,25 @@ Configuration for background task threads.
   "tasks": {
     "download": {
       "workers": 5,
-      "max_retry": 1
+      "max_retry": 1,
+      "task_persistant": true
     },
     "transfer": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     },
     "upload": {
       "workers": 5,
-      "max_retry": 0
+      "max_retry": 0,
+      "task_persistant": false
     },
     "copy": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     }
-  }
+  },
 ```
 
 - **workers**: Number of task threads.
@@ -420,6 +428,12 @@ Configuration for background task threads.
 - **transfer**: upload transfer task after offline download is completed
 - **upload**: upload task
 - **copy**: copy the task
+- **task_persistant**：The task is persistent and will not be cancelled after restarting `AList`
+  - download：true
+  - transfer：true
+  - upload：false
+  - copy：true
+
 
 <br/>
 
