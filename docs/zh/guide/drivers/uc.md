@@ -18,21 +18,21 @@ sticky: true
 star: true
 ---
 
-# 夸克网盘 / TV
+# UC / TV
 
-**https://pan.quark.cn**
+## **UC 网盘**
 
-:::danger
-由于夸克网盘限速问题，夸克网盘现在只能使用本地代理进行传输，[说明详见](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
-:::
+**https://drive.uc.cn/**
 
-## **夸克网盘**
+<br/>
+
+
 
 ### **Cookie**
 
-按F12打开“调试”，选中“网络”，随意在左侧选择请求，找到携带 `Cookie` 参数的就可以
+在 `F12`任意请求中找到携带 `Cookie` 的值
 
-![quark](/img/drivers/quark/quark_cookie.png)
+![](/img/drivers/uc/uc_cookie.png)
 
 <br/>
 
@@ -44,26 +44,7 @@ star: true
 
 - 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后，想挂载哪个子目录就写那个子目录ID就可以
 
-![url](/img/drivers/quark/quark_fileid.png)
-
-注意：请使用Chrome浏览器来获取Cookies，使用Firefox获取的Cookies或仍将停留在访客并请求登录。
-
-<br/>
-
-
-
-### **[在线预览/下载]很慢?**
-
-夸克云盘下载很慢是因为夸克云盘需要开通**会员**，并且挂载只能^(强制)^使用`本地代理`方式，就需要你搭建AList的机器有一个很高的带宽速度
-
-- 什么是`本地代理`？
-
-  - `本地代理`就是你搭建AList的机器来中转,就是先下载到你搭建AList的机器，在由机器转发给你，你搭建AList的机器速度不够快，再转发给你的速度自然也不够快
-1. 换带宽高的服务器来中转
-   
-2. 在自己家里电脑搭建
-   
-3. 直接放弃不用.
+![](/img/drivers/uc/uc_fileid.png)
 
 <br/>
 
@@ -82,18 +63,14 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[本机代理]:::someclass==强制===>a2[用户设备]
+    c1[本机代理]:::someclass==默认===>a2[用户设备]
     classDef someclass fill:#f96
+    b1[代理URL]-.备选.->a2[用户设备]
+    click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```
 
-说明：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
-
-<br/>
-
-
-
-## **夸克TV**
+## **UC TV**
 
 TV 版支持 `302`，但是只能 `访问` 和 `下载` 两个操作，其它操作不支持(接口不支持)
 
@@ -103,7 +80,7 @@ TV 版支持 `302`，但是只能 `访问` 和 `下载` 两个操作，其它操
 
 ### **添加方式**
 
-1. 选择 `夸克TV / QuarkTV` 驱动，填写挂载路径，然后保存
+1. 选择 `UCTV` 驱动，填写挂载路径，然后保存
 2. 返回全部驱动页面，使用手机APP扫描二维码（如果不显示二维码，驱动右上角点击点击`表格布局` 从列表模式切换成表格模式）
 3. 扫码确认后，禁用驱动，再启用`驱动`即可使用
    - `Refresh token 刷新令牌`、`Device id 设备ID `、`Query token` 会自动填充，不需要人工填写
@@ -117,11 +94,11 @@ TV 版支持 `302`，但是只能 `访问` 和 `下载` 两个操作，其它操
 
 ### **根文件夹ID**
 
-根目录ID为 `0`
+要挂载的根文件夹，默认为`0`
 
-- 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后，想挂载哪个子目录就写那个子目录ID就可以
+- 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后
 
-![url](/img/drivers/quark/quark_fileid.png)
+![](/img/drivers/uc/uc_fileid.png)
 
 <br/>
 

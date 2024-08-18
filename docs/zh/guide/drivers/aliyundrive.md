@@ -116,7 +116,7 @@ style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8p
 
 _API is hosted on replit.com_
 
-### **Root folder file_id**
+### **根文件夹ID**
 
 打开阿里云盘官网，点击进入要设置的文件夹时点击 URL 后面的字符串
 

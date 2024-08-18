@@ -38,7 +38,7 @@ location /alist/ {
     proxy_set_header Range $http_range;
 	  proxy_set_header If-Range $http_if_range;
     proxy_redirect off;
-    proxy_pass http://127.0.0.1:5244/alist/;
+    proxy_pass http://127.0.0.1:5244/alist;
     # the max size of file to upload
     client_max_body_size 20000m;
 }

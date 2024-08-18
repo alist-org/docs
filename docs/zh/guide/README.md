@@ -45,7 +45,7 @@ category:
 - [x] [四川电信魔盘](https://mopan.sc.189.cn/mopan/#/downloadPc)
 - [x] [Yandex.Disk](https://disk.yandex.com/)
 - [x] [百度网盘](https://pan.baidu.com/) / [分享](./drivers/baidu_share.md)
-- [x] [夸克网盘](https://pan.quark.cn)
+- [x] [夸克网盘/TV](https://pan.quark.cn)
 - [x] [迅雷网盘 / X / 浏览器](../guide/drivers/thunder.md)
 - [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
 - [x] [小飞机网盘](https://feijipan.com/)
@@ -63,7 +63,7 @@ category:
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/UrlTree.md)
 - [x] IPFS
-- [x] [UC网盘](https://drive.uc.cn/)
+- [x] [UC网盘/TV](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
 - [x] [腾讯微云](https://www.weiyun.com/)
 - [x] [腾讯智能创作平台](https://app.v.tencent.com/)
@@ -71,6 +71,7 @@ category:
 - [x] [曲奇云盘](https://quqi.com)
 - [x] [网易云音乐云盘](../guide/drivers/163music.md)
 - [x] [6盘](../guide/drivers/halalcloud.md)
+- [x] [联想家庭储存链接分享](https://pc.lenovo.com.cn)
 
 ## Discussion
 

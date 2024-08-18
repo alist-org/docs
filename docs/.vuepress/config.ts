@@ -80,7 +80,12 @@ export default defineUserConfig({
       description: "AList v3的文档",
     },
   },
-
+  markdown: {
+    headers: {
+      level: [2, 3, 4, 5, 6]
+    }
+  },
+  
   theme,
   plugins: [
     docsearchPlugin({

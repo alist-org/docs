@@ -82,19 +82,23 @@ star: true
   "tasks": {
     "download": {
       "workers": 5,
-      "max_retry": 1
+      "max_retry": 1,
+      "task_persistant": true
     },
     "transfer": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     },
     "upload": {
       "workers": 5,
-      "max_retry": 0
+      "max_retry": 0,
+      "task_persistant": false
     },
     "copy": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     }
   },
   "cors": {
@@ -401,21 +405,25 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
   "tasks": {
     "download": {
       "workers": 5,
-      "max_retry": 1
+      "max_retry": 1,
+      "task_persistant": true
     },
     "transfer": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     },
     "upload": {
       "workers": 5,
-      "max_retry": 0
+      "max_retry": 0,
+      "task_persistant": false
     },
     "copy": {
       "workers": 5,
-      "max_retry": 2
+      "max_retry": 2,
+      "task_persistant": true
     }
-  }
+  },
 ```
 
 - **workers**：任务线程数量
@@ -425,6 +433,12 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 - **transfer**：离线下载时上传中转的任务
 - **upload**：上传任务
 - **copy**：复制任务
+- **task_persistant**：任务持久化，重启 `AList` 后任务不会取消
+  - **download**：true
+  - **transfer**：true
+  - **upload**：false
+  - **copy**：true
+
 
 <br/>
 

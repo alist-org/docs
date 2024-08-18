@@ -47,7 +47,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [MoPan](https://mopan.sc.189.cn/mopan/#/downloadPc)
 - [x] [YandexDisk](https://disk.yandex.com/)
 - [x] [BaiduNetdisk](https://pan.baidu.com/) / [share](./drivers/baidu_share.md)
-- [x] [Quark](https://pan.quark.cn/)
+- [x] [Quark/TV](https://pan.quark.cn/)
 - [x] [Thunder / X Browser](../guide/drivers/thunder.md)
 - [x] [Lanzou](https://www.lanzou.com/)、[NewLanzou](https://www.ilanzou.com)
 - [x] [Feiji Cloud](https://feijipan.com/)
@@ -65,7 +65,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Trainbit](https://trainbit.com/)
 - [x] [UrlTree](../guide/drivers/UrlTree.md)
 - [x] IPFS
-- [x] [UC Clouddrive](https://drive.uc.cn/)
+- [x] [UC Clouddrive/TV](https://drive.uc.cn/)
 - [x] [Dropbox](https://www.dropbox.com)
 - [x] [Tencent weiyun](https://www.weiyun.com/)
 - [x] [vtencent](https://app.v.tencent.com/)
@@ -73,6 +73,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Quqi Cloud](https://quqi.com)
 - [x] [163 Music Drive](../guide/drivers/163music.md)
 - [x] [halalcloud](../guide/drivers/halalcloud.md)
+- [x] [LenovoNasShare](https://pc.lenovo.com.cn)
 
 ### Discussion
 

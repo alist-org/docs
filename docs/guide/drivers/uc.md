@@ -18,21 +18,21 @@ sticky: true
 star: true
 ---
 
-# Quark / TV
+# UC / TV
 
-**https://pan.quark.cn**
+## **UC Cloud**
 
-:::danger
-Due to the speed limit of Quark Cloud,Quick Cloud must use local agents for transmission now,[For details, see](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
-:::
+**https://drive.uc.cn/**
 
-## **Quark Cloud**
+<br/>
+
+
 
 ### **Cookie**
 
 Press F12 to open "Debug", select "Network", select any request on the left, and find the one with the `Cookie` parameter.
 
-![quark](/img/drivers/quark/quark_cookie.png)
+![](/img/drivers/uc/uc_cookie.png)
 
 <br/>
 
@@ -44,9 +44,7 @@ Root Folder ID is `0`
 
 - After entering the folder, get the directory ID in the top address bar. If the subdirectory is deeper, the directory ID will be at the back of the address bar. Just write the subdirectory ID you want to mount.
 
-![url](/img/drivers/quark/quark_fileid.png)
-
-Note that only Cookies captured in Chrome is available, use Firefox's Cookies may remain in guest and still require login.
+![](/img/drivers/uc/uc_fileid.png)
 
 <br/>
 
@@ -65,16 +63,14 @@ flowchart TB
     subgraph ide1 [ ]
     c1
     end
-    c1[local proxy]:::someclass==mandatory===>a2[user equipment]
+    c1[local proxy]:::someclass==default===>a2[user equipment]
     classDef someclass fill:#f96
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
     click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
 ```
 
-illustrate：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
-
-
-
-## **Quark TV**
+## **UC TV**
 
 The TV version supports `302`, but only `List` and `Download` operations are supported. Other operations are not supported (the interface does not support it).
 
@@ -84,12 +80,12 @@ The TV version supports `302`, but only `List` and `Download` operations are sup
 
 ### **Add method**
 
-1. Select the `QuarkTV` driver, fill in the mounting path, and then save
+1. Select the `UC TV` driver, fill in the mounting path, and then save
 
 2. Return to the all driver page and use the mobile APP to scan the QR code (If the QR code is not displayed, click on `Table Layout` in the upper right corner of the driver to switch from list mode to table mode)
 
 3. After scanning the QR code to confirm, disable the driver, then enable the `driver` to use it.
-   - `Refresh token`、`Device id `、`Query token`, It will be filled in automatically, no manual filling is required
+   - `Refresh token`、`Device id`、`Query token`,It will be filled in automatically, no manual filling is required
      - Please do not edit manually and modify it
 
 ![](/img/drivers/tv_qrcode.png)
@@ -104,7 +100,7 @@ Root Folder ID is `0`
 
 - After entering the folder, get the directory ID in the top address bar. If the subdirectory is deeper, the directory ID will be at the back of the address bar. Just write the subdirectory ID you want to mount.
 
-![url](/img/drivers/quark/quark_fileid.png)
+![](/img/drivers/uc/uc_fileid.png)
 
 <br/>
 
