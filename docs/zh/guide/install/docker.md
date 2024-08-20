@@ -78,7 +78,7 @@ services:
 ##### **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:beta
 ```
 
 ##### **docker-compose**
@@ -100,7 +100,7 @@ docker-compose up -d
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:main'
+        image: 'xhofe/alist:beta'
         container_name: alist
         volumes:
             - '/etc/alist:/opt/alist/data'
@@ -159,7 +159,7 @@ services:
 **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main-ffmpeg
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:beta-ffmpeg
 ```
 
 **docker-compose**
@@ -168,7 +168,7 @@ docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:524
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:main-ffmpeg'
+        image: 'xhofe/alist:beta-ffmpeg'
         container_name: alist
         volumes:
             - '/etc/alist:/opt/alist/data'
