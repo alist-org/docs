@@ -149,7 +149,7 @@ services:
         restart: unless-stopped
 ```
 
-@tab main
+@tab beta
 
 **docker-cli**
 
