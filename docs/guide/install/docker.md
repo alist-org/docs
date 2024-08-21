@@ -109,11 +109,16 @@ services:
 ### **Specify version**
 See https://hub.docker.com/r/xhofe/alist for details
 
-### **Docker-ffmpeg**
+### **Image with built-in ffmpeg**
 
-- https://github.com/alist-org/alist/pull/6054
+You can switch to the version of the image with an out-of-the-box ffmpeg environment by adding `-ffmpeg` to any image tag.
 
-I'm not sure if the method of **docker-compose** is correct. If it's not correct, you can give us feedback.
+If the thumbnail feature is still not working, please verify the following:
+
++ You are using local storage
++ Switch to grid view
++ The thumbnail feature for local storage is enabled
++ The configuration path for the thumbnail cache folder in local storage is correct, for example, `data/thumbnail`
 
 ::: tabs#Docker-ffmpeg
 

@@ -117,13 +117,16 @@ services:
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
 
+### **内置 ffmpeg 版镜像**
 
+在任何镜像 tag 后添加 `-ffmpeg` 即可切换到带有开箱即用的 ffmpeg 环境版本镜像
 
-### **Docker-ffmpeg**
+如果缩略图功能仍无法使用，请确认:
 
-- https://github.com/alist-org/alist/pull/6054
-
-**docker-compose** 的方式不确定是否正确，如果不正确可以反馈
++ 使用的是本地存储
++ 切换到网格视图
++ 本地存储的缩略图开关开启
++ 本地存储的缩略图缓存文件夹配置路径正确，例如 `data/thumbnail`
 
 ::: tabs#Docker-ffmpeg
 
