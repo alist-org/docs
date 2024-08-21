@@ -199,6 +199,26 @@ services:
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
+### **手动编译 Docker 镜像**
+
+安装 docker，克隆仓库后进入仓库根目录，无需其他准备
+
+::: tabs#Docker-build
+
+@tab basic
+
+```bash
+docker build -t xhofe/alist:latest .
+```
+
+@tab with ffmpeg
+
+```bash
+docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
+```
+
+:::
+
 ## **有关离线下载功能的额外说明**
 
 若没有使用```docker pull --platform```参数拉取镜像时，docker可能会在64位操作系统上拉取32位镜像,这将可能导致离线下载功能即使在正常配置情况下也无法使用。
@@ -244,23 +264,3 @@ A：原因是你的docker设置了镜像，从镜像更新不到最新版本，�
 
 - 删除若不行，可以考虑更换一个`镜像加速地址`
 - 或者简单粗暴：下载时将`xhofe/alist:latest` 替换为`xhofe/alist:v3.16.3`（指定版本，写教程时最新的是3.16.3）
-
-## **怎么编译 Docker 镜像?**
-
-安装 docker，克隆仓库后进入仓库根目录，无需其他准备
-
-::: tabs#Docker-build
-
-@tab basic
-
-```bash
-docker build -t xhofe/alist:latest .
-```
-
-@tab with ffmpeg
-
-```bash
-docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
-```
-
-:::
