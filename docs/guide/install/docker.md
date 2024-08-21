@@ -232,3 +232,23 @@ A: The reason is that your docker has set up a mirror, and the latest version ca
 
 - If deletion doesn’t work, you can consider replacing it with a `mirror acceleration address`
 - Or simple and rude: when downloading, replace `xhofe/alist:latest` with `xhofe/alist:v3.16.3` (specify the version, the latest when writing the tutorial is 3.16.3)
+
+## **How to manually build Docker image?**
+
+Install Docker, clone the repository, and navigate to the root directory of the repository, no additional preparation is needed.
+
+::: tabs#Docker-build
+
+@tab basic
+
+```bash
+docker build -t xhofe/alist:latest .
+```
+
+@tab with ffmpeg
+
+```bash
+docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
+```
+
+:::

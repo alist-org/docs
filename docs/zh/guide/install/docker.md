@@ -244,3 +244,23 @@ A：原因是你的docker设置了镜像，从镜像更新不到最新版本，�
 
 - 删除若不行，可以考虑更换一个`镜像加速地址`
 - 或者简单粗暴：下载时将`xhofe/alist:latest` 替换为`xhofe/alist:v3.16.3`（指定版本，写教程时最新的是3.16.3）
+
+## **怎么编译 Docker 镜像?**
+
+安装 docker，克隆仓库后进入仓库根目录，无需其他准备
+
+::: tabs#Docker-build
+
+@tab basic
+
+```bash
+docker build -t xhofe/alist:latest .
+```
+
+@tab with ffmpeg
+
+```bash
+docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
+```
+
+:::
