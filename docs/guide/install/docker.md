@@ -18,7 +18,7 @@ star: true
 
 # Use Docker
 
-See the log output for the admin's info:
+## See the admin's info:
 
 #### Lower than v3.25.0
 
@@ -37,7 +37,7 @@ docker exec -it alist ./alist admin random
 docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
-### **Release version**
+## **Release version**
 
 #### **docker-cli**
 
@@ -109,11 +109,16 @@ services:
 ### **Specify version**
 See https://hub.docker.com/r/xhofe/alist for details
 
-### **Docker-ffmpeg**
+### **Image with built-in ffmpeg**
 
-- https://github.com/alist-org/alist/pull/6054
+You can switch to image with out-of-the-box ffmpeg environment by adding `-ffmpeg` to any image tag.
 
-I'm not sure if the method of **docker-compose** is correct. If it's not correct, you can give us feedback.
+If the thumbnail feature is still not working, please verify the following:
+
++ You are using local storage
++ Switched to grid view
++ The thumbnail switch in local storage driver settings is enabled
++ The configuration path for the thumbnail cache folder in local storage is correct, for example, `data/thumbnail`
 
 ::: tabs#Docker-ffmpeg
 
@@ -144,7 +149,7 @@ services:
         restart: unless-stopped
 ```
 
-@tab main
+@tab beta
 
 **docker-cli**
 
@@ -186,7 +191,27 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
 
-### **Additional notes about the offline download feature**
+### **Manually build Docker image**
+
+Install Docker, clone the repository, and navigate to the root directory of the repository, no additional preparation is needed.
+
+::: tabs#Docker-build
+
+@tab basic
+
+```bash
+docker build -t xhofe/alist:latest .
+```
+
+@tab with ffmpeg
+
+```bash
+docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
+```
+
+:::
+
+## **Additional notes about the offline download feature**
 
 If the image is not pulled using the '''docker pull --platform''' parameter, docker may pull the 32-bit image on the 64-bit operating system, which may cause the offline download function to be unavailable even under normal configuration.
 
@@ -200,7 +225,7 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 
 
-### **How to update Docker installation?**
+## **How to update Docker installation?**
 
 ::: details docker-cli update
 1. docker ps -a #View the container (find the ID of the Alist container)
