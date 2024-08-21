@@ -18,7 +18,7 @@ star: true
 
 # Use Docker
 
-See the log output for the admin's info:
+## See the admin's info:
 
 #### Lower than v3.25.0
 
@@ -37,7 +37,7 @@ docker exec -it alist ./alist admin random
 docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
-### **Release version**
+## **Release version**
 
 #### **docker-cli**
 
@@ -205,7 +205,7 @@ If the CPU architecture is 32-bit, there is currently no solution available.
 
 
 
-### **How to update Docker installation?**
+## **How to update Docker installation?**
 
 ::: details docker-cli update
 1. docker ps -a #View the container (find the ID of the Alist container)
