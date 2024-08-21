@@ -111,13 +111,13 @@ See https://hub.docker.com/r/xhofe/alist for details
 
 ### **Image with built-in ffmpeg**
 
-You can switch to the version of the image with an out-of-the-box ffmpeg environment by adding `-ffmpeg` to any image tag.
+You can switch to image with out-of-the-box ffmpeg environment by adding `-ffmpeg` to any image tag.
 
 If the thumbnail feature is still not working, please verify the following:
 
 + You are using local storage
-+ Switch to grid view
-+ The thumbnail feature for local storage is enabled
++ Switched to grid view
++ The thumbnail switch in local storage driver settings is enabled
 + The configuration path for the thumbnail cache folder in local storage is correct, for example, `data/thumbnail`
 
 ::: tabs#Docker-ffmpeg
