@@ -274,17 +274,17 @@ https://your.alist.domain/api/auth/sso_callback\?method=get_sso_id
   3. Click Download Certificate to get a copy of the public JWT key
 
 ## AList Setup
-- Sso login enabled: `yes`
-- Sso login platform: `OIDC`
-- Sso client id: [Client ID from Authentik]
-- Sso client secret: [Client Secret from Authentik]
-- Sso oidc username key: `preferred_username`
-- Sso organization name: `user`
-- Sso application name: `user`
-- Sso endpoint name: `https://your.authentik.domain/application/o/alist/`
+- **Sso login enabled:** `yes`
+- **Sso login platform:** `OIDC`
+- **Sso client id:** [Client ID from Authentik]
+- **Sso client secret:** [Client Secret from Authentik]
+- **Sso oidc username key:** `preferred_username`
+- **Sso organization name:** `user`
+- **Sso application name:** `user`
+- **Sso endpoint name:** `https://your.authentik.domain/application/o/alist/`
   - **Note:** Replace [your.authentik.domain] with the FQDN for your Authentik installation. Mind the trailing `/` at the end of the path. If you chose a different application slug in Authentik Application setup 3, substitute that here
-- Sso jwt public key: Open the certificate file downloaded in step 3.3 of the Authentik Application setup and paste the contents here. It will start with `-----BEGIN CERTIFICATE-----`
-- Sso compatability mode: `no`
+- **Sso jwt public key:** Open the certificate file downloaded in step 3.3 of the Authentik Application setup and paste the contents here. It will start with `-----BEGIN CERTIFICATE-----`
+- **Sso compatability mode:** `no`
 
 ::::
 
