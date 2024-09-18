@@ -252,8 +252,10 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
   4. Select your authorization flow. The built-in `default-provider-authorization-implicit-consent` is acceptable
   5. Make note of the `Client ID` and `Client Secret` fields as provided by Authentik - save these values for later
   6. For Redirect UDIs/Origins, enter the following, replacing [your.alist.domain] with the FQDN for your AList installation:
-    ```https://your.alist.domain/api/auth/sso_callback\?method=sso_get_token
-    https://your.alist.domain/api/auth/sso_callback\?method=get_sso_id```
+```Callback parameters
+https://your.alist.domain/api/auth/sso_callback\?method=sso_get_token
+https://your.alist.domain/api/auth/sso_callback\?method=get_sso_id
+```
     
     Please note the \ character before ? as an escape character for the regex used for this URI is mandatory.
   7. Make note of the signing key selected as you will need it later. This guide assumes you will use the default `authentik Self-signed Certificate`
