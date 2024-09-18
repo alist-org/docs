@@ -245,7 +245,7 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
 @tab Authentik
 
 ## Authentik Setup
-1. **Create a Provider for AList**
+**Create a Provider for AList**
   1. Menu -> Applications -> Providers -> Create
   2. Select `OAuth2/OpenID Provider` and click next
   3. Enter an application name, this guide assumes you will call the provider `AList`
@@ -254,21 +254,24 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
   6. For Redirect UDIs/Origins, enter the following, replacing [your.alist.domain] with the FQDN for your AList installation:
     ```
     https://your.alist.domain/api/auth/sso_callback\?method=sso_get_token
+
     https://your.alist.domain/api/auth/sso_callback\?method=get_sso_id
     ```
     
-    Please note the `\` character before `?` as an escape character for the regex used for this URI is mandatory.
+    Please note the \ character before ? as an escape character for the regex used for this URI is mandatory.
   7. Make note of the signing key selected as you will need it later. This guide assumes you will use the default `authentik Self-signed Certificate`
   8. Save the new provider
-2. **Create an Application for AList**
+
+**Create an Application for AList**
   1. Menu -> Applications -> Application -> Create
   2. Enter an application name, recommended `AList`
   3. An application slug of `alist` will be automatically selected for you. This guide assumes you will keep this value
-  4. Select the provider by name you selected in step 1.3 - `AList`
+  4. Select the provider by name you selected in Provider Setup step 3 - `AList`
   5. Save the new application
-3. **Retrieve the JWT certificate**
+
+**Retrieve the JWT certificate**
   1. Menu -> System -> Certificates
-  2. Select the `>` next to the `authentik Self-signed Certificate` If you chose another certificate for the application, select that certificate instead
+  2. Select the `>` next to the `authentik Self-signed Certificate`. If you chose another certificate for the application, select that certificate instead
   3. Click Download Certificate to get a copy of the public JWT key
 
 ## AList Setup
@@ -280,7 +283,7 @@ In addition to the four that `AList` has already connected to `GitHub Dingding G
 - - Sso organization name: `user`
 - Sso application name: `user`
 - Sso endpoint name: `https://your.authentik.domain/application/o/alist/`
-**Note:** Replace [your.authentik.domain] with the FQDN for your Authentik installation. Mind the trailing `/` at the end of the path. If you chose a different application slug in Authentik Application setup 2.3, substitute that here
+  **Note:** Replace [your.authentik.domain] with the FQDN for your Authentik installation. Mind the trailing `/` at the end of the path. If you chose a different application slug in Authentik Application setup 3, substitute that here
 - Sso jwt public key: Open the certificate file downloaded in step 3.3 of the Authentik Application setup and paste the contents here. It will start with `-----BEGIN CERTIFICATE-----`
 - Sso compatability mode: `no`
 
