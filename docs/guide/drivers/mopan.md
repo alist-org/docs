@@ -35,7 +35,7 @@ Enter the option of the mobile phone number and password when the first addition
 
 
 
-## **root folder ID**
+## **Root folder ID**
 
 Do not fill in this option, it will automatically fill into the root directory
 

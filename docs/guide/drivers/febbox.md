@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 9
+order: 10
 # A page can have multiple categories
 category:
   - Guide
@@ -17,11 +17,9 @@ sticky: true
 star: true
 ---
 
-# LenovoNasShare
+# FebBox
 
-**https://pc.lenovo.com.cn**
-
-- Need to buy Lenovo equipment
+FebBox：https://www.febbox.com
 
 <br/>
 
@@ -29,32 +27,43 @@ star: true
 
 ## **Root folder ID**
 
-Root folder ID: Empty
+Root directory ID, default is `0`
 
-Subfolder ID：After entering the folder where you need to obtain the subfolder ID, find the request and obtain the subfolder ID.
+Other directory IDs can be viewed in the top link address bar after entering the folder
 
-![](/img/drivers/lenovonasshare/lenovonasshare_fileid.png)
+- **https://www.febbox.com/console#/files?parent_id=66889900**
 
-<br/>
-
-
-
-## **Share id and Share pwd**
-
-Share Link Example： https://siot-share.lenovo.com.cn/s/#/Ss.JjMaJJwcgrDT46qhVA   Share pwd：`fr0w`
-
-- **Share id**：The string at the end of the shared link`Ss.JjMaJJwcgrDT46qhVA`
-- **Share pwd** ：fr0w
+Then the directory ID is `66889900`
 
 <br/>
 
 
 
-### **Host**
+## **`Client_id`**、**`Client_secret`**
 
-The public network is used by default: **https://siot-share.lenovo.com.cn**
+Generate address：**https://www.febbox.com/open/clients**
 
-If you use a LAN, you can change it to the internal network address of the Lenovo device: **http://192.168.XX.XX**
+- The generated client ID and secret key are filled in in the opposite order to the AList, so be careful not to fill them in incorrectly.
+
+![](/img/drivers/febbox/febox.png)
+
+<br/>
+
+
+
+### **User IP**
+
+**Optional**, the IP address of the user when downloading, quoting the official description
+
+- IP address, Optional parameter. Supports IPv6 format.After filling in, the best download server suitable for the IP location will be selected. If not filled in, the requested IP will be used.
+
+<br/>
+
+
+
+### **Things to note**
+
+- The upload function is currently unavailable [**alist-org/alist/issues/7293**](https://github.com/alist-org/alist/issues/7293#issuecomment-2395776474)
 
 <br/>
 

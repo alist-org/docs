@@ -21,7 +21,7 @@ star: true
 
 ilanzou：https://ilanzou.com
 
-## **root folder ID**
+## **Root folder ID**
 
 root folder ID the default is `0`，Other directory ID View the figure below obtaining method
 

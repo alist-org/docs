@@ -62,11 +62,97 @@ star: true
 
 
 
+### **平台**
+
+正常情况下不需要使用，遇到无法直接使用帐号密码登录的情况下可能需要使用
+
+如果遇到验证码等其它问题
+
+- 参考 **https://github.com/alist-org/alist/pull/7024** 这里面的 `更新` 部分的内容
+
+<br/>
+
+
+
+### **刷新令牌**
+
+填写帐号和密码后，`刷新令牌方法`选择 <Badge text="Oauth2" type="info" vertical="middle" /> 然后保存就会自动填充刷新令牌、设备信息
+
+
+
+如果遇到验证码等其它问题
+
+- 参考 **https://github.com/alist-org/alist/pull/7024** 这里面的 `更新` 部分的内容
+
+<br/>
+
+
+
 ### **禁用媒体链接**
 
 - **https://github.com/alist-org/alist/issues/4735**
 
 <br/>
+
+
+
+### **使用加速地址**
+
+使用访问比较快的CDN地址
+
+- **https://github.com/alist-org/alist/pull/7136**
+
+
+
+### **自定义加速地址**
+
+开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址，留空则自动检测延迟最低的下载节点，也可手动填写
+
+::: details 目前获取到的 官方下载域名
+
+```json
+"dl-a10b-0621.mypikpak.com"
+"dl-a10b-0622.mypikpak.com"
+"dl-a10b-0623.mypikpak.com"
+"dl-a10b-0624.mypikpak.com"
+"dl-a10b-0625.mypikpak.com"
+"dl-a10b-0858.mypikpak.com"
+"dl-a10b-0859.mypikpak.com"
+"dl-a10b-0860.mypikpak.com"
+"dl-a10b-0861.mypikpak.com"
+"dl-a10b-0862.mypikpak.com"
+"dl-a10b-0863.mypikpak.com"
+"dl-a10b-0864.mypikpak.com"
+"dl-a10b-0865.mypikpak.com"
+"dl-a10b-0866.mypikpak.com"
+"dl-a10b-0867.mypikpak.com"
+"dl-a10b-0868.mypikpak.com"
+"dl-a10b-0869.mypikpak.com"
+"dl-a10b-0870.mypikpak.com"
+"dl-a10b-0871.mypikpak.com"
+"dl-a10b-0872.mypikpak.com"
+"dl-a10b-0873.mypikpak.com"
+"dl-a10b-0874.mypikpak.com"
+"dl-a10b-0875.mypikpak.com"
+"dl-a10b-0876.mypikpak.com"
+"dl-a10b-0877.mypikpak.com"
+"dl-a10b-0878.mypikpak.com"
+"dl-a10b-0879.mypikpak.com"
+"dl-a10b-0880.mypikpak.com"
+"dl-a10b-0881.mypikpak.com"
+"dl-a10b-0882.mypikpak.com"
+"dl-a10b-0883.mypikpak.com"
+"dl-a10b-0884.mypikpak.com"
+"dl-a10b-0885.mypikpak.com"
+"dl-a10b-0886.mypikpak.com"
+"dl-a10b-0887.mypikpak.com"
+```
+
+:::
+
+<br/>
+
+
 
 ### **离线下载**
 
@@ -105,6 +191,86 @@ star: true
 - 分享密码：分享的有密码就写，没有就不写
 
 ![pik](/img/drivers/pik/pik1.png)
+
+<br/>
+
+
+
+### **平台**
+
+正常情况下不需要使用，遇到无法直接使用帐号密码登录的情况下可能需要使用
+
+如果遇到验证码等其它问题
+
+- 参考 **https://github.com/alist-org/alist/pull/7024** 这里面的 `更新` 部分的内容
+
+<br/>
+
+
+
+### **使用转码地址**
+
+默认不启用，打开后 下载地址将使用**转码后的地址**，可获取 **完整的转码后的文件**
+
+- 打开 `使用转码地址` 选项后，无法使用 `AList` 网页版播放视频，但**可正常下载**或**使用第三方播放器**
+
+<br/>
+
+
+
+### **使用加速地址**
+
+使用访问比较快的CDN地址
+
+- **https://github.com/alist-org/alist/pull/7136**
+
+
+
+### **自定义加速地址**
+
+开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址，留空则自动检测延迟最低的下载节点，也可手动填写
+
+::: details 目前获取到的 官方下载域名
+
+```json
+"dl-a10b-0621.mypikpak.com"
+"dl-a10b-0622.mypikpak.com"
+"dl-a10b-0623.mypikpak.com"
+"dl-a10b-0624.mypikpak.com"
+"dl-a10b-0625.mypikpak.com"
+"dl-a10b-0858.mypikpak.com"
+"dl-a10b-0859.mypikpak.com"
+"dl-a10b-0860.mypikpak.com"
+"dl-a10b-0861.mypikpak.com"
+"dl-a10b-0862.mypikpak.com"
+"dl-a10b-0863.mypikpak.com"
+"dl-a10b-0864.mypikpak.com"
+"dl-a10b-0865.mypikpak.com"
+"dl-a10b-0866.mypikpak.com"
+"dl-a10b-0867.mypikpak.com"
+"dl-a10b-0868.mypikpak.com"
+"dl-a10b-0869.mypikpak.com"
+"dl-a10b-0870.mypikpak.com"
+"dl-a10b-0871.mypikpak.com"
+"dl-a10b-0872.mypikpak.com"
+"dl-a10b-0873.mypikpak.com"
+"dl-a10b-0874.mypikpak.com"
+"dl-a10b-0875.mypikpak.com"
+"dl-a10b-0876.mypikpak.com"
+"dl-a10b-0877.mypikpak.com"
+"dl-a10b-0878.mypikpak.com"
+"dl-a10b-0879.mypikpak.com"
+"dl-a10b-0880.mypikpak.com"
+"dl-a10b-0881.mypikpak.com"
+"dl-a10b-0882.mypikpak.com"
+"dl-a10b-0883.mypikpak.com"
+"dl-a10b-0884.mypikpak.com"
+"dl-a10b-0885.mypikpak.com"
+"dl-a10b-0886.mypikpak.com"
+"dl-a10b-0887.mypikpak.com"
+```
+
+:::
 
 <br/>
 
