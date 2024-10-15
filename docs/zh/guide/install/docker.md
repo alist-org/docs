@@ -78,7 +78,7 @@ services:
 ##### **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:beta
 ```
 
 ##### **docker-compose**
@@ -100,7 +100,7 @@ docker-compose up -d
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:main'
+        image: 'xhofe/alist:beta'
         container_name: alist
         volumes:
             - '/etc/alist:/opt/alist/data'
@@ -117,13 +117,16 @@ services:
 
 有关详细信息，请参阅 https://hub.docker.com/r/xhofe/alist
 
+### **内置 ffmpeg 版镜像**
 
+在任何镜像 tag 后添加 `-ffmpeg` 即可切换到带有开箱即用的 ffmpeg 环境版本镜像
 
-### **Docker-ffmpeg**
+如果缩略图功能仍无法使用，请确认:
 
-- https://github.com/alist-org/alist/pull/6054
-
-**docker-compose** 的方式不确定是否正确，如果不正确可以反馈
++ 使用的是本地存储
++ 切换到网格视图
++ 本地存储的缩略图开关开启
++ 本地存储的缩略图缓存文件夹配置路径正确，例如 `data/thumbnail`
 
 ::: tabs#Docker-ffmpeg
 
@@ -159,7 +162,7 @@ services:
 **docker-cli**
 
 ```bash
-docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:main-ffmpeg
+docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:beta-ffmpeg
 ```
 
 **docker-compose**
@@ -168,7 +171,7 @@ docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -p 5244:524
 version: '3.3'
 services:
     alist:
-        image: 'xhofe/alist:main-ffmpeg'
+        image: 'xhofe/alist:beta-ffmpeg'
         container_name: alist
         volumes:
             - '/etc/alist:/opt/alist/data'
@@ -195,6 +198,26 @@ services:
   $ id username
     uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
+
+### **手动编译 Docker 镜像**
+
+安装 docker，克隆仓库后进入仓库根目录，无需其他准备
+
+::: tabs#Docker-build
+
+@tab basic
+
+```bash
+docker build -t xhofe/alist:latest .
+```
+
+@tab with ffmpeg
+
+```bash
+docker build -t xhofe/alist:latest-ffmpeg --build-arg INSTALL_FFMPEG=true .
+```
+
+:::
 
 ## **有关离线下载功能的额外说明**
 
