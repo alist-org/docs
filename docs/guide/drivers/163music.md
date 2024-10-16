@@ -25,7 +25,7 @@ star: true
 
 
 
-## **cookie**
+## **Cookie**
 
 Open **https://music.163.com** and then open the F12 developer mode
 

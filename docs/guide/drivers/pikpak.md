@@ -61,9 +61,99 @@ Can get with https://mypikpak.com/ , default `root`.
 
 
 
+### **Platform**
+
+It is not necessary to use it under normal circumstances, but you may need to use it when you cannot log in directly with your account and password.
+
+If you encounter other problems such as verification code
+
+- Refer to the `Update` section in **https://github.com/alist-org/alist/pull/7024**
+
+<br/>
+
+
+
+### **Refresh token**
+
+After filling in the account and password, select <Badge text="Oauth2" type="info" vertical="middle" /> for `Refresh token method` and then save to automatically fill in the refresh token and device information.
+
+
+
+If you encounter other problems such as verification code
+
+- Refer to the `Update` section in **https://github.com/alist-org/alist/pull/7024**
+
+<br/>
+
+
+
 ### **Disable media link**
 
 - **https://github.com/alist-org/alist/issues/4735**
+
+<br/>
+
+
+
+### **Use low latency address**
+
+Use a CDN address with faster access
+
+- **https://github.com/alist-org/alist/pull/7136**
+
+
+
+### **Custom low latency address**
+
+After turning on the [Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. 
+
+If left blank, it will automatically detect the download node with the lowest latency. **It is recommended to leave it blank and use automatic detection**
+
+
+
+You can also fill it in manually.
+
+::: details The official download domain name currently obtained
+
+```json
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
+```
+
+:::
 
 <br/>
 
@@ -111,11 +201,101 @@ You only need to fill in **`Username`, `Password`, `Shared ID`** three items, **
 
 
 
+### **Platform**
+
+It is not necessary to use it under normal circumstances, but you may need to use it when you cannot log in directly with your account and password.
+
+If you encounter other problems such as verification code
+
+- Refer to the `Update` section in **https://github.com/alist-org/alist/pull/7024**
+
+<br/>
+
+
+
+### **Use transcoding address**
+
+Not enabled by default. When enabled, the download address will use the **transcoded address**, and you can get the **complete transcoded file**
+
+- After turning on the `Use transcoding address` option, you cannot use the `AList` web version to play the video, but you can **download it normally** or **use a third-party player**
+
+<br/>
+
+
+
+### **Use low latency address**
+
+Use a CDN address with faster access
+
+- **https://github.com/alist-org/alist/pull/7136**
+
+
+
+### **Custom low latency address**
+
+After turning on the [Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. 
+
+If left blank, it will automatically detect the download node with the lowest latency. **It is recommended to leave it blank and use automatic detection**
+
+
+
+You can also fill it in manually.
+
+
+
+::: details The official download domain name currently obtained
+
+```json
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
+```
+
+:::
+
+<br/>
+
+
+
 ### **Batch add PikPak shared mounts**
 
 software used：**https://github.com/yzbtdiy/alist_batch**
 
 Tutorial video：**[BV1Ps4y1U7Zu](https://www.bilibili.com/video/BV1Ps4y1U7Zu)**
+
+<BiliBili bvid="BV1Ps4y1U7Zu" ratio="16:9" low-quality no-danmaku />
 
 <br/>
 
