@@ -105,46 +105,52 @@ Use a CDN address with faster access
 
 ### **Custom low latency address**
 
-After turning on the[Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. If you leave it blank, the download node with the lowest delay will be automatically detected. You can also fill it in manually.
+After turning on the [Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. 
+
+If left blank, it will automatically detect the download node with the lowest latency. **It is recommended to leave it blank and use automatic detection**
+
+
+
+You can also fill it in manually.
 
 ::: details The official download domain name currently obtained
 
 ```json
-"dl-a10b-0621.mypikpak.com"
-"dl-a10b-0622.mypikpak.com"
-"dl-a10b-0623.mypikpak.com"
-"dl-a10b-0624.mypikpak.com"
-"dl-a10b-0625.mypikpak.com"
-"dl-a10b-0858.mypikpak.com"
-"dl-a10b-0859.mypikpak.com"
-"dl-a10b-0860.mypikpak.com"
-"dl-a10b-0861.mypikpak.com"
-"dl-a10b-0862.mypikpak.com"
-"dl-a10b-0863.mypikpak.com"
-"dl-a10b-0864.mypikpak.com"
-"dl-a10b-0865.mypikpak.com"
-"dl-a10b-0866.mypikpak.com"
-"dl-a10b-0867.mypikpak.com"
-"dl-a10b-0868.mypikpak.com"
-"dl-a10b-0869.mypikpak.com"
-"dl-a10b-0870.mypikpak.com"
-"dl-a10b-0871.mypikpak.com"
-"dl-a10b-0872.mypikpak.com"
-"dl-a10b-0873.mypikpak.com"
-"dl-a10b-0874.mypikpak.com"
-"dl-a10b-0875.mypikpak.com"
-"dl-a10b-0876.mypikpak.com"
-"dl-a10b-0877.mypikpak.com"
-"dl-a10b-0878.mypikpak.com"
-"dl-a10b-0879.mypikpak.com"
-"dl-a10b-0880.mypikpak.com"
-"dl-a10b-0881.mypikpak.com"
-"dl-a10b-0882.mypikpak.com"
-"dl-a10b-0883.mypikpak.com"
-"dl-a10b-0884.mypikpak.com"
-"dl-a10b-0885.mypikpak.com"
-"dl-a10b-0886.mypikpak.com"
-"dl-a10b-0887.mypikpak.com"
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
 ```
 
 :::
@@ -227,46 +233,54 @@ Use a CDN address with faster access
 
 ### **Custom low latency address**
 
-After turning on the[Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. If you leave it blank, the download node with the lowest delay will be automatically detected. You can also fill it in manually.
+After turning on the [Use low latency address](#use-low-latency-address)option，You can fill in a custom acceleration address. 
+
+If left blank, it will automatically detect the download node with the lowest latency. **It is recommended to leave it blank and use automatic detection**
+
+
+
+You can also fill it in manually.
+
+
 
 ::: details The official download domain name currently obtained
 
 ```json
-"dl-a10b-0621.mypikpak.com"
-"dl-a10b-0622.mypikpak.com"
-"dl-a10b-0623.mypikpak.com"
-"dl-a10b-0624.mypikpak.com"
-"dl-a10b-0625.mypikpak.com"
-"dl-a10b-0858.mypikpak.com"
-"dl-a10b-0859.mypikpak.com"
-"dl-a10b-0860.mypikpak.com"
-"dl-a10b-0861.mypikpak.com"
-"dl-a10b-0862.mypikpak.com"
-"dl-a10b-0863.mypikpak.com"
-"dl-a10b-0864.mypikpak.com"
-"dl-a10b-0865.mypikpak.com"
-"dl-a10b-0866.mypikpak.com"
-"dl-a10b-0867.mypikpak.com"
-"dl-a10b-0868.mypikpak.com"
-"dl-a10b-0869.mypikpak.com"
-"dl-a10b-0870.mypikpak.com"
-"dl-a10b-0871.mypikpak.com"
-"dl-a10b-0872.mypikpak.com"
-"dl-a10b-0873.mypikpak.com"
-"dl-a10b-0874.mypikpak.com"
-"dl-a10b-0875.mypikpak.com"
-"dl-a10b-0876.mypikpak.com"
-"dl-a10b-0877.mypikpak.com"
-"dl-a10b-0878.mypikpak.com"
-"dl-a10b-0879.mypikpak.com"
-"dl-a10b-0880.mypikpak.com"
-"dl-a10b-0881.mypikpak.com"
-"dl-a10b-0882.mypikpak.com"
-"dl-a10b-0883.mypikpak.com"
-"dl-a10b-0884.mypikpak.com"
-"dl-a10b-0885.mypikpak.com"
-"dl-a10b-0886.mypikpak.com"
-"dl-a10b-0887.mypikpak.com"
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
 ```
 
 :::

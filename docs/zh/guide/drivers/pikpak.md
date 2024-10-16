@@ -106,46 +106,52 @@ star: true
 
 ### **自定义加速地址**
 
-开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址，留空则自动检测延迟最低的下载节点，也可手动填写
+开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址
+
+留空则自动检测延迟最低的下载节点 **推荐留空使用自动检测**
+
+
+
+也可手动填写
 
 ::: details 目前获取到的 官方下载域名
 
 ```json
-"dl-a10b-0621.mypikpak.com"
-"dl-a10b-0622.mypikpak.com"
-"dl-a10b-0623.mypikpak.com"
-"dl-a10b-0624.mypikpak.com"
-"dl-a10b-0625.mypikpak.com"
-"dl-a10b-0858.mypikpak.com"
-"dl-a10b-0859.mypikpak.com"
-"dl-a10b-0860.mypikpak.com"
-"dl-a10b-0861.mypikpak.com"
-"dl-a10b-0862.mypikpak.com"
-"dl-a10b-0863.mypikpak.com"
-"dl-a10b-0864.mypikpak.com"
-"dl-a10b-0865.mypikpak.com"
-"dl-a10b-0866.mypikpak.com"
-"dl-a10b-0867.mypikpak.com"
-"dl-a10b-0868.mypikpak.com"
-"dl-a10b-0869.mypikpak.com"
-"dl-a10b-0870.mypikpak.com"
-"dl-a10b-0871.mypikpak.com"
-"dl-a10b-0872.mypikpak.com"
-"dl-a10b-0873.mypikpak.com"
-"dl-a10b-0874.mypikpak.com"
-"dl-a10b-0875.mypikpak.com"
-"dl-a10b-0876.mypikpak.com"
-"dl-a10b-0877.mypikpak.com"
-"dl-a10b-0878.mypikpak.com"
-"dl-a10b-0879.mypikpak.com"
-"dl-a10b-0880.mypikpak.com"
-"dl-a10b-0881.mypikpak.com"
-"dl-a10b-0882.mypikpak.com"
-"dl-a10b-0883.mypikpak.com"
-"dl-a10b-0884.mypikpak.com"
-"dl-a10b-0885.mypikpak.com"
-"dl-a10b-0886.mypikpak.com"
-"dl-a10b-0887.mypikpak.com"
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
 ```
 
 :::
@@ -228,46 +234,52 @@ star: true
 
 ### **自定义加速地址**
 
-开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址，留空则自动检测延迟最低的下载节点，也可手动填写
+开启[使用加速地址](#使用加速地址)选项后，可以填写自定义加速地址，
+
+留空则自动检测延迟最低的下载节点， **推荐留空使用自动检测**
+
+
+
+也可手动填写
 
 ::: details 目前获取到的 官方下载域名
 
 ```json
-"dl-a10b-0621.mypikpak.com"
-"dl-a10b-0622.mypikpak.com"
-"dl-a10b-0623.mypikpak.com"
-"dl-a10b-0624.mypikpak.com"
-"dl-a10b-0625.mypikpak.com"
-"dl-a10b-0858.mypikpak.com"
-"dl-a10b-0859.mypikpak.com"
-"dl-a10b-0860.mypikpak.com"
-"dl-a10b-0861.mypikpak.com"
-"dl-a10b-0862.mypikpak.com"
-"dl-a10b-0863.mypikpak.com"
-"dl-a10b-0864.mypikpak.com"
-"dl-a10b-0865.mypikpak.com"
-"dl-a10b-0866.mypikpak.com"
-"dl-a10b-0867.mypikpak.com"
-"dl-a10b-0868.mypikpak.com"
-"dl-a10b-0869.mypikpak.com"
-"dl-a10b-0870.mypikpak.com"
-"dl-a10b-0871.mypikpak.com"
-"dl-a10b-0872.mypikpak.com"
-"dl-a10b-0873.mypikpak.com"
-"dl-a10b-0874.mypikpak.com"
-"dl-a10b-0875.mypikpak.com"
-"dl-a10b-0876.mypikpak.com"
-"dl-a10b-0877.mypikpak.com"
-"dl-a10b-0878.mypikpak.com"
-"dl-a10b-0879.mypikpak.com"
-"dl-a10b-0880.mypikpak.com"
-"dl-a10b-0881.mypikpak.com"
-"dl-a10b-0882.mypikpak.com"
-"dl-a10b-0883.mypikpak.com"
-"dl-a10b-0884.mypikpak.com"
-"dl-a10b-0885.mypikpak.com"
-"dl-a10b-0886.mypikpak.com"
-"dl-a10b-0887.mypikpak.com"
+dl-a10b-0621.mypikpak.com
+dl-a10b-0622.mypikpak.com
+dl-a10b-0623.mypikpak.com
+dl-a10b-0624.mypikpak.com
+dl-a10b-0625.mypikpak.com
+dl-a10b-0858.mypikpak.com
+dl-a10b-0859.mypikpak.com
+dl-a10b-0860.mypikpak.com
+dl-a10b-0861.mypikpak.com
+dl-a10b-0862.mypikpak.com
+dl-a10b-0863.mypikpak.com
+dl-a10b-0864.mypikpak.com
+dl-a10b-0865.mypikpak.com
+dl-a10b-0866.mypikpak.com
+dl-a10b-0867.mypikpak.com
+dl-a10b-0868.mypikpak.com
+dl-a10b-0869.mypikpak.com
+dl-a10b-0870.mypikpak.com
+dl-a10b-0871.mypikpak.com
+dl-a10b-0872.mypikpak.com
+dl-a10b-0873.mypikpak.com
+dl-a10b-0874.mypikpak.com
+dl-a10b-0875.mypikpak.com
+dl-a10b-0876.mypikpak.com
+dl-a10b-0877.mypikpak.com
+dl-a10b-0878.mypikpak.com
+dl-a10b-0879.mypikpak.com
+dl-a10b-0880.mypikpak.com
+dl-a10b-0881.mypikpak.com
+dl-a10b-0882.mypikpak.com
+dl-a10b-0883.mypikpak.com
+dl-a10b-0884.mypikpak.com
+dl-a10b-0885.mypikpak.com
+dl-a10b-0886.mypikpak.com
+dl-a10b-0887.mypikpak.com
 ```
 
 :::
