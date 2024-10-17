@@ -16,6 +16,7 @@ const vidHubEn = {
   ],
   url: "https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8",
   tag: "Free",
+  new_site: "Open the new site",
 }
 
 const vidHubCN = {
@@ -26,6 +27,7 @@ const vidHubCN = {
   ],
   url: "https://zh.okaapps.com/product/1659622164?ref=alist",
   tag: "免费",
+  new_site: "打开新站点",
 }
 
 const vidHub = computed(() => {
@@ -62,11 +64,24 @@ const isApple = computed(() => {
           </div>
         </div>
       </a>
+      <a class="new_site" href="https://alistgo.com" target="_blank">{{ vidHub.new_site }}</a>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.new_site {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+  border: 1px solid #aaaaaa50;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
 .vidhub {
   width: 100%;
   height: 150px;
